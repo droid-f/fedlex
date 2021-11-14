@@ -1,0 +1,219 @@
+{
+  "data": {
+    "uri": "https://fedlex.data.admin.ch/vocabulary/information-source",
+    "type": "ConceptScheme",
+    "attributes": {
+      "description": {
+        "rdf:langString": {
+          "de": [
+            "Angabe aus welcher Datenquelle die Betroffenheiten von SR-Texten stammen"
+          ],
+          "it": [
+            "Indica da quale fonte di informazione proviene l'impatto giuridico del testo RS"
+          ],
+          "fr": [
+            "Indique de quelle source d'information provient l'impact juridique du texte RS"
+          ]
+        }
+      },
+      "title": {
+        "rdf:langString": {
+          "de": [
+            "Art der Datenquelle"
+          ],
+          "it": [
+            "Tipo di fonte dei dati"
+          ],
+          "fr": [
+            "Type de source des données"
+          ]
+        }
+      }
+    },
+    "references": {
+      "hasTopConcept": [
+        "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-workflow",
+        "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "https://fedlex.data.admin.ch/vocabulary/information-source/data-post-migration",
+        "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-legiconso",
+        "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-staende"
+      ]
+    }
+  },
+  "included": [
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-workflow",
+      "type": [
+        "Concept",
+        "InformationSource"
+      ],
+      "references": {
+        "inScheme": "https://fedlex.data.admin.ch/vocabulary/information-source"
+      },
+      "attributes": {
+        "deprecated": {
+          "xsd:boolean": false
+        },
+        "prefLabel": {
+          "rdf:langString": {
+            "en": [
+              "data from workflow table"
+            ]
+          }
+        },
+        "status": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/concept-status/CURRENT"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+      "type": [
+        "Concept",
+        "InformationSource"
+      ],
+      "references": {
+        "inScheme": "https://fedlex.data.admin.ch/vocabulary/information-source"
+      },
+      "attributes": {
+        "deprecated": {
+          "xsd:boolean": false
+        },
+        "prefLabel": {
+          "rdf:langString": {
+            "en": [
+              "data from mutation"
+            ]
+          }
+        },
+        "definition": {
+          "rdf:langString": {
+            "fr": [
+              "utilisée pour décrire les impacts migrés de la table mutation. Ces impacts sont en général redondants avec ceux provenant de la table geschaeftsstaende (voir propriété jolux:sourceInfo )"
+            ]
+          }
+        },
+        "status": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/concept-status/CURRENT"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/information-source/data-post-migration",
+      "type": [
+        "Concept",
+        "InformationSource"
+      ],
+      "references": {
+        "inScheme": "https://fedlex.data.admin.ch/vocabulary/information-source"
+      },
+      "attributes": {
+        "deprecated": {
+          "xsd:boolean": false
+        },
+        "prefLabel": {
+          "rdf:langString": {
+            "en": [
+              "data post migration"
+            ]
+          }
+        },
+        "definition": {
+          "rdf:langString": {
+            "fr": [
+              "utilisée pour décrire les impacts créés après la migration de 2020 (voir propriété jolux:sourceInfo )"
+            ]
+          }
+        },
+        "status": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/concept-status/CURRENT"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+      "type": [
+        "Concept",
+        "InformationSource"
+      ],
+      "references": {
+        "inScheme": "https://fedlex.data.admin.ch/vocabulary/information-source"
+      },
+      "attributes": {
+        "deprecated": {
+          "xsd:boolean": false
+        },
+        "prefLabel": {
+          "rdf:langString": {
+            "en": [
+              "data from geschaeftsstaende"
+            ]
+          }
+        },
+        "definition": {
+          "rdf:langString": {
+            "fr": [
+              "utilisée pour décrire les impacts migrés de la table geschaeftsstaende. Ces impacts sont en général redondants avec ceux provenant de la table mutation.  (voir propriété jolux:sourceInfo )"
+            ]
+          }
+        },
+        "status": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/concept-status/CURRENT"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-legiconso",
+      "type": [
+        "Concept",
+        "InformationSource"
+      ],
+      "references": {
+        "inScheme": "https://fedlex.data.admin.ch/vocabulary/information-source"
+      },
+      "attributes": {
+        "deprecated": {
+          "xsd:boolean": false
+        },
+        "prefLabel": {
+          "rdf:langString": {
+            "en": [
+              "data from legiconso"
+            ]
+          }
+        },
+        "status": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/concept-status/CURRENT"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-staende",
+      "type": [
+        "Concept",
+        "InformationSource"
+      ],
+      "references": {
+        "inScheme": "https://fedlex.data.admin.ch/vocabulary/information-source"
+      },
+      "attributes": {
+        "deprecated": {
+          "xsd:boolean": false
+        },
+        "prefLabel": {
+          "rdf:langString": {
+            "en": [
+              "data from kav_steande table"
+            ]
+          }
+        },
+        "status": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/concept-status/CURRENT"
+        }
+      }
+    }
+  ],
+  "graph": "https://fedlex.data.admin.ch/vocabulary/information-source/graph",
+  "timestampms": null
+}
