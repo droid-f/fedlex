@@ -9,7 +9,7 @@ This repository contains the consolidated objects of the main works available in
 - Official compilation (AS, RO, RU): ``/eli/oc`` (~45'000 objects[^2]).
 - Classified compilation (SR, RS): ``/eli/cc`` (~17'000 objects).
 - Treaties: ``/eli/treaty`` (~18'500 objects).
-- Consultation procedres: ``/eli/dl/proj`` (~2'000 objects from 1992). 
+- Consultation procedures: ``/eli/dl/proj`` (~2'000 objects from 1992). 
 
 Morover, the 40 vocabularies with their entries referred in the objects above are available in the directory ``/vocabularies``. 
 
