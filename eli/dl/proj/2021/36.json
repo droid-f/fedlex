@@ -65,9 +65,10 @@
           "https://fedlex.data.admin.ch/vocabulary/legal-institution/248",
           "https://fedlex.data.admin.ch/vocabulary/legal-institution/246"
         ],
-        "consultationStatus": "https://fedlex.data.admin.ch/vocabulary/consultation-status/3",
+        "consultationStatus": "https://fedlex.data.admin.ch/vocabulary/consultation-status/5",
         "hasSubTask": [
           "https://fedlex.data.admin.ch/eli/dl/proj/2021/36/cons_1/cons-open",
+          "https://fedlex.data.admin.ch/eli/dl/proj/2021/36/cons_1/cons-result",
           "https://fedlex.data.admin.ch/eli/dl/proj/2021/36/cons_1/cons-planif"
         ]
       }
@@ -94,7 +95,7 @@
       ]
     },
     {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/consultation-status/3",
+      "uri": "https://fedlex.data.admin.ch/vocabulary/consultation-status/5",
       "type": [
         "Concept",
         "ConsultationStatus"
@@ -126,7 +127,7 @@
           "https://fedlex.data.admin.ch/vocabulary/legal-institution/3106"
         ],
         "consultationHasModification": [
-          "https://fedlex.data.admin.ch/eli/dl/proj/2021/36/cons_1/cons-open/consultation-modification-history/5"
+          "https://fedlex.data.admin.ch/eli/dl/proj/2021/36/cons_1/cons-result/consultation-modification-history/1"
         ]
       },
       "attributes": {
@@ -136,6 +137,28 @@
         "eventStartDate": {
           "xsd:date": "2021-04-28"
         }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2021/36/cons_1/cons-result",
+      "type": [
+        "ConsultationTask",
+        "Event",
+        "LegislativeTask",
+        "ResultOfAConsultationPublication"
+      ],
+      "references": {
+        "institutionInChargeOfTheEventLevel2": "https://fedlex.data.admin.ch/vocabulary/legal-institution/6",
+        "legalInstitutionForLegalSupport": [
+          "https://fedlex.data.admin.ch/vocabulary/legal-institution/3106"
+        ],
+        "institutionInChargeOfTheEvent": "https://fedlex.data.admin.ch/vocabulary/legal-institution/S0",
+        "opinionHasDraftRelatedDocument": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2021/36/cons_1/doc_5"
+        ],
+        "consultationHasModification": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2021/36/cons_1/cons-result/consultation-modification-history/1"
+        ]
       }
     },
     {
@@ -150,7 +173,7 @@
         "institutionInChargeOfTheEventLevel2": "https://fedlex.data.admin.ch/vocabulary/legal-institution/6",
         "institutionInChargeOfTheEvent": "https://fedlex.data.admin.ch/vocabulary/legal-institution/S0",
         "consultationHasModification": [
-          "https://fedlex.data.admin.ch/eli/dl/proj/2021/36/cons_1/cons-open/consultation-modification-history/5"
+          "https://fedlex.data.admin.ch/eli/dl/proj/2021/36/cons_1/cons-result/consultation-modification-history/1"
         ]
       },
       "attributes": {
@@ -312,14 +335,46 @@
       }
     },
     {
-      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2021/36/cons_1/cons-open/consultation-modification-history/5",
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2021/36/cons_1/cons-result/consultation-modification-history/1",
       "type": [
         "ConsultationModificationHistory",
         "Event"
       ],
       "attributes": {
         "consultationStageDate": {
-          "xsd:dateTime": "2021-08-20T00:00:00.436Z"
+          "xsd:dateTime": "2021-11-24T14:52:07.400Z"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2021/36/cons_1/doc_5",
+      "type": [
+        "DraftRelatedDocument",
+        "Work"
+      ],
+      "references": {
+        "draftProcessDocumentType": [
+          "https://fedlex.data.admin.ch/vocabulary/draft-document-type/31"
+        ],
+        "isRealizedBy": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2021/36/cons_1/doc_5/it",
+          "https://fedlex.data.admin.ch/eli/dl/proj/2021/36/cons_1/doc_5/fr",
+          "https://fedlex.data.admin.ch/eli/dl/proj/2021/36/cons_1/doc_5/de"
+        ]
+      },
+      "attributes": {
+        "title": {
+          "rdf:langString": {
+            "de": [
+              "Ergebnisbericht"
+            ],
+            "it": [
+              "Rapporto sui risultati"
+            ],
+            "fr": [
+              "Rapport de résultats"
+            ]
+          }
         }
       }
     },
@@ -521,6 +576,58 @@
       "attributes": {
         "title": {
           "xsd:string": "Vernehmlassungsvorlage"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/draft-document-type/31",
+      "type": [
+        "Concept",
+        "DraftProcessDocumentType"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2021/36/cons_1/doc_5/it",
+      "type": "Expression",
+      "references": {
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2021/36/cons_1/doc_5/it/pdf-a"
+        ],
+        "language": "http://publications.europa.eu/resource/authority/language/ITA"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Rapporto sui risultati"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2021/36/cons_1/doc_5/fr",
+      "type": "Expression",
+      "references": {
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2021/36/cons_1/doc_5/fr/pdf-a"
+        ],
+        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Rapport de résultats"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2021/36/cons_1/doc_5/de",
+      "type": "Expression",
+      "references": {
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2021/36/cons_1/doc_5/de/pdf-a"
+        ],
+        "language": "http://publications.europa.eu/resource/authority/language/DEU"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Ergebnisbericht"
         }
       }
     },
@@ -798,6 +905,69 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2021/36/cons_1/doc_5/it/pdf-a",
+      "type": "Manifestation",
+      "attributes": {
+        "manifestationByDefault": {
+          "xsd:boolean": true
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/dl/proj/2021/36/cons_1/doc_5/it/pdf-a/fedlex-data-admin-ch-eli-dl-proj-2021-36-cons_1-doc_5-it-pdf-a.pdf"
+        },
+        "publicationDate": {
+          "xsd:dateTime": "2021-11-24T14:52:07.402Z"
+        }
+      },
+      "references": {
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2021/36/cons_1/doc_5/fr/pdf-a",
+      "type": "Manifestation",
+      "attributes": {
+        "manifestationByDefault": {
+          "xsd:boolean": true
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/dl/proj/2021/36/cons_1/doc_5/fr/pdf-a/fedlex-data-admin-ch-eli-dl-proj-2021-36-cons_1-doc_5-fr-pdf-a.pdf"
+        },
+        "publicationDate": {
+          "xsd:dateTime": "2021-11-24T14:52:07.402Z"
+        }
+      },
+      "references": {
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2021/36/cons_1/doc_5/de/pdf-a",
+      "type": "Manifestation",
+      "attributes": {
+        "manifestationByDefault": {
+          "xsd:boolean": true
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/dl/proj/2021/36/cons_1/doc_5/de/pdf-a/fedlex-data-admin-ch-eli-dl-proj-2021-36-cons_1-doc_5-de-pdf-a.pdf"
+        },
+        "publicationDate": {
+          "xsd:dateTime": "2021-11-24T14:52:07.402Z"
+        }
+      },
+      "references": {
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
       "type": [
         "Concept",
@@ -810,7 +980,8 @@
     "sortingDate": null,
     "department": {
       "ConsultationPhase": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D2",
-      "ConsultationPreparation": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D2"
+      "ConsultationPreparation": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D2",
+      "ResultOfAConsultationPublication": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D2"
     }
   },
   "timestampms": null
