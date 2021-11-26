@@ -29,8 +29,9 @@ JSON objects are prettified in order to take advantage of git to track changes.
 Feedbacks are welcome. For suggestions, missing or incorrect data open an issue.
 
 ## Resources
-- [www.fedlex.admin.ch](www.fedlex.admin.ch), where the data is officialy presented.
-- [fedlex.data.admin.ch](fedlex.data.admin.ch), the backend public website.
+- [www.fedlex.admin.ch](https://www.fedlex.admin.ch), where the data is officialy presented.
+- [fedlex.data.admin.ch](https://fedlex.data.admin.ch), the backend public website.
+
 
 ## Licence
 Swiss Federal Chancellery requirements for the use of the data are summarized [here](https://www.fedlex.admin.ch/fr/broadcasters). This repository is licensed under the [CC BY-NC-SA 4.0 licence](https://creativecommons.org/licenses/by-nc-sa/4.0/) and cannot be used for commercial purposes. 
