@@ -23,7 +23,7 @@ Although the object structure, quality and conventions may raise some questions,
 JSON objects are prettified in order to take advantage of git to track changes.
 
 ## Additional files
-- An ``/eli/updates.json`` file is preriodically generated, this include the last crawler update date for each file. 
+- The file ``/updates.json`` is generated after each commit, this include the last crawler update date for each file. 
 
 ## Feedbacks
 Feedbacks are welcome. For suggestions, missing or incorrect data open an issue.
