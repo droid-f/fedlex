@@ -1,13 +1,13 @@
 # Fedlex metadata
 As of January 2021, the Swiss Federal Chancellery renewed the backend for its official publication (e.g. acts and bills[^1]). 
 These are exposed through a triple store database API and then consolidated into objects for efficient, intuitive and significantly less cryptic access.  
-This repository contains the consolidated objects of the main works available in JSON format. According to the terminology used by the Federal Chancellery, the work types included in the repository are _Act_, _ConsolidationAbstract_, _TreatyProcess_ and a subset of _Draft_.
+This repository contains the consolidated objects of the main works available in JSON format. According to the terminology used by the Federal Chancellery, the work types included in the repository are _Act_, _ConsolidationAbstract_, _Consolidation_, _TreatyProcess_ and a subset of _Draft_.
 
 [^1]: Diritto federale, Foglio federale, Raccolta Ufficiale, Raccolta Sistematica, Trattati, Procedure di consultazione; Droit fédéral, Feuille fédérale, Recueil officiel, Recueil systématique, Traités, Procédures de consultation; Bundesrecht, Bundesblatt, Amtliche Sammlung, Systematische Rechtssammlung, Staatsverträge, Vernehmlassungen.
 
 - Federal gazette (BBl, FF): ``/eli/fga`` (~146'000 objects[^2]).
 - Official compilation (AS, RO, RU): ``/eli/oc`` (~45'000 objects[^2]).
-- Classified compilation (SR, RS): ``/eli/cc`` (~17'000 objects).
+- Classified compilation (SR, RS): ``/eli/cc`` (~17'000 objects and ~50'000 consolidated objects).
 - Treaties: ``/eli/treaty`` (~18'500 objects).
 - Consultation procedures: ``/eli/dl/proj`` (~2'000 objects from 1992). 
 
