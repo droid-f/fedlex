@@ -11,7 +11,7 @@ This repository contains the consolidated objects of the main works available in
 - Treaties: ``/eli/treaty`` (~18'500 objects).
 - Consultation procedures: ``/eli/dl/proj`` (~2'000 objects from 1992). 
 
-Morover, the 40 vocabularies with their entries referred in the objects above are available in the directory ``/vocabularies``. 
+Morover, the 40 vocabularies with their entries referred in the objects above are available in the directory ``/vocabularies``. The repository [fedlex-assets](https://github.com/droid-f/fedlex-assets) presents the ``HTML`` manifestation of the consolidated objects. 
 
 [^2]: Some objects correspond to a work exposing multiple manifestations, while others to a single manifestation of a work (e.g Federal gazette before 1999 is presented as one object per language manifestation). The consolidation of works presented in more than one language began in the years 1998-2000 (digitalization of the official publication workflow). 
 
