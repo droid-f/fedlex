@@ -14,13 +14,15 @@
       ],
       "treatyProcessHasTask": [
         "https://fedlex.data.admin.ch/eli/treaty/2021/0493/TreatySignature/1",
+        "https://fedlex.data.admin.ch/eli/treaty/2021/0493/TreatyRatification/2",
         "https://fedlex.data.admin.ch/eli/treaty/2021/0493/ReferralToConseilGouvernement/1",
         "https://fedlex.data.admin.ch/eli/treaty/2021/0493/EntryIntoForce/1"
       ],
       "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1",
       "treatyPartyCountry": [
         "https://fedlex.data.admin.ch/vocabulary/country/427"
-      ]
+      ],
+      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/30019"
     },
     "attributes": {
       "bilateral": {
@@ -47,6 +49,9 @@
             "Accord entre le Conseil fédéral suisse et le Gouvernement de la République d’Indonésie relatif à l’échange de jeunes professionnels"
           ]
         }
+      },
+      "approbationAct": {
+        "rdfs:Resource": "https://fedlex.data.admin.ch/eli/oc/2022/94"
       }
     }
   },
@@ -87,6 +92,22 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2021/0493/TreatyRatification/2",
+      "type": [
+        "Event",
+        "TaskForTreaty",
+        "TreatyRatification"
+      ],
+      "attributes": {
+        "treatyPartyRatificationDate": {
+          "xsd:date": "2021-12-09"
+        }
+      },
+      "references": {
+        "treatyRatificationParty": "https://fedlex.data.admin.ch/vocabulary/country/718"
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/2021/0493/ReferralToConseilGouvernement/1",
       "type": [
         "Event",
@@ -101,6 +122,11 @@
         "Event",
         "TaskForTreaty"
       ],
+      "attributes": {
+        "entryIntoForceDate": {
+          "xsd:date": "2022-03-05"
+        }
+      },
       "references": {
         "entryIntoForceFor": "https://fedlex.data.admin.ch/vocabulary/country/718"
       }
@@ -117,6 +143,13 @@
       "type": [
         "Concept",
         "Country"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/30019",
+      "type": [
+        "Concept",
+        "LegalTaxonomy"
       ]
     },
     {
@@ -150,7 +183,24 @@
   ],
   "graph": "https://fedlex.data.admin.ch/eli/treaty/2021/0493/graph",
   "facets": {
-    "sortingDate": "2021-11-30"
+    "consolidationAbstractUri": "https://fedlex.data.admin.ch/eli/cc/2022/94",
+    "sortingDate": "2021-11-30",
+    "acts": [
+      {
+        "memorialLabel": {
+          "http://publications.europa.eu/resource/authority/language/DEU": "AS 2022 94",
+          "http://publications.europa.eu/resource/authority/language/FRA": "RO 2022 94",
+          "http://publications.europa.eu/resource/authority/language/ITA": "RU 2022 94"
+        },
+        "uri": "https://fedlex.data.admin.ch/eli/oc/2022/94",
+        "publicationDate": "2022-02-16"
+      }
+    ],
+    "classifiedByTaxonomyEntryLabel": {
+      "de": "SR 0.142.114.277",
+      "fr": "RS 0.142.114.277",
+      "it": "RS 0.142.114.277"
+    }
   },
   "timestampms": null
 }

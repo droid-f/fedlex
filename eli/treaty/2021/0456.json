@@ -13,6 +13,8 @@
         "https://fedlex.data.admin.ch/vocabulary/treaty-subject-theme/4"
       ],
       "treatyProcessHasTask": [
+        "https://fedlex.data.admin.ch/eli/treaty/2021/0456/Registration/1",
+        "https://fedlex.data.admin.ch/eli/treaty/2021/0456/EntryIntoForce/2",
         "https://fedlex.data.admin.ch/eli/treaty/2021/0456/ReferralToConseilGouvernement/1",
         "https://fedlex.data.admin.ch/eli/treaty/2021/0456/TreatySignature/1",
         "https://fedlex.data.admin.ch/eli/treaty/2021/0456/EntryIntoForce/1"
@@ -20,7 +22,8 @@
       "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1",
       "treatyPartyCountry": [
         "https://fedlex.data.admin.ch/vocabulary/country/472"
-      ]
+      ],
+      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/30005"
     },
     "attributes": {
       "bilateral": {
@@ -30,7 +33,7 @@
         "xsd:date": "2021-10-13"
       },
       "treatySignaturePlace": {
-        "xsd:string": "Nairobi"
+        "xsd:string": ""
       },
       "titleTreaty": {
         "rdf:langString": {
@@ -44,9 +47,12 @@
             ""
           ],
           "fr": [
-            ""
+            "Accord entre le Conseil fédéral suisse et le Gouvernement \nde la République du Kenya concernant la coopération bilatérale \nen matière d’instruction pour les missions de paix internationales"
           ]
         }
+      },
+      "approbationAct": {
+        "rdfs:Resource": "https://fedlex.data.admin.ch/eli/oc/2021/725"
       }
     }
   },
@@ -70,6 +76,25 @@
         "Concept",
         "TreatySubjectTheme"
       ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2021/0456/Registration/1",
+      "type": [
+        "Event",
+        "Registration",
+        "TaskForTreaty"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2021/0456/EntryIntoForce/2",
+      "type": [
+        "EntryIntoForce",
+        "Event",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "entryIntoForceFor": "https://fedlex.data.admin.ch/vocabulary/country/718"
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/2021/0456/ReferralToConseilGouvernement/1",
@@ -124,6 +149,20 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/30005",
+      "type": [
+        "Concept",
+        "LegalTaxonomy"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/country/718",
+      "type": [
+        "Concept",
+        "Country"
+      ]
+    },
+    {
       "uri": "http://publications.europa.eu/resource/authority/language/DEU",
       "type": [
         "Concept",
@@ -136,18 +175,28 @@
         "Concept",
         "Language"
       ]
-    },
-    {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/country/718",
-      "type": [
-        "Concept",
-        "Country"
-      ]
     }
   ],
   "graph": "https://fedlex.data.admin.ch/eli/treaty/2021/0456/graph",
   "facets": {
-    "sortingDate": "2021-10-13"
+    "consolidationAbstractUri": "https://fedlex.data.admin.ch/eli/cc/2021/725",
+    "sortingDate": "2021-10-13",
+    "acts": [
+      {
+        "memorialLabel": {
+          "http://publications.europa.eu/resource/authority/language/DEU": "AS 2021 725",
+          "http://publications.europa.eu/resource/authority/language/FRA": "RO 2021 725",
+          "http://publications.europa.eu/resource/authority/language/ITA": "RU 2021 725"
+        },
+        "uri": "https://fedlex.data.admin.ch/eli/oc/2021/725",
+        "publicationDate": "2021-11-22"
+      }
+    ],
+    "classifiedByTaxonomyEntryLabel": {
+      "de": "SR 0.512.247.2",
+      "fr": "RS 0.512.247.2",
+      "it": "RS 0.512.247.2"
+    }
   },
   "timestampms": null
 }
