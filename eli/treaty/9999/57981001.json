@@ -14,6 +14,7 @@
       ],
       "treatyProcessHasTask": [
         "https://fedlex.data.admin.ch/eli/treaty/9999/57981001/treatySignature/1",
+        "https://fedlex.data.admin.ch/eli/treaty/9999/57981001/ReferralToConseilGouvernement/1",
         "https://fedlex.data.admin.ch/eli/treaty/9999/57981001/entryIntoForce/1"
       ],
       "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1",
@@ -24,6 +25,9 @@
     "attributes": {
       "bilateral": {
         "xsd:boolean": true
+      },
+      "treatySignatureDate": {
+        "xsd:date": "2019-03-25"
       },
       "titleTreaty": {
         "rdf:langString": {
@@ -67,11 +71,19 @@
         "TaskForTreaty",
         "TreatySignature"
       ],
-      "attributes": {
-        "treatySignatureDate": {
-          "xsd:date": "2019-03-25"
-        }
+      "references": {
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ]
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/57981001/ReferralToConseilGouvernement/1",
+      "type": [
+        "Event",
+        "ReferralToConseilGouvernement",
+        "TaskForTreaty"
+      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/57981001/entryIntoForce/1",
@@ -107,6 +119,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/vocabulary/country/718",
       "type": [
         "Concept",
@@ -115,5 +134,8 @@
     }
   ],
   "graph": "https://fedlex.data.admin.ch/eli/treaty/9999/57981001/graph",
+  "facets": {
+    "sortingDate": "2019-03-25"
+  },
   "timestampms": null
 }

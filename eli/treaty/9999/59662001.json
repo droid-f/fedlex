@@ -14,6 +14,7 @@
       ],
       "treatyProcessHasTask": [
         "https://fedlex.data.admin.ch/eli/treaty/9999/59662001/entryIntoForce/1",
+        "https://fedlex.data.admin.ch/eli/treaty/9999/59662001/ReferralToConseilGouvernement/1",
         "https://fedlex.data.admin.ch/eli/treaty/9999/59662001/treatySignature/1"
       ],
       "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1",
@@ -24,6 +25,9 @@
     "attributes": {
       "bilateral": {
         "xsd:boolean": true
+      },
+      "treatySignatureDate": {
+        "xsd:date": "2020-09-15"
       },
       "treatyExpirationDate": {
         "xsd:date": "2023-10-31"
@@ -80,6 +84,14 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/59662001/ReferralToConseilGouvernement/1",
+      "type": [
+        "Event",
+        "ReferralToConseilGouvernement",
+        "TaskForTreaty"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/59662001/treatySignature/1",
       "type": [
         "Event",
@@ -90,6 +102,11 @@
         "treatySignatureDate": {
           "xsd:date": "2020-09-15"
         }
+      },
+      "references": {
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ENG"
+        ]
       }
     },
     {
@@ -120,8 +137,18 @@
         "Concept",
         "Country"
       ]
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/authority/language/ENG",
+      "type": [
+        "Concept",
+        "Language"
+      ]
     }
   ],
   "graph": "https://fedlex.data.admin.ch/eli/treaty/9999/59662001/graph",
+  "facets": {
+    "sortingDate": "2020-09-15"
+  },
   "timestampms": null
 }

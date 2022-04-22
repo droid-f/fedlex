@@ -14,13 +14,16 @@
       ],
       "treatyProcessHasTask": [
         "https://fedlex.data.admin.ch/eli/treaty/9999/6084/treatySignature/1",
+        "https://fedlex.data.admin.ch/eli/treaty/9999/6084/EntryIntoForce/1",
         "https://fedlex.data.admin.ch/eli/treaty/9999/6084/referral/1",
-        "https://fedlex.data.admin.ch/eli/treaty/9999/6084/entryIntoForce/1"
+        "https://fedlex.data.admin.ch/eli/treaty/9999/6084/entryIntoForce/1",
+        "https://fedlex.data.admin.ch/eli/treaty/9999/6084/Registration/1"
       ],
       "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1",
       "treatyPartyCountry": [
         "https://fedlex.data.admin.ch/vocabulary/country/367"
-      ]
+      ],
+      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/4230"
     },
     "attributes": {
       "bilateral": {
@@ -35,18 +38,15 @@
             "Befristetes Abkommen zwischen der Schweizerischen Eidgenossenschaft und dem Vereinigten Königreich von Grossbritannien und Nordirland über die Mobilität von Dienstleistungserbringern (mit Briefwechsel)"
           ],
           "en": [
-            "Temporary Agreement between de Swiss Confederation and the United Kingdom of Great Britain and Northern Ireland on Services Mobility "
+            "Temporary Agreement between de Swiss Confederation and the United Kingdom of Great Britain and Northern Ireland on Services Mobility"
           ],
           "it": [
             "Accordo temporaneo tra la Confederazione Svizzera e il Regno Unito di Gran Bretagna e Irlanda del Nord sulla mobilità dei prestatori di servizi (con scambio di lettere)"
           ],
           "fr": [
-            "Accord temporaire entre la Confédération suisse et \r\nle Royaume-Uni de Grande-Bretagne et d'Irlande du Nord sur la mobilité des fournisseurs de services (avec échange de lettres)\r\n"
+            "Accord temporaire entre la Confédération suisse et le Royaume-Uni de Grande-Bretagne et d'Irlande du Nord sur la mobilité des fournisseurs de services (avec échange de lettres)"
           ]
         }
-      },
-      "approbationAct": {
-        "rdfs:Resource": "https://fedlex.data.admin.ch/eli/oc/2020/1073"
       }
     }
   },
@@ -85,6 +85,17 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/6084/EntryIntoForce/1",
+      "type": [
+        "EntryIntoForce",
+        "Event",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "entryIntoForceFor": "https://fedlex.data.admin.ch/vocabulary/country/718"
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/6084/referral/1",
       "type": [
         "Event",
@@ -114,6 +125,14 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/6084/Registration/1",
+      "type": [
+        "Event",
+        "Registration",
+        "TaskForTreaty"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1",
       "type": [
         "Concept",
@@ -125,6 +144,13 @@
       "type": [
         "Concept",
         "Country"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/4230",
+      "type": [
+        "Concept",
+        "LegalTaxonomy"
       ]
     },
     {
@@ -144,17 +170,9 @@
   ],
   "graph": "https://fedlex.data.admin.ch/eli/treaty/9999/6084/graph",
   "facets": {
+    "consolidationAbstractUri": "https://fedlex.data.admin.ch/eli/cc/2020/1073",
     "sortingDate": "2020-12-14",
     "acts": [
-      {
-        "memorialLabel": {
-          "http://publications.europa.eu/resource/authority/language/DEU": "AS 2020 6675",
-          "http://publications.europa.eu/resource/authority/language/FRA": "RO 2020 6675",
-          "http://publications.europa.eu/resource/authority/language/ITA": "RU 2020 6675"
-        },
-        "uri": "https://fedlex.data.admin.ch/eli/oc/2020/1073",
-        "publicationDate": "2020-12-30"
-      },
       {
         "memorialLabel": {
           "http://publications.europa.eu/resource/authority/language/DEU": "BBl 2021 1775",
@@ -164,7 +182,12 @@
         "uri": "https://fedlex.data.admin.ch/eli/fga/2021/1775",
         "publicationDate": "2021-08-04"
       }
-    ]
+    ],
+    "classifiedByTaxonomyEntryLabel": {
+      "de": "SR 0.946.293.671.2",
+      "fr": "RS 0.946.293.671.2",
+      "it": "RS 0.946.293.671.2"
+    }
   },
   "timestampms": null
 }

@@ -13,6 +13,7 @@
         "https://fedlex.data.admin.ch/vocabulary/treaty-subject-theme/59"
       ],
       "treatyProcessHasTask": [
+        "https://fedlex.data.admin.ch/eli/treaty/9999/51142001/ReferralToConseilGouvernement/1",
         "https://fedlex.data.admin.ch/eli/treaty/9999/51142001/treatySignature/1",
         "https://fedlex.data.admin.ch/eli/treaty/9999/51142001/entryIntoForce/1"
       ],
@@ -24,6 +25,12 @@
     "attributes": {
       "bilateral": {
         "xsd:boolean": true
+      },
+      "treatySignatureDate": {
+        "xsd:date": "2019-12-24"
+      },
+      "treatySignaturePlace": {
+        "xsd:string": "Accra"
       },
       "treatyExpirationDate": {
         "xsd:date": "2021-06-30"
@@ -64,16 +71,24 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/51142001/ReferralToConseilGouvernement/1",
+      "type": [
+        "Event",
+        "ReferralToConseilGouvernement",
+        "TaskForTreaty"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/51142001/treatySignature/1",
       "type": [
         "Event",
         "TaskForTreaty",
         "TreatySignature"
       ],
-      "attributes": {
-        "treatySignatureDate": {
-          "xsd:date": "2019-12-24"
-        }
+      "references": {
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ENG"
+        ]
       }
     },
     {
@@ -115,6 +130,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/ENG",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/vocabulary/country/718",
       "type": [
         "Concept",
@@ -123,5 +145,8 @@
     }
   ],
   "graph": "https://fedlex.data.admin.ch/eli/treaty/9999/51142001/graph",
+  "facets": {
+    "sortingDate": "2019-12-24"
+  },
   "timestampms": null
 }
