@@ -18,18 +18,30 @@
         "https://fedlex.data.admin.ch/vocabulary/treaty-subject-theme/6"
       ],
       "treatyProcessHasTask": [
-        "https://fedlex.data.admin.ch/eli/treaty/9999/5992/treatySignature/1",
         "https://fedlex.data.admin.ch/eli/treaty/9999/5992/referral/1",
+        "https://fedlex.data.admin.ch/eli/treaty/9999/5992/treatySignature/1",
+        "https://fedlex.data.admin.ch/eli/treaty/9999/5992/Notification/7",
+        "https://fedlex.data.admin.ch/eli/treaty/9999/5992/Notification/8",
+        "https://fedlex.data.admin.ch/eli/treaty/9999/5992/Notification/5",
+        "https://fedlex.data.admin.ch/eli/treaty/9999/5992/Notification/6",
+        "https://fedlex.data.admin.ch/eli/treaty/9999/5992/Notification/3",
         "https://fedlex.data.admin.ch/eli/treaty/9999/5992/notification/2",
         "https://fedlex.data.admin.ch/eli/treaty/9999/5992/notification/1",
+        "https://fedlex.data.admin.ch/eli/treaty/9999/5992/Notification/4",
         "https://fedlex.data.admin.ch/eli/treaty/9999/5992/notification/4",
-        "https://fedlex.data.admin.ch/eli/treaty/9999/5992/registration/1",
+        "https://fedlex.data.admin.ch/eli/treaty/9999/5992/Notification/1",
+        "https://fedlex.data.admin.ch/eli/treaty/9999/5992/Notification/2",
         "https://fedlex.data.admin.ch/eli/treaty/9999/5992/notification/3",
+        "https://fedlex.data.admin.ch/eli/treaty/9999/5992/registration/1",
+        "https://fedlex.data.admin.ch/eli/treaty/9999/5992/TreatyRatification/1",
         "https://fedlex.data.admin.ch/eli/treaty/9999/5992/entryIntoForce/1"
       ],
       "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1"
     },
     "attributes": {
+      "firstEntryIntoForceDate": {
+        "xsd:date": "2022-05-01"
+      },
       "bilateral": {
         "xsd:boolean": false
       },
@@ -41,11 +53,17 @@
       },
       "titleTreaty": {
         "rdf:langString": {
+          "de": [
+            "Protokoll zwischen der Schweizerischen Eidgenossenschaft, der Europäischen Union und dem Fürstentum Liechtenstein zum Abkommen zwischen der Schweizerischen Eidgenossenschaft und der Europäischen Gemeinschaft über die Kriterien und Verfahren zur Bestimmung des zuständigen Staates für die Prüfung eines in einem Mitgliedstaat oder in der Schweiz gestellten Asylantrags betreffend den Zugang zu Eurodac für Gefahrenabwehr- und Strafverfolgungszwecke"
+          ],
           "en": [
-            "Protocol between the European Union, the Swiss Confederation and the Principality of Liechtenstein to the agreement between the European Community and the Swiss Confederation concerning the criteria and mechanisms for establishing the State responsable for examining a request for asylum lodged in a Member State or in Switzerland regarding the access to Eurodac for law enforcement purposes"
+            "Protocol between the Swiss Confederation, the European Union and the Principality of Liechtenstein to the agreement between the Swiss Confederation and the European Community concerning the criteria and mechanisms for establishing the State responsable for examining a request for asylum lodged in a Member State or in Switzerland regarding access to Eurodac for law enforcement purposes"
+          ],
+          "it": [
+            "Protocollo tra la Confederazione svizzera, l'Unione europea e il Principato del Liechtenstein dell'accordo tra la Confederazione svizzera e la Comunità europea relativo ai criteri e ai meccanismi che permettono di determinare lo Stato competente per l'esame di una domanda di asilo introdotta in uno degli Stati membri o in Svizzera riguardante l'accesso a Eurodac a fini di contrasto"
           ],
           "fr": [
-            "Protocole entre l'Union européenne, la Confédération suisse et la Pricipauté de Liechtenstein à l'accord entre la Communauté européenne et la Confédération suisse relatif aux critères et aux mécanismes permettant de déterminer l'État responsable de l'examen d'une demande d'asile introduite dans un État membre ou en Suisse concernant l'accès des autorités de poursuite pénale à Eurodac "
+            "Protocole entre la Confédération suisse, l’Union européenne et la Principauté de Liechtenstein à l'accord entre la Confédération suisse et la Communauté européenne relatif aux critères  et aux mécanismes permettant de déterminer l'État responsable de l'examen d'une demande d'asile introduite dans un État membre ou en Suisse, concernant l’accès à Eurodac à des fins répressives"
           ]
         }
       }
@@ -59,6 +77,11 @@
         "TreatyDocument",
         "Work"
       ],
+      "references": {
+        "isAnnexOfWork": [
+          "https://fedlex.data.admin.ch/eli/treaty/2004/2082/treatyDocument/1"
+        ]
+      },
       "attributes": {
         "typeDocument": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/32"
@@ -118,6 +141,19 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/5992/referral/1",
+      "type": [
+        "Event",
+        "ReferralToConseilGouvernement",
+        "TaskForTreaty"
+      ],
+      "attributes": {
+        "draftLegislationInitialInformationPublishedIn": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/eli/fga/2021/738"
+        }
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/5992/treatySignature/1",
       "type": [
         "Event",
@@ -158,15 +194,72 @@
       }
     },
     {
-      "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/5992/referral/1",
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/5992/Notification/7",
       "type": [
         "Event",
-        "ReferralToConseilGouvernement",
+        "Notification",
         "TaskForTreaty"
       ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/5",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/514"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/5992/Notification/8",
+      "type": [
+        "Event",
+        "Notification",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/3",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/514"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/5992/Notification/5",
+      "type": [
+        "Event",
+        "Notification",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/5",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/718"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/5992/Notification/6",
+      "type": [
+        "Event",
+        "Notification",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/3",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/718"
+      },
       "attributes": {
-        "draftLegislationInitialInformationPublishedIn": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/eli/fga/2021/738"
+        "notificationEntryIntoForceDate": {
+          "xsd:date": "2022-04-28"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/5992/Notification/3",
+      "type": [
+        "Event",
+        "Notification",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/4",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/514"
+      },
+      "attributes": {
+        "notificationEntryIntoForceDate": {
+          "xsd:date": "2022-05-01"
         }
       }
     },
@@ -183,7 +276,7 @@
       },
       "attributes": {
         "notificationEntryIntoForceDate": {
-          "xsd:date": "2020-02-03"
+          "xsd:date": "2020-01-31"
         }
       }
     },
@@ -205,6 +298,23 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/5992/Notification/4",
+      "type": [
+        "Event",
+        "Notification",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/4",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/718"
+      },
+      "attributes": {
+        "notificationEntryIntoForceDate": {
+          "xsd:date": "2022-05-01"
+        }
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/5992/notification/4",
       "type": [
         "Event",
@@ -222,14 +332,32 @@
       }
     },
     {
-      "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/5992/registration/1",
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/5992/Notification/1",
       "type": [
         "Event",
-        "Registration",
+        "Notification",
         "TaskForTreaty"
       ],
       "references": {
-        "depositary": "https://fedlex.data.admin.ch/vocabulary/international-actor/10435"
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/5",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/10013"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/5992/Notification/2",
+      "type": [
+        "Event",
+        "Notification",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/4",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/10013"
+      },
+      "attributes": {
+        "notificationEntryIntoForceDate": {
+          "xsd:date": "2022-05-01"
+        }
       }
     },
     {
@@ -250,12 +378,44 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/5992/registration/1",
+      "type": [
+        "Event",
+        "Registration",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "depositary": "https://fedlex.data.admin.ch/vocabulary/international-actor/10435"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/5992/TreatyRatification/1",
+      "type": [
+        "Event",
+        "TaskForTreaty",
+        "TreatyRatification"
+      ],
+      "attributes": {
+        "treatyPartyRatificationDate": {
+          "xsd:date": "2022-04-28"
+        }
+      },
+      "references": {
+        "treatyRatificationParty": "https://fedlex.data.admin.ch/vocabulary/country/718"
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/5992/entryIntoForce/1",
       "type": [
         "EntryIntoForce",
         "Event",
         "TaskForTreaty"
       ],
+      "attributes": {
+        "entryIntoForceDate": {
+          "xsd:date": "2022-05-01"
+        }
+      },
       "references": {
         "entryIntoForceFor": "https://fedlex.data.admin.ch/vocabulary/country/718"
       }
@@ -265,6 +425,14 @@
       "type": [
         "Concept",
         "TreatyType"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2004/2082/treatyDocument/1",
+      "type": [
+        "LegalResource",
+        "TreatyDocument",
+        "Work"
       ]
     },
     {
@@ -450,7 +618,21 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/notification-type/5",
+      "type": [
+        "Concept",
+        "NotificationType"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/vocabulary/notification-type/3",
+      "type": [
+        "Concept",
+        "NotificationType"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/notification-type/4",
       "type": [
         "Concept",
         "NotificationType"
