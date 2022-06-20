@@ -12,21 +12,22 @@
       "treatySubject": [
         "https://fedlex.data.admin.ch/vocabulary/treaty-subject-theme/59"
       ],
-      "treatyUnderUmbrellaOf": [
-        "https://fedlex.data.admin.ch/vocabulary/international-actor/10073"
-      ],
       "treatyProcessHasTask": [
+        "https://fedlex.data.admin.ch/eli/treaty/9999/33522008/ReferralToConseilGouvernement/1",
         "https://fedlex.data.admin.ch/eli/treaty/9999/33522008/entryIntoForce/1",
         "https://fedlex.data.admin.ch/eli/treaty/9999/33522008/treatySignature/1"
       ],
-      "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1"
+      "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1",
+      "treatyPartyOrganisation": [
+        "https://fedlex.data.admin.ch/vocabulary/international-actor/10073"
+      ]
     },
     "attributes": {
-      "firstEntryIntoForceDate": {
-        "xsd:date": "2017-11-03"
-      },
       "bilateral": {
-        "xsd:boolean": false
+        "xsd:boolean": true
+      },
+      "treatySignatureDate": {
+        "xsd:date": "2017-11-03"
       },
       "treatyExpirationDate": {
         "xsd:date": "2022-06-30"
@@ -55,7 +56,7 @@
       },
       "attributes": {
         "typeDocument": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/32"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/31"
         }
       }
     },
@@ -67,10 +68,11 @@
       ]
     },
     {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/international-actor/10073",
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/33522008/ReferralToConseilGouvernement/1",
       "type": [
-        "Concept",
-        "InternationalActor"
+        "Event",
+        "ReferralToConseilGouvernement",
+        "TaskForTreaty"
       ]
     },
     {
@@ -96,10 +98,10 @@
         "TaskForTreaty",
         "TreatySignature"
       ],
-      "attributes": {
-        "treatySignatureDate": {
-          "xsd:date": "2017-11-03"
-        }
+      "references": {
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ENG"
+        ]
       }
     },
     {
@@ -107,6 +109,13 @@
       "type": [
         "Concept",
         "TreatyType"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/international-actor/10073",
+      "type": [
+        "Concept",
+        "InternationalActor"
       ]
     },
     {
@@ -123,8 +132,18 @@
         "Concept",
         "Country"
       ]
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/authority/language/ENG",
+      "type": [
+        "Concept",
+        "Language"
+      ]
     }
   ],
   "graph": "https://fedlex.data.admin.ch/eli/treaty/9999/33522008/graph",
+  "facets": {
+    "sortingDate": "2017-11-03"
+  },
   "timestampms": null
 }

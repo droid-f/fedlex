@@ -14,6 +14,7 @@
       ],
       "treatyProcessHasTask": [
         "https://fedlex.data.admin.ch/eli/treaty/9999/36081004/treatySignature/1",
+        "https://fedlex.data.admin.ch/eli/treaty/9999/36081004/ReferralToConseilGouvernement/1",
         "https://fedlex.data.admin.ch/eli/treaty/9999/36081004/entryIntoForce/1"
       ],
       "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1",
@@ -24,6 +25,9 @@
     "attributes": {
       "bilateral": {
         "xsd:boolean": true
+      },
+      "treatySignatureDate": {
+        "xsd:date": "2017-01-23"
       },
       "titleTreaty": {
         "rdf:langString": {
@@ -45,6 +49,9 @@
       "references": {
         "isAnnexOfWork": [
           "https://fedlex.data.admin.ch/eli/treaty/9999/3608/treatyDocument/1"
+        ],
+        "modifiedBy": [
+          "https://fedlex.data.admin.ch/eli/treaty/2022/0114/TreatyDocument/1"
         ]
       },
       "attributes": {
@@ -67,11 +74,19 @@
         "TaskForTreaty",
         "TreatySignature"
       ],
-      "attributes": {
-        "treatySignatureDate": {
-          "xsd:date": "2017-01-23"
-        }
+      "references": {
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ]
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/36081004/ReferralToConseilGouvernement/1",
+      "type": [
+        "Event",
+        "ReferralToConseilGouvernement",
+        "TaskForTreaty"
+      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/36081004/entryIntoForce/1",
@@ -112,6 +127,21 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2022/0114/TreatyDocument/1",
+      "type": [
+        "LegalResource",
+        "TreatyDocument",
+        "Work"
+      ]
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/vocabulary/country/718",
       "type": [
         "Concept",
@@ -120,5 +150,8 @@
     }
   ],
   "graph": "https://fedlex.data.admin.ch/eli/treaty/9999/36081004/graph",
+  "facets": {
+    "sortingDate": "2017-01-23"
+  },
   "timestampms": null
 }

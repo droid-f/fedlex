@@ -43,7 +43,8 @@
         "https://fedlex.data.admin.ch/eli/treaty/9999/4564/notification/1",
         "https://fedlex.data.admin.ch/eli/treaty/9999/4564/notification/2"
       ],
-      "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1"
+      "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1",
+      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/823"
     },
     "attributes": {
       "firstEntryIntoForceDate": {
@@ -54,6 +55,11 @@
       },
       "treatySignatureDate": {
         "xsd:date": "2014-03-14"
+      },
+      "treatyNotificationPublishedIn": {
+        "rdfs:Resource": [
+          "https://fedlex.data.admin.ch/eli/oc/2022/354"
+        ]
       },
       "treatySignaturePlace": {
         "xsd:string": "Strasbourg"
@@ -73,6 +79,9 @@
             "Convention relative à la délivrance d'extraits et de certificats plurilingues et codés d'actes de l'état civil"
           ]
         }
+      },
+      "approbationAct": {
+        "rdfs:Resource": "https://fedlex.data.admin.ch/eli/oc/2022/354"
       }
     }
   },
@@ -85,6 +94,9 @@
         "Work"
       ],
       "references": {
+        "modifies": [
+          "https://fedlex.data.admin.ch/eli/treaty/1976/0205/treatyDocument/1"
+        ],
         "workHasAnnex": [
           "https://fedlex.data.admin.ch/eli/treaty/9999/45641003/treatyDocument/1",
           "https://fedlex.data.admin.ch/eli/treaty/9999/45641004/treatyDocument/1",
@@ -487,6 +499,21 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/823",
+      "type": [
+        "Concept",
+        "LegalTaxonomy"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1976/0205/treatyDocument/1",
+      "type": [
+        "LegalResource",
+        "TreatyDocument",
+        "Work"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/45641003/treatyDocument/1",
       "type": [
         "LegalResource",
@@ -591,7 +618,24 @@
   ],
   "graph": "https://fedlex.data.admin.ch/eli/treaty/9999/4564/graph",
   "facets": {
-    "sortingDate": "2014-03-14"
+    "consolidationAbstractUri": "https://fedlex.data.admin.ch/eli/cc/2022/354",
+    "sortingDate": "2014-03-14",
+    "acts": [
+      {
+        "memorialLabel": {
+          "http://publications.europa.eu/resource/authority/language/DEU": "AS 2022 354",
+          "http://publications.europa.eu/resource/authority/language/FRA": "RO 2022 354",
+          "http://publications.europa.eu/resource/authority/language/ITA": "RU 2022 354"
+        },
+        "uri": "https://fedlex.data.admin.ch/eli/oc/2022/354",
+        "publicationDate": "2022-06-15"
+      }
+    ],
+    "classifiedByTaxonomyEntryLabel": {
+      "de": "SR 0.211.112.113",
+      "fr": "RS 0.211.112.113",
+      "it": "RS 0.211.112.113"
+    }
   },
   "timestampms": null
 }

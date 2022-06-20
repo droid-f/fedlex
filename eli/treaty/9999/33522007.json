@@ -19,14 +19,17 @@
         "https://fedlex.data.admin.ch/eli/treaty/9999/33522007/entryIntoForce/1",
         "https://fedlex.data.admin.ch/eli/treaty/9999/33522007/treatySignature/1"
       ],
-      "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1"
+      "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1",
+      "treatyPartyOrganisation": [
+        "https://fedlex.data.admin.ch/vocabulary/international-actor/10073"
+      ]
     },
     "attributes": {
-      "firstEntryIntoForceDate": {
-        "xsd:date": "2018-09-10"
-      },
       "bilateral": {
-        "xsd:boolean": false
+        "xsd:boolean": true
+      },
+      "treatySignatureDate": {
+        "xsd:date": "2018-09-10"
       },
       "treatyExpirationDate": {
         "xsd:date": "2022-06-30"
@@ -55,7 +58,7 @@
       },
       "attributes": {
         "typeDocument": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/32"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/31"
         }
       }
     },
@@ -96,10 +99,10 @@
         "TaskForTreaty",
         "TreatySignature"
       ],
-      "attributes": {
-        "treatySignatureDate": {
-          "xsd:date": "2018-09-10"
-        }
+      "references": {
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ENG"
+        ]
       }
     },
     {
@@ -123,8 +126,18 @@
         "Concept",
         "Country"
       ]
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/authority/language/ENG",
+      "type": [
+        "Concept",
+        "Language"
+      ]
     }
   ],
   "graph": "https://fedlex.data.admin.ch/eli/treaty/9999/33522007/graph",
+  "facets": {
+    "sortingDate": "2018-09-10"
+  },
   "timestampms": null
 }
