@@ -13,11 +13,16 @@
         "https://fedlex.data.admin.ch/vocabulary/treaty-subject-theme/23"
       ],
       "treatyProcessHasTask": [
+        "https://fedlex.data.admin.ch/eli/treaty/2021/0468/Registration/1",
         "https://fedlex.data.admin.ch/eli/treaty/2021/0468/ReferralToConseilGouvernement/1",
         "https://fedlex.data.admin.ch/eli/treaty/2021/0468/TreatySignature/1",
-        "https://fedlex.data.admin.ch/eli/treaty/2021/0468/EntryIntoForce/1"
+        "https://fedlex.data.admin.ch/eli/treaty/2021/0468/EntryIntoForce/1",
+        "https://fedlex.data.admin.ch/eli/treaty/2021/0468/EntryIntoForce/2"
       ],
-      "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1"
+      "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1",
+      "treatyPartyCountry": [
+        "https://fedlex.data.admin.ch/vocabulary/country/10013"
+      ]
     },
     "attributes": {
       "bilateral": {
@@ -29,16 +34,16 @@
       "titleTreaty": {
         "rdf:langString": {
           "de": [
-            ""
+            "Notenaustausch vom 11. August 2021 zwischen der Schweiz und der Europäischen Union betreffend die Übernahme der Verordnung (EU) 2021/1150 zur Änderung der Verordnungen (EU) 2018/1862 und (EU) 2019/818 hinsichtlich \nder Festlegung der Bedingungen für den Zugang zu anderen EU-Informationssystemen für die Zwecke des Europäischen Reiseinformations- und -genehmigungssystems"
           ],
           "en": [
             ""
           ],
           "it": [
-            ""
+            "Scambio di note dell’11 agosto 2021 tra la Svizzera e l’Unione europea concernente il recepimento del regolamento (UE) 2021/1150 che modifica i regolamenti (UE) 2018/1862 e (UE) 2019/818 per quanto riguarda la definizione \ndelle condizioni di accesso agli altri sistemi di informazione dell’UE ai fini del sistema europeo di informazione e autorizzazione ai viaggi"
           ],
           "fr": [
-            "Échange de notes du 11 août 2021 entre la Suisse et l'Union européenne concernant la reprise du règlement (UE) 2021/1150 modifiant les règlements (UE) 2018/1862 et (UE) 2019/818 en ce qui concerne l'établissement des conditions d'accès aux autres systèmes d'information de l'UE aux fins du système européen d'information et d'autorisation concernant les voyages – ETIAS CA Police"
+            "Échange de notes du 11 août 2021 entre la Suisse et l'Union européenne concernant la reprise du règlement (UE) 2021/1150 modifiant les règlements (UE) 2018/1862 et (UE) 2019/818 en ce qui concerne l'établissement des conditions d'accès aux autres systèmes d'information de l'UE aux fins du système européen d'information et d'autorisation concernant les voyages"
           ]
         }
       }
@@ -71,12 +76,25 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2021/0468/Registration/1",
+      "type": [
+        "Event",
+        "Registration",
+        "TaskForTreaty"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/2021/0468/ReferralToConseilGouvernement/1",
       "type": [
         "Event",
         "ReferralToConseilGouvernement",
         "TaskForTreaty"
-      ]
+      ],
+      "attributes": {
+        "draftLegislationInitialInformationPublishedIn": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/eli/fga/2022/1449"
+        }
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/2021/0468/TreatySignature/1",
@@ -103,10 +121,28 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2021/0468/EntryIntoForce/2",
+      "type": [
+        "EntryIntoForce",
+        "Event",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "entryIntoForceFor": "https://fedlex.data.admin.ch/vocabulary/country/718"
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1",
       "type": [
         "Concept",
         "TreatyType"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/country/10013",
+      "type": [
+        "Concept",
+        "Country"
       ]
     },
     {
@@ -134,7 +170,18 @@
   ],
   "graph": "https://fedlex.data.admin.ch/eli/treaty/2021/0468/graph",
   "facets": {
-    "sortingDate": "2021-08-11"
+    "sortingDate": "2021-08-11",
+    "acts": [
+      {
+        "memorialLabel": {
+          "http://publications.europa.eu/resource/authority/language/DEU": "BBl 2022 1449",
+          "http://publications.europa.eu/resource/authority/language/FRA": "FF 2022 1449",
+          "http://publications.europa.eu/resource/authority/language/ITA": "FF 2022 1449"
+        },
+        "uri": "https://fedlex.data.admin.ch/eli/fga/2022/1449",
+        "publicationDate": "2022-06-17"
+      }
+    ]
   },
   "timestampms": null
 }
