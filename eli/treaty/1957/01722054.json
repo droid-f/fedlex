@@ -17,7 +17,9 @@
       ],
       "treatyProcessHasTask": [
         "https://fedlex.data.admin.ch/eli/treaty/1957/01722054/treatySignature/1",
-        "https://fedlex.data.admin.ch/eli/treaty/1957/01722054/entryIntoForce/1"
+        "https://fedlex.data.admin.ch/eli/treaty/1957/01722054/Registration/1",
+        "https://fedlex.data.admin.ch/eli/treaty/1957/01722054/entryIntoForce/1",
+        "https://fedlex.data.admin.ch/eli/treaty/1957/01722054/ReferralToConseilGouvernement/1"
       ],
       "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1"
     },
@@ -27,6 +29,9 @@
       },
       "bilateral": {
         "xsd:boolean": false
+      },
+      "treatySignatureDate": {
+        "xsd:date": "2020-10-01"
       },
       "titleTreaty": {
         "rdf:langString": {
@@ -88,11 +93,17 @@
         "Event",
         "TaskForTreaty",
         "TreatySignature"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1957/01722054/Registration/1",
+      "type": [
+        "Event",
+        "Registration",
+        "TaskForTreaty"
       ],
-      "attributes": {
-        "treatySignatureDate": {
-          "xsd:date": "2020-10-01"
-        }
+      "references": {
+        "depositary": "https://fedlex.data.admin.ch/vocabulary/international-actor/1002"
       }
     },
     {
@@ -110,6 +121,14 @@
       "references": {
         "entryIntoForceFor": "https://fedlex.data.admin.ch/vocabulary/country/718"
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1957/01722054/ReferralToConseilGouvernement/1",
+      "type": [
+        "Event",
+        "ReferralToConseilGouvernement",
+        "TaskForTreaty"
+      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1",
@@ -136,6 +155,7 @@
   ],
   "graph": "https://fedlex.data.admin.ch/eli/treaty/1957/01722054/graph",
   "facets": {
+    "sortingDate": "2020-10-01",
     "acts": [
       {
         "memorialLabel": {

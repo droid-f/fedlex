@@ -70,6 +70,7 @@
         "https://fedlex.data.admin.ch/eli/treaty/2006/3068/partyConditionToTreaty/72",
         "https://fedlex.data.admin.ch/eli/treaty/2006/3068/partyConditionToTreaty/40",
         "https://fedlex.data.admin.ch/eli/treaty/2006/3068/partyConditionToTreaty/60",
+        "https://fedlex.data.admin.ch/eli/treaty/2006/3068/PartyConditionToTreaty/1",
         "https://fedlex.data.admin.ch/eli/treaty/2006/3068/partyConditionToTreaty/7",
         "https://fedlex.data.admin.ch/eli/treaty/2006/3068/partyConditionToTreaty/3",
         "https://fedlex.data.admin.ch/eli/treaty/2006/3068/partyConditionToTreaty/29",
@@ -160,6 +161,7 @@
         "https://fedlex.data.admin.ch/eli/treaty/2006/3068/notification/95",
         "https://fedlex.data.admin.ch/eli/treaty/2006/3068/notification/71",
         "https://fedlex.data.admin.ch/eli/treaty/2006/3068/treatySignature/1",
+        "https://fedlex.data.admin.ch/eli/treaty/2006/3068/Notification/1",
         "https://fedlex.data.admin.ch/eli/treaty/2006/3068/notification/170",
         "https://fedlex.data.admin.ch/eli/treaty/2006/3068/notification/194",
         "https://fedlex.data.admin.ch/eli/treaty/2006/3068/notification/182",
@@ -174,6 +176,7 @@
         "https://fedlex.data.admin.ch/eli/treaty/2006/3068/notification/94",
         "https://fedlex.data.admin.ch/eli/treaty/2006/3068/notification/70",
         "https://fedlex.data.admin.ch/eli/treaty/2006/3068/notification/82",
+        "https://fedlex.data.admin.ch/eli/treaty/2006/3068/Notification/2",
         "https://fedlex.data.admin.ch/eli/treaty/2006/3068/notification/181",
         "https://fedlex.data.admin.ch/eli/treaty/2006/3068/notification/80",
         "https://fedlex.data.admin.ch/eli/treaty/2006/3068/notification/193",
@@ -190,6 +193,7 @@
         "https://fedlex.data.admin.ch/eli/treaty/2006/3068/notification/81",
         "https://fedlex.data.admin.ch/eli/treaty/2006/3068/notification/93",
         "https://fedlex.data.admin.ch/eli/treaty/2006/3068/notification/196",
+        "https://fedlex.data.admin.ch/eli/treaty/2006/3068/Notification/3",
         "https://fedlex.data.admin.ch/eli/treaty/2006/3068/notification/184",
         "https://fedlex.data.admin.ch/eli/treaty/2006/3068/notification/91",
         "https://fedlex.data.admin.ch/eli/treaty/2006/3068/notification/172",
@@ -204,6 +208,7 @@
         "https://fedlex.data.admin.ch/eli/treaty/2006/3068/notification/24",
         "https://fedlex.data.admin.ch/eli/treaty/2006/3068/notification/12",
         "https://fedlex.data.admin.ch/eli/treaty/2006/3068/notification/92",
+        "https://fedlex.data.admin.ch/eli/treaty/2006/3068/Notification/4",
         "https://fedlex.data.admin.ch/eli/treaty/2006/3068/notification/195",
         "https://fedlex.data.admin.ch/eli/treaty/2006/3068/notification/90",
         "https://fedlex.data.admin.ch/eli/treaty/2006/3068/notification/183",
@@ -331,14 +336,15 @@
         "rdfs:Resource": [
           "https://fedlex.data.admin.ch/eli/oc/2013/296",
           "https://fedlex.data.admin.ch/eli/oc/2014/734",
-          "https://fedlex.data.admin.ch/eli/oc/2018/112"
+          "https://fedlex.data.admin.ch/eli/oc/2018/112",
+          "https://fedlex.data.admin.ch/eli/oc/2022/32"
         ]
       },
       "treatySignaturePlace": {
         "xsd:string": "Genève"
       },
       "treatyExpirationDate": {
-        "xsd:date": "2021-12-06"
+        "xsd:date": "2026-12-06"
       },
       "titleTreaty": {
         "rdf:langString": {
@@ -370,9 +376,15 @@
         "Work"
       ],
       "references": {
+        "modifies": [
+          "https://fedlex.data.admin.ch/eli/treaty/9999/1409/treatyDocument/1"
+        ],
         "workHasAnnex": [
           "https://fedlex.data.admin.ch/eli/treaty/2006/30681002/treatyDocument/1",
           "https://fedlex.data.admin.ch/eli/treaty/2006/30681001/treatyDocument/1"
+        ],
+        "modifiedBy": [
+          "https://fedlex.data.admin.ch/eli/treaty/2022/0014/TreatyDocument/1"
         ]
       },
       "attributes": {
@@ -1299,6 +1311,14 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2006/3068/PartyConditionToTreaty/1",
+      "type": "PartyConditionToTreaty",
+      "references": {
+        "partyConditionAccessionType": "https://fedlex.data.admin.ch/vocabulary/treaty-accession-type/1",
+        "partyConditionOfParty": "https://fedlex.data.admin.ch/vocabulary/country/10002"
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/2006/3068/partyConditionToTreaty/7",
       "type": "PartyConditionToTreaty",
       "attributes": {
@@ -1869,9 +1889,6 @@
       "attributes": {
         "notificationEntryIntoForceDate": {
           "xsd:date": "2013-01-19"
-        },
-        "notificationDate": {
-          "xsd:date": "2013-04-19"
         }
       }
     },
@@ -2675,6 +2692,18 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2006/3068/Notification/1",
+      "type": [
+        "Event",
+        "Notification",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/5",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/10002"
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/2006/3068/notification/170",
       "type": [
         "Event",
@@ -2909,6 +2938,23 @@
       "attributes": {
         "notificationEntryIntoForceDate": {
           "xsd:date": "2009-11-18"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2006/3068/Notification/2",
+      "type": [
+        "Event",
+        "Notification",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/4",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/10002"
+      },
+      "attributes": {
+        "notificationEntryIntoForceDate": {
+          "xsd:date": "2022-07-07"
         }
       }
     },
@@ -3185,6 +3231,23 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2006/3068/Notification/3",
+      "type": [
+        "Event",
+        "Notification",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/3",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/10002"
+      },
+      "attributes": {
+        "notificationEntryIntoForceDate": {
+          "xsd:date": "2022-07-07"
+        }
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/2006/3068/notification/184",
       "type": [
         "Event",
@@ -3420,6 +3483,18 @@
         "notificationEntryIntoForceDate": {
           "xsd:date": "2011-12-07"
         }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2006/3068/Notification/4",
+      "type": [
+        "Event",
+        "Notification",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/1",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/10002"
       }
     },
     {
@@ -5287,6 +5362,14 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/1409/treatyDocument/1",
+      "type": [
+        "LegalResource",
+        "TreatyDocument",
+        "Work"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/2006/30681002/treatyDocument/1",
       "type": [
         "LegalResource",
@@ -5296,6 +5379,14 @@
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/2006/30681001/treatyDocument/1",
+      "type": [
+        "LegalResource",
+        "TreatyDocument",
+        "Work"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2022/0014/TreatyDocument/1",
       "type": [
         "LegalResource",
         "TreatyDocument",
@@ -5730,6 +5821,13 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/country/10002",
+      "type": [
+        "Concept",
+        "Country"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/vocabulary/country/743",
       "type": [
         "Concept",
@@ -5943,6 +6041,15 @@
         },
         "uri": "https://fedlex.data.admin.ch/eli/fga/2007/123",
         "publicationDate": "2007-02-06"
+      },
+      {
+        "memorialLabel": {
+          "http://publications.europa.eu/resource/authority/language/DEU": "AS 2022 32",
+          "http://publications.europa.eu/resource/authority/language/FRA": "RO 2022 32",
+          "http://publications.europa.eu/resource/authority/language/ITA": "RU 2022 32"
+        },
+        "uri": "https://fedlex.data.admin.ch/eli/oc/2022/32",
+        "publicationDate": "2022-01-25"
       },
       {
         "memorialLabel": {

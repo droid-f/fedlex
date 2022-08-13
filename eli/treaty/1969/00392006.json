@@ -14,7 +14,10 @@
       ],
       "treatyProcessHasTask": [
         "https://fedlex.data.admin.ch/eli/treaty/1969/00392006/entryIntoForce/1",
-        "https://fedlex.data.admin.ch/eli/treaty/1969/00392006/treatySignature/1"
+        "https://fedlex.data.admin.ch/eli/treaty/1969/00392006/TreatyRatification/2",
+        "https://fedlex.data.admin.ch/eli/treaty/1969/00392006/ReferralToConseilGouvernement/1",
+        "https://fedlex.data.admin.ch/eli/treaty/1969/00392006/treatySignature/1",
+        "https://fedlex.data.admin.ch/eli/treaty/1969/00392006/Registration/1"
       ],
       "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1",
       "treatyPartyCountry": [
@@ -24,6 +27,9 @@
     "attributes": {
       "bilateral": {
         "xsd:boolean": true
+      },
+      "treatySignatureDate": {
+        "xsd:date": "2014-11-19"
       },
       "titleTreaty": {
         "rdf:langString": {
@@ -78,17 +84,49 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1969/00392006/TreatyRatification/2",
+      "type": [
+        "Event",
+        "TaskForTreaty",
+        "TreatyRatification"
+      ],
+      "attributes": {
+        "treatyPartyRatificationDate": {
+          "xsd:date": "2015-05-25"
+        }
+      },
+      "references": {
+        "treatyRatificationParty": "https://fedlex.data.admin.ch/vocabulary/country/718"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1969/00392006/ReferralToConseilGouvernement/1",
+      "type": [
+        "Event",
+        "ReferralToConseilGouvernement",
+        "TaskForTreaty"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/1969/00392006/treatySignature/1",
       "type": [
         "Event",
         "TaskForTreaty",
         "TreatySignature"
       ],
-      "attributes": {
-        "treatySignatureDate": {
-          "xsd:date": "2014-11-19"
-        }
+      "references": {
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ENG"
+        ]
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1969/00392006/Registration/1",
+      "type": [
+        "Event",
+        "Registration",
+        "TaskForTreaty"
+      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1",
@@ -118,8 +156,18 @@
         "Concept",
         "Country"
       ]
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/authority/language/ENG",
+      "type": [
+        "Concept",
+        "Language"
+      ]
     }
   ],
   "graph": "https://fedlex.data.admin.ch/eli/treaty/1969/00392006/graph",
+  "facets": {
+    "sortingDate": "2014-11-19"
+  },
   "timestampms": null
 }
