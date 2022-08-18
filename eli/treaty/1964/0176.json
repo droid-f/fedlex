@@ -23,11 +23,17 @@
       "treatySubject": [
         "https://fedlex.data.admin.ch/vocabulary/treaty-subject-theme/12"
       ],
+      "treatyHasRatificationRestriction": [
+        "https://fedlex.data.admin.ch/eli/treaty/1964/0176/RatificationRestriction/1"
+      ],
       "treatyUnderUmbrellaOf": [
         "https://fedlex.data.admin.ch/vocabulary/international-actor/10077"
       ],
       "treatyProcessHasTask": [
+        "https://fedlex.data.admin.ch/eli/treaty/1964/0176/Notification/2",
         "https://fedlex.data.admin.ch/eli/treaty/1964/0176/treatySignature/1",
+        "https://fedlex.data.admin.ch/eli/treaty/1964/0176/Notification/6",
+        "https://fedlex.data.admin.ch/eli/treaty/1964/0176/Notification/4",
         "https://fedlex.data.admin.ch/eli/treaty/1964/0176/notification/9",
         "https://fedlex.data.admin.ch/eli/treaty/1964/0176/treatyRatification/1",
         "https://fedlex.data.admin.ch/eli/treaty/1964/0176/notification/5",
@@ -39,9 +45,15 @@
         "https://fedlex.data.admin.ch/eli/treaty/1964/0176/notification/3",
         "https://fedlex.data.admin.ch/eli/treaty/1964/0176/notification/15",
         "https://fedlex.data.admin.ch/eli/treaty/1964/0176/notification/21",
+        "https://fedlex.data.admin.ch/eli/treaty/1964/0176/Notification/8",
         "https://fedlex.data.admin.ch/eli/treaty/1964/0176/notification/11",
+        "https://fedlex.data.admin.ch/eli/treaty/1964/0176/Notification/10",
         "https://fedlex.data.admin.ch/eli/treaty/1964/0176/entryIntoForce/1",
+        "https://fedlex.data.admin.ch/eli/treaty/1964/0176/Notification/3",
+        "https://fedlex.data.admin.ch/eli/treaty/1964/0176/Notification/1",
+        "https://fedlex.data.admin.ch/eli/treaty/1964/0176/Notification/7",
         "https://fedlex.data.admin.ch/eli/treaty/1964/0176/referral/1",
+        "https://fedlex.data.admin.ch/eli/treaty/1964/0176/Notification/5",
         "https://fedlex.data.admin.ch/eli/treaty/1964/0176/notification/8",
         "https://fedlex.data.admin.ch/eli/treaty/1964/0176/registration/1",
         "https://fedlex.data.admin.ch/eli/treaty/1964/0176/notification/18",
@@ -52,8 +64,10 @@
         "https://fedlex.data.admin.ch/eli/treaty/1964/0176/notification/2",
         "https://fedlex.data.admin.ch/eli/treaty/1964/0176/notification/10",
         "https://fedlex.data.admin.ch/eli/treaty/1964/0176/notification/20",
+        "https://fedlex.data.admin.ch/eli/treaty/1964/0176/Notification/9",
         "https://fedlex.data.admin.ch/eli/treaty/1964/0176/notification/12",
-        "https://fedlex.data.admin.ch/eli/treaty/1964/0176/notification/22"
+        "https://fedlex.data.admin.ch/eli/treaty/1964/0176/notification/22",
+        "https://fedlex.data.admin.ch/eli/treaty/1964/0176/Notification/11"
       ],
       "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1",
       "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/826"
@@ -72,6 +86,7 @@
         "rdfs:Resource": [
           "https://fedlex.data.admin.ch/eli/oc/1976/1728_1728_1728",
           "https://fedlex.data.admin.ch/eli/oc/1977/1412_1412_1410",
+          "https://fedlex.data.admin.ch/eli/oc/1966/538_557_554",
           "https://fedlex.data.admin.ch/eli/oc/2013/237",
           "https://fedlex.data.admin.ch/eli/oc/1968/936_976_892",
           "https://fedlex.data.admin.ch/eli/oc/1971/1355_1350_1350",
@@ -149,6 +164,9 @@
         }
       },
       "references": {
+        "partyConditionHasRatificationRestriction": [
+          "https://fedlex.data.admin.ch/eli/treaty/1964/0176/RatificationRestriction/1"
+        ],
         "partyConditionOfParty": "https://fedlex.data.admin.ch/vocabulary/country/636"
       }
     },
@@ -266,11 +284,45 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1964/0176/RatificationRestriction/1",
+      "type": "RatificationRestriction",
+      "attributes": {
+        "ratificationRestrictionDescription": {
+          "rdf:langString": {
+            "de": [
+              "Für das Königreich in Europa."
+            ],
+            "it": [
+              "Per il Regno in Europa."
+            ],
+            "fr": [
+              "Pour le Royaume en Europe."
+            ]
+          }
+        },
+        "ratificationRestrictionId": {
+          "xsd:string": "1"
+        }
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/vocabulary/international-actor/10077",
       "type": [
         "Concept",
         "InternationalActor"
       ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1964/0176/Notification/2",
+      "type": [
+        "Event",
+        "Notification",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/5",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/518"
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/1964/0176/treatySignature/1",
@@ -288,6 +340,30 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/FRA"
         ]
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1964/0176/Notification/6",
+      "type": [
+        "Event",
+        "Notification",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/4",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/172"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1964/0176/Notification/4",
+      "type": [
+        "Event",
+        "Notification",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/5",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/332"
       }
     },
     {
@@ -477,6 +553,18 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1964/0176/Notification/8",
+      "type": [
+        "Event",
+        "Notification",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/5",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/718"
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/1964/0176/notification/11",
       "type": [
         "Event",
@@ -491,6 +579,18 @@
         "notificationEntryIntoForceDate": {
           "xsd:date": "1966-04-06"
         }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1964/0176/Notification/10",
+      "type": [
+        "Event",
+        "Notification",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/3",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/172"
       }
     },
     {
@@ -510,12 +610,60 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1964/0176/Notification/3",
+      "type": [
+        "Event",
+        "Notification",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/5",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/763"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1964/0176/Notification/1",
+      "type": [
+        "Event",
+        "Notification",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/5",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/636"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1964/0176/Notification/7",
+      "type": [
+        "Event",
+        "Notification",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/5",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/172"
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/1964/0176/referral/1",
       "type": [
         "Event",
         "ReferralToConseilGouvernement",
         "TaskForTreaty"
       ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1964/0176/Notification/5",
+      "type": [
+        "Event",
+        "Notification",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/5",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/136"
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/1964/0176/notification/8",
@@ -682,6 +830,18 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1964/0176/Notification/9",
+      "type": [
+        "Event",
+        "Notification",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/5",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/349"
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/1964/0176/notification/12",
       "type": [
         "Event",
@@ -713,6 +873,18 @@
         "notificationEntryIntoForceDate": {
           "xsd:date": "1967-08-24"
         }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1964/0176/Notification/11",
+      "type": [
+        "Event",
+        "Notification",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/1",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/332"
       }
     },
     {
@@ -824,6 +996,13 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/notification-type/5",
+      "type": [
+        "Concept",
+        "NotificationType"
+      ]
+    },
+    {
       "uri": "http://publications.europa.eu/resource/authority/language/FRA",
       "type": [
         "Concept",
@@ -831,14 +1010,14 @@
       ]
     },
     {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/notification-type/1",
+      "uri": "https://fedlex.data.admin.ch/vocabulary/notification-type/4",
       "type": [
         "Concept",
         "NotificationType"
       ]
     },
     {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/notification-type/4",
+      "uri": "https://fedlex.data.admin.ch/vocabulary/notification-type/1",
       "type": [
         "Concept",
         "NotificationType"
