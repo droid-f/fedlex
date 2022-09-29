@@ -9,6 +9,10 @@
       "treatyProcessHasResultingTreatyDocument": [
         "https://fedlex.data.admin.ch/eli/treaty/1234/18092/treatyDocument/1"
       ],
+      "treatyProcessHasTask": [
+        "https://fedlex.data.admin.ch/eli/treaty/1234/18092/EntryIntoForce/1",
+        "https://fedlex.data.admin.ch/eli/treaty/1234/18092/TreatySignature/1"
+      ],
       "euConventionDomain": "https://fedlex.data.admin.ch/vocabulary/eutext-subject-theme/12",
       "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/3",
       "treatyPartyOrganisation": [
@@ -29,13 +33,16 @@
       "titleTreaty": {
         "rdf:langString": {
           "de": [
-            "Protokoll Nr. 1 über die Regelung für bestimmte Waren "
+            "Protokoll Nr. 1 über die Regelung für bestimmte Waren"
+          ],
+          "en": [
+            ""
           ],
           "it": [
             "Protocollo n. 1 concernente il regime applicabile a taluni prodotti "
           ],
           "fr": [
-            "Protocoll N° 1 concernant le régime applicable à certains produits "
+            "Protocol N° 1 concernant le régime applicable à certains produits"
           ]
         }
       }
@@ -54,6 +61,25 @@
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/31"
         }
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1234/18092/EntryIntoForce/1",
+      "type": [
+        "EntryIntoForce",
+        "Event",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "entryIntoForceFor": "https://fedlex.data.admin.ch/vocabulary/country/718"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1234/18092/TreatySignature/1",
+      "type": [
+        "Event",
+        "TaskForTreaty",
+        "TreatySignature"
+      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/eutext-subject-theme/12",
@@ -97,6 +123,13 @@
           "xsd:int": 1
         }
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/country/718",
+      "type": [
+        "Concept",
+        "Country"
+      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/euLegalResource/europarecht_6163",
