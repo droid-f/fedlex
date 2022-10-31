@@ -16,6 +16,7 @@
         "https://fedlex.data.admin.ch/eli/treaty/2021/0320/ReferralToConseilGouvernement/1",
         "https://fedlex.data.admin.ch/eli/treaty/2021/0320/Registration/1",
         "https://fedlex.data.admin.ch/eli/treaty/2021/0320/TreatySignature/1",
+        "https://fedlex.data.admin.ch/eli/treaty/2021/0320/TreatyRatification/2",
         "https://fedlex.data.admin.ch/eli/treaty/2021/0320/EntryIntoForce/1"
       ],
       "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1",
@@ -62,6 +63,9 @@
       "references": {
         "modifies": [
           "https://fedlex.data.admin.ch/eli/treaty/1971/0015/treatyDocument/1"
+        ],
+        "workHasAnnex": [
+          "https://fedlex.data.admin.ch/eli/treaty/2022/0251/TreatyDocument/2"
         ]
       },
       "attributes": {
@@ -114,12 +118,33 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2021/0320/TreatyRatification/2",
+      "type": [
+        "Event",
+        "TaskForTreaty",
+        "TreatyRatification"
+      ],
+      "attributes": {
+        "treatyPartyRatificationDate": {
+          "xsd:date": "2022-10-31"
+        }
+      },
+      "references": {
+        "treatyRatificationParty": "https://fedlex.data.admin.ch/vocabulary/country/718"
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/2021/0320/EntryIntoForce/1",
       "type": [
         "EntryIntoForce",
         "Event",
         "TaskForTreaty"
       ],
+      "attributes": {
+        "entryIntoForceDate": {
+          "xsd:date": "2022-11-30"
+        }
+      },
       "references": {
         "entryIntoForceFor": "https://fedlex.data.admin.ch/vocabulary/country/718"
       }
@@ -140,6 +165,14 @@
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/1971/0015/treatyDocument/1",
+      "type": [
+        "LegalResource",
+        "TreatyDocument",
+        "Work"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2022/0251/TreatyDocument/2",
       "type": [
         "LegalResource",
         "TreatyDocument",

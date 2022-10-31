@@ -18,7 +18,10 @@
       "treatyProcessHasTask": [
         "https://fedlex.data.admin.ch/eli/treaty/2022/0037/TreatySignature/1",
         "https://fedlex.data.admin.ch/eli/treaty/2022/0037/ReferralToConseilGouvernement/1",
-        "https://fedlex.data.admin.ch/eli/treaty/2022/0037/EntryIntoForce/1"
+        "https://fedlex.data.admin.ch/eli/treaty/2022/0037/Registration/1",
+        "https://fedlex.data.admin.ch/eli/treaty/2022/0037/EntryIntoForce/1",
+        "https://fedlex.data.admin.ch/eli/treaty/2022/0037/TreatyRatification/2",
+        "https://fedlex.data.admin.ch/eli/treaty/2022/0037/EntryIntoForce/2"
       ],
       "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1"
     },
@@ -44,7 +47,7 @@
             ""
           ],
           "fr": [
-            "Onzième Protocole additionnel à la Constitution de l'Union postale universelle - Constitution de l'Union postale universelle du 10 juillet 1964"
+            "Onzième Protocole additionnel à la Constitution de l'Union postale universelle - 26 août 2021 - Constitution de l'Union postale universelle du 10 juillet 1964"
           ]
         }
       }
@@ -106,7 +109,50 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2022/0037/Registration/1",
+      "type": [
+        "Event",
+        "Registration",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "depositary": "https://fedlex.data.admin.ch/vocabulary/international-actor/10416"
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/2022/0037/EntryIntoForce/1",
+      "type": [
+        "EntryIntoForce",
+        "Event",
+        "TaskForTreaty"
+      ],
+      "attributes": {
+        "entryIntoForceDate": {
+          "xsd:date": "2022-10-07"
+        }
+      },
+      "references": {
+        "entryIntoForceFor": "https://fedlex.data.admin.ch/vocabulary/country/718"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2022/0037/TreatyRatification/2",
+      "type": [
+        "Event",
+        "TaskForTreaty",
+        "TreatyRatification"
+      ],
+      "attributes": {
+        "treatyPartyRatificationDate": {
+          "xsd:date": "2022-10-07"
+        }
+      },
+      "references": {
+        "treatyRatificationParty": "https://fedlex.data.admin.ch/vocabulary/country/718"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2022/0037/EntryIntoForce/2",
       "type": [
         "EntryIntoForce",
         "Event",
