@@ -48,7 +48,7 @@
               "Hauptanlass und Hauptinhalt der Revision ist die geplante Einführung des neuen Datenmodells DM.flex für die amtliche Vermessung. Mit dem DM.flex soll künftig ein modulares und flexibles Datenmodell zum Einsatz kommen. Weitere Punkte der Revision sind die Details zur Neuregelung der Finanzierung der amtlichen Vermessung, die Regelung der Archivierung und Einführung der Historisierung, die Öffnung für neue Technologien, die Aufnahme der Dienstbarkeiten in die amtliche Vermessung, die Möglichkeiten der elektronischen Beglaubigung von Auszügen auch im Bereich der amtlichen Vermessung, die Möglichkeit von Pilotprojekten sowie die Anpassung des Meldeflusses bei Plangenehmigungsverfahren."
             ],
             "it": [
-              "Il motivo principale e il contenuto della revisione è la prevista introduzione del nuo-vo modello di dati DM.flex per la misurazione ufficiale. Con DM.flex, troverà impiego in futuro un modello di dati modulare e flessibile per la misurazione ufficiale. Altri punti della revisione sono i dettagli sulla nuova regolamentazione del finanziamen-to della misurazione ufficiale, la regolamentazione dell’archiviazione e l’introduzio-ne della storicizzazione, l’apertura alle nuove tecnologie, l’inclusione dei piani di servitù nella misurazione ufficiale, l’introduzione della certificazione elettronica nell’ambito della misurazione ufficiale, l’introduzione di una clausola sperimentale e l’adeguamento del flusso delle notifiche nelle procedure di approvazione dei piani."
+              "Il motivo principale e il contenuto della revisione è la prevista introduzione del nuovo modello di dati DM.flex per la misurazione ufficiale. Con DM.flex, troverà impiego in futuro un modello di dati modulare e flessibile per la misurazione ufficiale. Altri punti della revisione sono i dettagli sulla nuova regolamentazione del finanziamento della misurazione ufficiale, la regolamentazione dell’archiviazione e l’introduzione della storicizzazione, l’apertura alle nuove tecnologie, l’inclusione dei piani di servitù nella misurazione ufficiale, l’introduzione della certificazione elettronica nell’ambito della misurazione ufficiale, l’introduzione di una clausola sperimentale e l’adeguamento del flusso delle notifiche nelle procedure di approvazione dei piani."
             ],
             "fr": [
               "L’introduction prévue du nouveau modèle de données DM.flex pour la mensuration officielle est au cœur de la présente révision. Avec DM.flex, la mensuration officielle entend se doter d’un modèle de données alliant modularité et flexibilité. La révision s’attache par ailleurs à redéfinir les règles de financement de la mensuration offi-cielle ainsi qu’à régir l’archivage et l’introduction de l’historisation, l’ouverture à de nouvelles technologies, l’intégration des servitudes dans la mensuration officielle, les possibilités inhérentes à la légalisation électronique d’extraits dans le domaine de la mensuration officielle, la possibilité de mener des projets pilotes de même que l’adaptation du flux des annonces lors de la procédure d’approbation de plans."
@@ -68,10 +68,11 @@
         "foreseenImpactToLegalResource": [
           "https://fedlex.data.admin.ch/eli/cc/1992/2446_2446_2446"
         ],
-        "consultationStatus": "https://fedlex.data.admin.ch/vocabulary/consultation-status/4",
+        "consultationStatus": "https://fedlex.data.admin.ch/vocabulary/consultation-status/5",
         "hasSubTask": [
           "https://fedlex.data.admin.ch/eli/dl/proj/2022/3/cons_1/cons-pos",
-          "https://fedlex.data.admin.ch/eli/dl/proj/2022/3/cons_1/cons-open"
+          "https://fedlex.data.admin.ch/eli/dl/proj/2022/3/cons_1/cons-open",
+          "https://fedlex.data.admin.ch/eli/dl/proj/2022/3/cons_1/cons-result"
         ]
       }
     },
@@ -104,7 +105,7 @@
       ]
     },
     {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/consultation-status/4",
+      "uri": "https://fedlex.data.admin.ch/vocabulary/consultation-status/5",
       "type": [
         "Concept",
         "ConsultationStatus"
@@ -163,6 +164,25 @@
         "eventStartDate": {
           "xsd:date": "2022-02-02"
         }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2022/3/cons_1/cons-result",
+      "type": [
+        "ConsultationTask",
+        "Event",
+        "LegislativeTask",
+        "ResultOfAConsultationPublication"
+      ],
+      "references": {
+        "institutionInChargeOfTheEventLevel2": "https://fedlex.data.admin.ch/vocabulary/legal-institution/174",
+        "institutionInChargeOfTheEvent": "https://fedlex.data.admin.ch/vocabulary/legal-institution/S0",
+        "opinionHasDraftRelatedDocument": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2022/3/cons_1/doc_10"
+        ],
+        "consultationHasModification": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2022/3/cons_1/cons-result/consultation-modification-history/1"
+        ]
       }
     },
     {
@@ -488,6 +508,50 @@
       "attributes": {
         "consultationStageDate": {
           "xsd:dateTime": "2022-02-03T10:28:07.675Z"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2022/3/cons_1/doc_10",
+      "type": [
+        "DraftRelatedDocument",
+        "Work"
+      ],
+      "references": {
+        "draftProcessDocumentType": [
+          "https://fedlex.data.admin.ch/vocabulary/draft-document-type/31"
+        ],
+        "isRealizedBy": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2022/3/cons_1/doc_10/de",
+          "https://fedlex.data.admin.ch/eli/dl/proj/2022/3/cons_1/doc_10/fr",
+          "https://fedlex.data.admin.ch/eli/dl/proj/2022/3/cons_1/doc_10/it"
+        ]
+      },
+      "attributes": {
+        "title": {
+          "rdf:langString": {
+            "de": [
+              "Ergebnisbericht"
+            ],
+            "it": [
+              "Rapporto sui risultati"
+            ],
+            "fr": [
+              "Rapport de résultats"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2022/3/cons_1/cons-result/consultation-modification-history/1",
+      "type": [
+        "ConsultationModificationHistory",
+        "Event"
+      ],
+      "attributes": {
+        "consultationStageDate": {
+          "xsd:dateTime": "2022-11-23T16:05:16.956Z"
         }
       }
     },
@@ -935,6 +999,58 @@
       "attributes": {
         "title": {
           "xsd:string": "Vernehmlassungsvorlage"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/draft-document-type/31",
+      "type": [
+        "Concept",
+        "DraftProcessDocumentType"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2022/3/cons_1/doc_10/de",
+      "type": "Expression",
+      "references": {
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2022/3/cons_1/doc_10/de/pdf-a"
+        ],
+        "language": "http://publications.europa.eu/resource/authority/language/DEU"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Ergebnisbericht"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2022/3/cons_1/doc_10/fr",
+      "type": "Expression",
+      "references": {
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2022/3/cons_1/doc_10/fr/pdf-a"
+        ],
+        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Rapport de résultats"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2022/3/cons_1/doc_10/it",
+      "type": "Expression",
+      "references": {
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2022/3/cons_1/doc_10/it/pdf-a"
+        ],
+        "language": "http://publications.europa.eu/resource/authority/language/ITA"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Rapporto sui risultati"
         }
       }
     },
@@ -1527,6 +1643,69 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2022/3/cons_1/doc_10/de/pdf-a",
+      "type": "Manifestation",
+      "attributes": {
+        "manifestationByDefault": {
+          "xsd:boolean": true
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/dl/proj/2022/3/cons_1/doc_10/de/pdf-a/fedlex-data-admin-ch-eli-dl-proj-2022-3-cons_1-doc_10-de-pdf-a.pdf"
+        },
+        "publicationDate": {
+          "xsd:dateTime": "2022-11-23T16:05:16.963Z"
+        }
+      },
+      "references": {
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2022/3/cons_1/doc_10/fr/pdf-a",
+      "type": "Manifestation",
+      "attributes": {
+        "manifestationByDefault": {
+          "xsd:boolean": true
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/dl/proj/2022/3/cons_1/doc_10/fr/pdf-a/fedlex-data-admin-ch-eli-dl-proj-2022-3-cons_1-doc_10-fr-pdf-a.pdf"
+        },
+        "publicationDate": {
+          "xsd:dateTime": "2022-11-23T16:05:16.963Z"
+        }
+      },
+      "references": {
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2022/3/cons_1/doc_10/it/pdf-a",
+      "type": "Manifestation",
+      "attributes": {
+        "manifestationByDefault": {
+          "xsd:boolean": true
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/dl/proj/2022/3/cons_1/doc_10/it/pdf-a/fedlex-data-admin-ch-eli-dl-proj-2022-3-cons_1-doc_10-it-pdf-a.pdf"
+        },
+        "publicationDate": {
+          "xsd:dateTime": "2022-11-23T16:05:16.963Z"
+        }
+      },
+      "references": {
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
       "type": [
         "Concept",
@@ -1542,11 +1721,12 @@
         "taxonomyId": "211.432.2"
       }
     ],
-    "sortingDate": "2022-05-30T11:58:26.870Z",
-    "modified": "2022-05-30T13:58:30.565527",
+    "sortingDate": "2022-11-23T16:05:16.956Z",
+    "modified": "2022-11-23T17:05:21.984373",
     "department": {
       "PositionStatementPublication": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D2",
-      "ConsultationPhase": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D2"
+      "ConsultationPhase": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D2",
+      "ResultOfAConsultationPublication": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D2"
     }
   },
   "timestampms": null
