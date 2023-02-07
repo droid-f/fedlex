@@ -9,12 +9,16 @@
       "treatyProcessHasResultingTreatyDocument": [
         "https://fedlex.data.admin.ch/eli/treaty/2021/0366/TreatyDocument/1"
       ],
+      "treatySubject": [
+        "https://fedlex.data.admin.ch/vocabulary/treaty-subject-theme/53"
+      ],
       "treatyUnderUmbrellaOf": [
         "https://fedlex.data.admin.ch/vocabulary/international-actor/1002"
       ],
       "treatyProcessHasTask": [
         "https://fedlex.data.admin.ch/eli/treaty/2021/0366/EntryIntoForce/1",
-        "https://fedlex.data.admin.ch/eli/treaty/2021/0366/TreatySignature/1"
+        "https://fedlex.data.admin.ch/eli/treaty/2021/0366/TreatySignature/1",
+        "https://fedlex.data.admin.ch/eli/treaty/2021/0366/ReferralToConseilGouvernement/1"
       ],
       "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1"
     },
@@ -31,6 +35,9 @@
       "treatySignaturePlace": {
         "xsd:string": "Londres"
       },
+      "treatyExpirationDate": {
+        "xsd:date": "2023-06-30"
+      },
       "titleTreaty": {
         "rdf:langString": {
           "de": [
@@ -40,12 +47,15 @@
             "Extension of the Grains Trade Convention of 1995 - International Grains Agreement, 1995"
           ],
           "it": [
-            "Proroga la Convenzione sul commercio dei cereali del 1995 - Accordo internazionale sui cereali del 1995"
+            "Proroga della Convenzione sul commercio dei cereali del 1995 - Accordo internazionale sui cereali del 1995"
           ],
           "fr": [
-            "Prorogation de la Convention sur le Commerce des céréales de 1995 -Accord international sur les Céréales de 1995"
+            "Prorogation de la Convention sur le Commerce des céréales de 1995 - Accord international sur les Céréales de 1995"
           ]
         }
+      },
+      "approbationAct": {
+        "rdfs:Resource": "https://fedlex.data.admin.ch/eli/oc/2021/557"
       }
     }
   },
@@ -69,6 +79,13 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/treaty-subject-theme/53",
+      "type": [
+        "Concept",
+        "TreatySubjectTheme"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/vocabulary/international-actor/1002",
       "type": [
         "Concept",
@@ -82,6 +99,11 @@
         "Event",
         "TaskForTreaty"
       ],
+      "attributes": {
+        "entryIntoForceDate": {
+          "xsd:date": "2021-07-01"
+        }
+      },
       "references": {
         "entryIntoForceFor": "https://fedlex.data.admin.ch/vocabulary/country/718"
       }
@@ -92,6 +114,20 @@
         "Event",
         "TaskForTreaty",
         "TreatySignature"
+      ],
+      "references": {
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA",
+          "http://publications.europa.eu/resource/authority/language/ENG"
+        ]
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2021/0366/ReferralToConseilGouvernement/1",
+      "type": [
+        "Event",
+        "ReferralToConseilGouvernement",
+        "TaskForTreaty"
       ]
     },
     {
@@ -115,11 +151,36 @@
         "Concept",
         "Country"
       ]
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/authority/language/ENG",
+      "type": [
+        "Concept",
+        "Language"
+      ]
     }
   ],
   "graph": "https://fedlex.data.admin.ch/eli/treaty/2021/0366/graph",
   "facets": {
-    "sortingDate": "2021-06-07"
+    "sortingDate": "2021-06-07",
+    "acts": [
+      {
+        "memorialLabel": {
+          "http://publications.europa.eu/resource/authority/language/DEU": "AS 2021 557",
+          "http://publications.europa.eu/resource/authority/language/FRA": "RO 2021 557",
+          "http://publications.europa.eu/resource/authority/language/ITA": "RU 2021 557"
+        },
+        "uri": "https://fedlex.data.admin.ch/eli/oc/2021/557",
+        "publicationDate": "2021-09-15"
+      }
+    ]
   },
   "timestampms": null
 }
