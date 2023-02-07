@@ -9,6 +9,10 @@
       "treatyProcessHasResultingTreatyDocument": [
         "https://fedlex.data.admin.ch/eli/treaty/1234/17982/treatyDocument/1"
       ],
+      "treatyProcessHasTask": [
+        "https://fedlex.data.admin.ch/eli/treaty/1234/17982/TreatySignature/1",
+        "https://fedlex.data.admin.ch/eli/treaty/1234/17982/EntryIntoForce/1"
+      ],
       "euConventionDomain": "https://fedlex.data.admin.ch/vocabulary/eutext-subject-theme/5",
       "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/3",
       "treatyPartyOrganisation": [
@@ -75,6 +79,25 @@
         "typeDocument": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/31"
         }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1234/17982/TreatySignature/1",
+      "type": [
+        "Event",
+        "TaskForTreaty",
+        "TreatySignature"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1234/17982/EntryIntoForce/1",
+      "type": [
+        "EntryIntoForce",
+        "Event",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "entryIntoForceFor": "https://fedlex.data.admin.ch/vocabulary/country/718"
       }
     },
     {
@@ -461,6 +484,8 @@
         "legalResourceHasImpact": [
           "https://fedlex.data.admin.ch/eli/treaty/1234/17982/LegalResourceImpact/7",
           "https://fedlex.data.admin.ch/eli/treaty/1234/17982/LegalResourceImpact/8",
+          "https://fedlex.data.admin.ch/eli/treaty/1234/17982/LegalResourceImpact/9",
+          "https://fedlex.data.admin.ch/eli/treaty/1234/17982/LegalResourceImpact/10",
           "https://fedlex.data.admin.ch/eli/treaty/1234/17982/LegalResourceImpact/6",
           "https://fedlex.data.admin.ch/eli/treaty/1234/17982/initiation/eu/13/impact/3",
           "https://fedlex.data.admin.ch/eli/treaty/1234/17982/initiation/eu/13/impact/4",
@@ -636,6 +661,13 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/country/718",
+      "type": [
+        "Concept",
+        "Country"
+      ]
+    },
+    {
       "uri": "http://publications.europa.eu/resource/cellar/71f80efb-7bb8-46f7-8812-75dcccaaef18",
       "type": [
         "EULegalResource",
@@ -656,9 +688,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "32000L0079"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -671,6 +700,9 @@
               "Directive 2000/79/CE du Conseil du 27 novembre 2000 concernant la mise en oeuvre de l'accord européen relatif à l'aménagement du temps de travail du personnel mobile dans l'aviation civile, conclu par l'Association des compagnies européennes de navigation aérienne (AEA), la Fédération européenne des travailleurs des transports (ETF), l'Association européenne des personnels navigants techniques (ECA), l'Association européenne des compagnies d'aviation des régions d'Europe (ERA) et l'Association internationale des charters aériens (AICA) (Texte présentant de l'intérêt pour l'EEE)"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "32000L0079"
         },
         "publicationDate": {
           "xsd:date": "2000-11-27"
@@ -730,9 +762,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "31993L0104"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -745,6 +774,9 @@
               "Directive 93/104/CE du Conseil, du 23 novembre 1993, concernant certains aspects de l'aménagement du temps de travail"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "31993L0104"
         },
         "publicationDate": {
           "xsd:date": "1993-12-13"
@@ -772,9 +804,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "32003L0088"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -787,6 +816,9 @@
               "Directive 2003/88/CE du Parlement européen et du Conseil du 4 novembre 2003 concernant certains aspects de l'aménagement du temps de travail"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "32003L0088"
         },
         "publicationDate": {
           "xsd:date": "2003-11-19"
@@ -840,9 +872,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "32003R0437"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -855,6 +884,9 @@
               "Règlement (CE) n° 437/2003 du Parlement européen et du Conseil du 27 février 2003 sur les données statistiques relatives au transport de passagers, de fret et de courrier par voie aérienne"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "32003R0437"
         },
         "publicationDate": {
           "xsd:date": "2003-03-13"
@@ -908,9 +940,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "31996L0067"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -923,6 +952,9 @@
               "Directive 96/67/CE du Conseil du 15 octobre 1996 relative à l'accès au marché de l'assistance en escale dans les aéroports de la Communauté"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "31996L0067"
         },
         "publicationDate": {
           "xsd:date": "1996-10-30"
@@ -1030,9 +1062,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "31989R2299"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -1045,6 +1074,9 @@
               "Règlement (CEE) n° 2299/89 du Conseil, du 24 juillet 1989, instaurant un code de conduite pour l'utilisation de systèmes informatisés de réservation"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "31989R2299"
         },
         "publicationDate": {
           "xsd:date": "1989-07-29"
@@ -1101,9 +1133,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "31992R2407"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -1116,6 +1145,9 @@
               "Règlement (CEE) n° 2407/92 du Conseil, du 23 juillet 1992, concernant les licences des transporteurs aériens"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "31992R2407"
         },
         "publicationDate": {
           "xsd:date": "1992-08-24"
@@ -1143,9 +1175,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "32009R0080"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -1158,6 +1187,9 @@
               "Règlement (CE) n o  80/2009 du Parlement européen et du Conseil du 14 janvier 2009 instaurant un code de conduite pour l’utilisation de systèmes informatisés de réservation et abrogeant le règlement (CEE) n o  2299/89 du Conseil (Texte présentant de l’intérêt pour l’EEE)"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "32009R0080"
         },
         "publicationDate": {
           "xsd:date": "2009-02-04"
@@ -1185,9 +1217,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "31991R0295"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -1200,6 +1229,9 @@
               "Règlement (CEE) n° 295/91 du Conseil, du 4 février 1991, établissant des règles communes relatives à un système de compensation pour refus d'embarquement dans les transports aériens réguliers"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "31991R0295"
         },
         "publicationDate": {
           "xsd:date": "1991-02-08"
@@ -1320,9 +1352,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "31992R2408"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -1335,6 +1364,9 @@
               "Règlement (CEE) n° 2408/92 du Conseil, du 23 juillet 1992, concernant l'accès des transporteurs aériens communautaires aux liaisons aériennes intracommunautaires"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "31992R2408"
         },
         "publicationDate": {
           "xsd:date": "1992-08-24"
@@ -1375,9 +1407,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "31992R2409"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -1390,6 +1419,9 @@
               "Règlement (CEE) n° 2409/92 du Conseil, du 23 juillet 1992, sur les tarifs des passagers et de fret des services aériens"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "31992R2409"
         },
         "publicationDate": {
           "xsd:date": "1992-08-24"
@@ -1449,9 +1481,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "31980L0051"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -1464,6 +1493,9 @@
               "Directive 80/51/CEE du Conseil, du 20 décembre 1979, relative à la limitation des émissions sonores des aéronefs subsoniques"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "31980L0051"
         },
         "publicationDate": {
           "xsd:date": "1980-01-24"
@@ -1523,9 +1555,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "31993R3089"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -1538,6 +1567,9 @@
               "Règlement (CEE) n° 3089/93 du Conseil du 29 octobre 1993 modifiant le règlement (CEE) n° 2299/89 instaurant un code de conduite pour l'utilisation de systèmes informatisés de réservation (SIR)"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "31993R3089"
         },
         "publicationDate": {
           "xsd:date": "1993-11-11"
@@ -1591,9 +1623,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "32003R1358"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -1606,6 +1635,9 @@
               "Règlement (CE) n° 1358/2003 de la Commission du 31 juillet 2003 concernant la mise en œuvre du règlement (CE) n° 437/2003 du Parlement européen et du Conseil sur les données statistiques relatives au transport de passagers, de fret et de courrier par voie aérienne et modifiant ledit règlement (Texte présentant de l'intérêt pour l'EEE)"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "32003R1358"
         },
         "publicationDate": {
           "xsd:date": "2003-08-18"
@@ -1685,9 +1717,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "32004R0785"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -1700,6 +1729,9 @@
               "Règlement (CE) n° 785/2004 du Parlement européen et du Conseil du 21 avril 2004 relatif aux exigences en matière d'assurance applicables aux transporteurs aériens et aux exploitants d'aéronefs"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "32004R0785"
         },
         "publicationDate": {
           "xsd:date": "2004-05-03"
@@ -1730,6 +1762,27 @@
       "references": {
         "impactToLegalResource": "http://publications.europa.eu/resource/cellar/1c145c3e-829b-11eb-9ac9-01aa75ed71a1",
         "legalResourceImpactHasType": "https://fedlex.data.admin.ch/vocabulary/impact-type/19"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1234/17982/LegalResourceImpact/9",
+      "type": "LegalResourceImpact",
+      "attributes": {
+        "dateApplicabilityForOurCountry": {
+          "xsd:date": "2023-01-01"
+        }
+      },
+      "references": {
+        "impactToLegalResource": "http://publications.europa.eu/resource/cellar/ea0f56ac-3852-11ec-8daf-01aa75ed71a1",
+        "legalResourceImpactHasType": "https://fedlex.data.admin.ch/vocabulary/impact-type/14"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1234/17982/LegalResourceImpact/10",
+      "type": "LegalResourceImpact",
+      "references": {
+        "impactToLegalResource": "http://publications.europa.eu/resource/cellar/d0416f72-944b-11ec-b4e4-01aa75ed71a1",
+        "legalResourceImpactHasType": "https://fedlex.data.admin.ch/vocabulary/impact-type/14"
       }
     },
     {
@@ -1824,9 +1877,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "31993R0095"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -1839,6 +1889,9 @@
               "Règlement (CEE) n° 95/93 du Conseil, du 18 janvier 1993, fixant des règles communes en ce qui concerne l'attribution des créneaux horaires dans les aéroports de la Communauté"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "31993R0095"
         },
         "publicationDate": {
           "xsd:date": "1993-01-22"
@@ -1898,9 +1951,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "31997R2027"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -1913,6 +1963,9 @@
               "Règlement (CE) nº 2027/97 du Conseil du 9 octobre 1997 relatif à la responsabilité des transporteurs aériens en cas d'accident"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "31997R2027"
         },
         "publicationDate": {
           "xsd:date": "1997-10-09"
@@ -2037,9 +2090,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "32008R1008"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -2052,6 +2102,9 @@
               "Règlement (CE) n o  1008/2008 du Parlement européen et du Conseil du 24 septembre 2008 établissant des règles communes pour l'exploitation de services aériens dans la Communauté (refonte) (Texte présentant de l'intérêt pour l'EEE)"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "32008R1008"
         },
         "publicationDate": {
           "xsd:date": "2008-10-31"
@@ -2079,9 +2132,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "32009L0012"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -2094,6 +2144,9 @@
               "Directive 2009/12/CE du Parlement européen et du Conseil du 11 mars 2009 sur les redevances aéroportuaires (Texte présentant de l'intérêt pour l'EEE)"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "32009L0012"
         },
         "publicationDate": {
           "xsd:date": "2009-03-11"
@@ -2137,9 +2190,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "31992L0014"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -2152,6 +2202,9 @@
               "Directive 92/14/CEE du Conseil, du 2 mars 1992, relative à la limitation de l'exploitation des avions relevant de l'annexe 16 de la convention relative à l'aviation civile internationale, volume 1 deuxième partie chapitre 2, deuxième édition (1988)"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "31992L0014"
         },
         "publicationDate": {
           "xsd:date": "1992-03-23"
@@ -2179,9 +2232,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "31989L0629"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -2194,6 +2244,9 @@
               "Directive 89/629/CEE du Conseil, du 4 décembre 1989, relative à la limitation des émissions sonores des avions à réaction subsoniques civils"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "31989L0629"
         },
         "publicationDate": {
           "xsd:date": "1989-12-13"
@@ -2221,9 +2274,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "32002L0030"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -2236,6 +2286,9 @@
               "Directive 2002/30/CE du Parlement européen et du Conseil du 26 mars 2002 relative à l'établissement de règles et procédures concernant l'introduction de restrictions d'exploitation liées au bruit dans les aéroports de la Communauté (Texte présentant de l'intérêt pour l'EEE)"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "32002L0030"
         },
         "publicationDate": {
           "xsd:date": "2002-03-29"
@@ -2263,9 +2316,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "31999R0323"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -2278,6 +2328,9 @@
               "Règlement (CE) nº 323/1999 du Conseil du 8 février 1999 modifiant le règlement (CEE) nº 2299/89 instaurant un code de conduite pour l'utilisation de systèmes informatisés de réservation (SIR)"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "31999R0323"
         },
         "publicationDate": {
           "xsd:date": "1999-02-17"
@@ -2305,9 +2358,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "32000L0034"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -2320,6 +2370,9 @@
               "Directive 2000/34/CE du Parlement européen et du Conseil du 22 juin 2000 modifiant la directive 93/104/CE du Conseil concernant certains aspects de l'aménagement du temps de travail afin de couvrir les secteurs et activités exclus de ladite directive"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "32000L0034"
         },
         "publicationDate": {
           "xsd:date": "2000-08-09"
@@ -2341,9 +2394,6 @@
         "Work"
       ],
       "attributes": {
-        "workIdDocument": {
-          "xsd:string": "01993L0104-20000801"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -2356,6 +2406,9 @@
               "Directive 93/104/CE du Conseil du 23 novembre 1993 concernant certains aspects de l'aménagement du temps de travail"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "01993L0104-20000801"
         },
         "publicationDate": {
           "xsd:date": "2002-01-08"
@@ -2377,9 +2430,6 @@
         "Work"
       ],
       "attributes": {
-        "workIdDocument": {
-          "xsd:string": "02003R0437-20030821"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -2392,6 +2442,9 @@
               "Règlement (CE) n° 437/2003 du Parlement européen et du Conseil du 27 février 2003 sur les données statistiques relatives au transport de passagers, de fret et de courrier par voie aérienne"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "02003R0437-20030821"
         },
         "publicationDate": {
           "xsd:date": "2005-07-04"
@@ -2419,9 +2472,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "31996L0067R(01)"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -2434,6 +2484,9 @@
               "RECTIFICATIF A :# Directive 96/67/CE du Conseil du 15 octobre 1996 relative à l'accès au marché de l'assistance en escale dans les aéroports de la Communauté"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "31996L0067R(01)"
         },
         "publicationDate": {
           "xsd:date": "1998-10-07"
@@ -2455,15 +2508,15 @@
         "Work"
       ],
       "attributes": {
-        "workIdDocument": {
-          "xsd:string": "01996L0067-19961114"
-        },
         "title": {
           "rdf:langString": {
             "de": [
               "Richtlinie 96/67/EG des Rates vom 15. Oktober 1996 über den Zugang zum Markt der Bodenabfertigungsdienste auf den Flughäfen der Gemeinschaft"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "01996L0067-19961114"
         },
         "publicationDate": {
           "xsd:date": "2003-08-04"
@@ -2478,9 +2531,6 @@
         "Work"
       ],
       "attributes": {
-        "workIdDocument": {
-          "xsd:string": "01989R2299-19990813"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -2493,6 +2543,9 @@
               "Règlement (CEE) n° 2299/89 du Conseil du 24 juillet 1989 instaurant un code de conduite pour l'utilisation de systèmes informatisés de réservation"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "01989R2299-19990813"
         },
         "publicationDate": {
           "xsd:date": "2002-01-08"
@@ -2520,15 +2573,15 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "31993R3089R(02)"
-        },
         "title": {
           "rdf:langString": {
             "fr": [
               "Rectificatif au règlement (CEE) n° 3089/93 du Conseil du 29 octobre 1993 modifiant le règlement (CEE) n° 2299/89 instaurant un code de conduite pour l'utilisation de systèmes informatisés de réservation (SIR) (JO L 278 du 11.11.1993)"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "31993R3089R(02)"
         },
         "publicationDate": {
           "xsd:date": "2000-04-12"
@@ -2556,15 +2609,15 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "31993R3089R(01)"
-        },
         "title": {
           "rdf:langString": {
             "fr": [
               "Rectificatif au règlement (CEE) n 3089/93 du Conseil, du 29 octobre 1993, modifiant le règlement (CEE) n 2299/89 instaurant un code de conduite pour l'utilisation de systèmes informatisés de réservation (SIR) (JO n L 278 du 11. 11. 1993.)"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "31993R3089R(01)"
         },
         "publicationDate": {
           "xsd:date": "1995-01-25"
@@ -2599,15 +2652,15 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "31992R2407R(01)"
-        },
         "title": {
           "rdf:langString": {
             "de": [
               "Berichtigung der Verordnung (EWG) Nr. 2407/92 des Rates vom 23. Juli 1992 über die Erteilung von Betriebsgenehmigungen an Luftfahrtunternehmen (ABl. Nr. L 240 vom 24. 8. 1992)"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "31992R2407R(01)"
         },
         "publicationDate": {
           "xsd:date": "1993-02-23"
@@ -2635,15 +2688,15 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "31992R2408R(02)"
-        },
         "title": {
           "rdf:langString": {
             "de": [
               "Berichtigung der Verordnung (EWG) Nr. 2408/92 des Rates vom 23. Juli 1992 über den Zugang von Luftfahrtunternehmen der Gemeinschaft zu Strecken des innergemeinschaftlichen Flugverkehrs (ABl. Nr. L 240 vom 24. 8. 1992)"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "31992R2408R(02)"
         },
         "publicationDate": {
           "xsd:date": "1993-02-23"
@@ -2671,9 +2724,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "12003TN02/08/G"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -2686,6 +2736,9 @@
               "Acte relatif aux conditions d'adhésion à l'Union européenne de la République tchèque, de la République d'Estonie, de la République de Chypre, de la République de Lettonie, de la République de Lituanie, de la République de Hongrie, de la République de Malte, de la République de Pologne, de la République de Slovénie et de la République slovaque, et aux adaptations des traités sur lesquels est fondée l'Union européenne - Annexe II: Liste visée à l'article 20 de l'acte d'adhésion  - 8. Politique des transports  - G. Transport aérien"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "12003TN02/08/G"
         },
         "publicationDate": {
           "xsd:date": "2003-10-16"
@@ -2700,9 +2753,6 @@
         "Work"
       ],
       "attributes": {
-        "workIdDocument": {
-          "xsd:string": "01992R2408-20040501"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -2715,6 +2765,9 @@
               "Règlement (CEE) n° 2408/92 du Conseil du 23 juillet 1992 concernant l'accès des transporteurs aériens communautaires aux liaisons aériennes intracommunautaires"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "01992R2408-20040501"
         },
         "publicationDate": {
           "xsd:date": "2004-06-15"
@@ -2742,9 +2795,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "31992R2408R(01)"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -2757,6 +2807,9 @@
               "RECTIFICATIF A :# Règlement (CEE) n° 2408/92 du Conseil, du 23 juillet 1992, concernant l' accès des transporteurs aériens communautaires aux liaisons aériennes intracommunautaires"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "31992R2408R(01)"
         },
         "publicationDate": {
           "xsd:date": "1993-01-23"
@@ -2784,9 +2837,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "11994NN01/06/D"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -2799,6 +2849,9 @@
               "ACTE relatif aux conditions d' adhésion du Royaume de Norvège, de la République d' Autriche, de la République de Finlande et du Royaume de Suède et aux adaptations des traités sur lesquels est fondée l' Union européenne, ANNEXE I - Liste prévue à l' article 29 de l' acte d' adhésion - VI. TRANSPORTS - D. TRANSPORT AÉRIEN"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "11994NN01/06/D"
         },
         "publicationDate": {
           "xsd:date": "1994-08-29"
@@ -2826,9 +2879,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "31983L0206"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -2841,6 +2891,9 @@
               "Directive 83/206/CEE du Conseil du 21 avril 1983 modifiant la directive 80/51/CEE relative à la limitation des émissions sonores des aéronefs subsoniques"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "31983L0206"
         },
         "publicationDate": {
           "xsd:date": "1983-05-04"
@@ -2855,9 +2908,6 @@
         "Work"
       ],
       "attributes": {
-        "workIdDocument": {
-          "xsd:string": "01980L0051-19830426"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -2870,6 +2920,9 @@
               "Directive du Conseil du 20 décembre 1979 relative à la limitation des émissions sonores des aéronefs subsoniques (80/51/CEE)"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "01980L0051-19830426"
         },
         "publicationDate": {
           "xsd:date": "2002-11-25"
@@ -2897,9 +2950,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "32007R0158"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -2912,6 +2962,9 @@
               "Règlement (CE) n o  158/2007 de la Commission du 16 février 2007 portant modification du règlement (CE) n o  1358/2003 en ce qui concerne la liste des aéroports communautaires (Texte présentant de l'intérêt pour l'EEE )"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "32007R0158"
         },
         "publicationDate": {
           "xsd:date": "2007-02-19"
@@ -2926,9 +2979,6 @@
         "Work"
       ],
       "attributes": {
-        "workIdDocument": {
-          "xsd:string": "02003R1358-20070309"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -2941,6 +2991,9 @@
               "Règlement (CE) n o 1358/2003 de la Commission du 31 juillet 2003 concernant la mise en œuvre du règlement (CE) n o 437/2003 du Parlement européen et du Conseil sur les données statistiques relatives au transport de passagers, de fret et de courrier par voie aérienne et modifiant ledit règlement (Texte présentant de l'intérêt pour l'EEE) "
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "02003R1358-20070309"
         },
         "publicationDate": {
           "xsd:date": "2007-08-13"
@@ -2968,15 +3021,15 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "32004R0785R(03)"
-        },
         "title": {
           "rdf:langString": {
             "it": [
               "Rettifica del regolamento (CE) n. 785/2004 del Parlamento europeo e del Consiglio, del 21 aprile 2004 , relativo ai requisiti assicurativi applicabili ai vettori aerei e agli esercenti di aeromobili ( GU L 138 del 30.4.2004 )"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "32004R0785R(03)"
         },
         "publicationDate": {
           "xsd:date": "2014-12-05"
@@ -3004,9 +3057,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "32010R0285"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -3019,6 +3069,9 @@
               "Règlement (UE) n o  285/2010 de la Commission du 6 avril 2010 modifiant le règlement (CE) n o  785/2004 du Parlement européen et du Conseil relatif aux exigences en matière d’assurance applicables aux transporteurs aériens et aux exploitants d’aéronefs"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "32010R0285"
         },
         "publicationDate": {
           "xsd:date": "2010-04-07"
@@ -3046,9 +3099,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "32020R1118"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -3061,6 +3111,9 @@
               "Règlement délégué (UE) 2020/1118 de la Commission du 27 avril 2020 modifiant le règlement (CE) no 785/2004 du Parlement européen et du Conseil relatif aux exigences en matière d’assurance applicables aux transporteurs aériens et aux exploitants d’aéronefs"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "32020R1118"
         },
         "publicationDate": {
           "xsd:date": "2020-07-29"
@@ -3075,9 +3128,6 @@
         "Work"
       ],
       "attributes": {
-        "workIdDocument": {
-          "xsd:string": "02004R0785-20200730"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -3090,6 +3140,9 @@
               "Règlement (CE) no 785/2004 du Parlement européen et du Conseil du 21 avril 2004 relatif aux exigences en matière d'assurance applicables aux transporteurs aériens et aux exploitants d'aéronefs"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "02004R0785-20200730"
         },
         "publicationDate": {
           "xsd:date": "2020-08-11"
@@ -3117,9 +3170,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "32021R0250"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -3132,6 +3182,9 @@
               "Règlement (UE) 2021/250 du Parlement européen et du Conseil du 16 février 2021 modifiant le règlement (CEE) no 95/93 du Conseil en ce qui concerne l’allègement temporaire des règles d’utilisation des créneaux horaires dans les aéroports de l’Union en raison de la crise de la COVID-19 (Texte présentant de l’intérêt pour l’EEE)"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "32021R0250"
         },
         "publicationDate": {
           "xsd:date": "2021-02-19"
@@ -3146,9 +3199,6 @@
         "Work"
       ],
       "attributes": {
-        "workIdDocument": {
-          "xsd:string": "01993R0095-20210220"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -3162,8 +3212,95 @@
             ]
           }
         },
+        "workIdDocument": {
+          "xsd:string": "01993R0095-20210220"
+        },
         "publicationDate": {
           "xsd:date": "2021-03-11"
+        }
+      }
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/cellar/ea0f56ac-3852-11ec-8daf-01aa75ed71a1",
+      "type": [
+        "EULegalResource",
+        "LegalResource",
+        "Work"
+      ],
+      "attributes": {
+        "legalResourceIsPartOfMemorialLabel": {
+          "rdf:langString": {
+            "de": [
+              "Amtsblatt der Europäischen Union, L 384, 29. Oktober 2021"
+            ],
+            "it": [
+              "Gazzetta ufficiale dell’Unione europea, L 384, 29 ottobre 2021"
+            ],
+            "fr": [
+              "Journal officiel de l’Union européenne, L 384, 29 octobre 2021"
+            ]
+          }
+        },
+        "title": {
+          "rdf:langString": {
+            "de": [
+              "Delegierte Verordnung (EU) 2021/1889 der Kommission vom 23. Juli 2021 zur Änderung der Verordnung (EWG) Nr. 95/93 des Rates hinsichtlich der Verlängerung der Maßnahmen zur vorübergehenden Entlastung von den Vorschriften für die Nutzung von Zeitnischen aufgrund der COVID-19-Krise"
+            ],
+            "it": [
+              "Regolamento delegato (UE) 2021/1889 della Commissione del 23 luglio 2021 che modifica il regolamento (CEE) n. 95/93 del Consiglio per quanto riguarda la proroga delle misure di alleggerimento temporaneo delle norme sull’utilizzo delle bande orarie a causa della crisi COVID-19"
+            ],
+            "fr": [
+              "Règlement délégué (UE) 2021/1889 de la Commission du 23 juillet 2021 modifiant le règlement (CEE) no 95/93 du Conseil en ce qui concerne la prolongation des mesures d’allègement temporaire des règles d’utilisation des créneaux horaires en raison de la crise de la COVID-19"
+            ]
+          }
+        },
+        "workIdDocument": {
+          "xsd:string": "32021R1889"
+        },
+        "publicationDate": {
+          "xsd:date": "2021-10-29"
+        }
+      }
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/cellar/d0416f72-944b-11ec-b4e4-01aa75ed71a1",
+      "type": [
+        "EULegalResource",
+        "LegalResource",
+        "Work"
+      ],
+      "attributes": {
+        "legalResourceIsPartOfMemorialLabel": {
+          "rdf:langString": {
+            "de": [
+              "Amtsblatt der Europäischen Union, L 042, 23. Februar 2022"
+            ],
+            "it": [
+              "Gazzetta ufficiale dell’Unione europea, L 042, 23 febbraio 2022"
+            ],
+            "fr": [
+              "Journal officiel de l’Union européenne, L 042, 23 février 2022"
+            ]
+          }
+        },
+        "title": {
+          "rdf:langString": {
+            "de": [
+              "Delegierte Verordnung (EU) 2022/255 der Kommission vom 15. Dezember 2021 zur Änderung der Verordnung (EWG) Nr. 95/93 des Rates hinsichtlich der Verlängerung der Maßnahmen zur vorübergehenden Entlastung von den Vorschriften für die Nutzung von Zeitnischen aufgrund der COVID-19-Krise"
+            ],
+            "it": [
+              "Regolamento delegato (UE) 2022/255 della Commissione del 15 dicembre 2021 che modifica il regolamento (CEE) n. 95/93 del Consiglio per quanto riguarda la proroga delle misure di alleggerimento temporaneo delle norme sull’utilizzo delle bande orarie a causa della crisi COVID-19"
+            ],
+            "fr": [
+              "Règlement délégué (UE) 2022/255 de la Commission du 15 décembre 2021 modifiant le règlement (CEE) no 95/93 du Conseil en ce qui concerne la prolongation des mesures d’allègement temporaire des règles d’utilisation des créneaux horaires en raison de la crise de la COVID-19"
+            ]
+          }
+        },
+        "workIdDocument": {
+          "xsd:string": "32022R0255"
+        },
+        "publicationDate": {
+          "xsd:date": "2022-02-23"
         }
       }
     },
@@ -3188,9 +3325,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "32020R1477"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -3203,6 +3337,9 @@
               "Règlement délégué (UE) 2020/1477 de la Commission du 14 octobre 2020 modifiant le règlement (CEE) no 95/93 du Conseil en ce qui concerne la prolongation temporaire des mesures exceptionnelles visant à faire face aux conséquences de la pandémie de COVID-19 (Texte présentant de l’intérêt pour l’EEE)"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "32020R1477"
         },
         "publicationDate": {
           "xsd:date": "2020-10-15"
@@ -3230,9 +3367,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "32020R0459"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -3245,6 +3379,9 @@
               "Règlement (UE) 2020/459 du Parlement européen et du Conseil du 30 mars 2020 modifiant le règlement (CEE) no 95/93 du Conseil fixant des règles communes en ce qui concerne l’attribution des créneaux horaires dans les aéroports de la Communauté (Texte présentant de l’intérêt pour l’EEE)"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "32020R0459"
         },
         "publicationDate": {
           "xsd:date": "2020-03-31"
@@ -3285,9 +3422,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "32004R0793"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -3300,6 +3434,9 @@
               "Règlement (CE) n° 793/2004 du Parlement européen et du Conseil du 21 avril 2004 modifiant le règlement (CEE) n° 95/93 du Conseil fixant des règles communes en ce qui concerne l'attribution des créneaux horaires dans les aéroports de la Communauté"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "32004R0793"
         },
         "publicationDate": {
           "xsd:date": "2004-05-03"
@@ -3314,9 +3451,6 @@
         "Work"
       ],
       "attributes": {
-        "workIdDocument": {
-          "xsd:string": "01993R0095-20050730"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -3329,6 +3463,9 @@
               "Règlement (CEE) n° 95/93 du Conseil du 18 janvier 1993 fixant des règles communes en ce qui concerne l'attribution des créneaux horaires dans les aéroports de la Communauté"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "01993R0095-20050730"
         },
         "publicationDate": {
           "xsd:date": "2005-07-28"
@@ -3343,9 +3480,6 @@
         "Work"
       ],
       "attributes": {
-        "workIdDocument": {
-          "xsd:string": "01997R2027-20020530"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -3358,6 +3492,9 @@
               "Règlement (CE) n° 2027/97 du Conseil du 9 octobre 1997 relatif à la responsabilité des transporteurs aériens en ce qui concerne le transport aérien de passagers et de leurs bagages"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "01997R2027-20020530"
         },
         "publicationDate": {
           "xsd:date": "2002-09-16"
@@ -3385,9 +3522,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "32002R0889"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -3400,6 +3534,9 @@
               "Règlement (CE) n° 889/2002 du Parlement européen et du Conseil du 13 mai 2002 modifiant le règlement (CE) n° 2027/97 du Conseil relatif à la responsabilité des transporteurs aériens en cas d'accident (Texte présentant de l'intérêt pour l'EEE)"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "32002R0889"
         },
         "publicationDate": {
           "xsd:date": "2002-05-13"
@@ -3427,9 +3564,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "32020R2115"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -3442,6 +3576,9 @@
               "Règlement délégué (UE) 2020/2115 de la Commission du 16 décembre 2020 modifiant le règlement (CE) no 1008/2008 du Conseil en ce qui concerne la prolongation temporaire des mesures exceptionnelles visant à faire face aux conséquences de la pandémie de COVID-19 relatives aux licences d’exploitation (Texte présentant de l’intérêt pour l’EEE)"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "32020R2115"
         },
         "publicationDate": {
           "xsd:date": "2020-12-17"
@@ -3456,9 +3593,6 @@
         "Work"
       ],
       "attributes": {
-        "workIdDocument": {
-          "xsd:string": "02008R1008-20201218"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -3471,6 +3605,9 @@
               "Règlement (CE) no 1008/2008 du Parlement européen et du Conseil du 24 septembre 2008 établissant des règles communes pour l'exploitation de services aériens dans la Communauté (refonte) (Texte présentant de l'intérêt pour l'EEE)Texte présentant de l'intérêt pour l'EEE"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "02008R1008-20201218"
         },
         "publicationDate": {
           "xsd:date": "2021-01-19"
@@ -3498,9 +3635,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "32020R2114"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -3513,6 +3647,9 @@
               "Règlement délégué (UE) 2020/2114 de la Commission du 16 décembre 2020 modifiant le règlement (CE) no 1008/2008 du Parlement européen et du Conseil en ce qui concerne la prolongation temporaire des mesures exceptionnelles visant à faire face aux conséquences de la pandémie de COVID-19 relatives à la sélection des prestataires de services d’assistance en escale (Texte présentant de l’intérêt pour l’EEE)"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "32020R2114"
         },
         "publicationDate": {
           "xsd:date": "2020-12-17"
@@ -3540,9 +3677,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "32020R0696"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -3555,6 +3689,9 @@
               "Règlement (UE) 2020/696 du Parlement européen et du Conseil du 25 mai 2020 modifiant le règlement (CE) no 1008/2008 établissant des règles communes pour l’exploitation de services aériens dans la Communauté, compte tenu de la pandémie de COVID-19 (Texte présentant de l’intérêt pour l’EEE)"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "32020R0696"
         },
         "publicationDate": {
           "xsd:date": "2020-05-27"
@@ -3582,9 +3719,6 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "32018R1139"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -3597,6 +3731,9 @@
               "Règlement (UE) 2018/1139 du Parlement européen et du Conseil du 4 juillet 2018 concernant des règles communes dans le domaine de l'aviation civile et instituant une Agence de l'Union européenne pour la sécurité aérienne, et modifiant les règlements (CE) n° 2111/2005, (CE) n° 1008/2008, (UE) n° 996/2010, (UE) n° 376/2014 et les directives 2014/30/UE et 2014/53/UE du Parlement européen et du Conseil, et abrogeant les règlements (CE) n° 552/2004 et (CE) n° 216/2008 du Parlement européen et du Conseil ainsi que le règlement (CEE) n° 3922/91 du Conseil (Texte présentant de l'intérêt pour l'EEE.)"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "32018R1139"
         },
         "publicationDate": {
           "xsd:date": "2018-08-22"
@@ -3611,9 +3748,6 @@
         "Work"
       ],
       "attributes": {
-        "workIdDocument": {
-          "xsd:string": "02008R1008-20180911"
-        },
         "title": {
           "rdf:langString": {
             "de": [
@@ -3626,6 +3760,9 @@
               "Règlement (CE) no 1008/2008 du Parlement européen et du Conseil du 24 septembre 2008 établissant des règles communes pour l'exploitation de services aériens dans la Communauté (refonte) (Texte présentant de l'intérêt pour l'EEE)Texte présentant de l'intérêt pour l'EEE"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "02008R1008-20180911"
         },
         "publicationDate": {
           "xsd:date": "2018-10-17"
@@ -3666,15 +3803,15 @@
             ]
           }
         },
-        "workIdDocument": {
-          "xsd:string": "31992L0014R(02)"
-        },
         "title": {
           "rdf:langString": {
             "de": [
               "Berichtigung der Richtlinie 92/14/EWG des Rates vom 2. März 1992 zur Einschränkung des Betriebs von Flugzeugen des Teils II Kapitel 2 Band 1 des Anhangs 16 zum Abkommen über die Internationale Zivilluftfahrt, 2. Ausgabe (1988) (ABl. Nr. L 76 vom 23. 3. 1992)"
             ]
           }
+        },
+        "workIdDocument": {
+          "xsd:string": "31992L0014R(02)"
         },
         "publicationDate": {
           "xsd:date": "1993-04-16"
@@ -3685,6 +3822,8 @@
   "graph": "https://fedlex.data.admin.ch/eli/treaty/1234/17982/graph",
   "facets": {
     "consolidationAbstractUri": "https://fedlex.data.admin.ch/eli/cc/2002/258",
+    "classifiedByTaxonomyEntryLabel_raw": "0.748.127.192.68",
+    "classifiedByTaxonomyEntryLabel_sort": "00000.00748.00127.00192.00068",
     "classifiedByTaxonomyEntryLabel": {
       "de": "SR 0.748.127.192.68",
       "fr": "RS 0.748.127.192.68",
