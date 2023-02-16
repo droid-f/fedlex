@@ -14,10 +14,15 @@
       ],
       "treatyProcessHasTask": [
         "https://fedlex.data.admin.ch/eli/treaty/2021/0397/EntryIntoForce/1",
+        "https://fedlex.data.admin.ch/eli/treaty/2021/0397/TreatyRatification/1",
         "https://fedlex.data.admin.ch/eli/treaty/2021/0397/TreatySignature/1",
-        "https://fedlex.data.admin.ch/eli/treaty/2021/0397/ReferralToConseilGouvernement/1"
+        "https://fedlex.data.admin.ch/eli/treaty/2021/0397/ReferralToConseilGouvernement/1",
+        "https://fedlex.data.admin.ch/eli/treaty/2021/0397/Registration/1"
       ],
-      "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1"
+      "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1",
+      "treatyPartyCountry": [
+        "https://fedlex.data.admin.ch/vocabulary/country/10011"
+      ]
     },
     "attributes": {
       "bilateral": {
@@ -27,7 +32,7 @@
         "xsd:date": "2021-09-06"
       },
       "treatySignaturePlace": {
-        "xsd:string": "Bern"
+        "xsd:string": "Berne"
       },
       "titleTreaty": {
         "rdf:langString": {
@@ -75,8 +80,29 @@
         "Event",
         "TaskForTreaty"
       ],
+      "attributes": {
+        "entryIntoForceDate": {
+          "xsd:date": "2023-01-10"
+        }
+      },
       "references": {
         "entryIntoForceFor": "https://fedlex.data.admin.ch/vocabulary/country/718"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2021/0397/TreatyRatification/1",
+      "type": [
+        "Event",
+        "TaskForTreaty",
+        "TreatyRatification"
+      ],
+      "attributes": {
+        "treatyPartyRatificationDate": {
+          "xsd:date": "2023-01-10"
+        }
+      },
+      "references": {
+        "treatyRatificationParty": "https://fedlex.data.admin.ch/vocabulary/country/718"
       }
     },
     {
@@ -103,10 +129,25 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2021/0397/Registration/1",
+      "type": [
+        "Event",
+        "Registration",
+        "TaskForTreaty"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1",
       "type": [
         "Concept",
         "TreatyType"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/country/10011",
+      "type": [
+        "Concept",
+        "Country"
       ]
     },
     {

@@ -14,6 +14,7 @@
       ],
       "treatyProcessHasTask": [
         "https://fedlex.data.admin.ch/eli/treaty/2021/0505/EntryIntoForce/1",
+        "https://fedlex.data.admin.ch/eli/treaty/2021/0505/TreatyRatification/2",
         "https://fedlex.data.admin.ch/eli/treaty/2021/0505/ReferralToConseilGouvernement/1",
         "https://fedlex.data.admin.ch/eli/treaty/2021/0505/TreatySignature/1"
       ],
@@ -35,13 +36,13 @@
             "Abkommen zwischen dem Bundesrat der Schweizerischen Eidgenossenschaft \nund der Regierung der Republik Kasachstan über die gegenseitige Anerkennung amtlicher Stempel auf Edelmetallwaren"
           ],
           "en": [
-            "Agreement between the Federal Council of the Swiss Confederation and the Government of the Republic of Kazakhstan on the mutual rezognition of hallmarks on precious metal articles"
+            "Agreement between the Federal Council of the Swiss Confederation and the Government of the Republic of Kazakhstan on the mutual recognition of hallmarks on precious metal articles"
           ],
           "it": [
-            "Convenzione tra il Consiglio federale della Confederazione Svizzera \ne il Governo della Repubblica del Kazakhstan \nrelativa al riconoscimento reciproco dei marchi ufficiali \nimpressi sui lavori di metalli preziosi"
+            "Convenzione tra il Consiglio federale della Confederazione Svizzera \ne il Governo della Repubblica del Kazakhstan relativa al riconoscimento reciproco dei marchi ufficiali impressi sui lavori di metalli preziosi"
           ],
           "fr": [
-            "Convention entre le Conseil fédéral de la Confédération suisse \net le Gouvernement de la République du Kazakhstan relative \nà la reconnaissance réciproque des poinçons officiels \napposés sur les ouvrages en métaux précieux"
+            "Convention entre le Conseil fédéral de la Confédération suisse et le Gouvernement de la République du Kazakhstan relative à la reconnaissance réciproque des poinçons officiels apposés sur les ouvrages en métaux précieux"
           ]
         }
       }
@@ -75,8 +76,29 @@
         "Event",
         "TaskForTreaty"
       ],
+      "attributes": {
+        "entryIntoForceDate": {
+          "xsd:date": "2023-04-01"
+        }
+      },
       "references": {
         "entryIntoForceFor": "https://fedlex.data.admin.ch/vocabulary/country/718"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2021/0505/TreatyRatification/2",
+      "type": [
+        "Event",
+        "TaskForTreaty",
+        "TreatyRatification"
+      ],
+      "attributes": {
+        "treatyPartyRatificationDate": {
+          "xsd:date": "2021-12-14"
+        }
+      },
+      "references": {
+        "treatyRatificationParty": "https://fedlex.data.admin.ch/vocabulary/country/718"
       }
     },
     {
@@ -93,7 +115,14 @@
         "Event",
         "TaskForTreaty",
         "TreatySignature"
-      ]
+      ],
+      "references": {
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU",
+          "http://publications.europa.eu/resource/authority/language/RUS",
+          "http://publications.europa.eu/resource/authority/language/ENG"
+        ]
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1",
@@ -114,6 +143,27 @@
       "type": [
         "Concept",
         "Country"
+      ]
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/authority/language/RUS",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/authority/language/ENG",
+      "type": [
+        "Concept",
+        "Language"
       ]
     }
   ],

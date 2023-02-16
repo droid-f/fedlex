@@ -17,12 +17,14 @@
         "https://fedlex.data.admin.ch/eli/treaty/2021/0396/EntryIntoForce/1",
         "https://fedlex.data.admin.ch/eli/treaty/2021/0396/EntryIntoForce/2",
         "https://fedlex.data.admin.ch/eli/treaty/2021/0396/ReferralToConseilGouvernement/1",
-        "https://fedlex.data.admin.ch/eli/treaty/2021/0396/Registration/1"
+        "https://fedlex.data.admin.ch/eli/treaty/2021/0396/Registration/1",
+        "https://fedlex.data.admin.ch/eli/treaty/2021/0396/TreatyRatification/2"
       ],
       "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1",
       "treatyPartyCountry": [
         "https://fedlex.data.admin.ch/vocabulary/country/10011"
-      ]
+      ],
+      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/302"
     },
     "attributes": {
       "bilateral": {
@@ -49,6 +51,9 @@
             "Accord entre le Conseil fédéral suisse et le Gouvernement de la République du Kazakhstan sur la suppression de l’obligation du visa pour les titulaires d’un passeport diplomatique ou d’un passeport de service"
           ]
         }
+      },
+      "approbationAct": {
+        "rdfs:Resource": "https://fedlex.data.admin.ch/eli/oc/2023/19"
       }
     }
   },
@@ -101,6 +106,11 @@
         "Event",
         "TaskForTreaty"
       ],
+      "attributes": {
+        "entryIntoForceDate": {
+          "xsd:date": "2023-01-10"
+        }
+      },
       "references": {
         "entryIntoForceFor": "https://fedlex.data.admin.ch/vocabulary/country/718"
       }
@@ -133,6 +143,22 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2021/0396/TreatyRatification/2",
+      "type": [
+        "Event",
+        "TaskForTreaty",
+        "TreatyRatification"
+      ],
+      "attributes": {
+        "treatyPartyRatificationDate": {
+          "xsd:date": "2023-01-10"
+        }
+      },
+      "references": {
+        "treatyRatificationParty": "https://fedlex.data.admin.ch/vocabulary/country/718"
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1",
       "type": [
         "Concept",
@@ -144,6 +170,13 @@
       "type": [
         "Concept",
         "Country"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/302",
+      "type": [
+        "Concept",
+        "LegalTaxonomy"
       ]
     },
     {
@@ -192,7 +225,26 @@
   ],
   "graph": "https://fedlex.data.admin.ch/eli/treaty/2021/0396/graph",
   "facets": {
-    "sortingDate": "2021-09-06"
+    "consolidationAbstractUri": "https://fedlex.data.admin.ch/eli/cc/2023/19",
+    "classifiedByTaxonomyEntryLabel_raw": "0.142.114.702",
+    "sortingDate": "2021-09-06",
+    "classifiedByTaxonomyEntryLabel_sort": "00000.00142.00114.00702",
+    "acts": [
+      {
+        "memorialLabel": {
+          "http://publications.europa.eu/resource/authority/language/DEU": "AS 2023 19",
+          "http://publications.europa.eu/resource/authority/language/FRA": "RO 2023 19",
+          "http://publications.europa.eu/resource/authority/language/ITA": "RU 2023 19"
+        },
+        "uri": "https://fedlex.data.admin.ch/eli/oc/2023/19",
+        "publicationDate": "2023-01-23"
+      }
+    ],
+    "classifiedByTaxonomyEntryLabel": {
+      "de": "SR 0.142.114.702",
+      "fr": "RS 0.142.114.702",
+      "it": "RS 0.142.114.702"
+    }
   },
   "timestampms": null
 }

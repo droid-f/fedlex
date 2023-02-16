@@ -14,13 +14,16 @@
       ],
       "treatyProcessHasTask": [
         "https://fedlex.data.admin.ch/eli/treaty/2021/0511/EntryIntoForce/1",
+        "https://fedlex.data.admin.ch/eli/treaty/2021/0511/Registration/1",
         "https://fedlex.data.admin.ch/eli/treaty/2021/0511/TreatySignature/1",
-        "https://fedlex.data.admin.ch/eli/treaty/2021/0511/ReferralToConseilGouvernement/1"
+        "https://fedlex.data.admin.ch/eli/treaty/2021/0511/ReferralToConseilGouvernement/1",
+        "https://fedlex.data.admin.ch/eli/treaty/2021/0511/TreatyRatification/2"
       ],
       "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1",
       "treatyPartyCountry": [
         "https://fedlex.data.admin.ch/vocabulary/country/289"
-      ]
+      ],
+      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/40100"
     },
     "attributes": {
       "bilateral": {
@@ -29,21 +32,27 @@
       "treatySignatureDate": {
         "xsd:date": "2021-11-25"
       },
+      "treatySignaturePlace": {
+        "xsd:string": "Berne"
+      },
       "titleTreaty": {
         "rdf:langString": {
           "de": [
-            ""
+            "Abkommen zwischen dem Schweizerischen Bundesrat und der Regierung der Republik Côte d'Ivoire über die gegenseitige Aufhebung der Visumpflicht für Inhaberinnen und Inhaber eines Diplomaten- oder Dienstpasses"
           ],
           "en": [
             ""
           ],
           "it": [
-            ""
+            "Accordo tra il Consiglio federale svizzero e il Governo della Repubblica della Costa d’Avorio relativo alla soppressione reciproca dell’obbligo del visto per i titolari di un passaporto diplomatico o di servizio"
           ],
           "fr": [
             "Accord entre le Conseil fédéral suisse et le Gouvernement de la République de Côte d'Ivoire relatif à la suppression réciproque de l'obligation de visa pour les détenteurs de passeports diplomatiques ou de service"
           ]
         }
+      },
+      "approbationAct": {
+        "rdfs:Resource": "https://fedlex.data.admin.ch/eli/oc/2023/59"
       }
     }
   },
@@ -55,6 +64,11 @@
         "TreatyDocument",
         "Work"
       ],
+      "references": {
+        "modifies": [
+          "https://fedlex.data.admin.ch/eli/treaty/9999/0290/treatyDocument/1"
+        ]
+      },
       "attributes": {
         "typeDocument": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/31"
@@ -75,9 +89,22 @@
         "Event",
         "TaskForTreaty"
       ],
+      "attributes": {
+        "entryIntoForceDate": {
+          "xsd:date": "2023-02-15"
+        }
+      },
       "references": {
         "entryIntoForceFor": "https://fedlex.data.admin.ch/vocabulary/country/718"
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2021/0511/Registration/1",
+      "type": [
+        "Event",
+        "Registration",
+        "TaskForTreaty"
+      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/2021/0511/TreatySignature/1",
@@ -85,7 +112,12 @@
         "Event",
         "TaskForTreaty",
         "TreatySignature"
-      ]
+      ],
+      "references": {
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ]
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/2021/0511/ReferralToConseilGouvernement/1",
@@ -94,6 +126,22 @@
         "ReferralToConseilGouvernement",
         "TaskForTreaty"
       ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2021/0511/TreatyRatification/2",
+      "type": [
+        "Event",
+        "TaskForTreaty",
+        "TreatyRatification"
+      ],
+      "attributes": {
+        "treatyPartyRatificationDate": {
+          "xsd:date": "2022-04-06"
+        }
+      },
+      "references": {
+        "treatyRatificationParty": "https://fedlex.data.admin.ch/vocabulary/country/718"
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1",
@@ -110,16 +158,57 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/40100",
+      "type": [
+        "Concept",
+        "LegalTaxonomy"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/0290/treatyDocument/1",
+      "type": [
+        "LegalResource",
+        "TreatyDocument",
+        "Work"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/vocabulary/country/718",
       "type": [
         "Concept",
         "Country"
       ]
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
     }
   ],
   "graph": "https://fedlex.data.admin.ch/eli/treaty/2021/0511/graph",
   "facets": {
-    "sortingDate": "2021-11-25"
+    "consolidationAbstractUri": "https://fedlex.data.admin.ch/eli/cc/2023/59",
+    "classifiedByTaxonomyEntryLabel_raw": "0.142.112.892",
+    "sortingDate": "2021-11-25",
+    "classifiedByTaxonomyEntryLabel_sort": "00000.00142.00112.00892",
+    "acts": [
+      {
+        "memorialLabel": {
+          "http://publications.europa.eu/resource/authority/language/DEU": "AS 2023 59",
+          "http://publications.europa.eu/resource/authority/language/FRA": "RO 2023 59",
+          "http://publications.europa.eu/resource/authority/language/ITA": "RU 2023 59"
+        },
+        "uri": "https://fedlex.data.admin.ch/eli/oc/2023/59",
+        "publicationDate": "2023-02-09"
+      }
+    ],
+    "classifiedByTaxonomyEntryLabel": {
+      "de": "SR 0.142.112.892",
+      "fr": "RS 0.142.112.892",
+      "it": "RS 0.142.112.892"
+    }
   },
   "timestampms": null
 }
