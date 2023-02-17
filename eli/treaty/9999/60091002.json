@@ -18,7 +18,8 @@
       "treatyProcessHasTask": [
         "https://fedlex.data.admin.ch/eli/treaty/9999/60091002/treatySignature/1",
         "https://fedlex.data.admin.ch/eli/treaty/9999/60091002/registration/1",
-        "https://fedlex.data.admin.ch/eli/treaty/9999/60091002/entryIntoForce/1"
+        "https://fedlex.data.admin.ch/eli/treaty/9999/60091002/entryIntoForce/1",
+        "https://fedlex.data.admin.ch/eli/treaty/9999/60091002/ReferralToConseilGouvernement/1"
       ],
       "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1"
     },
@@ -26,21 +27,37 @@
       "bilateral": {
         "xsd:boolean": false
       },
+      "modified": {
+        "xsd:dateTime": [
+          "2021-11-16T07:56:22.786Z"
+        ]
+      },
+      "treatySignatureDate": {
+        "xsd:date": "2020-01-16"
+      },
+      "created": {
+        "xsd:dateTime": [
+          "2021-11-16T07:56:22.786Z"
+        ]
+      },
       "titleTreaty": {
         "rdf:langString": {
           "de": [
-            "Anlage II - Conditions générales du Fonds monétaire international\nrelatives aux billets à ordre émis au titre des Nouveaux accords d'emprunt (NAE)\n - 16-01-2020 - Neue Kreditvereinbarungen des Internationalen Währungsfonds"
+            "Anlage II - Conditions générales du Fonds monétaire international relatives aux billets à ordre émis au titre des Nouveaux accords d'emprunt (NAE)  - 16-01-2020 - Neue Kreditvereinbarungen des Internationalen Währungsfonds"
           ],
           "en": [
-            "Annex II - General Terms and Conditions for Notes Issued by the\nInternational Monetary Fund under the New Arrangements to Borrow\n(the “NAB”) -  16-01-2020 - New Arrangements to Borrow"
+            "Annex II - General Terms and Conditions for Notes Issued by the\nInternational Monetary Fund under the New Arrangements to Borrow (the “NAB”) -  16-01-2020 - New Arrangements to Borrow"
           ],
           "it": [
-            "Allegato II - Conditions générales du Fonds monétaire international\nrelatives aux billets à ordre émis au titre des Nouveaux accords d'emprunt (NAE)\n - 16-01-2020 - Nuovi accordi di credito del Fondo monetario internazionale"
+            "Allegato II - Conditions générales du Fonds monétaire international relatives aux billets à ordre émis au titre des Nouveaux accords d'emprunt (NAE)  - 16-01-2020 - Nuovi accordi di credito del Fondo monetario internazionale"
           ],
           "fr": [
-            "Annexe II - Conditions générales du Fonds monétaire international\nrelatives aux billets à ordre émis au titre des Nouveaux accords d'emprunt (NAE)\n - 16-01-2020 - Nouveaux accords d'emprunt du Fonds monétaire international"
+            "Annexe II - Conditions générales du Fonds monétaire international relatives aux billets à ordre émis au titre des Nouveaux accords d'emprunt (NAE)  - 16-01-2020 - Nouveaux accords d'emprunt du Fonds monétaire international"
           ]
         }
+      },
+      "approbationAct": {
+        "rdfs:Resource": "https://fedlex.data.admin.ch/eli/oc/2021/531"
       }
     }
   },
@@ -83,12 +100,7 @@
         "Event",
         "TaskForTreaty",
         "TreatySignature"
-      ],
-      "attributes": {
-        "treatySignatureDate": {
-          "xsd:date": "2020-01-16"
-        }
-      }
+      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/60091002/registration/1",
@@ -108,8 +120,26 @@
         "Event",
         "TaskForTreaty"
       ],
+      "attributes": {
+        "entryIntoForceDate": {
+          "xsd:date": "2021-01-01"
+        }
+      },
       "references": {
         "entryIntoForceFor": "https://fedlex.data.admin.ch/vocabulary/country/718"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/60091002/ReferralToConseilGouvernement/1",
+      "type": [
+        "Event",
+        "ReferralToConseilGouvernement",
+        "TaskForTreaty"
+      ],
+      "attributes": {
+        "draftLegislationApprovalPublishedIn": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/eli/oc/2021/530"
+        }
       }
     },
     {
@@ -136,5 +166,29 @@
     }
   ],
   "graph": "https://fedlex.data.admin.ch/eli/treaty/9999/60091002/graph",
+  "facets": {
+    "sortingDateTime": "2021-11-16T07:56:22.786543Z",
+    "sortingDate": "2020-01-16",
+    "acts": [
+      {
+        "memorialLabel": {
+          "http://publications.europa.eu/resource/authority/language/DEU": "AS 2021 531",
+          "http://publications.europa.eu/resource/authority/language/FRA": "RO 2021 531",
+          "http://publications.europa.eu/resource/authority/language/ITA": "RU 2021 531"
+        },
+        "uri": "https://fedlex.data.admin.ch/eli/oc/2021/531",
+        "publicationDate": "2021-09-06"
+      },
+      {
+        "memorialLabel": {
+          "http://publications.europa.eu/resource/authority/language/DEU": "AS 2021 530",
+          "http://publications.europa.eu/resource/authority/language/FRA": "RO 2021 530",
+          "http://publications.europa.eu/resource/authority/language/ITA": "RU 2021 530"
+        },
+        "uri": "https://fedlex.data.admin.ch/eli/oc/2021/530",
+        "publicationDate": "2021-09-06"
+      }
+    ]
+  },
   "timestampms": null
 }

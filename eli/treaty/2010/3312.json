@@ -13,10 +13,12 @@
         "https://fedlex.data.admin.ch/vocabulary/treaty-subject-theme/6"
       ],
       "treatyProcessHasTask": [
+        "https://fedlex.data.admin.ch/eli/treaty/2010/3312/Registration/1",
         "https://fedlex.data.admin.ch/eli/treaty/2010/3312/referral/1",
         "https://fedlex.data.admin.ch/eli/treaty/2010/3312/treatyRatification/1",
         "https://fedlex.data.admin.ch/eli/treaty/2010/3312/entryIntoForce/1",
-        "https://fedlex.data.admin.ch/eli/treaty/2010/3312/treatySignature/1"
+        "https://fedlex.data.admin.ch/eli/treaty/2010/3312/treatySignature/1",
+        "https://fedlex.data.admin.ch/eli/treaty/2010/3312/EntryIntoForce/1"
       ],
       "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1",
       "treatyPartyCountry": [
@@ -28,8 +30,18 @@
       "bilateral": {
         "xsd:boolean": true
       },
+      "modified": {
+        "xsd:dateTime": [
+          "2022-03-22T13:40:15.269Z"
+        ]
+      },
       "treatySignatureDate": {
         "xsd:date": "2017-06-07"
+      },
+      "created": {
+        "xsd:dateTime": [
+          "2022-03-22T13:40:15.269Z"
+        ]
       },
       "titleTreaty": {
         "rdf:langString": {
@@ -71,6 +83,14 @@
       "type": [
         "Concept",
         "TreatySubjectTheme"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2010/3312/Registration/1",
+      "type": [
+        "Event",
+        "Registration",
+        "TaskForTreaty"
       ]
     },
     {
@@ -129,6 +149,17 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2010/3312/EntryIntoForce/1",
+      "type": [
+        "EntryIntoForce",
+        "Event",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "entryIntoForceFor": "https://fedlex.data.admin.ch/vocabulary/country/718"
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1",
       "type": [
         "Concept",
@@ -181,7 +212,10 @@
   "graph": "https://fedlex.data.admin.ch/eli/treaty/2010/3312/graph",
   "facets": {
     "consolidationAbstractUri": "https://fedlex.data.admin.ch/eli/cc/2019/126",
+    "sortingDateTime": "2022-03-22T13:40:15.269050Z",
+    "classifiedByTaxonomyEntryLabel_raw": "0.142.117.673",
     "sortingDate": "2017-06-07",
+    "classifiedByTaxonomyEntryLabel_sort": "00000.00142.00117.00673",
     "acts": [
       {
         "memorialLabel": {
