@@ -15,30 +15,23 @@
       "basicAct": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/oc/1957/381_381_395"
       },
-      "typeDocument": {
-        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/31"
-      },
       "dateEntryInForce": {
         "xsd:date": "1957-06-01"
+      },
+      "typeDocument": {
+        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/31"
       }
     },
     "references": {
-      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/3010",
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/cc/1957/381_381_395/fr",
         "https://fedlex.data.admin.ch/eli/cc/1957/381_381_395/de",
         "https://fedlex.data.admin.ch/eli/cc/1957/381_381_395/it"
-      ]
+      ],
+      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/3010"
     }
   },
   "included": [
-    {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/3010",
-      "type": [
-        "Concept",
-        "LegalTaxonomy"
-      ]
-    },
     {
       "uri": "https://fedlex.data.admin.ch/eli/cc/1957/381_381_395/fr",
       "type": "Expression",
@@ -76,6 +69,13 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/3010",
+      "type": [
+        "Concept",
+        "LegalTaxonomy"
+      ]
+    },
+    {
       "uri": "http://publications.europa.eu/resource/authority/language/FRA",
       "type": [
         "Concept",
@@ -100,17 +100,32 @@
   "graph": "https://fedlex.data.admin.ch/eli/cc/1957/381_381_395/graph",
   "facets": {
     "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/49",
+    "sortingDateTime": "1957-05-31T23:00Z",
     "consolidates": [
+      {
+        "dateDocument": "1956-12-10",
+        "expression": {
+          "http://publications.europa.eu/resource/authority/language/DEU": {
+            "memorialLabel": "AS 1957 69",
+            "title": "Bundesbeschluss vom 10. Dezember 1956 über die Genehmigung der mit der Europäischen Gemeinschaft für Kohle und Stahl abgeschlossenen Abkommen"
+          },
+          "http://publications.europa.eu/resource/authority/language/FRA": {
+            "memorialLabel": "RO 1957 69",
+            "title": "Arrêté fédéral du 10 décembre 1956 approuvant les accords conclus avec la Communauté européenne du charbon et de l'acier"
+          },
+          "http://publications.europa.eu/resource/authority/language/ITA": {
+            "memorialLabel": "RU 1957 73",
+            "title": "Decreto federale del 10 dicembre 1956 che approva gli accordi conchiusi con la Communità europea del carbone e dell'acciaio"
+          }
+        },
+        "processType": "https://fedlex.data.admin.ch/vocabulary/type-procedure/ord",
+        "uri": "https://fedlex.data.admin.ch/eli/oc/1957/69_69_73"
+      },
       {
         "dateDocument": "2003-06-05",
         "expression": {
           "http://publications.europa.eu/resource/authority/language/DEU": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2003/506/de/pdf-x/fedlex-data-admin-ch-eli-oc-2003-506-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2003/506/de/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2003/506/de/pdf-a/fedlex-data-admin-ch-eli-oc-2003-506-de-pdf-a.pdf",
@@ -136,11 +151,6 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2003/506/fr/doc/fedlex-data-admin-ch-eli-oc-2003-506-fr-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2003/506/fr/doc"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2003/506/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2003-506-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2003/506/fr/pdf-x"
               }
             ],
             "memorialLabel": "RO 2003 3535",
@@ -157,11 +167,6 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2003/506/it/doc/fedlex-data-admin-ch-eli-oc-2003-506-it-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2003/506/it/doc"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2003/506/it/pdf-x/fedlex-data-admin-ch-eli-oc-2003-506-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2003/506/it/pdf-x"
               }
             ],
             "memorialLabel": "RU 2003 3535",
@@ -171,25 +176,6 @@
         "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/7",
         "processType": "https://fedlex.data.admin.ch/vocabulary/type-procedure/ord",
         "uri": "https://fedlex.data.admin.ch/eli/oc/2003/506"
-      },
-      {
-        "dateDocument": "1956-12-10",
-        "expression": {
-          "http://publications.europa.eu/resource/authority/language/DEU": {
-            "memorialLabel": "AS 1957 69",
-            "title": "Bundesbeschluss vom 10. Dezember 1956 über die Genehmigung der mit der Europäischen Gemeinschaft für Kohle und Stahl abgeschlossenen Abkommen"
-          },
-          "http://publications.europa.eu/resource/authority/language/FRA": {
-            "memorialLabel": "RO 1957 69",
-            "title": "Arrêté fédéral du 10 décembre 1956 approuvant les accords conclus avec la Communauté européenne du charbon et de l'acier"
-          },
-          "http://publications.europa.eu/resource/authority/language/ITA": {
-            "memorialLabel": "RU 1957 73",
-            "title": "Decreto federale del 10 dicembre 1956 che approva gli accordi conchiusi con la Communità europea del carbone e dell'acciaio"
-          }
-        },
-        "processType": "https://fedlex.data.admin.ch/vocabulary/type-procedure/ord",
-        "uri": "https://fedlex.data.admin.ch/eli/oc/1957/69_69_73"
       },
       {
         "dateDocument": "1956-07-28",
@@ -212,7 +198,9 @@
         "uri": "https://fedlex.data.admin.ch/eli/oc/1957/381_381_395"
       }
     ],
+    "classifiedByTaxonomyEntryLabel_raw": "0.742.404.1",
     "sortingDate": "2003-12-05",
+    "classifiedByTaxonomyEntryLabel_sort": "00000.00742.00404.00001",
     "theme": {
       "themeId": "0.7",
       "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/2697"
