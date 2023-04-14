@@ -13,10 +13,13 @@
         "https://fedlex.data.admin.ch/vocabulary/treaty-subject-theme/44"
       ],
       "treatyUnderUmbrellaOf": [
-        "https://fedlex.data.admin.ch/vocabulary/international-actor/10245"
+        "https://fedlex.data.admin.ch/vocabulary/international-actor/1003"
       ],
       "treatyProcessHasTask": [
+        "https://fedlex.data.admin.ch/eli/treaty/1974/02682097/Registration/1",
+        "https://fedlex.data.admin.ch/eli/treaty/1974/02682097/EntryIntoForce/1",
         "https://fedlex.data.admin.ch/eli/treaty/1974/02682097/treatySignature/1",
+        "https://fedlex.data.admin.ch/eli/treaty/1974/02682097/ReferralToConseilGouvernement/1",
         "https://fedlex.data.admin.ch/eli/treaty/1974/02682097/entryIntoForce/1"
       ],
       "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1"
@@ -30,27 +33,33 @@
       },
       "modified": {
         "xsd:dateTime": [
-          "2015-06-10T22:00:00.000Z"
+          "2023-04-14T06:58:42.240Z"
         ]
+      },
+      "treatySignatureDate": {
+        "xsd:date": "2015-06-11"
+      },
+      "treatySignaturePlace": {
+        "xsd:string": "Londres"
       },
       "created": {
         "xsd:dateTime": [
-          "2015-06-10T22:00:00.000Z"
+          "2023-04-14T06:58:42.217Z"
         ]
       },
       "titleTreaty": {
         "rdf:langString": {
           "de": [
-            "2015 Amendments MSC.392(95) Chapters II-1, II-2 and Appendix http://dma.dk/Legislation/Documents/MSC%2095/Resolution%20MSC%20392-95.pdf - 11-06-2015 - Internationales Übereinkommen vom 1. November 1974 zum Schutz des menschlichen Lebens auf See "
+            "2015 Amendments MSC.392(95) Chapters II-1, II-2 and Appendix - 11-06-2015 - Internationales Übereinkommen vom 1. November 1974 zum Schutz des menschlichen Lebens auf See"
           ],
           "en": [
-            "2015 Amendments MSC.392(95) Chapters II-1, II-2 and Appendix http://dma.dk/Legislation/Documents/MSC%2095/Resolution%20MSC%20392-95.pdf - 11-06-2015 - International Convention for the safety of life at sea, 1974"
+            "2015 Amendments MSC.392(95) Chapters II-1, II-2 and Appendix - 11-06-2015 - International Convention for the safety of life at sea, 1974"
           ],
           "it": [
-            "2015 Amendments MSC.392(95) Chapters II-1, II-2 and Appendix http://dma.dk/Legislation/Documents/MSC%2095/Resolution%20MSC%20392-95.pdf - 11-06-2015 - Convenzione internazionale del 1o novembre 1974 per la salvaguardia della vita umana in mare"
+            "2015 Amendments MSC.392(95) Chapters II-1, II-2 and Appendix  - 11-06-2015 - Convenzione internazionale del 1o novembre 1974 per la salvaguardia della vita umana in mare"
           ],
           "fr": [
-            "2015 Amendments MSC.392(95) Chapters II-1, II-2 and Appendix http://dma.dk/Legislation/Documents/MSC%2095/Resolution%20MSC%20392-95.pdf - 11-06-2015 - Convention internationale du 1er novembre 1974 pour la sauvegarde de la vie humaine en mer"
+            "2015 Amendments MSC.392(95) Chapters II-1, II-2 and Appendix - 11-06-2015 - Convention internationale du 1er novembre 1974 pour la sauvegarde de la vie humaine en mer"
           ]
         }
       }
@@ -83,11 +92,33 @@
       ]
     },
     {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/international-actor/10245",
+      "uri": "https://fedlex.data.admin.ch/vocabulary/international-actor/1003",
       "type": [
         "Concept",
         "InternationalActor"
       ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1974/02682097/Registration/1",
+      "type": [
+        "Event",
+        "Registration",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "depositary": "https://fedlex.data.admin.ch/vocabulary/international-actor/1003"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1974/02682097/EntryIntoForce/1",
+      "type": [
+        "EntryIntoForce",
+        "Event",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "entryIntoForceFor": "https://fedlex.data.admin.ch/vocabulary/country/718"
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/1974/02682097/treatySignature/1",
@@ -96,11 +127,19 @@
         "TaskForTreaty",
         "TreatySignature"
       ],
-      "attributes": {
-        "treatySignatureDate": {
-          "xsd:date": "2015-06-11"
-        }
+      "references": {
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ENG"
+        ]
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1974/02682097/ReferralToConseilGouvernement/1",
+      "type": [
+        "Event",
+        "ReferralToConseilGouvernement",
+        "TaskForTreaty"
+      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/1974/02682097/entryIntoForce/1",
@@ -109,6 +148,11 @@
         "Event",
         "TaskForTreaty"
       ],
+      "attributes": {
+        "entryIntoForceDate": {
+          "xsd:date": "2017-01-01"
+        }
+      },
       "references": {
         "entryIntoForceFor": "https://fedlex.data.admin.ch/vocabulary/country/718"
       }
@@ -134,11 +178,19 @@
         "Concept",
         "Country"
       ]
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/authority/language/ENG",
+      "type": [
+        "Concept",
+        "Language"
+      ]
     }
   ],
   "graph": "https://fedlex.data.admin.ch/eli/treaty/1974/02682097/graph",
   "facets": {
-    "sortingDateTime": "2015-06-10T22:00Z"
+    "sortingDateTime": "2023-04-14T06:58:42.240Z",
+    "sortingDate": "2015-06-11"
   },
   "timestampms": null
 }
