@@ -13,11 +13,14 @@
         "https://fedlex.data.admin.ch/vocabulary/treaty-subject-theme/44"
       ],
       "treatyUnderUmbrellaOf": [
-        "https://fedlex.data.admin.ch/vocabulary/international-actor/10245"
+        "https://fedlex.data.admin.ch/vocabulary/international-actor/1003"
       ],
       "treatyProcessHasTask": [
+        "https://fedlex.data.admin.ch/eli/treaty/1974/02682102/EntryIntoForce/1",
+        "https://fedlex.data.admin.ch/eli/treaty/1974/02682102/ReferralToConseilGouvernement/1",
         "https://fedlex.data.admin.ch/eli/treaty/1974/02682102/entryIntoForce/1",
-        "https://fedlex.data.admin.ch/eli/treaty/1974/02682102/treatySignature/1"
+        "https://fedlex.data.admin.ch/eli/treaty/1974/02682102/treatySignature/1",
+        "https://fedlex.data.admin.ch/eli/treaty/1974/02682102/Registration/1"
       ],
       "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1"
     },
@@ -30,12 +33,18 @@
       },
       "modified": {
         "xsd:dateTime": [
-          "2016-11-24T23:00:00.000Z"
+          "2023-04-14T09:19:23.631Z"
         ]
+      },
+      "treatySignatureDate": {
+        "xsd:date": "2016-11-25"
+      },
+      "treatySignaturePlace": {
+        "xsd:string": "Londres"
       },
       "created": {
         "xsd:dateTime": [
-          "2016-11-24T23:00:00.000Z"
+          "2023-04-14T09:19:23.611Z"
         ]
       },
       "titleTreaty": {
@@ -83,10 +92,29 @@
       ]
     },
     {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/international-actor/10245",
+      "uri": "https://fedlex.data.admin.ch/vocabulary/international-actor/1003",
       "type": [
         "Concept",
         "InternationalActor"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1974/02682102/EntryIntoForce/1",
+      "type": [
+        "EntryIntoForce",
+        "Event",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "entryIntoForceFor": "https://fedlex.data.admin.ch/vocabulary/country/718"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1974/02682102/ReferralToConseilGouvernement/1",
+      "type": [
+        "Event",
+        "ReferralToConseilGouvernement",
+        "TaskForTreaty"
       ]
     },
     {
@@ -96,6 +124,11 @@
         "Event",
         "TaskForTreaty"
       ],
+      "attributes": {
+        "entryIntoForceDate": {
+          "xsd:date": "2020-01-01"
+        }
+      },
       "references": {
         "entryIntoForceFor": "https://fedlex.data.admin.ch/vocabulary/country/718"
       }
@@ -107,10 +140,21 @@
         "TaskForTreaty",
         "TreatySignature"
       ],
-      "attributes": {
-        "treatySignatureDate": {
-          "xsd:date": "2016-11-25"
-        }
+      "references": {
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ENG"
+        ]
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1974/02682102/Registration/1",
+      "type": [
+        "Event",
+        "Registration",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "depositary": "https://fedlex.data.admin.ch/vocabulary/international-actor/1003"
       }
     },
     {
@@ -134,11 +178,19 @@
         "Concept",
         "Country"
       ]
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/authority/language/ENG",
+      "type": [
+        "Concept",
+        "Language"
+      ]
     }
   ],
   "graph": "https://fedlex.data.admin.ch/eli/treaty/1974/02682102/graph",
   "facets": {
-    "sortingDateTime": "2016-11-24T23:00Z"
+    "sortingDateTime": "2023-04-14T09:19:23.631Z",
+    "sortingDate": "2016-11-25"
   },
   "timestampms": null
 }

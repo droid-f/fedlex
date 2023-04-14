@@ -13,26 +13,37 @@
         "https://fedlex.data.admin.ch/vocabulary/treaty-subject-theme/44"
       ],
       "treatyUnderUmbrellaOf": [
-        "https://fedlex.data.admin.ch/vocabulary/international-actor/10245"
+        "https://fedlex.data.admin.ch/vocabulary/international-actor/1003"
       ],
       "treatyProcessHasTask": [
+        "https://fedlex.data.admin.ch/eli/treaty/1974/02682108/ReferralToConseilGouvernement/1",
         "https://fedlex.data.admin.ch/eli/treaty/1974/02682108/treatySignature/1",
+        "https://fedlex.data.admin.ch/eli/treaty/1974/02682108/Registration/1",
         "https://fedlex.data.admin.ch/eli/treaty/1974/02682108/entryIntoForce/1"
       ],
       "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1"
     },
     "attributes": {
+      "firstEntryIntoForceDate": {
+        "xsd:date": "2024-01-01"
+      },
       "bilateral": {
         "xsd:boolean": false
       },
       "modified": {
         "xsd:dateTime": [
-          "2021-10-11T12:11:03.704Z"
+          "2023-04-14T09:19:13.631Z"
         ]
+      },
+      "treatySignatureDate": {
+        "xsd:date": "2019-06-13"
+      },
+      "treatySignaturePlace": {
+        "xsd:string": "Londres"
       },
       "created": {
         "xsd:dateTime": [
-          "2021-10-11T12:11:03.704Z"
+          "2023-04-14T09:19:13.611Z"
         ]
       },
       "titleTreaty": {
@@ -80,10 +91,18 @@
       ]
     },
     {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/international-actor/10245",
+      "uri": "https://fedlex.data.admin.ch/vocabulary/international-actor/1003",
       "type": [
         "Concept",
         "InternationalActor"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1974/02682108/ReferralToConseilGouvernement/1",
+      "type": [
+        "Event",
+        "ReferralToConseilGouvernement",
+        "TaskForTreaty"
       ]
     },
     {
@@ -93,15 +112,21 @@
         "TaskForTreaty",
         "TreatySignature"
       ],
-      "attributes": {
-        "treatySignatureDate": {
-          "xsd:date": "2019-06-14"
-        }
-      },
       "references": {
         "language": [
           "http://publications.europa.eu/resource/authority/language/ENG"
         ]
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1974/02682108/Registration/1",
+      "type": [
+        "Event",
+        "Registration",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "depositary": "https://fedlex.data.admin.ch/vocabulary/international-actor/1003"
       }
     },
     {
@@ -111,6 +136,11 @@
         "Event",
         "TaskForTreaty"
       ],
+      "attributes": {
+        "entryIntoForceDate": {
+          "xsd:date": "2024-01-01"
+        }
+      },
       "references": {
         "entryIntoForceFor": "https://fedlex.data.admin.ch/vocabulary/country/718"
       }
@@ -147,7 +177,8 @@
   ],
   "graph": "https://fedlex.data.admin.ch/eli/treaty/1974/02682108/graph",
   "facets": {
-    "sortingDateTime": "2021-10-11T12:11:03.704734Z"
+    "sortingDateTime": "2023-04-14T09:19:13.631Z",
+    "sortingDate": "2019-06-13"
   },
   "timestampms": null
 }
