@@ -13,9 +13,10 @@
         "https://fedlex.data.admin.ch/vocabulary/treaty-subject-theme/44"
       ],
       "treatyUnderUmbrellaOf": [
-        "https://fedlex.data.admin.ch/vocabulary/international-actor/10245"
+        "https://fedlex.data.admin.ch/vocabulary/international-actor/1003"
       ],
       "treatyProcessHasTask": [
+        "https://fedlex.data.admin.ch/eli/treaty/1974/02682029/Registration/1",
         "https://fedlex.data.admin.ch/eli/treaty/1974/02682029/treatySignature/1",
         "https://fedlex.data.admin.ch/eli/treaty/1974/02682029/entryIntoForce/1"
       ],
@@ -30,27 +31,30 @@
       },
       "modified": {
         "xsd:dateTime": [
-          "2023-04-14T09:18:50.453Z"
+          "2023-04-19T15:17:12.475Z"
         ]
+      },
+      "treatySignatureDate": {
+        "xsd:date": "1996-06-04"
       },
       "created": {
         "xsd:dateTime": [
-          "2023-04-14T09:18:50.431Z"
+          "2023-04-19T15:17:12.453Z"
         ]
       },
       "titleTreaty": {
         "rdf:langString": {
           "de": [
-            "Amendements au recueil BCH, adoptés par Rés.MSC.51(66)  - 04-06-1996 - Internationales Übereinkommen vom 1. November 1974 zum Schutz des menschlichen Lebens auf See "
+            "Amendements au recueil BCH, adoptés par Rés.MSC.51(66) - Internationales Übereinkommen vom 1. November 1974 zum Schutz des menschlichen Lebens auf See"
           ],
           "en": [
-            "Amendements au recueil BCH, adoptés par Rés.MSC.51(66)  - 04-06-1996 - International Convention for the safety of life at sea, 1974"
+            "Amendements au recueil BCH, adoptés par Rés.MSC.51(66) - International Convention for the safety of life at sea, 1974"
           ],
           "it": [
-            "Amendements au recueil BCH, adoptés par Rés.MSC.51(66)  - 04-06-1996 - Convenzione internazionale del 1o novembre 1974 per la salvaguardia della vita umana in mare"
+            "Amendements au recueil BCH, adoptés par Rés.MSC.51(66) - Convenzione internazionale del 1o novembre 1974 per la salvaguardia della vita umana in mare"
           ],
           "fr": [
-            "Amendements au recueil BCH, adoptés par Rés.MSC.51(66)  - 04-06-1996 - Convention internationale du 1er novembre 1974 pour la sauvegarde de la vie humaine en mer"
+            "Amendements au recueil BCH, adoptés par Rés.MSC.51(66) - Convention internationale du 1er novembre 1974 pour la sauvegarde de la vie humaine en mer"
           ]
         }
       }
@@ -83,11 +87,22 @@
       ]
     },
     {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/international-actor/10245",
+      "uri": "https://fedlex.data.admin.ch/vocabulary/international-actor/1003",
       "type": [
         "Concept",
         "InternationalActor"
       ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1974/02682029/Registration/1",
+      "type": [
+        "Event",
+        "Registration",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "depositary": "https://fedlex.data.admin.ch/vocabulary/international-actor/1003"
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/1974/02682029/treatySignature/1",
@@ -96,10 +111,10 @@
         "TaskForTreaty",
         "TreatySignature"
       ],
-      "attributes": {
-        "treatySignatureDate": {
-          "xsd:date": "1996-06-04"
-        }
+      "references": {
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ENG"
+        ]
       }
     },
     {
@@ -109,6 +124,11 @@
         "Event",
         "TaskForTreaty"
       ],
+      "attributes": {
+        "entryIntoForceDate": {
+          "xsd:date": "1998-07-01"
+        }
+      },
       "references": {
         "entryIntoForceFor": "https://fedlex.data.admin.ch/vocabulary/country/718"
       }
@@ -129,6 +149,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/ENG",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/vocabulary/country/718",
       "type": [
         "Concept",
@@ -138,7 +165,8 @@
   ],
   "graph": "https://fedlex.data.admin.ch/eli/treaty/1974/02682029/graph",
   "facets": {
-    "sortingDateTime": "2023-04-14T09:18:50.453Z"
+    "sortingDateTime": "2023-04-19T15:17:12.475Z",
+    "sortingDate": "1996-06-04"
   },
   "timestampms": null
 }
