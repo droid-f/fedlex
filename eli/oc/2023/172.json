@@ -7,7 +7,7 @@
     ],
     "attributes": {
       "legalResourceGenre": {
-        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/legal-resource-genre/200"
+        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/legal-resource-genre/900"
       },
       "dateDocument": {
         "xsd:date": "2023-03-28"
@@ -151,7 +151,28 @@
       "type": [
         "Memorial",
         "Work"
-      ]
+      ],
+      "attributes": {
+        "memorialNumber": {
+          "xsd:int": 55
+        },
+        "isMemberOf": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/2023"
+        },
+        "memorialYear": {
+          "xsd:int": 2023
+        },
+        "publicationDate": {
+          "xsd:date": "2023-03-30"
+        }
+      },
+      "references": {
+        "isRealizedBy": [
+          "https://fedlex.data.admin.ch/eli/collection/oc/2023/55/de",
+          "https://fedlex.data.admin.ch/eli/collection/oc/2023/55/fr",
+          "https://fedlex.data.admin.ch/eli/collection/oc/2023/55/it"
+        ]
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/3525",
@@ -189,6 +210,10 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/oc/2023/172/it/docx",
       "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
       "attributes": {
         "wasExemplifiedByPrivate": {
           "rdfs:Resource": [
@@ -295,6 +320,10 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/oc/2023/172/fr/docx",
       "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
       "attributes": {
         "wasExemplifiedByPrivate": {
           "rdfs:Resource": [
@@ -314,7 +343,7 @@
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
         },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2023/172/fr/docx/fedlex-data-admin-ch-eli-oc-2023-172-fr-docx-1.docx"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2023/172/fr/docx/fedlex-data-admin-ch-eli-oc-2023-172-fr-docx.docx"
         },
         "wasExemplifiedBy": {
           "rdfs:Resource": [
@@ -401,6 +430,10 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/oc/2023/172/de/docx",
       "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
       "attributes": {
         "wasExemplifiedByPrivate": {
           "rdfs:Resource": [
@@ -420,7 +453,7 @@
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
         },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2023/172/de/docx/fedlex-data-admin-ch-eli-oc-2023-172-de-docx-1.docx"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2023/172/de/docx/fedlex-data-admin-ch-eli-oc-2023-172-de-docx.docx"
         },
         "wasExemplifiedBy": {
           "rdfs:Resource": [
@@ -477,6 +510,49 @@
         "Concept",
         "Language"
       ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/collection/oc/2023/55/de",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": ""
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/collection/oc/2023/55/fr",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": ""
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/collection/oc/2023/55/it",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/ITA"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": ""
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+      "type": [
+        "Concept",
+        "LegalInstitution"
+      ]
     }
   ],
   "graph": "https://fedlex.data.admin.ch/eli/oc/2023/172/graph",
@@ -490,7 +566,7 @@
       "http://publications.europa.eu/resource/authority/language/FRA": "RO 2023 172",
       "http://publications.europa.eu/resource/authority/language/ITA": "RU 2023 172"
     },
-    "modified": "2023-03-30T12:20:49.914834",
+    "modified": "2023-05-08T10:25:43.267583",
     "theme": {
       "themeId": "0.8",
       "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/3405"
