@@ -12,10 +12,15 @@
       "treatySubject": [
         "https://fedlex.data.admin.ch/vocabulary/treaty-subject-theme/11"
       ],
+      "treatyUnderUmbrellaOf": [
+        "https://fedlex.data.admin.ch/vocabulary/international-actor/10219"
+      ],
       "treatyProcessHasTask": [
         "https://fedlex.data.admin.ch/eli/treaty/1951/02332001/ReferralToConseilGouvernement/1",
         "https://fedlex.data.admin.ch/eli/treaty/1951/02332001/entryIntoForce/1",
+        "https://fedlex.data.admin.ch/eli/treaty/1951/02332001/EntryIntoForce/1",
         "https://fedlex.data.admin.ch/eli/treaty/1951/02332001/treatySignature/1",
+        "https://fedlex.data.admin.ch/eli/treaty/1951/02332001/Registration/1",
         "https://fedlex.data.admin.ch/eli/treaty/1951/02332001/TreatyRatification/2"
       ],
       "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1"
@@ -29,15 +34,18 @@
       },
       "modified": {
         "xsd:dateTime": [
-          "2022-08-11T07:15:48.935Z"
+          "2023-05-19T13:11:46.994Z"
         ]
       },
       "treatySignatureDate": {
         "xsd:date": "2005-06-30"
       },
+      "treatySignaturePlace": {
+        "xsd:string": "La Haye"
+      },
       "created": {
         "xsd:dateTime": [
-          "2022-08-11T07:15:48.935Z"
+          "2023-05-19T13:11:46.972Z"
         ]
       },
       "titleTreaty": {
@@ -46,7 +54,7 @@
             "Modification du Statut conclu à la Haye (participation de la CE etc)\n - 30-06-2005 - Statut vom 31. Oktober 1951 der Haager Konferenz für internationales Privatrecht"
           ],
           "en": [
-            "Modification du Statut conclu à la Haye (participation de la CE etc.) -\n - 30-06-2005 - Statute of the Hague Conference on Private International Law"
+            "Amendment -\n - 30-06-2005 - Statute of the Hague Conference on Private International Law"
           ],
           "it": [
             "Modification du Statut conclu à la Haye (participation de la CE etc) -\n - 30-06-2005 - Statuto del 31 ottobre 1951 della Conferenza dell'Aia di diritto internazionale privato"
@@ -88,6 +96,13 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/international-actor/10219",
+      "type": [
+        "Concept",
+        "InternationalActor"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/1951/02332001/ReferralToConseilGouvernement/1",
       "type": [
         "Event",
@@ -112,12 +127,34 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1951/02332001/EntryIntoForce/1",
+      "type": [
+        "EntryIntoForce",
+        "Event",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "entryIntoForceFor": "https://fedlex.data.admin.ch/vocabulary/country/718"
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/1951/02332001/treatySignature/1",
       "type": [
         "Event",
         "TaskForTreaty",
         "TreatySignature"
       ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1951/02332001/Registration/1",
+      "type": [
+        "Event",
+        "Registration",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "depositary": "https://fedlex.data.admin.ch/vocabulary/country/636"
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/1951/02332001/TreatyRatification/2",
@@ -156,11 +193,18 @@
         "Concept",
         "Country"
       ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/country/636",
+      "type": [
+        "Concept",
+        "Country"
+      ]
     }
   ],
   "graph": "https://fedlex.data.admin.ch/eli/treaty/1951/02332001/graph",
   "facets": {
-    "sortingDateTime": "2022-08-11T07:15:48.935790Z",
+    "sortingDateTime": "2023-05-19T13:11:46.994Z",
     "sortingDate": "2005-06-30",
     "acts": [
       {
