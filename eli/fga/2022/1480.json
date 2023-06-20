@@ -12,14 +12,27 @@
       "dateDocument": {
         "xsd:date": "2022-06-20"
       },
+      "created": {
+        "xsd:dateTime": [
+          "2022-06-19T22:00:00.000Z"
+        ]
+      },
       "sequenceInTheYearOfPublication": {
         "xsd:int": 1480
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "2022-06-19T22:00:00.000Z"
+        ]
       },
       "typeDocument": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/33"
       },
       "processType": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/type-procedure/ord"
+      },
+      "nonAnonymousWorkToRemoveDate": {
+        "xsd:date": "2023-06-20"
       },
       "publicationDate": {
         "xsd:date": "2022-06-20"
@@ -57,6 +70,7 @@
           "https://fedlex.data.admin.ch/eli/fga/2022/1480/fr/pdf-a",
           "https://fedlex.data.admin.ch/eli/fga/2022/1480/fr/xml",
           "https://fedlex.data.admin.ch/eli/fga/2022/1480/fr/html",
+          "https://fedlex.data.admin.ch/eli/fga/2022/1480/fr/pdf-a-an",
           "https://fedlex.data.admin.ch/eli/fga/2022/1480/fr/docx",
           "https://fedlex.data.admin.ch/eli/fga/2022/1480/fr/docx-an"
         ],
@@ -82,7 +96,26 @@
       "type": [
         "Memorial",
         "Work"
-      ]
+      ],
+      "attributes": {
+        "memorialNumber": {
+          "xsd:int": 117
+        },
+        "isMemberOf": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/2022"
+        },
+        "memorialYear": {
+          "xsd:int": 2022
+        },
+        "publicationDate": {
+          "xsd:date": "2022-06-20"
+        }
+      },
+      "references": {
+        "isRealizedBy": [
+          "https://fedlex.data.admin.ch/eli/collection/fga/2022/117/fr"
+        ]
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/2022/1480/fr/pdf-a",
@@ -104,9 +137,6 @@
         },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
-        "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2022/1480/fr/pdf-a/fedlex-data-admin-ch-eli-fga-2022-1480-fr-pdf-a.pdf"
         }
       }
     },
@@ -125,9 +155,6 @@
         },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/XML"
-        },
-        "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2022/1480/fr/xml/fedlex-data-admin-ch-eli-fga-2022-1480-fr-xml.xml"
         }
       }
     },
@@ -146,15 +173,37 @@
         },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/fga/2022/1480/fr/pdf-a-an",
+      "type": "Manifestation",
+      "attributes": {
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2022/1480/fr/pdf-a-an/fedlex-data-admin-ch-eli-fga-2022-1480-fr-pdf-a-an.pdf"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a-an"
+        },
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": false
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
         },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2022/1480/fr/html/fedlex-data-admin-ch-eli-fga-2022-1480-fr-html.html"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2022/1480/fr/pdf-a-an/fedlex-data-admin-ch-eli-fga-2022-1480-fr-pdf-a-an.pdf"
         }
       }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/2022/1480/fr/docx",
       "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
       "attributes": {
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2022/1480/fr/docx/fedlex-data-admin-ch-eli-fga-2022-1480-fr-docx.docx"
@@ -167,25 +216,27 @@
         },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
-        },
-        "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2022/1480/fr/docx/fedlex-data-admin-ch-eli-fga-2022-1480-fr-docx.docx"
         }
       }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/2022/1480/fr/docx-an",
       "type": "Manifestation",
-      "references": {
-        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
-        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
-      },
       "attributes": {
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2022/1480/fr/docx-an/fedlex-data-admin-ch-eli-fga-2022-1480-fr-docx-an.docx"
+        },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx-an"
         },
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": false
+        },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2022/1480/fr/docx-an/fedlex-data-admin-ch-eli-fga-2022-1480-fr-docx-an.docx"
         }
       }
     },
@@ -195,6 +246,18 @@
         "Concept",
         "Language"
       ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/collection/fga/2022/117/fr",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": ""
+        }
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
@@ -207,11 +270,12 @@
   "graph": "https://fedlex.data.admin.ch/eli/fga/2022/1480/graph",
   "facets": {
     "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/51",
+    "sortingDateTime": "2022-06-19T22:00Z",
     "sortingDate": "2022-06-20",
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 2022 1480"
     },
-    "modified": "2022-06-20T09:02:24.529771",
+    "modified": "2022-06-20T12:17:14.424819",
     "title": {
       "fr": "Décision finale de l’Administration fédérale des contributions (AFC) en matière d’assistance administrative"
     }
