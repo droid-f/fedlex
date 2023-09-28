@@ -9,14 +9,31 @@
       "treatyProcessHasResultingTreatyDocument": [
         "https://fedlex.data.admin.ch/eli/treaty/2017/1691/treatyDocument/1"
       ],
+      "treatyProcessHasPartyCondition": [
+        "https://fedlex.data.admin.ch/eli/treaty/2017/1691/PartyConditionToTreaty/1",
+        "https://fedlex.data.admin.ch/eli/treaty/2017/1691/PartyConditionToTreaty/2",
+        "https://fedlex.data.admin.ch/eli/treaty/2017/1691/PartyConditionToTreaty/3"
+      ],
       "treatySubject": [
         "https://fedlex.data.admin.ch/vocabulary/treaty-subject-theme/23"
       ],
       "treatyProcessHasTask": [
-        "https://fedlex.data.admin.ch/eli/treaty/2017/1691/referral/1",
         "https://fedlex.data.admin.ch/eli/treaty/2017/1691/treatySignature/1",
+        "https://fedlex.data.admin.ch/eli/treaty/2017/1691/Notification/6",
+        "https://fedlex.data.admin.ch/eli/treaty/2017/1691/Notification/5",
+        "https://fedlex.data.admin.ch/eli/treaty/2017/1691/Notification/4",
+        "https://fedlex.data.admin.ch/eli/treaty/2017/1691/Notification/3",
+        "https://fedlex.data.admin.ch/eli/treaty/2017/1691/Notification/10",
+        "https://fedlex.data.admin.ch/eli/treaty/2017/1691/Notification/2",
+        "https://fedlex.data.admin.ch/eli/treaty/2017/1691/Notification/11",
+        "https://fedlex.data.admin.ch/eli/treaty/2017/1691/Notification/1",
+        "https://fedlex.data.admin.ch/eli/treaty/2017/1691/Notification/12",
+        "https://fedlex.data.admin.ch/eli/treaty/2017/1691/entryIntoForce/1",
         "https://fedlex.data.admin.ch/eli/treaty/2017/1691/registration/1",
-        "https://fedlex.data.admin.ch/eli/treaty/2017/1691/entryIntoForce/1"
+        "https://fedlex.data.admin.ch/eli/treaty/2017/1691/referral/1",
+        "https://fedlex.data.admin.ch/eli/treaty/2017/1691/Notification/9",
+        "https://fedlex.data.admin.ch/eli/treaty/2017/1691/Notification/8",
+        "https://fedlex.data.admin.ch/eli/treaty/2017/1691/Notification/7"
       ],
       "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1",
       "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/1480"
@@ -28,8 +45,18 @@
       "bilateral": {
         "xsd:boolean": false
       },
+      "modified": {
+        "xsd:dateTime": [
+          "2023-09-28T07:16:50.755Z"
+        ]
+      },
       "treatySignatureDate": {
         "xsd:date": "2015-09-10"
+      },
+      "created": {
+        "xsd:dateTime": [
+          "2023-09-28T07:16:50.733Z"
+        ]
       },
       "titleTreaty": {
         "rdf:langString": {
@@ -57,6 +84,11 @@
         "TreatyDocument",
         "Work"
       ],
+      "references": {
+        "isAnnexOfWork": [
+          "https://fedlex.data.admin.ch/eli/treaty/2012/1710/treatyDocument/1"
+        ]
+      },
       "attributes": {
         "typeDocument": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/32"
@@ -64,18 +96,31 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2017/1691/PartyConditionToTreaty/1",
+      "type": "PartyConditionToTreaty",
+      "references": {
+        "partyConditionOfParty": "https://fedlex.data.admin.ch/vocabulary/country/514"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2017/1691/PartyConditionToTreaty/2",
+      "type": "PartyConditionToTreaty",
+      "references": {
+        "partyConditionOfParty": "https://fedlex.data.admin.ch/vocabulary/country/163"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2017/1691/PartyConditionToTreaty/3",
+      "type": "PartyConditionToTreaty",
+      "references": {
+        "partyConditionOfParty": "https://fedlex.data.admin.ch/vocabulary/country/718"
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/vocabulary/treaty-subject-theme/23",
       "type": [
         "Concept",
         "TreatySubjectTheme"
-      ]
-    },
-    {
-      "uri": "https://fedlex.data.admin.ch/eli/treaty/2017/1691/referral/1",
-      "type": [
-        "Event",
-        "ReferralToConseilGouvernement",
-        "TaskForTreaty"
       ]
     },
     {
@@ -97,14 +142,141 @@
       }
     },
     {
-      "uri": "https://fedlex.data.admin.ch/eli/treaty/2017/1691/registration/1",
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2017/1691/Notification/6",
       "type": [
         "Event",
-        "Registration",
+        "Notification",
         "TaskForTreaty"
       ],
       "references": {
-        "depositary": "https://fedlex.data.admin.ch/vocabulary/country/163"
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/1",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/514"
+      },
+      "attributes": {
+        "notificationEntryIntoForceDate": {
+          "xsd:date": "2015-09-10"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2017/1691/Notification/5",
+      "type": [
+        "Event",
+        "Notification",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/1",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/163"
+      },
+      "attributes": {
+        "notificationEntryIntoForceDate": {
+          "xsd:date": "2015-09-10"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2017/1691/Notification/4",
+      "type": [
+        "Event",
+        "Notification",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/4",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/514"
+      },
+      "attributes": {
+        "notificationEntryIntoForceDate": {
+          "xsd:date": "2017-08-01"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2017/1691/Notification/3",
+      "type": [
+        "Event",
+        "Notification",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/3",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/163"
+      },
+      "attributes": {
+        "notificationEntryIntoForceDate": {
+          "xsd:date": "2017-05-03"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2017/1691/Notification/10",
+      "type": [
+        "Event",
+        "Notification",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/1",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/718"
+      },
+      "attributes": {
+        "notificationEntryIntoForceDate": {
+          "xsd:date": "2015-09-10"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2017/1691/Notification/2",
+      "type": [
+        "Event",
+        "Notification",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/5",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/514"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2017/1691/Notification/11",
+      "type": [
+        "Event",
+        "Notification",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/4",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/163"
+      },
+      "attributes": {
+        "notificationEntryIntoForceDate": {
+          "xsd:date": "2017-08-01"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2017/1691/Notification/1",
+      "type": [
+        "Event",
+        "Notification",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/5",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/163"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2017/1691/Notification/12",
+      "type": [
+        "Event",
+        "Notification",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/5",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/718"
       }
     },
     {
@@ -124,6 +296,76 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2017/1691/registration/1",
+      "type": [
+        "Event",
+        "Registration",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "depositary": "https://fedlex.data.admin.ch/vocabulary/country/163"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2017/1691/referral/1",
+      "type": [
+        "Event",
+        "ReferralToConseilGouvernement",
+        "TaskForTreaty"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2017/1691/Notification/9",
+      "type": [
+        "Event",
+        "Notification",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/4",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/718"
+      },
+      "attributes": {
+        "notificationEntryIntoForceDate": {
+          "xsd:date": "2017-08-01"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2017/1691/Notification/8",
+      "type": [
+        "Event",
+        "Notification",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/3",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/718"
+      },
+      "attributes": {
+        "notificationEntryIntoForceDate": {
+          "xsd:date": "2017-06-14"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2017/1691/Notification/7",
+      "type": [
+        "Event",
+        "Notification",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/3",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/514"
+      },
+      "attributes": {
+        "notificationEntryIntoForceDate": {
+          "xsd:date": "2017-06-08"
+        }
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1",
       "type": [
         "Concept",
@@ -138,10 +380,18 @@
       ]
     },
     {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2012/1710/treatyDocument/1",
+      "type": [
+        "LegalResource",
+        "TreatyDocument",
+        "Work"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/country/514",
       "type": [
         "Concept",
-        "Language"
+        "Country"
       ]
     },
     {
@@ -157,12 +407,50 @@
         "Concept",
         "Country"
       ]
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/notification-type/1",
+      "type": [
+        "Concept",
+        "NotificationType"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/notification-type/4",
+      "type": [
+        "Concept",
+        "NotificationType"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/notification-type/3",
+      "type": [
+        "Concept",
+        "NotificationType"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/notification-type/5",
+      "type": [
+        "Concept",
+        "NotificationType"
+      ]
     }
   ],
   "graph": "https://fedlex.data.admin.ch/eli/treaty/2017/1691/graph",
   "facets": {
     "consolidationAbstractUri": "https://fedlex.data.admin.ch/eli/cc/2017/443",
+    "sortingDateTime": "2023-09-28T07:16:50.755Z",
+    "classifiedByTaxonomyEntryLabel_raw": "0.360.163.12",
     "sortingDate": "2015-09-10",
+    "classifiedByTaxonomyEntryLabel_sort": "00000.00360.00163.00012",
     "acts": [
       {
         "memorialLabel": {
