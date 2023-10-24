@@ -12,11 +12,21 @@
       "dateDocument": {
         "xsd:date": "2021-12-03"
       },
+      "created": {
+        "xsd:dateTime": [
+          "2021-12-08T23:00:00.000Z"
+        ]
+      },
       "sequenceInTheYearOfPublication": {
         "xsd:int": 835
       },
       "dateEntryInForce": {
         "xsd:date": "2022-01-01"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "2021-12-08T23:00:00.000Z"
+        ]
       },
       "typeDocument": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/29"
@@ -31,6 +41,9 @@
     "references": {
       "legalResourcePublicationCompleteness": "https://fedlex.data.admin.ch/vocabulary/publication-completeness/complete",
       "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/195",
+      "workHasAnnex": [
+        "https://fedlex.data.admin.ch/eli/oe/2023/55"
+      ],
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/oc/2021/835/fr",
         "https://fedlex.data.admin.ch/eli/oc/2021/835/de",
@@ -54,6 +67,22 @@
         "Concept",
         "LegalInstitution"
       ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/oe/2023/55",
+      "type": "Work",
+      "references": {
+        "isRealizedBy": [
+          "https://fedlex.data.admin.ch/eli/oe/2023/55/it",
+          "https://fedlex.data.admin.ch/eli/oe/2023/55/fr",
+          "https://fedlex.data.admin.ch/eli/oe/2023/55/de"
+        ]
+      },
+      "attributes": {
+        "order": {
+          "xsd:int": 0
+        }
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/oc/2021/835/fr",
@@ -155,6 +184,51 @@
         "Concept",
         "LegalTaxonomy"
       ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/oe/2023/55/it",
+      "type": "Expression",
+      "references": {
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/oe/2023/55/it/pdf"
+        ],
+        "language": "http://publications.europa.eu/resource/authority/language/ITA"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Spiegazioni"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/oe/2023/55/fr",
+      "type": "Expression",
+      "references": {
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/oe/2023/55/fr/pdf"
+        ],
+        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Commentaires"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/oe/2023/55/de",
+      "type": "Expression",
+      "references": {
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/oe/2023/55/de/pdf"
+        ],
+        "language": "http://publications.europa.eu/resource/authority/language/DEU"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Erläuterungen"
+        }
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/oc/2021/835/fr/docx",
@@ -317,11 +391,76 @@
         "Concept",
         "Language"
       ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/oe/2023/55/it/pdf",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
+      "attributes": {
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf"
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oe/2023/55/it/pdf/fedlex-data-admin-ch-eli-oe-2023-55-it-pdf.pdf"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/oe/2023/55/fr/pdf",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
+      "attributes": {
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf"
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oe/2023/55/fr/pdf/fedlex-data-admin-ch-eli-oe-2023-55-fr-pdf.pdf"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/oe/2023/55/de/pdf",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
+      "attributes": {
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf"
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oe/2023/55/de/pdf/fedlex-data-admin-ch-eli-oe-2023-55-de-pdf.pdf"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+      "type": [
+        "Concept",
+        "LegalInstitution"
+      ]
     }
   ],
   "graph": "https://fedlex.data.admin.ch/eli/oc/2021/835/graph",
   "facets": {
     "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
+    "sortingDateTime": "2021-12-08T23:00Z",
     "taxonomyId": "950.11",
     "sortingDate": "2021-12-09",
     "titleAlternative": {
@@ -334,7 +473,7 @@
       "http://publications.europa.eu/resource/authority/language/FRA": "RO 2021 835",
       "http://publications.europa.eu/resource/authority/language/ITA": "RU 2021 835"
     },
-    "modified": "2021-12-09T16:11:44.316528",
+    "modified": "2023-10-24T13:47:39.275972",
     "theme": {
       "themeId": "9",
       "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/10385"
