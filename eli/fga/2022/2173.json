@@ -7,10 +7,15 @@
     ],
     "attributes": {
       "legalResourceGenre": {
-        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/legal-resource-genre/200"
+        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/legal-resource-genre/900"
       },
       "dateDocument": {
         "xsd:date": "2022-09-07"
+      },
+      "created": {
+        "xsd:dateTime": [
+          "2022-09-18T22:00:00.000Z"
+        ]
       },
       "sequenceInTheYearOfPublication": {
         "xsd:int": 2173
@@ -21,8 +26,13 @@
       "dateEntryInForce": {
         "xsd:date": "2023-01-01"
       },
+      "modified": {
+        "xsd:dateTime": [
+          "2022-09-18T22:00:00.000Z"
+        ]
+      },
       "typeDocument": {
-        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/6"
+        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/88"
       },
       "processType": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/type-procedure/ord"
@@ -155,7 +165,28 @@
       "type": [
         "Memorial",
         "Work"
-      ]
+      ],
+      "attributes": {
+        "memorialNumber": {
+          "xsd:int": 180
+        },
+        "isMemberOf": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/2022"
+        },
+        "memorialYear": {
+          "xsd:int": 2022
+        },
+        "publicationDate": {
+          "xsd:date": "2022-09-19"
+        }
+      },
+      "references": {
+        "isRealizedBy": [
+          "https://fedlex.data.admin.ch/eli/collection/fga/2022/180/fr",
+          "https://fedlex.data.admin.ch/eli/collection/fga/2022/180/it",
+          "https://fedlex.data.admin.ch/eli/collection/fga/2022/180/de"
+        ]
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/2022/2173/it/pdf-a",
@@ -186,6 +217,10 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/2022/2173/it/docx",
       "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
       "attributes": {
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2022/2173/it/docx/fedlex-data-admin-ch-eli-fga-2022-2173-it-docx.docx"
@@ -356,6 +391,10 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/2022/2173/fr/docx",
       "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
       "attributes": {
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2022/2173/fr/docx/fedlex-data-admin-ch-eli-fga-2022-2173-fr-docx.docx"
@@ -447,6 +486,10 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/2022/2173/de/docx",
       "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
       "attributes": {
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2022/2173/de/docx/fedlex-data-admin-ch-eli-fga-2022-2173-de-docx.docx"
@@ -494,6 +537,27 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/collection/fga/2022/180/fr",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/collection/fga/2022/180/it",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/ITA"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/collection/fga/2022/180/de",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU"
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
       "type": [
         "Concept",
@@ -504,6 +568,7 @@
   "graph": "https://fedlex.data.admin.ch/eli/fga/2022/2173/graph",
   "facets": {
     "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/51",
+    "sortingDateTime": "2022-09-18T22:00Z",
     "sortingDate": "2022-09-19",
     "titleAlternative": {
       "de": "SRG-Konzession",
@@ -515,11 +580,18 @@
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 2022 2173",
       "http://publications.europa.eu/resource/authority/language/ITA": "FF 2022 2173"
     },
-    "modified": "2022-09-19T08:07:02.339950",
+    "modified": "2024-01-16T09:24:28.632232",
     "title": {
       "de": "Konzession für die SRG SSR (SRG-Konzession)",
       "it": "Concessione per la SSR (Concessione SSR)",
       "fr": "Concession octroyée à SRG SSR (Concession SSR)"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
   "timestampms": null
