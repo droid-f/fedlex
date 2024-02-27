@@ -9,19 +9,36 @@
       "treatyProcessHasResultingTreatyDocument": [
         "https://fedlex.data.admin.ch/eli/treaty/1234/18249/treatyDocument/1"
       ],
+      "treatyProcessHasTask": [
+        "https://fedlex.data.admin.ch/eli/treaty/1234/18249/EntryIntoForce/1",
+        "https://fedlex.data.admin.ch/eli/treaty/1234/18249/TreatySignature/1"
+      ],
       "euConventionDomain": "https://fedlex.data.admin.ch/vocabulary/eutext-subject-theme/23",
       "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/3",
       "treatyPartyOrganisation": [
         "https://fedlex.data.admin.ch/vocabulary/international-actor/1013"
       ],
-      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/3477"
+      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/3477",
+      "producedIn": [
+        "https://fedlex.data.admin.ch/eli/treaty/1234/18249/Initiation/1"
+      ]
     },
     "attributes": {
       "bilateral": {
         "xsd:boolean": true
       },
+      "modified": {
+        "xsd:dateTime": [
+          "2024-02-27T14:16:55.518Z"
+        ]
+      },
       "eventOrder": {
         "xsd:string": "23.4"
+      },
+      "created": {
+        "xsd:dateTime": [
+          "2024-02-27T14:16:55.496Z"
+        ]
       },
       "titleTreaty": {
         "rdf:langString": {
@@ -53,6 +70,25 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1234/18249/EntryIntoForce/1",
+      "type": [
+        "EntryIntoForce",
+        "Event",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "entryIntoForceFor": "https://fedlex.data.admin.ch/vocabulary/country/718"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1234/18249/TreatySignature/1",
+      "type": [
+        "Event",
+        "TaskForTreaty",
+        "TreatySignature"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/vocabulary/eutext-subject-theme/23",
       "type": [
         "Concept",
@@ -79,11 +115,78 @@
         "Concept",
         "LegalTaxonomy"
       ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1234/18249/Initiation/1",
+      "type": [
+        "Event",
+        "Initiation"
+      ],
+      "references": {
+        "factor": "http://publications.europa.eu/resource/cellar/802eb5f3-14cc-11ea-8c1f-01aa75ed71a1"
+      },
+      "attributes": {
+        "eventOrder": {
+          "xsd:int": 1
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/country/718",
+      "type": [
+        "Concept",
+        "Country"
+      ]
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/cellar/802eb5f3-14cc-11ea-8c1f-01aa75ed71a1",
+      "type": [
+        "EULegalResource",
+        "LegalResource",
+        "Work"
+      ],
+      "attributes": {
+        "legalResourceIsPartOfMemorialLabel": {
+          "rdf:langString": {
+            "de": [
+              "Amtsblatt der Europäischen Union, L 311, 2. Dezember 2019"
+            ],
+            "it": [
+              "Gazzetta ufficiale dell'Unione europea, L 311, 2 dicembre 2019"
+            ],
+            "fr": [
+              "Journal officiel de l'Union européenne, L 311, 2 décembre 2019"
+            ]
+          }
+        },
+        "title": {
+          "rdf:langString": {
+            "de": [
+              "Beschluss (EU, Euratom) 2019/1962 der Kommission vom 17. Oktober 2019 über die Durchführungsbestimmungen für die Bearbeitung von Verschlusssachen des Geheimhaltungsgrades RESTREINT UE/EU RESTRICTED"
+            ],
+            "it": [
+              "Decisione (UE, Euratom) 2019/1962 della Commissione, del 17 ottobre 2019, sulle norme di attuazione per il trattamento di informazioni RESTREINT UE/EU RESTRICTED"
+            ],
+            "fr": [
+              "Décision (UE, Euratom) 2019/1962 de la Commission du 17 octobre 2019 fixant les modalités d’application relatives au traitement des informations RESTREINT UE/EU RESTRICTED"
+            ]
+          }
+        },
+        "workIdDocument": {
+          "xsd:string": "32019D1962"
+        },
+        "publicationDate": {
+          "xsd:date": "2019-12-02"
+        }
+      }
     }
   ],
   "graph": "https://fedlex.data.admin.ch/eli/treaty/1234/18249/graph",
   "facets": {
     "consolidationAbstractUri": "https://fedlex.data.admin.ch/eli/cc/2018/124",
+    "sortingDateTime": "2024-02-27T14:16:55.518Z",
+    "classifiedByTaxonomyEntryLabel_raw": "0.814.011.268",
+    "classifiedByTaxonomyEntryLabel_sort": "00000.00814.00011.00268",
     "classifiedByTaxonomyEntryLabel": {
       "de": "SR 0.814.011.268",
       "fr": "RS 0.814.011.268",
