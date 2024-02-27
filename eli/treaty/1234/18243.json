@@ -9,6 +9,10 @@
       "treatyProcessHasResultingTreatyDocument": [
         "https://fedlex.data.admin.ch/eli/treaty/1234/18243/treatyDocument/1"
       ],
+      "treatyProcessHasTask": [
+        "https://fedlex.data.admin.ch/eli/treaty/1234/18243/EntryIntoForce/1",
+        "https://fedlex.data.admin.ch/eli/treaty/1234/18243/TreatySignature/1"
+      ],
       "euConventionDomain": "https://fedlex.data.admin.ch/vocabulary/eutext-subject-theme/23",
       "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/3",
       "treatyPartyOrganisation": [
@@ -28,7 +32,9 @@
         "https://fedlex.data.admin.ch/eli/treaty/1234/18243/initiation/eu/10",
         "https://fedlex.data.admin.ch/eli/treaty/1234/18243/initiation/eu/8",
         "https://fedlex.data.admin.ch/eli/treaty/1234/18243/initiation/eu/20",
+        "https://fedlex.data.admin.ch/eli/treaty/1234/18243/Initiation/2",
         "https://fedlex.data.admin.ch/eli/treaty/1234/18243/initiation/eu/12",
+        "https://fedlex.data.admin.ch/eli/treaty/1234/18243/Initiation/1",
         "https://fedlex.data.admin.ch/eli/treaty/1234/18243/initiation/eu/11",
         "https://fedlex.data.admin.ch/eli/treaty/1234/18243/initiation/eu/14",
         "https://fedlex.data.admin.ch/eli/treaty/1234/18243/initiation/eu/13",
@@ -43,8 +49,18 @@
       "bilateral": {
         "xsd:boolean": true
       },
+      "modified": {
+        "xsd:dateTime": [
+          "2024-02-27T11:19:22.099Z"
+        ]
+      },
       "eventOrder": {
         "xsd:string": "23.1.1"
+      },
+      "created": {
+        "xsd:dateTime": [
+          "2024-02-27T11:19:22.072Z"
+        ]
       },
       "titleTreaty": {
         "rdf:langString": {
@@ -74,6 +90,25 @@
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/31"
         }
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1234/18243/EntryIntoForce/1",
+      "type": [
+        "EntryIntoForce",
+        "Event",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "entryIntoForceFor": "https://fedlex.data.admin.ch/vocabulary/country/718"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1234/18243/TreatySignature/1",
+      "type": [
+        "Event",
+        "TaskForTreaty",
+        "TreatySignature"
+      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/eutext-subject-theme/23",
@@ -114,7 +149,7 @@
           "xsd:date": "2020-01-01"
         },
         "eventOrder": {
-          "xsd:int": 5
+          "xsd:int": 6
         }
       },
       "references": {
@@ -130,6 +165,9 @@
       "attributes": {
         "dateApplicabilityForOurCountry": {
           "xsd:date": "2020-01-01"
+        },
+        "dateEndApplicabilityForOurCountry": {
+          "xsd:date": "2023-11-14"
         },
         "eventOrder": {
           "xsd:int": 4
@@ -149,8 +187,11 @@
         "dateApplicabilityForOurCountry": {
           "xsd:date": "2020-01-01"
         },
+        "dateEndApplicabilityForOurCountry": {
+          "xsd:date": "2023-11-14"
+        },
         "eventOrder": {
-          "xsd:int": 7
+          "xsd:int": 8
         }
       },
       "references": {
@@ -163,16 +204,19 @@
         "Event",
         "Initiation"
       ],
+      "references": {
+        "legalResourceHasImpact": [
+          "https://fedlex.data.admin.ch/eli/treaty/1234/18243/LegalResourceImpact/1"
+        ],
+        "factor": "http://publications.europa.eu/resource/cellar/391ea49a-3a1e-11e9-8d04-01aa75ed71a1"
+      },
       "attributes": {
         "dateApplicabilityForOurCountry": {
           "xsd:date": "2020-01-01"
         },
         "eventOrder": {
-          "xsd:int": 6
+          "xsd:int": 7
         }
-      },
-      "references": {
-        "factor": "http://publications.europa.eu/resource/cellar/391ea49a-3a1e-11e9-8d04-01aa75ed71a1"
       }
     },
     {
@@ -181,6 +225,15 @@
         "Event",
         "Initiation"
       ],
+      "references": {
+        "legalResourceHasImpact": [
+          "https://fedlex.data.admin.ch/eli/treaty/1234/18243/LegalResourceImpact/8",
+          "https://fedlex.data.admin.ch/eli/treaty/1234/18243/LegalResourceImpact/9",
+          "https://fedlex.data.admin.ch/eli/treaty/1234/18243/LegalResourceImpact/11",
+          "https://fedlex.data.admin.ch/eli/treaty/1234/18243/LegalResourceImpact/10"
+        ],
+        "factor": "http://publications.europa.eu/resource/cellar/4dbe8ecc-0cc7-11e9-81b4-01aa75ed71a1"
+      },
       "attributes": {
         "dateApplicabilityForOurCountry": {
           "xsd:date": "2020-01-01"
@@ -188,9 +241,6 @@
         "eventOrder": {
           "xsd:int": 1
         }
-      },
-      "references": {
-        "factor": "http://publications.europa.eu/resource/cellar/4dbe8ecc-0cc7-11e9-81b4-01aa75ed71a1"
       }
     },
     {
@@ -199,6 +249,17 @@
         "Event",
         "Initiation"
       ],
+      "references": {
+        "legalResourceHasImpact": [
+          "https://fedlex.data.admin.ch/eli/treaty/1234/18243/LegalResourceImpact/6",
+          "https://fedlex.data.admin.ch/eli/treaty/1234/18243/LegalResourceImpact/7",
+          "https://fedlex.data.admin.ch/eli/treaty/1234/18243/LegalResourceImpact/2",
+          "https://fedlex.data.admin.ch/eli/treaty/1234/18243/LegalResourceImpact/3",
+          "https://fedlex.data.admin.ch/eli/treaty/1234/18243/LegalResourceImpact/4",
+          "https://fedlex.data.admin.ch/eli/treaty/1234/18243/LegalResourceImpact/5"
+        ],
+        "factor": "http://publications.europa.eu/resource/cellar/6bde809d-0cc7-11e9-81b4-01aa75ed71a1"
+      },
       "attributes": {
         "dateApplicabilityForOurCountry": {
           "xsd:date": "2020-01-01"
@@ -206,9 +267,6 @@
         "eventOrder": {
           "xsd:int": 3
         }
-      },
-      "references": {
-        "factor": "http://publications.europa.eu/resource/cellar/6bde809d-0cc7-11e9-81b4-01aa75ed71a1"
       }
     },
     {
@@ -220,6 +278,9 @@
       "attributes": {
         "dateApplicabilityForOurCountry": {
           "xsd:date": "2020-01-01"
+        },
+        "dateEndApplicabilityForOurCountry": {
+          "xsd:date": "2023-11-14"
         },
         "eventOrder": {
           "xsd:int": 2
@@ -239,8 +300,11 @@
         "dateApplicabilityForOurCountry": {
           "xsd:date": "2020-01-01"
         },
+        "dateEndApplicabilityForOurCountry": {
+          "xsd:date": "2023-11-14"
+        },
         "eventOrder": {
-          "xsd:int": 9
+          "xsd:int": 10
         }
       },
       "references": {
@@ -264,7 +328,7 @@
           "xsd:date": "2020-01-01"
         },
         "eventOrder": {
-          "xsd:int": 21
+          "xsd:int": 23
         }
       }
     },
@@ -278,8 +342,11 @@
         "dateApplicabilityForOurCountry": {
           "xsd:date": "2020-01-01"
         },
+        "dateEndApplicabilityForOurCountry": {
+          "xsd:date": "2023-11-14"
+        },
         "eventOrder": {
-          "xsd:int": 10
+          "xsd:int": 12
         }
       },
       "references": {
@@ -296,8 +363,11 @@
         "dateApplicabilityForOurCountry": {
           "xsd:date": "2020-01-01"
         },
+        "dateEndApplicabilityForOurCountry": {
+          "xsd:date": "2023-11-14"
+        },
         "eventOrder": {
-          "xsd:int": 8
+          "xsd:int": 9
         }
       },
       "references": {
@@ -315,11 +385,29 @@
           "xsd:date": "2020-01-01"
         },
         "eventOrder": {
-          "xsd:int": 20
+          "xsd:int": 22
         }
       },
       "references": {
         "factor": "http://publications.europa.eu/resource/cellar/074a54ed-2b50-11e8-b5fe-01aa75ed71a1"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1234/18243/Initiation/2",
+      "type": [
+        "Event",
+        "Initiation"
+      ],
+      "attributes": {
+        "dateApplicabilityForOurCountry": {
+          "xsd:date": "2023-11-15"
+        },
+        "eventOrder": {
+          "xsd:int": 5
+        }
+      },
+      "references": {
+        "factor": "http://publications.europa.eu/resource/cellar/9e6c8cd2-fecf-11e9-8c1f-01aa75ed71a1"
       }
     },
     {
@@ -332,12 +420,33 @@
         "dateApplicabilityForOurCountry": {
           "xsd:date": "2020-01-01"
         },
+        "dateEndApplicabilityForOurCountry": {
+          "xsd:date": "2023-11-14"
+        },
         "eventOrder": {
-          "xsd:int": 12
+          "xsd:int": 14
         }
       },
       "references": {
         "factor": "http://publications.europa.eu/resource/cellar/661d99c8-b801-11e2-ab01-01aa75ed71a1"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1234/18243/Initiation/1",
+      "type": [
+        "Event",
+        "Initiation"
+      ],
+      "attributes": {
+        "dateApplicabilityForOurCountry": {
+          "xsd:date": "2023-11-15"
+        },
+        "eventOrder": {
+          "xsd:int": 11
+        }
+      },
+      "references": {
+        "factor": "http://publications.europa.eu/resource/cellar/324f6df9-8531-11eb-af5d-01aa75ed71a1"
       }
     },
     {
@@ -350,8 +459,11 @@
         "dateApplicabilityForOurCountry": {
           "xsd:date": "2020-01-01"
         },
+        "dateEndApplicabilityForOurCountry": {
+          "xsd:date": "2023-11-14"
+        },
         "eventOrder": {
-          "xsd:int": 11
+          "xsd:int": 13
         }
       },
       "references": {
@@ -369,7 +481,7 @@
           "xsd:date": "2020-01-01"
         },
         "eventOrder": {
-          "xsd:int": 14
+          "xsd:int": 16
         }
       },
       "references": {
@@ -386,8 +498,11 @@
         "dateApplicabilityForOurCountry": {
           "xsd:date": "2020-01-01"
         },
+        "dateEndApplicabilityForOurCountry": {
+          "xsd:date": "2023-11-14"
+        },
         "eventOrder": {
-          "xsd:int": 13
+          "xsd:int": 15
         }
       },
       "references": {
@@ -405,7 +520,7 @@
           "xsd:date": "2020-01-01"
         },
         "eventOrder": {
-          "xsd:int": 16
+          "xsd:int": 18
         }
       },
       "references": {
@@ -423,7 +538,7 @@
           "xsd:date": "2020-01-01"
         },
         "eventOrder": {
-          "xsd:int": 15
+          "xsd:int": 17
         }
       },
       "references": {
@@ -441,7 +556,7 @@
           "xsd:date": "2020-01-01"
         },
         "eventOrder": {
-          "xsd:int": 18
+          "xsd:int": 20
         }
       },
       "references": {
@@ -459,7 +574,7 @@
           "xsd:date": "2020-01-01"
         },
         "eventOrder": {
-          "xsd:int": 17
+          "xsd:int": 19
         }
       },
       "references": {
@@ -477,12 +592,19 @@
           "xsd:date": "2020-01-01"
         },
         "eventOrder": {
-          "xsd:int": 19
+          "xsd:int": 21
         }
       },
       "references": {
         "factor": "http://publications.europa.eu/resource/cellar/01c4f171-6e49-11e5-9317-01aa75ed71a1"
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/country/718",
+      "type": [
+        "Concept",
+        "Country"
+      ]
     },
     {
       "uri": "http://publications.europa.eu/resource/cellar/fabc6a23-7168-11e9-9f05-01aa75ed71a1",
@@ -495,13 +617,13 @@
         "legalResourceIsPartOfMemorialLabel": {
           "rdf:langString": {
             "de": [
-              "L 120, 8. Mai 2019, S. 20-26"
+              "L 120, 8. Mai 2019 - S. 20-26"
             ],
             "it": [
-              "L 120, 8 maggio 2019, pag. 20-26"
+              "L 120, 8 maggio 2019 - pag. 20-26"
             ],
             "fr": [
-              "L 120, 8 mai 2019, p. 20-26"
+              "L 120, 8 mai 2019 - p. 20-26"
             ]
           }
         },
@@ -537,13 +659,13 @@
         "legalResourceIsPartOfMemorialLabel": {
           "rdf:langString": {
             "de": [
-              "L 181, 12. Juli 2012, S. 30-104"
+              "L 181, 12. Juli 2012 - S. 30-104"
             ],
             "it": [
-              "L 181, 12 luglio 2012, pag. 30-104"
+              "L 181, 12 luglio 2012 - pag. 30-104"
             ],
             "fr": [
-              "L 181, 12 juillet 2012, p. 30-104"
+              "L 181, 12 juillet 2012 - p. 30-104"
             ]
           }
         },
@@ -579,13 +701,13 @@
         "legalResourceIsPartOfMemorialLabel": {
           "rdf:langString": {
             "de": [
-              "L 308, 29. Oktober 2014, S. 114-124"
+              "L 308, 29. Oktober 2014 - S. 114-124"
             ],
             "it": [
-              "L 308, 29 ottobre 2014, pag. 114-124"
+              "L 308, 29 ottobre 2014 - pag. 114-124"
             ],
             "fr": [
-              "L 308, 29 octobre 2014, p. 114-124"
+              "L 308, 29 octobre 2014 - p. 114-124"
             ]
           }
         },
@@ -611,6 +733,19 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1234/18243/LegalResourceImpact/1",
+      "type": "LegalResourceImpact",
+      "attributes": {
+        "dateApplicabilityForOurCountry": {
+          "xsd:date": "2020-01-01"
+        }
+      },
+      "references": {
+        "impactToLegalResource": "http://publications.europa.eu/resource/cellar/a7ff9634-9e53-11e9-9d01-01aa75ed71a1",
+        "legalResourceImpactHasType": "https://fedlex.data.admin.ch/vocabulary/impact-type/13"
+      }
+    },
+    {
       "uri": "http://publications.europa.eu/resource/cellar/391ea49a-3a1e-11e9-8d04-01aa75ed71a1",
       "type": [
         "EULegalResource",
@@ -621,13 +756,13 @@
         "legalResourceIsPartOfMemorialLabel": {
           "rdf:langString": {
             "de": [
-              "L 59, 27. Februar 2019, S. 8-69"
+              "L 59, 27. Februar 2019 - S. 8-69"
             ],
             "it": [
-              "L 59, 27 febbraio 2019, pag. 8-69"
+              "L 59, 27 febbraio 2019 - pag. 8-69"
             ],
             "fr": [
-              "L 59, 27 février 2019, p. 8-69"
+              "L 59, 27 février 2019 - p. 8-69"
             ]
           }
         },
@@ -653,6 +788,58 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1234/18243/LegalResourceImpact/8",
+      "type": "LegalResourceImpact",
+      "attributes": {
+        "dateApplicabilityForOurCountry": {
+          "xsd:date": "2020-01-01"
+        }
+      },
+      "references": {
+        "impactToLegalResource": "http://publications.europa.eu/resource/cellar/dcb61914-6fc6-11e9-9f05-01aa75ed71a1",
+        "legalResourceImpactHasType": "https://fedlex.data.admin.ch/vocabulary/impact-type/13"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1234/18243/LegalResourceImpact/9",
+      "type": "LegalResourceImpact",
+      "attributes": {
+        "dateApplicabilityForOurCountry": {
+          "xsd:date": "2020-01-01"
+        }
+      },
+      "references": {
+        "impactToLegalResource": "http://publications.europa.eu/resource/cellar/ebffbf4c-a98d-11e9-9d01-01aa75ed71a1",
+        "legalResourceImpactHasType": "https://fedlex.data.admin.ch/vocabulary/impact-type/19"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1234/18243/LegalResourceImpact/11",
+      "type": "LegalResourceImpact",
+      "attributes": {
+        "dateApplicabilityForOurCountry": {
+          "xsd:date": "2020-01-15"
+        }
+      },
+      "references": {
+        "impactToLegalResource": "http://publications.europa.eu/resource/cellar/01509a0f-37b1-11ea-ba6e-01aa75ed71a1",
+        "legalResourceImpactHasType": "https://fedlex.data.admin.ch/vocabulary/impact-type/13"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1234/18243/LegalResourceImpact/10",
+      "type": "LegalResourceImpact",
+      "attributes": {
+        "dateApplicabilityForOurCountry": {
+          "xsd:date": "2020-04-27"
+        }
+      },
+      "references": {
+        "impactToLegalResource": "http://publications.europa.eu/resource/cellar/d0db45e7-884a-11ea-812f-01aa75ed71a1",
+        "legalResourceImpactHasType": "https://fedlex.data.admin.ch/vocabulary/impact-type/13"
+      }
+    },
+    {
       "uri": "http://publications.europa.eu/resource/cellar/4dbe8ecc-0cc7-11e9-81b4-01aa75ed71a1",
       "type": [
         "EULegalResource",
@@ -663,13 +850,13 @@
         "legalResourceIsPartOfMemorialLabel": {
           "rdf:langString": {
             "de": [
-              "L 334, 31. Dezember 2018, S. 94-134"
+              "L 334, 31. Dezember 2018 - S. 94-134"
             ],
             "it": [
-              "L 334, 31 dicembre 2018, pag. 94-134"
+              "L 334, 31 dicembre 2018 - pag. 94-134"
             ],
             "fr": [
-              "L 334, 31 décembre 2018, p. 94-134"
+              "L 334, 31 décembre 2018 - p. 94-134"
             ]
           }
         },
@@ -695,6 +882,84 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1234/18243/LegalResourceImpact/6",
+      "type": "LegalResourceImpact",
+      "attributes": {
+        "dateApplicabilityForOurCountry": {
+          "xsd:date": "2023-11-15"
+        }
+      },
+      "references": {
+        "impactToLegalResource": "http://publications.europa.eu/resource/cellar/2b6b7c24-3eb1-11eb-b27b-01aa75ed71a1",
+        "legalResourceImpactHasType": "https://fedlex.data.admin.ch/vocabulary/impact-type/14"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1234/18243/LegalResourceImpact/7",
+      "type": "LegalResourceImpact",
+      "attributes": {
+        "dateApplicabilityForOurCountry": {
+          "xsd:date": "2023-11-15"
+        }
+      },
+      "references": {
+        "impactToLegalResource": "http://publications.europa.eu/resource/cellar/4672cbc0-54c9-11eb-b59f-01aa75ed71a1",
+        "legalResourceImpactHasType": "https://fedlex.data.admin.ch/vocabulary/impact-type/19"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1234/18243/LegalResourceImpact/2",
+      "type": "LegalResourceImpact",
+      "attributes": {
+        "dateApplicabilityForOurCountry": {
+          "xsd:date": "2021-09-02"
+        }
+      },
+      "references": {
+        "impactToLegalResource": "http://publications.europa.eu/resource/cellar/487c34d3-0b88-11ec-adb1-01aa75ed71a1",
+        "legalResourceImpactHasType": "https://fedlex.data.admin.ch/vocabulary/impact-type/13"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1234/18243/LegalResourceImpact/3",
+      "type": "LegalResourceImpact",
+      "attributes": {
+        "dateApplicabilityForOurCountry": {
+          "xsd:date": "2020-09-10"
+        }
+      },
+      "references": {
+        "impactToLegalResource": "http://publications.europa.eu/resource/cellar/198265f9-f32f-11ea-991b-01aa75ed71a1",
+        "legalResourceImpactHasType": "https://fedlex.data.admin.ch/vocabulary/impact-type/13"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1234/18243/LegalResourceImpact/4",
+      "type": "LegalResourceImpact",
+      "attributes": {
+        "dateApplicabilityForOurCountry": {
+          "xsd:date": "2020-01-01"
+        }
+      },
+      "references": {
+        "impactToLegalResource": "http://publications.europa.eu/resource/cellar/e7d82277-6fc6-11e9-9f05-01aa75ed71a1",
+        "legalResourceImpactHasType": "https://fedlex.data.admin.ch/vocabulary/impact-type/13"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1234/18243/LegalResourceImpact/5",
+      "type": "LegalResourceImpact",
+      "attributes": {
+        "dateApplicabilityForOurCountry": {
+          "xsd:date": "2021-03-11"
+        }
+      },
+      "references": {
+        "impactToLegalResource": "http://publications.europa.eu/resource/cellar/431d9fe9-820e-11eb-9ac9-01aa75ed71a1",
+        "legalResourceImpactHasType": "https://fedlex.data.admin.ch/vocabulary/impact-type/13"
+      }
+    },
+    {
       "uri": "http://publications.europa.eu/resource/cellar/6bde809d-0cc7-11e9-81b4-01aa75ed71a1",
       "type": [
         "EULegalResource",
@@ -705,13 +970,13 @@
         "legalResourceIsPartOfMemorialLabel": {
           "rdf:langString": {
             "de": [
-              "L 334, 31. Dezember 2018, S. 1-93"
+              "L 334, 31. Dezember 2018 - S. 1-93"
             ],
             "it": [
-              "L 334, 31 dicembre 2018, pag. 1-93"
+              "L 334, 31 dicembre 2018 - pag. 1-93"
             ],
             "fr": [
-              "L 334, 31 décembre 2018, p. 1-93"
+              "L 334, 31 décembre 2018 - p. 1-93"
             ]
           }
         },
@@ -747,13 +1012,13 @@
         "legalResourceIsPartOfMemorialLabel": {
           "rdf:langString": {
             "de": [
-              "L 181, 12. Juli 2012, S. 1-29"
+              "L 181, 12. Juli 2012 - S. 1-29"
             ],
             "it": [
-              "L 181, 12 luglio 2012, pag. 1-29"
+              "L 181, 12 luglio 2012 - pag. 1-29"
             ],
             "fr": [
-              "L 181, 12 juillet 2012, p. 1-29"
+              "L 181, 12 juillet 2012 - p. 1-29"
             ]
           }
         },
@@ -789,13 +1054,13 @@
         "legalResourceIsPartOfMemorialLabel": {
           "rdf:langString": {
             "de": [
-              "L 240, 7. September 2013, S. 27-35"
+              "L 240, 7. September 2013 - S. 27-35"
             ],
             "it": [
-              "L 240, 7 settembre 2013, pag. 27-35"
+              "L 240, 7 settembre 2013 - pag. 27-35"
             ],
             "fr": [
-              "L 240, 7 septembre 2013, p. 27-35"
+              "L 240, 7 septembre 2013 - p. 27-35"
             ]
           }
         },
@@ -844,13 +1109,13 @@
         "legalResourceIsPartOfMemorialLabel": {
           "rdf:langString": {
             "de": [
-              "L 275, 25. Oktober 2003, S. 32-46"
+              "L 275, 25. Oktober 2003 - S. 32-46"
             ],
             "it": [
-              "L 275, 25 ottobre 2003, pag. 32-46"
+              "L 275, 25 ottobre 2003 - pag. 32-46"
             ],
             "fr": [
-              "L 275, 25 octobre 2003, p. 32-46"
+              "L 275, 25 octobre 2003 - p. 32-46"
             ]
           }
         },
@@ -886,13 +1151,13 @@
         "legalResourceIsPartOfMemorialLabel": {
           "rdf:langString": {
             "de": [
-              "L 130, 17. Mai 2011, S. 1-45"
+              "L 130, 17. Mai 2011 - S. 1-45"
             ],
             "it": [
-              "L 130, 17 maggio 2011, pag. 1-45"
+              "L 130, 17 maggio 2011 - pag. 1-45"
             ],
             "fr": [
-              "L 130, 17 mai 2011, p. 1-45"
+              "L 130, 17 mai 2011 - p. 1-45"
             ]
           }
         },
@@ -928,13 +1193,13 @@
         "legalResourceIsPartOfMemorialLabel": {
           "rdf:langString": {
             "de": [
-              "L 19, 25. Januar 2017, S. 93-95"
+              "L 19, 25. Januar 2017 - S. 93-95"
             ],
             "it": [
-              "L 19, 25 gennaio 2017, pag. 93-95"
+              "L 19, 25 gennaio 2017 - pag. 93-95"
             ],
             "fr": [
-              "L 19, 25 janvier 2017, p. 93-95"
+              "L 19, 25 janvier 2017 - p. 93-95"
             ]
           }
         },
@@ -970,13 +1235,13 @@
         "legalResourceIsPartOfMemorialLabel": {
           "rdf:langString": {
             "de": [
-              "L 76, 19. März 2018, S. 3-27"
+              "L 76, 19. März 2018 - S. 3-27"
             ],
             "it": [
-              "L 76, 19 marzo 2018, pag. 3-27"
+              "L 76, 19 marzo 2018 - pag. 3-27"
             ],
             "fr": [
-              "L 76, 19 mars 2018, p. 3-27"
+              "L 76, 19 mars 2018 - p. 3-27"
             ]
           }
         },
@@ -1002,6 +1267,48 @@
       }
     },
     {
+      "uri": "http://publications.europa.eu/resource/cellar/9e6c8cd2-fecf-11e9-8c1f-01aa75ed71a1",
+      "type": [
+        "EULegalResource",
+        "LegalResource",
+        "Work"
+      ],
+      "attributes": {
+        "legalResourceIsPartOfMemorialLabel": {
+          "rdf:langString": {
+            "de": [
+              "Amtsblatt der Europäischen Union, L 282, 4. November 2019"
+            ],
+            "it": [
+              "Gazzetta ufficiale dell’Unione europea, L 282, 4 novembre 2019"
+            ],
+            "fr": [
+              "Journal officiel de l’Union européenne, L 282, 4 novembre 2019"
+            ]
+          }
+        },
+        "title": {
+          "rdf:langString": {
+            "de": [
+              "Durchführungsverordnung (EU) 2019/1842 der Kommission vom 31. Oktober 2019 mit Durchführungsbestimmungen zur Richtlinie 2003/87/EG des Europäischen Parlaments und des Rates hinsichtlich weiterer Vorkehrungen für die Anpassung der kostenlosen Zuteilung von Emissionszertifikaten aufgrund von Änderungen der Aktivitätsraten"
+            ],
+            "it": [
+              "Regolamento Di Esecuzione (UE) 2019/1842 della Commissione del 31 ottobre 2019 recante disposizioni di applicazione della direttiva 2003/87/CE del Parlamento europeo e del Consiglio per quanto riguarda le ulteriori modalità di adeguamento dell’assegnazione gratuita di quote di emissioni in funzione delle variazioni del livello di attività"
+            ],
+            "fr": [
+              "Règlement d’exécution (UE) 2019/1842 de la Commission du 31 octobre 2019 portant modalités d’application de la directive 2003/87/CE du Parlement européen et du Conseil en ce qui concerne des modalités supplémentaires pour les adaptations de l’allocation de quotas d’émission à titre gratuit liées aux variations du niveau d’activité"
+            ]
+          }
+        },
+        "workIdDocument": {
+          "xsd:string": "32019R1842"
+        },
+        "publicationDate": {
+          "xsd:date": "2019-11-04"
+        }
+      }
+    },
+    {
       "uri": "http://publications.europa.eu/resource/cellar/661d99c8-b801-11e2-ab01-01aa75ed71a1",
       "type": [
         "EULegalResource",
@@ -1012,13 +1319,13 @@
         "legalResourceIsPartOfMemorialLabel": {
           "rdf:langString": {
             "de": [
-              "L 122, 3. Mai 2013, S. 1-59"
+              "L 122, 3. Mai 2013 - S. 1-59"
             ],
             "it": [
-              "L 122, 3 maggio 2013, pag. 1-59"
+              "L 122, 3 maggio 2013 - pag. 1-59"
             ],
             "fr": [
-              "L 122, 3 mai 2013, p. 1-59"
+              "L 122, 3 mai 2013 - p. 1-59"
             ]
           }
         },
@@ -1044,6 +1351,48 @@
       }
     },
     {
+      "uri": "http://publications.europa.eu/resource/cellar/324f6df9-8531-11eb-af5d-01aa75ed71a1",
+      "type": [
+        "EULegalResource",
+        "LegalResource",
+        "Work"
+      ],
+      "attributes": {
+        "legalResourceIsPartOfMemorialLabel": {
+          "rdf:langString": {
+            "de": [
+              "Amtsblatt der Europäischen Union, L 087, 15. März 2021"
+            ],
+            "it": [
+              "Gazzetta ufficiale dell’Unione europea, L 087, 15 marzo 2021"
+            ],
+            "fr": [
+              "Journal officiel de l’Union européenne, L 087, 15 mars 2021"
+            ]
+          }
+        },
+        "title": {
+          "rdf:langString": {
+            "de": [
+              "Durchführungsverordnung (EU) 2021/447 der Kommission vom 12. März 2021 zur Festlegung angepasster Benchmarkwerte für die kostenlose Zuteilung von Emissionszertifikaten für den Zeitraum 2021–2025 gemäß Artikel 10a Absatz 2 der Richtlinie 2003/87/EG des Europäischen Parlaments und des Rates (Text von Bedeutung für den EWR)"
+            ],
+            "it": [
+              "Regolamento di esecuzione (UE) 2021/447 della Commissione del 12 marzo 2021 che determina valori riveduti dei parametri di riferimento per l'assegnazione gratuita delle quote di emissioni per il periodo dal 2021 al 2025 ai sensi dell'articolo 10 bis, paragrafo 2, della direttiva 2003/87/CE del Parlamento europeo e del Consiglio (Testo rilevante ai fini del SEE)"
+            ],
+            "fr": [
+              "Règlement d’exécution (UE) 2021/447 de la Commission du 12 mars 2021 déterminant les valeurs révisées des référentiels pour l’allocation de quotas d’émission à titre gratuit pour la période 2021-2025, conformément à l’article 10 bis, paragraphe 2, de la directive 2003/87/CE du Parlement européen et du Conseil (Texte présentant de l’intérêt pour l’EEE)"
+            ]
+          }
+        },
+        "workIdDocument": {
+          "xsd:string": "32021R0447"
+        },
+        "publicationDate": {
+          "xsd:date": "2021-03-15"
+        }
+      }
+    },
+    {
       "uri": "http://publications.europa.eu/resource/cellar/ae0737c9-4940-11e3-ae03-01aa75ed71a1",
       "type": [
         "EULegalResource",
@@ -1054,13 +1403,13 @@
         "legalResourceIsPartOfMemorialLabel": {
           "rdf:langString": {
             "de": [
-              "L 299, 9. November 2013, S. 32-33"
+              "L 299, 9. November 2013 - S. 32-33"
             ],
             "it": [
-              "L 299, 9 novembre 2013, pag. 32-33"
+              "L 299, 9 novembre 2013 - pag. 32-33"
             ],
             "fr": [
-              "L 299, 9 novembre 2013, p. 32-33"
+              "L 299, 9 novembre 2013 - p. 32-33"
             ]
           }
         },
@@ -1096,13 +1445,13 @@
         "legalResourceIsPartOfMemorialLabel": {
           "rdf:langString": {
             "de": [
-              "L 141 vom 5.6.2015, S. 73-117"
+              "L 141 vom 5.6.2015, S. 73-117 - S. 73-117"
             ],
             "it": [
-              "L 141 del 5.6.2015, pag. 73-117"
+              "L 141 del 5.6.2015, pag. 73-117 - pag. 73-117"
             ],
             "fr": [
-              "L 141 du 5.6.2015, p. 73-117"
+              "L 141 du 5.6.2015, p. 73-117 - p. 73-117"
             ]
           }
         },
@@ -1135,13 +1484,13 @@
         "legalResourceIsPartOfMemorialLabel": {
           "rdf:langString": {
             "de": [
-              "L 149, 8. Juni 2011, S. 1-3"
+              "L 149, 8. Juni 2011 - S. 1-3"
             ],
             "it": [
-              "L 149, 8 giugno 2011, pag. 1-3"
+              "L 149, 8 giugno 2011 - pag. 1-3"
             ],
             "fr": [
-              "L 149, 8 juin 2011, p. 1-3"
+              "L 149, 8 juin 2011 - p. 1-3"
             ]
           }
         },
@@ -1177,13 +1526,13 @@
         "legalResourceIsPartOfMemorialLabel": {
           "rdf:langString": {
             "de": [
-              "L 173, 12. Juni 2014, S. 1-61"
+              "L 173, 12. Juni 2014 - S. 1-61"
             ],
             "it": [
-              "L 173, 12 giugno 2014, pag. 1-61"
+              "L 173, 12 giugno 2014 - pag. 1-61"
             ],
             "fr": [
-              "L 173, 12 juin 2014, p. 1-61"
+              "L 173, 12 juin 2014 - p. 1-61"
             ]
           }
         },
@@ -1219,13 +1568,13 @@
         "legalResourceIsPartOfMemorialLabel": {
           "rdf:langString": {
             "de": [
-              "L 173, 12. Juni 2014, S. 179-189"
+              "L 173, 12. Juni 2014 - S. 179-189"
             ],
             "it": [
-              "L 173, 12 giugno 2014, pag. 179-189"
+              "L 173, 12 giugno 2014 - pag. 179-189"
             ],
             "fr": [
-              "L 173, 12 juin 2014, p. 179-189"
+              "L 173, 12 juin 2014 - p. 179-189"
             ]
           }
         },
@@ -1261,13 +1610,13 @@
         "legalResourceIsPartOfMemorialLabel": {
           "rdf:langString": {
             "de": [
-              "L 173, 12. Juni 2014, S. 349-496"
+              "L 173, 12. Juni 2014 - S. 349-496"
             ],
             "it": [
-              "L 173, 12 giugno 2014, pag. 349-496"
+              "L 173, 12 giugno 2014 - pag. 349-496"
             ],
             "fr": [
-              "L 173, 12 juin 2014, p. 349-496"
+              "L 173, 12 juin 2014 - p. 349-496"
             ]
           }
         },
@@ -1303,13 +1652,13 @@
         "legalResourceIsPartOfMemorialLabel": {
           "rdf:langString": {
             "de": [
-              "L 173, 12. Juni 2014, S. 84-148"
+              "L 173, 12. Juni 2014 - S. 84-148"
             ],
             "it": [
-              "L 173, 12 giugno 2014, pag. 84-148"
+              "L 173, 12 giugno 2014 - pag. 84-148"
             ],
             "fr": [
-              "L 173, 12 juin 2014, p. 84-148"
+              "L 173, 12 juin 2014 - p. 84-148"
             ]
           }
         },
@@ -1345,13 +1694,13 @@
         "legalResourceIsPartOfMemorialLabel": {
           "rdf:langString": {
             "de": [
-              "L 264, 9. Oktober 2015, S. 1-5"
+              "L 264, 9. Oktober 2015 - S. 1-5"
             ],
             "it": [
-              "L 264, 9 ottobre 2015, pag. 1-5"
+              "L 264, 9 ottobre 2015 - pag. 1-5"
             ],
             "fr": [
-              "L 264, 9 octobre 2015, p. 1-5"
+              "L 264, 9 octobre 2015 - p. 1-5"
             ]
           }
         },
@@ -1377,6 +1726,409 @@
       }
     },
     {
+      "uri": "http://publications.europa.eu/resource/cellar/a7ff9634-9e53-11e9-9d01-01aa75ed71a1",
+      "type": [
+        "EULegalResource",
+        "LegalResource",
+        "Work"
+      ],
+      "attributes": {
+        "legalResourceIsPartOfMemorialLabel": {
+          "rdf:langString": {
+            "de": [
+              "Amtsblatt der Europäischen Union, L 180, 4. Juli 2019 - L 180 vom 4.7.2019, S. 31–31"
+            ],
+            "it": [
+              "Gazzetta ufficiale dell'Unione europea, L 180, 4 luglio 2019"
+            ],
+            "fr": [
+              "Journal officiel de l'Union européenne, L 180, 4 juillet 2019"
+            ]
+          }
+        },
+        "title": {
+          "rdf:langString": {
+            "de": [
+              "Berichtigung der Delegierten Verordnung (EU) 2019/331 der Kommission vom 19. Dezember 2018 zur Festlegung EU-weiter Übergangsvorschriften zur Harmonisierung der kostenlosen Zuteilung von Emissionszertifikaten gemäß Artikel 10a der Richtlinie 2003/87/EG des Europäischen Parlaments und des Rates (ABl. L 59 vom 27.2.2019)"
+            ]
+          }
+        },
+        "workIdDocument": {
+          "xsd:string": "32019R0331R(01)"
+        },
+        "publicationDate": {
+          "xsd:date": "2019-07-04"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/impact-type/13",
+      "type": [
+        "Concept",
+        "ImpactType"
+      ]
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/cellar/dcb61914-6fc6-11e9-9f05-01aa75ed71a1",
+      "type": [
+        "EULegalResource",
+        "LegalResource",
+        "Work"
+      ],
+      "attributes": {
+        "legalResourceIsPartOfMemorialLabel": {
+          "rdf:langString": {
+            "de": [
+              "Amtsblatt der Europäischen Union, L 118, 6. Mai 2019"
+            ],
+            "it": [
+              "Gazzetta ufficiale dell'Unione europea, L 118, 6 maggio 2019"
+            ],
+            "fr": [
+              "Journal officiel de l'Union européenne, L 118, 6 mai 2019 - L 118 du 6.5.2019, p. 10–10"
+            ]
+          }
+        },
+        "title": {
+          "rdf:langString": {
+            "fr": [
+              "Rectificatif au règlement d'exécution (UE) 2018/2067 de la Commission du 19 décembre 2018 concernant la vérification des données et l'accréditation des vérificateurs conformément à la directive 2003/87/CE du Parlement européen et du Conseil (JO L 334 du 31.12.2018)"
+            ]
+          }
+        },
+        "workIdDocument": {
+          "xsd:string": "32018R2067R(01)"
+        },
+        "publicationDate": {
+          "xsd:date": "2019-05-06"
+        }
+      }
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/cellar/ebffbf4c-a98d-11e9-9d01-01aa75ed71a1",
+      "type": [
+        "EULegalResource",
+        "LegalResource",
+        "Work"
+      ],
+      "attributes": {
+        "title": {
+          "rdf:langString": {
+            "fr": [
+              "Règlement d'exécution (UE) 2018/2067 de la Commission du 19 décembre 2018 concernant la vérification des données et l'accréditation des vérificateurs conformément à la directive 2003/87/CE du Parlement européen et du Conseil (Texte présentant de l'intérêt pour l'EEE)Texte présentant de l'intérêt pour l'EEE"
+            ]
+          }
+        },
+        "workIdDocument": {
+          "xsd:string": "02018R2067-20181231"
+        },
+        "publicationDate": {
+          "xsd:date": "2019-07-18"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/impact-type/19",
+      "type": [
+        "Concept",
+        "ImpactType"
+      ]
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/cellar/01509a0f-37b1-11ea-ba6e-01aa75ed71a1",
+      "type": [
+        "EULegalResource",
+        "LegalResource",
+        "Work"
+      ],
+      "attributes": {
+        "legalResourceIsPartOfMemorialLabel": {
+          "rdf:langString": {
+            "de": [
+              "Amtsblatt der Europäischen Union, L 009, 15. Januar 2020"
+            ],
+            "it": [
+              "Gazzetta ufficiale dell’Unione europea, L 009, 15 gennaio 2020"
+            ],
+            "fr": [
+              "Journal officiel de l’Union européenne, L 009, 15 janvier 2020 - L 9 du 15.1.2020, p. 75–75"
+            ]
+          }
+        },
+        "title": {
+          "rdf:langString": {
+            "fr": [
+              "Rectificatif au règlement d’exécution (UE) 2018/2067 de la Commission du 19 décembre 2018 concernant la vérification des données et l’accréditation des vérificateurs conformément à la directive 2003/87/CE du Parlement européen et du Conseil (Journal officiel de l’Union européenne L 334 du 31 décembre 2018)"
+            ]
+          }
+        },
+        "workIdDocument": {
+          "xsd:string": "32018R2067R(03)"
+        },
+        "publicationDate": {
+          "xsd:date": "2020-01-15"
+        }
+      }
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/cellar/d0db45e7-884a-11ea-812f-01aa75ed71a1",
+      "type": [
+        "EULegalResource",
+        "LegalResource",
+        "Work"
+      ],
+      "attributes": {
+        "legalResourceIsPartOfMemorialLabel": {
+          "rdf:langString": {
+            "de": [
+              "Amtsblatt der Europäischen Union, L 132, 27. April 2020"
+            ],
+            "it": [
+              "Gazzetta ufficiale dell’Unione europea, L 132, 27 aprile 2020"
+            ],
+            "fr": [
+              "Journal officiel de l’Union européenne, L 132, 27 avril 2020 - L 132 du 27.4.2020, p. 31–34"
+            ]
+          }
+        },
+        "title": {
+          "rdf:langString": {
+            "fr": [
+              "Rectificatif au règlement d’exécution (UE) 2018/2067 de la Commission du 19 décembre 2018 concernant la vérification des données et l’accréditation des vérificateurs conformément à la directive 2003/87/CE du Parlement européen et du Conseil («Journal officiel de l’Union européenne» L 334 du 31 décembre 2018)"
+            ]
+          }
+        },
+        "workIdDocument": {
+          "xsd:string": "32018R2067R(04)"
+        },
+        "publicationDate": {
+          "xsd:date": "2020-04-27"
+        }
+      }
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/cellar/2b6b7c24-3eb1-11eb-b27b-01aa75ed71a1",
+      "type": [
+        "EULegalResource",
+        "LegalResource",
+        "Work"
+      ],
+      "attributes": {
+        "legalResourceIsPartOfMemorialLabel": {
+          "rdf:langString": {
+            "de": [
+              "Amtsblatt der Europäischen Union, L 423, 15. Dezember 2020"
+            ],
+            "it": [
+              "Gazzetta ufficiale dell’Unione europea, L 423, 15 dicembre 2020"
+            ],
+            "fr": [
+              "Journal officiel de l’Union européenne, L 423, 15 décembre 2020"
+            ]
+          }
+        },
+        "title": {
+          "rdf:langString": {
+            "de": [
+              "Durchführungsverordnung (EU) 2020/2085 der Kommission vom 14. Dezember 2020 zur Änderung und Berichtigung der Durchführungsverordnung (EU) 2018/2066 über die Überwachung von und die Berichterstattung über Treibhausgasemissionen gemäß der Richtlinie 2003/87/EG des Europäischen Parlaments und des Rates (Text von Bedeutung für den EWR)"
+            ],
+            "it": [
+              "Regolamento di esecuzione (UE) 2020/2085 della Commissione del 14 dicembre 2020 che modifica e rettifica il regolamento di esecuzione (UE) 2018/2066 concernente il monitoraggio e la comunicazione delle emissioni di gas a effetto serra ai sensi della direttiva 2003/87/CE del Parlamento europeo e del Consiglio (Testo rilevante ai fini del SEE)"
+            ],
+            "fr": [
+              "Règlement d’exécution (UE) 2020/2085 de la Commission du 14 décembre 2020 portant modification et rectification du règlement d’exécution (UE) 2018/2066 relatif à la surveillance et à la déclaration des émissions de gaz à effet de serre au titre de la directive 2003/87/CE du Parlement européen et du Conseil (Texte présentant de l’intérêt pour l’EEE)"
+            ]
+          }
+        },
+        "workIdDocument": {
+          "xsd:string": "32020R2085"
+        },
+        "publicationDate": {
+          "xsd:date": "2020-12-15"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/impact-type/14",
+      "type": [
+        "Concept",
+        "ImpactType"
+      ]
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/cellar/4672cbc0-54c9-11eb-b59f-01aa75ed71a1",
+      "type": [
+        "EULegalResource",
+        "LegalResource",
+        "Work"
+      ],
+      "attributes": {
+        "title": {
+          "rdf:langString": {
+            "de": [
+              "Durchführungsverordnung (EU) 2018/2066 der Kommission vom 19. Dezember 2018 über die Überwachung von und die Berichterstattung über Treibhausgasemissionen gemäß der Richtlinie 2003/87/EG des Europäischen Parlaments und des Rates und zur Änderung der Verordnung (EU) Nr. 601/2012 der Kommission (Text von Bedeutung für den EWR)Text von Bedeutung für den EWR"
+            ],
+            "it": [
+              "Regolamento di esecuzione (UE) 2018/2066 della Commissione, del 19 dicembre 2018, concernente il monitoraggio e la comunicazione delle emissioni di gas a effetto serra ai sensi della direttiva 2003/87/CE del Parlamento europeo e del Consiglio e che modifica il regolamento (UE) n. 601/2012 della Commissione (Testo rilevante ai fini del SEE)Testo rilevante ai fini del SEE"
+            ],
+            "fr": [
+              "Règlement d'exécution (UE) 2018/2066 de la Commission du 19 décembre 2018 relatif à la surveillance et à la déclaration des émissions de gaz à effet de serre au titre de la directive 2003/87/CE du Parlement européen et du Conseil et modifiant le règlement (UE) no 601/2012 de la Commission (Texte présentant de l'intérêt pour l'EEE)Texte présentant de l'intérêt pour l'EEE"
+            ]
+          }
+        },
+        "workIdDocument": {
+          "xsd:string": "02018R2066-20210101"
+        },
+        "publicationDate": {
+          "xsd:date": "2021-01-12"
+        }
+      }
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/cellar/487c34d3-0b88-11ec-adb1-01aa75ed71a1",
+      "type": [
+        "EULegalResource",
+        "LegalResource",
+        "Work"
+      ],
+      "attributes": {
+        "legalResourceIsPartOfMemorialLabel": {
+          "rdf:langString": {
+            "de": [
+              "Amtsblatt der Europäischen Union, L 309, 2. September 2021"
+            ],
+            "it": [
+              "Gazzetta ufficiale dell’Unione europea, L 309, 2 settembre 2021 - L 309 del 2.9.2021, pag. 37–37"
+            ],
+            "fr": [
+              "Journal officiel de l’Union européenne, L 309, 2 septembre 2021"
+            ]
+          }
+        },
+        "title": {
+          "rdf:langString": {
+            "it": [
+              "Rettifica del regolamento di esecuzione (UE) 2018/2066 della Commissione, del 19 dicembre 2018, concernente il monitoraggio e la comunicazione delle emissioni di gas a effetto serra ai sensi della direttiva 2003/87/CE del Parlamento europeo e del Consiglio e che modifica il regolamento (UE) n. 601/2012 della Commissione (Gazzetta ufficiale dell'Unione europea L 334 del 31 dicembre 2018)"
+            ]
+          }
+        },
+        "workIdDocument": {
+          "xsd:string": "32018R2066R(05)"
+        },
+        "publicationDate": {
+          "xsd:date": "2021-09-02"
+        }
+      }
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/cellar/198265f9-f32f-11ea-991b-01aa75ed71a1",
+      "type": [
+        "EULegalResource",
+        "LegalResource",
+        "Work"
+      ],
+      "attributes": {
+        "legalResourceIsPartOfMemorialLabel": {
+          "rdf:langString": {
+            "de": [
+              "Amtsblatt der Europäischen Union, L 296, 10. September 2020"
+            ],
+            "it": [
+              "Gazzetta ufficiale dell’Unione europea, L 296, 10 settembre 2020"
+            ],
+            "fr": [
+              "Journal officiel de l’Union européenne, L 296, 10 septembre 2020 - L 296 du 10.9.2020, p. 8–10"
+            ]
+          }
+        },
+        "title": {
+          "rdf:langString": {
+            "fr": [
+              "Rectificatif au règlement d’exécution (UE) 2018/2066 de la Commission du 19 décembre 2018 relatif à la surveillance et à la déclaration des émissions de gaz à effet de serre au titre de la directive 2003/87/CE du Parlement européen et du Conseil et modifiant le règlement (UE) no 601/2012 de la Commission («Journal officiel de l’Union européenne» L 334 du 31 décembre 2018)"
+            ]
+          }
+        },
+        "workIdDocument": {
+          "xsd:string": "32018R2066R(03)"
+        },
+        "publicationDate": {
+          "xsd:date": "2020-09-10"
+        }
+      }
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/cellar/e7d82277-6fc6-11e9-9f05-01aa75ed71a1",
+      "type": [
+        "EULegalResource",
+        "LegalResource",
+        "Work"
+      ],
+      "attributes": {
+        "legalResourceIsPartOfMemorialLabel": {
+          "rdf:langString": {
+            "de": [
+              "Amtsblatt der Europäischen Union, L 118, 6. Mai 2019 - L 118 vom 6.5.2019, S. 10–10"
+            ],
+            "it": [
+              "Gazzetta ufficiale dell'Unione europea, L 118, 6 maggio 2019"
+            ],
+            "fr": [
+              "Journal officiel de l'Union européenne, L 118, 6 mai 2019"
+            ]
+          }
+        },
+        "title": {
+          "rdf:langString": {
+            "de": [
+              "Berichtigung der Durchführungsverordnung (EU) 2018/2066 der Kommission vom 19. Dezember 2018 über die Überwachung von und die Berichterstattung über Treibhausgasemissionen gemäß der Richtlinie 2003/87/EG des Europäischen Parlaments und des Rates und zur Änderung der Verordnung (EU) Nr. 601/2012 der Kommission (ABl. L 334 vom 31.12.2018)"
+            ]
+          }
+        },
+        "workIdDocument": {
+          "xsd:string": "32018R2066R(01)"
+        },
+        "publicationDate": {
+          "xsd:date": "2019-05-06"
+        }
+      }
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/cellar/431d9fe9-820e-11eb-9ac9-01aa75ed71a1",
+      "type": [
+        "EULegalResource",
+        "LegalResource",
+        "Work"
+      ],
+      "attributes": {
+        "legalResourceIsPartOfMemorialLabel": {
+          "rdf:langString": {
+            "de": [
+              "Amtsblatt der Europäischen Union, L 084, 11. März 2021"
+            ],
+            "it": [
+              "Gazzetta ufficiale dell’Unione europea, L 084, 11 marzo 2021"
+            ],
+            "fr": [
+              "Journal officiel de l’Union européenne, L 084, 11 mars 2021 - L 84 du 11.3.2021, p. 29–29"
+            ]
+          }
+        },
+        "title": {
+          "rdf:langString": {
+            "fr": [
+              "Rectificatif au règlement d’exécution (UE) 2018/2066 de la Commission du 19 décembre 2018 relatif à la surveillance et à la déclaration des émissions de gaz à effet de serre au titre de la directive 2003/87/CE du Parlement européen et du Conseil et modifiant le règlement (UE) no 601/2012 de la Commission («Journal officiel de l’Union européenne» L 334 du 31 décembre 2018)"
+            ]
+          }
+        },
+        "workIdDocument": {
+          "xsd:string": "32018R2066R(04)"
+        },
+        "publicationDate": {
+          "xsd:date": "2021-03-11"
+        }
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/euLegalResource/02003L0087-20180408",
       "type": [
         "EULegalResource",
@@ -1388,18 +2140,12 @@
           "xsd:string": "02003L0087-20180408"
         }
       }
-    },
-    {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/impact-type/19",
-      "type": [
-        "Concept",
-        "ImpactType"
-      ]
     }
   ],
   "graph": "https://fedlex.data.admin.ch/eli/treaty/1234/18243/graph",
   "facets": {
     "consolidationAbstractUri": "https://fedlex.data.admin.ch/eli/cc/2018/124",
+    "sortingDateTime": "2024-02-27T11:19:22.099Z",
     "classifiedByTaxonomyEntryLabel_raw": "0.814.011.268",
     "classifiedByTaxonomyEntryLabel_sort": "00000.00814.00011.00268",
     "classifiedByTaxonomyEntryLabel": {
