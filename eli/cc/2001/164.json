@@ -15,30 +15,24 @@
       "basicAct": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/oc/2001/164"
       },
-      "typeDocument": {
-        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/27"
-      },
       "dateEntryInForce": {
         "xsd:date": "2001-02-01"
+      },
+      "typeDocument": {
+        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/27"
       }
     },
     "references": {
-      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/6692",
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/cc/2001/164/de",
         "https://fedlex.data.admin.ch/eli/cc/2001/164/it",
         "https://fedlex.data.admin.ch/eli/cc/2001/164/fr"
-      ]
+      ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/6692"
     }
   },
   "included": [
-    {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/6692",
-      "type": [
-        "Concept",
-        "LegalTaxonomy"
-      ]
-    },
     {
       "uri": "https://fedlex.data.admin.ch/eli/cc/2001/164/de",
       "type": "Expression",
@@ -47,7 +41,7 @@
           "xsd:string": "Geschäftsordnung ETH-Rat"
         },
         "title": {
-          "xsd:string": "Geschäftsordnung des Rates der eidgenössischen Technischen Hochschulen <bd>vom 25. Januar 2001</bd> (Geschäftsordnung ETH-Rat)"
+          "xsd:string": "Geschäftsordnung des Rates der eidgenössischen Technischen Hochschulen vom 25. Januar 2001 (Geschäftsordnung ETH-Rat)"
         }
       },
       "references": {
@@ -62,7 +56,7 @@
           "xsd:string": "Regolamento interno del Consiglio dei PF"
         },
         "title": {
-          "xsd:string": "Regolamento interno del Consiglio dei Politecnici federali <bd>del 25 gennaio 2001</bd> (Regolamento interno del Consiglio dei PF)"
+          "xsd:string": "Regolamento interno del Consiglio dei Politecnici federali del 25 gennaio 2001 (Regolamento interno del Consiglio dei PF)"
         }
       },
       "references": {
@@ -77,12 +71,26 @@
           "xsd:string": "Règlement interne du Conseil des EPF"
         },
         "title": {
-          "xsd:string": "Règlement interne du Conseil des écoles polytechniques fédérales <bd>du 25 janvier 2001</bd> (Règlement interne du Conseil des EPF)"
+          "xsd:string": "Règlement interne du Conseil des écoles polytechniques fédérales du 25 janvier 2001 (Règlement interne du Conseil des EPF)"
         }
       },
       "references": {
         "language": "http://publications.europa.eu/resource/authority/language/FRA"
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/6692",
+      "type": [
+        "Concept",
+        "LegalTaxonomy"
+      ]
     },
     {
       "uri": "http://publications.europa.eu/resource/authority/language/DEU",
@@ -108,18 +116,12 @@
   ],
   "graph": "https://fedlex.data.admin.ch/eli/cc/2001/164/graph",
   "facets": {
-    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
     "consolidates": [
       {
         "dateDocument": "2003-12-17",
         "expression": {
           "http://publications.europa.eu/resource/authority/language/DEU": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2004/52/de/pdf-x/fedlex-data-admin-ch-eli-oc-2004-52-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2004/52/de/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2004/52/de/doc/fedlex-data-admin-ch-eli-oc-2004-52-de-doc.doc",
@@ -132,15 +134,10 @@
               }
             ],
             "memorialLabel": "AS 2004 633",
-            "title": "Geschäftsordnung <bd> des Rates der Eidgenössischen Technischen Hochschulen (Geschäftsordnung ETH-Rat)"
+            "title": "Geschäftsordnung des Rates der Eidgenössischen Technischen Hochschulen (Geschäftsordnung ETH-Rat)"
           },
           "http://publications.europa.eu/resource/authority/language/FRA": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2004/52/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2004-52-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2004/52/fr/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2004/52/fr/doc/fedlex-data-admin-ch-eli-oc-2004-52-fr-doc.doc",
@@ -153,15 +150,10 @@
               }
             ],
             "memorialLabel": "RO 2004 633",
-            "title": "Règlement interne <bd> du Conseil des Ecoles polytechniques fédérales (Règlement du Conseil des EPF)"
+            "title": "Règlement interne du Conseil des Ecoles polytechniques fédérales (Règlement du Conseil des EPF)"
           },
           "http://publications.europa.eu/resource/authority/language/ITA": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2004/52/it/pdf-x/fedlex-data-admin-ch-eli-oc-2004-52-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2004/52/it/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2004/52/it/pdf-a/fedlex-data-admin-ch-eli-oc-2004-52-it-pdf-a.pdf",
@@ -174,7 +166,7 @@
               }
             ],
             "memorialLabel": "RU 2004 633",
-            "title": "Regolamento interno <bd> del Consiglio dei politecnici federali (Regolamento interno del Consiglio dei PF)"
+            "title": "Regolamento interno del Consiglio dei politecnici federali (Regolamento interno del Consiglio dei PF)"
           }
         },
         "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/32",
@@ -192,26 +184,16 @@
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2001/164/de/pdf-a"
               },
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2001/164/de/pdf-x/fedlex-data-admin-ch-eli-oc-2001-164-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2001/164/de/pdf-x"
-              },
-              {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2001/164/de/doc/fedlex-data-admin-ch-eli-oc-2001-164-de-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2001/164/de/doc"
               }
             ],
             "memorialLabel": "AS 2001 1073",
-            "title": "Geschäftsordnung des Rates der eidgenössischen Technischen Hochschulen <bd> (Geschäftsordnung ETH-Rat)"
+            "title": "Geschäftsordnung des Rates der eidgenössischen Technischen Hochschulen (Geschäftsordnung ETH-Rat)"
           },
           "http://publications.europa.eu/resource/authority/language/FRA": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2001/164/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2001-164-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2001/164/fr/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2001/164/fr/doc/fedlex-data-admin-ch-eli-oc-2001-164-fr-doc.doc",
@@ -224,7 +206,7 @@
               }
             ],
             "memorialLabel": "RO 2001 1073",
-            "title": "Règlement interne du Conseil des écoles polytechniques fédérales <bd> (Règlement interne du Conseil des EPF)"
+            "title": "Règlement interne du Conseil des écoles polytechniques fédérales (Règlement interne du Conseil des EPF)"
           },
           "http://publications.europa.eu/resource/authority/language/ITA": {
             "manifestation": [
@@ -237,15 +219,10 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2001/164/it/pdf-a/fedlex-data-admin-ch-eli-oc-2001-164-it-pdf-a.pdf",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2001/164/it/pdf-a"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2001/164/it/pdf-x/fedlex-data-admin-ch-eli-oc-2001-164-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2001/164/it/pdf-x"
               }
             ],
             "memorialLabel": "RU 2001 1073",
-            "title": "Regolamento interno del Consiglio dei Politecnici federali <bd> (Regolamento interno del Consiglio dei PF)"
+            "title": "Regolamento interno del Consiglio dei Politecnici federali (Regolamento interno del Consiglio dei PF)"
           }
         },
         "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/32",
@@ -257,11 +234,6 @@
         "expression": {
           "http://publications.europa.eu/resource/authority/language/DEU": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2002/640/de/pdf-x/fedlex-data-admin-ch-eli-oc-2002-640-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2002/640/de/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2002/640/de/doc/fedlex-data-admin-ch-eli-oc-2002-640-de-doc.doc",
@@ -279,11 +251,6 @@
           "http://publications.europa.eu/resource/authority/language/FRA": {
             "manifestation": [
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2002/640/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2002-640-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2002/640/fr/pdf-x"
-              },
-              {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2002/640/fr/doc/fedlex-data-admin-ch-eli-oc-2002-640-fr-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2002/640/fr/doc"
@@ -299,11 +266,6 @@
           },
           "http://publications.europa.eu/resource/authority/language/ITA": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2002/640/it/pdf-x/fedlex-data-admin-ch-eli-oc-2002-640-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2002/640/it/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2002/640/it/doc/fedlex-data-admin-ch-eli-oc-2002-640-it-doc.doc",
@@ -329,11 +291,6 @@
           "http://publications.europa.eu/resource/authority/language/DEU": {
             "manifestation": [
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2002/38/de/pdf-x/fedlex-data-admin-ch-eli-oc-2002-38-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2002/38/de/pdf-x"
-              },
-              {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2002/38/de/doc/fedlex-data-admin-ch-eli-oc-2002-38-de-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2002/38/de/doc"
@@ -355,11 +312,6 @@
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2002/38/fr/doc"
               },
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2002/38/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2002-38-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2002/38/fr/pdf-x"
-              },
-              {
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2002/38/fr/pdf-a/fedlex-data-admin-ch-eli-oc-2002-38-fr-pdf-a.pdf",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2002/38/fr/pdf-a"
@@ -379,11 +331,6 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2002/38/it/doc/fedlex-data-admin-ch-eli-oc-2002-38-it-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2002/38/it/doc"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2002/38/it/pdf-x/fedlex-data-admin-ch-eli-oc-2002-38-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2002/38/it/pdf-x"
               }
             ],
             "memorialLabel": "RU 2002 205",
@@ -395,90 +342,135 @@
         "uri": "https://fedlex.data.admin.ch/eli/oc/2002/38"
       }
     ],
-    "sortingDate": "2004-02-01",
-    "titleAlternative": {
-      "de": "Geschäftsordnung ETH-Rat",
-      "it": "Regolamento interno del Consiglio dei PF",
-      "fr": "Règlement interne du Conseil des EPF"
-    },
-    "theme": {
-      "themeId": "4",
-      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/6332"
-    },
+    "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/32",
     "impacts": [
       {
-        "impactDate": "2003-01-01",
+        "impactDate": "2002-01-01",
         "commentFrom": {
-          "fr": "O 14.11.2002 (I)"
+          "fr": "O 15.11.2001 (I)"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/164/20030101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2001-164-20030101-fr-pdf-a.pdf",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
         "commentTo": {
-          "fr": "Art. 4<i>a</i>, 9, 9<i>a</i>"
+          "fr": "Art. 8"
         },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/640",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/38",
         "language": [
           "http://publications.europa.eu/resource/authority/language/FRA"
         ],
+        "consolidatedByPdf2": {
+          "fr": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/164/20020101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2001-164-20020101-fr-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/164/20030101",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/164/20020101",
         "historicalImpact": false,
-        "consolidationDate": "2003-01-01"
+        "consolidationDate": "2002-01-01"
       },
       {
-        "impactDate": "2003-01-01",
+        "impactDate": "2002-01-01",
         "commentFrom": {
-          "de": "V 14.11.2002 (I)"
+          "fr": "I"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/164/20030101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2001-164-20030101-de-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "de": "Art. 4<i>a</i>, 9, 9<i>a</i>"
-        },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/640",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/38",
         "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
+          "http://publications.europa.eu/resource/authority/language/FRA"
         ],
+        "consolidatedByPdf2": {
+          "fr": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/164/20020101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2001-164-20020101-fr-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/164/20030101",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/164/20020101",
+        "decisionDate": "2001-11-15",
         "historicalImpact": false,
-        "consolidationDate": "2003-01-01"
+        "consolidationDate": "2002-01-01"
       },
       {
-        "impactDate": "2003-01-01",
+        "impactDate": "2002-01-01",
         "commentFrom": {
-          "it": "O 14.11.2002 (I)"
+          "it": "O 15.11.2001 (I)"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/164/20030101/it/pdf-a/fedlex-data-admin-ch-eli-cc-2001-164-20030101-it-pdf-a.pdf",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
         "commentTo": {
-          "it": "art. 4<i>a</i>, 9, 9<i>a</i>"
+          "it": "art. 8"
         },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/640",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/38",
         "language": [
           "http://publications.europa.eu/resource/authority/language/ITA"
         ],
+        "consolidatedByPdf2": {
+          "it": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/164/20020101/it/pdf-a/fedlex-data-admin-ch-eli-cc-2001-164-20020101-it-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/164/20030101",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/164/20020101",
         "historicalImpact": false,
-        "consolidationDate": "2003-01-01"
+        "consolidationDate": "2002-01-01"
       },
       {
-        "impactDate": "2003-01-01",
-        "commentFrom": {
-          "de": "I"
-        },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/164/20030101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2001-164-20030101-de-pdf-a.pdf",
+        "impactDate": "2001-02-01",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/640",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2001/164",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "consolidatedByPdf2": {
+          "it": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/164/20010201/it/pdf-a/fedlex-data-admin-ch-eli-cc-2001-164-20010201-it-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/164/20010201",
+        "decisionDate": "2001-02-01",
+        "historicalImpact": false,
+        "consolidationDate": "2001-02-01"
+      },
+      {
+        "impactDate": "2001-02-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2001/164",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "consolidatedByPdf2": {
+          "fr": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/164/20010201/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2001-164-20010201-fr-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/164/20010201",
+        "decisionDate": "2001-02-01",
+        "historicalImpact": false,
+        "consolidationDate": "2001-02-01"
+      },
+      {
+        "impactDate": "2001-02-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2001/164",
         "language": [
           "http://publications.europa.eu/resource/authority/language/DEU"
         ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/164/20030101",
-        "decisionDate": "2002-11-14",
+        "consolidatedByPdf2": {
+          "de": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/164/20010201/de/pdf-a/fedlex-data-admin-ch-eli-cc-2001-164-20010201-de-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/164/20010201",
+        "decisionDate": "2001-02-01",
         "historicalImpact": false,
-        "consolidationDate": "2003-01-01"
+        "consolidationDate": "2001-02-01"
+      },
+      {
+        "impactDate": "2002-01-01",
+        "commentFrom": {
+          "it": "I"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/38",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "consolidatedByPdf2": {
+          "it": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/164/20020101/it/pdf-a/fedlex-data-admin-ch-eli-cc-2001-164-20020101-it-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/164/20020101",
+        "decisionDate": "2001-11-15",
+        "historicalImpact": false,
+        "consolidationDate": "2002-01-01"
       },
       {
         "impactDate": "2004-02-01",
@@ -489,54 +481,6 @@
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2004/52",
         "language": [
           "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
-        "decisionDate": "2003-12-17",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "2003-01-01",
-        "commentFrom": {
-          "it": "I"
-        },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/164/20030101/it/pdf-a/fedlex-data-admin-ch-eli-cc-2001-164-20030101-it-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/640",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/164/20030101",
-        "decisionDate": "2002-11-14",
-        "historicalImpact": false,
-        "consolidationDate": "2003-01-01"
-      },
-      {
-        "impactDate": "2003-01-01",
-        "commentFrom": {
-          "fr": "I"
-        },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/164/20030101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2001-164-20030101-fr-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/640",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/164/20030101",
-        "decisionDate": "2002-11-14",
-        "historicalImpact": false,
-        "consolidationDate": "2003-01-01"
-      },
-      {
-        "impactDate": "2004-02-01",
-        "commentFrom": {
-          "fr": "Art. 19"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2004/52",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
         "decisionDate": "2003-12-17",
@@ -559,38 +503,19 @@
       {
         "impactDate": "2002-01-01",
         "commentFrom": {
-          "it": "O 15.11.2001 (I)"
+          "de": "I"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/164/20020101/it/pdf-a/fedlex-data-admin-ch-eli-cc-2001-164-20020101-it-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "it": "art. 8"
-        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/38",
         "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
+          "http://publications.europa.eu/resource/authority/language/DEU"
         ],
+        "consolidatedByPdf2": {
+          "de": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/164/20020101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2001-164-20020101-de-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/164/20020101",
-        "historicalImpact": false,
-        "consolidationDate": "2002-01-01"
-      },
-      {
-        "impactDate": "2002-01-01",
-        "commentFrom": {
-          "fr": "O 15.11.2001 (I)"
-        },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/164/20020101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2001-164-20020101-fr-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "fr": "Art. 8"
-        },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/38",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/164/20020101",
+        "decisionDate": "2001-11-15",
         "historicalImpact": false,
         "consolidationDate": "2002-01-01"
       },
@@ -599,7 +524,6 @@
         "commentFrom": {
           "de": "V 15.11.2001 (I)"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/164/20020101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2001-164-20020101-de-pdf-a.pdf",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
         "commentTo": {
           "de": "Art. 8"
@@ -608,114 +532,179 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/DEU"
         ],
+        "consolidatedByPdf2": {
+          "de": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/164/20020101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2001-164-20020101-de-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/164/20020101",
         "historicalImpact": false,
         "consolidationDate": "2002-01-01"
       },
       {
-        "impactDate": "2002-01-01",
+        "impactDate": "2003-01-01",
         "commentFrom": {
           "it": "I"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/164/20020101/it/pdf-a/fedlex-data-admin-ch-eli-cc-2001-164-20020101-it-pdf-a.pdf",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/38",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/640",
         "language": [
           "http://publications.europa.eu/resource/authority/language/ITA"
         ],
+        "consolidatedByPdf2": {
+          "it": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/164/20030101/it/pdf-a/fedlex-data-admin-ch-eli-cc-2001-164-20030101-it-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/164/20020101",
-        "decisionDate": "2001-11-15",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/164/20030101",
+        "decisionDate": "2002-11-14",
         "historicalImpact": false,
-        "consolidationDate": "2002-01-01"
+        "consolidationDate": "2003-01-01"
       },
       {
-        "impactDate": "2002-01-01",
+        "impactDate": "2003-01-01",
         "commentFrom": {
-          "fr": "I"
+          "de": "V 14.11.2002 (I)"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/164/20020101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2001-164-20020101-fr-pdf-a.pdf",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "de": "Art. 4<i>a</i>, 9, 9<i>a</i>"
+        },
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/640",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "consolidatedByPdf2": {
+          "de": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/164/20030101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2001-164-20030101-de-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/164/20030101",
+        "historicalImpact": false,
+        "consolidationDate": "2003-01-01"
+      },
+      {
+        "impactDate": "2004-02-01",
+        "commentFrom": {
+          "fr": "Art. 19"
+        },
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/38",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2004/52",
         "language": [
           "http://publications.europa.eu/resource/authority/language/FRA"
         ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/164/20020101",
-        "decisionDate": "2001-11-15",
-        "historicalImpact": false,
-        "consolidationDate": "2002-01-01"
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
+        "decisionDate": "2003-12-17",
+        "historicalImpact": false
       },
       {
-        "impactDate": "2002-01-01",
+        "impactDate": "2003-01-01",
+        "commentFrom": {
+          "fr": "O 14.11.2002 (I)"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "fr": "Art. 4<i>a</i>, 9, 9<i>a</i>"
+        },
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/640",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "consolidatedByPdf2": {
+          "fr": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/164/20030101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2001-164-20030101-fr-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/164/20030101",
+        "historicalImpact": false,
+        "consolidationDate": "2003-01-01"
+      },
+      {
+        "impactDate": "2003-01-01",
+        "commentFrom": {
+          "it": "O 14.11.2002 (I)"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "it": "art. 4<i>a</i>, 9, 9<i>a</i>"
+        },
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/640",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "consolidatedByPdf2": {
+          "it": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/164/20030101/it/pdf-a/fedlex-data-admin-ch-eli-cc-2001-164-20030101-it-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/164/20030101",
+        "historicalImpact": false,
+        "consolidationDate": "2003-01-01"
+      },
+      {
+        "impactDate": "2003-01-01",
         "commentFrom": {
           "de": "I"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/164/20020101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2001-164-20020101-de-pdf-a.pdf",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/38",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/640",
         "language": [
           "http://publications.europa.eu/resource/authority/language/DEU"
         ],
+        "consolidatedByPdf2": {
+          "de": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/164/20030101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2001-164-20030101-de-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/164/20020101",
-        "decisionDate": "2001-11-15",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/164/20030101",
+        "decisionDate": "2002-11-14",
         "historicalImpact": false,
-        "consolidationDate": "2002-01-01"
+        "consolidationDate": "2003-01-01"
       },
       {
-        "impactDate": "2001-02-01",
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/164/20010201/it/pdf-a/fedlex-data-admin-ch-eli-cc-2001-164-20010201-it-pdf-a.pdf",
+        "impactDate": "2003-01-01",
+        "commentFrom": {
+          "fr": "I"
+        },
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2001/164",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/164/20010201",
-        "decisionDate": "2001-02-01",
-        "historicalImpact": false,
-        "consolidationDate": "2001-02-01"
-      },
-      {
-        "impactDate": "2001-02-01",
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/164/20010201/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2001-164-20010201-fr-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2001/164",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/640",
         "language": [
           "http://publications.europa.eu/resource/authority/language/FRA"
         ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/164/20010201",
-        "decisionDate": "2001-02-01",
+        "consolidatedByPdf2": {
+          "fr": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/164/20030101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2001-164-20030101-fr-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/164/20030101",
+        "decisionDate": "2002-11-14",
         "historicalImpact": false,
-        "consolidationDate": "2001-02-01"
-      },
-      {
-        "impactDate": "2001-02-01",
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/164/20010201/de/pdf-a/fedlex-data-admin-ch-eli-cc-2001-164-20010201-de-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2001/164",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/164/20010201",
-        "decisionDate": "2001-02-01",
-        "historicalImpact": false,
-        "consolidationDate": "2001-02-01"
+        "consolidationDate": "2003-01-01"
       }
     ],
     "title": {
-      "de": "Geschäftsordnung des Rates der eidgenössischen Technischen Hochschulen <bd>vom 25. Januar 2001</bd> (Geschäftsordnung ETH-Rat)",
-      "it": "Regolamento interno del Consiglio dei Politecnici federali <bd>del 25 gennaio 2001</bd> (Regolamento interno del Consiglio dei PF)",
-      "fr": "Règlement interne du Conseil des écoles polytechniques fédérales <bd>du 25 janvier 2001</bd> (Règlement interne du Conseil des EPF)"
+      "de": "Geschäftsordnung des Rates der eidgenössischen Technischen Hochschulen vom 25. Januar 2001 (Geschäftsordnung ETH-Rat)",
+      "it": "Regolamento interno del Consiglio dei Politecnici federali del 25 gennaio 2001 (Regolamento interno del Consiglio dei PF)",
+      "fr": "Règlement interne du Conseil des écoles polytechniques fédérales du 25 janvier 2001 (Règlement interne du Conseil des EPF)"
     },
     "classifiedByTaxonomyEntryLabel": {
       "de": "SR 414.110.2",
       "fr": "RS 414.110.2",
       "it": "RS 414.110.2"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
+    },
+    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
+    "sortingDateTime": "2002-12-31T23:00Z",
+    "classifiedByTaxonomyEntryLabel_raw": "414.110.2",
+    "sortingDate": "2004-02-01",
+    "titleAlternative": {
+      "de": "Geschäftsordnung ETH-Rat",
+      "it": "Regolamento interno del Consiglio dei PF",
+      "fr": "Règlement interne du Conseil des EPF"
+    },
+    "classifiedByTaxonomyEntryLabel_sort": "00414.00110.00002",
+    "theme": {
+      "themeId": "4",
+      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/6332"
     },
     "archivingDate": "2003-01-01"
   },

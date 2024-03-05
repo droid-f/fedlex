@@ -15,30 +15,24 @@
       "basicAct": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/oc/1968/149_154_157"
       },
-      "typeDocument": {
-        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/26"
-      },
       "dateEntryInForce": {
         "xsd:date": "1968-01-01"
+      },
+      "typeDocument": {
+        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/26"
       }
     },
     "references": {
-      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/5472",
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/cc/1968/149_154_157/de",
         "https://fedlex.data.admin.ch/eli/cc/1968/149_154_157/fr",
         "https://fedlex.data.admin.ch/eli/cc/1968/149_154_157/it"
-      ]
+      ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/5472"
     }
   },
   "included": [
-    {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/5472",
-      "type": [
-        "Concept",
-        "LegalTaxonomy"
-      ]
-    },
     {
       "uri": "https://fedlex.data.admin.ch/eli/cc/1968/149_154_157/de",
       "type": "Expression",
@@ -85,6 +79,20 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/5472",
+      "type": [
+        "Concept",
+        "LegalTaxonomy"
+      ]
+    },
+    {
       "uri": "http://publications.europa.eu/resource/authority/language/DEU",
       "type": [
         "Concept",
@@ -108,7 +116,6 @@
   ],
   "graph": "https://fedlex.data.admin.ch/eli/cc/1968/149_154_157/graph",
   "facets": {
-    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
     "consolidates": [
       {
         "dateDocument": "1985-09-27",
@@ -130,25 +137,6 @@
         "uri": "https://fedlex.data.admin.ch/eli/oc/1985/1484_1484_1484"
       },
       {
-        "dateDocument": "1988-11-11",
-        "expression": {
-          "http://publications.europa.eu/resource/authority/language/DEU": {
-            "memorialLabel": "AS 1989 190",
-            "title": "Verordnung über die dienstliche Ausbildung in der allgemeinen Bundesverwaltung (Ausbildungsverordnung), Änderung"
-          },
-          "http://publications.europa.eu/resource/authority/language/FRA": {
-            "memorialLabel": "RO 1989 190",
-            "title": "Ordonnance concernant l'instruction professionnelle dans l'administration générale de la Confédération (Ordonnance concernant la formation), Modification"
-          },
-          "http://publications.europa.eu/resource/authority/language/ITA": {
-            "memorialLabel": "RU 1989 190",
-            "title": "Ordinanza concernente l'istruzione specialistica degli agenti nell''Amministrazione generale della Confederazione (Ordinanza sull'istruzione specialistica), Modifica"
-          }
-        },
-        "processType": "https://fedlex.data.admin.ch/vocabulary/type-procedure/ord",
-        "uri": "https://fedlex.data.admin.ch/eli/oc/1989/190_190_190"
-      },
-      {
         "dateDocument": "1980-03-04",
         "expression": {
           "http://publications.europa.eu/resource/authority/language/DEU": {
@@ -166,6 +154,25 @@
         },
         "processType": "https://fedlex.data.admin.ch/vocabulary/type-procedure/ord",
         "uri": "https://fedlex.data.admin.ch/eli/oc/1980/304_304_304"
+      },
+      {
+        "dateDocument": "1988-11-11",
+        "expression": {
+          "http://publications.europa.eu/resource/authority/language/DEU": {
+            "memorialLabel": "AS 1989 190",
+            "title": "Verordnung über die dienstliche Ausbildung in der allgemeinen Bundesverwaltung (Ausbildungsverordnung), Änderung"
+          },
+          "http://publications.europa.eu/resource/authority/language/FRA": {
+            "memorialLabel": "RO 1989 190",
+            "title": "Ordonnance concernant l'instruction professionnelle dans l'administration générale de la Confédération (Ordonnance concernant la formation), Modification"
+          },
+          "http://publications.europa.eu/resource/authority/language/ITA": {
+            "memorialLabel": "RU 1989 190",
+            "title": "Ordinanza concernente l'istruzione specialistica degli agenti nell''Amministrazione generale della Confederazione (Ordinanza sull'istruzione specialistica), Modifica"
+          }
+        },
+        "processType": "https://fedlex.data.admin.ch/vocabulary/type-procedure/ord",
+        "uri": "https://fedlex.data.admin.ch/eli/oc/1989/190_190_190"
       },
       {
         "dateDocument": "1967-12-28",
@@ -206,16 +213,6 @@
         "uri": "https://fedlex.data.admin.ch/eli/oc/1974/1989_1989_1989"
       }
     ],
-    "sortingDate": "1994-01-05",
-    "titleAlternative": {
-      "de": "Ausbildungsverordnung",
-      "it": "Ordinanza sull'istruzione specialistica",
-      "fr": "Ordonnance concernant la formation"
-    },
-    "theme": {
-      "themeId": "1",
-      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/4713"
-    },
     "impacts": [
       {
         "impactDate": "1986-01-01",
@@ -234,40 +231,30 @@
         "consolidationDate": "1986-01-01"
       },
       {
-        "impactDate": "1968-01-01",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1968/149_154_157",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1968/149_154_157/19680101",
-        "decisionDate": "1968-01-01",
-        "historicalImpact": false,
-        "consolidationDate": "1968-01-01"
-      },
-      {
-        "impactDate": "1968-01-01",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1968/149_154_157",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1968/149_154_157/19680101",
-        "decisionDate": "1968-01-01",
-        "historicalImpact": false,
-        "consolidationDate": "1968-01-01"
-      },
-      {
-        "impactDate": "1986-01-01",
+        "impactDate": "1980-04-01",
         "commentFrom": {
           "it": "I"
         },
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1985/1484_1484_1484",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1980/304_304_304",
         "language": [
           "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1968/149_154_157/19800401",
+        "decisionDate": "1980-03-04",
+        "historicalImpact": false,
+        "consolidationDate": "1980-04-01"
+      },
+      {
+        "impactDate": "1986-01-01",
+        "commentFrom": {
+          "fr": "I"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1985/1484_1484_1484",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1968/149_154_157/19860101",
@@ -276,97 +263,52 @@
         "consolidationDate": "1986-01-01"
       },
       {
-        "impactDate": "1975-01-01",
+        "impactDate": "1980-04-01",
         "commentFrom": {
           "de": "I"
         },
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1974/1989_1989_1989",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1980/304_304_304",
         "language": [
           "http://publications.europa.eu/resource/authority/language/DEU"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1968/149_154_157/19750101",
-        "decisionDate": "1974-10-22",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1968/149_154_157/19800401",
+        "decisionDate": "1980-03-04",
         "historicalImpact": false,
-        "consolidationDate": "1975-01-01"
+        "consolidationDate": "1980-04-01"
       },
       {
-        "impactDate": "1986-01-01",
+        "impactDate": "1980-04-01",
         "commentFrom": {
           "fr": "I"
         },
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1985/1484_1484_1484",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1980/304_304_304",
         "language": [
           "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1968/149_154_157/19800401",
+        "decisionDate": "1980-03-04",
+        "historicalImpact": false,
+        "consolidationDate": "1980-04-01"
+      },
+      {
+        "impactDate": "1986-01-01",
+        "commentFrom": {
+          "it": "I"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1985/1484_1484_1484",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1968/149_154_157/19860101",
         "decisionDate": "1985-09-27",
         "historicalImpact": false,
         "consolidationDate": "1986-01-01"
-      },
-      {
-        "impactDate": "1975-01-01",
-        "commentFrom": {
-          "fr": "I"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1974/1989_1989_1989",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1968/149_154_157/19750101",
-        "decisionDate": "1974-10-22",
-        "historicalImpact": false,
-        "consolidationDate": "1975-01-01"
-      },
-      {
-        "impactDate": "1968-01-01",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1968/149_154_157",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1968/149_154_157/19680101",
-        "decisionDate": "1968-01-01",
-        "historicalImpact": false,
-        "consolidationDate": "1968-01-01"
-      },
-      {
-        "impactDate": "1989-01-01",
-        "commentFrom": {
-          "it": "I"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1989/190_190_190",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1968/149_154_157/19890101",
-        "decisionDate": "1988-11-11",
-        "historicalImpact": false,
-        "consolidationDate": "1989-01-01"
-      },
-      {
-        "impactDate": "1989-01-01",
-        "commentFrom": {
-          "fr": "I"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1989/190_190_190",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1968/149_154_157/19890101",
-        "decisionDate": "1988-11-11",
-        "historicalImpact": false,
-        "consolidationDate": "1989-01-01"
       },
       {
         "impactDate": "1994-01-05",
@@ -382,6 +324,22 @@
         "historicalImpact": false
       },
       {
+        "impactDate": "1975-01-01",
+        "commentFrom": {
+          "de": "I"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1974/1989_1989_1989",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1968/149_154_157/19750101",
+        "decisionDate": "1974-10-22",
+        "historicalImpact": false,
+        "consolidationDate": "1975-01-01"
+      },
+      {
         "impactDate": "1994-01-05",
         "commentFrom": {
           "de": "In der AS nicht publiziert"
@@ -393,22 +351,6 @@
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
         "decisionDate": "1994-01-05",
         "historicalImpact": false
-      },
-      {
-        "impactDate": "1989-01-01",
-        "commentFrom": {
-          "de": "I"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1989/190_190_190",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1968/149_154_157/19890101",
-        "decisionDate": "1988-11-11",
-        "historicalImpact": false,
-        "consolidationDate": "1989-01-01"
       },
       {
         "impactDate": "1994-01-05",
@@ -440,52 +382,107 @@
         "consolidationDate": "1975-01-01"
       },
       {
-        "impactDate": "1980-04-01",
-        "commentFrom": {
-          "de": "I"
-        },
+        "impactDate": "1968-01-01",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1980/304_304_304",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1968/149_154_157",
         "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
+          "http://publications.europa.eu/resource/authority/language/ITA"
         ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1968/149_154_157/19800401",
-        "decisionDate": "1980-03-04",
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1968/149_154_157/19680101",
+        "decisionDate": "1968-01-01",
         "historicalImpact": false,
-        "consolidationDate": "1980-04-01"
+        "consolidationDate": "1968-01-01"
       },
       {
-        "impactDate": "1980-04-01",
+        "impactDate": "1975-01-01",
         "commentFrom": {
           "fr": "I"
         },
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1980/304_304_304",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1974/1989_1989_1989",
         "language": [
           "http://publications.europa.eu/resource/authority/language/FRA"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1968/149_154_157/19800401",
-        "decisionDate": "1980-03-04",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1968/149_154_157/19750101",
+        "decisionDate": "1974-10-22",
         "historicalImpact": false,
-        "consolidationDate": "1980-04-01"
+        "consolidationDate": "1975-01-01"
       },
       {
-        "impactDate": "1980-04-01",
+        "impactDate": "1968-01-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1968/149_154_157",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1968/149_154_157/19680101",
+        "decisionDate": "1968-01-01",
+        "historicalImpact": false,
+        "consolidationDate": "1968-01-01"
+      },
+      {
+        "impactDate": "1989-01-01",
+        "commentFrom": {
+          "fr": "I"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1989/190_190_190",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1968/149_154_157/19890101",
+        "decisionDate": "1988-11-11",
+        "historicalImpact": false,
+        "consolidationDate": "1989-01-01"
+      },
+      {
+        "impactDate": "1989-01-01",
+        "commentFrom": {
+          "de": "I"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1989/190_190_190",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1968/149_154_157/19890101",
+        "decisionDate": "1988-11-11",
+        "historicalImpact": false,
+        "consolidationDate": "1989-01-01"
+      },
+      {
+        "impactDate": "1989-01-01",
         "commentFrom": {
           "it": "I"
         },
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1980/304_304_304",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1989/190_190_190",
         "language": [
           "http://publications.europa.eu/resource/authority/language/ITA"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1968/149_154_157/19800401",
-        "decisionDate": "1980-03-04",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1968/149_154_157/19890101",
+        "decisionDate": "1988-11-11",
         "historicalImpact": false,
-        "consolidationDate": "1980-04-01"
+        "consolidationDate": "1989-01-01"
+      },
+      {
+        "impactDate": "1968-01-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1968/149_154_157",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1968/149_154_157/19680101",
+        "decisionDate": "1968-01-01",
+        "historicalImpact": false,
+        "consolidationDate": "1968-01-01"
       }
     ],
     "title": {
@@ -497,6 +494,27 @@
       "de": "SR 172.221.124.1",
       "fr": "RS 172.221.124.1",
       "it": "RS 172.221.124.1"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
+    },
+    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
+    "sortingDateTime": "1988-12-31T23:00Z",
+    "classifiedByTaxonomyEntryLabel_raw": "172.221.124.1",
+    "sortingDate": "1994-01-05",
+    "titleAlternative": {
+      "de": "Ausbildungsverordnung",
+      "it": "Ordinanza sull'istruzione specialistica",
+      "fr": "Ordonnance concernant la formation"
+    },
+    "classifiedByTaxonomyEntryLabel_sort": "00172.00221.00124.00001",
+    "theme": {
+      "themeId": "1",
+      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/4713"
     },
     "archivingDate": "1989-01-01"
   },

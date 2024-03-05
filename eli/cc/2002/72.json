@@ -15,30 +15,24 @@
       "basicAct": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/oc/2002/72"
       },
-      "typeDocument": {
-        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/29"
-      },
       "dateEntryInForce": {
         "xsd:date": "2002-03-01"
+      },
+      "typeDocument": {
+        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/29"
       }
     },
     "references": {
-      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/7892",
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/cc/2002/72/fr",
         "https://fedlex.data.admin.ch/eli/cc/2002/72/it",
         "https://fedlex.data.admin.ch/eli/cc/2002/72/de"
-      ]
+      ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/7892"
     }
   },
   "included": [
-    {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/7892",
-      "type": [
-        "Concept",
-        "LegalTaxonomy"
-      ]
-    },
     {
       "uri": "https://fedlex.data.admin.ch/eli/cc/2002/72/fr",
       "type": "Expression",
@@ -47,7 +41,7 @@
           "xsd:string": "Ordonnance sur le trafic des voyageurs"
         },
         "title": {
-          "xsd:string": "Ordonnance <bd>du 30 janvier 2002</bd> concernant les allégements en matière de redevances dans le trafic des voyageurs (Ordonnance sur le trafic des voyageurs)"
+          "xsd:string": "Ordonnance du 30 janvier 2002 concernant les allégements en matière de redevances dans le trafic des voyageurs (Ordonnance sur le trafic des voyageurs)"
         }
       },
       "references": {
@@ -62,7 +56,7 @@
           "xsd:string": "Ordinanza sul traffico viaggiatori"
         },
         "title": {
-          "xsd:string": "Ordinanza <bd>del 30 gennaio 2002</bd> concernente le agevolazioni tributarie nel traffico viaggiatori (Ordinanza sul traffico viaggiatori)"
+          "xsd:string": "Ordinanza del 30 gennaio 2002 concernente le agevolazioni tributarie nel traffico viaggiatori (Ordinanza sul traffico viaggiatori)"
         }
       },
       "references": {
@@ -77,12 +71,26 @@
           "xsd:string": "Reisendenverkehrsverordnung"
         },
         "title": {
-          "xsd:string": "Verordnung <bd>vom 30. Januar 2002</bd> über Abgabenerleichterungen im Reisendenverkehr (Reisendenverkehrsverordnung)"
+          "xsd:string": "Verordnung vom 30. Januar 2002 über Abgabenerleichterungen im Reisendenverkehr (Reisendenverkehrsverordnung)"
         }
       },
       "references": {
         "language": "http://publications.europa.eu/resource/authority/language/DEU"
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/7892",
+      "type": [
+        "Concept",
+        "LegalTaxonomy"
+      ]
     },
     {
       "uri": "http://publications.europa.eu/resource/authority/language/FRA",
@@ -108,18 +116,12 @@
   ],
   "graph": "https://fedlex.data.admin.ch/eli/cc/2002/72/graph",
   "facets": {
-    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
     "consolidates": [
       {
         "dateDocument": "2002-01-30",
         "expression": {
           "http://publications.europa.eu/resource/authority/language/DEU": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2002/72/de/pdf-x/fedlex-data-admin-ch-eli-oc-2002-72-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2002/72/de/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2002/72/de/doc/fedlex-data-admin-ch-eli-oc-2002-72-de-doc.doc",
@@ -132,15 +134,10 @@
               }
             ],
             "memorialLabel": "AS 2002 328",
-            "title": "Verordnung <bd> über Abgabenerleichterungen im Reisendenverkehr (Reisendenverkehrsverordnung)"
+            "title": "Verordnung über Abgabenerleichterungen im Reisendenverkehr (Reisendenverkehrsverordnung)"
           },
           "http://publications.europa.eu/resource/authority/language/FRA": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2002/72/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2002-72-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2002/72/fr/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2002/72/fr/doc/fedlex-data-admin-ch-eli-oc-2002-72-fr-doc.doc",
@@ -153,15 +150,10 @@
               }
             ],
             "memorialLabel": "RO 2002 328",
-            "title": "Ordonnance <bd> concernant les allégements en matière de redevances dans le trafic des voyageurs (Ordonnance sur le trafic des voyageurs)"
+            "title": "Ordonnance concernant les allégements en matière de redevances dans le trafic des voyageurs (Ordonnance sur le trafic des voyageurs)"
           },
           "http://publications.europa.eu/resource/authority/language/ITA": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2002/72/it/pdf-x/fedlex-data-admin-ch-eli-oc-2002-72-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2002/72/it/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2002/72/it/doc/fedlex-data-admin-ch-eli-oc-2002-72-it-doc.doc",
@@ -174,7 +166,7 @@
               }
             ],
             "memorialLabel": "RU 2002 328",
-            "title": "Ordinanza <bd> concernente le agevolazioni tributarie nel traffico viaggiatori (Ordinanza sul traffico viaggiatori)"
+            "title": "Ordinanza concernente le agevolazioni tributarie nel traffico viaggiatori (Ordinanza sul traffico viaggiatori)"
           }
         },
         "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/17",
@@ -195,23 +187,13 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2007/250/de/doc/fedlex-data-admin-ch-eli-oc-2007-250-de-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2007/250/de/doc"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2007/250/de/pdf-x/fedlex-data-admin-ch-eli-oc-2007-250-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2007/250/de/pdf-x"
               }
             ],
             "memorialLabel": "AS 2007 1469",
-            "title": "Zollverordnung <bd> (ZV)"
+            "title": "Zollverordnung (ZV)"
           },
           "http://publications.europa.eu/resource/authority/language/FRA": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2007/250/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2007-250-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2007/250/fr/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2007/250/fr/pdf-a/fedlex-data-admin-ch-eli-oc-2007-250-fr-pdf-a.pdf",
@@ -224,7 +206,7 @@
               }
             ],
             "memorialLabel": "RO 2007 1469",
-            "title": "Ordonnance <bd> sur les douanes (OD)"
+            "title": "Ordonnance sur les douanes (OD)"
           },
           "http://publications.europa.eu/resource/authority/language/ITA": {
             "manifestation": [
@@ -234,18 +216,13 @@
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2007/250/it/doc"
               },
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2007/250/it/pdf-x/fedlex-data-admin-ch-eli-oc-2007-250-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2007/250/it/pdf-x"
-              },
-              {
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2007/250/it/pdf-a/fedlex-data-admin-ch-eli-oc-2007-250-it-pdf-a.pdf",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2007/250/it/pdf-a"
               }
             ],
             "memorialLabel": "RU 2007 1469",
-            "title": "Ordinanza <bd> sulle dogane (OD)"
+            "title": "Ordinanza sulle dogane (OD)"
           }
         },
         "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/17",
@@ -253,25 +230,18 @@
         "uri": "https://fedlex.data.admin.ch/eli/oc/2007/250"
       }
     ],
-    "sortingDate": "2007-05-01",
-    "titleAlternative": {
-      "de": "Reisendenverkehrsverordnung",
-      "it": "Ordinanza sul traffico viaggiatori",
-      "fr": "Ordonnance sur le trafic des voyageurs"
-    },
-    "theme": {
-      "themeId": "6",
-      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/7743"
-    },
+    "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/17",
     "impacts": [
       {
         "impactDate": "2002-03-01",
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2002/72/20020301/de/pdf-a/fedlex-data-admin-ch-eli-cc-2002-72-20020301-de-pdf-a.pdf",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/72",
         "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
+          "http://publications.europa.eu/resource/authority/language/FRA"
         ],
+        "consolidatedByPdf2": {
+          "fr": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2002/72/20020301/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2002-72-20020301-fr-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2002/72/20020301",
         "decisionDate": "2002-03-01",
@@ -280,12 +250,14 @@
       },
       {
         "impactDate": "2002-03-01",
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2002/72/20020301/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2002-72-20020301-fr-pdf-a.pdf",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/72",
         "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
+          "http://publications.europa.eu/resource/authority/language/ITA"
         ],
+        "consolidatedByPdf2": {
+          "it": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2002/72/20020301/it/pdf-a/fedlex-data-admin-ch-eli-cc-2002-72-20020301-it-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2002/72/20020301",
         "decisionDate": "2002-03-01",
@@ -336,12 +308,14 @@
       },
       {
         "impactDate": "2002-03-01",
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2002/72/20020301/it/pdf-a/fedlex-data-admin-ch-eli-cc-2002-72-20020301-it-pdf-a.pdf",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/72",
         "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
+          "http://publications.europa.eu/resource/authority/language/DEU"
         ],
+        "consolidatedByPdf2": {
+          "de": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2002/72/20020301/de/pdf-a/fedlex-data-admin-ch-eli-cc-2002-72-20020301-de-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2002/72/20020301",
         "decisionDate": "2002-03-01",
@@ -350,14 +324,35 @@
       }
     ],
     "title": {
-      "de": "Verordnung <bd>vom 30. Januar 2002</bd> über Abgabenerleichterungen im Reisendenverkehr (Reisendenverkehrsverordnung)",
-      "it": "Ordinanza <bd>del 30 gennaio 2002</bd> concernente le agevolazioni tributarie nel traffico viaggiatori (Ordinanza sul traffico viaggiatori)",
-      "fr": "Ordonnance <bd>du 30 janvier 2002</bd> concernant les allégements en matière de redevances dans le trafic des voyageurs (Ordonnance sur le trafic des voyageurs)"
+      "de": "Verordnung vom 30. Januar 2002 über Abgabenerleichterungen im Reisendenverkehr (Reisendenverkehrsverordnung)",
+      "it": "Ordinanza del 30 gennaio 2002 concernente le agevolazioni tributarie nel traffico viaggiatori (Ordinanza sul traffico viaggiatori)",
+      "fr": "Ordonnance du 30 janvier 2002 concernant les allégements en matière de redevances dans le trafic des voyageurs (Ordonnance sur le trafic des voyageurs)"
     },
     "classifiedByTaxonomyEntryLabel": {
       "de": "SR 631.251.1",
       "fr": "RS 631.251.1",
       "it": "RS 631.251.1"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
+    },
+    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
+    "sortingDateTime": "2002-02-28T23:00Z",
+    "classifiedByTaxonomyEntryLabel_raw": "631.251.1",
+    "sortingDate": "2007-05-01",
+    "titleAlternative": {
+      "de": "Reisendenverkehrsverordnung",
+      "it": "Ordinanza sul traffico viaggiatori",
+      "fr": "Ordonnance sur le trafic des voyageurs"
+    },
+    "classifiedByTaxonomyEntryLabel_sort": "00631.00251.00001",
+    "theme": {
+      "themeId": "6",
+      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/7743"
     },
     "archivingDate": "2002-03-01"
   },
