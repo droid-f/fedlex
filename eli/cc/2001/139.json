@@ -15,30 +15,24 @@
       "basicAct": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/oc/2001/139"
       },
-      "typeDocument": {
-        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/27"
-      },
       "dateEntryInForce": {
         "xsd:date": "2001-04-22"
+      },
+      "typeDocument": {
+        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/27"
       }
     },
     "references": {
-      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/8783",
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/cc/2001/139/de",
         "https://fedlex.data.admin.ch/eli/cc/2001/139/it",
         "https://fedlex.data.admin.ch/eli/cc/2001/139/fr"
-      ]
+      ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/8783"
     }
   },
   "included": [
-    {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/8783",
-      "type": [
-        "Concept",
-        "LegalTaxonomy"
-      ]
-    },
     {
       "uri": "https://fedlex.data.admin.ch/eli/cc/2001/139/de",
       "type": "Expression",
@@ -52,7 +46,7 @@
           "xsd:string": "FDV-R 300"
         },
         "title": {
-          "xsd:string": "Schweizerische Eisenbahnen. Schweizerische Fahrdienstvorschriften FDV <bd>vom 16. Oktober 2000</bd> (R 300.1.15) "
+          "xsd:string": "Schweizerische Eisenbahnen. Schweizerische Fahrdienstvorschriften FDV vom 16. Oktober 2000 (R 300.1.15) "
         }
       },
       "references": {
@@ -72,7 +66,7 @@
           "xsd:string": "PCT-R 300"
         },
         "title": {
-          "xsd:string": "Ferrovie svizzere. Prescrizioni svizzere sulla circolazione dei treni PCT <bd>del 16 ottobre 2000</bd> (R 300.1.15) "
+          "xsd:string": "Ferrovie svizzere. Prescrizioni svizzere sulla circolazione dei treni PCT del 16 ottobre 2000 (R 300.1.15) "
         }
       },
       "references": {
@@ -92,12 +86,26 @@
           "xsd:string": "PCT-R 300"
         },
         "title": {
-          "xsd:string": "Chemins de fer suisses. Prescriptions suisses de circulation des trains PCT <bd>du 16 octobre 2000</bd> (R 300.1.15) "
+          "xsd:string": "Chemins de fer suisses. Prescriptions suisses de circulation des trains PCT du 16 octobre 2000 (R 300.1.15) "
         }
       },
       "references": {
         "language": "http://publications.europa.eu/resource/authority/language/FRA"
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/8783",
+      "type": [
+        "Concept",
+        "LegalTaxonomy"
+      ]
     },
     {
       "uri": "http://publications.europa.eu/resource/authority/language/DEU",
@@ -123,18 +131,12 @@
   ],
   "graph": "https://fedlex.data.admin.ch/eli/cc/2001/139/graph",
   "facets": {
-    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
     "consolidates": [
       {
         "dateDocument": "2002-06-10",
         "expression": {
           "http://publications.europa.eu/resource/authority/language/DEU": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2002/598/de/pdf-x/fedlex-data-admin-ch-eli-oc-2002-598-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2002/598/de/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2002/598/de/doc/fedlex-data-admin-ch-eli-oc-2002-598-de-doc.doc",
@@ -147,15 +149,10 @@
               }
             ],
             "memorialLabel": "AS 2002 3891",
-            "title": "Schweizerische Eisenbahnen. Schweizerische Fahrdienstvorschriften FDV <bd> (R 300.1.15) "
+            "title": "Schweizerische Eisenbahnen. Schweizerische Fahrdienstvorschriften FDV (R 300.1.15) "
           },
           "http://publications.europa.eu/resource/authority/language/FRA": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2002/598/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2002-598-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2002/598/fr/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2002/598/fr/pdf-a/fedlex-data-admin-ch-eli-oc-2002-598-fr-pdf-a.pdf",
@@ -168,15 +165,10 @@
               }
             ],
             "memorialLabel": "RO 2002 3891",
-            "title": "Chemins de fer suisses. Prescriptions suisses de circulation des trains PCT <bd> (R 300.1.15) "
+            "title": "Chemins de fer suisses. Prescriptions suisses de circulation des trains PCT (R 300.1.15) "
           },
           "http://publications.europa.eu/resource/authority/language/ITA": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2002/598/it/pdf-x/fedlex-data-admin-ch-eli-oc-2002-598-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2002/598/it/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2002/598/it/doc/fedlex-data-admin-ch-eli-oc-2002-598-it-doc.doc",
@@ -189,7 +181,7 @@
               }
             ],
             "memorialLabel": "RU 2002 3891",
-            "title": "Ferrovie svizzere. Prescrizioni svizzere sulla circolazione dei treni PCT <bd> (R 300.1.15) "
+            "title": "Ferrovie svizzere. Prescrizioni svizzere sulla circolazione dei treni PCT (R 300.1.15) "
           }
         },
         "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/3054",
@@ -202,11 +194,6 @@
           "http://publications.europa.eu/resource/authority/language/DEU": {
             "manifestation": [
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2001/139/de/pdf-x/fedlex-data-admin-ch-eli-oc-2001-139-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2001/139/de/pdf-x"
-              },
-              {
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2001/139/de/pdf-a/fedlex-data-admin-ch-eli-oc-2001-139-de-pdf-a.pdf",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2001/139/de/pdf-a"
@@ -218,7 +205,7 @@
               }
             ],
             "memorialLabel": "AS 2001 994",
-            "title": "Schweizerische Eisenbahnen. Schweizerische Fahrdienstvorschriften FDV <bd> (R 300.1.15) "
+            "title": "Schweizerische Eisenbahnen. Schweizerische Fahrdienstvorschriften FDV (R 300.1.15) "
           },
           "http://publications.europa.eu/resource/authority/language/FRA": {
             "manifestation": [
@@ -231,15 +218,10 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2001/139/fr/doc/fedlex-data-admin-ch-eli-oc-2001-139-fr-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2001/139/fr/doc"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2001/139/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2001-139-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2001/139/fr/pdf-x"
               }
             ],
             "memorialLabel": "RO 2001 994",
-            "title": "Chemins de fer suisses. Prescriptions suisses de circulation des trains PCT <bd> (R 300.1.15) "
+            "title": "Chemins de fer suisses. Prescriptions suisses de circulation des trains PCT (R 300.1.15) "
           },
           "http://publications.europa.eu/resource/authority/language/ITA": {
             "manifestation": [
@@ -252,15 +234,10 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2001/139/it/pdf-a/fedlex-data-admin-ch-eli-oc-2001-139-it-pdf-a.pdf",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2001/139/it/pdf-a"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2001/139/it/pdf-x/fedlex-data-admin-ch-eli-oc-2001-139-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2001/139/it/pdf-x"
               }
             ],
             "memorialLabel": "RU 2001 994",
-            "title": "Ferrovie svizzere. Prescrizioni svizzere sulla circolazione dei treni PCT <bd> (R 300.1.15) "
+            "title": "Ferrovie svizzere. Prescrizioni svizzere sulla circolazione dei treni PCT (R 300.1.15) "
           }
         },
         "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/3054",
@@ -268,16 +245,7 @@
         "uri": "https://fedlex.data.admin.ch/eli/oc/2001/139"
       }
     ],
-    "sortingDate": "2002-12-15",
-    "theme": {
-      "themeId": "7",
-      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/8349"
-    },
-    "titleShort": {
-      "de": "FDV-R 300",
-      "it": "PCT-R 300",
-      "fr": "PCT-R 300"
-    },
+    "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/3054",
     "impacts": [
       {
         "impactDate": "2002-12-15",
@@ -353,14 +321,35 @@
       }
     ],
     "title": {
-      "de": "Schweizerische Eisenbahnen. Schweizerische Fahrdienstvorschriften FDV <bd>vom 16. Oktober 2000</bd> (R 300.1.15) ",
-      "it": "Ferrovie svizzere. Prescrizioni svizzere sulla circolazione dei treni PCT <bd>del 16 ottobre 2000</bd> (R 300.1.15) ",
-      "fr": "Chemins de fer suisses. Prescriptions suisses de circulation des trains PCT <bd>du 16 octobre 2000</bd> (R 300.1.15) "
+      "de": "Schweizerische Eisenbahnen. Schweizerische Fahrdienstvorschriften FDV vom 16. Oktober 2000 (R 300.1.15) ",
+      "it": "Ferrovie svizzere. Prescrizioni svizzere sulla circolazione dei treni PCT del 16 ottobre 2000 (R 300.1.15) ",
+      "fr": "Chemins de fer suisses. Prescriptions suisses de circulation des trains PCT du 16 octobre 2000 (R 300.1.15) "
     },
     "classifiedByTaxonomyEntryLabel": {
       "de": "SR 742.173.001",
       "fr": "RS 742.173.001",
       "it": "RS 742.173.001"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
+    },
+    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
+    "sortingDateTime": "2001-04-21T22:00Z",
+    "classifiedByTaxonomyEntryLabel_raw": "742.173.001",
+    "sortingDate": "2002-12-15",
+    "classifiedByTaxonomyEntryLabel_sort": "00742.00173.00001",
+    "theme": {
+      "themeId": "7",
+      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/8349"
+    },
+    "titleShort": {
+      "de": "FDV-R 300",
+      "it": "PCT-R 300",
+      "fr": "PCT-R 300"
     },
     "archivingDate": "2001-04-22"
   },
