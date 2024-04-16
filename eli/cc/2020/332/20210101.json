@@ -6,6 +6,19 @@
       "Work"
     ],
     "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "2023-01-22T14:22:30.317Z"
+        ]
+      },
+      "dateEndApplicability": {
+        "xsd:date": "2024-03-31"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "2023-01-22T14:22:30.317Z"
+        ]
+      },
       "isMemberOf": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/cc/2020/332"
       },
@@ -31,6 +44,7 @@
         "isEmbodiedBy": [
           "https://fedlex.data.admin.ch/eli/cc/2020/332/20210101/de/docx",
           "https://fedlex.data.admin.ch/eli/cc/2020/332/20210101/de/pdf-a",
+          "https://fedlex.data.admin.ch/eli/cc/2020/332/20210101/de/xml",
           "https://fedlex.data.admin.ch/eli/cc/2020/332/20210101/de/doc",
           "https://fedlex.data.admin.ch/eli/cc/2020/332/20210101/de/html"
         ],
@@ -49,6 +63,7 @@
         "isEmbodiedBy": [
           "https://fedlex.data.admin.ch/eli/cc/2020/332/20210101/it/html",
           "https://fedlex.data.admin.ch/eli/cc/2020/332/20210101/it/doc",
+          "https://fedlex.data.admin.ch/eli/cc/2020/332/20210101/it/xml",
           "https://fedlex.data.admin.ch/eli/cc/2020/332/20210101/it/docx",
           "https://fedlex.data.admin.ch/eli/cc/2020/332/20210101/it/pdf-a"
         ],
@@ -77,6 +92,7 @@
       "type": "Expression",
       "references": {
         "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/cc/2020/332/20210101/fr/xml",
           "https://fedlex.data.admin.ch/eli/cc/2020/332/20210101/fr/pdf-a",
           "https://fedlex.data.admin.ch/eli/cc/2020/332/20210101/fr/docx",
           "https://fedlex.data.admin.ch/eli/cc/2020/332/20210101/fr/html",
@@ -110,8 +126,13 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/de/docx/fedlex-data-admin-ch-eli-cc-2020-332-20210101-de-docx.docx"
+          ]
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/de/docx/fedlex-data-admin-ch-eli-cc-2020-332-20210101-de-docx.docx"
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/de/docx/fedlex-data-admin-ch-eli-cc-2020-332-20210101-de-docx-1.docx"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
@@ -123,7 +144,12 @@
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
         },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/de/docx/fedlex-data-admin-ch-eli-cc-2020-332-20210101-de-docx.docx"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/de/docx/fedlex-data-admin-ch-eli-cc-2020-332-20210101-de-docx-1.docx"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/de/docx/fedlex-data-admin-ch-eli-cc-2020-332-20210101-de-docx.docx"
+          ]
         }
       }
     },
@@ -141,11 +167,41 @@
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
+        "numberOfPages": {
+          "xsd:int": [
+            12
+          ]
+        },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2020-332-20210101-de-pdf-a.pdf"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/2020/332/20210101/de/xml",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
+      },
+      "attributes": {
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/de/xml/fedlex-data-admin-ch-eli-cc-2020-332-20210101-de-xml.xml"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/xml"
+        },
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": false
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/XML"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/de/xml/fedlex-data-admin-ch-eli-cc-2020-332-20210101-de-xml.xml"
         }
       }
     },
@@ -182,8 +238,13 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/de/html/fedlex-data-admin-ch-eli-cc-2020-332-20210101-de-html.html"
+          ]
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/de/html/fedlex-data-admin-ch-eli-cc-2020-332-20210101-de-html.html"
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/de/html/fedlex-data-admin-ch-eli-cc-2020-332-20210101-de-html-1.html"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html"
@@ -195,7 +256,12 @@
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
         },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/de/html/fedlex-data-admin-ch-eli-cc-2020-332-20210101-de-html.html"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/de/html/fedlex-data-admin-ch-eli-cc-2020-332-20210101-de-html-1.html"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/de/html/fedlex-data-admin-ch-eli-cc-2020-332-20210101-de-html.html"
+          ]
         }
       }
     },
@@ -214,8 +280,13 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/it/html/fedlex-data-admin-ch-eli-cc-2020-332-20210101-it-html.html"
+          ]
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/it/html/fedlex-data-admin-ch-eli-cc-2020-332-20210101-it-html.html"
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/it/html/fedlex-data-admin-ch-eli-cc-2020-332-20210101-it-html-1.html"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html"
@@ -227,7 +298,12 @@
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
         },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/it/html/fedlex-data-admin-ch-eli-cc-2020-332-20210101-it-html.html"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/it/html/fedlex-data-admin-ch-eli-cc-2020-332-20210101-it-html-1.html"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/it/html/fedlex-data-admin-ch-eli-cc-2020-332-20210101-it-html.html"
+          ]
         }
       }
     },
@@ -257,7 +333,7 @@
       }
     },
     {
-      "uri": "https://fedlex.data.admin.ch/eli/cc/2020/332/20210101/it/docx",
+      "uri": "https://fedlex.data.admin.ch/eli/cc/2020/332/20210101/it/xml",
       "type": "Manifestation",
       "references": {
         "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -265,7 +341,37 @@
       },
       "attributes": {
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/it/docx/fedlex-data-admin-ch-eli-cc-2020-332-20210101-it-docx.docx"
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/it/xml/fedlex-data-admin-ch-eli-cc-2020-332-20210101-it-xml.xml"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/xml"
+        },
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": false
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/XML"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/it/xml/fedlex-data-admin-ch-eli-cc-2020-332-20210101-it-xml.xml"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/2020/332/20210101/it/docx",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
+      },
+      "attributes": {
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/it/docx/fedlex-data-admin-ch-eli-cc-2020-332-20210101-it-docx.docx"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/it/docx/fedlex-data-admin-ch-eli-cc-2020-332-20210101-it-docx-1.docx"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
@@ -277,7 +383,12 @@
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
         },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/it/docx/fedlex-data-admin-ch-eli-cc-2020-332-20210101-it-docx.docx"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/it/docx/fedlex-data-admin-ch-eli-cc-2020-332-20210101-it-docx-1.docx"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/it/docx/fedlex-data-admin-ch-eli-cc-2020-332-20210101-it-docx.docx"
+          ]
         }
       }
     },
@@ -294,6 +405,11 @@
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "numberOfPages": {
+          "xsd:int": [
+            14
+          ]
         },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
@@ -318,6 +434,31 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/2020/332/20210101/fr/xml",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
+      },
+      "attributes": {
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/fr/xml/fedlex-data-admin-ch-eli-cc-2020-332-20210101-fr-xml.xml"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/xml"
+        },
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": false
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/XML"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/fr/xml/fedlex-data-admin-ch-eli-cc-2020-332-20210101-fr-xml.xml"
+        }
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/cc/2020/332/20210101/fr/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -330,6 +471,11 @@
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "numberOfPages": {
+          "xsd:int": [
+            14
+          ]
         },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
@@ -347,8 +493,13 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/fr/docx/fedlex-data-admin-ch-eli-cc-2020-332-20210101-fr-docx.docx"
+          ]
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/fr/docx/fedlex-data-admin-ch-eli-cc-2020-332-20210101-fr-docx.docx"
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/fr/docx/fedlex-data-admin-ch-eli-cc-2020-332-20210101-fr-docx-1.docx"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
@@ -360,7 +511,12 @@
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
         },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/fr/docx/fedlex-data-admin-ch-eli-cc-2020-332-20210101-fr-docx.docx"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/fr/docx/fedlex-data-admin-ch-eli-cc-2020-332-20210101-fr-docx-1.docx"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/fr/docx/fedlex-data-admin-ch-eli-cc-2020-332-20210101-fr-docx.docx"
+          ]
         }
       }
     },
@@ -372,8 +528,13 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/fr/html/fedlex-data-admin-ch-eli-cc-2020-332-20210101-fr-html.html"
+          ]
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/fr/html/fedlex-data-admin-ch-eli-cc-2020-332-20210101-fr-html.html"
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/fr/html/fedlex-data-admin-ch-eli-cc-2020-332-20210101-fr-html-1.html"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html"
@@ -385,7 +546,12 @@
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
         },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/fr/html/fedlex-data-admin-ch-eli-cc-2020-332-20210101-fr-html.html"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/fr/html/fedlex-data-admin-ch-eli-cc-2020-332-20210101-fr-html-1.html"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/332/20210101/fr/html/fedlex-data-admin-ch-eli-cc-2020-332-20210101-fr-html.html"
+          ]
         }
       }
     },
@@ -453,15 +619,10 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2020/332/de/doc/fedlex-data-admin-ch-eli-oc-2020-332-de-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2020/332/de/doc"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2020/332/de/pdf-x/fedlex-data-admin-ch-eli-oc-2020-332-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2020/332/de/pdf-x"
               }
             ],
             "memorialLabel": "AS 2020 1637",
-            "title": "Verordnung des SBFI <bd> über die berufliche Grundbildung Kältesystem-Monteurin/Kältesystem-Monteur mit eidgenössischem Fähigkeitszeugnis (EFZ)"
+            "title": "Verordnung des SBFI über die berufliche Grundbildung Kältesystem-Monteurin/Kältesystem-Monteur mit eidgenössischem Fähigkeitszeugnis (EFZ)"
           },
           "http://publications.europa.eu/resource/authority/language/FRA": {
             "manifestation": [
@@ -474,23 +635,13 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2020/332/fr/doc/fedlex-data-admin-ch-eli-oc-2020-332-fr-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2020/332/fr/doc"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2020/332/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2020-332-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2020/332/fr/pdf-x"
               }
             ],
             "memorialLabel": "RO 2020 1637",
-            "title": "Ordonnance du SEFRI <bd> sur la formation professionnelle initiale de monteuse frigoriste / monteur frigoriste avec certificat fédéral de capacité (CFC)"
+            "title": "Ordonnance du SEFRI sur la formation professionnelle initiale de monteuse frigoriste / monteur frigoriste avec certificat fédéral de capacité (CFC)"
           },
           "http://publications.europa.eu/resource/authority/language/ITA": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2020/332/it/pdf-x/fedlex-data-admin-ch-eli-oc-2020-332-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2020/332/it/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2020/332/it/pdf-a/fedlex-data-admin-ch-eli-oc-2020-332-it-pdf-a.pdf",
@@ -503,7 +654,7 @@
               }
             ],
             "memorialLabel": "RU 2020 1637",
-            "title": "Ordinanza della SEFRI <bd> sulla formazione professionale di base Installatrice di sistemi di refrigerazione / Installatore di sistemi di refrigerazione con attestato federale di capacità (AFC)"
+            "title": "Ordinanza della SEFRI sulla formazione professionale di base Installatrice di sistemi di refrigerazione / Installatore di sistemi di refrigerazione con attestato federale di capacità (AFC)"
           }
         },
         "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/23",
@@ -511,340 +662,30 @@
         "uri": "https://fedlex.data.admin.ch/eli/oc/2020/332"
       }
     ],
-    "citations": [
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 16 Umfang und Durchführung des Qualifikationsverfahrens mit Abschlussprüfung ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2006/510",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a16",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 9 Culture générale ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2006/510",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a9",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 9 Cultura generale ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2006/510",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a9",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 16 Etendue et organisation de la procédure de qualification avec examen final ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2006/510",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a16",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 9 Allgemeinbildung ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2006/510",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a9",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 16 Durata e svolgimento della procedura di qualificazione con esame finale ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2006/510",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a16",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 5 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/799",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a5",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 5 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/799",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a5",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 5 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/799",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a5",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 22 Aufhebung bisherigen Rechts ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2004/109",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a22",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 22 Diritto previgente: abrogazione ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2004/109",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a22",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 22 Abrogation du droit en vigueur ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2004/109",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a22",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 22 Abrogation du droit en vigueur ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2004/109",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a22",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 22 Diritto previgente: abrogazione ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2004/109",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a22",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 22 Aufhebung bisherigen Rechts ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2004/109",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a22",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2003/674",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2003/674",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2003/674",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2003/748",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2003/748",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2003/748",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2007/692",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2007/692",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2007/692",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/799",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/799",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/799",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      }
-    ],
+    "classifiedByTaxonomyEntryLabel_raw": "412.101.221.78",
     "consolidationAbstract": {
       "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
+      "basicAct": "https://fedlex.data.admin.ch/eli/oc/2020/332",
       "typeDocument": "https://fedlex.data.admin.ch/vocabulary/resource-type/27",
       "titles": {
         "http://publications.europa.eu/resource/authority/language/DEU": {
-          "title": "Verordnung des SBFI <bd>vom 15. April 2020</bd> über die berufliche Grundbildung Kältesystem-Monteurin/Kältesystem-Monteur mit eidgenössischem Fähigkeitszeugnis (EFZ)"
+          "title": "Verordnung des SBFI vom 15. April 2020 über die berufliche Grundbildung Kältesystem-Monteurin/Kältesystem-Monteur mit eidgenössischem Fähigkeitszeugnis (EFZ)"
         },
         "http://publications.europa.eu/resource/authority/language/FRA": {
-          "title": "Ordonnance du SEFRI <bd>du 15 avril 2020</bd> sur la formation professionnelle initiale de monteuse frigoriste / monteur frigoriste avec certificat fédéral de capacité (CFC)"
+          "title": "Ordonnance du SEFRI du 15 avril 2020 sur la formation professionnelle initiale de monteuse frigoriste / monteur frigoriste avec certificat fédéral de capacité (CFC)"
         },
         "http://publications.europa.eu/resource/authority/language/ITA": {
-          "title": "Ordinanza della SEFRI <bd>del 15 aprile 2020</bd> sulla formazione professionale di base Installatrice di sistemi di refrigerazione / Installatore di sistemi di refrigerazione con attestato federale di capacità (AFC)"
+          "title": "Ordinanza della SEFRI del 15 aprile 2020 sulla formazione professionale di base Installatrice di sistemi di refrigerazione / Installatore di sistemi di refrigerazione con attestato federale di capacità (AFC)"
         }
       }
     },
     "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/6538",
+    "classifiedByTaxonomyEntryLabel_sort": "00412.00101.00221.00078",
     "theme": {
       "themeId": "4",
       "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/6332"
     },
     "impacts": [
-      {
-        "impactDate": "2021-01-01",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2020/332",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "decisionDate": "2021-01-01",
-        "historicalImpact": false
-      },
       {
         "impactDate": "2021-01-01",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
@@ -862,6 +703,17 @@
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2020/332",
         "language": [
           "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "decisionDate": "2021-01-01",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "2021-01-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2020/332",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
         "decisionDate": "2021-01-01",
