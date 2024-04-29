@@ -13,8 +13,9 @@
         "https://fedlex.data.admin.ch/vocabulary/treaty-subject-theme/56"
       ],
       "treatyProcessHasTask": [
+        "https://fedlex.data.admin.ch/eli/treaty/1929/00442001/ReferralToConseilGouvernement/1",
         "https://fedlex.data.admin.ch/eli/treaty/1929/00442001/treatySignature/1",
-        "https://fedlex.data.admin.ch/eli/treaty/1929/00442001/entryIntoForce/1"
+        "https://fedlex.data.admin.ch/eli/treaty/1929/00442001/TreatyRatification/2"
       ],
       "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1"
     },
@@ -24,24 +25,33 @@
       },
       "modified": {
         "xsd:dateTime": [
-          "1992-12-08T23:00:00.000Z"
+          "2024-04-29T13:27:54.570Z"
         ]
+      },
+      "treatySignatureDate": {
+        "xsd:date": "1992-12-09"
+      },
+      "treatySignaturePlace": {
+        "xsd:string": "Berne"
       },
       "created": {
         "xsd:dateTime": [
-          "1992-12-08T23:00:00.000Z"
+          "2024-04-29T13:27:54.551Z"
         ]
       },
       "titleTreaty": {
         "rdf:langString": {
           "de": [
-            "Protocole portant amendement du Traité du 26 août 1929 Prop.CF: 15.10.1992 - Déc.CF: 02.11.1992 Texte original - W244 (Prot. en fr./all./néerl.) (EN néc. pr. e.e.v.) Note suisse 10.08.1993 (Note belge du 10.04.1996 informant l'Amb. que tous les traites doivent désormais être soumis au Parlement - confirmation belge/lettre de notre Amb. du 17.12.1997!)  - 09-12-1992 - Handelsvertrag vom 26. August 1929 zwischen der Schweiz und der Belgisch-Luxemburgischen Wirtschaftsunion (mit Unterzeichnungsprotokoll)"
+            ""
+          ],
+          "en": [
+            ""
           ],
           "it": [
-            "Protocole portant amendement du Traité du 26 août 1929 Prop.CF: 15.10.1992 - Déc.CF: 02.11.1992 Texte original - W244 (Prot. en fr./all./néerl.) (EN néc. pr. e.e.v.) Note suisse 10.08.1993 (Note belge du 10.04.1996 informant l'Amb. que tous les traites doivent désormais être soumis au Parlement - confirmation belge/lettre de notre Amb. du 17.12.1997!)  - 09-12-1992 - Trattato di commercio del 26 agosto 1929 tra la Svizzera e l'Unione economica belgo-lussemburghese (con Proc. verb. di firma)"
+            ""
           ],
           "fr": [
-            "Protocole portant amendement du Traité du 26 août 1929 Prop.CF: 15.10.1992 - Déc.CF: 02.11.1992 Texte original - W244 (Prot. en fr./all./néerl.) (EN néc. pr. e.e.v.) Note suisse 10.08.1993 (Note belge du 10.04.1996 informant l'Amb. que tous les traites doivent désormais être soumis au Parlement - confirmation belge/lettre de notre Amb. du 17.12.1997!)  - 09-12-1992 - Traité de commerce du 26 août 1929 entre la Suisse et l'Union économique belgo-luxembourgeoise (avec protocole de signature)"
+            "Protocole portant amendement du Traité de Commerce du 26 août 1929 - 09-12-1992 - Traité de commerce du 26 août 1929 entre la Suisse et l'Union économique belgo-luxembourgeoise (avec protocole de signature)"
           ]
         }
       }
@@ -74,27 +84,41 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1929/00442001/ReferralToConseilGouvernement/1",
+      "type": [
+        "Event",
+        "ReferralToConseilGouvernement",
+        "TaskForTreaty"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/1929/00442001/treatySignature/1",
       "type": [
         "Event",
         "TaskForTreaty",
         "TreatySignature"
       ],
-      "attributes": {
-        "treatySignatureDate": {
-          "xsd:date": "1992-12-09"
-        }
+      "references": {
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU",
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ]
       }
     },
     {
-      "uri": "https://fedlex.data.admin.ch/eli/treaty/1929/00442001/entryIntoForce/1",
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1929/00442001/TreatyRatification/2",
       "type": [
-        "EntryIntoForce",
         "Event",
-        "TaskForTreaty"
+        "TaskForTreaty",
+        "TreatyRatification"
       ],
+      "attributes": {
+        "treatyPartyRatificationDate": {
+          "xsd:date": "1993-08-10"
+        }
+      },
       "references": {
-        "entryIntoForceFor": "https://fedlex.data.admin.ch/vocabulary/country/718"
+        "treatyRatificationParty": "https://fedlex.data.admin.ch/vocabulary/country/718"
       }
     },
     {
@@ -113,6 +137,20 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/vocabulary/country/718",
       "type": [
         "Concept",
@@ -122,7 +160,8 @@
   ],
   "graph": "https://fedlex.data.admin.ch/eli/treaty/1929/00442001/graph",
   "facets": {
-    "sortingDateTime": "1992-12-08T23:00Z"
+    "sortingDateTime": "2024-04-29T13:27:54.570Z",
+    "sortingDate": "1992-12-09"
   },
   "timestampms": null
 }
