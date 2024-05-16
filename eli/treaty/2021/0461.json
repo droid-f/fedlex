@@ -14,7 +14,7 @@
       ],
       "treatyProcessHasTask": [
         "https://fedlex.data.admin.ch/eli/treaty/2021/0461/TreatySignature/1",
-        "https://fedlex.data.admin.ch/eli/treaty/2021/0461/EntryIntoForce/1"
+        "https://fedlex.data.admin.ch/eli/treaty/2021/0461/TreatyRatification/2"
       ],
       "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1",
       "treatyPartyCountry": [
@@ -25,8 +25,21 @@
       "bilateral": {
         "xsd:boolean": true
       },
+      "modified": {
+        "xsd:dateTime": [
+          "2024-05-16T07:46:14.013Z"
+        ]
+      },
       "treatySignatureDate": {
         "xsd:date": "2021-09-09"
+      },
+      "treatySignaturePlace": {
+        "xsd:string": "Paris"
+      },
+      "created": {
+        "xsd:dateTime": [
+          "2024-05-16T07:46:13.996Z"
+        ]
       },
       "titleTreaty": {
         "rdf:langString": {
@@ -40,7 +53,7 @@
             ""
           ],
           "fr": [
-            "Arrangement entre le conseil fédéral suisse et le Gouvernement de la République française relatif à la création d'un bureau à contrôles nationaux juxtaposés à Saint-Gingolph"
+            "Arrangement entre le Conseil fédéral suisse et le Gouvernement de la République française relatif à la création d'un bureau à contrôles nationaux juxtaposés à Saint-Gingolph"
           ]
         }
       }
@@ -81,14 +94,19 @@
       }
     },
     {
-      "uri": "https://fedlex.data.admin.ch/eli/treaty/2021/0461/EntryIntoForce/1",
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2021/0461/TreatyRatification/2",
       "type": [
-        "EntryIntoForce",
         "Event",
-        "TaskForTreaty"
+        "TaskForTreaty",
+        "TreatyRatification"
       ],
+      "attributes": {
+        "treatyPartyRatificationDate": {
+          "xsd:date": "2021-12-14"
+        }
+      },
       "references": {
-        "entryIntoForceFor": "https://fedlex.data.admin.ch/vocabulary/country/718"
+        "treatyRatificationParty": "https://fedlex.data.admin.ch/vocabulary/country/718"
       }
     },
     {
@@ -122,6 +140,7 @@
   ],
   "graph": "https://fedlex.data.admin.ch/eli/treaty/2021/0461/graph",
   "facets": {
+    "sortingDateTime": "2024-05-16T07:46:14.013Z",
     "sortingDate": "2021-09-09"
   },
   "timestampms": null
