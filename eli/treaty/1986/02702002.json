@@ -13,8 +13,9 @@
         "https://fedlex.data.admin.ch/vocabulary/treaty-subject-theme/44"
       ],
       "treatyProcessHasTask": [
-        "https://fedlex.data.admin.ch/eli/treaty/1986/02702002/entryIntoForce/1",
-        "https://fedlex.data.admin.ch/eli/treaty/1986/02702002/treatySignature/1"
+        "https://fedlex.data.admin.ch/eli/treaty/1986/02702002/treatySignature/1",
+        "https://fedlex.data.admin.ch/eli/treaty/1986/02702002/TreatyRatification/2",
+        "https://fedlex.data.admin.ch/eli/treaty/1986/02702002/EntryIntoForce/1"
       ],
       "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1",
       "treatyPartyCountry": [
@@ -25,16 +26,35 @@
       "bilateral": {
         "xsd:boolean": true
       },
+      "modified": {
+        "xsd:dateTime": [
+          "2024-05-16T15:00:27.100Z"
+        ]
+      },
+      "treatySignatureDate": {
+        "xsd:date": "2011-10-17"
+      },
+      "treatySignaturePlace": {
+        "xsd:string": "Mumbai"
+      },
+      "created": {
+        "xsd:dateTime": [
+          "2024-05-16T15:00:27.079Z"
+        ]
+      },
       "titleTreaty": {
         "rdf:langString": {
           "de": [
-            "Memorandum of Understanding modifiant l'annexe (tableau des routes). Application provisoire dès le 17.10.2011 - 17-10-2011 - Abkommen vom 27. September 1986 zwischen der Schweizerischen Eidgenossenschaft und dem Sultanat Oman über den Luftlinienverkehr (mit Anhang)"
+            "Memorandum of Understanding zur Änderung des Anhangs (Linienpläne) - 17-10-2011 - Abkommen vom 27. September 1986 zwischen der Schweizerischen Eidgenossenschaft und dem Sultanat Oman über den Luftlinienverkehr (mit Anhang)"
+          ],
+          "en": [
+            ""
           ],
           "it": [
-            "Memorandum of Understanding modifiant l'annexe (tableau des routes). Application provisoire dès le 17.10.2011 - 17-10-2011 - Accordo del 27 settembre 1986 tra la Confederazione Svizzera e il Sultanato di Oman concernente il traffico aereo di linea (con All.)"
+            "Memorandum of Understanding che modifica l'allegato (Tavole delle linee) - 17-10-2011 - Accordo del 27 settembre 1986 tra la Confederazione Svizzera e il Sultanato di Oman concernente il traffico aereo di linea (con All.)"
           ],
           "fr": [
-            "Memorandum of Understanding modifiant l'annexe (tableau des routes). Application provisoire dès le 17.10.2011 - 17-10-2011 - Accord du 27 septembre 1986 entre la Confédération suisse et le Sultanat d'Oman relatif au trafic aérien de lignes (avec annexe)"
+            "Memorandum of Understanding modifiant l'annexe (tableau des routes) - 17-10-2011 - Accord du 27 septembre 1986 entre la Confédération suisse et le Sultanat d'Oman relatif au trafic aérien de lignes (avec annexe)"
           ]
         }
       },
@@ -70,27 +90,43 @@
       ]
     },
     {
-      "uri": "https://fedlex.data.admin.ch/eli/treaty/1986/02702002/entryIntoForce/1",
-      "type": [
-        "EntryIntoForce",
-        "Event",
-        "TaskForTreaty"
-      ],
-      "references": {
-        "entryIntoForceFor": "https://fedlex.data.admin.ch/vocabulary/country/718"
-      }
-    },
-    {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/1986/02702002/treatySignature/1",
       "type": [
         "Event",
         "TaskForTreaty",
         "TreatySignature"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1986/02702002/TreatyRatification/2",
+      "type": [
+        "Event",
+        "TaskForTreaty",
+        "TreatyRatification"
       ],
       "attributes": {
-        "treatySignatureDate": {
+        "treatyPartyRatificationDate": {
+          "xsd:date": "2015-09-03"
+        }
+      },
+      "references": {
+        "treatyRatificationParty": "https://fedlex.data.admin.ch/vocabulary/country/718"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1986/02702002/EntryIntoForce/1",
+      "type": [
+        "EntryIntoForce",
+        "Event",
+        "TaskForTreaty"
+      ],
+      "attributes": {
+        "provisionalApplicationDate": {
           "xsd:date": "2011-10-17"
         }
+      },
+      "references": {
+        "entryIntoForceFor": "https://fedlex.data.admin.ch/vocabulary/country/718"
       }
     },
     {
@@ -125,6 +161,8 @@
   ],
   "graph": "https://fedlex.data.admin.ch/eli/treaty/1986/02702002/graph",
   "facets": {
+    "sortingDateTime": "2024-05-16T15:00:27.100Z",
+    "sortingDate": "2011-10-17",
     "acts": [
       {
         "memorialLabel": {
