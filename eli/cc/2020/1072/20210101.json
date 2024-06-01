@@ -6,6 +6,16 @@
       "Work"
     ],
     "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "2023-01-20T03:25:34.560Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "2023-01-20T03:25:34.560Z"
+        ]
+      },
       "isMemberOf": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/cc/2020/1072"
       },
@@ -30,8 +40,9 @@
       "references": {
         "isEmbodiedBy": [
           "https://fedlex.data.admin.ch/eli/cc/2020/1072/20210101/de/doc",
-          "https://fedlex.data.admin.ch/eli/cc/2020/1072/20210101/de/docx",
           "https://fedlex.data.admin.ch/eli/cc/2020/1072/20210101/de/pdf-a",
+          "https://fedlex.data.admin.ch/eli/cc/2020/1072/20210101/de/docx",
+          "https://fedlex.data.admin.ch/eli/cc/2020/1072/20210101/de/xml",
           "https://fedlex.data.admin.ch/eli/cc/2020/1072/20210101/de/html"
         ],
         "language": "http://publications.europa.eu/resource/authority/language/DEU"
@@ -61,6 +72,7 @@
         "isEmbodiedBy": [
           "https://fedlex.data.admin.ch/eli/cc/2020/1072/20210101/it/doc",
           "https://fedlex.data.admin.ch/eli/cc/2020/1072/20210101/it/html",
+          "https://fedlex.data.admin.ch/eli/cc/2020/1072/20210101/it/xml",
           "https://fedlex.data.admin.ch/eli/cc/2020/1072/20210101/it/docx",
           "https://fedlex.data.admin.ch/eli/cc/2020/1072/20210101/it/pdf-a"
         ],
@@ -90,6 +102,7 @@
       "references": {
         "isEmbodiedBy": [
           "https://fedlex.data.admin.ch/eli/cc/2020/1072/20210101/fr/html",
+          "https://fedlex.data.admin.ch/eli/cc/2020/1072/20210101/fr/xml",
           "https://fedlex.data.admin.ch/eli/cc/2020/1072/20210101/fr/docx",
           "https://fedlex.data.admin.ch/eli/cc/2020/1072/20210101/fr/doc",
           "https://fedlex.data.admin.ch/eli/cc/2020/1072/20210101/fr/pdf-a"
@@ -128,31 +141,6 @@
       }
     },
     {
-      "uri": "https://fedlex.data.admin.ch/eli/cc/2020/1072/20210101/de/docx",
-      "type": "Manifestation",
-      "references": {
-        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
-        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
-      },
-      "attributes": {
-        "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/de/docx/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-de-docx.docx"
-        },
-        "userFormat": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
-        },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
-        },
-        "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/de/docx/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-de-docx.docx"
-        }
-      }
-    },
-    {
       "uri": "https://fedlex.data.admin.ch/eli/cc/2020/1072/20210101/de/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -166,11 +154,76 @@
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
+        "numberOfPages": {
+          "xsd:int": [
+            8
+          ]
+        },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-de-pdf-a.pdf"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/2020/1072/20210101/de/docx",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
+      },
+      "attributes": {
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/de/docx/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-de-docx.docx"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/de/docx/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-de-docx-1.docx"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
+        },
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": false
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/de/docx/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-de-docx-1.docx"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/de/docx/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-de-docx.docx"
+          ]
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/2020/1072/20210101/de/xml",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
+      },
+      "attributes": {
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/de/xml/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-de-xml.xml"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/xml"
+        },
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": false
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/XML"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/de/xml/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-de-xml.xml"
         }
       }
     },
@@ -182,8 +235,13 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/de/html/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-de-html.html"
+          ]
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/de/html/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-de-html.html"
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/de/html/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-de-html-1.html"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html"
@@ -195,7 +253,12 @@
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
         },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/de/html/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-de-html.html"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/de/html/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-de-html-1.html"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/de/html/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-de-html.html"
+          ]
         }
       }
     },
@@ -246,8 +309,13 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/it/html/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-it-html.html"
+          ]
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/it/html/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-it-html.html"
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/it/html/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-it-html-1.html"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html"
@@ -259,7 +327,37 @@
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
         },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/it/html/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-it-html.html"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/it/html/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-it-html-1.html"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/it/html/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-it-html.html"
+          ]
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/2020/1072/20210101/it/xml",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
+      },
+      "attributes": {
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/it/xml/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-it-xml.xml"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/xml"
+        },
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": false
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/XML"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/it/xml/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-it-xml.xml"
         }
       }
     },
@@ -271,8 +369,13 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/it/docx/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-it-docx.docx"
+          ]
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/it/docx/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-it-docx.docx"
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/it/docx/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-it-docx-1.docx"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
@@ -284,7 +387,12 @@
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
         },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/it/docx/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-it-docx.docx"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/it/docx/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-it-docx-1.docx"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/it/docx/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-it-docx.docx"
+          ]
         }
       }
     },
@@ -301,6 +409,11 @@
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "numberOfPages": {
+          "xsd:int": [
+            6
+          ]
         },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
@@ -332,8 +445,13 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/fr/html/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-fr-html.html"
+          ]
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/fr/html/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-fr-html.html"
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/fr/html/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-fr-html-1.html"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html"
@@ -345,7 +463,37 @@
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
         },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/fr/html/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-fr-html.html"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/fr/html/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-fr-html-1.html"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/fr/html/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-fr-html.html"
+          ]
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/2020/1072/20210101/fr/xml",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
+      },
+      "attributes": {
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/fr/xml/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-fr-xml.xml"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/xml"
+        },
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": false
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/XML"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/fr/xml/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-fr-xml.xml"
         }
       }
     },
@@ -357,8 +505,13 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/fr/docx/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-fr-docx.docx"
+          ]
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/fr/docx/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-fr-docx.docx"
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/fr/docx/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-fr-docx-1.docx"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
@@ -370,7 +523,12 @@
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
         },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/fr/docx/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-fr-docx.docx"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/fr/docx/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-fr-docx-1.docx"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/1072/20210101/fr/docx/fedlex-data-admin-ch-eli-cc-2020-1072-20210101-fr-docx.docx"
+          ]
         }
       }
     },
@@ -413,6 +571,11 @@
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
+        "numberOfPages": {
+          "xsd:int": [
+            6
+          ]
+        },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
         },
@@ -436,7 +599,6 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/2020/1072/20210101/graph",
   "facets": {
     "consolidates": [
       {
@@ -450,26 +612,16 @@
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2020/1070/de/pdf-a"
               },
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2020/1070/de/pdf-x/fedlex-data-admin-ch-eli-oc-2020-1070-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2020/1070/de/pdf-x"
-              },
-              {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2020/1070/de/doc/fedlex-data-admin-ch-eli-oc-2020-1070-de-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2020/1070/de/doc"
               }
             ],
             "memorialLabel": "AS 2020 6603",
-            "title": "Bundesbeschluss <bd> über die Genehmigung des Handelsabkommens zwischen der Schweiz und dem Vereinigten Königreich und des Zusatzabkommens über die Einbeziehung Liechtensteins in das Handelsabkommen"
+            "title": "Bundesbeschluss über die Genehmigung des Handelsabkommens zwischen der Schweiz und dem Vereinigten Königreich und des Zusatzabkommens über die Einbeziehung Liechtensteins in das Handelsabkommen"
           },
           "http://publications.europa.eu/resource/authority/language/FRA": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2020/1070/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2020-1070-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2020/1070/fr/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2020/1070/fr/doc/fedlex-data-admin-ch-eli-oc-2020-1070-fr-doc.doc",
@@ -482,7 +634,7 @@
               }
             ],
             "memorialLabel": "RO 2020 6603",
-            "title": "Arrêté fédéral <bd> portant approbation de l'accord commercial entre la Suisse et le Royaume-Uni et de l'accord additionnel en vue d'étendre au Liechtenstein certaines dispositions de l'accord commercial"
+            "title": "Arrêté fédéral portant approbation de l'accord commercial entre la Suisse et le Royaume-Uni et de l'accord additionnel en vue d'étendre au Liechtenstein certaines dispositions de l'accord commercial"
           },
           "http://publications.europa.eu/resource/authority/language/ITA": {
             "manifestation": [
@@ -495,15 +647,10 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2020/1070/it/pdf-a/fedlex-data-admin-ch-eli-oc-2020-1070-it-pdf-a.pdf",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2020/1070/it/pdf-a"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2020/1070/it/pdf-x/fedlex-data-admin-ch-eli-oc-2020-1070-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2020/1070/it/pdf-x"
               }
             ],
             "memorialLabel": "RU 2020 6603",
-            "title": "Decreto federale <bd> che approva l'Accordo commerciale tra la Svizzera e il Regno Unito nonché l'Accordo aggiuntivo che estende al Liechtenstein alcune disposizioni dell'Accordo commerciale"
+            "title": "Decreto federale che approva l'Accordo commerciale tra la Svizzera e il Regno Unito nonché l'Accordo aggiuntivo che estende al Liechtenstein alcune disposizioni dell'Accordo commerciale"
           }
         },
         "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/116",
@@ -516,11 +663,6 @@
           "http://publications.europa.eu/resource/authority/language/DEU": {
             "manifestation": [
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2020/1072/de/pdf-x/fedlex-data-admin-ch-eli-oc-2020-1072-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2020/1072/de/pdf-x"
-              },
-              {
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2020/1072/de/pdf-a/fedlex-data-admin-ch-eli-oc-2020-1072-de-pdf-a.pdf",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2020/1072/de/pdf-a"
@@ -532,7 +674,7 @@
               }
             ],
             "memorialLabel": "AS 2020 6667",
-            "title": "Zusatzabkommen <bd> zwischen der Schweizerischen Eidgenossenschaft, dem Vereinigten Königreich von Grossbritannien und Nordirland und dem Fürstentum Liechtenstein über die Einbeziehung des Fürstentums Liechtenstein in gewisse Bestimmungen des Handelsabkommens zwischen der Schweizerischen Eidgenossenschaft und dem Vereinigten Königreich von Grossbritannien und Nordirland (mit Anhang)"
+            "title": "Zusatzabkommen zwischen der Schweizerischen Eidgenossenschaft, dem Vereinigten Königreich von Grossbritannien und Nordirland und dem Fürstentum Liechtenstein über die Einbeziehung des Fürstentums Liechtenstein in gewisse Bestimmungen des Handelsabkommens zwischen der Schweizerischen Eidgenossenschaft und dem Vereinigten Königreich von Grossbritannien und Nordirland (mit Anhang)"
           },
           "http://publications.europa.eu/resource/authority/language/FRA": {
             "manifestation": [
@@ -545,15 +687,10 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2020/1072/fr/doc/fedlex-data-admin-ch-eli-oc-2020-1072-fr-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2020/1072/fr/doc"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2020/1072/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2020-1072-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2020/1072/fr/pdf-x"
               }
             ],
             "memorialLabel": "RO 2020 6667",
-            "title": "Accord additionnel <bd> entre la Confédération suisse, le Royaume-Uni de Grande-Bretagne et d'Irlande du Nord et la Principauté de Liechtenstein en vue d'étendre à la Principauté de Liechtenstein certaines dispositions de l'Accord commercial entre la Confédération suisse et le Royaume-Uni de Grande-Bretagne et d'Irlande du Nord (avec annexe)"
+            "title": "Accord additionnel entre la Confédération suisse, le Royaume-Uni de Grande-Bretagne et d'Irlande du Nord et la Principauté de Liechtenstein en vue d'étendre à la Principauté de Liechtenstein certaines dispositions de l'Accord commercial entre la Confédération suisse et le Royaume-Uni de Grande-Bretagne et d'Irlande du Nord (avec annexe)"
           },
           "http://publications.europa.eu/resource/authority/language/ITA": {
             "manifestation": [
@@ -566,15 +703,10 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2020/1072/it/pdf-a/fedlex-data-admin-ch-eli-oc-2020-1072-it-pdf-a.pdf",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2020/1072/it/pdf-a"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2020/1072/it/pdf-x/fedlex-data-admin-ch-eli-oc-2020-1072-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2020/1072/it/pdf-x"
               }
             ],
             "memorialLabel": "RU 2020 6667",
-            "title": "Accordo aggiuntivo <bd> tra la Confederazione Svizzera, il Regno Unito di Gran Bretagna e Irlanda del Nord e il Principato del Liechtenstein che estende a quest'ultimo alcune disposizioni dell'Accordo commerciale tra la Confederazione Svizzera e il Regno Unito di Gran Bretagna e Irlanda del Nord (con allegato)"
+            "title": "Accordo aggiuntivo tra la Confederazione Svizzera, il Regno Unito di Gran Bretagna e Irlanda del Nord e il Principato del Liechtenstein che estende a quest'ultimo alcune disposizioni dell'Accordo commerciale tra la Confederazione Svizzera e il Regno Unito di Gran Bretagna e Irlanda del Nord (con allegato)"
           }
         },
         "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/116",
@@ -582,72 +714,30 @@
         "uri": "https://fedlex.data.admin.ch/eli/oc/2020/1072"
       }
     ],
+    "classifiedByTaxonomyEntryLabel_raw": "0.946.293.671.1",
     "consolidationAbstract": {
       "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/49",
+      "basicAct": "https://fedlex.data.admin.ch/eli/oc/2020/1072",
       "typeDocument": "https://fedlex.data.admin.ch/vocabulary/resource-type/31",
       "titles": {
         "http://publications.europa.eu/resource/authority/language/DEU": {
-          "title": "Zusatzabkommen <bd>vom 11. Februar 2019</bd> zwischen der Schweizerischen Eidgenossenschaft, dem Vereinigten Königreich von Grossbritannien und Nordirland und dem Fürstentum Liechtenstein über die Einbeziehung des Fürstentums Liechtenstein in gewisse Bestimmungen des Handelsabkommens zwischen der Schweizerischen Eidgenossenschaft und dem Vereinigten Königreich von Grossbritannien und Nordirland (mit Anhang)"
+          "title": "Zusatzabkommen vom 11. Februar 2019 zwischen der Schweizerischen Eidgenossenschaft, dem Vereinigten Königreich von Grossbritannien und Nordirland und dem Fürstentum Liechtenstein über die Einbeziehung des Fürstentums Liechtenstein in gewisse Bestimmungen des Handelsabkommens zwischen der Schweizerischen Eidgenossenschaft und dem Vereinigten Königreich von Grossbritannien und Nordirland (mit Anhang)"
         },
         "http://publications.europa.eu/resource/authority/language/FRA": {
-          "title": "Accord additionnel <bd>du 11 février 2019</bd> entre la Confédération suisse, le Royaume-Uni de Grande-Bretagne et d'Irlande du Nord et la Principauté de Liechtenstein en vue d'étendre à la Principauté de Liechtenstein certaines dispositions de l'Accord commercial entre la Confédération suisse et le Royaume-Uni de Grande-Bretagne et d'Irlande du Nord (avec annexe)"
+          "title": "Accord additionnel du 11 février 2019 entre la Confédération suisse, le Royaume-Uni de Grande-Bretagne et d'Irlande du Nord et la Principauté de Liechtenstein en vue d'étendre à la Principauté de Liechtenstein certaines dispositions de l'Accord commercial entre la Confédération suisse et le Royaume-Uni de Grande-Bretagne et d'Irlande du Nord (avec annexe)"
         },
         "http://publications.europa.eu/resource/authority/language/ITA": {
-          "title": "Accordo aggiuntivo <bd>dell' 11 febbraio 2019</bd> tra la Confederazione Svizzera, il Regno Unito di Gran Bretagna e Irlanda del Nord e il Principato del Liechtenstein che estende a quest'ultimo alcune disposizioni dell'Accordo commerciale tra la Confederazione Svizzera e il Regno Unito di Gran Bretagna e Irlanda del Nord (con allegato)"
+          "title": "Accordo aggiuntivo dell' 11 febbraio 2019 tra la Confederazione Svizzera, il Regno Unito di Gran Bretagna e Irlanda del Nord e il Principato del Liechtenstein che estende a quest'ultimo alcune disposizioni dell'Accordo commerciale tra la Confederazione Svizzera e il Regno Unito di Gran Bretagna e Irlanda del Nord (con allegato)"
         }
       }
     },
     "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/4229",
+    "classifiedByTaxonomyEntryLabel_sort": "000.946.293.671.100",
     "theme": {
       "themeId": "0.9",
       "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/3995"
     },
     "impacts": [
-      {
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "de": "<i>Genehmigung</i> BB 19.06.2020 (Art. 1 Abs. 1 Bst. b)"
-        },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2020/1070",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/11",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "2021-01-01",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2020/1072",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "decisionDate": "2021-01-01",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "2021-01-01",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2020/1072",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "decisionDate": "2021-01-01",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "2021-01-01",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2020/1072",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "decisionDate": "2021-01-01",
-        "historicalImpact": false
-      },
       {
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
         "commentTo": {
@@ -663,6 +753,18 @@
       {
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
         "commentTo": {
+          "de": "<i>Genehmigung</i> BB 19.06.2020 (Art. 1 Abs. 1 Bst. b)"
+        },
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2020/1070",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/11",
+        "historicalImpact": false
+      },
+      {
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
           "it": "<i>Approvazione</i> DF 19.06.202 (art. 1 cpv. 1 lett. b)"
         },
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2020/1070",
@@ -670,6 +772,39 @@
           "http://publications.europa.eu/resource/authority/language/ITA"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/11",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "2021-01-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2020/1072",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "decisionDate": "2021-01-01",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "2021-01-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2020/1072",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "decisionDate": "2021-01-01",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "2021-01-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2020/1072",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "decisionDate": "2021-01-01",
         "historicalImpact": false
       }
     ],
@@ -679,5 +814,6 @@
       "it": "RS 0.946.293.671.1"
     }
   },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/2020/1072/20210101/graph",
   "timestampms": null
 }
