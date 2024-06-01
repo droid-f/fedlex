@@ -15,30 +15,24 @@
       "basicAct": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/oc/2007/919"
       },
-      "typeDocument": {
-        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/29"
-      },
       "dateEntryInForce": {
         "xsd:date": "2008-01-01"
+      },
+      "typeDocument": {
+        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/29"
       }
     },
     "references": {
-      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/7133",
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/cc/2007/919/fr",
         "https://fedlex.data.admin.ch/eli/cc/2007/919/it",
         "https://fedlex.data.admin.ch/eli/cc/2007/919/de"
-      ]
+      ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/7133"
     }
   },
   "included": [
-    {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/7133",
-      "type": [
-        "Concept",
-        "LegalTaxonomy"
-      ]
-    },
     {
       "uri": "https://fedlex.data.admin.ch/eli/cc/2007/919/fr",
       "type": "Expression",
@@ -47,7 +41,7 @@
           "xsd:string": "Ordonnance sur l'encouragement du design"
         },
         "title": {
-          "xsd:string": "Ordonnance <bd>du 7 décembre 2007</bd> sur l'encouragement du design et de la photographie (Ordonnance sur l'encouragement du design)"
+          "xsd:string": "Ordonnance du 7 décembre 2007 sur l'encouragement du design et de la photographie (Ordonnance sur l'encouragement du design)"
         }
       },
       "references": {
@@ -62,7 +56,7 @@
           "xsd:string": "Ordinanza sulla promozione del design"
         },
         "title": {
-          "xsd:string": "Ordinanza <bd>del 7 dicembre 2007</bd> sulla promozione del design e della fotografia (Ordinanza sulla promozione del design)"
+          "xsd:string": "Ordinanza del 7 dicembre 2007 sulla promozione del design e della fotografia (Ordinanza sulla promozione del design)"
         }
       },
       "references": {
@@ -77,12 +71,26 @@
           "xsd:string": "Designförderungsverordnung"
         },
         "title": {
-          "xsd:string": "Verordnung <bd>vom 7. Dezember 2007</bd> über die Förderung von Design und Fotografie (Designförderungsverordnung)"
+          "xsd:string": "Verordnung vom 7. Dezember 2007 über die Förderung von Design und Fotografie (Designförderungsverordnung)"
         }
       },
       "references": {
         "language": "http://publications.europa.eu/resource/authority/language/DEU"
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/7133",
+      "type": [
+        "Concept",
+        "LegalTaxonomy"
+      ]
     },
     {
       "uri": "http://publications.europa.eu/resource/authority/language/FRA",
@@ -106,9 +114,7 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/2007/919/graph",
   "facets": {
-    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
     "consolidates": [
       {
         "dateDocument": "2007-12-07",
@@ -124,23 +130,13 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2007/919/de/doc/fedlex-data-admin-ch-eli-oc-2007-919-de-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2007/919/de/doc"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2007/919/de/pdf-x/fedlex-data-admin-ch-eli-oc-2007-919-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2007/919/de/pdf-x"
               }
             ],
             "memorialLabel": "AS 2007 7043",
-            "title": "Verordnung <bd> über die Förderung von Design und Fotografie (Designförderungsverordnung)"
+            "title": "Verordnung über die Förderung von Design und Fotografie (Designförderungsverordnung)"
           },
           "http://publications.europa.eu/resource/authority/language/FRA": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2007/919/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2007-919-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2007/919/fr/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2007/919/fr/doc/fedlex-data-admin-ch-eli-oc-2007-919-fr-doc.doc",
@@ -153,7 +149,7 @@
               }
             ],
             "memorialLabel": "RO 2007 7043",
-            "title": "Ordonnance <bd> sur l'encouragement du design et de la photographie (Ordonnance sur l'encouragement du design)"
+            "title": "Ordonnance sur l'encouragement du design et de la photographie (Ordonnance sur l'encouragement du design)"
           },
           "http://publications.europa.eu/resource/authority/language/ITA": {
             "manifestation": [
@@ -166,15 +162,10 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2007/919/it/doc/fedlex-data-admin-ch-eli-oc-2007-919-it-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2007/919/it/doc"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2007/919/it/pdf-x/fedlex-data-admin-ch-eli-oc-2007-919-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2007/919/it/pdf-x"
               }
             ],
             "memorialLabel": "RU 2007 7043",
-            "title": "Ordinanza <bd> sulla promozione del design e della fotografia (Ordinanza sulla promozione del design)"
+            "title": "Ordinanza sulla promozione del design e della fotografia (Ordinanza sulla promozione del design)"
           }
         },
         "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/55",
@@ -192,18 +183,13 @@
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2011/855/de/doc"
               },
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2011/855/de/pdf-x/fedlex-data-admin-ch-eli-oc-2011-855-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2011/855/de/pdf-x"
-              },
-              {
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2011/855/de/pdf-a/fedlex-data-admin-ch-eli-oc-2011-855-de-pdf-a.pdf",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2011/855/de/pdf-a"
               }
             ],
             "memorialLabel": "AS 2011 6143",
-            "title": "Verordnung <bd> über die Förderung der Kultur (Kulturförderungsverordnung, KFV)"
+            "title": "Verordnung über die Förderung der Kultur (Kulturförderungsverordnung, KFV)"
           },
           "http://publications.europa.eu/resource/authority/language/FRA": {
             "manifestation": [
@@ -213,18 +199,13 @@
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2011/855/fr/doc"
               },
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2011/855/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2011-855-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2011/855/fr/pdf-x"
-              },
-              {
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2011/855/fr/pdf-a/fedlex-data-admin-ch-eli-oc-2011-855-fr-pdf-a.pdf",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2011/855/fr/pdf-a"
               }
             ],
             "memorialLabel": "RO 2011 6143",
-            "title": "Ordonnance <bd> sur l'encouragement de la culture (OLEC)"
+            "title": "Ordonnance sur l'encouragement de la culture (OLEC)"
           },
           "http://publications.europa.eu/resource/authority/language/ITA": {
             "manifestation": [
@@ -234,18 +215,13 @@
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2011/855/it/doc"
               },
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2011/855/it/pdf-x/fedlex-data-admin-ch-eli-oc-2011-855-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2011/855/it/pdf-x"
-              },
-              {
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2011/855/it/pdf-a/fedlex-data-admin-ch-eli-oc-2011-855-it-pdf-a.pdf",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2011/855/it/pdf-a"
               }
             ],
             "memorialLabel": "RU 2011 6143",
-            "title": "Ordinanza <bd> sulla promozione della cultura (OPCu)"
+            "title": "Ordinanza sulla promozione della cultura (OPCu)"
           }
         },
         "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/55",
@@ -253,53 +229,18 @@
         "uri": "https://fedlex.data.admin.ch/eli/oc/2011/855"
       }
     ],
-    "sortingDate": "2012-01-01",
-    "titleAlternative": {
-      "de": "Designförderungsverordnung",
-      "it": "Ordinanza sulla promozione del design",
-      "fr": "Ordonnance sur l'encouragement du design"
-    },
-    "theme": {
-      "themeId": "4",
-      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/6332"
-    },
+    "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/55",
     "impacts": [
       {
         "impactDate": "2008-01-01",
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/919/20080101/it/pdf-a/fedlex-data-admin-ch-eli-cc-2007-919-20080101-it-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2007/919",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2007/919/20080101",
-        "decisionDate": "2008-01-01",
-        "historicalImpact": false,
-        "consolidationDate": "2008-01-01"
-      },
-      {
-        "impactDate": "2008-01-01",
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/919/20080101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2007-919-20080101-fr-pdf-a.pdf",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2007/919",
         "language": [
           "http://publications.europa.eu/resource/authority/language/FRA"
         ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2007/919/20080101",
-        "decisionDate": "2008-01-01",
-        "historicalImpact": false,
-        "consolidationDate": "2008-01-01"
-      },
-      {
-        "impactDate": "2008-01-01",
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/919/20080101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2007-919-20080101-de-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2007/919",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
+        "consolidatedByPdf2": {
+          "fr": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/919/20080101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2007-919-20080101-fr-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2007/919/20080101",
         "decisionDate": "2008-01-01",
@@ -319,6 +260,22 @@
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
         "decisionDate": "2011-11-23",
         "historicalImpact": false
+      },
+      {
+        "impactDate": "2008-01-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2007/919",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "consolidatedByPdf2": {
+          "de": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/919/20080101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2007-919-20080101-de-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2007/919/20080101",
+        "decisionDate": "2008-01-01",
+        "historicalImpact": false,
+        "consolidationDate": "2008-01-01"
       },
       {
         "impactDate": "2012-01-01",
@@ -347,19 +304,60 @@
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
         "decisionDate": "2011-11-23",
         "historicalImpact": false
+      },
+      {
+        "impactDate": "2008-01-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2007/919",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "consolidatedByPdf2": {
+          "it": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/919/20080101/it/pdf-a/fedlex-data-admin-ch-eli-cc-2007-919-20080101-it-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2007/919/20080101",
+        "decisionDate": "2008-01-01",
+        "historicalImpact": false,
+        "consolidationDate": "2008-01-01"
       }
     ],
     "title": {
-      "de": "Verordnung <bd>vom 7. Dezember 2007</bd> über die Förderung von Design und Fotografie (Designförderungsverordnung)",
-      "it": "Ordinanza <bd>del 7 dicembre 2007</bd> sulla promozione del design e della fotografia (Ordinanza sulla promozione del design)",
-      "fr": "Ordonnance <bd>du 7 décembre 2007</bd> sur l'encouragement du design et de la photographie (Ordonnance sur l'encouragement du design)"
+      "de": "Verordnung vom 7. Dezember 2007 über die Förderung von Design und Fotografie (Designförderungsverordnung)",
+      "it": "Ordinanza del 7 dicembre 2007 sulla promozione del design e della fotografia (Ordinanza sulla promozione del design)",
+      "fr": "Ordonnance du 7 décembre 2007 sur l'encouragement du design et de la photographie (Ordonnance sur l'encouragement du design)"
     },
     "classifiedByTaxonomyEntryLabel": {
       "de": "SR 442.21",
       "fr": "RS 442.21",
       "it": "RS 442.21"
     },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
+    },
+    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
+    "sortingDateTime": "2007-12-31T23:00Z",
+    "classifiedByTaxonomyEntryLabel_raw": "442.21",
+    "sortingDate": "2012-01-01",
+    "titleAlternative": {
+      "de": "Designförderungsverordnung",
+      "it": "Ordinanza sulla promozione del design",
+      "fr": "Ordonnance sur l'encouragement du design"
+    },
+    "classifiedByTaxonomyEntryLabel_sort": "442.210",
+    "theme": {
+      "themeId": "4",
+      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/6332"
+    },
     "archivingDate": "2008-01-01"
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/2007/919/graph",
   "timestampms": null
 }

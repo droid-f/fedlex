@@ -15,30 +15,24 @@
       "basicAct": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/oc/2005/567"
       },
-      "typeDocument": {
-        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/32"
-      },
       "dateEntryInForce": {
         "xsd:date": "2001-01-01"
+      },
+      "typeDocument": {
+        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/32"
       }
     },
     "references": {
-      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/3329",
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/cc/2005/567-3/de",
         "https://fedlex.data.admin.ch/eli/cc/2005/567-3/it",
         "https://fedlex.data.admin.ch/eli/cc/2005/567-3/fr"
-      ]
+      ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/3329"
     }
   },
   "included": [
-    {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/3329",
-      "type": [
-        "Concept",
-        "LegalTaxonomy"
-      ]
-    },
     {
       "uri": "https://fedlex.data.admin.ch/eli/cc/2005/567-3/de",
       "type": "Expression",
@@ -91,6 +85,20 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/3329",
+      "type": [
+        "Concept",
+        "LegalTaxonomy"
+      ]
+    },
+    {
       "uri": "http://publications.europa.eu/resource/authority/language/DEU",
       "type": [
         "Concept",
@@ -112,20 +120,13 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/2005/567-3/graph",
   "facets": {
-    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/49",
     "consolidates": [
       {
         "dateDocument": "2004-10-05",
         "expression": {
           "http://publications.europa.eu/resource/authority/language/DEU": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2005/567/de/pdf-x/fedlex-data-admin-ch-eli-oc-2005-567-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2005/567/de/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2005/567/de/doc/fedlex-data-admin-ch-eli-oc-2005-567-de-doc.doc",
@@ -138,7 +139,7 @@
               }
             ],
             "memorialLabel": "AS 2005 4419",
-            "title": "Mitteilung <bd> über die Publikation der Akte des Weltpostvereins"
+            "title": "Mitteilung über die Publikation der Akte des Weltpostvereins"
           },
           "http://publications.europa.eu/resource/authority/language/FRA": {
             "manifestation": [
@@ -148,18 +149,13 @@
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2005/567/fr/pdf-a"
               },
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2005/567/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2005-567-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2005/567/fr/pdf-x"
-              },
-              {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2005/567/fr/doc/fedlex-data-admin-ch-eli-oc-2005-567-fr-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2005/567/fr/doc"
               }
             ],
             "memorialLabel": "RO 2005 4419",
-            "title": "Communication <bd> concernant la publication des Actes de l'Union postale universelle"
+            "title": "Communication concernant la publication des Actes de l'Union postale universelle"
           },
           "http://publications.europa.eu/resource/authority/language/ITA": {
             "manifestation": [
@@ -172,15 +168,10 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2005/567/it/doc/fedlex-data-admin-ch-eli-oc-2005-567-it-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2005/567/it/doc"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2005/567/it/pdf-x/fedlex-data-admin-ch-eli-oc-2005-567-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2005/567/it/pdf-x"
               }
             ],
             "memorialLabel": "RU 2005 4419",
-            "title": "Comunicazione <bd> concernente la pubblicazione degli Atti dell'Unione postale universale"
+            "title": "Comunicazione concernente la pubblicazione degli Atti dell'Unione postale universale"
           }
         },
         "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D1",
@@ -188,52 +179,9 @@
         "uri": "https://fedlex.data.admin.ch/eli/oc/2005/567"
       }
     ],
-    "sortingDate": "2006-01-01",
-    "theme": {
-      "themeId": "0.7",
-      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/2697"
-    },
+    "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D1",
     "impacts": [
       {
-        "impactDate": "2001-01-01",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2005/567",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2005/567-3/20010101",
-        "decisionDate": "2001-01-01",
-        "historicalImpact": false,
-        "consolidationDate": "2001-01-01"
-      },
-      {
-        "impactDate": "2001-01-01",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2005/567",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2005/567-3/20010101",
-        "decisionDate": "2001-01-01",
-        "historicalImpact": false,
-        "consolidationDate": "2001-01-01"
-      },
-      {
-        "impactDate": "2001-01-01",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2005/567",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2005/567-3/20010101",
-        "decisionDate": "2001-01-01",
-        "historicalImpact": false,
-        "consolidationDate": "2001-01-01"
-      },
-      {
         "impactDate": "2006-01-01",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2005/567",
@@ -256,6 +204,19 @@
         "historicalImpact": false
       },
       {
+        "impactDate": "2001-01-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2005/567",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2005/567-3/20010101",
+        "decisionDate": "2001-01-01",
+        "historicalImpact": false,
+        "consolidationDate": "2001-01-01"
+      },
+      {
         "impactDate": "2006-01-01",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2005/567",
@@ -265,6 +226,32 @@
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/29",
         "decisionDate": "2005-10-05",
         "historicalImpact": false
+      },
+      {
+        "impactDate": "2001-01-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2005/567",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2005/567-3/20010101",
+        "decisionDate": "2001-01-01",
+        "historicalImpact": false,
+        "consolidationDate": "2001-01-01"
+      },
+      {
+        "impactDate": "2001-01-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2005/567",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2005/567-3/20010101",
+        "decisionDate": "2001-01-01",
+        "historicalImpact": false,
+        "consolidationDate": "2001-01-01"
       }
     ],
     "title": {
@@ -277,7 +264,27 @@
       "fr": "RS 0.783.523",
       "it": "RS 0.783.523"
     },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
+    },
+    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/49",
+    "sortingDateTime": "2000-12-31T23:00Z",
+    "classifiedByTaxonomyEntryLabel_raw": "0.783.523",
+    "sortingDate": "2006-01-01",
+    "classifiedByTaxonomyEntryLabel_sort": "000.783.523",
+    "theme": {
+      "themeId": "0.7",
+      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/2697"
+    },
     "archivingDate": "2001-01-01"
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/2005/567-3/graph",
   "timestampms": null
 }

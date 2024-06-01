@@ -18,30 +18,24 @@
       "dateEndApplicability": {
         "xsd:date": "2020-12-31"
       },
-      "typeDocument": {
-        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/29"
-      },
       "dateEntryInForce": {
         "xsd:date": "2013-01-01"
+      },
+      "typeDocument": {
+        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/29"
       }
     },
     "references": {
-      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/10847",
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/cc/2012/363/de",
         "https://fedlex.data.admin.ch/eli/cc/2012/363/it",
         "https://fedlex.data.admin.ch/eli/cc/2012/363/fr"
-      ]
+      ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/10847"
     }
   },
   "included": [
-    {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/10847",
-      "type": [
-        "Concept",
-        "LegalTaxonomy"
-      ]
-    },
     {
       "uri": "https://fedlex.data.admin.ch/eli/cc/2012/363/de",
       "type": "Expression",
@@ -50,7 +44,7 @@
           "xsd:string": "BGDV"
         },
         "title": {
-          "xsd:string": "Verordnung <bd>vom 23. Mai 2012</bd> über die Unterstützung des Bienengesundheitsdienstes (BGDV)"
+          "xsd:string": "Verordnung vom 23. Mai 2012 über die Unterstützung des Bienengesundheitsdienstes (BGDV)"
         }
       },
       "references": {
@@ -65,7 +59,7 @@
           "xsd:string": "OSSA"
         },
         "title": {
-          "xsd:string": "Ordinanza <bd>del 23 maggio 2012</bd> sul sostegno al Servizio sanitario apicolo (OSSA)"
+          "xsd:string": "Ordinanza del 23 maggio 2012 sul sostegno al Servizio sanitario apicolo (OSSA)"
         }
       },
       "references": {
@@ -80,12 +74,26 @@
           "xsd:string": "OSSA"
         },
         "title": {
-          "xsd:string": "Ordonnance <bd>du 23 mai 2012</bd> sur l'aide au Service sanitaire apicole (OSSA)"
+          "xsd:string": "Ordonnance du 23 mai 2012 sur l'aide au Service sanitaire apicole (OSSA)"
         }
       },
       "references": {
         "language": "http://publications.europa.eu/resource/authority/language/FRA"
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/10847",
+      "type": [
+        "Concept",
+        "LegalTaxonomy"
+      ]
     },
     {
       "uri": "http://publications.europa.eu/resource/authority/language/DEU",
@@ -109,20 +117,13 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/2012/363/graph",
   "facets": {
-    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
     "consolidates": [
       {
         "dateDocument": "2012-05-23",
         "expression": {
           "http://publications.europa.eu/resource/authority/language/DEU": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2012/363/de/pdf-x/fedlex-data-admin-ch-eli-oc-2012-363-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2012/363/de/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2012/363/de/doc/fedlex-data-admin-ch-eli-oc-2012-363-de-doc.doc",
@@ -135,15 +136,10 @@
               }
             ],
             "memorialLabel": "AS 2012 3143",
-            "title": "Verordnung <bd> über die Unterstützung des Bienengesundheitsdienstes (BGDV)"
+            "title": "Verordnung über die Unterstützung des Bienengesundheitsdienstes (BGDV)"
           },
           "http://publications.europa.eu/resource/authority/language/FRA": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2012/363/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2012-363-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2012/363/fr/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2012/363/fr/pdf-a/fedlex-data-admin-ch-eli-oc-2012-363-fr-pdf-a.pdf",
@@ -156,7 +152,7 @@
               }
             ],
             "memorialLabel": "RO 2012 3143",
-            "title": "Ordonnance <bd> sur l'aide au Service sanitaire apicole (OSSA)"
+            "title": "Ordonnance sur l'aide au Service sanitaire apicole (OSSA)"
           },
           "http://publications.europa.eu/resource/authority/language/ITA": {
             "manifestation": [
@@ -169,15 +165,10 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2012/363/it/doc/fedlex-data-admin-ch-eli-oc-2012-363-it-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2012/363/it/doc"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2012/363/it/pdf-x/fedlex-data-admin-ch-eli-oc-2012-363-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2012/363/it/pdf-x"
               }
             ],
             "memorialLabel": "RU 2012 3143",
-            "title": "Ordinanza <bd> sul sostegno al Servizio sanitario apicolo (OSSA)"
+            "title": "Ordinanza sul sostegno al Servizio sanitario apicolo (OSSA)"
           }
         },
         "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/31",
@@ -195,18 +186,13 @@
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2020/802/de/pdf-a"
               },
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2020/802/de/pdf-x/fedlex-data-admin-ch-eli-oc-2020-802-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2020/802/de/pdf-x"
-              },
-              {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2020/802/de/doc/fedlex-data-admin-ch-eli-oc-2020-802-de-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2020/802/de/doc"
               }
             ],
             "memorialLabel": "AS 2020 4547",
-            "title": "Verordnung <bd> über die Unterstützung der Tiergesundheitsdienste"
+            "title": "Verordnung über die Unterstützung der Tiergesundheitsdienste"
           },
           "http://publications.europa.eu/resource/authority/language/FRA": {
             "manifestation": [
@@ -219,23 +205,13 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2020/802/fr/doc/fedlex-data-admin-ch-eli-oc-2020-802-fr-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2020/802/fr/doc"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2020/802/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2020-802-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2020/802/fr/pdf-x"
               }
             ],
             "memorialLabel": "RO 2020 4547",
-            "title": "Ordonnance <bd> sur l'aide aux services de santé  animale"
+            "title": "Ordonnance sur l'aide aux services de santé animale"
           },
           "http://publications.europa.eu/resource/authority/language/ITA": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2020/802/it/pdf-x/fedlex-data-admin-ch-eli-oc-2020-802-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2020/802/it/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2020/802/it/doc/fedlex-data-admin-ch-eli-oc-2020-802-it-doc.doc",
@@ -248,7 +224,7 @@
               }
             ],
             "memorialLabel": "RU 2020 4547",
-            "title": "Ordinanza <bd> sul sostegno ai servizi di sanità animale"
+            "title": "Ordinanza sul sostegno ai servizi di sanità animale"
           }
         },
         "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/209",
@@ -256,16 +232,7 @@
         "uri": "https://fedlex.data.admin.ch/eli/oc/2020/802"
       }
     ],
-    "sortingDate": "2020-12-01",
-    "theme": {
-      "themeId": "9",
-      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/10385"
-    },
-    "titleShort": {
-      "de": "BGDV",
-      "it": "OSSA",
-      "fr": "OSSA"
-    },
+    "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/31",
     "impacts": [
       {
         "impactDate": "2020-12-01",
@@ -276,20 +243,6 @@
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2020/802",
         "language": [
           "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
-        "decisionDate": "2020-10-07",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "2020-12-01",
-        "commentFrom": {
-          "it": "art. 26 n. 3"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2020/802",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
         "decisionDate": "2020-10-07",
@@ -311,58 +264,103 @@
       },
       {
         "impactDate": "2013-01-01",
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2012/363/20130101/it/pdf-a/fedlex-data-admin-ch-eli-cc-2012-363-20130101-it-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2012/363",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2012/363/20130101",
-        "decisionDate": "2013-01-01",
-        "historicalImpact": false,
-        "consolidationDate": "2013-01-01"
-      },
-      {
-        "impactDate": "2013-01-01",
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2012/363/20130101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2012-363-20130101-de-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2012/363",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2012/363/20130101",
-        "decisionDate": "2013-01-01",
-        "historicalImpact": false,
-        "consolidationDate": "2013-01-01"
-      },
-      {
-        "impactDate": "2013-01-01",
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2012/363/20130101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2012-363-20130101-fr-pdf-a.pdf",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2012/363",
         "language": [
           "http://publications.europa.eu/resource/authority/language/FRA"
         ],
+        "consolidatedByPdf2": {
+          "fr": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2012/363/20130101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2012-363-20130101-fr-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2012/363/20130101",
         "decisionDate": "2013-01-01",
         "historicalImpact": false,
         "consolidationDate": "2013-01-01"
+      },
+      {
+        "impactDate": "2013-01-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2012/363",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "consolidatedByPdf2": {
+          "it": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2012/363/20130101/it/pdf-a/fedlex-data-admin-ch-eli-cc-2012-363-20130101-it-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2012/363/20130101",
+        "decisionDate": "2013-01-01",
+        "historicalImpact": false,
+        "consolidationDate": "2013-01-01"
+      },
+      {
+        "impactDate": "2013-01-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2012/363",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "consolidatedByPdf2": {
+          "de": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2012/363/20130101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2012-363-20130101-de-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2012/363/20130101",
+        "decisionDate": "2013-01-01",
+        "historicalImpact": false,
+        "consolidationDate": "2013-01-01"
+      },
+      {
+        "impactDate": "2020-12-01",
+        "commentFrom": {
+          "it": "art. 26 n. 3"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2020/802",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
+        "decisionDate": "2020-10-07",
+        "historicalImpact": false
       }
     ],
     "title": {
-      "de": "Verordnung <bd>vom 23. Mai 2012</bd> über die Unterstützung des Bienengesundheitsdienstes (BGDV)",
-      "it": "Ordinanza <bd>del 23 maggio 2012</bd> sul sostegno al Servizio sanitario apicolo (OSSA)",
-      "fr": "Ordonnance <bd>du 23 mai 2012</bd> sur l'aide au Service sanitaire apicole (OSSA)"
+      "de": "Verordnung vom 23. Mai 2012 über die Unterstützung des Bienengesundheitsdienstes (BGDV)",
+      "it": "Ordinanza del 23 maggio 2012 sul sostegno al Servizio sanitario apicolo (OSSA)",
+      "fr": "Ordonnance du 23 mai 2012 sur l'aide au Service sanitaire apicole (OSSA)"
     },
     "classifiedByTaxonomyEntryLabel": {
       "de": "SR 916.403.2",
       "fr": "RS 916.403.2",
       "it": "RS 916.403.2"
     },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
+    },
+    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
+    "sortingDateTime": "2012-12-31T23:00Z",
+    "classifiedByTaxonomyEntryLabel_raw": "916.403.2",
+    "sortingDate": "2020-12-01",
+    "classifiedByTaxonomyEntryLabel_sort": "916.403.200",
+    "theme": {
+      "themeId": "9",
+      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/10385"
+    },
+    "titleShort": {
+      "de": "BGDV",
+      "it": "OSSA",
+      "fr": "OSSA"
+    },
     "archivingDate": "2013-01-01"
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/2012/363/graph",
   "timestampms": null
 }
