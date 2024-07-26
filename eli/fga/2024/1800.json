@@ -7,7 +7,7 @@
     ],
     "attributes": {
       "legalResourceGenre": {
-        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/legal-resource-genre/900"
+        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/legal-resource-genre/200"
       },
       "dateDocument": {
         "xsd:date": "2024-06-27"
@@ -48,7 +48,8 @@
         "https://fedlex.data.admin.ch/eli/fga/2024/1800/it",
         "https://fedlex.data.admin.ch/eli/fga/2024/1800/fr"
       ],
-      "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/2024/143"
+      "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/2024/143",
+      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/4991"
     }
   },
   "included": [
@@ -173,6 +174,34 @@
       "type": [
         "Memorial",
         "Work"
+      ],
+      "attributes": {
+        "memorialNumber": {
+          "xsd:int": 143
+        },
+        "isMemberOf": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/2024"
+        },
+        "memorialYear": {
+          "xsd:int": 2024
+        },
+        "publicationDate": {
+          "xsd:date": "2024-07-26"
+        }
+      },
+      "references": {
+        "isRealizedBy": [
+          "https://fedlex.data.admin.ch/eli/collection/fga/2024/143/de",
+          "https://fedlex.data.admin.ch/eli/collection/fga/2024/143/fr",
+          "https://fedlex.data.admin.ch/eli/collection/fga/2024/143/it"
+        ]
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/4991",
+      "type": [
+        "Concept",
+        "LegalTaxonomy"
       ]
     },
     {
@@ -194,6 +223,10 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/2024/1800/de/docx",
       "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
       "attributes": {
         "manifestationNotToBePrinted": {
           "xsd:boolean": false
@@ -311,6 +344,10 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/2024/1800/it/docx",
       "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
       "attributes": {
         "manifestationNotToBePrinted": {
           "xsd:boolean": false
@@ -423,6 +460,10 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/2024/1800/fr/docx",
       "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
       "attributes": {
         "manifestationNotToBePrinted": {
           "xsd:boolean": false
@@ -512,6 +553,42 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/collection/fga/2024/143/de",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": ""
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/collection/fga/2024/143/fr",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": ""
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/collection/fga/2024/143/it",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/ITA"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": ""
+        }
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
       "type": [
         "Concept",
@@ -520,19 +597,6 @@
     }
   ],
   "facets": {
-    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/52",
-    "sortingDateTime": "2024-07-26T05:33:35.534Z",
-    "sortingDate": "2024-07-26",
-    "draft": {
-      "parliamentDraftId": [
-        "22.406"
-      ]
-    },
-    "titleAlternative": {
-      "de": "Parlamentsgesetz",
-      "it": "Legge sul Parlamento",
-      "fr": "Loi sur le Parlement"
-    },
     "memorialLabel_sort": {
       "de": "2024.99.001800",
       "it": "2024.99.001800",
@@ -542,12 +606,6 @@
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 2024 1800",
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 2024 1800",
       "http://publications.europa.eu/resource/authority/language/ITA": "FF 2024 1800"
-    },
-    "modified": "2024-07-26T07:33:17.591+02:00",
-    "titleShort": {
-      "de": "ParlG",
-      "it": "LParl",
-      "fr": "LParl"
     },
     "title": {
       "de": "Bundesgesetz über die Bundesversammlung (Parlamentsgesetz, ParlG) (Einreichung von Vorstössen und parlamentarischen Initiativen) (Entwurf)",
@@ -560,6 +618,30 @@
       "it": false,
       "rm": false,
       "fr": false
+    },
+    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/52",
+    "sortingDateTime": "2024-07-26T05:33:35.534Z",
+    "taxonomyId": "171.10",
+    "sortingDate": "2024-07-26",
+    "draft": {
+      "parliamentDraftId": [
+        "22.406"
+      ]
+    },
+    "titleAlternative": {
+      "de": "Parlamentsgesetz",
+      "it": "Legge sul Parlamento",
+      "fr": "Loi sur le Parlement"
+    },
+    "modified": "2024-07-26T09:26:28.437414",
+    "theme": {
+      "themeId": "1",
+      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/4713"
+    },
+    "titleShort": {
+      "de": "ParlG",
+      "it": "LParl",
+      "fr": "LParl"
     }
   },
   "content_join_field": {
