@@ -39,8 +39,11 @@
       }
     },
     "references": {
-      "legalResourcePublicationCompleteness": "https://fedlex.data.admin.ch/vocabulary/publication-completeness/complete",
+      "legalResourcePublicationCompleteness": "https://fedlex.data.admin.ch/vocabulary/publication-completeness/partially-by-reference",
       "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/3525",
+      "workHasAnnex": [
+        "https://fedlex.data.admin.ch/eli/oce/2024/98"
+      ],
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/oc/2023/557/de",
         "https://fedlex.data.admin.ch/eli/oc/2023/557/it",
@@ -52,7 +55,7 @@
   },
   "included": [
     {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/publication-completeness/complete",
+      "uri": "https://fedlex.data.admin.ch/vocabulary/publication-completeness/partially-by-reference",
       "type": [
         "Concept",
         "PublicationCompleteness"
@@ -64,6 +67,22 @@
         "Concept",
         "LegalInstitution"
       ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/oce/2024/98",
+      "type": "Work",
+      "references": {
+        "isRealizedBy": [
+          "https://fedlex.data.admin.ch/eli/oce/2024/98/it",
+          "https://fedlex.data.admin.ch/eli/oce/2024/98/fr",
+          "https://fedlex.data.admin.ch/eli/oce/2024/98/de"
+        ]
+      },
+      "attributes": {
+        "order": {
+          "xsd:int": 0
+        }
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/oc/2023/557/de",
@@ -151,7 +170,28 @@
       "type": [
         "Memorial",
         "Work"
-      ]
+      ],
+      "attributes": {
+        "memorialNumber": {
+          "xsd:int": 165
+        },
+        "isMemberOf": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/2023"
+        },
+        "memorialYear": {
+          "xsd:int": 2023
+        },
+        "publicationDate": {
+          "xsd:date": "2023-10-02"
+        }
+      },
+      "references": {
+        "isRealizedBy": [
+          "https://fedlex.data.admin.ch/eli/collection/oc/2023/165/de",
+          "https://fedlex.data.admin.ch/eli/collection/oc/2023/165/fr",
+          "https://fedlex.data.admin.ch/eli/collection/oc/2023/165/it"
+        ]
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/40154",
@@ -161,20 +201,65 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/oce/2024/98/it",
+      "type": "Expression",
+      "references": {
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/oce/2024/98/it/pdf-a"
+        ],
+        "language": "http://publications.europa.eu/resource/authority/language/ITA"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Allegato accordo specifico per il Paese"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/oce/2024/98/fr",
+      "type": "Expression",
+      "references": {
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/oce/2024/98/fr/pdf-a"
+        ],
+        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Annexe convention spécifique au pays"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/oce/2024/98/de",
+      "type": "Expression",
+      "references": {
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/oce/2024/98/de/pdf-a"
+        ],
+        "language": "http://publications.europa.eu/resource/authority/language/DEU"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Anhang länderspezifische Vereinbarung"
+        }
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/oc/2023/557/de/html",
       "type": "Manifestation",
       "attributes": {
-        "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2023/557/de/html/fedlex-data-admin-ch-eli-oc-2023-557-de-html.html"
-        },
-        "userFormat": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html"
-        },
         "manifestationNotToBePrinted": {
           "xsd:boolean": false
         },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2023/557/de/html/fedlex-data-admin-ch-eli-oc-2023-557-de-html.html"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2023/557/de/html/fedlex-data-admin-ch-eli-oc-2023-557-de-html.html"
@@ -185,22 +270,22 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/2023/557/de/pdf-a",
       "type": "Manifestation",
       "attributes": {
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": false
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2023/557/de/pdf-a/fedlex-data-admin-ch-eli-oc-2023-557-de-pdf-a.pdf"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
         "numberOfPages": {
           "xsd:int": [
             8
           ]
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2023/557/de/pdf-a/fedlex-data-admin-ch-eli-oc-2023-557-de-pdf-a.pdf"
@@ -210,18 +295,22 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/oc/2023/557/de/docx",
       "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
       "attributes": {
-        "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2023/557/de/docx/fedlex-data-admin-ch-eli-oc-2023-557-de-docx.docx"
-        },
-        "userFormat": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
-        },
         "manifestationNotToBePrinted": {
           "xsd:boolean": false
         },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2023/557/de/docx/fedlex-data-admin-ch-eli-oc-2023-557-de-docx.docx"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2023/557/de/docx/fedlex-data-admin-ch-eli-oc-2023-557-de-docx.docx"
@@ -232,17 +321,17 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/2023/557/de/xml",
       "type": "Manifestation",
       "attributes": {
-        "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2023/557/de/xml/fedlex-data-admin-ch-eli-oc-2023-557-de-xml.xml"
-        },
-        "userFormat": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/xml"
-        },
         "manifestationNotToBePrinted": {
           "xsd:boolean": false
         },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/XML"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2023/557/de/xml/fedlex-data-admin-ch-eli-oc-2023-557-de-xml.xml"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/xml"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2023/557/de/xml/fedlex-data-admin-ch-eli-oc-2023-557-de-xml.xml"
@@ -260,17 +349,17 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/2023/557/it/xml",
       "type": "Manifestation",
       "attributes": {
-        "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2023/557/it/xml/fedlex-data-admin-ch-eli-oc-2023-557-it-xml.xml"
-        },
-        "userFormat": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/xml"
-        },
         "manifestationNotToBePrinted": {
           "xsd:boolean": false
         },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/XML"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2023/557/it/xml/fedlex-data-admin-ch-eli-oc-2023-557-it-xml.xml"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/xml"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2023/557/it/xml/fedlex-data-admin-ch-eli-oc-2023-557-it-xml.xml"
@@ -280,18 +369,22 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/oc/2023/557/it/docx",
       "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
       "attributes": {
-        "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2023/557/it/docx/fedlex-data-admin-ch-eli-oc-2023-557-it-docx.docx"
-        },
-        "userFormat": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
-        },
         "manifestationNotToBePrinted": {
           "xsd:boolean": false
         },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2023/557/it/docx/fedlex-data-admin-ch-eli-oc-2023-557-it-docx.docx"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2023/557/it/docx/fedlex-data-admin-ch-eli-oc-2023-557-it-docx.docx"
@@ -302,17 +395,17 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/2023/557/it/html",
       "type": "Manifestation",
       "attributes": {
-        "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2023/557/it/html/fedlex-data-admin-ch-eli-oc-2023-557-it-html.html"
-        },
-        "userFormat": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html"
-        },
         "manifestationNotToBePrinted": {
           "xsd:boolean": false
         },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2023/557/it/html/fedlex-data-admin-ch-eli-oc-2023-557-it-html.html"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2023/557/it/html/fedlex-data-admin-ch-eli-oc-2023-557-it-html.html"
@@ -323,22 +416,22 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/2023/557/it/pdf-a",
       "type": "Manifestation",
       "attributes": {
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": false
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2023/557/it/pdf-a/fedlex-data-admin-ch-eli-oc-2023-557-it-pdf-a.pdf"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
         "numberOfPages": {
           "xsd:int": [
             8
           ]
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2023/557/it/pdf-a/fedlex-data-admin-ch-eli-oc-2023-557-it-pdf-a.pdf"
@@ -355,18 +448,22 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/oc/2023/557/fr/docx",
       "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
       "attributes": {
-        "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2023/557/fr/docx/fedlex-data-admin-ch-eli-oc-2023-557-fr-docx.docx"
-        },
-        "userFormat": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
-        },
         "manifestationNotToBePrinted": {
           "xsd:boolean": false
         },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2023/557/fr/docx/fedlex-data-admin-ch-eli-oc-2023-557-fr-docx.docx"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2023/557/fr/docx/fedlex-data-admin-ch-eli-oc-2023-557-fr-docx.docx"
@@ -377,22 +474,22 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/2023/557/fr/pdf-a",
       "type": "Manifestation",
       "attributes": {
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": false
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2023/557/fr/pdf-a/fedlex-data-admin-ch-eli-oc-2023-557-fr-pdf-a.pdf"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
         "numberOfPages": {
           "xsd:int": [
             8
           ]
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2023/557/fr/pdf-a/fedlex-data-admin-ch-eli-oc-2023-557-fr-pdf-a.pdf"
@@ -403,17 +500,17 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/2023/557/fr/html",
       "type": "Manifestation",
       "attributes": {
-        "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2023/557/fr/html/fedlex-data-admin-ch-eli-oc-2023-557-fr-html.html"
-        },
-        "userFormat": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html"
-        },
         "manifestationNotToBePrinted": {
           "xsd:boolean": false
         },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2023/557/fr/html/fedlex-data-admin-ch-eli-oc-2023-557-fr-html.html"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2023/557/fr/html/fedlex-data-admin-ch-eli-oc-2023-557-fr-html.html"
@@ -424,17 +521,17 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/2023/557/fr/xml",
       "type": "Manifestation",
       "attributes": {
-        "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2023/557/fr/xml/fedlex-data-admin-ch-eli-oc-2023-557-fr-xml.xml"
-        },
-        "userFormat": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/xml"
-        },
         "manifestationNotToBePrinted": {
           "xsd:boolean": false
         },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/XML"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2023/557/fr/xml/fedlex-data-admin-ch-eli-oc-2023-557-fr-xml.xml"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/xml"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2023/557/fr/xml/fedlex-data-admin-ch-eli-oc-2023-557-fr-xml.xml"
@@ -447,20 +544,148 @@
         "Concept",
         "Language"
       ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/collection/oc/2023/165/de",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": ""
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/collection/oc/2023/165/fr",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": ""
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/collection/oc/2023/165/it",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/ITA"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": ""
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/oce/2024/98/it/pdf-a",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
+      "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oce/2024/98/it/pdf-a/fedlex-data-admin-ch-eli-oce-2024-98-it-pdf-a.pdf"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oce/2024/98/it/pdf-a/fedlex-data-admin-ch-eli-oce-2024-98-it-pdf-a-1.pdf"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oce/2024/98/it/pdf-a/fedlex-data-admin-ch-eli-oce-2024-98-it-pdf-a-1.pdf"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/oce/2024/98/fr/pdf-a",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
+      "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oce/2024/98/fr/pdf-a/fedlex-data-admin-ch-eli-oce-2024-98-fr-pdf-a.pdf"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oce/2024/98/fr/pdf-a/fedlex-data-admin-ch-eli-oce-2024-98-fr-pdf-a-1.pdf"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oce/2024/98/fr/pdf-a/fedlex-data-admin-ch-eli-oce-2024-98-fr-pdf-a-1.pdf"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/oce/2024/98/de/pdf-a",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
+      "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oce/2024/98/de/pdf-a/fedlex-data-admin-ch-eli-oce-2024-98-de-pdf-a.pdf"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oce/2024/98/de/pdf-a/fedlex-data-admin-ch-eli-oce-2024-98-de-pdf-a-1.pdf"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oce/2024/98/de/pdf-a/fedlex-data-admin-ch-eli-oce-2024-98-de-pdf-a-1.pdf"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+      "type": [
+        "Concept",
+        "LegalInstitution"
+      ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/oc/2023/557/graph",
   "facets": {
     "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/49",
     "sortingDateTime": "2023-10-02T14:08:52.188Z",
     "taxonomyId": "0.973.248.72",
     "sortingDate": "2023-10-02",
+    "memorialLabel_sort": {
+      "de": "2023.99.000557",
+      "it": "2023.99.000557",
+      "fr": "2023.99.000557"
+    },
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "AS 2023 557",
       "http://publications.europa.eu/resource/authority/language/FRA": "RO 2023 557",
       "http://publications.europa.eu/resource/authority/language/ITA": "RU 2023 557"
     },
-    "modified": "2023-10-02T16:08:27.614641",
+    "modified": "2024-08-12T16:33:56.809925",
     "theme": {
       "themeId": "0.9",
       "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/3995"
@@ -469,7 +694,18 @@
       "de": "Rahmenabkommen vom 19. Juni 2023 zwischen dem Schweizerischen Bundesrat und der Regierung der Republik Lettland über die Umsetzung des zweiten Schweizer Beitrags an ausgewählte Mitgliedstaaten der Europäischen Union zur Verringerung der wirtschaftlichen und sozialen Ungleichheiten in der Europäischen Union",
       "it": "Accordo quadro del 19 giugno 2023 tra il Consiglio federale svizzero e il Governo della Repubblica di Lettonia concernente l’attuazione del secondo contributo svizzero ad alcuni Stati membri dell’Unione europea per la riduzione delle disparità economiche e sociali nell’Unione europea",
       "fr": "Accord-cadre du 19 juin 2023 entre le Conseil fédéral suisse et le Gouvernement de la République de Lettonie sur la mise en œuvre de la deuxième contribution de la Suisse en faveur de certains États membres de l’Union européenne visant à réduire les disparités économiques et sociales au sein de l’Union européenne"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/oc/2023/557/graph",
   "timestampms": null
 }
