@@ -6,6 +6,16 @@
       "Work"
     ],
     "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "2023-01-22T13:54:29.741Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "2023-01-22T13:54:29.741Z"
+        ]
+      },
       "isMemberOf": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/cc/2019/532"
       },
@@ -32,7 +42,8 @@
           "https://fedlex.data.admin.ch/eli/cc/2019/532/20191001/it/pdf-a",
           "https://fedlex.data.admin.ch/eli/cc/2019/532/20191001/it/doc",
           "https://fedlex.data.admin.ch/eli/cc/2019/532/20191001/it/html",
-          "https://fedlex.data.admin.ch/eli/cc/2019/532/20191001/it/docx"
+          "https://fedlex.data.admin.ch/eli/cc/2019/532/20191001/it/docx",
+          "https://fedlex.data.admin.ch/eli/cc/2019/532/20191001/it/xml"
         ],
         "language": "http://publications.europa.eu/resource/authority/language/ITA"
       },
@@ -59,6 +70,7 @@
       "type": "Expression",
       "references": {
         "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/cc/2019/532/20191001/fr/xml",
           "https://fedlex.data.admin.ch/eli/cc/2019/532/20191001/fr/pdf-a",
           "https://fedlex.data.admin.ch/eli/cc/2019/532/20191001/fr/html",
           "https://fedlex.data.admin.ch/eli/cc/2019/532/20191001/fr/docx",
@@ -92,7 +104,8 @@
           "https://fedlex.data.admin.ch/eli/cc/2019/532/20191001/de/pdf-a",
           "https://fedlex.data.admin.ch/eli/cc/2019/532/20191001/de/docx",
           "https://fedlex.data.admin.ch/eli/cc/2019/532/20191001/de/html",
-          "https://fedlex.data.admin.ch/eli/cc/2019/532/20191001/de/doc"
+          "https://fedlex.data.admin.ch/eli/cc/2019/532/20191001/de/doc",
+          "https://fedlex.data.admin.ch/eli/cc/2019/532/20191001/de/xml"
         ],
         "language": "http://publications.europa.eu/resource/authority/language/DEU"
       },
@@ -110,14 +123,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/it/pdf-a/fedlex-data-admin-ch-eli-cc-2019-532-20191001-it-pdf-a.pdf"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        "numberOfPages": {
+          "xsd:int": [
+            4
+          ]
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/it/pdf-a/fedlex-data-admin-ch-eli-cc-2019-532-20191001-it-pdf-a.pdf"
@@ -132,17 +150,17 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
-        "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/it/doc/fedlex-data-admin-ch-eli-cc-2019-532-20191001-it-doc.doc"
-        },
-        "userFormat": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
-        },
         "manifestationNotToBePrinted": {
           "xsd:boolean": false
         },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/it/doc/fedlex-data-admin-ch-eli-cc-2019-532-20191001-it-doc.doc"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/it/doc/fedlex-data-admin-ch-eli-cc-2019-532-20191001-it-doc.doc"
@@ -157,20 +175,30 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
-        "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/it/html/fedlex-data-admin-ch-eli-cc-2019-532-20191001-it-html.html"
-        },
-        "userFormat": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html"
-        },
         "manifestationNotToBePrinted": {
           "xsd:boolean": false
         },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
         },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/it/html/fedlex-data-admin-ch-eli-cc-2019-532-20191001-it-html.html"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/it/html/fedlex-data-admin-ch-eli-cc-2019-532-20191001-it-html.html"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/it/html/fedlex-data-admin-ch-eli-cc-2019-532-20191001-it-html-1.html"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html"
+        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/it/html/fedlex-data-admin-ch-eli-cc-2019-532-20191001-it-html.html"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/it/html/fedlex-data-admin-ch-eli-cc-2019-532-20191001-it-html-1.html"
         }
       }
     },
@@ -182,20 +210,55 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
-        "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/it/docx/fedlex-data-admin-ch-eli-cc-2019-532-20191001-it-docx.docx"
-        },
-        "userFormat": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
-        },
         "manifestationNotToBePrinted": {
           "xsd:boolean": false
         },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
         },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/it/docx/fedlex-data-admin-ch-eli-cc-2019-532-20191001-it-docx.docx"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/it/docx/fedlex-data-admin-ch-eli-cc-2019-532-20191001-it-docx.docx"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/it/docx/fedlex-data-admin-ch-eli-cc-2019-532-20191001-it-docx-1.docx"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
+        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/it/docx/fedlex-data-admin-ch-eli-cc-2019-532-20191001-it-docx.docx"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/it/docx/fedlex-data-admin-ch-eli-cc-2019-532-20191001-it-docx-1.docx"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/2019/532/20191001/it/xml",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
+      },
+      "attributes": {
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": false
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/XML"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/it/xml/fedlex-data-admin-ch-eli-cc-2019-532-20191001-it-xml.xml"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/xml"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/it/xml/fedlex-data-admin-ch-eli-cc-2019-532-20191001-it-xml.xml"
         }
       }
     },
@@ -214,6 +277,31 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/2019/532/20191001/fr/xml",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
+      },
+      "attributes": {
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": false
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/XML"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/fr/xml/fedlex-data-admin-ch-eli-cc-2019-532-20191001-fr-xml.xml"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/xml"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/fr/xml/fedlex-data-admin-ch-eli-cc-2019-532-20191001-fr-xml.xml"
+        }
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/cc/2019/532/20191001/fr/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -221,14 +309,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2019-532-20191001-fr-pdf-a.pdf"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        "numberOfPages": {
+          "xsd:int": [
+            4
+          ]
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2019-532-20191001-fr-pdf-a.pdf"
@@ -243,20 +336,30 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
-        "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/fr/html/fedlex-data-admin-ch-eli-cc-2019-532-20191001-fr-html.html"
-        },
-        "userFormat": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html"
-        },
         "manifestationNotToBePrinted": {
           "xsd:boolean": false
         },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
         },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/fr/html/fedlex-data-admin-ch-eli-cc-2019-532-20191001-fr-html.html"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/fr/html/fedlex-data-admin-ch-eli-cc-2019-532-20191001-fr-html.html"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/fr/html/fedlex-data-admin-ch-eli-cc-2019-532-20191001-fr-html-1.html"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html"
+        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/fr/html/fedlex-data-admin-ch-eli-cc-2019-532-20191001-fr-html.html"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/fr/html/fedlex-data-admin-ch-eli-cc-2019-532-20191001-fr-html-1.html"
         }
       }
     },
@@ -268,20 +371,30 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
-        "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/fr/docx/fedlex-data-admin-ch-eli-cc-2019-532-20191001-fr-docx.docx"
-        },
-        "userFormat": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
-        },
         "manifestationNotToBePrinted": {
           "xsd:boolean": false
         },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
         },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/fr/docx/fedlex-data-admin-ch-eli-cc-2019-532-20191001-fr-docx.docx"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/fr/docx/fedlex-data-admin-ch-eli-cc-2019-532-20191001-fr-docx.docx"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/fr/docx/fedlex-data-admin-ch-eli-cc-2019-532-20191001-fr-docx-1.docx"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
+        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/fr/docx/fedlex-data-admin-ch-eli-cc-2019-532-20191001-fr-docx.docx"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/fr/docx/fedlex-data-admin-ch-eli-cc-2019-532-20191001-fr-docx-1.docx"
         }
       }
     },
@@ -293,17 +406,17 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
-        "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/fr/doc/fedlex-data-admin-ch-eli-cc-2019-532-20191001-fr-doc.doc"
-        },
-        "userFormat": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
-        },
         "manifestationNotToBePrinted": {
           "xsd:boolean": false
         },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/fr/doc/fedlex-data-admin-ch-eli-cc-2019-532-20191001-fr-doc.doc"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/fr/doc/fedlex-data-admin-ch-eli-cc-2019-532-20191001-fr-doc.doc"
@@ -332,14 +445,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/de/pdf-a/fedlex-data-admin-ch-eli-cc-2019-532-20191001-de-pdf-a.pdf"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        "numberOfPages": {
+          "xsd:int": [
+            4
+          ]
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/de/pdf-a/fedlex-data-admin-ch-eli-cc-2019-532-20191001-de-pdf-a.pdf"
@@ -354,20 +472,30 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
-        "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/de/docx/fedlex-data-admin-ch-eli-cc-2019-532-20191001-de-docx.docx"
-        },
-        "userFormat": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
-        },
         "manifestationNotToBePrinted": {
           "xsd:boolean": false
         },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
         },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/de/docx/fedlex-data-admin-ch-eli-cc-2019-532-20191001-de-docx.docx"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/de/docx/fedlex-data-admin-ch-eli-cc-2019-532-20191001-de-docx.docx"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/de/docx/fedlex-data-admin-ch-eli-cc-2019-532-20191001-de-docx-1.docx"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
+        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/de/docx/fedlex-data-admin-ch-eli-cc-2019-532-20191001-de-docx.docx"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/de/docx/fedlex-data-admin-ch-eli-cc-2019-532-20191001-de-docx-1.docx"
         }
       }
     },
@@ -379,20 +507,30 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
-        "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/de/html/fedlex-data-admin-ch-eli-cc-2019-532-20191001-de-html.html"
-        },
-        "userFormat": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html"
-        },
         "manifestationNotToBePrinted": {
           "xsd:boolean": false
         },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
         },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/de/html/fedlex-data-admin-ch-eli-cc-2019-532-20191001-de-html.html"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/de/html/fedlex-data-admin-ch-eli-cc-2019-532-20191001-de-html.html"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/de/html/fedlex-data-admin-ch-eli-cc-2019-532-20191001-de-html-1.html"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html"
+        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/de/html/fedlex-data-admin-ch-eli-cc-2019-532-20191001-de-html.html"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/de/html/fedlex-data-admin-ch-eli-cc-2019-532-20191001-de-html-1.html"
         }
       }
     },
@@ -404,20 +542,45 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
-        "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/de/doc/fedlex-data-admin-ch-eli-cc-2019-532-20191001-de-doc.doc"
-        },
-        "userFormat": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
-        },
         "manifestationNotToBePrinted": {
           "xsd:boolean": false
         },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
         },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/de/doc/fedlex-data-admin-ch-eli-cc-2019-532-20191001-de-doc.doc"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
+        },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/de/doc/fedlex-data-admin-ch-eli-cc-2019-532-20191001-de-doc.doc"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/2019/532/20191001/de/xml",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
+      },
+      "attributes": {
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": false
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/XML"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/de/xml/fedlex-data-admin-ch-eli-cc-2019-532-20191001-de-xml.xml"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/xml"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/532/20191001/de/xml/fedlex-data-admin-ch-eli-cc-2019-532-20191001-de-xml.xml"
         }
       }
     },
@@ -436,7 +599,6 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/2019/532/20191001/graph",
   "facets": {
     "consolidates": [
       {
@@ -450,26 +612,16 @@
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2019/532/de/doc"
               },
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2019/532/de/pdf-x/fedlex-data-admin-ch-eli-oc-2019-532-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2019/532/de/pdf-x"
-              },
-              {
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2019/532/de/pdf-a/fedlex-data-admin-ch-eli-oc-2019-532-de-pdf-a.pdf",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2019/532/de/pdf-a"
               }
             ],
             "memorialLabel": "AS 2019 2927",
-            "title": "Durchführungsprotokoll <bd> zwischen dem Eidgenössischen Departement des Innern der Schweizerischen Eidgenossenschaft und dem Ministerium für Soziales und Gesundheit der Französischen Republik betreffend die Umsetzungsmodalitäten des Rahmenabkommens über die grenzüberschreitende Zusammenarbeit im Gesundheitsbereich abgeschlossen am 27. September 2016 zwischen dem Schweizerischen Bundesrat einerseits und der Regierung der Französischen Republik andererseits"
+            "title": "Durchführungsprotokoll zwischen dem Eidgenössischen Departement des Innern der Schweizerischen Eidgenossenschaft und dem Ministerium für Soziales und Gesundheit der Französischen Republik betreffend die Umsetzungsmodalitäten des Rahmenabkommens über die grenzüberschreitende Zusammenarbeit im Gesundheitsbereich abgeschlossen am 27. September 2016 zwischen dem Schweizerischen Bundesrat einerseits und der Regierung der Französischen Republik andererseits"
           },
           "http://publications.europa.eu/resource/authority/language/FRA": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2019/532/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2019-532-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2019/532/fr/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2019/532/fr/doc/fedlex-data-admin-ch-eli-oc-2019-532-fr-doc.doc",
@@ -482,15 +634,10 @@
               }
             ],
             "memorialLabel": "RO 2019 2927",
-            "title": "Protocole d'application <bd> entre le Département fédéral de l'Intérieur de la Confédération suisse et le Ministère des Affaires sociales et de la Santé de la République française relatif aux modalités de mise en uvre de l'Accord-cadre sur la coopération sanitaire transfrontalière conclu le 27 septembre 2016 entre le Conseil fédéral suisse d'une part, et le Gouvernement de la République française d'autre part"
+            "title": "Protocole d'application entre le Département fédéral de l'Intérieur de la Confédération suisse et le Ministère des Affaires sociales et de la Santé de la République française relatif aux modalités de mise en uvre de l'Accord-cadre sur la coopération sanitaire transfrontalière conclu le 27 septembre 2016 entre le Conseil fédéral suisse d'une part, et le Gouvernement de la République française d'autre part"
           },
           "http://publications.europa.eu/resource/authority/language/ITA": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2019/532/it/pdf-x/fedlex-data-admin-ch-eli-oc-2019-532-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2019/532/it/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2019/532/it/pdf-a/fedlex-data-admin-ch-eli-oc-2019-532-it-pdf-a.pdf",
@@ -503,7 +650,7 @@
               }
             ],
             "memorialLabel": "RU 2019 2927",
-            "title": "Protocollo di applicazione <bd> tra il Dipartimento federale dell'interno della Confederazione Svizzera e il Ministero degli affari sociali e della sanità della Repubblica francese concernente le modalità di attuazione dell'Accordo quadro sulla cooperazione sanitaria transfrontaliera concluso il 27 settembre 2016 tra il Consiglio federale svizzero, da una parte, e il Governo della Repubblica francese, dall'altra"
+            "title": "Protocollo di applicazione tra il Dipartimento federale dell'interno della Confederazione Svizzera e il Ministero degli affari sociali e della sanità della Repubblica francese concernente le modalità di attuazione dell'Accordo quadro sulla cooperazione sanitaria transfrontaliera concluso il 27 settembre 2016 tra il Consiglio federale svizzero, da una parte, e il Governo della Repubblica francese, dall'altra"
           }
         },
         "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/34",
@@ -511,87 +658,25 @@
         "uri": "https://fedlex.data.admin.ch/eli/oc/2019/532"
       }
     ],
-    "citations": [
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "0.131.334.931 Durchführungsprotokoll zwischen dem Eidgenössischen Departement des Innern der Schweizerischen Eidgenossenschaft und dem Ministerium für Soziales und Gesundheit der Französischen Republik betreffend die Umsetzungsmodalitäten des Rahmenabkommens über die grenzüberschreitende Zusammenarbeit im Gesundheitsbereich abgeschlossen am 27. September 2016 zwischen dem Schweizerischen Bundesrat einerseits und der Regierung der Französischen Republik andererseits Abgeschlossen am 27. September 2016 Von der Bundesversammlung genehmigt am 15. Dezember 2017 In Kraft getreten durch Notenaustausch am 1. Oktober 2019 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/530",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "0.131.334.931 Protocole d’application entre le Département fédéral de l’Intérieur de la Confédération suisse et le Ministère des Affaires sociales et de la Santé de la République française relatif aux modalités de mise en oeuvre de l’Accord-cadre sur la coopération sanitaire transfrontalière conclu le 27 septembre 2016 entre le Conseil fédéral suisse d’une part, et le Gouvernement de la République française d’autre part Conclu le 27 septembre 2016 Approuvé par l’Assemblée fédérale le 15 décembre 2017 Entré en vigueur par échange de notes le 1er octobre 2019 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/530",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "0.131.334.931 Protocollo di applicazione tra il Dipartimento federale dell’interno della Confederazione Svizzera e il Ministero degli affari sociali e della sanità della Repubblica francese concernente le modalità di attuazione dell’Accordo quadro sulla cooperazione sanitaria transfrontaliera concluso il 27 settembre 2016 tra il Consiglio federale svizzero, da una parte, e il Governo della Repubblica francese, dall’altra Concluso il 27 settembre 2016 Approvato dall’Assemblea federale il 15 dicembre 2017 Entrato in vigore mediante scambio di note il 1° ottobre 2019 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/530",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2019/531",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2019/531",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2019/531",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      }
-    ],
+    "classifiedByTaxonomyEntryLabel_raw": "0.131.334.931",
     "consolidationAbstract": {
       "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/49",
+      "basicAct": "https://fedlex.data.admin.ch/eli/oc/2019/532",
       "typeDocument": "https://fedlex.data.admin.ch/vocabulary/resource-type/31",
       "titles": {
         "http://publications.europa.eu/resource/authority/language/DEU": {
-          "title": "Durchführungsprotokoll <bd>vom 27. September 2016</bd> zwischen dem Eidgenössischen Departement des Innern der Schweizerischen Eidgenossenschaft und dem Ministerium für Soziales und Gesundheit der Französischen Republik betreffend die Umsetzungsmodalitäten des Rahmenabkommens über die grenzüberschreitende Zusammenarbeit im Gesundheitsbereich abgeschlossen am 27. September 2016 zwischen dem Schweizerischen Bundesrat einerseits und der Regierung der Französischen Republik andererseits"
+          "title": "Durchführungsprotokoll vom 27. September 2016 zwischen dem Eidgenössischen Departement des Innern der Schweizerischen Eidgenossenschaft und dem Ministerium für Soziales und Gesundheit der Französischen Republik betreffend die Umsetzungsmodalitäten des Rahmenabkommens über die grenzüberschreitende Zusammenarbeit im Gesundheitsbereich abgeschlossen am 27. September 2016 zwischen dem Schweizerischen Bundesrat einerseits und der Regierung der Französischen Republik andererseits"
         },
         "http://publications.europa.eu/resource/authority/language/FRA": {
-          "title": "Protocole d'application <bd>du 27 septembre 2016</bd> entre le Département fédéral de l'Intérieur de la Confédération suisse et le Ministère des Affaires sociales et de la Santé de la République française relatif aux modalités de mise en uvre de l'Accord-cadre sur la coopération sanitaire transfrontalière conclu le 27 septembre 2016 entre le Conseil fédéral suisse d'une part, et le Gouvernement de la République française d'autre part"
+          "title": "Protocole d'application du 27 septembre 2016 entre le Département fédéral de l'Intérieur de la Confédération suisse et le Ministère des Affaires sociales et de la Santé de la République française relatif aux modalités de mise en uvre de l'Accord-cadre sur la coopération sanitaire transfrontalière conclu le 27 septembre 2016 entre le Conseil fédéral suisse d'une part, et le Gouvernement de la République française d'autre part"
         },
         "http://publications.europa.eu/resource/authority/language/ITA": {
-          "title": "Protocollo di applicazione <bd>del 27 settembre 2016</bd> tra il Dipartimento federale dell'interno della Confederazione Svizzera e il Ministero degli affari sociali e della sanità della Repubblica francese concernente le modalità di attuazione dell'Accordo quadro sulla cooperazione sanitaria transfrontaliera concluso il 27 settembre 2016 tra il Consiglio federale svizzero, da una parte, e il Governo della Repubblica francese, dall'altra"
+          "title": "Protocollo di applicazione del 27 settembre 2016 tra il Dipartimento federale dell'interno della Confederazione Svizzera e il Ministero degli affari sociali e della sanità della Repubblica francese concernente le modalità di attuazione dell'Accordo quadro sulla cooperazione sanitaria transfrontaliera concluso il 27 settembre 2016 tra il Consiglio federale svizzero, da una parte, e il Governo della Repubblica francese, dall'altra"
         }
       }
     },
     "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/62",
+    "classifiedByTaxonomyEntryLabel_sort": "000.131.334.931",
     "theme": {
       "themeId": "0.1",
       "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/1"
@@ -601,20 +686,7 @@
         "impactDate": "2019-10-01",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
         "commentTo": {
-          "it": "<i>Approvazione</i> DF 15.12.2017 (art. 1 cpv. 1)"
-        },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2019/532",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/3",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "2019-10-01",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "fr": "<i>Approbation</i> AF 15.12.2017 (art. 1 al. 1)"
+          "fr": "AF 15.12.2017 (art. 1 al. 1)"
         },
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2019/532",
         "language": [
@@ -627,11 +699,35 @@
         "impactDate": "2019-10-01",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
         "commentTo": {
-          "de": "<i>Genehmigung</i> BB 15.12.2017 (Art. 1 Abs. 1)"
+          "de": "BB 15.12.2017 (Art. 1 Abs. 1)"
         },
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2019/532",
         "language": [
           "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/3",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "2019-10-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2019/532",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "decisionDate": "2019-10-01",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "2019-10-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "it": "DF 15.12.2017 (art. 1 cpv. 1)"
+        },
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2019/532",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/3",
         "historicalImpact": false
@@ -653,17 +749,6 @@
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2019/532",
         "language": [
           "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "decisionDate": "2019-10-01",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "2019-10-01",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2019/532",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
         "decisionDate": "2019-10-01",
@@ -676,5 +761,6 @@
       "it": "RS 0.131.334.931"
     }
   },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/2019/532/20191001/graph",
   "timestampms": null
 }
