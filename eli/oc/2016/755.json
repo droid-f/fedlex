@@ -9,14 +9,27 @@
       "legalResourceGenre": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/legal-resource-genre/200"
       },
+      "dateNoLongerInForce": {
+        "xsd:date": "2025-01-01"
+      },
       "dateDocument": {
         "xsd:date": "2016-11-23"
+      },
+      "created": {
+        "xsd:dateTime": [
+          "2016-12-12T23:00:00.000Z"
+        ]
       },
       "sequenceInTheYearOfPublication": {
         "xsd:int": 755
       },
       "dateEntryInForce": {
         "xsd:date": "2017-01-01"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "2016-12-12T23:00:00.000Z"
+        ]
       },
       "typeDocument": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/29"
@@ -30,6 +43,9 @@
     },
     "references": {
       "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/195",
+      "workHasAnnex": [
+        "https://fedlex.data.admin.ch/eli/oe/2016/2"
+      ],
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/oc/2016/755/de",
         "https://fedlex.data.admin.ch/eli/oc/2016/755/it",
@@ -46,6 +62,22 @@
         "Concept",
         "LegalInstitution"
       ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/oe/2016/2",
+      "type": "Work",
+      "references": {
+        "isRealizedBy": [
+          "https://fedlex.data.admin.ch/eli/oe/2016/2/it",
+          "https://fedlex.data.admin.ch/eli/oe/2016/2/fr",
+          "https://fedlex.data.admin.ch/eli/oe/2016/2/de"
+        ]
+      },
+      "attributes": {
+        "order": {
+          "xsd:int": 0
+        }
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/oc/2016/755/de",
@@ -167,6 +199,51 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/oe/2016/2/it",
+      "type": "Expression",
+      "references": {
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/oe/2016/2/it/pdf"
+        ],
+        "language": "http://publications.europa.eu/resource/authority/language/ITA"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": ""
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/oe/2016/2/fr",
+      "type": "Expression",
+      "references": {
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/oe/2016/2/fr/pdf"
+        ],
+        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": ""
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/oe/2016/2/de",
+      "type": "Expression",
+      "references": {
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/oe/2016/2/de/pdf"
+        ],
+        "language": "http://publications.europa.eu/resource/authority/language/DEU"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": ""
+        }
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/oc/2016/755/de/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -174,17 +251,35 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
-        "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2016/755/de/pdf-a/fedlex-data-admin-ch-eli-oc-2016-755-de-pdf-a.pdf"
-        },
-        "userFormat": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": false
         },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
         },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2016/755/de/pdf-a/fedlex-data-admin-ch-eli-oc-2016-755-de-pdf-a.pdf"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2016/755/de/pdf-a/fedlex-data-admin-ch-eli-oc-2016-755-de-pdf-a.pdf"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2016/755/de/pdf-a/fedlex-data-admin-ch-eli-oc-2016-755-de-pdf-a-1.pdf"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "numberOfPages": {
+          "xsd:int": [
+            4
+          ]
+        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2016/755/de/pdf-a/fedlex-data-admin-ch-eli-oc-2016-755-de-pdf-a.pdf"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2016/755/de/pdf-a/fedlex-data-admin-ch-eli-oc-2016-755-de-pdf-a-1.pdf"
         }
       }
     },
@@ -196,14 +291,14 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2016/755/de/doc/fedlex-data-admin-ch-eli-oc-2016-755-de-doc.doc"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2016/755/de/doc/fedlex-data-admin-ch-eli-oc-2016-755-de-doc.doc"
@@ -218,14 +313,6 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
-        "wasExemplifiedByPrivate": {
-          "rdfs:Resource": [
-            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2016/755/de/pdf-x/fedlex-data-admin-ch-eli-oc-2016-755-de-pdf-x.pdf"
-          ]
-        },
-        "userFormat": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-x"
-        },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDFX"
         },
@@ -233,6 +320,14 @@
           "rdfs:Resource": [
             "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2016/755/de/pdf-x/fedlex-data-admin-ch-eli-oc-2016-755-de-pdf-x.pdf"
           ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2016/755/de/pdf-x/fedlex-data-admin-ch-eli-oc-2016-755-de-pdf-x.pdf"
+          ]
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-x"
         }
       }
     },
@@ -251,17 +346,35 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
-        "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2016/755/it/pdf-a/fedlex-data-admin-ch-eli-oc-2016-755-it-pdf-a.pdf"
-        },
-        "userFormat": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": false
         },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
         },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2016/755/it/pdf-a/fedlex-data-admin-ch-eli-oc-2016-755-it-pdf-a.pdf"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2016/755/it/pdf-a/fedlex-data-admin-ch-eli-oc-2016-755-it-pdf-a.pdf"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2016/755/it/pdf-a/fedlex-data-admin-ch-eli-oc-2016-755-it-pdf-a-1.pdf"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "numberOfPages": {
+          "xsd:int": [
+            4
+          ]
+        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2016/755/it/pdf-a/fedlex-data-admin-ch-eli-oc-2016-755-it-pdf-a.pdf"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2016/755/it/pdf-a/fedlex-data-admin-ch-eli-oc-2016-755-it-pdf-a-1.pdf"
         }
       }
     },
@@ -273,14 +386,14 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2016/755/it/doc/fedlex-data-admin-ch-eli-oc-2016-755-it-doc.doc"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2016/755/it/doc/fedlex-data-admin-ch-eli-oc-2016-755-it-doc.doc"
@@ -295,14 +408,6 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
-        "wasExemplifiedByPrivate": {
-          "rdfs:Resource": [
-            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2016/755/it/pdf-x/fedlex-data-admin-ch-eli-oc-2016-755-it-pdf-x.pdf"
-          ]
-        },
-        "userFormat": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-x"
-        },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDFX"
         },
@@ -310,6 +415,14 @@
           "rdfs:Resource": [
             "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2016/755/it/pdf-x/fedlex-data-admin-ch-eli-oc-2016-755-it-pdf-x.pdf"
           ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2016/755/it/pdf-x/fedlex-data-admin-ch-eli-oc-2016-755-it-pdf-x.pdf"
+          ]
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-x"
         }
       }
     },
@@ -328,14 +441,14 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2016/755/fr/doc/fedlex-data-admin-ch-eli-oc-2016-755-fr-doc.doc"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2016/755/fr/doc/fedlex-data-admin-ch-eli-oc-2016-755-fr-doc.doc"
@@ -350,17 +463,35 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
-        "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2016/755/fr/pdf-a/fedlex-data-admin-ch-eli-oc-2016-755-fr-pdf-a.pdf"
-        },
-        "userFormat": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": false
         },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
         },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2016/755/fr/pdf-a/fedlex-data-admin-ch-eli-oc-2016-755-fr-pdf-a.pdf"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2016/755/fr/pdf-a/fedlex-data-admin-ch-eli-oc-2016-755-fr-pdf-a.pdf"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2016/755/fr/pdf-a/fedlex-data-admin-ch-eli-oc-2016-755-fr-pdf-a-1.pdf"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "numberOfPages": {
+          "xsd:int": [
+            4
+          ]
+        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2016/755/fr/pdf-a/fedlex-data-admin-ch-eli-oc-2016-755-fr-pdf-a.pdf"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2016/755/fr/pdf-a/fedlex-data-admin-ch-eli-oc-2016-755-fr-pdf-a-1.pdf"
         }
       }
     },
@@ -372,14 +503,6 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
-        "wasExemplifiedByPrivate": {
-          "rdfs:Resource": [
-            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2016/755/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2016-755-fr-pdf-x.pdf"
-          ]
-        },
-        "userFormat": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-x"
-        },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDFX"
         },
@@ -387,6 +510,14 @@
           "rdfs:Resource": [
             "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2016/755/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2016-755-fr-pdf-x.pdf"
           ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2016/755/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2016-755-fr-pdf-x.pdf"
+          ]
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-x"
         }
       }
     },
@@ -398,16 +529,107 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/oe/2016/2/it/pdf",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
+      "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oe/2016/2/it/pdf/fedlex.data.admin.ch-eli-oe-2016-2-it-pdf.pdf"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/oe/2016/2/fr/pdf",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
+      "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oe/2016/2/fr/pdf/fedlex.data.admin.ch-eli-oe-2016-2-fr-pdf.pdf"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/oe/2016/2/de/pdf",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
+      "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oe/2016/2/de/pdf/fedlex.data.admin.ch-eli-oe-2016-2-de-pdf.pdf"
+        }
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
+      "type": [
+        "Concept",
+        "LegalInstitution"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
       "type": [
         "Concept",
         "LegalInstitution"
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/oc/2016/755/graph",
   "facets": {
+    "memorialLabel_sort": {
+      "de": "2016.99.004683",
+      "it": "2016.99.004683",
+      "fr": "2016.99.004683"
+    },
+    "memorialLabel": {
+      "http://publications.europa.eu/resource/authority/language/DEU": "AS 2016 4683",
+      "http://publications.europa.eu/resource/authority/language/FRA": "RO 2016 4683",
+      "http://publications.europa.eu/resource/authority/language/ITA": "RU 2016 4683"
+    },
+    "memorialPage": {
+      "http://publications.europa.eu/resource/authority/language/DEU": 4683,
+      "http://publications.europa.eu/resource/authority/language/FRA": 4683,
+      "http://publications.europa.eu/resource/authority/language/ITA": 4683
+    },
+    "title": {
+      "de": "Verordnung über die Eigenmittel und Risikoverteilung für Banken und Effektenhändler",
+      "it": "Ordinanza sui fondi propri e sulla ripartizione dei rischi delle banche e dei commercianti di valori mobiliari",
+      "fr": "Ordonnance sur les fonds propres et la répartition des risques des banques et des négociants en valeurs mobilières"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": true,
+      "en": false,
+      "it": true,
+      "rm": false,
+      "fr": true
+    },
     "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
+    "sortingDateTime": "2016-12-12T23:00Z",
     "taxonomyId": "952.03",
     "sortingDate": "2016-12-13",
     "titleAlternative": {
@@ -415,30 +637,20 @@
       "it": "OFoP",
       "fr": "OFR"
     },
-    "memorialLabel": {
-      "http://publications.europa.eu/resource/authority/language/DEU": "AS 2016 4683",
-      "http://publications.europa.eu/resource/authority/language/FRA": "RO 2016 4683",
-      "http://publications.europa.eu/resource/authority/language/ITA": "RU 2016 4683"
-    },
+    "modified": "2024-04-03T00:02:46.451+02:00",
     "theme": {
       "themeId": "9",
       "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/10385"
-    },
-    "memorialPage": {
-      "http://publications.europa.eu/resource/authority/language/DEU": 4683,
-      "http://publications.europa.eu/resource/authority/language/FRA": 4683,
-      "http://publications.europa.eu/resource/authority/language/ITA": 4683
     },
     "titleShort": {
       "de": "Eigenmittelverordnung",
       "it": "Ordinanza sui fondi propri",
       "fr": "Ordonnance sur les fonds propres"
-    },
-    "title": {
-      "de": "Verordnung über die Eigenmittel und Risikoverteilung für Banken und Effektenhändler",
-      "it": "Ordinanza sui fondi propri e sulla ripartizione dei rischi delle banche e dei commercianti di valori mobiliari",
-      "fr": "Ordonnance sur les fonds propres et la répartition des risques des banques et des négociants en valeurs mobilières"
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/oc/2016/755/graph",
   "timestampms": null
 }
