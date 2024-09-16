@@ -39,8 +39,11 @@
       }
     },
     "references": {
-      "legalResourcePublicationCompleteness": "https://fedlex.data.admin.ch/vocabulary/publication-completeness/complete",
+      "legalResourcePublicationCompleteness": "https://fedlex.data.admin.ch/vocabulary/publication-completeness/by-reference",
       "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/7",
+      "workHasAnnex": [
+        "https://fedlex.data.admin.ch/eli/oce/2024/129"
+      ],
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/oc/2024/496/it",
         "https://fedlex.data.admin.ch/eli/oc/2024/496/fr",
@@ -52,7 +55,7 @@
   },
   "included": [
     {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/publication-completeness/complete",
+      "uri": "https://fedlex.data.admin.ch/vocabulary/publication-completeness/by-reference",
       "type": [
         "Concept",
         "PublicationCompleteness"
@@ -64,6 +67,22 @@
         "Concept",
         "LegalInstitution"
       ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/oce/2024/129",
+      "type": "Work",
+      "references": {
+        "isRealizedBy": [
+          "https://fedlex.data.admin.ch/eli/oce/2024/129/it",
+          "https://fedlex.data.admin.ch/eli/oce/2024/129/fr",
+          "https://fedlex.data.admin.ch/eli/oce/2024/129/de"
+        ]
+      },
+      "attributes": {
+        "order": {
+          "xsd:int": 0
+        }
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/oc/2024/496/it",
@@ -151,7 +170,28 @@
       "type": [
         "Memorial",
         "Work"
-      ]
+      ],
+      "attributes": {
+        "memorialNumber": {
+          "xsd:int": 147
+        },
+        "isMemberOf": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/2024"
+        },
+        "memorialYear": {
+          "xsd:int": 2024
+        },
+        "publicationDate": {
+          "xsd:date": "2024-09-13"
+        }
+      },
+      "references": {
+        "isRealizedBy": [
+          "https://fedlex.data.admin.ch/eli/collection/oc/2024/147/de",
+          "https://fedlex.data.admin.ch/eli/collection/oc/2024/147/it",
+          "https://fedlex.data.admin.ch/eli/collection/oc/2024/147/fr"
+        ]
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/2001",
@@ -159,6 +199,45 @@
         "Concept",
         "LegalTaxonomy"
       ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/oce/2024/129/it",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/ITA"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Allegati I e II (solo DE)"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/oce/2024/129/fr",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Annexe I et II (seulement en DE)"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/oce/2024/129/de",
+      "type": "Expression",
+      "references": {
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/oce/2024/129/de/url"
+        ],
+        "language": "http://publications.europa.eu/resource/authority/language/DEU"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Anlagen I und II"
+        }
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/oc/2024/496/it/xml",
@@ -231,6 +310,10 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/oc/2024/496/it/docx",
       "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
       "attributes": {
         "manifestationNotToBePrinted": {
           "xsd:boolean": false
@@ -259,6 +342,10 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/oc/2024/496/fr/docx",
       "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
       "attributes": {
         "manifestationNotToBePrinted": {
           "xsd:boolean": false
@@ -397,6 +484,10 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/oc/2024/496/de/docx",
       "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
       "attributes": {
         "manifestationNotToBePrinted": {
           "xsd:boolean": false
@@ -447,6 +538,68 @@
         "Concept",
         "Language"
       ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/collection/oc/2024/147/de",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": ""
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/collection/oc/2024/147/it",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/ITA"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": ""
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/collection/oc/2024/147/fr",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": ""
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/oce/2024/129/de/url",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
+      "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/LINK"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/url"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oce/2024/129/de/url/fedlex-data-admin-ch-eli-oce-2024-129-de-url.link"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+      "type": [
+        "Concept",
+        "LegalInstitution"
+      ]
     }
   ],
   "facets": {
@@ -464,7 +617,7 @@
       "http://publications.europa.eu/resource/authority/language/FRA": "RO 2024 496",
       "http://publications.europa.eu/resource/authority/language/ITA": "RU 2024 496"
     },
-    "modified": "2024-09-13T15:16:48.285+02:00",
+    "modified": "2024-09-16T08:04:40.123531",
     "theme": {
       "themeId": "0.6",
       "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/1980"
