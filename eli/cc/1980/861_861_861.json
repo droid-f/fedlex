@@ -15,30 +15,24 @@
       "basicAct": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/oc/1980/861_861_861"
       },
-      "typeDocument": {
-        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/26"
-      },
       "dateEntryInForce": {
         "xsd:date": "1980-07-01"
+      },
+      "typeDocument": {
+        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/26"
       }
     },
     "references": {
-      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/10534",
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/cc/1980/861_861_861/it",
         "https://fedlex.data.admin.ch/eli/cc/1980/861_861_861/de",
         "https://fedlex.data.admin.ch/eli/cc/1980/861_861_861/fr"
-      ]
+      ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/10534"
     }
   },
   "included": [
-    {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/10534",
-      "type": [
-        "Concept",
-        "LegalTaxonomy"
-      ]
-    },
     {
       "uri": "https://fedlex.data.admin.ch/eli/cc/1980/861_861_861/it",
       "type": "Expression",
@@ -76,6 +70,20 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/10534",
+      "type": [
+        "Concept",
+        "LegalTaxonomy"
+      ]
+    },
+    {
       "uri": "http://publications.europa.eu/resource/authority/language/ITA",
       "type": [
         "Concept",
@@ -97,9 +105,7 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/1980/861_861_861/graph",
   "facets": {
-    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
     "consolidates": [
       {
         "dateDocument": "1980-06-26",
@@ -159,25 +165,6 @@
         "uri": "https://fedlex.data.admin.ch/eli/oc/1980/1499_1499_1499"
       },
       {
-        "dateDocument": "1980-10-29",
-        "expression": {
-          "http://publications.europa.eu/resource/authority/language/DEU": {
-            "memorialLabel": "AS 1980 1703",
-            "title": "Verordnung vom 29. Oktober 1980 über Preiszuschläge auf Futtermitteln"
-          },
-          "http://publications.europa.eu/resource/authority/language/FRA": {
-            "memorialLabel": "RO 1980 1703",
-            "title": "Ordonnance du 29 octobre 1980 concernant des suppléments de prix sur les denrées fourragères"
-          },
-          "http://publications.europa.eu/resource/authority/language/ITA": {
-            "memorialLabel": "RU 1980 1703",
-            "title": "Ordinanza del 29 ottobre 1980 concernente i soprapprezzi sui foraggi"
-          }
-        },
-        "processType": "https://fedlex.data.admin.ch/vocabulary/type-procedure/ord",
-        "uri": "https://fedlex.data.admin.ch/eli/oc/1980/1703_1703_1703"
-      },
-      {
         "dateDocument": "1980-07-28",
         "expression": {
           "http://publications.europa.eu/resource/authority/language/DEU": {
@@ -195,6 +182,25 @@
         },
         "processType": "https://fedlex.data.admin.ch/vocabulary/type-procedure/ord",
         "uri": "https://fedlex.data.admin.ch/eli/oc/1980/1005_1005_1005"
+      },
+      {
+        "dateDocument": "1980-10-29",
+        "expression": {
+          "http://publications.europa.eu/resource/authority/language/DEU": {
+            "memorialLabel": "AS 1980 1703",
+            "title": "Verordnung vom 29. Oktober 1980 über Preiszuschläge auf Futtermitteln"
+          },
+          "http://publications.europa.eu/resource/authority/language/FRA": {
+            "memorialLabel": "RO 1980 1703",
+            "title": "Ordonnance du 29 octobre 1980 concernant des suppléments de prix sur les denrées fourragères"
+          },
+          "http://publications.europa.eu/resource/authority/language/ITA": {
+            "memorialLabel": "RU 1980 1703",
+            "title": "Ordinanza del 29 ottobre 1980 concernente i soprapprezzi sui foraggi"
+          }
+        },
+        "processType": "https://fedlex.data.admin.ch/vocabulary/type-procedure/ord",
+        "uri": "https://fedlex.data.admin.ch/eli/oc/1980/1703_1703_1703"
       },
       {
         "dateDocument": "1980-08-28",
@@ -216,10 +222,12 @@
         "uri": "https://fedlex.data.admin.ch/eli/oc/1980/1166_1166_1166"
       }
     ],
-    "sortingDate": "1980-11-01",
-    "theme": {
-      "themeId": "9",
-      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/10385"
+    "calculatedEndDate": "1980-10-31",
+    "abrogationSourceUri": "https://fedlex.data.admin.ch/eli/oc/1980/1703_1703_1703",
+    "baseActReference": {
+      "de": "AS 1980 861",
+      "it": "RU 1980 861",
+      "fr": "RO 1980 861"
     },
     "impacts": [
       {
@@ -243,32 +251,6 @@
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/1980/861_861_861",
         "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1980/861_861_861/19800701",
-        "decisionDate": "1980-07-01",
-        "historicalImpact": false,
-        "consolidationDate": "1980-07-01"
-      },
-      {
-        "impactDate": "1980-07-01",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1980/861_861_861",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1980/861_861_861/19800701",
-        "decisionDate": "1980-07-01",
-        "historicalImpact": false,
-        "consolidationDate": "1980-07-01"
-      },
-      {
-        "impactDate": "1980-07-01",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1980/861_861_861",
-        "language": [
           "http://publications.europa.eu/resource/authority/language/DEU"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
@@ -278,68 +260,58 @@
         "consolidationDate": "1980-07-01"
       },
       {
-        "impactDate": "1980-08-01",
+        "impactDate": "1980-11-01",
         "commentFrom": {
-          "it": "I"
+          "fr": "Art. 14 al. 1"
         },
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1980/1005_1005_1005",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1980/861_861_861/19800801",
-        "decisionDate": "1980-07-28",
-        "historicalImpact": false,
-        "consolidationDate": "1980-08-01"
-      },
-      {
-        "impactDate": "1980-08-01",
-        "commentFrom": {
-          "fr": "I"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1980/1005_1005_1005",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1980/1703_1703_1703",
         "language": [
           "http://publications.europa.eu/resource/authority/language/FRA"
         ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1980/861_861_861/19800801",
-        "decisionDate": "1980-07-28",
-        "historicalImpact": false,
-        "consolidationDate": "1980-08-01"
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
+        "decisionDate": "1980-10-29",
+        "historicalImpact": false
       },
       {
-        "impactDate": "1980-10-01",
-        "commentFrom": {
-          "fr": "I"
-        },
+        "impactDate": "1980-07-01",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1980/1499_1499_1499",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1980/861_861_861",
         "language": [
           "http://publications.europa.eu/resource/authority/language/FRA"
         ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1980/861_861_861/19801001",
-        "decisionDate": "1980-09-26",
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1980/861_861_861/19800701",
+        "decisionDate": "1980-07-01",
         "historicalImpact": false,
-        "consolidationDate": "1980-10-01"
+        "consolidationDate": "1980-07-01"
       },
       {
-        "impactDate": "1980-10-01",
+        "impactDate": "1980-11-01",
         "commentFrom": {
-          "it": "I"
+          "de": "Art. 14 Abs. 1"
         },
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1980/1499_1499_1499",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1980/1703_1703_1703",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
+        "decisionDate": "1980-10-29",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "1980-07-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1980/861_861_861",
         "language": [
           "http://publications.europa.eu/resource/authority/language/ITA"
         ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1980/861_861_861/19801001",
-        "decisionDate": "1980-09-26",
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1980/861_861_861/19800701",
+        "decisionDate": "1980-07-01",
         "historicalImpact": false,
-        "consolidationDate": "1980-10-01"
+        "consolidationDate": "1980-07-01"
       },
       {
         "impactDate": "1980-11-01",
@@ -372,6 +344,22 @@
         "consolidationDate": "1980-10-01"
       },
       {
+        "impactDate": "1980-10-01",
+        "commentFrom": {
+          "fr": "I"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1980/1499_1499_1499",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1980/861_861_861/19801001",
+        "decisionDate": "1980-09-26",
+        "historicalImpact": false,
+        "consolidationDate": "1980-10-01"
+      },
+      {
         "impactDate": "1980-07-01",
         "commentFrom": {
           "it": "I"
@@ -380,6 +368,22 @@
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/1980/913_913_913",
         "language": [
           "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1980/861_861_861/19800701",
+        "decisionDate": "1980-07-11",
+        "historicalImpact": false,
+        "consolidationDate": "1980-07-01"
+      },
+      {
+        "impactDate": "1980-07-01",
+        "commentFrom": {
+          "de": "I"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1980/913_913_913",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1980/861_861_861/19800701",
@@ -402,66 +406,6 @@
         "decisionDate": "1980-07-11",
         "historicalImpact": false,
         "consolidationDate": "1980-07-01"
-      },
-      {
-        "impactDate": "1980-07-01",
-        "commentFrom": {
-          "de": "I"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1980/913_913_913",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1980/861_861_861/19800701",
-        "decisionDate": "1980-07-11",
-        "historicalImpact": false,
-        "consolidationDate": "1980-07-01"
-      },
-      {
-        "impactDate": "1980-09-01",
-        "commentFrom": {
-          "de": "I"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1980/1166_1166_1166",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1980/861_861_861/19800901",
-        "decisionDate": "1980-08-28",
-        "historicalImpact": false,
-        "consolidationDate": "1980-09-01"
-      },
-      {
-        "impactDate": "1980-11-01",
-        "commentFrom": {
-          "de": "Art. 14 Abs. 1"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1980/1703_1703_1703",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
-        "decisionDate": "1980-10-29",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "1980-11-01",
-        "commentFrom": {
-          "fr": "Art. 14 al. 1"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1980/1703_1703_1703",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
-        "decisionDate": "1980-10-29",
-        "historicalImpact": false
       },
       {
         "impactDate": "1980-09-01",
@@ -494,6 +438,70 @@
         "decisionDate": "1980-08-28",
         "historicalImpact": false,
         "consolidationDate": "1980-09-01"
+      },
+      {
+        "impactDate": "1980-10-01",
+        "commentFrom": {
+          "it": "I"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1980/1499_1499_1499",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1980/861_861_861/19801001",
+        "decisionDate": "1980-09-26",
+        "historicalImpact": false,
+        "consolidationDate": "1980-10-01"
+      },
+      {
+        "impactDate": "1980-09-01",
+        "commentFrom": {
+          "de": "I"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1980/1166_1166_1166",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1980/861_861_861/19800901",
+        "decisionDate": "1980-08-28",
+        "historicalImpact": false,
+        "consolidationDate": "1980-09-01"
+      },
+      {
+        "impactDate": "1980-08-01",
+        "commentFrom": {
+          "fr": "I"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1980/1005_1005_1005",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1980/861_861_861/19800801",
+        "decisionDate": "1980-07-28",
+        "historicalImpact": false,
+        "consolidationDate": "1980-08-01"
+      },
+      {
+        "impactDate": "1980-08-01",
+        "commentFrom": {
+          "it": "I"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1980/1005_1005_1005",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1980/861_861_861/19800801",
+        "decisionDate": "1980-07-28",
+        "historicalImpact": false,
+        "consolidationDate": "1980-08-01"
       }
     ],
     "title": {
@@ -506,7 +514,33 @@
       "fr": "RS 916.112.231",
       "it": "RS 916.112.231"
     },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
+    },
+    "abrogationDecisionDate": "1980-10-29",
+    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
+    "abrogationSource": {
+      "de": "AS 1980 1703",
+      "it": "RU 1980 1703",
+      "fr": "RO 1980 1703"
+    },
+    "sortingDateTime": "1980-09-30T23:00Z",
+    "classifiedByTaxonomyEntryLabel_raw": "916.112.231",
+    "sortingDate": "1980-11-01",
+    "classifiedByTaxonomyEntryLabel_sort": "916.112.231",
+    "theme": {
+      "themeId": "9",
+      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/10385"
+    },
     "archivingDate": "1980-10-01"
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/1980/861_861_861/graph",
   "timestampms": null
 }
