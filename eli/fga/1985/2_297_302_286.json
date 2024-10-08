@@ -5,6 +5,24 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1985-07-01T22:00:00.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1985-07-01T22:00:00.000Z"
+        ]
+      },
+      "typeDocument": {
+        "rdfs:Resource": "http://example.com"
+      },
+      "publicationDate": {
+        "xsd:date": "1985-07-02"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1985/2_297_302_286/de",
@@ -12,14 +30,6 @@
         "https://fedlex.data.admin.ch/eli/fga/1985/2_297_302_286/fr"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1985/25"
-    },
-    "attributes": {
-      "typeDocument": {
-        "rdfs:Resource": "http://example.com"
-      },
-      "publicationDate": {
-        "xsd:date": "1985-07-02"
-      }
     }
   },
   "included": [
@@ -128,17 +138,17 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10049697"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10049697&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10049697"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10049697&action=open"
         }
       }
     },
@@ -157,17 +167,17 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10114814"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10114814&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10114814"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10114814&action=open"
         }
       }
     },
@@ -186,17 +196,17 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10104415"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10104415&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10104415"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10104415&action=open"
         }
       }
     },
@@ -215,14 +225,20 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1985/2_297_302_286/graph",
   "facets": {
+    "sortingDateTime": "1985-07-01T22:00Z",
     "sortingDate": "1985-07-02",
+    "memorialLabel_sort": {
+      "de": "1985.02.000297",
+      "it": "1985.02.000286",
+      "fr": "1985.02.000302"
+    },
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1985 II 297",
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 1985 II 302",
       "http://publications.europa.eu/resource/authority/language/ITA": "FF 1985 II 286"
     },
+    "modified": "1985-07-02T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 297,
       "http://publications.europa.eu/resource/authority/language/FRA": 302,
@@ -232,7 +248,18 @@
       "de": "Bundesbeschluss über die inländische Zuckerwirtschaft Änderung vom 21. Juni 1985",
       "it": "Decreto federale sull'economìa zuccheriera indigena Modificazione del 21 giugno 1985",
       "fr": "Arrêté fédéral sur l'économie sucrière indigène Modification du 21 juin 1985"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1985/2_297_302_286/graph",
   "timestampms": null
 }

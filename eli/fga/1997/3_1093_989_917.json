@@ -5,6 +5,24 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1997-07-14T22:00:00.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1997-07-14T22:00:00.000Z"
+        ]
+      },
+      "typeDocument": {
+        "rdfs:Resource": "http://example.com"
+      },
+      "publicationDate": {
+        "xsd:date": "1997-07-15"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1997/3_1093_989_917/it",
@@ -12,14 +30,6 @@
         "https://fedlex.data.admin.ch/eli/fga/1997/3_1093_989_917/de"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1997/27"
-    },
-    "attributes": {
-      "typeDocument": {
-        "rdfs:Resource": "http://example.com"
-      },
-      "publicationDate": {
-        "xsd:date": "1997-07-15"
-      }
     }
   },
   "included": [
@@ -128,17 +138,17 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10119013"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10119013&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10119013"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10119013&action=open"
         }
       }
     },
@@ -157,17 +167,17 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10109109"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10109109&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10109109"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10109109&action=open"
         }
       }
     },
@@ -186,17 +196,17 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10054335"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10054335&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10054335"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10054335&action=open"
         }
       }
     },
@@ -215,14 +225,20 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1997/3_1093_989_917/graph",
   "facets": {
+    "sortingDateTime": "1997-07-14T22:00Z",
     "sortingDate": "1997-07-15",
+    "memorialLabel_sort": {
+      "de": "1997.03.001093",
+      "it": "1997.03.000917",
+      "fr": "1997.03.000989"
+    },
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1997 III 1093",
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 1997 III 989",
       "http://publications.europa.eu/resource/authority/language/ITA": "FF 1997 III 917"
     },
+    "modified": "1997-07-15T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 1093,
       "http://publications.europa.eu/resource/authority/language/FRA": 989,
@@ -232,7 +248,18 @@
       "de": "Botschaft über ein Doppelbesteuerungsabkommen mit der Slowakischen Republik vom 28. Mai 1997",
       "it": "Messaggio concernente una Convenzione di doppia imposizione con la Repubblica Slovacca del 28 maggio 1997",
       "fr": "Message concernant une convention de double imposition avec la République slovaque du 28 mai 1997"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1997/3_1093_989_917/graph",
   "timestampms": null
 }

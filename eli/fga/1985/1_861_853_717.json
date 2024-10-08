@@ -5,6 +5,24 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1985-04-01T22:00:00.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1985-04-01T22:00:00.000Z"
+        ]
+      },
+      "typeDocument": {
+        "rdfs:Resource": "http://example.com"
+      },
+      "publicationDate": {
+        "xsd:date": "1985-04-02"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1985/1_861_853_717/de",
@@ -12,14 +30,6 @@
         "https://fedlex.data.admin.ch/eli/fga/1985/1_861_853_717/it"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1985/12"
-    },
-    "attributes": {
-      "typeDocument": {
-        "rdfs:Resource": "http://example.com"
-      },
-      "publicationDate": {
-        "xsd:date": "1985-04-02"
-      }
     }
   },
   "included": [
@@ -128,17 +138,17 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10049602"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10049602&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10049602"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10049602&action=open"
         }
       }
     },
@@ -157,17 +167,17 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10104322"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10104322&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10104322"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10104322&action=open"
         }
       }
     },
@@ -186,17 +196,17 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10114739"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10114739&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10114739"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10114739&action=open"
         }
       }
     },
@@ -215,14 +225,20 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1985/1_861_853_717/graph",
   "facets": {
+    "sortingDateTime": "1985-04-01T22:00Z",
     "sortingDate": "1985-04-02",
+    "memorialLabel_sort": {
+      "de": "1985.01.000861",
+      "it": "1985.01.000717",
+      "fr": "1985.01.000853"
+    },
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1985 I 861",
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 1985 I 853",
       "http://publications.europa.eu/resource/authority/language/ITA": "FF 1985 I 717"
     },
+    "modified": "1985-04-02T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 861,
       "http://publications.europa.eu/resource/authority/language/FRA": 853,
@@ -232,7 +248,18 @@
       "de": "Bundesbeschluss über die Differenzierung des Treibstoffzolles vom 22. März 1985",
       "it": "Decreto federale concernente il differenziamento dei dazi sui carburanti del 22 marzo 1985",
       "fr": "Arrêté fédéral concernant la différenciation des droits de douane sur les carburants du 22 mars 1985"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1985/1_861_853_717/graph",
   "timestampms": null
 }
