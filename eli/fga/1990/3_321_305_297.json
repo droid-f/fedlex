@@ -5,6 +5,24 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1990-09-17T22:00:00.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1990-09-17T22:00:00.000Z"
+        ]
+      },
+      "typeDocument": {
+        "rdfs:Resource": "http://example.com"
+      },
+      "publicationDate": {
+        "xsd:date": "1990-09-18"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1990/3_321_305_297/fr",
@@ -12,14 +30,6 @@
         "https://fedlex.data.admin.ch/eli/fga/1990/3_321_305_297/de"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1990/37"
-    },
-    "attributes": {
-      "typeDocument": {
-        "rdfs:Resource": "http://example.com"
-      },
-      "publicationDate": {
-        "xsd:date": "1990-09-18"
-      }
     }
   },
   "included": [
@@ -128,17 +138,17 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10106280"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10106280&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10106280"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10106280&action=open"
         }
       }
     },
@@ -157,17 +167,17 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10116430"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10116430&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10116430"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10116430&action=open"
         }
       }
     },
@@ -186,17 +196,17 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10051542"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10051542&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10051542"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10051542&action=open"
         }
       }
     },
@@ -215,14 +225,20 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1990/3_321_305_297/graph",
   "facets": {
+    "sortingDateTime": "1990-09-17T22:00Z",
     "sortingDate": "1990-09-18",
+    "memorialLabel_sort": {
+      "de": "1990.03.000321",
+      "it": "1990.03.000297",
+      "fr": "1990.03.000305"
+    },
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1990 III 321",
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 1990 III 305",
       "http://publications.europa.eu/resource/authority/language/ITA": "FF 1990 III 297"
     },
+    "modified": "1990-09-18T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 321,
       "http://publications.europa.eu/resource/authority/language/FRA": 305,
@@ -232,7 +248,18 @@
       "de": "Botschaft zum Auslieferungsvertrag mit der Republik der Philippinen vom 15. August 1990",
       "it": "Messaggio concernente il trattato d'estradizione con la Repubblica delle Filippine del 15 agosto 1990",
       "fr": "Message concernant le traité d'extradition avec la République des Philippines du 15 août 1990"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1990/3_321_305_297/graph",
   "timestampms": null
 }
