@@ -5,6 +5,24 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1991-12-16T23:00:00.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1991-12-16T23:00:00.000Z"
+        ]
+      },
+      "typeDocument": {
+        "rdfs:Resource": "http://example.com"
+      },
+      "publicationDate": {
+        "xsd:date": "1991-12-17"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1991/4_985_961_877/it",
@@ -12,14 +30,6 @@
         "https://fedlex.data.admin.ch/eli/fga/1991/4_985_961_877/fr"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1991/49"
-    },
-    "attributes": {
-      "typeDocument": {
-        "rdfs:Resource": "http://example.com"
-      },
-      "publicationDate": {
-        "xsd:date": "1991-12-17"
-      }
     }
   },
   "included": [
@@ -128,17 +138,17 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10116900"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10116900&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10116900"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10116900&action=open"
         }
       }
     },
@@ -157,17 +167,17 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10052056"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10052056&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10052056"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10052056&action=open"
         }
       }
     },
@@ -186,17 +196,17 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10106803"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10106803&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10106803"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10106803&action=open"
         }
       }
     },
@@ -215,14 +225,20 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1991/4_985_961_877/graph",
   "facets": {
+    "sortingDateTime": "1991-12-16T23:00Z",
     "sortingDate": "1991-12-17",
+    "memorialLabel_sort": {
+      "de": "1991.04.000985",
+      "it": "1991.04.000877",
+      "fr": "1991.04.000961"
+    },
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1991 IV 985",
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 1991 IV 961",
       "http://publications.europa.eu/resource/authority/language/ITA": "FF 1991 IV 877"
     },
+    "modified": "1991-12-17T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 985,
       "http://publications.europa.eu/resource/authority/language/FRA": 961,
@@ -232,7 +248,18 @@
       "de": "Botschaft über die Volksinitiative «für eine gesunde Krankenversicherung» vom 6. November 1991",
       "it": "Messaggio concernente l'iniziativa popolare «per una sana assicurazione malattie» del 6 novembre 1991",
       "fr": "Message concernant l'initiative populaire «pour une saine assurance-maladie» du 6 novembre 1991"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1991/4_985_961_877/graph",
   "timestampms": null
 }
