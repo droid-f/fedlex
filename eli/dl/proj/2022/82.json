@@ -17,7 +17,7 @@
     "attributes": {
       "modified": {
         "xsd:dateTime": [
-          "2023-05-04T08:09:34.834Z"
+          "2024-10-18T09:54:44.139Z"
         ]
       },
       "eventId": {
@@ -25,7 +25,7 @@
       },
       "created": {
         "xsd:dateTime": [
-          "2023-05-04T08:09:34.812Z"
+          "2024-10-18T09:54:44.119Z"
         ]
       }
     }
@@ -82,10 +82,11 @@
           "https://fedlex.data.admin.ch/eli/cc/1995/4425_4425_4425",
           "https://fedlex.data.admin.ch/eli/cc/1959/679_705_685"
         ],
-        "consultationStatus": "https://fedlex.data.admin.ch/vocabulary/consultation-status/4",
+        "consultationStatus": "https://fedlex.data.admin.ch/vocabulary/consultation-status/5",
         "hasSubTask": [
           "https://fedlex.data.admin.ch/eli/dl/proj/2022/82/cons_1/cons-pos",
           "https://fedlex.data.admin.ch/eli/dl/proj/2022/82/cons_1/cons-open",
+          "https://fedlex.data.admin.ch/eli/dl/proj/2022/82/cons_1/cons-result",
           "https://fedlex.data.admin.ch/eli/dl/proj/2022/82/cons_1/cons-planif"
         ]
       }
@@ -147,7 +148,7 @@
       ]
     },
     {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/consultation-status/4",
+      "uri": "https://fedlex.data.admin.ch/vocabulary/consultation-status/5",
       "type": [
         "Concept",
         "ConsultationStatus"
@@ -208,6 +209,25 @@
         "eventStartDate": {
           "xsd:date": "2022-12-09"
         }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2022/82/cons_1/cons-result",
+      "type": [
+        "ConsultationTask",
+        "Event",
+        "LegislativeTask",
+        "ResultOfAConsultationPublication"
+      ],
+      "references": {
+        "institutionInChargeOfTheEventLevel2": "https://fedlex.data.admin.ch/vocabulary/legal-institution/28",
+        "institutionInChargeOfTheEvent": "https://fedlex.data.admin.ch/vocabulary/legal-institution/S0",
+        "opinionHasDraftRelatedDocument": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2022/82/cons_1/doc_12"
+        ],
+        "consultationHasModification": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2022/82/cons_1/cons-result/consultation-modification-history/1"
+        ]
       }
     },
     {
@@ -621,6 +641,50 @@
       "attributes": {
         "consultationStageDate": {
           "xsd:dateTime": "2022-12-09T14:03:16.942Z"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2022/82/cons_1/doc_12",
+      "type": [
+        "DraftRelatedDocument",
+        "Work"
+      ],
+      "references": {
+        "draftProcessDocumentType": [
+          "https://fedlex.data.admin.ch/vocabulary/draft-document-type/31"
+        ],
+        "isRealizedBy": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2022/82/cons_1/doc_12/it",
+          "https://fedlex.data.admin.ch/eli/dl/proj/2022/82/cons_1/doc_12/de",
+          "https://fedlex.data.admin.ch/eli/dl/proj/2022/82/cons_1/doc_12/fr"
+        ]
+      },
+      "attributes": {
+        "title": {
+          "rdf:langString": {
+            "de": [
+              "Ergebnisbericht"
+            ],
+            "it": [
+              "Rapporto sui risultati"
+            ],
+            "fr": [
+              "Rapport de résultats"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2022/82/cons_1/cons-result/consultation-modification-history/1",
+      "type": [
+        "ConsultationModificationHistory",
+        "Event"
+      ],
+      "attributes": {
+        "consultationStageDate": {
+          "xsd:dateTime": "2024-10-18T09:54:38.967Z"
         }
       }
     },
@@ -1170,6 +1234,58 @@
       "attributes": {
         "title": {
           "xsd:string": "Vernehmlassungsvorlage-4"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/draft-document-type/31",
+      "type": [
+        "Concept",
+        "DraftProcessDocumentType"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2022/82/cons_1/doc_12/it",
+      "type": "Expression",
+      "references": {
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2022/82/cons_1/doc_12/it/pdf-a"
+        ],
+        "language": "http://publications.europa.eu/resource/authority/language/ITA"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Rapporto sui risultati"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2022/82/cons_1/doc_12/de",
+      "type": "Expression",
+      "references": {
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2022/82/cons_1/doc_12/de/pdf-a"
+        ],
+        "language": "http://publications.europa.eu/resource/authority/language/DEU"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Ergebnisbericht"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2022/82/cons_1/doc_12/fr",
+      "type": "Expression",
+      "references": {
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2022/82/cons_1/doc_12/fr/pdf-a"
+        ],
+        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Rapport de résultats"
         }
       }
     },
@@ -1888,6 +2004,69 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2022/82/cons_1/doc_12/it/pdf-a",
+      "type": "Manifestation",
+      "attributes": {
+        "manifestationByDefault": {
+          "xsd:boolean": true
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/dl/proj/2022/82/cons_1/doc_12/it/pdf-a/fedlex-data-admin-ch-eli-dl-proj-2022-82-cons_1-doc_12-it-pdf-a.pdf"
+        },
+        "publicationDate": {
+          "xsd:dateTime": "2024-10-18T09:54:38.972Z"
+        }
+      },
+      "references": {
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2022/82/cons_1/doc_12/de/pdf-a",
+      "type": "Manifestation",
+      "attributes": {
+        "manifestationByDefault": {
+          "xsd:boolean": true
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/dl/proj/2022/82/cons_1/doc_12/de/pdf-a/fedlex-data-admin-ch-eli-dl-proj-2022-82-cons_1-doc_12-de-pdf-a.pdf"
+        },
+        "publicationDate": {
+          "xsd:dateTime": "2024-10-18T09:54:38.972Z"
+        }
+      },
+      "references": {
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2022/82/cons_1/doc_12/fr/pdf-a",
+      "type": "Manifestation",
+      "attributes": {
+        "manifestationByDefault": {
+          "xsd:boolean": true
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/dl/proj/2022/82/cons_1/doc_12/fr/pdf-a/fedlex-data-admin-ch-eli-dl-proj-2022-82-cons_1-doc_12-fr-pdf-a.pdf"
+        },
+        "publicationDate": {
+          "xsd:dateTime": "2024-10-18T09:54:38.972Z"
+        }
+      },
+      "references": {
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
       "type": [
         "Concept",
@@ -1895,38 +2074,45 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/dl/proj/2022/82/graph",
   "facets": {
-    "sortingDateTime": "2023-05-04T08:09:34.834Z",
+    "sortingDateTime": "2024-10-18T09:54:44.139Z",
     "taxonomies": [
       {
-        "taxonomyId": "314.11",
-        "consolidationAbstract": "https://fedlex.data.admin.ch/eli/cc/2019/93"
+        "consolidationAbstract": "https://fedlex.data.admin.ch/eli/cc/2019/93",
+        "taxonomyId": "314.11"
       },
       {
-        "taxonomyId": "741.01",
-        "consolidationAbstract": "https://fedlex.data.admin.ch/eli/cc/1959/679_705_685"
+        "consolidationAbstract": "https://fedlex.data.admin.ch/eli/cc/1959/679_705_685",
+        "taxonomyId": "741.01"
       },
       {
-        "taxonomyId": "741.013",
-        "consolidationAbstract": "https://fedlex.data.admin.ch/eli/cc/2007/296"
+        "consolidationAbstract": "https://fedlex.data.admin.ch/eli/cc/2007/296",
+        "taxonomyId": "741.013"
       },
       {
-        "taxonomyId": "741.11",
-        "consolidationAbstract": "https://fedlex.data.admin.ch/eli/cc/1962/1364_1409_1420"
+        "consolidationAbstract": "https://fedlex.data.admin.ch/eli/cc/1962/1364_1409_1420",
+        "taxonomyId": "741.11"
       },
       {
-        "taxonomyId": "741.41",
-        "consolidationAbstract": "https://fedlex.data.admin.ch/eli/cc/1995/4425_4425_4425"
+        "consolidationAbstract": "https://fedlex.data.admin.ch/eli/cc/1995/4425_4425_4425",
+        "taxonomyId": "741.41"
       }
     ],
-    "sortingDate": "2023-05-04T08:09:29.296Z",
-    "modified": "2023-05-04T10:09:34.855287",
+    "sortingDate": "2024-10-18T11:54:38.967+02:00",
+    "modified": "2024-10-18T11:54:44.160212",
+    "title": {
+      "de": "Umsetzung der Motion 20.4339 UREK-N («Übermässigen Motorenlärm wirksam reduzieren»): Anpassung von zwei Artikeln des Strassenverkehrsgesetzes und Teilrevision von vier Verordnungen",
+      "it": "Attuazione della mozione 20.4339 CAPTE-N («Ridurre efficacemente il rumore eccessivo dei motori»): Adattamento di due articoli della legge federale sulla circolazione stradale e di quattro ordinanze",
+      "fr": "Mise en œuvre de la motion 20.4339 de la CEATE-N («Réduire de manière efficace le bruit excessif des moteurs»): adaptation de deux articles de la loi sur la circulation routière et de quatre ordonnances"
+    },
     "department": {
       "PositionStatementPublication": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D3",
       "ConsultationPhase": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D3",
-      "ConsultationPreparation": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D3"
-    }
+      "ConsultationPreparation": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D3",
+      "ResultOfAConsultationPublication": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D3"
+    },
+    "consultationId": "2022/82"
   },
+  "graph": "https://fedlex.data.admin.ch/eli/dl/proj/2022/82/graph",
   "timestampms": null
 }
