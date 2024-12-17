@@ -16,17 +16,24 @@
         "https://fedlex.data.admin.ch/vocabulary/international-actor/1043"
       ],
       "treatyProcessHasTask": [
-        "https://fedlex.data.admin.ch/eli/treaty/2024/0299/TreatySignature/1"
+        "https://fedlex.data.admin.ch/eli/treaty/2024/0299/Registration/1",
+        "https://fedlex.data.admin.ch/eli/treaty/2024/0299/EntryIntoForce/1",
+        "https://fedlex.data.admin.ch/eli/treaty/2024/0299/TreatySignature/1",
+        "https://fedlex.data.admin.ch/eli/treaty/2024/0299/TreatyRatification/1",
+        "https://fedlex.data.admin.ch/eli/treaty/2024/0299/ReferralToConseilGouvernement/1"
       ],
       "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1"
     },
     "attributes": {
+      "firstEntryIntoForceDate": {
+        "xsd:date": "2025-01-01"
+      },
       "bilateral": {
         "xsd:boolean": false
       },
       "modified": {
         "xsd:dateTime": [
-          "2024-09-25T15:14:34.037Z"
+          "2024-12-17T12:56:42.300Z"
         ]
       },
       "treatySignatureDate": {
@@ -37,22 +44,22 @@
       },
       "created": {
         "xsd:dateTime": [
-          "2024-09-25T15:14:34.018Z"
+          "2024-12-17T12:56:42.283Z"
         ]
       },
       "titleTreaty": {
         "rdf:langString": {
           "de": [
-            "Änderung WRC-23  - Radioreglement vom 17. November 1995"
+            "Änderung WRC-23 - 15-12-2023 - Radioreglement vom 17. November 1995"
           ],
           "en": [
             ""
           ],
           "it": [
-            "Modifica WRC-23 - Regolamento delle radiocomunicazioni del 17 novembre 1995"
+            "Modifica WRC-23 - 15-12-2023 - Regolamento delle radiocomunicazioni del 17 novembre 1995"
           ],
           "fr": [
-            "Modification WRC-23 - Règlement des radiocommunications du 17 novembre 1995"
+            "Modification par les Conférences mondiales des radiocommunications de Genève  (WRC-23)) -15-12-2023 - Règlement des radiocommunications du 17 novembre 1995"
           ]
         }
       }
@@ -92,17 +99,73 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2024/0299/Registration/1",
+      "type": [
+        "Event",
+        "Registration",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "depositary": "https://fedlex.data.admin.ch/vocabulary/international-actor/1043"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2024/0299/EntryIntoForce/1",
+      "type": [
+        "EntryIntoForce",
+        "Event",
+        "TaskForTreaty"
+      ],
+      "attributes": {
+        "entryIntoForceDate": {
+          "xsd:date": "2025-01-01"
+        }
+      },
+      "references": {
+        "entryIntoForceFor": "https://fedlex.data.admin.ch/vocabulary/country/718"
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/2024/0299/TreatySignature/1",
       "type": [
         "Event",
         "TaskForTreaty",
         "TreatySignature"
       ],
+      "attributes": {
+        "treatySignatureDate": {
+          "xsd:date": "2023-12-15"
+        }
+      },
       "references": {
         "language": [
           "http://publications.europa.eu/resource/authority/language/ENG"
         ]
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2024/0299/TreatyRatification/1",
+      "type": [
+        "Event",
+        "TaskForTreaty",
+        "TreatyRatification"
+      ],
+      "attributes": {
+        "treatyPartyRatificationDate": {
+          "xsd:date": "2024-12-12"
+        }
+      },
+      "references": {
+        "treatyRatificationParty": "https://fedlex.data.admin.ch/vocabulary/country/718"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/2024/0299/ReferralToConseilGouvernement/1",
+      "type": [
+        "Event",
+        "ReferralToConseilGouvernement",
+        "TaskForTreaty"
+      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1",
@@ -120,6 +183,13 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/country/718",
+      "type": [
+        "Concept",
+        "Country"
+      ]
+    },
+    {
       "uri": "http://publications.europa.eu/resource/authority/language/ENG",
       "type": [
         "Concept",
@@ -128,12 +198,13 @@
     }
   ],
   "facets": {
+    "sortingDateTime": "2024-12-17T12:56:42.300Z",
+    "firstEntryIntoForceDate": "2025-01-01",
     "title": {
-      "de": "Änderung WRC-23  - Radioreglement vom 17. November 1995",
-      "it": "Modifica WRC-23 - Regolamento delle radiocomunicazioni del 17 novembre 1995",
-      "fr": "Modification WRC-23 - Règlement des radiocommunications du 17 novembre 1995"
+      "de": "Änderung WRC-23 - 15-12-2023 - Radioreglement vom 17. November 1995",
+      "it": "Modifica WRC-23 - 15-12-2023 - Regolamento delle radiocomunicazioni del 17 novembre 1995",
+      "fr": "Modification par les Conférences mondiales des radiocommunications de Genève  (WRC-23)) -15-12-2023 - Règlement des radiocommunications du 17 novembre 1995"
     },
-    "sortingDateTime": "2024-09-25T15:14:34.037Z",
     "sortingDate": "2023-12-15"
   },
   "graph": "https://fedlex.data.admin.ch/eli/treaty/2024/0299/graph",
