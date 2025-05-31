@@ -30,9 +30,9 @@
         "https://fedlex.data.admin.ch/vocabulary/international-actor/10077"
       ],
       "treatyProcessHasTask": [
-        "https://fedlex.data.admin.ch/eli/treaty/9999/1528/referral/1",
         "https://fedlex.data.admin.ch/eli/treaty/9999/1528/notification/9",
         "https://fedlex.data.admin.ch/eli/treaty/9999/1528/treatySignature/1",
+        "https://fedlex.data.admin.ch/eli/treaty/9999/1528/Notification/2",
         "https://fedlex.data.admin.ch/eli/treaty/9999/1528/notification/11",
         "https://fedlex.data.admin.ch/eli/treaty/9999/1528/notification/23",
         "https://fedlex.data.admin.ch/eli/treaty/9999/1528/notification/21",
@@ -47,11 +47,12 @@
         "https://fedlex.data.admin.ch/eli/treaty/9999/1528/notification/25",
         "https://fedlex.data.admin.ch/eli/treaty/9999/1528/notification/8",
         "https://fedlex.data.admin.ch/eli/treaty/9999/1528/registration/1",
+        "https://fedlex.data.admin.ch/eli/treaty/9999/1528/Notification/1",
+        "https://fedlex.data.admin.ch/eli/treaty/9999/1528/Notification/3",
         "https://fedlex.data.admin.ch/eli/treaty/9999/1528/notification/22",
         "https://fedlex.data.admin.ch/eli/treaty/9999/1528/notification/12",
         "https://fedlex.data.admin.ch/eli/treaty/9999/1528/notification/20",
         "https://fedlex.data.admin.ch/eli/treaty/9999/1528/notification/10",
-        "https://fedlex.data.admin.ch/eli/treaty/9999/1528/entryIntoForce/1",
         "https://fedlex.data.admin.ch/eli/treaty/9999/1528/notification/5",
         "https://fedlex.data.admin.ch/eli/treaty/9999/1528/notification/18",
         "https://fedlex.data.admin.ch/eli/treaty/9999/1528/notification/7",
@@ -71,11 +72,21 @@
       "bilateral": {
         "xsd:boolean": false
       },
+      "modified": {
+        "xsd:dateTime": [
+          "2025-02-20T07:31:13.207Z"
+        ]
+      },
       "treatySignatureDate": {
         "xsd:date": "1973-09-13"
       },
       "treatySignaturePlace": {
         "xsd:string": "Berne"
+      },
+      "created": {
+        "xsd:dateTime": [
+          "2025-02-20T07:31:13.196Z"
+        ]
       },
       "titleTreaty": {
         "rdf:langString": {
@@ -297,14 +308,6 @@
       ]
     },
     {
-      "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/1528/referral/1",
-      "type": [
-        "Event",
-        "ReferralToConseilGouvernement",
-        "TaskForTreaty"
-      ]
-    },
-    {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/1528/notification/9",
       "type": [
         "Event",
@@ -332,6 +335,18 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/FRA"
         ]
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/1528/Notification/2",
+      "type": [
+        "Event",
+        "Notification",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/1",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/10095"
       }
     },
     {
@@ -381,7 +396,7 @@
       },
       "attributes": {
         "notificationEntryIntoForceDate": {
-          "xsd:date": "1986-01-01"
+          "xsd:date": "1977-07-31"
         }
       }
     },
@@ -567,6 +582,35 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/1528/Notification/1",
+      "type": [
+        "Event",
+        "Notification",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/5",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/10095"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/1528/Notification/3",
+      "type": [
+        "Event",
+        "Notification",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/3",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/10095"
+      },
+      "attributes": {
+        "notificationEntryIntoForceDate": {
+          "xsd:date": "1977-07-01"
+        }
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/1528/notification/22",
       "type": [
         "Event",
@@ -632,17 +676,6 @@
         "notificationEntryIntoForceDate": {
           "xsd:date": "1981-07-06"
         }
-      }
-    },
-    {
-      "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/1528/entryIntoForce/1",
-      "type": [
-        "EntryIntoForce",
-        "Event",
-        "TaskForTreaty"
-      ],
-      "references": {
-        "entryIntoForceFor": "https://fedlex.data.admin.ch/vocabulary/country/718"
       }
     },
     {
@@ -911,14 +944,14 @@
       ]
     },
     {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/notification-type/3",
+      "uri": "https://fedlex.data.admin.ch/vocabulary/notification-type/1",
       "type": [
         "Concept",
         "NotificationType"
       ]
     },
     {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/notification-type/1",
+      "uri": "https://fedlex.data.admin.ch/vocabulary/notification-type/3",
       "type": [
         "Concept",
         "NotificationType"
@@ -930,11 +963,23 @@
         "Concept",
         "Country"
       ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/notification-type/5",
+      "type": [
+        "Concept",
+        "NotificationType"
+      ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/treaty/9999/1528/graph",
   "facets": {
+    "sortingDateTime": "2025-02-20T07:31:13.207Z",
+    "firstEntryIntoForceDate": "1977-02-16",
+    "title": {
+      "fr": "Convention relative à l'indication des noms et prénoms dans les registres de l'état civil"
+    },
     "sortingDate": "1973-09-13"
   },
+  "graph": "https://fedlex.data.admin.ch/eli/treaty/9999/1528/graph",
   "timestampms": null
 }

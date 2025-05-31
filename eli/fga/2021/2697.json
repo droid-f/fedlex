@@ -7,13 +7,28 @@
     ],
     "attributes": {
       "legalResourceGenre": {
-        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/legal-resource-genre/200"
+        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/legal-resource-genre/900"
       },
       "dateDocument": {
         "xsd:date": "2021-11-16"
       },
+      "created": {
+        "xsd:dateTime": [
+          "2021-11-23T23:00:00.000Z"
+        ]
+      },
       "sequenceInTheYearOfPublication": {
         "xsd:int": 2697
+      },
+      "temporaryParliamentDraftId": {
+        "xsd:string": [
+          "19.498"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "2021-11-23T23:00:00.000Z"
+        ]
       },
       "typeDocument": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/38"
@@ -56,8 +71,8 @@
       "type": "Expression",
       "references": {
         "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/2021/2697/it/pdf-a",
-          "https://fedlex.data.admin.ch/eli/fga/2021/2697/it/docx"
+          "https://fedlex.data.admin.ch/eli/fga/2021/2697/it/docx",
+          "https://fedlex.data.admin.ch/eli/fga/2021/2697/it/pdf-a"
         ],
         "language": "http://publications.europa.eu/resource/authority/language/ITA"
       },
@@ -66,6 +81,9 @@
           "xsd:string": "FF"
         },
         "titleAlternative": {
+          "xsd:string": "RCS"
+        },
+        "titleShort": {
           "xsd:string": "RCS"
         },
         "isPartOf": {
@@ -96,6 +114,9 @@
         "titleAlternative": {
           "xsd:string": "RCE"
         },
+        "titleShort": {
+          "xsd:string": "RCE"
+        },
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/2021/214/fr"
         },
@@ -124,6 +145,9 @@
         "titleAlternative": {
           "xsd:string": "GRS"
         },
+        "titleShort": {
+          "xsd:string": "GRS"
+        },
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/2021/214/de"
         },
@@ -140,52 +164,71 @@
       "type": [
         "Memorial",
         "Work"
-      ]
-    },
-    {
-      "uri": "https://fedlex.data.admin.ch/eli/fga/2021/2697/it/pdf-a",
-      "type": "Manifestation",
+      ],
       "attributes": {
-        "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2021/2697/it/pdf-a/fedlex-data-admin-ch-eli-fga-2021-2697-it-pdf-a.pdf"
+        "memorialNumber": {
+          "xsd:int": 214
         },
-        "userFormat": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        "isMemberOf": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/2021"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
+        "memorialYear": {
+          "xsd:int": 2021
         },
-        "numberOfPages": {
-          "xsd:int": [
-            2
-          ]
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
-        "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2021/2697/it/pdf-a/fedlex-data-admin-ch-eli-fga-2021-2697-it-pdf-a.pdf"
+        "publicationDate": {
+          "xsd:date": "2021-11-24"
         }
+      },
+      "references": {
+        "isRealizedBy": [
+          "https://fedlex.data.admin.ch/eli/collection/fga/2021/214/de",
+          "https://fedlex.data.admin.ch/eli/collection/fga/2021/214/fr",
+          "https://fedlex.data.admin.ch/eli/collection/fga/2021/214/it"
+        ]
       }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/2021/2697/it/docx",
       "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2021/2697/it/docx/fedlex-data-admin-ch-eli-fga-2021-2697-it-docx.docx"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
-        },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2021/2697/it/docx/fedlex-data-admin-ch-eli-fga-2021-2697-it-docx.docx"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/fga/2021/2697/it/pdf-a",
+      "type": "Manifestation",
+      "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2021/2697/it/pdf-a/fedlex-data-admin-ch-eli-fga-2021-2697-it-pdf-a.pdf"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "numberOfPages": {
+          "xsd:int": [
+            2
+          ]
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2021/2697/it/pdf-a/fedlex-data-admin-ch-eli-fga-2021-2697-it-pdf-a.pdf"
         }
       }
     },
@@ -199,18 +242,19 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/2021/2697/fr/docx",
       "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2021/2697/fr/docx/fedlex-data-admin-ch-eli-fga-2021-2697-fr-docx.docx"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
-        },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2021/2697/fr/docx/fedlex-data-admin-ch-eli-fga-2021-2697-fr-docx.docx"
@@ -221,22 +265,19 @@
       "uri": "https://fedlex.data.admin.ch/eli/fga/2021/2697/fr/pdf-a",
       "type": "Manifestation",
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2021/2697/fr/pdf-a/fedlex-data-admin-ch-eli-fga-2021-2697-fr-pdf-a.pdf"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
         "numberOfPages": {
           "xsd:int": [
             2
           ]
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2021/2697/fr/pdf-a/fedlex-data-admin-ch-eli-fga-2021-2697-fr-pdf-a.pdf"
@@ -254,22 +295,19 @@
       "uri": "https://fedlex.data.admin.ch/eli/fga/2021/2697/de/pdf-a",
       "type": "Manifestation",
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2021/2697/de/pdf-a/fedlex-data-admin-ch-eli-fga-2021-2697-de-pdf-a.pdf"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
         "numberOfPages": {
           "xsd:int": [
             2
           ]
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2021/2697/de/pdf-a/fedlex-data-admin-ch-eli-fga-2021-2697-de-pdf-a.pdf"
@@ -279,18 +317,19 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/2021/2697/de/docx",
       "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2021/2697/de/docx/fedlex-data-admin-ch-eli-fga-2021-2697-de-docx.docx"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
-        },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2021/2697/de/docx/fedlex-data-admin-ch-eli-fga-2021-2697-de-docx.docx"
@@ -303,11 +342,54 @@
         "Concept",
         "Language"
       ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/collection/fga/2021/214/de",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": ""
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/collection/fga/2021/214/fr",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": ""
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/collection/fga/2021/214/it",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/ITA"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": ""
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+      "type": [
+        "Concept",
+        "LegalInstitution"
+      ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/2021/2697/graph",
   "facets": {
     "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/52",
+    "sortingDateTime": "2021-11-23T23:00Z",
     "sortingDate": "2021-11-24",
     "draft": {
       "parliamentDraftId": [
@@ -319,17 +401,38 @@
       "it": "RCS",
       "fr": "RCE"
     },
+    "memorialLabel_sort": {
+      "de": "2021.99.002697",
+      "it": "2021.99.002697",
+      "fr": "2021.99.002697"
+    },
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 2021 2697",
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 2021 2697",
       "http://publications.europa.eu/resource/authority/language/ITA": "FF 2021 2697"
     },
-    "modified": "2021-11-24T07:01:32.680109",
+    "modified": "2025-02-06T11:56:10.619177",
+    "titleShort": {
+      "de": "GRS",
+      "it": "RCS",
+      "fr": "RCE"
+    },
     "title": {
       "de": "Geschäftsreglement des Ständerates (GRS) (Namensliste bei allen Abstimmungen) (Entwurf)",
       "it": "Regolamento del Consiglio degli Stati (RCS) (Elenco nominativo per ogni votazione) (Progetto)",
       "fr": "Règlement du Conseil des États (RCE) (Liste nominative pour chaque vote) (Projet)"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/2021/2697/graph",
   "timestampms": null
 }
