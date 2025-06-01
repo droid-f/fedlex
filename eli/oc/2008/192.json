@@ -9,6 +9,9 @@
       "legalResourceGenre": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/legal-resource-genre/200"
       },
+      "dateNoLongerInForce": {
+        "xsd:date": "2025-01-01"
+      },
       "dateDocument": {
         "xsd:date": "2007-12-21"
       },
@@ -60,15 +63,10 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/oc/2008/192/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/oc/2008/192/de/pdf-x",
-          "https://fedlex.data.admin.ch/eli/oc/2008/192/de/doc",
-          "https://fedlex.data.admin.ch/eli/oc/2008/192/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "AS 2008 777"
+        },
         "memorialName": {
           "xsd:string": "AS"
         },
@@ -78,26 +76,29 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/2008/12/de"
         },
-        "memorialYear": {
-          "xsd:int": 2008
-        },
         "title": {
           "xsd:string": "Verordnung über die Erteilung von Patenten für den Hochrhein"
+        },
+        "memorialYear": {
+          "xsd:int": 2008
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/oc/2008/192/de/pdf-x",
+          "https://fedlex.data.admin.ch/eli/oc/2008/192/de/doc",
+          "https://fedlex.data.admin.ch/eli/oc/2008/192/de/pdf-a"
+        ]
       }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/oc/2008/192/fr",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/oc/2008/192/fr/pdf-x",
-          "https://fedlex.data.admin.ch/eli/oc/2008/192/fr/pdf-a",
-          "https://fedlex.data.admin.ch/eli/oc/2008/192/fr/doc"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "RO 2008 777"
+        },
         "memorialName": {
           "xsd:string": "RO"
         },
@@ -107,26 +108,29 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/2008/12/fr"
         },
-        "memorialYear": {
-          "xsd:int": 2008
-        },
         "title": {
           "xsd:string": "Règlement relatif à la délivrance des patentes du Rhin supérieur"
+        },
+        "memorialYear": {
+          "xsd:int": 2008
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/oc/2008/192/fr/pdf-x",
+          "https://fedlex.data.admin.ch/eli/oc/2008/192/fr/pdf-a",
+          "https://fedlex.data.admin.ch/eli/oc/2008/192/fr/doc"
+        ]
       }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/oc/2008/192/it",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/oc/2008/192/it/pdf-x",
-          "https://fedlex.data.admin.ch/eli/oc/2008/192/it/pdf-a",
-          "https://fedlex.data.admin.ch/eli/oc/2008/192/it/doc"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "RU 2008 777"
+        },
         "memorialName": {
           "xsd:string": "RU"
         },
@@ -136,12 +140,20 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/2008/12/it"
         },
-        "memorialYear": {
-          "xsd:int": 2008
-        },
         "title": {
           "xsd:string": "Regolamento concernente il rilascio delle patenti per il Reno superiore"
+        },
+        "memorialYear": {
+          "xsd:int": 2008
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/ITA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/oc/2008/192/it/pdf-x",
+          "https://fedlex.data.admin.ch/eli/oc/2008/192/it/pdf-a",
+          "https://fedlex.data.admin.ch/eli/oc/2008/192/it/doc"
+        ]
       }
     },
     {
@@ -159,6 +171,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/oc/2008/192/de/pdf-x",
       "type": "Manifestation",
       "references": {
@@ -166,14 +185,6 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
-        "wasExemplifiedByPrivate": {
-          "rdfs:Resource": [
-            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2008/192/de/pdf-x/fedlex-data-admin-ch-eli-oc-2008-192-de-pdf-x.pdf"
-          ]
-        },
-        "userFormat": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-x"
-        },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDFX"
         },
@@ -181,6 +192,14 @@
           "rdfs:Resource": [
             "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2008/192/de/pdf-x/fedlex-data-admin-ch-eli-oc-2008-192-de-pdf-x.pdf"
           ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2008/192/de/pdf-x/fedlex-data-admin-ch-eli-oc-2008-192-de-pdf-x.pdf"
+          ]
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-x"
         }
       }
     },
@@ -192,14 +211,14 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2008/192/de/doc/fedlex-data-admin-ch-eli-oc-2008-192-de-doc.doc"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2008/192/de/doc/fedlex-data-admin-ch-eli-oc-2008-192-de-doc.doc"
@@ -214,14 +233,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2008/192/de/pdf-a/fedlex-data-admin-ch-eli-oc-2008-192-de-pdf-a.pdf"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        "numberOfPages": {
+          "xsd:int": [
+            6
+          ]
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2008/192/de/pdf-a/fedlex-data-admin-ch-eli-oc-2008-192-de-pdf-a.pdf"
@@ -229,7 +253,7 @@
       }
     },
     {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
       "type": [
         "Concept",
         "Language"
@@ -243,14 +267,6 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
-        "wasExemplifiedByPrivate": {
-          "rdfs:Resource": [
-            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2008/192/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2008-192-fr-pdf-x.pdf"
-          ]
-        },
-        "userFormat": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-x"
-        },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDFX"
         },
@@ -258,6 +274,14 @@
           "rdfs:Resource": [
             "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2008/192/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2008-192-fr-pdf-x.pdf"
           ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2008/192/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2008-192-fr-pdf-x.pdf"
+          ]
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-x"
         }
       }
     },
@@ -269,14 +293,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2008/192/fr/pdf-a/fedlex-data-admin-ch-eli-oc-2008-192-fr-pdf-a.pdf"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        "numberOfPages": {
+          "xsd:int": [
+            6
+          ]
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2008/192/fr/pdf-a/fedlex-data-admin-ch-eli-oc-2008-192-fr-pdf-a.pdf"
@@ -291,14 +320,14 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2008/192/fr/doc/fedlex-data-admin-ch-eli-oc-2008-192-fr-doc.doc"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2008/192/fr/doc/fedlex-data-admin-ch-eli-oc-2008-192-fr-doc.doc"
@@ -306,7 +335,7 @@
       }
     },
     {
-      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "uri": "http://publications.europa.eu/resource/authority/language/ITA",
       "type": [
         "Concept",
         "Language"
@@ -320,14 +349,6 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
-        "wasExemplifiedByPrivate": {
-          "rdfs:Resource": [
-            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2008/192/it/pdf-x/fedlex-data-admin-ch-eli-oc-2008-192-it-pdf-x.pdf"
-          ]
-        },
-        "userFormat": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-x"
-        },
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDFX"
         },
@@ -335,6 +356,14 @@
           "rdfs:Resource": [
             "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2008/192/it/pdf-x/fedlex-data-admin-ch-eli-oc-2008-192-it-pdf-x.pdf"
           ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2008/192/it/pdf-x/fedlex-data-admin-ch-eli-oc-2008-192-it-pdf-x.pdf"
+          ]
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-x"
         }
       }
     },
@@ -346,14 +375,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2008/192/it/pdf-a/fedlex-data-admin-ch-eli-oc-2008-192-it-pdf-a.pdf"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        "numberOfPages": {
+          "xsd:int": [
+            6
+          ]
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2008/192/it/pdf-a/fedlex-data-admin-ch-eli-oc-2008-192-it-pdf-a.pdf"
@@ -368,26 +402,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oc/2008/192/it/doc/fedlex-data-admin-ch-eli-oc-2008-192-it-doc.doc"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
-        },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2008/192/it/doc/fedlex-data-admin-ch-eli-oc-2008-192-it-doc.doc"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/ITA",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -397,20 +424,17 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/oc/2008/192/graph",
   "facets": {
-    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
-    "sortingDateTime": "2008-03-25T23:00Z",
-    "taxonomyId": "747.224.221",
-    "sortingDate": "2008-03-26",
+    "abrogationSourceUri": "https://fedlex.data.admin.ch/eli/oc/2025/312",
+    "memorialLabel_sort": {
+      "de": "2008.99.000777",
+      "it": "2008.99.000777",
+      "fr": "2008.99.000777"
+    },
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "AS 2008 777",
       "http://publications.europa.eu/resource/authority/language/FRA": "RO 2008 777",
       "http://publications.europa.eu/resource/authority/language/ITA": "RU 2008 777"
-    },
-    "theme": {
-      "themeId": "7",
-      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/8349"
     },
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 777,
@@ -421,7 +445,33 @@
       "de": "Verordnung über die Erteilung von Patenten für den Hochrhein",
       "it": "Regolamento concernente il rilascio delle patenti per il Reno superiore",
       "fr": "Règlement relatif à la délivrance des patentes du Rhin supérieur"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
+    },
+    "abrogationDecisionDate": "2025-04-29",
+    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
+    "abrogationSource": {
+      "de": "AS 2025 312",
+      "it": "RU 2025 312",
+      "fr": "RO 2025 312"
+    },
+    "sortingDateTime": "2008-03-25T23:00Z",
+    "taxonomyId": "747.224.221",
+    "sortingDate": "2008-03-26",
+    "modified": "2025-05-15T11:39:56.929320",
+    "theme": {
+      "themeId": "7",
+      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/8349"
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/oc/2008/192/graph",
   "timestampms": null
 }
