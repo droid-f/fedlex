@@ -17,6 +17,9 @@
       ],
       "treatyProcessHasTask": [
         "https://fedlex.data.admin.ch/eli/treaty/1948/00652010/entryIntoForce/1",
+        "https://fedlex.data.admin.ch/eli/treaty/1948/00652010/ReferralToConseilGouvernement/1",
+        "https://fedlex.data.admin.ch/eli/treaty/1948/00652010/Registration/1",
+        "https://fedlex.data.admin.ch/eli/treaty/1948/00652010/TreatyRatification/1",
         "https://fedlex.data.admin.ch/eli/treaty/1948/00652010/treatySignature/1"
       ],
       "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1"
@@ -30,27 +33,30 @@
       },
       "modified": {
         "xsd:dateTime": [
-          "2024-03-14T09:14:55.976Z"
+          "2025-05-23T11:45:23.186Z"
         ]
+      },
+      "treatySignatureDate": {
+        "xsd:date": "1993-11-04"
       },
       "created": {
         "xsd:dateTime": [
-          "2024-03-14T09:14:55.959Z"
+          "2025-05-23T11:45:23.175Z"
         ]
       },
       "titleTreaty": {
         "rdf:langString": {
           "de": [
-            "Amendements à la Convention (art. 16, 17 et 19), adoptés le 4.11.1993 par rés. A.735(18) - accept. CH dép. le 21.12.1995 (Prop.CF: 10.10.1995 / Déc. 25.10.1995) - Notif. ONU att. à fiche -  (XII.1.h - RT NU n° 4214)\r\n - 04-11-1993 - Abkommen vom 6. März 1948 zur Schaffung einer Internationalen Seeschifffahrts-Organisation (mit Anhängen)"
+            "Amendements des art. 16, 17 et 19 selon résolution A.735(18) - 04-11-1993 - Abkommen vom 6. März 1948 zur Schaffung einer Internationalen Seeschifffahrts-Organisation (mit Anhängen)"
           ],
           "en": [
-            "Amendements à la Convention (art. 16, 17 et 19), adoptés le 4.11.1993 par rés. A.735(18) - accept. CH dép. le 21.12.1995 (Prop.CF: 10.10.1995 / Déc. 25.10.1995) - Notif. ONU att. à fiche -  (XII.1.h - RT NU n° 4214)\r\n - 04-11-1993 - Convention of the International Maritime Organization"
+            "Amendements des art. 16, 17 et 19 selon résolution A.735(18) - 04-11-1993 - Convention of the International Maritime Organization"
           ],
           "it": [
-            "Amendements à la Convention (art. 16, 17 et 19), adoptés le 4.11.1993 par rés. A.735(18) - accept. CH dép. le 21.12.1995 (Prop.CF: 10.10.1995 / Déc. 25.10.1995) - Notif. ONU att. à fiche -  (XII.1.h - RT NU n° 4214)\r\n - 04-11-1993 - Convenzione del 6 marzo 1948 istitutiva dell'Organizzazione marittima internazionale (con All.)"
+            "Amendements des art. 16, 17 et 19 selon résolution A.735(18) - 04-11-1993 - Convenzione del 6 marzo 1948 istitutiva dell'Organizzazione marittima internazionale (con All.)"
           ],
           "fr": [
-            "Amendements à la Convention (art. 16, 17 et 19), adoptés le 4.11.1993 par rés. A.735(18) - accept. CH dép. le 21.12.1995 (Prop.CF: 10.10.1995 / Déc. 25.10.1995) - Notif. ONU att. à fiche -  (XII.1.h - RT NU n° 4214)\r\n - 04-11-1993 - Convention du 6 mars 1948 portant création de l'organisation maritime internationale (avec annexes)"
+            "Amendements des art. 16, 17 et 19 selon résolution A.735(18) - 04-11-1993 - Convention du 6 mars 1948 portant création de l'organisation maritime internationale (avec annexes)"
           ]
         }
       },
@@ -109,16 +115,53 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1948/00652010/ReferralToConseilGouvernement/1",
+      "type": [
+        "Event",
+        "ReferralToConseilGouvernement",
+        "TaskForTreaty"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1948/00652010/Registration/1",
+      "type": [
+        "Event",
+        "Registration",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "depositary": "https://fedlex.data.admin.ch/vocabulary/international-actor/1002"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1948/00652010/TreatyRatification/1",
+      "type": [
+        "Event",
+        "TaskForTreaty",
+        "TreatyRatification"
+      ],
+      "attributes": {
+        "treatyPartyRatificationDate": {
+          "xsd:date": "1995-12-21"
+        }
+      },
+      "references": {
+        "treatyRatificationParty": "https://fedlex.data.admin.ch/vocabulary/country/718"
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/1948/00652010/treatySignature/1",
       "type": [
         "Event",
         "TaskForTreaty",
         "TreatySignature"
       ],
-      "attributes": {
-        "treatySignatureDate": {
-          "xsd:date": "1993-11-04"
-        }
+      "references": {
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA",
+          "http://publications.europa.eu/resource/authority/language/SPA",
+          "http://publications.europa.eu/resource/authority/language/ENG"
+        ]
       }
     },
     {
@@ -142,13 +185,52 @@
         "Concept",
         "Country"
       ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/international-actor/1002",
+      "type": [
+        "Concept",
+        "InternationalActor"
+      ]
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/authority/language/SPA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/authority/language/ENG",
+      "type": [
+        "Concept",
+        "Language"
+      ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/treaty/1948/00652010/graph",
   "facets": {
-    "sortingDateTime": "2024-03-14T09:14:55.976Z",
+    "sortingDateTime": "2025-05-23T11:45:23.186Z",
+    "firstEntryIntoForceDate": "2002-11-07",
+    "title": {
+      "de": "Amendements des art. 16, 17 et 19 selon résolution A.735(18) - 04-11-1993 - Abkommen vom 6. März 1948 zur Schaffung einer Internationalen Seeschifffahrts-Organisation (mit Anhängen)",
+      "en": "Amendements des art. 16, 17 et 19 selon résolution A.735(18) - 04-11-1993 - Convention of the International Maritime Organization",
+      "it": "Amendements des art. 16, 17 et 19 selon résolution A.735(18) - 04-11-1993 - Convenzione del 6 marzo 1948 istitutiva dell'Organizzazione marittima internazionale (con All.)",
+      "fr": "Amendements des art. 16, 17 et 19 selon résolution A.735(18) - 04-11-1993 - Convention du 6 mars 1948 portant création de l'organisation maritime internationale (avec annexes)"
+    },
     "acts": [
       {
+        "memorialLabel_sort": {
+          "de": "2004.99.003291",
+          "it": "2004.99.003291",
+          "fr": "2004.99.003291"
+        },
         "memorialLabel": {
           "http://publications.europa.eu/resource/authority/language/DEU": "AS 2004 3291",
           "http://publications.europa.eu/resource/authority/language/FRA": "RO 2004 3291",
@@ -157,7 +239,9 @@
         "uri": "https://fedlex.data.admin.ch/eli/oc/2004/422",
         "publicationDate": "2004-07-06"
       }
-    ]
+    ],
+    "sortingDate": "1993-11-04"
   },
+  "graph": "https://fedlex.data.admin.ch/eli/treaty/1948/00652010/graph",
   "timestampms": null
 }
