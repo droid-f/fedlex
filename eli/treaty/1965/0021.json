@@ -13,8 +13,8 @@
         "https://fedlex.data.admin.ch/vocabulary/treaty-subject-theme/52"
       ],
       "treatyProcessHasTask": [
-        "https://fedlex.data.admin.ch/eli/treaty/1965/0021/referral/1",
-        "https://fedlex.data.admin.ch/eli/treaty/1965/0021/entryIntoForce/1"
+        "https://fedlex.data.admin.ch/eli/treaty/1965/0021/entryIntoForce/1",
+        "https://fedlex.data.admin.ch/eli/treaty/1965/0021/TreatySignature/1"
       ],
       "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1",
       "treatyPartyCountry": [
@@ -26,8 +26,21 @@
       "bilateral": {
         "xsd:boolean": true
       },
+      "modified": {
+        "xsd:dateTime": [
+          "2025-07-02T14:29:15.823Z"
+        ]
+      },
       "treatySignatureDate": {
         "xsd:date": "1965-02-05"
+      },
+      "treatySignaturePlace": {
+        "xsd:string": "Berne"
+      },
+      "created": {
+        "xsd:dateTime": [
+          "2025-07-02T14:29:15.812Z"
+        ]
       },
       "titleTreaty": {
         "rdf:langString": {
@@ -69,14 +82,6 @@
       ]
     },
     {
-      "uri": "https://fedlex.data.admin.ch/eli/treaty/1965/0021/referral/1",
-      "type": [
-        "Event",
-        "ReferralToConseilGouvernement",
-        "TaskForTreaty"
-      ]
-    },
-    {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/1965/0021/entryIntoForce/1",
       "type": [
         "EntryIntoForce",
@@ -90,6 +95,19 @@
       },
       "references": {
         "entryIntoForceFor": "https://fedlex.data.admin.ch/vocabulary/country/718"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1965/0021/TreatySignature/1",
+      "type": [
+        "Event",
+        "TaskForTreaty",
+        "TreatySignature"
+      ],
+      "references": {
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ]
       }
     },
     {
@@ -119,14 +137,34 @@
         "Concept",
         "Country"
       ]
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/treaty/1965/0021/graph",
   "facets": {
     "consolidationAbstractUri": "https://fedlex.data.admin.ch/eli/cc/1965/214_214_214",
+    "sortingDateTime": "2025-07-02T14:29:15.823Z",
+    "classifiedByTaxonomyEntryLabel_raw": "0.973.276.321.1",
     "sortingDate": "1965-02-05",
+    "classifiedByTaxonomyEntryLabel_sort": "000.973.276.321.100",
+    "firstEntryIntoForceDate": "1965-02-26",
+    "title": {
+      "de": "Protokoll vom 5. Februar 1965 betreffend die Anwendung des Abkommens zwischen der Schweizerischen Eidgenossenschaft und der Türkischen Republik über die Gewährung eines Kredites von 7 Millionen Schweizerfranken an die Türkei (mit Beilage)",
+      "it": "Protocollo del 5 febbraio 1965 concernente l'applicazione dell'accordo tra la Confederazione Svizzera e la Repubblica turca per lo stanziamento di un credito di 7 milioni di franchi svizzeri alla Turchia (con all.)",
+      "fr": "Protocole du 5 février 1965 relatif à l'application de l'accord entre la Confédération suisse et la République turque concernant un crédit de 7 millions de francs suisses à la Turquie (avec annexe)"
+    },
     "acts": [
       {
+        "memorialLabel_sort": {
+          "de": "1965.99.000214",
+          "it": "1965.99.000214",
+          "fr": "1965.99.000214"
+        },
         "memorialLabel": {
           "http://publications.europa.eu/resource/authority/language/DEU": "AS 1965 214",
           "http://publications.europa.eu/resource/authority/language/FRA": "RO 1965 214",
@@ -142,5 +180,6 @@
       "it": "RS 0.973.276.321.1"
     }
   },
+  "graph": "https://fedlex.data.admin.ch/eli/treaty/1965/0021/graph",
   "timestampms": null
 }
