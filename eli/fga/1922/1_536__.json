@@ -16,9 +16,6 @@
           "1922-04-04T23:00:00.000Z"
         ]
       },
-      "typeDocument": {
-        "rdfs:Resource": "http://example.com"
-      },
       "publicationDate": {
         "xsd:date": "1922-04-05"
       }
@@ -34,18 +31,12 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1922/1_536__/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1922/1_536__/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1922 I 536"
+        },
         "memorialName": {
           "xsd:string": "BBl"
-        },
-        "memorialPageTo": {
-          "xsd:int": 538
         },
         "memorialPage": {
           "xsd:int": 536
@@ -53,12 +44,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1922/14/de"
         },
-        "memorialYear": {
-          "xsd:int": 1922
-        },
         "title": {
           "xsd:string": "Botschaft des Bundesrates an die Bundesversammlung betreffend Genehmigung des zwischen der Forchbahn A.-G. und der städtischen Strassenbahn Zürich abgeschlossenen Betriebsvertrages. (Vom 31. März 1922.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 538
+        },
+        "memorialYear": {
+          "xsd:int": 1922
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1922/1_536__/de/pdf-a"
+        ]
       }
     },
     {
@@ -69,6 +69,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1922/1_536__/de/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -76,26 +83,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10028281&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10028281&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -105,13 +105,17 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1922/1_536__/graph",
   "facets": {
     "sortingDateTime": "1922-04-04T23:00Z",
     "sortingDate": "1922-04-05",
+    "memorialLabel_sort": {
+      "de": "1922.01.000536"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1922 I 536"
     },
+    "modified": "1922-04-05T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 536
     },
@@ -126,5 +130,9 @@
       "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1922/1_536__/graph",
   "timestampms": null
 }

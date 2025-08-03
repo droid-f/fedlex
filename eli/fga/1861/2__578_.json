@@ -5,34 +5,38 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1861-09-04T23:30:14.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1861-09-04T23:30:14.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1861-09-05"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1861/2__578_/fr"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1861/42"
-    },
-    "attributes": {
-      "publicationDate": {
-        "xsd:date": "1861-09-05"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1861/2__578_/fr",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1861/2__578_/fr/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "FF 1861 II 578"
+        },
         "memorialName": {
           "xsd:string": "FF"
-        },
-        "memorialPageTo": {
-          "xsd:int": 579
         },
         "memorialPage": {
           "xsd:int": 578
@@ -40,12 +44,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1861/42/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1861
-        },
         "title": {
           "xsd:string": "Extrait des délibérations du Conseil fédéral."
+        },
+        "memorialPageTo": {
+          "xsd:int": 579
+        },
+        "memorialYear": {
+          "xsd:int": 1861
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1861/2__578_/fr/pdf-a"
+        ]
       }
     },
     {
@@ -56,6 +69,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1861/2__578_/fr/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -63,26 +83,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10058629"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10058629&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10058629"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10058629&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -92,18 +105,34 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1861/2__578_/graph",
   "facets": {
+    "sortingDateTime": "1861-09-04T23:30:14Z",
     "sortingDate": "1861-09-05",
+    "memorialLabel_sort": {
+      "fr": "1861.02.000578"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 1861 II 578"
     },
+    "modified": "1861-09-05T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/FRA": 578
     },
     "title": {
       "fr": "Extrait des délibérations du Conseil fédéral."
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1861/2__578_/graph",
   "timestampms": null
 }

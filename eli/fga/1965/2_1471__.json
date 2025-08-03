@@ -16,9 +16,6 @@
           "1965-10-20T23:00:00.000Z"
         ]
       },
-      "typeDocument": {
-        "rdfs:Resource": "http://example.com"
-      },
       "publicationDate": {
         "xsd:date": "1965-10-21"
       }
@@ -34,18 +31,12 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1965/2_1471__/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1965/2_1471__/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1965 II 1471"
+        },
         "memorialName": {
           "xsd:string": "BBl"
-        },
-        "memorialPageTo": {
-          "xsd:int": 1472
         },
         "memorialPage": {
           "xsd:int": 1471
@@ -53,12 +44,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1965/42/de"
         },
-        "memorialYear": {
-          "xsd:int": 1965
-        },
         "title": {
           "xsd:string": "Bundesbeschluss über die Gewährleistung der geänderten Verfassung des Kantons Glarus (Vom 13. Oktober 1965)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 1472
+        },
+        "memorialYear": {
+          "xsd:int": 1965
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1965/2_1471__/de/pdf-a"
+        ]
       }
     },
     {
@@ -69,6 +69,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1965/2_1471__/de/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -76,26 +83,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10043053&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10043053&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -105,19 +105,34 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1965/2_1471__/graph",
   "facets": {
     "sortingDateTime": "1965-10-20T23:00Z",
     "sortingDate": "1965-10-21",
+    "memorialLabel_sort": {
+      "de": "1965.02.001471"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1965 II 1471"
     },
+    "modified": "1965-10-21T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 1471
     },
     "title": {
       "de": "Bundesbeschluss über die Gewährleistung der geänderten Verfassung des Kantons Glarus (Vom 13. Oktober 1965)"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1965/2_1471__/graph",
   "timestampms": null
 }

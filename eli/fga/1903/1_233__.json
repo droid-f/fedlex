@@ -5,34 +5,38 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1903-01-27T23:00:00.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1903-01-27T23:00:00.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1903-01-28"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1903/1_233__/de"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1903/4"
-    },
-    "attributes": {
-      "publicationDate": {
-        "xsd:date": "1903-01-28"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1903/1_233__/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1903/1_233__/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1903 I 233"
+        },
         "memorialName": {
           "xsd:string": "BBl"
-        },
-        "memorialPageTo": {
-          "xsd:int": 236
         },
         "memorialPage": {
           "xsd:int": 233
@@ -40,12 +44,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1903/4/de"
         },
-        "memorialYear": {
-          "xsd:int": 1903
-        },
         "title": {
           "xsd:string": "Bericht des Bundesrates an die Bundesversammlung zum Begnadigungsgesuche des wegen Übertretung des Bundesgesetzes betreffend die Fischerei bestraften Léon Maître, Landwirt in Epauvillers (Kt. Bern). (Vom 27. Januar 1903.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 236
+        },
+        "memorialYear": {
+          "xsd:int": 1903
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1903/1_233__/de/pdf-a"
+        ]
       }
     },
     {
@@ -56,6 +69,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1903/1_233__/de/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -63,26 +83,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10020423"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10020423&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10020423"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10020423&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -92,18 +105,34 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1903/1_233__/graph",
   "facets": {
+    "sortingDateTime": "1903-01-27T23:00Z",
     "sortingDate": "1903-01-28",
+    "memorialLabel_sort": {
+      "de": "1903.01.000233"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1903 I 233"
     },
+    "modified": "1903-01-28T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 233
     },
     "title": {
       "de": "Bericht des Bundesrates an die Bundesversammlung zum Begnadigungsgesuche des wegen Übertretung des Bundesgesetzes betreffend die Fischerei bestraften Léon Maître, Landwirt in Epauvillers (Kt. Bern). (Vom 27. Januar 1903.)"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1903/1_233__/graph",
   "timestampms": null
 }

@@ -5,34 +5,38 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1876-02-11T23:30:14.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1876-02-11T23:30:14.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1876-02-12"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1876/1__271_/fr"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1876/6"
-    },
-    "attributes": {
-      "publicationDate": {
-        "xsd:date": "1876-02-12"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1876/1__271_/fr",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1876/1__271_/fr/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "FF 1876 I 271"
+        },
         "memorialName": {
           "xsd:string": "FF"
-        },
-        "memorialPageTo": {
-          "xsd:int": 271
         },
         "memorialPage": {
           "xsd:int": 271
@@ -40,12 +44,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1876/6/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1876
-        },
         "title": {
           "xsd:string": "BULLETIN sur l'état sanitaire du bétail en Suisse au 1er février 1876."
+        },
+        "memorialPageTo": {
+          "xsd:int": 271
+        },
+        "memorialYear": {
+          "xsd:int": 1876
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1876/1__271_/fr/pdf-a"
+        ]
       }
     },
     {
@@ -56,6 +69,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1876/1__271_/fr/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -63,26 +83,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10064016"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10064016&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10064016"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10064016&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -92,18 +105,34 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1876/1__271_/graph",
   "facets": {
+    "sortingDateTime": "1876-02-11T23:30:14Z",
     "sortingDate": "1876-02-12",
+    "memorialLabel_sort": {
+      "fr": "1876.01.000271"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 1876 I 271"
     },
+    "modified": "1876-02-12T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/FRA": 271
     },
     "title": {
       "fr": "BULLETIN sur l'état sanitaire du bétail en Suisse au 1er février 1876."
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1876/1__271_/graph",
   "timestampms": null
 }

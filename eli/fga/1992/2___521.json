@@ -16,9 +16,6 @@
           "1992-03-23T23:00:00.000Z"
         ]
       },
-      "typeDocument": {
-        "rdfs:Resource": "http://example.com"
-      },
       "publicationDate": {
         "xsd:date": "1992-03-24"
       }
@@ -34,18 +31,12 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1992/2___521/it",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1992/2___521/it/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "FF 1992 II 521"
+        },
         "memorialName": {
           "xsd:string": "FF"
-        },
-        "memorialPageTo": {
-          "xsd:int": 531
         },
         "memorialPage": {
           "xsd:int": 521
@@ -53,12 +44,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1992/11/it"
         },
-        "memorialYear": {
-          "xsd:int": 1992
-        },
         "title": {
           "xsd:string": "Messaggio concernente il versamento di un sussidio al Museo internazionale della Croce Rossa e della Mezzaluna Rossa (MICR) per gli anni 1992 e 1993 del 19 febbraio 1992"
+        },
+        "memorialPageTo": {
+          "xsd:int": 531
+        },
+        "memorialYear": {
+          "xsd:int": 1992
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/ITA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1992/2___521/it/pdf-a"
+        ]
       }
     },
     {
@@ -69,6 +69,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/ITA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1992/2___521/it/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -76,26 +83,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10116988&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10116988&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/ITA",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -105,13 +105,17 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1992/2___521/graph",
   "facets": {
     "sortingDateTime": "1992-03-23T23:00Z",
     "sortingDate": "1992-03-24",
+    "memorialLabel_sort": {
+      "it": "1992.02.000521"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/ITA": "FF 1992 II 521"
     },
+    "modified": "1992-03-24T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/ITA": 521
     },
@@ -126,5 +130,9 @@
       "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1992/2___521/graph",
   "timestampms": null
 }

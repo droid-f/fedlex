@@ -16,9 +16,6 @@
           "1944-12-06T23:00:00.000Z"
         ]
       },
-      "typeDocument": {
-        "rdfs:Resource": "http://example.com"
-      },
       "publicationDate": {
         "xsd:date": "1944-12-07"
       }
@@ -34,18 +31,12 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1944/1__1388_/fr",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1944/1__1388_/fr/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "FF 1944 I 1388"
+        },
         "memorialName": {
           "xsd:string": "FF"
-        },
-        "memorialPageTo": {
-          "xsd:int": 1391
         },
         "memorialPage": {
           "xsd:int": 1388
@@ -53,12 +44,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1944/25/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1944
-        },
         "title": {
           "xsd:string": "MESSAGE du Conseil fédéral à l'Assemblée fédérale concernant le nombre des membres, des suppléants, des greffiers et des secrétaires du Tribunal fédéral. (Du 4 décembre 1944.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 1391
+        },
+        "memorialYear": {
+          "xsd:int": 1944
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1944/1__1388_/fr/pdf-a"
+        ]
       }
     },
     {
@@ -69,6 +69,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1944/1__1388_/fr/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -76,26 +83,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10090113&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10090113&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -105,13 +105,17 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1944/1__1388_/graph",
   "facets": {
     "sortingDateTime": "1944-12-06T23:00Z",
     "sortingDate": "1944-12-07",
+    "memorialLabel_sort": {
+      "fr": "1944.01.001388"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 1944 I 1388"
     },
+    "modified": "1944-12-07T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/FRA": 1388
     },
@@ -126,5 +130,9 @@
       "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1944/1__1388_/graph",
   "timestampms": null
 }

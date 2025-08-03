@@ -16,9 +16,6 @@
           "1959-07-08T23:00:00.000Z"
         ]
       },
-      "typeDocument": {
-        "rdfs:Resource": "http://example.com"
-      },
       "publicationDate": {
         "xsd:date": "1959-07-09"
       }
@@ -34,18 +31,12 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1959/2_29__/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1959/2_29__/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1959 II 29"
+        },
         "memorialName": {
           "xsd:string": "BBl"
-        },
-        "memorialPageTo": {
-          "xsd:int": 44
         },
         "memorialPage": {
           "xsd:int": 29
@@ -53,12 +44,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1959/28/de"
         },
-        "memorialYear": {
-          "xsd:int": 1959
-        },
         "title": {
           "xsd:string": "Botschaft des Bundesrates an die Bundesversammlung über die Gewährung von Bundesbeiträgen an die Stiftung «Französischsprachige Schule in Bern» (Vom 3. Juli 1959)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 44
+        },
+        "memorialYear": {
+          "xsd:int": 1959
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1959/2_29__/de/pdf-a"
+        ]
       }
     },
     {
@@ -69,6 +69,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1959/2_29__/de/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -76,26 +83,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10040647&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10040647&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -105,13 +105,17 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1959/2_29__/graph",
   "facets": {
     "sortingDateTime": "1959-07-08T23:00Z",
     "sortingDate": "1959-07-09",
+    "memorialLabel_sort": {
+      "de": "1959.02.000029"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1959 II 29"
     },
+    "modified": "1959-07-09T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 29
     },
@@ -126,5 +130,9 @@
       "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1959/2_29__/graph",
   "timestampms": null
 }

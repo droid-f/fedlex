@@ -5,34 +5,38 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1887-06-10T23:30:14.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1887-06-10T23:30:14.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1887-06-11"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1887/2__846_/fr"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1887/27"
-    },
-    "attributes": {
-      "publicationDate": {
-        "xsd:date": "1887-06-11"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1887/2__846_/fr",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1887/2__846_/fr/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "FF 1887 II 846"
+        },
         "memorialName": {
           "xsd:string": "FF"
-        },
-        "memorialPageTo": {
-          "xsd:int": 850
         },
         "memorialPage": {
           "xsd:int": 846
@@ -40,12 +44,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1887/27/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1887
-        },
         "title": {
           "xsd:string": "Publications des départements et d'autres administrations de la Confédération."
+        },
+        "memorialPageTo": {
+          "xsd:int": 850
+        },
+        "memorialYear": {
+          "xsd:int": 1887
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1887/2__846_/fr/pdf-a"
+        ]
       }
     },
     {
@@ -56,6 +69,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1887/2__846_/fr/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -63,26 +83,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10068518"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10068518&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10068518"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10068518&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -92,18 +105,34 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1887/2__846_/graph",
   "facets": {
+    "sortingDateTime": "1887-06-10T23:30:14Z",
     "sortingDate": "1887-06-11",
+    "memorialLabel_sort": {
+      "fr": "1887.02.000846"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 1887 II 846"
     },
+    "modified": "1887-06-11T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/FRA": 846
     },
     "title": {
       "fr": "Publications des départements et d'autres administrations de la Confédération."
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1887/2__846_/graph",
   "timestampms": null
 }

@@ -17,10 +17,10 @@
         ]
       },
       "typeDocument": {
-        "rdfs:Resource": "http://example.com"
+        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/18"
       },
       "publicationDate": {
-        "xsd:date": "1849-03-03"
+        "xsd:date": "1849-03-02"
       }
     },
     "references": {
@@ -34,18 +34,12 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1849/1_108__/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1849/1_108__/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1849 I 108"
+        },
         "memorialName": {
           "xsd:string": "BBl"
-        },
-        "memorialPageTo": {
-          "xsd:int": 108
         },
         "memorialPage": {
           "xsd:int": 108
@@ -53,12 +47,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1849/3/de"
         },
+        "title": {
+          "xsd:string": "Beilage zu Nr. 3 des schweizerischen Bundesblattes"
+        },
+        "memorialPageTo": {
+          "xsd:int": 108
+        },
         "memorialYear": {
           "xsd:int": 1849
-        },
-        "title": {
-          "xsd:string": "Beilage zu Nr. 3 des schweizerischen Bundesblattes."
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1849/1_108__/de/pdf-a"
+        ]
       }
     },
     {
@@ -69,6 +72,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1849/1_108__/de/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -76,26 +86,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10000011"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10000011&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10000011"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10000011&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -105,19 +108,35 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1849/1_108__/graph",
   "facets": {
+    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/51",
     "sortingDateTime": "1849-03-02T23:25:52Z",
-    "sortingDate": "1849-03-03",
+    "sortingDate": "1849-03-02",
+    "memorialLabel_sort": {
+      "de": "1849.01.000108"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1849 I 108"
     },
+    "modified": "1849-03-03T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 108
     },
     "title": {
-      "de": "Beilage zu Nr. 3 des schweizerischen Bundesblattes."
+      "de": "Beilage zu Nr. 3 des schweizerischen Bundesblattes"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1849/1_108__/graph",
   "timestampms": null
 }

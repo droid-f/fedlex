@@ -5,37 +5,38 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1874-10-23T23:30:14.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1874-10-23T23:30:14.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1874-10-24"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1874/3_184__/de"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1874/46"
-    },
-    "attributes": {
-      "typeDocument": {
-        "rdfs:Resource": "http://example.com"
-      },
-      "publicationDate": {
-        "xsd:date": "1874-10-24"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1874/3_184__/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1874/3_184__/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1874 III 184"
+        },
         "memorialName": {
           "xsd:string": "BBl"
-        },
-        "memorialPageTo": {
-          "xsd:int": 197
         },
         "memorialPage": {
           "xsd:int": 184
@@ -43,12 +44,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1874/46/de"
         },
-        "memorialYear": {
-          "xsd:int": 1874
-        },
         "title": {
           "xsd:string": "Botschaft des Bundesrates an die hohe Bundesversammlung, betreffend die Konzession einer Eisenbahn von Chambésy an die schweizerisch-französische Grenze gegen Fernex. (Vom 9. Oktober 1874.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 197
+        },
+        "memorialYear": {
+          "xsd:int": 1874
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1874/3_184__/de/pdf-a"
+        ]
       }
     },
     {
@@ -59,6 +69,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1874/3_184__/de/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -66,26 +83,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10008355"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10008355&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10008355"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10008355&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -95,18 +105,34 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1874/3_184__/graph",
   "facets": {
+    "sortingDateTime": "1874-10-23T23:30:14Z",
     "sortingDate": "1874-10-24",
+    "memorialLabel_sort": {
+      "de": "1874.03.000184"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1874 III 184"
     },
+    "modified": "1874-10-24T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 184
     },
     "title": {
       "de": "Botschaft des Bundesrates an die hohe Bundesversammlung, betreffend die Konzession einer Eisenbahn von Chambésy an die schweizerisch-französische Grenze gegen Fernex. (Vom 9. Oktober 1874.)"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1874/3_184__/graph",
   "timestampms": null
 }

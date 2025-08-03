@@ -5,37 +5,38 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1877-03-23T23:30:14.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1877-03-23T23:30:14.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1877-03-24"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1877/1_539__/de"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1877/12"
-    },
-    "attributes": {
-      "typeDocument": {
-        "rdfs:Resource": "http://example.com"
-      },
-      "publicationDate": {
-        "xsd:date": "1877-03-24"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1877/1_539__/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1877/1_539__/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1877 I 539"
+        },
         "memorialName": {
           "xsd:string": "BBl"
-        },
-        "memorialPageTo": {
-          "xsd:int": 541
         },
         "memorialPage": {
           "xsd:int": 539
@@ -43,12 +44,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1877/12/de"
         },
-        "memorialYear": {
-          "xsd:int": 1877
-        },
         "title": {
           "xsd:string": "Botschaft des Bundesrates an die hohe Bundesversammlung, betreffend Begnadigungsgesuch des Johannes Schefer, Infanterierekrut, von Bühler, Kantons Appenzell A. Rh. (Vom 18. März 1877.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 541
+        },
+        "memorialYear": {
+          "xsd:int": 1877
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1877/1_539__/de/pdf-a"
+        ]
       }
     },
     {
@@ -59,6 +69,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1877/1_539__/de/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -66,26 +83,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10009484"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10009484&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10009484"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10009484&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -95,18 +105,34 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1877/1_539__/graph",
   "facets": {
+    "sortingDateTime": "1877-03-23T23:30:14Z",
     "sortingDate": "1877-03-24",
+    "memorialLabel_sort": {
+      "de": "1877.01.000539"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1877 I 539"
     },
+    "modified": "1877-03-24T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 539
     },
     "title": {
       "de": "Botschaft des Bundesrates an die hohe Bundesversammlung, betreffend Begnadigungsgesuch des Johannes Schefer, Infanterierekrut, von Bühler, Kantons Appenzell A. Rh. (Vom 18. März 1877.)"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1877/1_539__/graph",
   "timestampms": null
 }

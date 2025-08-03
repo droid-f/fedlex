@@ -5,37 +5,38 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1894-04-24T23:30:14.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1894-04-24T23:30:14.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1894-04-25"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1894/2_345__/de"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1894/17"
-    },
-    "attributes": {
-      "typeDocument": {
-        "rdfs:Resource": "http://example.com"
-      },
-      "publicationDate": {
-        "xsd:date": "1894-04-25"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1894/2_345__/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1894/2_345__/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1894 II 345"
+        },
         "memorialName": {
           "xsd:string": "BBl"
-        },
-        "memorialPageTo": {
-          "xsd:int": 348
         },
         "memorialPage": {
           "xsd:int": 345
@@ -43,12 +44,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1894/17/de"
         },
-        "memorialYear": {
-          "xsd:int": 1894
-        },
         "title": {
           "xsd:string": "Botschaft des Bundesrates an die Bundesversammlung, betreffend Erweiterung der Konzession der Sihlthalbahn. (Vom 20. April 1894.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 348
+        },
+        "memorialYear": {
+          "xsd:int": 1894
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1894/2_345__/de/pdf-a"
+        ]
       }
     },
     {
@@ -59,6 +69,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1894/2_345__/de/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -66,26 +83,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10016580"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10016580&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10016580"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10016580&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -95,18 +105,34 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1894/2_345__/graph",
   "facets": {
+    "sortingDateTime": "1894-04-24T23:30:14Z",
     "sortingDate": "1894-04-25",
+    "memorialLabel_sort": {
+      "de": "1894.02.000345"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1894 II 345"
     },
+    "modified": "1894-04-25T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 345
     },
     "title": {
       "de": "Botschaft des Bundesrates an die Bundesversammlung, betreffend Erweiterung der Konzession der Sihlthalbahn. (Vom 20. April 1894.)"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1894/2_345__/graph",
   "timestampms": null
 }

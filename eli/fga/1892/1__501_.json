@@ -5,37 +5,38 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1892-02-02T23:30:14.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1892-02-02T23:30:14.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1892-02-03"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1892/1__501_/fr"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1892/5"
-    },
-    "attributes": {
-      "typeDocument": {
-        "rdfs:Resource": "http://example.com"
-      },
-      "publicationDate": {
-        "xsd:date": "1892-02-03"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1892/1__501_/fr",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1892/1__501_/fr/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "FF 1892 I 501"
+        },
         "memorialName": {
           "xsd:string": "FF"
-        },
-        "memorialPageTo": {
-          "xsd:int": 505
         },
         "memorialPage": {
           "xsd:int": 501
@@ -43,12 +44,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1892/5/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1892
-        },
         "title": {
           "xsd:string": "Message du conseil fédéral à l'assemblée fédérale concernant la modification de la concession du chemin de fer de La Sarraz par Bière à La Rippe et de Bière à Morges, ainsi que prolongation de délai pour cette ligne et pour le chemin de fer de Gimel par Aubonne à Allaman. (Du 28 janvier 1891.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 505
+        },
+        "memorialYear": {
+          "xsd:int": 1892
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1892/1__501_/fr/pdf-a"
+        ]
       }
     },
     {
@@ -59,6 +69,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1892/1__501_/fr/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -66,26 +83,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10070554"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10070554&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10070554"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10070554&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -95,18 +105,34 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1892/1__501_/graph",
   "facets": {
+    "sortingDateTime": "1892-02-02T23:30:14Z",
     "sortingDate": "1892-02-03",
+    "memorialLabel_sort": {
+      "fr": "1892.01.000501"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 1892 I 501"
     },
+    "modified": "1892-02-03T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/FRA": 501
     },
     "title": {
       "fr": "Message du conseil fédéral à l'assemblée fédérale concernant la modification de la concession du chemin de fer de La Sarraz par Bière à La Rippe et de Bière à Morges, ainsi que prolongation de délai pour cette ligne et pour le chemin de fer de Gimel par Aubonne à Allaman. (Du 28 janvier 1891.)"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1892/1__501_/graph",
   "timestampms": null
 }

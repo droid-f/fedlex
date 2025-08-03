@@ -31,18 +31,12 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1902/3_1__/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1902/3_1__/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1902 III 1"
+        },
         "memorialName": {
           "xsd:string": "BBl"
-        },
-        "memorialPageTo": {
-          "xsd:int": 247
         },
         "memorialPage": {
           "xsd:int": 1
@@ -50,12 +44,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1902/20/de"
         },
-        "memorialYear": {
-          "xsd:int": 1902
-        },
         "title": {
           "xsd:string": "Bericht des Bundesrates an die Bundesversammlung über die eidgenössische Staatsrechnung für das Jahr 1901. (Vom 6. Mai 1902.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 247
+        },
+        "memorialYear": {
+          "xsd:int": 1902
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1902/3_1__/de/pdf-a"
+        ]
       }
     },
     {
@@ -66,6 +69,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1902/3_1__/de/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -73,26 +83,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10020065&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10020065&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -102,13 +105,17 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1902/3_1__/graph",
   "facets": {
     "sortingDateTime": "1902-02-13T23:00Z",
     "sortingDate": "1902-02-14",
+    "memorialLabel_sort": {
+      "de": "1902.03.000001"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1902 III 1"
     },
+    "modified": "1902-02-14T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 1
     },
@@ -123,5 +130,9 @@
       "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1902/3_1__/graph",
   "timestampms": null
 }

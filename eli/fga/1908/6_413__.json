@@ -5,34 +5,38 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1908-12-22T23:00:00.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1908-12-22T23:00:00.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1908-12-23"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1908/6_413__/de"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1908/52"
-    },
-    "attributes": {
-      "publicationDate": {
-        "xsd:date": "1908-12-23"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1908/6_413__/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1908/6_413__/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1908 VI 413"
+        },
         "memorialName": {
           "xsd:string": "BBl"
-        },
-        "memorialPageTo": {
-          "xsd:int": 415
         },
         "memorialPage": {
           "xsd:int": 413
@@ -40,12 +44,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1908/52/de"
         },
-        "memorialYear": {
-          "xsd:int": 1908
-        },
         "title": {
           "xsd:string": "Kreisschreiben des Bundesrates an sämtliche Kantonsregierungen, betreffend die Verteilung der Bundes- und kantonalen Beiträge an die schweizerischen Hülfsgesellschaften im Auslande. (Vom 14. Dezember 1908.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 415
+        },
+        "memorialYear": {
+          "xsd:int": 1908
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1908/6_413__/de/pdf-a"
+        ]
       }
     },
     {
@@ -56,6 +69,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1908/6_413__/de/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -63,26 +83,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10023170"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10023170&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10023170"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10023170&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -92,18 +105,34 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1908/6_413__/graph",
   "facets": {
+    "sortingDateTime": "1908-12-22T23:00Z",
     "sortingDate": "1908-12-23",
+    "memorialLabel_sort": {
+      "de": "1908.06.000413"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1908 VI 413"
     },
+    "modified": "1908-12-23T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 413
     },
     "title": {
       "de": "Kreisschreiben des Bundesrates an sämtliche Kantonsregierungen, betreffend die Verteilung der Bundes- und kantonalen Beiträge an die schweizerischen Hülfsgesellschaften im Auslande. (Vom 14. Dezember 1908.)"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1908/6_413__/graph",
   "timestampms": null
 }

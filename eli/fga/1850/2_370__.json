@@ -5,34 +5,38 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1850-08-02T23:25:52.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1850-08-02T23:25:52.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1850-08-03"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1850/2_370__/de"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1850/36"
-    },
-    "attributes": {
-      "publicationDate": {
-        "xsd:date": "1850-08-03"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1850/2_370__/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1850/2_370__/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1850 II 370"
+        },
         "memorialName": {
           "xsd:string": "BBl"
-        },
-        "memorialPageTo": {
-          "xsd:int": 371
         },
         "memorialPage": {
           "xsd:int": 370
@@ -40,12 +44,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1850/36/de"
         },
-        "memorialYear": {
-          "xsd:int": 1850
-        },
         "title": {
           "xsd:string": "Dekret der Bundesversammlung vom 19. Juli 1850, betreffend die Verfassung des Kantons Unterwalden nid dem Wald."
+        },
+        "memorialPageTo": {
+          "xsd:int": 371
+        },
+        "memorialYear": {
+          "xsd:int": 1850
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1850/2_370__/de/pdf-a"
+        ]
       }
     },
     {
@@ -56,6 +69,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1850/2_370__/de/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -63,26 +83,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10000390"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10000390&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10000390"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10000390&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -92,18 +105,34 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1850/2_370__/graph",
   "facets": {
+    "sortingDateTime": "1850-08-02T23:25:52Z",
     "sortingDate": "1850-08-03",
+    "memorialLabel_sort": {
+      "de": "1850.02.000370"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1850 II 370"
     },
+    "modified": "1850-08-03T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 370
     },
     "title": {
       "de": "Dekret der Bundesversammlung vom 19. Juli 1850, betreffend die Verfassung des Kantons Unterwalden nid dem Wald."
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1850/2_370__/graph",
   "timestampms": null
 }

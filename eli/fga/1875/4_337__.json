@@ -5,37 +5,38 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1875-09-24T23:30:14.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1875-09-24T23:30:14.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1875-09-25"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1875/4_337__/de"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1875/42"
-    },
-    "attributes": {
-      "typeDocument": {
-        "rdfs:Resource": "http://example.com"
-      },
-      "publicationDate": {
-        "xsd:date": "1875-09-25"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1875/4_337__/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1875/4_337__/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1875 IV 337"
+        },
         "memorialName": {
           "xsd:string": "BBl"
-        },
-        "memorialPageTo": {
-          "xsd:int": 349
         },
         "memorialPage": {
           "xsd:int": 337
@@ -43,12 +44,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1875/42/de"
         },
-        "memorialYear": {
-          "xsd:int": 1875
-        },
         "title": {
           "xsd:string": "Botschaft des Bundesrates an die hohe Bundesversammlung, betreffend den zwischen der schweizerischen Nordostbahngesellschaft und der Eisenbahnunternehmung Wädensweil-Einsiedeln abgeschlossenen Vertrag über die Mitwirkung der Erstern an dem Bau, Betrieb und der Verwaltung der Eisenbahn Wädensweil-Einsiedeln. (Vom 15. September 1875.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 349
+        },
+        "memorialYear": {
+          "xsd:int": 1875
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1875/4_337__/de/pdf-a"
+        ]
       }
     },
     {
@@ -59,6 +69,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1875/4_337__/de/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -66,26 +83,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10008805"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10008805&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10008805"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10008805&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -95,18 +105,34 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1875/4_337__/graph",
   "facets": {
+    "sortingDateTime": "1875-09-24T23:30:14Z",
     "sortingDate": "1875-09-25",
+    "memorialLabel_sort": {
+      "de": "1875.04.000337"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1875 IV 337"
     },
+    "modified": "1875-09-25T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 337
     },
     "title": {
       "de": "Botschaft des Bundesrates an die hohe Bundesversammlung, betreffend den zwischen der schweizerischen Nordostbahngesellschaft und der Eisenbahnunternehmung Wädensweil-Einsiedeln abgeschlossenen Vertrag über die Mitwirkung der Erstern an dem Bau, Betrieb und der Verwaltung der Eisenbahn Wädensweil-Einsiedeln. (Vom 15. September 1875.)"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1875/4_337__/graph",
   "timestampms": null
 }

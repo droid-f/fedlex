@@ -16,9 +16,6 @@
           "1911-01-03T23:00:00.000Z"
         ]
       },
-      "typeDocument": {
-        "rdfs:Resource": "http://example.com"
-      },
       "publicationDate": {
         "xsd:date": "1911-01-04"
       }
@@ -34,18 +31,12 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1911/1_10__/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1911/1_10__/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1911 I 10"
+        },
         "memorialName": {
           "xsd:string": "BBl"
-        },
-        "memorialPageTo": {
-          "xsd:int": 11
         },
         "memorialPage": {
           "xsd:int": 10
@@ -53,12 +44,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1911/1/de"
         },
-        "memorialYear": {
-          "xsd:int": 1911
-        },
         "title": {
           "xsd:string": "Bundesbeschluss betreffend Bewilligung eines Spezialkredites für die schweizerischen Bundesbahnen im Betrage von Fr. 2,670,000 behufs Ausrichtung von ausserordentlichen Zulagen an ihre Arbeiter für die Zeit vom 1. Januar 1910 bis zum 31. März 1912. (Vom 23. Dezember 1910.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 11
+        },
+        "memorialYear": {
+          "xsd:int": 1911
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1911/1_10__/de/pdf-a"
+        ]
       }
     },
     {
@@ -66,6 +66,13 @@
       "type": [
         "Memorial",
         "Work"
+      ]
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
       ]
     },
     {
@@ -91,13 +98,6 @@
       }
     },
     {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
-      "type": [
-        "Concept",
-        "Language"
-      ]
-    },
-    {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
       "type": [
         "Concept",
@@ -111,6 +111,7 @@
     "memorialLabel_sort": {
       "de": "1911.01.000010"
     },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1911 I 10"
     },

@@ -5,34 +5,38 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1889-03-29T23:30:14.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1889-03-29T23:30:14.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1889-03-30"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1889/1_800__/de"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1889/13"
-    },
-    "attributes": {
-      "publicationDate": {
-        "xsd:date": "1889-03-30"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1889/1_800__/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1889/1_800__/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1889 I 800"
+        },
         "memorialName": {
           "xsd:string": "BBl"
-        },
-        "memorialPageTo": {
-          "xsd:int": 804
         },
         "memorialPage": {
           "xsd:int": 800
@@ -40,12 +44,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1889/13/de"
         },
-        "memorialYear": {
-          "xsd:int": 1889
-        },
         "title": {
           "xsd:string": "Bundesratsbeschluss über den Rekurs des Casimir Ditzler-König, von Dornach (Solothurn), wohnhaft in Rheinfelden (Aargau), für sich und Familie, gegen die Schlussnahme der Regierung des Kantons Aargau betreffend Ausweisung wegen Inanspruchnahme der öffentlichen Wohltätigkeit infolge von Dürftigkeit. (Vom 25. Januar 1889.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 804
+        },
+        "memorialYear": {
+          "xsd:int": 1889
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1889/1_800__/de/pdf-a"
+        ]
       }
     },
     {
@@ -56,6 +69,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1889/1_800__/de/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -63,26 +83,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10014314"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10014314&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10014314"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10014314&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -92,18 +105,34 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1889/1_800__/graph",
   "facets": {
+    "sortingDateTime": "1889-03-29T23:30:14Z",
     "sortingDate": "1889-03-30",
+    "memorialLabel_sort": {
+      "de": "1889.01.000800"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1889 I 800"
     },
+    "modified": "1889-03-30T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 800
     },
     "title": {
       "de": "Bundesratsbeschluss über den Rekurs des Casimir Ditzler-König, von Dornach (Solothurn), wohnhaft in Rheinfelden (Aargau), für sich und Familie, gegen die Schlussnahme der Regierung des Kantons Aargau betreffend Ausweisung wegen Inanspruchnahme der öffentlichen Wohltätigkeit infolge von Dürftigkeit. (Vom 25. Januar 1889.)"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1889/1_800__/graph",
   "timestampms": null
 }

@@ -5,34 +5,38 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1903-09-08T23:00:00.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1903-09-08T23:00:00.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1903-09-09"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1903/4_15__/de"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1903/36"
-    },
-    "attributes": {
-      "publicationDate": {
-        "xsd:date": "1903-09-09"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1903/4_15__/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1903/4_15__/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1903 IV 15"
+        },
         "memorialName": {
           "xsd:string": "BBl"
-        },
-        "memorialPageTo": {
-          "xsd:int": 16
         },
         "memorialPage": {
           "xsd:int": 15
@@ -40,12 +44,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1903/36/de"
         },
-        "memorialYear": {
-          "xsd:int": 1903
-        },
         "title": {
           "xsd:string": "Bericht des Bundesrates an die Bundesversammlung zum Begnadigungsgesuch des wegen Verkaufes von Zündhölzchen mit gelbem Phosphor bestraften Jakob Schär, Wirts und Krämers in Eriswil. (Vom 8. September 1903.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 16
+        },
+        "memorialYear": {
+          "xsd:int": 1903
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1903/4_15__/de/pdf-a"
+        ]
       }
     },
     {
@@ -56,6 +69,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1903/4_15__/de/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -63,26 +83,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10020681"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10020681&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10020681"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10020681&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -92,18 +105,34 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1903/4_15__/graph",
   "facets": {
+    "sortingDateTime": "1903-09-08T23:00Z",
     "sortingDate": "1903-09-09",
+    "memorialLabel_sort": {
+      "de": "1903.04.000015"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1903 IV 15"
     },
+    "modified": "1903-09-09T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 15
     },
     "title": {
       "de": "Bericht des Bundesrates an die Bundesversammlung zum Begnadigungsgesuch des wegen Verkaufes von Zündhölzchen mit gelbem Phosphor bestraften Jakob Schär, Wirts und Krämers in Eriswil. (Vom 8. September 1903.)"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1903/4_15__/graph",
   "timestampms": null
 }
