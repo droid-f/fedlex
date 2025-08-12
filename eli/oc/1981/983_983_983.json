@@ -15,8 +15,18 @@
       "dateDocument": {
         "xsd:date": "1981-08-04"
       },
+      "created": {
+        "xsd:dateTime": [
+          "1981-08-03T22:00:00.000Z"
+        ]
+      },
       "dateEntryInForce": {
         "xsd:date": "1981-08-04"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1981-08-03T22:00:00.000Z"
+        ]
       },
       "typeDocument": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/15"
@@ -34,7 +44,8 @@
         "https://fedlex.data.admin.ch/eli/oc/1981/983_983_983/fr",
         "https://fedlex.data.admin.ch/eli/oc/1981/983_983_983/it"
       ],
-      "isPartOf": "https://fedlex.data.admin.ch/eli/collection/oc/1981/1"
+      "isPartOf": "https://fedlex.data.admin.ch/eli/collection/oc/1981/1",
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/1"
     }
   },
   "included": [
@@ -42,6 +53,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1981/983_983_983/de",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "AS 1981 983"
+        },
         "memorialName": {
           "xsd:string": "AS"
         },
@@ -51,11 +65,11 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1981/1/de"
         },
-        "memorialYear": {
-          "xsd:int": 1981
-        },
         "title": {
           "xsd:string": "Konkordat über die Vollstreckung von Zivilurteilen, Änderung"
+        },
+        "memorialYear": {
+          "xsd:int": 1981
         }
       },
       "references": {
@@ -66,6 +80,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1981/983_983_983/fr",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "RO 1981 983"
+        },
         "memorialName": {
           "xsd:string": "RO"
         },
@@ -75,11 +92,11 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1981/1/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1981
-        },
         "title": {
           "xsd:string": "Concordat sur l'exécution des jugements civils, Modification"
+        },
+        "memorialYear": {
+          "xsd:int": 1981
         }
       },
       "references": {
@@ -90,6 +107,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1981/983_983_983/it",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "RU 1981 983"
+        },
         "memorialName": {
           "xsd:string": "RU"
         },
@@ -99,11 +119,11 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1981/1/it"
         },
-        "memorialYear": {
-          "xsd:int": 1981
-        },
         "title": {
           "xsd:string": "Concordato sull'esecuzione delle sentenze in materia civile, Modifica"
+        },
+        "memorialYear": {
+          "xsd:int": 1981
         }
       },
       "references": {
@@ -115,6 +135,13 @@
       "type": [
         "Memorial",
         "Work"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/1",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
       ]
     },
     {
@@ -139,15 +166,22 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/oc/1981/983_983_983/graph",
   "facets": {
     "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/48",
+    "sortingDateTime": "1981-08-03T22:00Z",
     "sortingDate": "1981-08-04",
+    "memorialLabel_sort": {
+      "de": "1981.99.000983",
+      "it": "1981.99.000983",
+      "fr": "1981.99.000983"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "AS 1981 983",
       "http://publications.europa.eu/resource/authority/language/FRA": "RO 1981 983",
       "http://publications.europa.eu/resource/authority/language/ITA": "RU 1981 983"
     },
+    "modified": "1981-08-04T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 983,
       "http://publications.europa.eu/resource/authority/language/FRA": 983,
@@ -157,7 +191,18 @@
       "de": "Konkordat über die Vollstreckung von Zivilurteilen, Änderung",
       "it": "Concordato sull'esecuzione delle sentenze in materia civile, Modifica",
       "fr": "Concordat sur l'exécution des jugements civils, Modification"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/oc/1981/983_983_983/graph",
   "timestampms": null
 }
