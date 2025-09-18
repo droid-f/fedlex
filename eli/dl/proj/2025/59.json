@@ -17,7 +17,7 @@
     "attributes": {
       "modified": {
         "xsd:dateTime": [
-          "2025-09-18T09:04:57.448Z"
+          "2025-09-18T10:51:28.529Z"
         ]
       },
       "eventId": {
@@ -25,7 +25,7 @@
       },
       "created": {
         "xsd:dateTime": [
-          "2025-09-18T09:04:57.437Z"
+          "2025-09-18T10:51:28.517Z"
         ]
       }
     }
@@ -38,6 +38,29 @@
         "Event",
         "LegislativeTask"
       ],
+      "references": {
+        "previousConsultationStatus": [
+          "https://fedlex.data.admin.ch/vocabulary/consultation-status/2"
+        ],
+        "isOpinionOf": [
+          "https://fedlex.data.admin.ch/vocabulary/legal-institution/247",
+          "https://fedlex.data.admin.ch/vocabulary/legal-institution/248",
+          "https://fedlex.data.admin.ch/vocabulary/legal-institution/246"
+        ],
+        "foreseenImpactToLegalResource": [
+          "https://fedlex.data.admin.ch/eli/cc/2008/226",
+          "https://fedlex.data.admin.ch/eli/cc/2017/763",
+          "https://fedlex.data.admin.ch/eli/cc/2005/68",
+          "https://fedlex.data.admin.ch/eli/cc/2024/690",
+          "https://fedlex.data.admin.ch/eli/cc/2017/766",
+          "https://fedlex.data.admin.ch/eli/cc/2017/765"
+        ],
+        "consultationStatus": "https://fedlex.data.admin.ch/vocabulary/consultation-status/2",
+        "hasSubTask": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2025/59/cons_1/cons-planif",
+          "https://fedlex.data.admin.ch/eli/dl/proj/2025/59/cons_1/cons-open"
+        ]
+      },
       "attributes": {
         "eventTitle": {
           "rdf:langString": {
@@ -68,27 +91,14 @@
         "eventId": {
           "xsd:string": "proj/2025/59/cons_1"
         }
-      },
-      "references": {
-        "isOpinionOf": [
-          "https://fedlex.data.admin.ch/vocabulary/legal-institution/247",
-          "https://fedlex.data.admin.ch/vocabulary/legal-institution/248",
-          "https://fedlex.data.admin.ch/vocabulary/legal-institution/246"
-        ],
-        "foreseenImpactToLegalResource": [
-          "https://fedlex.data.admin.ch/eli/cc/2008/226",
-          "https://fedlex.data.admin.ch/eli/cc/2017/763",
-          "https://fedlex.data.admin.ch/eli/cc/2005/68",
-          "https://fedlex.data.admin.ch/eli/cc/2024/690",
-          "https://fedlex.data.admin.ch/eli/cc/2017/766",
-          "https://fedlex.data.admin.ch/eli/cc/2017/765"
-        ],
-        "consultationStatus": "https://fedlex.data.admin.ch/vocabulary/consultation-status/2",
-        "hasSubTask": [
-          "https://fedlex.data.admin.ch/eli/dl/proj/2025/59/cons_1/cons-planif",
-          "https://fedlex.data.admin.ch/eli/dl/proj/2025/59/cons_1/cons-open"
-        ]
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/consultation-status/2",
+      "type": [
+        "Concept",
+        "ConsultationStatus"
+      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/247",
@@ -154,13 +164,6 @@
       ]
     },
     {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/consultation-status/2",
-      "type": [
-        "Concept",
-        "ConsultationStatus"
-      ]
-    },
-    {
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2025/59/cons_1/cons-planif",
       "type": [
         "ConsultationPreparation",
@@ -202,6 +205,7 @@
           "https://fedlex.data.admin.ch/eli/dl/proj/2025/59/cons_1/doc_14",
           "https://fedlex.data.admin.ch/eli/dl/proj/2025/59/cons_1/doc_15",
           "https://fedlex.data.admin.ch/eli/dl/proj/2025/59/cons_1/doc_16",
+          "https://fedlex.data.admin.ch/eli/dl/proj/2025/59/cons_1/doc_17",
           "https://fedlex.data.admin.ch/eli/dl/proj/2025/59/cons_1/doc_10",
           "https://fedlex.data.admin.ch/eli/dl/proj/2025/59/cons_1/doc_11",
           "https://fedlex.data.admin.ch/eli/dl/proj/2025/59/cons_1/doc_13",
@@ -350,6 +354,38 @@
             ],
             "fr": [
               "Lettre d'accompagnement"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2025/59/cons_1/doc_17",
+      "type": [
+        "DraftRelatedDocument",
+        "Work"
+      ],
+      "references": {
+        "draftProcessDocumentType": [
+          "https://fedlex.data.admin.ch/vocabulary/draft-document-type/14"
+        ],
+        "isRealizedBy": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2025/59/cons_1/doc_17/de",
+          "https://fedlex.data.admin.ch/eli/dl/proj/2025/59/cons_1/doc_17/it",
+          "https://fedlex.data.admin.ch/eli/dl/proj/2025/59/cons_1/doc_17/fr"
+        ]
+      },
+      "attributes": {
+        "title": {
+          "rdf:langString": {
+            "de": [
+              "Adressatenliste"
+            ],
+            "it": [
+              "Lista dei destinatari"
+            ],
+            "fr": [
+              "Destinataires"
             ]
           }
         }
@@ -897,6 +933,58 @@
       "attributes": {
         "title": {
           "xsd:string": "Begleitschreiben"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/draft-document-type/14",
+      "type": [
+        "Concept",
+        "DraftProcessDocumentType"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2025/59/cons_1/doc_17/de",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2025/59/cons_1/doc_17/de/pdf-a"
+        ]
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Adressatenliste"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2025/59/cons_1/doc_17/it",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/ITA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2025/59/cons_1/doc_17/it/pdf-a"
+        ]
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Lista dei destinatari"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2025/59/cons_1/doc_17/fr",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2025/59/cons_1/doc_17/fr/pdf-a"
+        ]
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Destinataires"
         }
       }
     },
@@ -1658,6 +1746,69 @@
         },
         "publicationDate": {
           "xsd:dateTime": "2025-09-18T09:04:55.555Z"
+        }
+      },
+      "references": {
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2025/59/cons_1/doc_17/de/pdf-a",
+      "type": "Manifestation",
+      "attributes": {
+        "manifestationByDefault": {
+          "xsd:boolean": true
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/dl/proj/2025/59/cons_1/doc_17/de/pdf-a/fedlex-data-admin-ch-eli-dl-proj-2025-59-cons_1-doc_17-de-pdf-a.pdf"
+        },
+        "publicationDate": {
+          "xsd:dateTime": "2025-09-18T10:51:26.353Z"
+        }
+      },
+      "references": {
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2025/59/cons_1/doc_17/it/pdf-a",
+      "type": "Manifestation",
+      "attributes": {
+        "manifestationByDefault": {
+          "xsd:boolean": true
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/dl/proj/2025/59/cons_1/doc_17/it/pdf-a/fedlex-data-admin-ch-eli-dl-proj-2025-59-cons_1-doc_17-it-pdf-a.pdf"
+        },
+        "publicationDate": {
+          "xsd:dateTime": "2025-09-18T10:51:26.353Z"
+        }
+      },
+      "references": {
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2025/59/cons_1/doc_17/fr/pdf-a",
+      "type": "Manifestation",
+      "attributes": {
+        "manifestationByDefault": {
+          "xsd:boolean": true
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/dl/proj/2025/59/cons_1/doc_17/fr/pdf-a/fedlex-data-admin-ch-eli-dl-proj-2025-59-cons_1-doc_17-fr-pdf-a.pdf"
+        },
+        "publicationDate": {
+          "xsd:dateTime": "2025-09-18T10:51:26.353Z"
         }
       },
       "references": {
@@ -2429,7 +2580,7 @@
     }
   ],
   "facets": {
-    "sortingDateTime": "2025-09-18T09:04:57.448Z",
+    "sortingDateTime": "2025-09-18T10:51:28.529Z",
     "taxonomies": [
       {
         "consolidationAbstract": "https://fedlex.data.admin.ch/eli/cc/2005/68",
@@ -2456,9 +2607,9 @@
         "taxonomyId": "730.01"
       }
     ],
-    "sortingDate": "2025-09-18T11:04:55.548+02:00",
-    "statusChangedOnPublication": true,
-    "modified": "2025-09-18T11:04:57.466148",
+    "sortingDate": "2025-09-18T09:04:55.548Z",
+    "statusChangedOnPublication": false,
+    "modified": "2025-09-18T12:51:28.546479",
     "title": {
       "de": "Verordnungsänderungen im Bereich des Bundesamts für Energie (BFE) mit Inkrafttreten am 1. Juli 2026",
       "it": "Modifiche di ordinanze nell’ambito di competenza dell’Ufficio federale dell’energia (UFE) con entrata in vigore il 1° luglio 2026",
