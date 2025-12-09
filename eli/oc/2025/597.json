@@ -9,19 +9,11 @@
       "legalResourceGenre": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/legal-resource-genre/200"
       },
-      "dateDocument": {
-        "xsd:date": "2025-09-29"
-      },
-      "created": {
-        "xsd:dateTime": [
-          "2025-09-30T09:43:23.010Z"
-        ]
-      },
-      "sequenceInTheYearOfPublication": {
-        "xsd:int": 597
-      },
       "dateEntryInForce": {
         "xsd:date": "2025-09-30"
+      },
+      "timeEntryInForce": {
+        "xsd:time": "23:00:00"
       },
       "modified": {
         "xsd:dateTime": [
@@ -36,19 +28,33 @@
       },
       "publicationDate": {
         "xsd:date": "2025-09-30"
+      },
+      "dateDocument": {
+        "xsd:date": "2025-09-29"
+      },
+      "created": {
+        "xsd:dateTime": [
+          "2025-09-30T09:43:23.010Z"
+        ]
+      },
+      "sequenceInTheYearOfPublication": {
+        "xsd:int": 597
+      },
+      "retroactiveEntryInForce": {
+        "xsd:boolean": false
       }
     },
     "references": {
       "legalResourcePublicationCompleteness": "https://fedlex.data.admin.ch/vocabulary/publication-completeness/partially-by-reference",
       "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/116",
-      "workHasAnnex": [
-        "https://fedlex.data.admin.ch/eli/oce/2025/116",
-        "https://fedlex.data.admin.ch/eli/oce/2025/115"
-      ],
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/oc/2025/597/de",
         "https://fedlex.data.admin.ch/eli/oc/2025/597/it",
         "https://fedlex.data.admin.ch/eli/oc/2025/597/fr"
+      ],
+      "workHasAnnex": [
+        "https://fedlex.data.admin.ch/eli/oce/2025/116",
+        "https://fedlex.data.admin.ch/eli/oce/2025/115"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/oc/2025/172",
       "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/11441"
@@ -68,38 +74,6 @@
         "Concept",
         "LegalInstitution"
       ]
-    },
-    {
-      "uri": "https://fedlex.data.admin.ch/eli/oce/2025/116",
-      "type": "Work",
-      "references": {
-        "isRealizedBy": [
-          "https://fedlex.data.admin.ch/eli/oce/2025/116/de",
-          "https://fedlex.data.admin.ch/eli/oce/2025/116/fr",
-          "https://fedlex.data.admin.ch/eli/oce/2025/116/it"
-        ]
-      },
-      "attributes": {
-        "order": {
-          "xsd:int": 1
-        }
-      }
-    },
-    {
-      "uri": "https://fedlex.data.admin.ch/eli/oce/2025/115",
-      "type": "Work",
-      "references": {
-        "isRealizedBy": [
-          "https://fedlex.data.admin.ch/eli/oce/2025/115/de",
-          "https://fedlex.data.admin.ch/eli/oce/2025/115/it",
-          "https://fedlex.data.admin.ch/eli/oce/2025/115/fr"
-        ]
-      },
-      "attributes": {
-        "order": {
-          "xsd:int": 0
-        }
-      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/oc/2025/597/de",
@@ -192,11 +166,64 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/oce/2025/116",
+      "type": "Work",
+      "references": {
+        "isRealizedBy": [
+          "https://fedlex.data.admin.ch/eli/oce/2025/116/de",
+          "https://fedlex.data.admin.ch/eli/oce/2025/116/fr",
+          "https://fedlex.data.admin.ch/eli/oce/2025/116/it"
+        ]
+      },
+      "attributes": {
+        "order": {
+          "xsd:int": 1
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/oce/2025/115",
+      "type": "Work",
+      "references": {
+        "isRealizedBy": [
+          "https://fedlex.data.admin.ch/eli/oce/2025/115/de",
+          "https://fedlex.data.admin.ch/eli/oce/2025/115/it",
+          "https://fedlex.data.admin.ch/eli/oce/2025/115/fr"
+        ]
+      },
+      "attributes": {
+        "order": {
+          "xsd:int": 0
+        }
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/collection/oc/2025/172",
       "type": [
         "Memorial",
         "Work"
-      ]
+      ],
+      "attributes": {
+        "memorialNumber": {
+          "xsd:int": 172
+        },
+        "isMemberOf": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/2025"
+        },
+        "memorialYear": {
+          "xsd:int": 2025
+        },
+        "publicationDate": {
+          "xsd:date": "2025-09-30"
+        }
+      },
+      "references": {
+        "isRealizedBy": [
+          "https://fedlex.data.admin.ch/eli/collection/oc/2025/172/it",
+          "https://fedlex.data.admin.ch/eli/collection/oc/2025/172/fr",
+          "https://fedlex.data.admin.ch/eli/collection/oc/2025/172/de"
+        ]
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/11441",
@@ -204,96 +231,6 @@
         "Concept",
         "LegalTaxonomy"
       ]
-    },
-    {
-      "uri": "https://fedlex.data.admin.ch/eli/oce/2025/116/de",
-      "type": "Expression",
-      "references": {
-        "language": "http://publications.europa.eu/resource/authority/language/DEU",
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/oce/2025/116/de/pdf-a"
-        ]
-      },
-      "attributes": {
-        "title": {
-          "xsd:string": "Anhang 8 (Delta) - Verordnung vom 4. März 2022 über Massnahmen im Zusammenhang mit der Situation in der Ukraine"
-        }
-      }
-    },
-    {
-      "uri": "https://fedlex.data.admin.ch/eli/oce/2025/116/fr",
-      "type": "Expression",
-      "references": {
-        "language": "http://publications.europa.eu/resource/authority/language/FRA",
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/oce/2025/116/fr/pdf-a"
-        ]
-      },
-      "attributes": {
-        "title": {
-          "xsd:string": "Annexe 8 (Delta) - Ordonnance du 4 mars 2022 instituant des mesures en lien avec la situation en Ukraine"
-        }
-      }
-    },
-    {
-      "uri": "https://fedlex.data.admin.ch/eli/oce/2025/116/it",
-      "type": "Expression",
-      "references": {
-        "language": "http://publications.europa.eu/resource/authority/language/ITA",
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/oce/2025/116/it/pdf-a"
-        ]
-      },
-      "attributes": {
-        "title": {
-          "xsd:string": "Allegato 8 (Delta) - Ordinanza del 4 marzo 2022 che istituisce provvedimenti in relazione alla situazione in Ucraina"
-        }
-      }
-    },
-    {
-      "uri": "https://fedlex.data.admin.ch/eli/oce/2025/115/de",
-      "type": "Expression",
-      "references": {
-        "language": "http://publications.europa.eu/resource/authority/language/DEU",
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/oce/2025/115/de/pdf-a"
-        ]
-      },
-      "attributes": {
-        "title": {
-          "xsd:string": "Anhang 8 - Verordnung vom 4. März 2022 über Massnahmen im Zusammenhang mit der Situation in der Ukraine"
-        }
-      }
-    },
-    {
-      "uri": "https://fedlex.data.admin.ch/eli/oce/2025/115/it",
-      "type": "Expression",
-      "references": {
-        "language": "http://publications.europa.eu/resource/authority/language/ITA",
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/oce/2025/115/it/pdf-a"
-        ]
-      },
-      "attributes": {
-        "title": {
-          "xsd:string": "Allegato 8 - Ordinanza del 4 marzo 2022 che istituisce provvedimenti in relazione alla situazione in Ucraina"
-        }
-      }
-    },
-    {
-      "uri": "https://fedlex.data.admin.ch/eli/oce/2025/115/fr",
-      "type": "Expression",
-      "references": {
-        "language": "http://publications.europa.eu/resource/authority/language/FRA",
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/oce/2025/115/fr/pdf-a"
-        ]
-      },
-      "attributes": {
-        "title": {
-          "xsd:string": "Annexe 8 - Ordonnance du 4 mars 2022 instituant des mesures en lien avec la situation en Ukraine"
-        }
-      }
     },
     {
       "uri": "http://publications.europa.eu/resource/authority/language/DEU",
@@ -364,6 +301,10 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/oc/2025/597/de/docx",
       "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
       "attributes": {
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
@@ -389,6 +330,10 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/oc/2025/597/it/docx",
       "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
       "attributes": {
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
@@ -473,6 +418,10 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/oc/2025/597/fr/docx",
       "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
       "attributes": {
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
@@ -548,6 +497,139 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/oce/2025/116/de",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/oce/2025/116/de/pdf-a"
+        ]
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Anhang 8 (Delta) - Verordnung vom 4. März 2022 über Massnahmen im Zusammenhang mit der Situation in der Ukraine"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/oce/2025/116/fr",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/oce/2025/116/fr/pdf-a"
+        ]
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Annexe 8 (Delta) - Ordonnance du 4 mars 2022 instituant des mesures en lien avec la situation en Ukraine"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/oce/2025/116/it",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/ITA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/oce/2025/116/it/pdf-a"
+        ]
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Allegato 8 (Delta) - Ordinanza del 4 marzo 2022 che istituisce provvedimenti in relazione alla situazione in Ucraina"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/oce/2025/115/de",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/oce/2025/115/de/pdf-a"
+        ]
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Anhänge 2, 8 bis 15c, 25 und 33 - Verordnung vom 4. März 2022 über Massnahmen im Zusammenhang mit der Situation in der Ukraine"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/oce/2025/115/it",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/ITA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/oce/2025/115/it/pdf-a"
+        ]
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Allegati 2, 8-15c, 25 e 33 - Ordinanza del 4 marzo 2022 che istituisce provvedimenti in relazione alla situazione in Ucraina"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/oce/2025/115/fr",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/oce/2025/115/fr/pdf-a"
+        ]
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Annexes 2, 8 à 15c, 25 et 33 - Ordonnance du 4 mars 2022 instituant des mesures en lien avec la situation en Ukraine"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/collection/oc/2025/172/it",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/ITA"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": ""
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/collection/oc/2025/172/fr",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": ""
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/collection/oc/2025/172/de",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": ""
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+      "type": [
+        "Concept",
+        "LegalInstitution"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/oce/2025/116/de/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -558,11 +640,19 @@
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
         },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oce/2025/116/de/pdf-a/fedlex-data-admin-ch-eli-oce-2025-116-de-pdf-a.pdf"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oce/2025/116/de/pdf-a/fedlex-data-admin-ch-eli-oce-2025-116-de-pdf-a-1.pdf"
+        },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oce/2025/116/de/pdf-a/fedlex-data-admin-ch-eli-oce-2025-116-de-pdf-a.pdf"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oce/2025/116/de/pdf-a/fedlex-data-admin-ch-eli-oce-2025-116-de-pdf-a-1.pdf"
         }
       }
     },
@@ -577,11 +667,19 @@
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
         },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oce/2025/116/fr/pdf-a/fedlex-data-admin-ch-eli-oce-2025-116-fr-pdf-a.pdf"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oce/2025/116/fr/pdf-a/fedlex-data-admin-ch-eli-oce-2025-116-fr-pdf-a-1.pdf"
+        },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oce/2025/116/fr/pdf-a/fedlex-data-admin-ch-eli-oce-2025-116-fr-pdf-a.pdf"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oce/2025/116/fr/pdf-a/fedlex-data-admin-ch-eli-oce-2025-116-fr-pdf-a-1.pdf"
         }
       }
     },
@@ -596,11 +694,19 @@
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
         },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oce/2025/116/it/pdf-a/fedlex-data-admin-ch-eli-oce-2025-116-it-pdf-a.pdf"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oce/2025/116/it/pdf-a/fedlex-data-admin-ch-eli-oce-2025-116-it-pdf-a-1.pdf"
+        },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oce/2025/116/it/pdf-a/fedlex-data-admin-ch-eli-oce-2025-116-it-pdf-a.pdf"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oce/2025/116/it/pdf-a/fedlex-data-admin-ch-eli-oce-2025-116-it-pdf-a-1.pdf"
         }
       }
     },
@@ -615,11 +721,19 @@
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
         },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oce/2025/115/de/pdf-a/fedlex-data-admin-ch-eli-oce-2025-115-de-pdf-a.pdf"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oce/2025/115/de/pdf-a/fedlex-data-admin-ch-eli-oce-2025-115-de-pdf-a-1.pdf"
+        },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oce/2025/115/de/pdf-a/fedlex-data-admin-ch-eli-oce-2025-115-de-pdf-a.pdf"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oce/2025/115/de/pdf-a/fedlex-data-admin-ch-eli-oce-2025-115-de-pdf-a-1.pdf"
         }
       }
     },
@@ -634,11 +748,19 @@
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
         },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oce/2025/115/it/pdf-a/fedlex-data-admin-ch-eli-oce-2025-115-it-pdf-a.pdf"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oce/2025/115/it/pdf-a/fedlex-data-admin-ch-eli-oce-2025-115-it-pdf-a-1.pdf"
+        },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oce/2025/115/it/pdf-a/fedlex-data-admin-ch-eli-oce-2025-115-it-pdf-a.pdf"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oce/2025/115/it/pdf-a/fedlex-data-admin-ch-eli-oce-2025-115-it-pdf-a-1.pdf"
         }
       }
     },
@@ -653,20 +775,21 @@
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
         },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oce/2025/115/fr/pdf-a/fedlex-data-admin-ch-eli-oce-2025-115-fr-pdf-a.pdf"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/oce/2025/115/fr/pdf-a/fedlex-data-admin-ch-eli-oce-2025-115-fr-pdf-a-1.pdf"
+        },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oce/2025/115/fr/pdf-a/fedlex-data-admin-ch-eli-oce-2025-115-fr-pdf-a.pdf"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oce/2025/115/fr/pdf-a/fedlex-data-admin-ch-eli-oce-2025-115-fr-pdf-a-1.pdf"
         }
       }
-    },
-    {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
-      "type": [
-        "Concept",
-        "LegalInstitution"
-      ]
     }
   ],
   "facets": {
@@ -685,7 +808,7 @@
       "http://publications.europa.eu/resource/authority/language/FRA": "RO 2025 597",
       "http://publications.europa.eu/resource/authority/language/ITA": "RU 2025 597"
     },
-    "modified": "2025-09-30T11:49:23.511067",
+    "modified": "2025-12-09T09:22:52.944513",
     "theme": {
       "themeId": "9",
       "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/10385"
