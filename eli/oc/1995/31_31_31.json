@@ -12,11 +12,13 @@
       "dateNoLongerInForce": {
         "xsd:date": "2005-01-01"
       },
-      "dateDocument": {
-        "xsd:date": "1995-01-10"
-      },
       "dateEntryInForce": {
         "xsd:date": "1995-01-01"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1994-12-31T23:00:00.000Z"
+        ]
       },
       "typeDocument": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/15"
@@ -26,6 +28,14 @@
       },
       "publicationDate": {
         "xsd:date": "1995-01-01"
+      },
+      "dateDocument": {
+        "xsd:date": "1995-01-10"
+      },
+      "created": {
+        "xsd:dateTime": [
+          "1994-12-31T23:00:00.000Z"
+        ]
       }
     },
     "references": {
@@ -34,6 +44,7 @@
         "https://fedlex.data.admin.ch/eli/oc/1995/31_31_31/it",
         "https://fedlex.data.admin.ch/eli/oc/1995/31_31_31/fr"
       ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/1",
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/oc/1995/1"
     }
   },
@@ -42,6 +53,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1995/31_31_31/de",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "AS 1995 31"
+        },
         "memorialName": {
           "xsd:string": "AS"
         },
@@ -51,11 +65,11 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1995/1/de"
         },
-        "memorialYear": {
-          "xsd:int": 1995
-        },
         "title": {
           "xsd:string": "Konkordat über die Schiedsgerichtsbarkeit, Beitritt"
+        },
+        "memorialYear": {
+          "xsd:int": 1995
         }
       },
       "references": {
@@ -66,6 +80,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1995/31_31_31/it",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "RU 1995 31"
+        },
         "memorialName": {
           "xsd:string": "RU"
         },
@@ -75,11 +92,11 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1995/1/it"
         },
-        "memorialYear": {
-          "xsd:int": 1995
-        },
         "title": {
           "xsd:string": "Concordato sull'arbitrato, Adesione"
+        },
+        "memorialYear": {
+          "xsd:int": 1995
         }
       },
       "references": {
@@ -90,6 +107,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1995/31_31_31/fr",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "RO 1995 31"
+        },
         "memorialName": {
           "xsd:string": "RO"
         },
@@ -99,16 +119,23 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1995/1/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1995
-        },
         "title": {
           "xsd:string": "Concordat sur l'arbitrage, Adhésion"
+        },
+        "memorialYear": {
+          "xsd:int": 1995
         }
       },
       "references": {
         "language": "http://publications.europa.eu/resource/authority/language/FRA"
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/1",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/collection/oc/1995/1",
@@ -139,15 +166,22 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/oc/1995/31_31_31/graph",
   "facets": {
     "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/48",
+    "sortingDateTime": "1994-12-31T23:00Z",
     "sortingDate": "1995-01-01",
+    "memorialLabel_sort": {
+      "de": "1995.99.000031",
+      "it": "1995.99.000031",
+      "fr": "1995.99.000031"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "AS 1995 31",
       "http://publications.europa.eu/resource/authority/language/FRA": "RO 1995 31",
       "http://publications.europa.eu/resource/authority/language/ITA": "RU 1995 31"
     },
+    "modified": "1995-01-01T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 31,
       "http://publications.europa.eu/resource/authority/language/FRA": 31,
@@ -157,7 +191,18 @@
       "de": "Konkordat über die Schiedsgerichtsbarkeit, Beitritt",
       "it": "Concordato sull'arbitrato, Adesione",
       "fr": "Concordat sur l'arbitrage, Adhésion"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/oc/1995/31_31_31/graph",
   "timestampms": null
 }

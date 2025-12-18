@@ -12,14 +12,6 @@
       "dateNoLongerInForce": {
         "xsd:date": "2005-01-01"
       },
-      "dateDocument": {
-        "xsd:date": "1964-01-20"
-      },
-      "created": {
-        "xsd:dateTime": [
-          "1963-12-15T23:00:00.000Z"
-        ]
-      },
       "dateEntryInForce": {
         "xsd:date": "1963-12-16"
       },
@@ -36,6 +28,14 @@
       },
       "publicationDate": {
         "xsd:date": "1963-12-16"
+      },
+      "dateDocument": {
+        "xsd:date": "1964-01-20"
+      },
+      "created": {
+        "xsd:dateTime": [
+          "1963-12-15T23:00:00.000Z"
+        ]
       }
     },
     "references": {
@@ -44,6 +44,7 @@
         "https://fedlex.data.admin.ch/eli/oc/1964/44_63_64/fr",
         "https://fedlex.data.admin.ch/eli/oc/1964/44_63_64/it"
       ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/1",
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/oc/1964/1"
     }
   },
@@ -52,6 +53,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1964/44_63_64/de",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "AS 1964 44"
+        },
         "memorialName": {
           "xsd:string": "AS"
         },
@@ -61,11 +65,11 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1964/1/de"
         },
-        "memorialYear": {
-          "xsd:int": 1964
-        },
         "title": {
           "xsd:string": "Konkordat betreffend die Schürfung und Ausbeutung von Erdöl, Beitritt"
+        },
+        "memorialYear": {
+          "xsd:int": 1964
         }
       },
       "references": {
@@ -76,6 +80,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1964/44_63_64/fr",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "RO 1964 63"
+        },
         "memorialName": {
           "xsd:string": "RO"
         },
@@ -85,11 +92,11 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1964/1/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1964
-        },
         "title": {
           "xsd:string": "Concordat concernant la prospection et l'exploitation du pétrole, Adhésion"
+        },
+        "memorialYear": {
+          "xsd:int": 1964
         }
       },
       "references": {
@@ -100,6 +107,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1964/44_63_64/it",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "RU 1964 64"
+        },
         "memorialName": {
           "xsd:string": "RU"
         },
@@ -109,16 +119,23 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1964/1/it"
         },
-        "memorialYear": {
-          "xsd:int": 1964
-        },
         "title": {
           "xsd:string": "Concordato concernente la ricerca e lo sfruttamento di giacimenti petroliferi, Adesioni"
+        },
+        "memorialYear": {
+          "xsd:int": 1964
         }
       },
       "references": {
         "language": "http://publications.europa.eu/resource/authority/language/ITA"
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/1",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/collection/oc/1964/1",
@@ -149,16 +166,22 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/oc/1964/44_63_64/graph",
   "facets": {
     "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/48",
     "sortingDateTime": "1963-12-15T23:00Z",
     "sortingDate": "1963-12-16",
+    "memorialLabel_sort": {
+      "de": "1964.99.000044",
+      "it": "1964.99.000064",
+      "fr": "1964.99.000063"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "AS 1964 44",
       "http://publications.europa.eu/resource/authority/language/FRA": "RO 1964 63",
       "http://publications.europa.eu/resource/authority/language/ITA": "RU 1964 64"
     },
+    "modified": "1963-12-16T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 44,
       "http://publications.europa.eu/resource/authority/language/FRA": 63,
@@ -168,7 +191,18 @@
       "de": "Konkordat betreffend die Schürfung und Ausbeutung von Erdöl, Beitritt",
       "it": "Concordato concernente la ricerca e lo sfruttamento di giacimenti petroliferi, Adesioni",
       "fr": "Concordat concernant la prospection et l'exploitation du pétrole, Adhésion"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/oc/1964/44_63_64/graph",
   "timestampms": null
 }

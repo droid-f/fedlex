@@ -12,11 +12,13 @@
       "dateNoLongerInForce": {
         "xsd:date": "2005-01-01"
       },
-      "dateDocument": {
-        "xsd:date": "1973-06-04"
-      },
       "dateEntryInForce": {
         "xsd:date": "1973-04-25"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1973-04-24T23:00:00.000Z"
+        ]
       },
       "typeDocument": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/15"
@@ -26,6 +28,14 @@
       },
       "publicationDate": {
         "xsd:date": "1973-04-25"
+      },
+      "dateDocument": {
+        "xsd:date": "1973-06-04"
+      },
+      "created": {
+        "xsd:dateTime": [
+          "1973-04-24T23:00:00.000Z"
+        ]
       }
     },
     "references": {
@@ -34,6 +44,7 @@
         "https://fedlex.data.admin.ch/eli/oc/1973/957_957_957/fr",
         "https://fedlex.data.admin.ch/eli/oc/1973/957_957_957/de"
       ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/1",
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/oc/1973/1"
     }
   },
@@ -42,6 +53,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1973/957_957_957/it",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "RU 1973 957"
+        },
         "memorialName": {
           "xsd:string": "RU"
         },
@@ -51,11 +65,11 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1973/1/it"
         },
-        "memorialYear": {
-          "xsd:int": 1973
-        },
         "title": {
           "xsd:string": "Concordato sull'assistenza giudiziaria reciproca per l'esecuzione di pretese di diritto pubblico, Adesione"
+        },
+        "memorialYear": {
+          "xsd:int": 1973
         }
       },
       "references": {
@@ -66,6 +80,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1973/957_957_957/fr",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "RO 1973 957"
+        },
         "memorialName": {
           "xsd:string": "RO"
         },
@@ -75,11 +92,11 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1973/1/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1973
-        },
         "title": {
           "xsd:string": "Concordat sur l'entraide judiciaire pour l'exécution des prétentions de droit public, Adhésion"
+        },
+        "memorialYear": {
+          "xsd:int": 1973
         }
       },
       "references": {
@@ -90,6 +107,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1973/957_957_957/de",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "AS 1973 957"
+        },
         "memorialName": {
           "xsd:string": "AS"
         },
@@ -99,16 +119,23 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1973/1/de"
         },
-        "memorialYear": {
-          "xsd:int": 1973
-        },
         "title": {
           "xsd:string": "Konkordat über die Gewährung gegenseitiger Rechtshilfe zur Vollstreckung öffentlichrechtlicher Ansprüche, Beitritt"
+        },
+        "memorialYear": {
+          "xsd:int": 1973
         }
       },
       "references": {
         "language": "http://publications.europa.eu/resource/authority/language/DEU"
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/1",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/collection/oc/1973/1",
@@ -139,15 +166,22 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/oc/1973/957_957_957/graph",
   "facets": {
     "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/48",
+    "sortingDateTime": "1973-04-24T23:00Z",
     "sortingDate": "1973-04-25",
+    "memorialLabel_sort": {
+      "de": "1973.99.000957",
+      "it": "1973.99.000957",
+      "fr": "1973.99.000957"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "AS 1973 957",
       "http://publications.europa.eu/resource/authority/language/FRA": "RO 1973 957",
       "http://publications.europa.eu/resource/authority/language/ITA": "RU 1973 957"
     },
+    "modified": "1973-04-25T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 957,
       "http://publications.europa.eu/resource/authority/language/FRA": 957,
@@ -157,7 +191,18 @@
       "de": "Konkordat über die Gewährung gegenseitiger Rechtshilfe zur Vollstreckung öffentlichrechtlicher Ansprüche, Beitritt",
       "it": "Concordato sull'assistenza giudiziaria reciproca per l'esecuzione di pretese di diritto pubblico, Adesione",
       "fr": "Concordat sur l'entraide judiciaire pour l'exécution des prétentions de droit public, Adhésion"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/oc/1973/957_957_957/graph",
   "timestampms": null
 }

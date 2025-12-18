@@ -12,11 +12,13 @@
       "dateNoLongerInForce": {
         "xsd:date": "2005-01-01"
       },
-      "dateDocument": {
-        "xsd:date": "1979-02-26"
-      },
       "dateEntryInForce": {
         "xsd:date": "1979-01-01"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1978-12-31T23:00:00.000Z"
+        ]
       },
       "typeDocument": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/15"
@@ -26,6 +28,14 @@
       },
       "publicationDate": {
         "xsd:date": "1979-01-01"
+      },
+      "dateDocument": {
+        "xsd:date": "1979-02-26"
+      },
+      "created": {
+        "xsd:dateTime": [
+          "1978-12-31T23:00:00.000Z"
+        ]
       }
     },
     "references": {
@@ -34,6 +44,7 @@
         "https://fedlex.data.admin.ch/eli/oc/1979/252_252_252/fr",
         "https://fedlex.data.admin.ch/eli/oc/1979/252_252_252/de"
       ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/1",
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/oc/1979/1"
     }
   },
@@ -42,6 +53,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1979/252_252_252/it",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "RU 1979 252"
+        },
         "memorialName": {
           "xsd:string": "RU"
         },
@@ -51,11 +65,11 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1979/1/it"
         },
-        "memorialYear": {
-          "xsd:int": 1979
-        },
         "title": {
           "xsd:string": "Successione del Cantone del Giura nei concordati, dei quali è partecipe il Cantone di Berna, del 26 febbraio 1979"
+        },
+        "memorialYear": {
+          "xsd:int": 1979
         }
       },
       "references": {
@@ -66,6 +80,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1979/252_252_252/fr",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "RO 1979 252"
+        },
         "memorialName": {
           "xsd:string": "RO"
         },
@@ -75,11 +92,11 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1979/1/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1979
-        },
         "title": {
           "xsd:string": "Succession du canton du Jura aux concordats, auxquels le canton de Berne est partie, du 26 février 1979"
+        },
+        "memorialYear": {
+          "xsd:int": 1979
         }
       },
       "references": {
@@ -90,6 +107,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1979/252_252_252/de",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "AS 1979 252"
+        },
         "memorialName": {
           "xsd:string": "AS"
         },
@@ -99,16 +119,23 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1979/1/de"
         },
-        "memorialYear": {
-          "xsd:int": 1979
-        },
         "title": {
           "xsd:string": "Nachfolge des Kantons Jura in Konkordate, denen den Kanton Bern angehört, vom 26. Februar 1979"
+        },
+        "memorialYear": {
+          "xsd:int": 1979
         }
       },
       "references": {
         "language": "http://publications.europa.eu/resource/authority/language/DEU"
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/1",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/collection/oc/1979/1",
@@ -139,15 +166,22 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/oc/1979/252_252_252/graph",
   "facets": {
     "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/48",
+    "sortingDateTime": "1978-12-31T23:00Z",
     "sortingDate": "1979-01-01",
+    "memorialLabel_sort": {
+      "de": "1979.99.000252",
+      "it": "1979.99.000252",
+      "fr": "1979.99.000252"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "AS 1979 252",
       "http://publications.europa.eu/resource/authority/language/FRA": "RO 1979 252",
       "http://publications.europa.eu/resource/authority/language/ITA": "RU 1979 252"
     },
+    "modified": "1979-01-01T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 252,
       "http://publications.europa.eu/resource/authority/language/FRA": 252,
@@ -157,7 +191,18 @@
       "de": "Nachfolge des Kantons Jura in Konkordate, denen den Kanton Bern angehört, vom 26. Februar 1979",
       "it": "Successione del Cantone del Giura nei concordati, dei quali è partecipe il Cantone di Berna, del 26 febbraio 1979",
       "fr": "Succession du canton du Jura aux concordats, auxquels le canton de Berne est partie, du 26 février 1979"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/oc/1979/252_252_252/graph",
   "timestampms": null
 }

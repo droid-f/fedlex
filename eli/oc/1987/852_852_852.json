@@ -12,11 +12,13 @@
       "dateNoLongerInForce": {
         "xsd:date": "2005-01-01"
       },
-      "dateDocument": {
-        "xsd:date": "1987-07-14"
-      },
       "dateEntryInForce": {
         "xsd:date": "1987-06-06"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1987-06-05T22:00:00.000Z"
+        ]
       },
       "typeDocument": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/15"
@@ -26,6 +28,14 @@
       },
       "publicationDate": {
         "xsd:date": "1987-06-06"
+      },
+      "dateDocument": {
+        "xsd:date": "1987-07-14"
+      },
+      "created": {
+        "xsd:dateTime": [
+          "1987-06-05T22:00:00.000Z"
+        ]
       }
     },
     "references": {
@@ -34,6 +44,7 @@
         "https://fedlex.data.admin.ch/eli/oc/1987/852_852_852/fr",
         "https://fedlex.data.admin.ch/eli/oc/1987/852_852_852/it"
       ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/1",
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/oc/1987/1"
     }
   },
@@ -42,6 +53,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1987/852_852_852/de",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "AS 1987 852"
+        },
         "memorialName": {
           "xsd:string": "AS"
         },
@@ -51,11 +65,11 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1987/1/de"
         },
-        "memorialYear": {
-          "xsd:int": 1987
-        },
         "title": {
           "xsd:string": "Konkordat über die Schulkoordination, Beitritt"
+        },
+        "memorialYear": {
+          "xsd:int": 1987
         }
       },
       "references": {
@@ -66,6 +80,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1987/852_852_852/fr",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "RO 1987 852"
+        },
         "memorialName": {
           "xsd:string": "RO"
         },
@@ -75,11 +92,11 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1987/1/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1987
-        },
         "title": {
           "xsd:string": "Concordat sur la coordination scolaire, Adhésion"
+        },
+        "memorialYear": {
+          "xsd:int": 1987
         }
       },
       "references": {
@@ -90,6 +107,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1987/852_852_852/it",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "RU 1987 852"
+        },
         "memorialName": {
           "xsd:string": "RU"
         },
@@ -99,16 +119,23 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1987/1/it"
         },
-        "memorialYear": {
-          "xsd:int": 1987
-        },
         "title": {
           "xsd:string": "Concordato sulla coordinazione scolastica, Adesione"
+        },
+        "memorialYear": {
+          "xsd:int": 1987
         }
       },
       "references": {
         "language": "http://publications.europa.eu/resource/authority/language/ITA"
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/1",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/collection/oc/1987/1",
@@ -139,15 +166,22 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/oc/1987/852_852_852/graph",
   "facets": {
     "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/48",
+    "sortingDateTime": "1987-06-05T22:00Z",
     "sortingDate": "1987-06-06",
+    "memorialLabel_sort": {
+      "de": "1987.99.000852",
+      "it": "1987.99.000852",
+      "fr": "1987.99.000852"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "AS 1987 852",
       "http://publications.europa.eu/resource/authority/language/FRA": "RO 1987 852",
       "http://publications.europa.eu/resource/authority/language/ITA": "RU 1987 852"
     },
+    "modified": "1987-06-06T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 852,
       "http://publications.europa.eu/resource/authority/language/FRA": 852,
@@ -157,7 +191,18 @@
       "de": "Konkordat über die Schulkoordination, Beitritt",
       "it": "Concordato sulla coordinazione scolastica, Adesione",
       "fr": "Concordat sur la coordination scolaire, Adhésion"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/oc/1987/852_852_852/graph",
   "timestampms": null
 }

@@ -12,14 +12,6 @@
       "dateNoLongerInForce": {
         "xsd:date": "2005-01-01"
       },
-      "dateDocument": {
-        "xsd:date": "1963-05-28"
-      },
-      "created": {
-        "xsd:dateTime": [
-          "1963-05-27T23:00:00.000Z"
-        ]
-      },
       "dateEntryInForce": {
         "xsd:date": "1963-05-28"
       },
@@ -36,6 +28,14 @@
       },
       "publicationDate": {
         "xsd:date": "1963-05-28"
+      },
+      "dateDocument": {
+        "xsd:date": "1963-05-28"
+      },
+      "created": {
+        "xsd:dateTime": [
+          "1963-05-27T23:00:00.000Z"
+        ]
       }
     },
     "references": {
@@ -44,6 +44,7 @@
         "https://fedlex.data.admin.ch/eli/oc/1963/425_421_441/it",
         "https://fedlex.data.admin.ch/eli/oc/1963/425_421_441/fr"
       ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/1",
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/oc/1963/1"
     }
   },
@@ -52,6 +53,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1963/425_421_441/de",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "AS 1963 425"
+        },
         "memorialName": {
           "xsd:string": "AS"
         },
@@ -61,11 +65,11 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1963/1/de"
         },
-        "memorialYear": {
-          "xsd:int": 1963
-        },
         "title": {
           "xsd:string": "Konkordat zwischen den Kantonen der Schweizerischen Eidgenossenschaft über den Ausschluss von Steuerabkommen, Beitritt"
+        },
+        "memorialYear": {
+          "xsd:int": 1963
         }
       },
       "references": {
@@ -76,6 +80,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1963/425_421_441/it",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "RU 1963 441"
+        },
         "memorialName": {
           "xsd:string": "RU"
         },
@@ -85,11 +92,11 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1963/1/it"
         },
-        "memorialYear": {
-          "xsd:int": 1963
-        },
         "title": {
           "xsd:string": "Concordato tra i Cantoni della Confederazione Svizzera sul divieto di convenzioni fiscali, Adesione"
+        },
+        "memorialYear": {
+          "xsd:int": 1963
         }
       },
       "references": {
@@ -100,6 +107,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1963/425_421_441/fr",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "RO 1963 421"
+        },
         "memorialName": {
           "xsd:string": "RO"
         },
@@ -109,16 +119,23 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1963/1/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1963
-        },
         "title": {
           "xsd:string": "Concordat entre les cantons de la Confédération suisse sur l'interdiction des arrangements fiscaux, Adhésion"
+        },
+        "memorialYear": {
+          "xsd:int": 1963
         }
       },
       "references": {
         "language": "http://publications.europa.eu/resource/authority/language/FRA"
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/1",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/collection/oc/1963/1",
@@ -149,16 +166,22 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/oc/1963/425_421_441/graph",
   "facets": {
     "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/48",
     "sortingDateTime": "1963-05-27T23:00Z",
     "sortingDate": "1963-05-28",
+    "memorialLabel_sort": {
+      "de": "1963.99.000425",
+      "it": "1963.99.000441",
+      "fr": "1963.99.000421"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "AS 1963 425",
       "http://publications.europa.eu/resource/authority/language/FRA": "RO 1963 421",
       "http://publications.europa.eu/resource/authority/language/ITA": "RU 1963 441"
     },
+    "modified": "1963-05-28T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 425,
       "http://publications.europa.eu/resource/authority/language/FRA": 421,
@@ -168,7 +191,18 @@
       "de": "Konkordat zwischen den Kantonen der Schweizerischen Eidgenossenschaft über den Ausschluss von Steuerabkommen, Beitritt",
       "it": "Concordato tra i Cantoni della Confederazione Svizzera sul divieto di convenzioni fiscali, Adesione",
       "fr": "Concordat entre les cantons de la Confédération suisse sur l'interdiction des arrangements fiscaux, Adhésion"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/oc/1963/425_421_441/graph",
   "timestampms": null
 }

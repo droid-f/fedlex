@@ -12,11 +12,13 @@
       "dateNoLongerInForce": {
         "xsd:date": "2005-01-01"
       },
-      "dateDocument": {
-        "xsd:date": "1967-12-06"
-      },
       "dateEntryInForce": {
         "xsd:date": "1966-07-12"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1966-07-11T23:00:00.000Z"
+        ]
       },
       "typeDocument": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/15"
@@ -26,6 +28,14 @@
       },
       "publicationDate": {
         "xsd:date": "1966-07-12"
+      },
+      "dateDocument": {
+        "xsd:date": "1967-12-06"
+      },
+      "created": {
+        "xsd:dateTime": [
+          "1966-07-11T23:00:00.000Z"
+        ]
       }
     },
     "references": {
@@ -34,6 +44,7 @@
         "https://fedlex.data.admin.ch/eli/oc/1967/88_96_90/it",
         "https://fedlex.data.admin.ch/eli/oc/1967/88_96_90/de"
       ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/1",
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/oc/1967/1"
     }
   },
@@ -42,6 +53,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1967/88_96_90/fr",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "RO 1967 96"
+        },
         "memorialName": {
           "xsd:string": "RO"
         },
@@ -51,11 +65,11 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1967/1/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1967
-        },
         "title": {
           "xsd:string": "Concordat concernant les téléphériques et skilifts sans concession fédérale, Adhésion"
+        },
+        "memorialYear": {
+          "xsd:int": 1967
         }
       },
       "references": {
@@ -66,6 +80,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1967/88_96_90/it",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "RU 1967 90"
+        },
         "memorialName": {
           "xsd:string": "RU"
         },
@@ -75,11 +92,11 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1967/1/it"
         },
-        "memorialYear": {
-          "xsd:int": 1967
-        },
         "title": {
           "xsd:string": "Concordato concernente le finivie e le sciovie esonerate dalla concessione federale, Adesione"
+        },
+        "memorialYear": {
+          "xsd:int": 1967
         }
       },
       "references": {
@@ -90,6 +107,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1967/88_96_90/de",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "AS 1967 88"
+        },
         "memorialName": {
           "xsd:string": "AS"
         },
@@ -99,16 +119,23 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1967/1/de"
         },
-        "memorialYear": {
-          "xsd:int": 1967
-        },
         "title": {
           "xsd:string": "Konkordat über die nicht eidgenössisch konzessionierten Seilbahnen und Skilifte, Beitritt"
+        },
+        "memorialYear": {
+          "xsd:int": 1967
         }
       },
       "references": {
         "language": "http://publications.europa.eu/resource/authority/language/DEU"
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/1",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/collection/oc/1967/1",
@@ -139,15 +166,22 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/oc/1967/88_96_90/graph",
   "facets": {
     "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/48",
+    "sortingDateTime": "1966-07-11T23:00Z",
     "sortingDate": "1966-07-12",
+    "memorialLabel_sort": {
+      "de": "1967.99.000088",
+      "it": "1967.99.000090",
+      "fr": "1967.99.000096"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "AS 1967 88",
       "http://publications.europa.eu/resource/authority/language/FRA": "RO 1967 96",
       "http://publications.europa.eu/resource/authority/language/ITA": "RU 1967 90"
     },
+    "modified": "1966-07-12T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 88,
       "http://publications.europa.eu/resource/authority/language/FRA": 96,
@@ -157,7 +191,18 @@
       "de": "Konkordat über die nicht eidgenössisch konzessionierten Seilbahnen und Skilifte, Beitritt",
       "it": "Concordato concernente le finivie e le sciovie esonerate dalla concessione federale, Adesione",
       "fr": "Concordat concernant les téléphériques et skilifts sans concession fédérale, Adhésion"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/oc/1967/88_96_90/graph",
   "timestampms": null
 }

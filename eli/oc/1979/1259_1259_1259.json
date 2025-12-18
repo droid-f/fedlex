@@ -12,11 +12,13 @@
       "dateNoLongerInForce": {
         "xsd:date": "2005-01-01"
       },
-      "dateDocument": {
-        "xsd:date": "1979-09-19"
-      },
       "dateEntryInForce": {
         "xsd:date": "1979-07-24"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1979-07-23T23:00:00.000Z"
+        ]
       },
       "typeDocument": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/17"
@@ -26,6 +28,14 @@
       },
       "publicationDate": {
         "xsd:date": "1979-07-24"
+      },
+      "dateDocument": {
+        "xsd:date": "1979-09-19"
+      },
+      "created": {
+        "xsd:dateTime": [
+          "1979-07-23T23:00:00.000Z"
+        ]
       }
     },
     "references": {
@@ -34,6 +44,7 @@
         "https://fedlex.data.admin.ch/eli/oc/1979/1259_1259_1259/it",
         "https://fedlex.data.admin.ch/eli/oc/1979/1259_1259_1259/fr"
       ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/1",
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/oc/1979/1"
     }
   },
@@ -42,6 +53,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1979/1259_1259_1259/de",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "AS 1979 1259"
+        },
         "memorialName": {
           "xsd:string": "AS"
         },
@@ -51,11 +65,11 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1979/1/de"
         },
-        "memorialYear": {
-          "xsd:int": 1979
-        },
         "title": {
           "xsd:string": "Konkordat über die Vollstreckung von Zivilurteilen, Berichtigung (nur ital.)"
+        },
+        "memorialYear": {
+          "xsd:int": 1979
         }
       },
       "references": {
@@ -66,6 +80,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1979/1259_1259_1259/it",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "RU 1979 1259"
+        },
         "memorialName": {
           "xsd:string": "RU"
         },
@@ -75,11 +92,11 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1979/1/it"
         },
-        "memorialYear": {
-          "xsd:int": 1979
-        },
         "title": {
           "xsd:string": "Concordato sull'esecuzione delle sentenze in materia civile, Correzione"
+        },
+        "memorialYear": {
+          "xsd:int": 1979
         }
       },
       "references": {
@@ -90,6 +107,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1979/1259_1259_1259/fr",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "RO 1979 1259"
+        },
         "memorialName": {
           "xsd:string": "RO"
         },
@@ -99,16 +119,23 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1979/1/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1979
-        },
         "title": {
           "xsd:string": "Concordat sur l'exécution des jugements civils, Errata (seulement en italien)"
+        },
+        "memorialYear": {
+          "xsd:int": 1979
         }
       },
       "references": {
         "language": "http://publications.europa.eu/resource/authority/language/FRA"
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/1",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/collection/oc/1979/1",
@@ -139,15 +166,22 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/oc/1979/1259_1259_1259/graph",
   "facets": {
     "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/51",
+    "sortingDateTime": "1979-07-23T23:00Z",
     "sortingDate": "1979-07-24",
+    "memorialLabel_sort": {
+      "de": "1979.99.001259",
+      "it": "1979.99.001259",
+      "fr": "1979.99.001259"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "AS 1979 1259",
       "http://publications.europa.eu/resource/authority/language/FRA": "RO 1979 1259",
       "http://publications.europa.eu/resource/authority/language/ITA": "RU 1979 1259"
     },
+    "modified": "1979-07-24T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 1259,
       "http://publications.europa.eu/resource/authority/language/FRA": 1259,
@@ -157,7 +191,18 @@
       "de": "Konkordat über die Vollstreckung von Zivilurteilen, Berichtigung (nur ital.)",
       "it": "Concordato sull'esecuzione delle sentenze in materia civile, Correzione",
       "fr": "Concordat sur l'exécution des jugements civils, Errata (seulement en italien)"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/oc/1979/1259_1259_1259/graph",
   "timestampms": null
 }

@@ -9,11 +9,13 @@
       "legalResourceGenre": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/legal-resource-genre/300"
       },
-      "dateDocument": {
-        "xsd:date": "1980-01-19"
-      },
       "dateEntryInForce": {
         "xsd:date": "1980-01-01"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1979-12-31T23:00:00.000Z"
+        ]
       },
       "typeDocument": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/15"
@@ -23,6 +25,14 @@
       },
       "publicationDate": {
         "xsd:date": "1980-01-01"
+      },
+      "dateDocument": {
+        "xsd:date": "1980-01-19"
+      },
+      "created": {
+        "xsd:dateTime": [
+          "1979-12-31T23:00:00.000Z"
+        ]
       }
     },
     "references": {
@@ -31,6 +41,7 @@
         "https://fedlex.data.admin.ch/eli/oc/1980/166_166_166/it",
         "https://fedlex.data.admin.ch/eli/oc/1980/166_166_166/de"
       ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/1",
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/oc/1980/1"
     }
   },
@@ -39,6 +50,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1980/166_166_166/fr",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "RO 1980 166"
+        },
         "memorialName": {
           "xsd:string": "RO"
         },
@@ -48,11 +62,11 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1980/1/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1980
-        },
         "title": {
           "xsd:string": "Adhésion du canton du Jura à divers concordats, du 19 février 1980"
+        },
+        "memorialYear": {
+          "xsd:int": 1980
         }
       },
       "references": {
@@ -63,6 +77,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1980/166_166_166/it",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "RU 1980 166"
+        },
         "memorialName": {
           "xsd:string": "RU"
         },
@@ -72,11 +89,11 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1980/1/it"
         },
-        "memorialYear": {
-          "xsd:int": 1980
-        },
         "title": {
           "xsd:string": "Adesione del Canton Giura a diversi concordati, del 19 febbraio 1980"
+        },
+        "memorialYear": {
+          "xsd:int": 1980
         }
       },
       "references": {
@@ -87,6 +104,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1980/166_166_166/de",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "AS 1980 166"
+        },
         "memorialName": {
           "xsd:string": "AS"
         },
@@ -96,16 +116,23 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1980/1/de"
         },
-        "memorialYear": {
-          "xsd:int": 1980
-        },
         "title": {
           "xsd:string": "Beitritt des Kantons Jura zu verschiedenen Konkordaten, vom 19. Januar 1980"
+        },
+        "memorialYear": {
+          "xsd:int": 1980
         }
       },
       "references": {
         "language": "http://publications.europa.eu/resource/authority/language/DEU"
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/1",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/collection/oc/1980/1",
@@ -136,15 +163,22 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/oc/1980/166_166_166/graph",
   "facets": {
     "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/48",
+    "sortingDateTime": "1979-12-31T23:00Z",
     "sortingDate": "1980-01-01",
+    "memorialLabel_sort": {
+      "de": "1980.99.000166",
+      "it": "1980.99.000166",
+      "fr": "1980.99.000166"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "AS 1980 166",
       "http://publications.europa.eu/resource/authority/language/FRA": "RO 1980 166",
       "http://publications.europa.eu/resource/authority/language/ITA": "RU 1980 166"
     },
+    "modified": "1980-01-01T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 166,
       "http://publications.europa.eu/resource/authority/language/FRA": 166,
@@ -154,7 +188,18 @@
       "de": "Beitritt des Kantons Jura zu verschiedenen Konkordaten, vom 19. Januar 1980",
       "it": "Adesione del Canton Giura a diversi concordati, del 19 febbraio 1980",
       "fr": "Adhésion du canton du Jura à divers concordats, du 19 février 1980"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/oc/1980/166_166_166/graph",
   "timestampms": null
 }

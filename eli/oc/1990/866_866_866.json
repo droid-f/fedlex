@@ -12,11 +12,13 @@
       "dateNoLongerInForce": {
         "xsd:date": "2005-01-01"
       },
-      "dateDocument": {
-        "xsd:date": "1990-06-12"
-      },
       "dateEntryInForce": {
         "xsd:date": "1990-06-12"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1990-06-11T22:00:00.000Z"
+        ]
       },
       "typeDocument": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/15"
@@ -26,6 +28,14 @@
       },
       "publicationDate": {
         "xsd:date": "1990-06-12"
+      },
+      "dateDocument": {
+        "xsd:date": "1990-06-12"
+      },
+      "created": {
+        "xsd:dateTime": [
+          "1990-06-11T22:00:00.000Z"
+        ]
       }
     },
     "references": {
@@ -34,6 +44,7 @@
         "https://fedlex.data.admin.ch/eli/oc/1990/866_866_866/it",
         "https://fedlex.data.admin.ch/eli/oc/1990/866_866_866/fr"
       ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/1",
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/oc/1990/1"
     }
   },
@@ -42,6 +53,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1990/866_866_866/de",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "AS 1990 866"
+        },
         "memorialName": {
           "xsd:string": "AS"
         },
@@ -51,11 +65,11 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1990/1/de"
         },
-        "memorialYear": {
-          "xsd:int": 1990
-        },
         "title": {
           "xsd:string": "Konkordat über die Gewährung gegenseitiger Rechtshilfe in Zivilsachen, Beitritt"
+        },
+        "memorialYear": {
+          "xsd:int": 1990
         }
       },
       "references": {
@@ -66,6 +80,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1990/866_866_866/it",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "RU 1990 866"
+        },
         "memorialName": {
           "xsd:string": "RU"
         },
@@ -75,11 +92,11 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1990/1/it"
         },
-        "memorialYear": {
-          "xsd:int": 1990
-        },
         "title": {
           "xsd:string": "Concordato sull'assistenza giudiziaria in materia civile, Adesione"
+        },
+        "memorialYear": {
+          "xsd:int": 1990
         }
       },
       "references": {
@@ -90,6 +107,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1990/866_866_866/fr",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "RO 1990 866"
+        },
         "memorialName": {
           "xsd:string": "RO"
         },
@@ -99,16 +119,23 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1990/1/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1990
-        },
         "title": {
           "xsd:string": "Concordat sur l'entraide judiciaire en matière civile, Adhésion"
+        },
+        "memorialYear": {
+          "xsd:int": 1990
         }
       },
       "references": {
         "language": "http://publications.europa.eu/resource/authority/language/FRA"
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/1",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/collection/oc/1990/1",
@@ -139,15 +166,22 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/oc/1990/866_866_866/graph",
   "facets": {
     "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/48",
+    "sortingDateTime": "1990-06-11T22:00Z",
     "sortingDate": "1990-06-12",
+    "memorialLabel_sort": {
+      "de": "1990.99.000866",
+      "it": "1990.99.000866",
+      "fr": "1990.99.000866"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "AS 1990 866",
       "http://publications.europa.eu/resource/authority/language/FRA": "RO 1990 866",
       "http://publications.europa.eu/resource/authority/language/ITA": "RU 1990 866"
     },
+    "modified": "1990-06-12T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 866,
       "http://publications.europa.eu/resource/authority/language/FRA": 866,
@@ -157,7 +191,18 @@
       "de": "Konkordat über die Gewährung gegenseitiger Rechtshilfe in Zivilsachen, Beitritt",
       "it": "Concordato sull'assistenza giudiziaria in materia civile, Adesione",
       "fr": "Concordat sur l'entraide judiciaire en matière civile, Adhésion"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/oc/1990/866_866_866/graph",
   "timestampms": null
 }

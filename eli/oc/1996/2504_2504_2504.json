@@ -12,11 +12,13 @@
       "dateNoLongerInForce": {
         "xsd:date": "2005-01-01"
       },
-      "dateDocument": {
-        "xsd:date": "1996-09-03"
-      },
       "dateEntryInForce": {
         "xsd:date": "1996-09-03"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1996-09-02T22:00:00.000Z"
+        ]
       },
       "typeDocument": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/15"
@@ -26,6 +28,14 @@
       },
       "publicationDate": {
         "xsd:date": "1996-09-03"
+      },
+      "dateDocument": {
+        "xsd:date": "1996-09-03"
+      },
+      "created": {
+        "xsd:dateTime": [
+          "1996-09-02T22:00:00.000Z"
+        ]
       }
     },
     "references": {
@@ -34,6 +44,7 @@
         "https://fedlex.data.admin.ch/eli/oc/1996/2504_2504_2504/it",
         "https://fedlex.data.admin.ch/eli/oc/1996/2504_2504_2504/fr"
       ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/1",
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/oc/1996/1"
     }
   },
@@ -42,6 +53,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1996/2504_2504_2504/de",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "AS 1996 2504"
+        },
         "memorialName": {
           "xsd:string": "AS"
         },
@@ -51,11 +65,11 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1996/1/de"
         },
-        "memorialYear": {
-          "xsd:int": 1996
-        },
         "title": {
           "xsd:string": "Interkantonale Vereinbarung über das öffentliche Beschaffungswesen, Beitritt"
+        },
+        "memorialYear": {
+          "xsd:int": 1996
         }
       },
       "references": {
@@ -66,6 +80,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1996/2504_2504_2504/it",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "RU 1996 2504"
+        },
         "memorialName": {
           "xsd:string": "RU"
         },
@@ -75,11 +92,11 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1996/1/it"
         },
-        "memorialYear": {
-          "xsd:int": 1996
-        },
         "title": {
           "xsd:string": "Concordato intercantonale sugli appalati pubblici, Adesione"
+        },
+        "memorialYear": {
+          "xsd:int": 1996
         }
       },
       "references": {
@@ -90,6 +107,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1996/2504_2504_2504/fr",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "RO 1996 2504"
+        },
         "memorialName": {
           "xsd:string": "RO"
         },
@@ -99,16 +119,23 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1996/1/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1996
-        },
         "title": {
           "xsd:string": "Accord intercantonal sur les marchés publics, Adhésion"
+        },
+        "memorialYear": {
+          "xsd:int": 1996
         }
       },
       "references": {
         "language": "http://publications.europa.eu/resource/authority/language/FRA"
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/1",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/collection/oc/1996/1",
@@ -139,15 +166,22 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/oc/1996/2504_2504_2504/graph",
   "facets": {
     "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/48",
+    "sortingDateTime": "1996-09-02T22:00Z",
     "sortingDate": "1996-09-03",
+    "memorialLabel_sort": {
+      "de": "1996.99.002504",
+      "it": "1996.99.002504",
+      "fr": "1996.99.002504"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "AS 1996 2504",
       "http://publications.europa.eu/resource/authority/language/FRA": "RO 1996 2504",
       "http://publications.europa.eu/resource/authority/language/ITA": "RU 1996 2504"
     },
+    "modified": "1996-09-03T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 2504,
       "http://publications.europa.eu/resource/authority/language/FRA": 2504,
@@ -157,7 +191,18 @@
       "de": "Interkantonale Vereinbarung über das öffentliche Beschaffungswesen, Beitritt",
       "it": "Concordato intercantonale sugli appalati pubblici, Adesione",
       "fr": "Accord intercantonal sur les marchés publics, Adhésion"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/oc/1996/2504_2504_2504/graph",
   "timestampms": null
 }

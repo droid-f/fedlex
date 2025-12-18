@@ -12,11 +12,13 @@
       "dateNoLongerInForce": {
         "xsd:date": "2005-01-01"
       },
-      "dateDocument": {
-        "xsd:date": "1947-03-21"
-      },
       "dateEntryInForce": {
         "xsd:date": "1947-04-01"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1947-03-31T23:00:00.000Z"
+        ]
       },
       "typeDocument": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/11"
@@ -26,6 +28,14 @@
       },
       "publicationDate": {
         "xsd:date": "1947-04-01"
+      },
+      "dateDocument": {
+        "xsd:date": "1947-03-21"
+      },
+      "created": {
+        "xsd:dateTime": [
+          "1947-03-31T23:00:00.000Z"
+        ]
       }
     },
     "references": {
@@ -34,6 +44,7 @@
         "https://fedlex.data.admin.ch/eli/oc/63/256_220_226/it",
         "https://fedlex.data.admin.ch/eli/oc/63/256_220_226/de"
       ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/1",
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/oc/1/63"
     }
   },
@@ -42,6 +53,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/63/256_220_226/fr",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "RO 63 220"
+        },
         "memorialName": {
           "xsd:string": "RO"
         },
@@ -51,11 +65,11 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1/63/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1
-        },
         "title": {
           "xsd:string": "Concordat concernant les frais d'exécution des peines et autres mesures, Adhésion"
+        },
+        "memorialYear": {
+          "xsd:int": 1
         }
       },
       "references": {
@@ -66,6 +80,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/63/256_220_226/it",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "RU 63 226"
+        },
         "memorialName": {
           "xsd:string": "RU"
         },
@@ -75,11 +92,11 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1/63/it"
         },
-        "memorialYear": {
-          "xsd:int": 1
-        },
         "title": {
           "xsd:string": "Concordato concernente le spese di esecuzione delle pene e di altre misure, Accessione"
+        },
+        "memorialYear": {
+          "xsd:int": 1
         }
       },
       "references": {
@@ -90,6 +107,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/63/256_220_226/de",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "AS 63 256"
+        },
         "memorialName": {
           "xsd:string": "AS"
         },
@@ -99,16 +119,23 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1/63/de"
         },
-        "memorialYear": {
-          "xsd:int": 1
-        },
         "title": {
           "xsd:string": "Konkordat über die Kosten des Strafvollzugs, Beitritt"
+        },
+        "memorialYear": {
+          "xsd:int": 1
         }
       },
       "references": {
         "language": "http://publications.europa.eu/resource/authority/language/DEU"
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/1",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/collection/oc/1/63",
@@ -139,15 +166,22 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/oc/63/256_220_226/graph",
   "facets": {
     "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/49",
+    "sortingDateTime": "1947-03-31T23:00Z",
     "sortingDate": "1947-04-01",
+    "memorialLabel_sort": {
+      "de": "0163.99.000256",
+      "it": "0163.99.000226",
+      "fr": "0163.99.000220"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "AS 63 256",
       "http://publications.europa.eu/resource/authority/language/FRA": "RO 63 220",
       "http://publications.europa.eu/resource/authority/language/ITA": "RU 63 226"
     },
+    "modified": "1947-04-01T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 256,
       "http://publications.europa.eu/resource/authority/language/FRA": 220,
@@ -157,7 +191,18 @@
       "de": "Konkordat über die Kosten des Strafvollzugs, Beitritt",
       "it": "Concordato concernente le spese di esecuzione delle pene e di altre misure, Accessione",
       "fr": "Concordat concernant les frais d'exécution des peines et autres mesures, Adhésion"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/oc/63/256_220_226/graph",
   "timestampms": null
 }

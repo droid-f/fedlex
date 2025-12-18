@@ -12,11 +12,13 @@
       "dateNoLongerInForce": {
         "xsd:date": "2005-01-01"
       },
-      "dateDocument": {
-        "xsd:date": "1995-06-06"
-      },
       "dateEntryInForce": {
         "xsd:date": "1995-06-06"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1995-06-05T22:00:00.000Z"
+        ]
       },
       "typeDocument": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/15"
@@ -26,6 +28,14 @@
       },
       "publicationDate": {
         "xsd:date": "1995-06-06"
+      },
+      "dateDocument": {
+        "xsd:date": "1995-06-06"
+      },
+      "created": {
+        "xsd:dateTime": [
+          "1995-06-05T22:00:00.000Z"
+        ]
       }
     },
     "references": {
@@ -34,6 +44,7 @@
         "https://fedlex.data.admin.ch/eli/oc/1995/1442_1442_1442/fr",
         "https://fedlex.data.admin.ch/eli/oc/1995/1442_1442_1442/it"
       ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/1",
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/oc/1995/1"
     }
   },
@@ -42,6 +53,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1995/1442_1442_1442/de",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "AS 1995 1442"
+        },
         "memorialName": {
           "xsd:string": "AS"
         },
@@ -51,11 +65,11 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1995/1/de"
         },
-        "memorialYear": {
-          "xsd:int": 1995
-        },
         "title": {
           "xsd:string": "Konkordat über die Vollstreckung von Zivilurteilen, Änderung"
+        },
+        "memorialYear": {
+          "xsd:int": 1995
         }
       },
       "references": {
@@ -66,6 +80,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1995/1442_1442_1442/fr",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "RO 1995 1442"
+        },
         "memorialName": {
           "xsd:string": "RO"
         },
@@ -75,11 +92,11 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1995/1/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1995
-        },
         "title": {
           "xsd:string": "Concordat sur l'exécution des jugements civils, Modification"
+        },
+        "memorialYear": {
+          "xsd:int": 1995
         }
       },
       "references": {
@@ -90,6 +107,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1995/1442_1442_1442/it",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "RU 1995 1442"
+        },
         "memorialName": {
           "xsd:string": "RU"
         },
@@ -99,16 +119,23 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1995/1/it"
         },
-        "memorialYear": {
-          "xsd:int": 1995
-        },
         "title": {
           "xsd:string": "Concordato sull'esecuzione delle sentenze in materia civile, Modifica"
+        },
+        "memorialYear": {
+          "xsd:int": 1995
         }
       },
       "references": {
         "language": "http://publications.europa.eu/resource/authority/language/ITA"
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/1",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/collection/oc/1995/1",
@@ -139,15 +166,22 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/oc/1995/1442_1442_1442/graph",
   "facets": {
     "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/48",
+    "sortingDateTime": "1995-06-05T22:00Z",
     "sortingDate": "1995-06-06",
+    "memorialLabel_sort": {
+      "de": "1995.99.001442",
+      "it": "1995.99.001442",
+      "fr": "1995.99.001442"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "AS 1995 1442",
       "http://publications.europa.eu/resource/authority/language/FRA": "RO 1995 1442",
       "http://publications.europa.eu/resource/authority/language/ITA": "RU 1995 1442"
     },
+    "modified": "1995-06-06T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 1442,
       "http://publications.europa.eu/resource/authority/language/FRA": 1442,
@@ -157,7 +191,18 @@
       "de": "Konkordat über die Vollstreckung von Zivilurteilen, Änderung",
       "it": "Concordato sull'esecuzione delle sentenze in materia civile, Modifica",
       "fr": "Concordat sur l'exécution des jugements civils, Modification"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/oc/1995/1442_1442_1442/graph",
   "timestampms": null
 }

@@ -12,11 +12,13 @@
       "dateNoLongerInForce": {
         "xsd:date": "2005-01-01"
       },
-      "dateDocument": {
-        "xsd:date": "1971-06-14"
-      },
       "dateEntryInForce": {
         "xsd:date": "1971-12-02"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1971-12-01T23:00:00.000Z"
+        ]
       },
       "typeDocument": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/15"
@@ -26,6 +28,14 @@
       },
       "publicationDate": {
         "xsd:date": "1971-12-02"
+      },
+      "dateDocument": {
+        "xsd:date": "1971-06-14"
+      },
+      "created": {
+        "xsd:dateTime": [
+          "1971-12-01T23:00:00.000Z"
+        ]
       }
     },
     "references": {
@@ -34,6 +44,7 @@
         "https://fedlex.data.admin.ch/eli/oc/1971/1844_1849_1849/fr",
         "https://fedlex.data.admin.ch/eli/oc/1971/1844_1849_1849/it"
       ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/1",
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/oc/1971/1"
     }
   },
@@ -42,6 +53,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1971/1844_1849_1849/de",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "AS 1971 1844"
+        },
         "memorialName": {
           "xsd:string": "AS"
         },
@@ -51,11 +65,11 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1971/1/de"
         },
-        "memorialYear": {
-          "xsd:int": 1971
-        },
         "title": {
           "xsd:string": "Konkordat betreffend das landwirtschaftliche Technikum, Beitritt"
+        },
+        "memorialYear": {
+          "xsd:int": 1971
         }
       },
       "references": {
@@ -66,6 +80,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1971/1844_1849_1849/fr",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "RO 1971 1849"
+        },
         "memorialName": {
           "xsd:string": "RO"
         },
@@ -75,11 +92,11 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1971/1/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1971
-        },
         "title": {
           "xsd:string": "Concordat concernant le Technicum agricole, Adhésion"
+        },
+        "memorialYear": {
+          "xsd:int": 1971
         }
       },
       "references": {
@@ -90,6 +107,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1971/1844_1849_1849/it",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "RU 1971 1849"
+        },
         "memorialName": {
           "xsd:string": "RU"
         },
@@ -99,16 +119,23 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1971/1/it"
         },
-        "memorialYear": {
-          "xsd:int": 1971
-        },
         "title": {
           "xsd:string": "Concordato concernente la Scuola tecnica superiore d'agraria, adesione"
+        },
+        "memorialYear": {
+          "xsd:int": 1971
         }
       },
       "references": {
         "language": "http://publications.europa.eu/resource/authority/language/ITA"
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/1",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/collection/oc/1971/1",
@@ -139,15 +166,22 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/oc/1971/1844_1849_1849/graph",
   "facets": {
     "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/48",
+    "sortingDateTime": "1971-12-01T23:00Z",
     "sortingDate": "1971-12-02",
+    "memorialLabel_sort": {
+      "de": "1971.99.001844",
+      "it": "1971.99.001849",
+      "fr": "1971.99.001849"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "AS 1971 1844",
       "http://publications.europa.eu/resource/authority/language/FRA": "RO 1971 1849",
       "http://publications.europa.eu/resource/authority/language/ITA": "RU 1971 1849"
     },
+    "modified": "1971-12-02T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 1844,
       "http://publications.europa.eu/resource/authority/language/FRA": 1849,
@@ -157,7 +191,18 @@
       "de": "Konkordat betreffend das landwirtschaftliche Technikum, Beitritt",
       "it": "Concordato concernente la Scuola tecnica superiore d'agraria, adesione",
       "fr": "Concordat concernant le Technicum agricole, Adhésion"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/oc/1971/1844_1849_1849/graph",
   "timestampms": null
 }

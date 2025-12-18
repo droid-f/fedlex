@@ -12,14 +12,6 @@
       "dateNoLongerInForce": {
         "xsd:date": "2005-01-01"
       },
-      "dateDocument": {
-        "xsd:date": "1972-11-27"
-      },
-      "created": {
-        "xsd:dateTime": [
-          "1973-06-17T23:00:00.000Z"
-        ]
-      },
       "dateEntryInForce": {
         "xsd:date": "1973-06-18"
       },
@@ -36,6 +28,14 @@
       },
       "publicationDate": {
         "xsd:date": "1973-06-18"
+      },
+      "dateDocument": {
+        "xsd:date": "1972-11-27"
+      },
+      "created": {
+        "xsd:dateTime": [
+          "1973-06-17T23:00:00.000Z"
+        ]
       }
     },
     "references": {
@@ -44,6 +44,7 @@
         "https://fedlex.data.admin.ch/eli/oc/1973/992_992_992/it",
         "https://fedlex.data.admin.ch/eli/oc/1973/992_992_992/fr"
       ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/1",
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/oc/1973/1"
     }
   },
@@ -52,6 +53,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1973/992_992_992/de",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "AS 1973 992"
+        },
         "memorialName": {
           "xsd:string": "AS"
         },
@@ -61,11 +65,11 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1973/1/de"
         },
-        "memorialYear": {
-          "xsd:int": 1973
-        },
         "title": {
           "xsd:string": "Konkordat über die nicht eidgenössisch konzessionierten Seilbahnen und Skilifte, Änderung"
+        },
+        "memorialYear": {
+          "xsd:int": 1973
         }
       },
       "references": {
@@ -76,6 +80,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1973/992_992_992/it",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "RU 1973 992"
+        },
         "memorialName": {
           "xsd:string": "RU"
         },
@@ -85,11 +92,11 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1973/1/it"
         },
-        "memorialYear": {
-          "xsd:int": 1973
-        },
         "title": {
           "xsd:string": "Concordato concernente le funivie e le sciovie esonerati dalla concessione federale, Modifica"
+        },
+        "memorialYear": {
+          "xsd:int": 1973
         }
       },
       "references": {
@@ -100,6 +107,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1973/992_992_992/fr",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "RO 1973 992"
+        },
         "memorialName": {
           "xsd:string": "RO"
         },
@@ -109,16 +119,23 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1973/1/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1973
-        },
         "title": {
           "xsd:string": "Concordat concernant les téléphériques et skilifts sans concession fédérale, Modification"
+        },
+        "memorialYear": {
+          "xsd:int": 1973
         }
       },
       "references": {
         "language": "http://publications.europa.eu/resource/authority/language/FRA"
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/1",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/collection/oc/1973/1",
@@ -149,16 +166,22 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/oc/1973/992_992_992/graph",
   "facets": {
     "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/48",
     "sortingDateTime": "1973-06-17T23:00Z",
     "sortingDate": "1973-06-18",
+    "memorialLabel_sort": {
+      "de": "1973.99.000992",
+      "it": "1973.99.000992",
+      "fr": "1973.99.000992"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "AS 1973 992",
       "http://publications.europa.eu/resource/authority/language/FRA": "RO 1973 992",
       "http://publications.europa.eu/resource/authority/language/ITA": "RU 1973 992"
     },
+    "modified": "1973-06-18T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 992,
       "http://publications.europa.eu/resource/authority/language/FRA": 992,
@@ -168,7 +191,18 @@
       "de": "Konkordat über die nicht eidgenössisch konzessionierten Seilbahnen und Skilifte, Änderung",
       "it": "Concordato concernente le funivie e le sciovie esonerati dalla concessione federale, Modifica",
       "fr": "Concordat concernant les téléphériques et skilifts sans concession fédérale, Modification"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/oc/1973/992_992_992/graph",
   "timestampms": null
 }

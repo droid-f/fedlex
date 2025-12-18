@@ -12,14 +12,6 @@
       "dateNoLongerInForce": {
         "xsd:date": "2005-01-01"
       },
-      "dateDocument": {
-        "xsd:date": "1968-03-15"
-      },
-      "created": {
-        "xsd:dateTime": [
-          "1968-02-08T23:00:00.000Z"
-        ]
-      },
       "dateEntryInForce": {
         "xsd:date": "1968-02-09"
       },
@@ -36,6 +28,14 @@
       },
       "publicationDate": {
         "xsd:date": "1968-02-09"
+      },
+      "dateDocument": {
+        "xsd:date": "1968-03-15"
+      },
+      "created": {
+        "xsd:dateTime": [
+          "1968-02-08T23:00:00.000Z"
+        ]
       }
     },
     "references": {
@@ -44,6 +44,7 @@
         "https://fedlex.data.admin.ch/eli/oc/1968/443_466_467/it",
         "https://fedlex.data.admin.ch/eli/oc/1968/443_466_467/de"
       ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/1",
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/oc/1968/1"
     }
   },
@@ -52,6 +53,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1968/443_466_467/fr",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "RO 1968 466"
+        },
         "memorialName": {
           "xsd:string": "RO"
         },
@@ -61,11 +65,11 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1968/1/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1968
-        },
         "title": {
           "xsd:string": "Concordat concernant les installations de transport par câbles et skilifts sans concession fédérale, Adhésion"
+        },
+        "memorialYear": {
+          "xsd:int": 1968
         }
       },
       "references": {
@@ -76,6 +80,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1968/443_466_467/it",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "RU 1968 467"
+        },
         "memorialName": {
           "xsd:string": "RU"
         },
@@ -85,11 +92,11 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1968/1/it"
         },
-        "memorialYear": {
-          "xsd:int": 1968
-        },
         "title": {
           "xsd:string": "Concordato concernente gli impianti di trasporto a fune e le sciovie esonerati dalla concessione federale, Adesione"
+        },
+        "memorialYear": {
+          "xsd:int": 1968
         }
       },
       "references": {
@@ -100,6 +107,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/oc/1968/443_466_467/de",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "AS 1968 443"
+        },
         "memorialName": {
           "xsd:string": "AS"
         },
@@ -109,16 +119,23 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/oc/1968/1/de"
         },
-        "memorialYear": {
-          "xsd:int": 1968
-        },
         "title": {
           "xsd:string": "Konkordat über die nicht eidgenössisch konzessionierten Seilbahnen und Skilifte, Beitritt"
+        },
+        "memorialYear": {
+          "xsd:int": 1968
         }
       },
       "references": {
         "language": "http://publications.europa.eu/resource/authority/language/DEU"
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/1",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/collection/oc/1968/1",
@@ -149,16 +166,22 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/oc/1968/443_466_467/graph",
   "facets": {
     "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/48",
     "sortingDateTime": "1968-02-08T23:00Z",
     "sortingDate": "1968-02-09",
+    "memorialLabel_sort": {
+      "de": "1968.99.000443",
+      "it": "1968.99.000467",
+      "fr": "1968.99.000466"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "AS 1968 443",
       "http://publications.europa.eu/resource/authority/language/FRA": "RO 1968 466",
       "http://publications.europa.eu/resource/authority/language/ITA": "RU 1968 467"
     },
+    "modified": "1968-02-09T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 443,
       "http://publications.europa.eu/resource/authority/language/FRA": 466,
@@ -177,5 +200,9 @@
       "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/oc/1968/443_466_467/graph",
   "timestampms": null
 }
