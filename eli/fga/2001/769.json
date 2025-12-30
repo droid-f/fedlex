@@ -9,6 +9,17 @@
       "legalResourceGenre": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/legal-resource-genre/900"
       },
+      "modified": {
+        "xsd:dateTime": [
+          "2001-09-10T22:00:00.000Z"
+        ]
+      },
+      "typeDocument": {
+        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/88"
+      },
+      "publicationDate": {
+        "xsd:date": "2001-09-11"
+      },
       "created": {
         "xsd:dateTime": [
           "2001-09-10T22:00:00.000Z"
@@ -16,17 +27,6 @@
       },
       "sequenceInTheYearOfPublication": {
         "xsd:int": 769
-      },
-      "modified": {
-        "xsd:dateTime": [
-          "2001-09-10T22:00:00.000Z"
-        ]
-      },
-      "typeDocument": {
-        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/33"
-      },
-      "publicationDate": {
-        "xsd:date": "2001-09-11"
       }
     },
     "references": {
@@ -48,17 +48,21 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/2001/769/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/2001/769/de/doc",
-          "https://fedlex.data.admin.ch/eli/fga/2001/769/de/pdf-x",
-          "https://fedlex.data.admin.ch/eli/fga/2001/769/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 2001 4721"
+        },
         "memorialName": {
           "xsd:string": "BBl"
+        },
+        "memorialPage": {
+          "xsd:int": 4721
+        },
+        "isPartOf": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/2001/36/de"
+        },
+        "title": {
+          "xsd:string": "Flughafen Samedan Erneuerung der Betriebskonzession und Genehmigung des Betriebsreglements"
         },
         "memorialPageTo": {
           "xsd:int": 4721
@@ -66,21 +70,20 @@
         "titleAlternative": {
           "xsd:string": "Flughafen Samedan Erneuerung der Betriebskonzession und Genehmigung des Betriebsreglements"
         },
-        "memorialPage": {
-          "xsd:int": 4721
-        },
         "titleShort": {
           "xsd:string": "Konzession Flughafen Samedan"
         },
-        "isPartOf": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/2001/36/de"
-        },
         "memorialYear": {
           "xsd:int": 2001
-        },
-        "title": {
-          "xsd:string": "Flughafen Samedan Erneuerung der Betriebskonzession und Genehmigung des Betriebsreglements"
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/2001/769/de/doc",
+          "https://fedlex.data.admin.ch/eli/fga/2001/769/de/pdf-x",
+          "https://fedlex.data.admin.ch/eli/fga/2001/769/de/pdf-a"
+        ]
       }
     },
     {
@@ -91,6 +94,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/2001/769/de/doc",
       "type": "Manifestation",
       "references": {
@@ -98,14 +108,14 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2001/769/de/doc/fedlex-data-admin-ch-eli-fga-2001-769-de-doc.doc"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
         }
       }
     },
@@ -117,14 +127,14 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDFX"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2001/769/de/pdf-x/fedlex-data-admin-ch-eli-fga-2001-769-de-pdf-x.pdf"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-x"
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDFX"
         }
       }
     },
@@ -136,26 +146,24 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2001/769/de/pdf-a/fedlex-data-admin-ch-eli-fga-2001-769-de-pdf-a.pdf"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        "numberOfPages": {
+          "xsd:int": [
+            1
+          ]
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2001/769/de/pdf-a/fedlex-data-admin-ch-eli-fga-2001-769-de-pdf-a.pdf"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -165,7 +173,6 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/2001/769/graph",
   "facets": {
     "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/51",
     "sortingDateTime": "2001-09-10T22:00Z",
@@ -173,9 +180,14 @@
     "titleAlternative": {
       "de": "Flughafen Samedan Erneuerung der Betriebskonzession und Genehmigung des Betriebsreglements"
     },
+    "memorialLabel_sort": {
+      "de": "2001.99.004721"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 2001 4721"
     },
+    "modified": "2001-09-11T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 4721
     },
@@ -184,7 +196,18 @@
     },
     "title": {
       "de": "Flughafen Samedan Erneuerung der Betriebskonzession und Genehmigung des Betriebsreglements"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/2001/769/graph",
   "timestampms": null
 }
