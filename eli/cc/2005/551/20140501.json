@@ -6,8 +6,18 @@
       "Work"
     ],
     "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "2014-04-30T22:00:00.000Z"
+        ]
+      },
       "dateEndApplicability": {
         "xsd:date": "2015-12-31"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "2014-04-30T22:00:00.000Z"
+        ]
       },
       "isMemberOf": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/cc/2005/551"
@@ -21,8 +31,8 @@
         "https://fedlex.data.admin.ch/eli/cc/2005/551/20140501/de",
         "https://fedlex.data.admin.ch/eli/cc/2005/551/20140501/fr",
         "https://fedlex.data.admin.ch/eli/cc/2005/551/20140501/en",
-        "https://fedlex.data.admin.ch/eli/cc/2005/551/20140501/it",
-        "https://fedlex.data.admin.ch/eli/cc/2005/551/20140501/rm"
+        "https://fedlex.data.admin.ch/eli/cc/2005/551/20140501/rm",
+        "https://fedlex.data.admin.ch/eli/cc/2005/551/20140501/it"
       ]
     }
   },
@@ -31,10 +41,10 @@
       "uri": "https://fedlex.data.admin.ch/eli/cc/2005/551/20140501/de",
       "type": "Expression",
       "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
         "isEmbodiedBy": [
           "https://fedlex.data.admin.ch/eli/cc/2005/551/20140501/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
+        ]
       },
       "attributes": {
         "title": {
@@ -46,10 +56,10 @@
       "uri": "https://fedlex.data.admin.ch/eli/cc/2005/551/20140501/fr",
       "type": "Expression",
       "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
         "isEmbodiedBy": [
           "https://fedlex.data.admin.ch/eli/cc/2005/551/20140501/fr/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+        ]
       },
       "attributes": {
         "title": {
@@ -70,21 +80,6 @@
       }
     },
     {
-      "uri": "https://fedlex.data.admin.ch/eli/cc/2005/551/20140501/it",
-      "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/cc/2005/551/20140501/it/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      "attributes": {
-        "title": {
-          "xsd:string": "Consolidation: 814.610 - 2014-05-01"
-        }
-      }
-    },
-    {
       "uri": "https://fedlex.data.admin.ch/eli/cc/2005/551/20140501/rm",
       "type": "Expression",
       "references": {
@@ -97,6 +92,28 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/2005/551/20140501/it",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/ITA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/cc/2005/551/20140501/it/pdf-a"
+        ]
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Consolidation: 814.610 - 2014-05-01"
+        }
+      }
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/cc/2005/551/20140501/de/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -104,6 +121,9 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2005/551/20140501/de/pdf-a/fedlex-data-admin-ch-eli-cc-2005-551-20140501-de-pdf-a.pdf"
         },
@@ -115,16 +135,13 @@
             26
           ]
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/551/20140501/de/pdf-a/fedlex-data-admin-ch-eli-cc-2005-551-20140501-de-pdf-a.pdf"
         }
       }
     },
     {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
       "type": [
         "Concept",
         "Language"
@@ -138,6 +155,9 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2005/551/20140501/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2005-551-20140501-fr-pdf-a.pdf"
         },
@@ -149,57 +169,13 @@
             26
           ]
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/551/20140501/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2005-551-20140501-fr-pdf-a.pdf"
         }
       }
     },
     {
-      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
-      "type": [
-        "Concept",
-        "Language"
-      ]
-    },
-    {
       "uri": "http://publications.europa.eu/resource/authority/language/ENG",
-      "type": [
-        "Concept",
-        "Language"
-      ]
-    },
-    {
-      "uri": "https://fedlex.data.admin.ch/eli/cc/2005/551/20140501/it/pdf-a",
-      "type": "Manifestation",
-      "references": {
-        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
-        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
-      },
-      "attributes": {
-        "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2005/551/20140501/it/pdf-a/fedlex-data-admin-ch-eli-cc-2005-551-20140501-it-pdf-a.pdf"
-        },
-        "userFormat": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
-        },
-        "numberOfPages": {
-          "xsd:int": [
-            26
-          ]
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
-        "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/551/20140501/it/pdf-a/fedlex-data-admin-ch-eli-cc-2005-551-20140501-it-pdf-a.pdf"
-        }
-      }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/ITA",
       "type": [
         "Concept",
         "Language"
@@ -213,6 +189,40 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/ITA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/2005/551/20140501/it/pdf-a",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
+      },
+      "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2005/551/20140501/it/pdf-a/fedlex-data-admin-ch-eli-cc-2005-551-20140501-it-pdf-a.pdf"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "numberOfPages": {
+          "xsd:int": [
+            26
+          ]
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/551/20140501/it/pdf-a/fedlex-data-admin-ch-eli-cc-2005-551-20140501-it-pdf-a.pdf"
+        }
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
       "type": [
         "Concept",
@@ -220,7 +230,6 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/2005/551/20140501/graph",
   "facets": {
     "consolidates": [
       {
@@ -261,14 +270,14 @@
           "http://publications.europa.eu/resource/authority/language/ITA": {
             "manifestation": [
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2014/28/it/pdf-a/fedlex-data-admin-ch-eli-oc-2014-28-it-pdf-a.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2014/28/it/pdf-a"
-              },
-              {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2014/28/it/doc/fedlex-data-admin-ch-eli-oc-2014-28-it-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2014/28/it/doc"
+              },
+              {
+                "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
+                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2014/28/it/pdf-a/fedlex-data-admin-ch-eli-oc-2014-28-it-pdf-a.pdf",
+                "uri": "https://fedlex.data.admin.ch/eli/oc/2014/28/it/pdf-a"
               }
             ],
             "memorialLabel": "RU 2014 193",
@@ -283,6 +292,7 @@
     "classifiedByTaxonomyEntryLabel_raw": "814.610",
     "consolidationAbstract": {
       "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
+      "basicAct": "https://fedlex.data.admin.ch/eli/oc/2005/551",
       "typeDocument": "https://fedlex.data.admin.ch/vocabulary/resource-type/29",
       "titles": {
         "http://publications.europa.eu/resource/authority/language/DEU": {
@@ -300,7 +310,7 @@
       }
     },
     "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/9575",
-    "classifiedByTaxonomyEntryLabel_sort": "00814.00610",
+    "classifiedByTaxonomyEntryLabel_sort": "814.610",
     "theme": {
       "themeId": "8",
       "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/9225"
@@ -309,27 +319,11 @@
       {
         "impactDate": "2014-05-01",
         "commentFrom": {
-          "it": "O 18.12.2013 (I)"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "it": "art. 11, 14-17, 20, 22, 31"
-        },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2014/28",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "2014-05-01",
-        "commentFrom": {
           "fr": "O 18.12.2013 (I)"
         },
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
         "commentTo": {
-          "fr": "Art. 11, 14 à17, 20, 22, 31"
+          "fr": "Art. 11, 14 à 17, 20, 22"
         },
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2014/28",
         "language": [
@@ -345,11 +339,41 @@
         },
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
         "commentTo": {
-          "de": "Art. 11, 14-17, 20, 22, 31"
+          "de": "Art. 11, 14-17, 20, 22"
         },
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2014/28",
         "language": [
           "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "2014-05-01",
+        "commentFrom": {
+          "de": "I"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2014/28",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "decisionDate": "2013-12-18",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "2014-05-01",
+        "commentFrom": {
+          "it": "O 18.12.2013 (I)"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "it": "art. 11, 14-17, 20, 22"
+        },
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2014/28",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "historicalImpact": false
@@ -381,20 +405,6 @@
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "decisionDate": "2013-12-18",
         "historicalImpact": false
-      },
-      {
-        "impactDate": "2014-05-01",
-        "commentFrom": {
-          "de": "I"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2014/28",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "decisionDate": "2013-12-18",
-        "historicalImpact": false
       }
     ],
     "classifiedByTaxonomyEntryLabel": {
@@ -403,5 +413,6 @@
       "it": "RS 814.610"
     }
   },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/2005/551/20140501/graph",
   "timestampms": null
 }
