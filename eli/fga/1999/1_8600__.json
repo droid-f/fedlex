@@ -9,14 +9,6 @@
       "legalResourceGenre": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/legal-resource-genre/900"
       },
-      "created": {
-        "xsd:dateTime": [
-          "1999-10-18T22:00:00.000Z"
-        ]
-      },
-      "sequenceInTheYearOfPublication": {
-        "xsd:int": 2150
-      },
       "modified": {
         "xsd:dateTime": [
           "1999-10-18T22:00:00.000Z"
@@ -27,6 +19,14 @@
       },
       "publicationDate": {
         "xsd:date": "1999-10-19"
+      },
+      "created": {
+        "xsd:dateTime": [
+          "1999-10-18T22:00:00.000Z"
+        ]
+      },
+      "sequenceInTheYearOfPublication": {
+        "xsd:int": 2150
       }
     },
     "references": {
@@ -48,27 +48,33 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1999/1_8600__/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1999/1_8600__/de/pdf-a",
-          "https://fedlex.data.admin.ch/eli/fga/1999/1_8600__/de/doc",
-          "https://fedlex.data.admin.ch/eli/fga/1999/1_8600__/de/pdf-x"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1999 8600"
+        },
         "memorialName": {
           "xsd:string": "BBl"
         },
         "memorialPage": {
           "xsd:int": 8600
         },
-        "memorialYear": {
-          "xsd:int": 1999
+        "isPartOf": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1999/41/de"
         },
         "title": {
           "xsd:string": "Notifikation Kandappu"
+        },
+        "memorialYear": {
+          "xsd:int": 1999
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1999/1_8600__/de/pdf-a",
+          "https://fedlex.data.admin.ch/eli/fga/1999/1_8600__/de/pdf-x",
+          "https://fedlex.data.admin.ch/eli/fga/1999/1_8600__/de/doc"
+        ]
       }
     },
     {
@@ -79,6 +85,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1999/1_8600__/de/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -86,6 +99,9 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/1999/1_8600__/de/pdf-a/fedlex-data-admin-ch-eli-fga-1999-1_8600__-de-pdf-a.pdf"
         },
@@ -97,30 +113,8 @@
             1
           ]
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/1999/1_8600__/de/pdf-a/fedlex-data-admin-ch-eli-fga-1999-1_8600__-de-pdf-a.pdf"
-        }
-      }
-    },
-    {
-      "uri": "https://fedlex.data.admin.ch/eli/fga/1999/1_8600__/de/doc",
-      "type": "Manifestation",
-      "references": {
-        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
-        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
-      },
-      "attributes": {
-        "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/1999/1_8600__/de/doc/fedlex-data-admin-ch-eli-fga-1999-1_8600__-de-doc.doc"
-        },
-        "userFormat": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
         }
       }
     },
@@ -132,23 +126,35 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDFX"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/1999/1_8600__/de/pdf-x/fedlex-data-admin-ch-eli-fga-1999-1_8600__-de-pdf-x.pdf"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-x"
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDFX"
         }
       }
     },
     {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
-      "type": [
-        "Concept",
-        "Language"
-      ]
+      "uri": "https://fedlex.data.admin.ch/eli/fga/1999/1_8600__/de/doc",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
+      },
+      "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/1999/1_8600__/de/doc/fedlex-data-admin-ch-eli-fga-1999-1_8600__-de-doc.doc"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
+        }
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -165,6 +171,7 @@
     "memorialLabel_sort": {
       "de": "1999.99.008600"
     },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1999 8600"
     },

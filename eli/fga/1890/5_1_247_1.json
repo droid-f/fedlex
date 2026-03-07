@@ -5,24 +5,6 @@
       "Act",
       "Work"
     ],
-    "attributes": {
-      "created": {
-        "xsd:dateTime": [
-          "1890-12-05T23:30:14.000Z"
-        ]
-      },
-      "modified": {
-        "xsd:dateTime": [
-          "1890-12-05T23:30:14.000Z"
-        ]
-      },
-      "typeDocument": {
-        "rdfs:Resource": "http://example.com"
-      },
-      "publicationDate": {
-        "xsd:date": "1890-12-06"
-      }
-    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1890/5_1_247_1/de",
@@ -30,24 +12,33 @@
         "https://fedlex.data.admin.ch/eli/fga/1890/5_1_247_1/it"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1890/50"
+    },
+    "attributes": {
+      "modified": {
+        "xsd:dateTime": [
+          "1890-12-05T23:30:14.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1890-12-06"
+      },
+      "created": {
+        "xsd:dateTime": [
+          "1890-12-05T23:30:14.000Z"
+        ]
+      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1890/5_1_247_1/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1890/5_1_247_1/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1890 V 1"
+        },
         "memorialName": {
           "xsd:string": "BBl"
-        },
-        "memorialPageTo": {
-          "xsd:int": 5
         },
         "memorialPage": {
           "xsd:int": 1
@@ -55,29 +46,32 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1890/50/de"
         },
-        "memorialYear": {
-          "xsd:int": 1890
-        },
         "title": {
           "xsd:string": "Botschaft des Bundesrates an die Bundesversammlung, betreffend die eidgenössische Gewährleistung der Verfassung des Kantons St. Gallen vom 16. November 1890. (Vom 29. November 1890.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 5
+        },
+        "memorialYear": {
+          "xsd:int": 1890
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1890/5_1_247_1/de/pdf-a"
+        ]
       }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1890/5_1_247_1/fr",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1890/5_1_247_1/fr/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "FF 1890 V 247"
+        },
         "memorialName": {
           "xsd:string": "FF"
-        },
-        "memorialPageTo": {
-          "xsd:int": 251
         },
         "memorialPage": {
           "xsd:int": 247
@@ -85,29 +79,44 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1890/51/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1890
-        },
         "title": {
           "xsd:string": "Message du conseil fédéral à l'assemblée fédérale concernant la garantie fédérale à accorder à la constitution de St-Gall du 16 novembre 1890. (Du 29 novembre 1890.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 251
+        },
+        "memorialYear": {
+          "xsd:int": 1890
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1890/5_1_247_1/fr/pdf-a"
+        ]
       }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1890/5_1_247_1/it",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "FF 1890 V 1"
+        },
         "memorialName": {
           "xsd:string": "FF"
         },
         "memorialPage": {
           "xsd:int": 1
         },
-        "memorialYear": {
-          "xsd:int": 1890
+        "isPartOf": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1890/50/de"
         },
         "title": {
           "xsd:string": "FF 1890 V 1"
+        },
+        "memorialYear": {
+          "xsd:int": 1890
         }
       },
       "references": {
@@ -119,6 +128,13 @@
       "type": [
         "Memorial",
         "Work"
+      ]
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
       ]
     },
     {
@@ -144,7 +160,7 @@
       }
     },
     {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
       "type": [
         "Concept",
         "Language"
@@ -173,13 +189,6 @@
       }
     },
     {
-      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
-      "type": [
-        "Concept",
-        "Language"
-      ]
-    },
-    {
       "uri": "http://publications.europa.eu/resource/authority/language/ITA",
       "type": [
         "Concept",
@@ -202,6 +211,7 @@
       "it": "1890.05.000001",
       "fr": "1890.05.000247"
     },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1890 V 1",
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 1890 V 247",

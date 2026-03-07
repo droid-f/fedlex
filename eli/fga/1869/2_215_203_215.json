@@ -5,24 +5,6 @@
       "Act",
       "Work"
     ],
-    "attributes": {
-      "created": {
-        "xsd:dateTime": [
-          "1869-06-18T23:30:14.000Z"
-        ]
-      },
-      "modified": {
-        "xsd:dateTime": [
-          "1869-06-18T23:30:14.000Z"
-        ]
-      },
-      "typeDocument": {
-        "rdfs:Resource": "http://example.com"
-      },
-      "publicationDate": {
-        "xsd:date": "1869-06-19"
-      }
-    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1869/2_215_203_215/fr",
@@ -30,24 +12,33 @@
         "https://fedlex.data.admin.ch/eli/fga/1869/2_215_203_215/it"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1869/24"
+    },
+    "attributes": {
+      "modified": {
+        "xsd:dateTime": [
+          "1869-06-18T23:30:14.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1869-06-19"
+      },
+      "created": {
+        "xsd:dateTime": [
+          "1869-06-18T23:30:14.000Z"
+        ]
+      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1869/2_215_203_215/fr",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1869/2_215_203_215/fr/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "FF 1869 II 203"
+        },
         "memorialName": {
           "xsd:string": "FF"
-        },
-        "memorialPageTo": {
-          "xsd:int": 205
         },
         "memorialPage": {
           "xsd:int": 203
@@ -55,29 +46,32 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1869/24/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1869
-        },
         "title": {
           "xsd:string": "MESSAGE du Conseil fédéral à la haute Assemblée fédérale concernant la garantie à accorder à la nouvelle Constitution du Canton de Zurich. (Du 7 Juin 1869.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 205
+        },
+        "memorialYear": {
+          "xsd:int": 1869
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1869/2_215_203_215/fr/pdf-a"
+        ]
       }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1869/2_215_203_215/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1869/2_215_203_215/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1869 II 215"
+        },
         "memorialName": {
           "xsd:string": "BBl"
-        },
-        "memorialPageTo": {
-          "xsd:int": 217
         },
         "memorialPage": {
           "xsd:int": 215
@@ -85,29 +79,44 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1869/24/de"
         },
-        "memorialYear": {
-          "xsd:int": 1869
-        },
         "title": {
           "xsd:string": "Botschaft des Bundesrates an die h. Bundesversammlung, betreffend die Gewährleistung der neuen Verfassung des Kantons Zürich. (Vom 7. Juni 1869.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 217
+        },
+        "memorialYear": {
+          "xsd:int": 1869
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1869/2_215_203_215/de/pdf-a"
+        ]
       }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1869/2_215_203_215/it",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "FF 1869 II 215"
+        },
         "memorialName": {
           "xsd:string": "FF"
         },
         "memorialPage": {
           "xsd:int": 215
         },
-        "memorialYear": {
-          "xsd:int": 1869
+        "isPartOf": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1869/24/de"
         },
         "title": {
           "xsd:string": "FF 1869 II 215"
+        },
+        "memorialYear": {
+          "xsd:int": 1869
         }
       },
       "references": {
@@ -119,6 +128,13 @@
       "type": [
         "Memorial",
         "Work"
+      ]
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "type": [
+        "Concept",
+        "Language"
       ]
     },
     {
@@ -144,7 +160,7 @@
       }
     },
     {
-      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
       "type": [
         "Concept",
         "Language"
@@ -173,13 +189,6 @@
       }
     },
     {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
-      "type": [
-        "Concept",
-        "Language"
-      ]
-    },
-    {
       "uri": "http://publications.europa.eu/resource/authority/language/ITA",
       "type": [
         "Concept",
@@ -202,6 +211,7 @@
       "it": "1869.02.000215",
       "fr": "1869.02.000203"
     },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1869 II 215",
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 1869 II 203",

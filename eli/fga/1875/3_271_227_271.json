@@ -5,24 +5,6 @@
       "Act",
       "Work"
     ],
-    "attributes": {
-      "created": {
-        "xsd:dateTime": [
-          "1875-06-18T23:30:14.000Z"
-        ]
-      },
-      "modified": {
-        "xsd:dateTime": [
-          "1875-06-18T23:30:14.000Z"
-        ]
-      },
-      "typeDocument": {
-        "rdfs:Resource": "http://example.com"
-      },
-      "publicationDate": {
-        "xsd:date": "1875-06-19"
-      }
-    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1875/3_271_227_271/fr",
@@ -30,24 +12,33 @@
         "https://fedlex.data.admin.ch/eli/fga/1875/3_271_227_271/de"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1875/26"
+    },
+    "attributes": {
+      "modified": {
+        "xsd:dateTime": [
+          "1875-06-18T23:30:14.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1875-06-19"
+      },
+      "created": {
+        "xsd:dateTime": [
+          "1875-06-18T23:30:14.000Z"
+        ]
+      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1875/3_271_227_271/fr",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1875/3_271_227_271/fr/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "FF 1875 III 227"
+        },
         "memorialName": {
           "xsd:string": "FF"
-        },
-        "memorialPageTo": {
-          "xsd:int": 240
         },
         "memorialPage": {
           "xsd:int": 227
@@ -55,29 +46,44 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1875/26/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1875
-        },
         "title": {
           "xsd:string": "Message du Conseil fédéral à la haute Assemblée fédérale relatif à la garantie fédérale à accorder à la nouvelle Constitution du Canton de Lucerne. (Du 24 mai 1875)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 240
+        },
+        "memorialYear": {
+          "xsd:int": 1875
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1875/3_271_227_271/fr/pdf-a"
+        ]
       }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1875/3_271_227_271/it",
       "type": "Expression",
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "FF 1875 III 271"
+        },
         "memorialName": {
           "xsd:string": "FF"
         },
         "memorialPage": {
           "xsd:int": 271
         },
-        "memorialYear": {
-          "xsd:int": 1875
+        "isPartOf": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1875/26/de"
         },
         "title": {
           "xsd:string": "FF 1875 III 271"
+        },
+        "memorialYear": {
+          "xsd:int": 1875
         }
       },
       "references": {
@@ -87,18 +93,12 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1875/3_271_227_271/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1875/3_271_227_271/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1875 III 271"
+        },
         "memorialName": {
           "xsd:string": "BBl"
-        },
-        "memorialPageTo": {
-          "xsd:int": 285
         },
         "memorialPage": {
           "xsd:int": 271
@@ -106,12 +106,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1875/26/de"
         },
-        "memorialYear": {
-          "xsd:int": 1875
-        },
         "title": {
           "xsd:string": "Botschaft des Bundesrates an die hohe Bundesversammlung, betreffend eidg. Gewährleistung der neuen Verfassung des Kantons Luzern. (Vom 24. Mai 1875.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 285
+        },
+        "memorialYear": {
+          "xsd:int": 1875
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1875/3_271_227_271/de/pdf-a"
+        ]
       }
     },
     {
@@ -119,6 +128,13 @@
       "type": [
         "Memorial",
         "Work"
+      ]
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "type": [
+        "Concept",
+        "Language"
       ]
     },
     {
@@ -144,14 +160,14 @@
       }
     },
     {
-      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "uri": "http://publications.europa.eu/resource/authority/language/ITA",
       "type": [
         "Concept",
         "Language"
       ]
     },
     {
-      "uri": "http://publications.europa.eu/resource/authority/language/ITA",
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
       "type": [
         "Concept",
         "Language"
@@ -180,13 +196,6 @@
       }
     },
     {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
-      "type": [
-        "Concept",
-        "Language"
-      ]
-    },
-    {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
       "type": [
         "Concept",
@@ -202,6 +211,7 @@
       "it": "1875.03.000271",
       "fr": "1875.03.000227"
     },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1875 III 271",
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 1875 III 227",

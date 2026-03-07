@@ -9,16 +9,8 @@
       "legalResourceGenre": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/legal-resource-genre/900"
       },
-      "dateDocument": {
-        "xsd:date": "2025-08-29"
-      },
-      "created": {
-        "xsd:dateTime": [
-          "2025-08-29T05:43:34.349Z"
-        ]
-      },
-      "sequenceInTheYearOfPublication": {
-        "xsd:int": 2519
+      "timeEntryInForce": {
+        "xsd:time": "00:00:00"
       },
       "modified": {
         "xsd:dateTime": [
@@ -36,6 +28,20 @@
       },
       "publicationDate": {
         "xsd:date": "2025-08-29"
+      },
+      "dateDocument": {
+        "xsd:date": "2025-08-29"
+      },
+      "created": {
+        "xsd:dateTime": [
+          "2025-08-29T05:43:34.349Z"
+        ]
+      },
+      "sequenceInTheYearOfPublication": {
+        "xsd:int": 2519
+      },
+      "retroactiveEntryInForce": {
+        "xsd:boolean": false
       }
     },
     "references": {
@@ -76,7 +82,7 @@
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/2025/165/fr"
         },
         "title": {
-          "xsd:string": "Publication du Tribunal pénal fédéral (Cour des affaires pénales). Cause Ministère public de la Confédération contre Nataniel Finn EHRENREICH (SK.2025.24)"
+          "xsd:string": "Publication du Tribunal pénal fédéral (Cour des affaires pénales)"
         },
         "memorialYear": {
           "xsd:int": 2025
@@ -101,7 +107,26 @@
       "type": [
         "Memorial",
         "Work"
-      ]
+      ],
+      "attributes": {
+        "memorialNumber": {
+          "xsd:int": 165
+        },
+        "isMemberOf": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/2025"
+        },
+        "memorialYear": {
+          "xsd:int": 2025
+        },
+        "publicationDate": {
+          "xsd:date": "2025-08-29"
+        }
+      },
+      "references": {
+        "isRealizedBy": [
+          "https://fedlex.data.admin.ch/eli/collection/fga/2025/165/fr"
+        ]
+      }
     },
     {
       "uri": "http://publications.europa.eu/resource/authority/language/FRA",
@@ -113,6 +138,10 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/2025/2519/fr/docx",
       "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
       "attributes": {
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
@@ -122,9 +151,6 @@
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
-        },
-        "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2025/2519/fr/docx/fedlex-data-admin-ch-eli-fga-2025-2519-fr-docx.docx"
         }
       }
     },
@@ -158,9 +184,6 @@
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/xml"
-        },
-        "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2025/2519/fr/xml/fedlex-data-admin-ch-eli-fga-2025-2519-fr-xml.xml"
         }
       }
     },
@@ -176,9 +199,6 @@
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html"
-        },
-        "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2025/2519/fr/html/fedlex-data-admin-ch-eli-fga-2025-2519-fr-html.html"
         }
       }
     },
@@ -199,9 +219,6 @@
           "xsd:int": [
             2
           ]
-        },
-        "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2025/2519/fr/pdf-a/fedlex-data-admin-ch-eli-fga-2025-2519-fr-pdf-a.pdf"
         }
       }
     },
@@ -263,6 +280,25 @@
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2025/2519/fr/xml-an/fedlex-data-admin-ch-eli-fga-2025-2519-fr-xml-an.xml"
         }
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/collection/fga/2025/165/fr",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": ""
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+      "type": [
+        "Concept",
+        "LegalInstitution"
+      ]
     }
   ],
   "facets": {
@@ -276,9 +312,9 @@
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 2025 2519"
     },
-    "modified": "2025-08-29T07:44:03.583+02:00",
+    "modified": "2026-02-27T08:12:39.463806",
     "title": {
-      "fr": "Publication du Tribunal pénal fédéral (Cour des affaires pénales). Cause Ministère public de la Confédération contre Nataniel Finn EHRENREICH (SK.2025.24)"
+      "fr": "Publication du Tribunal pénal fédéral (Cour des affaires pénales)"
     },
     "explanatoryReportListPerLanguage": {
       "de": false,
