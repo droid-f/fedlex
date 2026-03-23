@@ -6,9 +6,6 @@
       "Work"
     ],
     "attributes": {
-      "dateNoLongerInForce": {
-        "xsd:date": "2020-09-06"
-      },
       "dateDocument": {
         "xsd:date": "2020-04-22"
       },
@@ -18,74 +15,82 @@
       "dateEndApplicability": {
         "xsd:date": "2020-09-05"
       },
-      "typeDocument": {
-        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/29"
-      },
       "dateEntryInForce": {
         "xsd:date": "2020-03-06"
+      },
+      "typeDocument": {
+        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/29"
       }
     },
     "references": {
-      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/10267",
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/cc/2020/254/de",
         "https://fedlex.data.admin.ch/eli/cc/2020/254/it",
         "https://fedlex.data.admin.ch/eli/cc/2020/254/fr"
-      ]
+      ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/10267"
     }
   },
   "included": [
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/2020/254/de",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Verordnung vom 22. April 2020 über die Entschädigung von Angehörigen der Armee und des Zivilschutzes im Einsatz zur Bewältigung der Coronapandemie (Covid-19-Verordnung Entschädigung Angehörige der Armee und des Zivilschutzes)"
+        },
+        "titleAlternative": {
+          "xsd:string": "COVID-19-Verordnung Entschädigung Angehörige der Armee"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/2020/254/it",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/ITA"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Ordinanza del 22 aprile 2020 sull'indennità dei militari in servizio d'appoggio per far fronte alla pandemia di coronavirus (Ordinanza COVID-19 indennità dei militari)"
+        },
+        "titleAlternative": {
+          "xsd:string": "Ordinanza COVID-19 indennità dei militari"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/2020/254/fr",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Ordonnance du 22 avril 2020 sur l'indemnisation des militaires et des membres de la protection civile engagés pour surmonter la pandémie de coronavirus (Ordonnance COVID-19 indemnisation des militaires et des membres de la protection civile)"
+        },
+        "titleAlternative": {
+          "xsd:string": "Ordonnance COVID-19 indemnisation des militaires"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
+    },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/10267",
       "type": [
         "Concept",
         "LegalTaxonomy"
       ]
-    },
-    {
-      "uri": "https://fedlex.data.admin.ch/eli/cc/2020/254/de",
-      "type": "Expression",
-      "attributes": {
-        "titleAlternative": {
-          "xsd:string": "COVID-19-Verordnung Entschädigung Angehörige der Armee"
-        },
-        "title": {
-          "xsd:string": "Verordnung <bd>vom 22. April 2020</bd> über die Entschädigung von Angehörigen der Armee und des Zivilschutzes im Einsatz zur Bewältigung der Coronapandemie (Covid-19-Verordnung Entschädigung Angehörige der Armee und des Zivilschutzes)"
-        }
-      },
-      "references": {
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      }
-    },
-    {
-      "uri": "https://fedlex.data.admin.ch/eli/cc/2020/254/it",
-      "type": "Expression",
-      "attributes": {
-        "titleAlternative": {
-          "xsd:string": "Ordinanza COVID-19 indennità dei militari"
-        },
-        "title": {
-          "xsd:string": "Ordinanza <bd>del 22 aprile 2020</bd> sull'indennità dei militari in servizio d'appoggio per far fronte alla pandemia di coronavirus (Ordinanza COVID-19 indennità dei militari)"
-        }
-      },
-      "references": {
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      }
-    },
-    {
-      "uri": "https://fedlex.data.admin.ch/eli/cc/2020/254/fr",
-      "type": "Expression",
-      "attributes": {
-        "titleAlternative": {
-          "xsd:string": "Ordonnance COVID-19 indemnisation des militaires"
-        },
-        "title": {
-          "xsd:string": "Ordonnance <bd>du 22 avril 2020</bd> sur l'indemnisation des militaires et des membres de la protection civile engagés pour surmonter la pandémie de coronavirus (Ordonnance COVID-19 indemnisation des militaires et des membres de la protection civile)"
-        }
-      },
-      "references": {
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      }
     },
     {
       "uri": "http://publications.europa.eu/resource/authority/language/DEU",
@@ -109,20 +114,13 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/2020/254/graph",
   "facets": {
-    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
     "consolidates": [
       {
         "dateDocument": "2020-06-12",
         "expression": {
           "http://publications.europa.eu/resource/authority/language/DEU": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2020/415/de/pdf-x/fedlex-data-admin-ch-eli-oc-2020-415-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2020/415/de/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2020/415/de/doc/fedlex-data-admin-ch-eli-oc-2020-415-de-doc.doc",
@@ -145,11 +143,6 @@
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2020/415/fr/pdf-a"
               },
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2020/415/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2020-415-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2020/415/fr/pdf-x"
-              },
-              {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2020/415/fr/doc/fedlex-data-admin-ch-eli-oc-2020-415-fr-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2020/415/fr/doc"
@@ -169,11 +162,6 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2020/415/it/doc/fedlex-data-admin-ch-eli-oc-2020-415-it-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2020/415/it/doc"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2020/415/it/pdf-x/fedlex-data-admin-ch-eli-oc-2020-415-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2020/415/it/pdf-x"
               }
             ],
             "memorialLabel": "RU 2020 2103",
@@ -190,11 +178,6 @@
           "http://publications.europa.eu/resource/authority/language/DEU": {
             "manifestation": [
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2020/254/de/pdf-x/fedlex-data-admin-ch-eli-oc-2020-254-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2020/254/de/pdf-x"
-              },
-              {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2020/254/de/doc/fedlex-data-admin-ch-eli-oc-2020-254-de-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2020/254/de/doc"
@@ -206,7 +189,7 @@
               }
             ],
             "memorialLabel": "AS 2020 1337",
-            "title": "Verordnung <bd> über die Entschädigung von Angehörigen der Armee und des Zivilschutzes im Einsatz zur Bewältigung der Coronapandemie (Covid-19-Verordnung Entschädigung Angehörige der Armee und des Zivilschutzes)"
+            "title": "Verordnung über die Entschädigung von Angehörigen der Armee und des Zivilschutzes im Einsatz zur Bewältigung der Coronapandemie (Covid-19-Verordnung Entschädigung Angehörige der Armee und des Zivilschutzes)"
           },
           "http://publications.europa.eu/resource/authority/language/FRA": {
             "manifestation": [
@@ -219,15 +202,10 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2020/254/fr/doc/fedlex-data-admin-ch-eli-oc-2020-254-fr-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2020/254/fr/doc"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2020/254/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2020-254-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2020/254/fr/pdf-x"
               }
             ],
             "memorialLabel": "RO 2020 1337",
-            "title": "Ordonnance <bd> sur l'indemnisation des militaires et des membres de la protection civile engagés pour surmonter la pandémie de coronavirus (Ordonnance COVID-19 indemnisation des militaires et des membres de la protection civile)"
+            "title": "Ordonnance sur l'indemnisation des militaires et des membres de la protection civile engagés pour surmonter la pandémie de coronavirus (Ordonnance COVID-19 indemnisation des militaires et des membres de la protection civile)"
           },
           "http://publications.europa.eu/resource/authority/language/ITA": {
             "manifestation": [
@@ -237,18 +215,13 @@
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2020/254/it/pdf-a"
               },
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2020/254/it/pdf-x/fedlex-data-admin-ch-eli-oc-2020-254-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2020/254/it/pdf-x"
-              },
-              {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2020/254/it/doc/fedlex-data-admin-ch-eli-oc-2020-254-it-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2020/254/it/doc"
               }
             ],
             "memorialLabel": "RU 2020 1337",
-            "title": "Ordinanza <bd> sull'indennità dei militari in servizio d'appoggio per far fronte alla pandemia di coronavirus (Ordinanza COVID-19 indennità dei militari)"
+            "title": "Ordinanza sull'indennità dei militari in servizio d'appoggio per far fronte alla pandemia di coronavirus (Ordinanza COVID-19 indennità dei militari)"
           }
         },
         "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/6",
@@ -256,73 +229,66 @@
         "uri": "https://fedlex.data.admin.ch/eli/oc/2020/254"
       }
     ],
-    "sortingDate": "2020-09-06",
-    "titleAlternative": {
-      "de": "COVID-19-Verordnung Entschädigung Angehörige der Armee",
-      "it": "Ordinanza COVID-19 indennità dei militari",
-      "fr": "Ordonnance COVID-19 indemnisation des militaires"
+    "calculatedEndDate": "2020-09-05",
+    "baseActReference": {
+      "de": "AS 2020 1337",
+      "it": "RU 2020 1337",
+      "fr": "RO 2020 1337"
     },
-    "theme": {
-      "themeId": "8",
-      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/9225"
-    },
+    "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/6",
     "impacts": [
       {
         "impactDate": "2020-03-06",
         "commentFrom": {
-          "it": "I"
+          "fr": "O 12.06.2020 (I)"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/254/20200306/it/pdf-a/fedlex-data-admin-ch-eli-cc-2020-254-20200306-it-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "fr": "Tit.; art. 1, 3 à 6"
+        },
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2020/415",
         "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
+          "http://publications.europa.eu/resource/authority/language/FRA"
         ],
+        "consolidatedByPdf2": {
+          "fr": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/254/20200306/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2020-254-20200306-fr-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2020/254/20200306",
-        "decisionDate": "2020-06-12",
         "historicalImpact": false,
         "consolidationDate": "2020-03-06"
       },
       {
         "impactDate": "2020-03-06",
         "commentFrom": {
-          "fr": "I"
+          "de": "V 12.06.2020 (I)"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/254/20200306/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2020-254-20200306-fr-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "de": "Tit.; Art. 1, 3-6"
+        },
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2020/415",
         "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
+          "http://publications.europa.eu/resource/authority/language/DEU"
         ],
+        "consolidatedByPdf2": {
+          "de": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/254/20200306/de/pdf-a/fedlex-data-admin-ch-eli-cc-2020-254-20200306-de-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2020/254/20200306",
-        "decisionDate": "2020-06-12",
         "historicalImpact": false,
         "consolidationDate": "2020-03-06"
       },
       {
         "impactDate": "2020-03-06",
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/254/20200306/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2020-254-20200306-fr-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2020/254",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2020/254/20200306",
-        "decisionDate": "2020-03-06",
-        "historicalImpact": false,
-        "consolidationDate": "2020-03-06"
-      },
-      {
-        "impactDate": "2020-03-06",
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/254/20200306/de/pdf-a/fedlex-data-admin-ch-eli-cc-2020-254-20200306-de-pdf-a.pdf",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2020/254",
         "language": [
           "http://publications.europa.eu/resource/authority/language/DEU"
         ],
+        "consolidatedByPdf2": {
+          "de": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/254/20200306/de/pdf-a/fedlex-data-admin-ch-eli-cc-2020-254-20200306-de-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2020/254/20200306",
         "decisionDate": "2020-03-06",
@@ -334,12 +300,14 @@
         "commentFrom": {
           "de": "I"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/254/20200306/de/pdf-a/fedlex-data-admin-ch-eli-cc-2020-254-20200306-de-pdf-a.pdf",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2020/415",
         "language": [
           "http://publications.europa.eu/resource/authority/language/DEU"
         ],
+        "consolidatedByPdf2": {
+          "de": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/254/20200306/de/pdf-a/fedlex-data-admin-ch-eli-cc-2020-254-20200306-de-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2020/254/20200306",
         "decisionDate": "2020-06-12",
@@ -349,42 +317,8 @@
       {
         "impactDate": "2020-03-06",
         "commentFrom": {
-          "de": "V 12.06.2020 (I)"
-        },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/254/20200306/de/pdf-a/fedlex-data-admin-ch-eli-cc-2020-254-20200306-de-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "de": "Tit.; Art. 1, 3-6"
-        },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2020/415",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2020/254/20200306",
-        "historicalImpact": false,
-        "consolidationDate": "2020-03-06"
-      },
-      {
-        "impactDate": "2020-03-06",
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/254/20200306/it/pdf-a/fedlex-data-admin-ch-eli-cc-2020-254-20200306-it-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2020/254",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2020/254/20200306",
-        "decisionDate": "2020-03-06",
-        "historicalImpact": false,
-        "consolidationDate": "2020-03-06"
-      },
-      {
-        "impactDate": "2020-03-06",
-        "commentFrom": {
           "it": "O 12.06.2020 (I)"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/254/20200306/it/pdf-a/fedlex-data-admin-ch-eli-cc-2020-254-20200306-it-pdf-a.pdf",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
         "commentTo": {
           "it": "tit.; art. 1, 3-6"
@@ -393,6 +327,9 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/ITA"
         ],
+        "consolidatedByPdf2": {
+          "it": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/254/20200306/it/pdf-a/fedlex-data-admin-ch-eli-cc-2020-254-20200306-it-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2020/254/20200306",
         "historicalImpact": false,
@@ -401,34 +338,110 @@
       {
         "impactDate": "2020-03-06",
         "commentFrom": {
-          "fr": "O 12.06.2020 (I)"
+          "it": "I"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/254/20200306/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2020-254-20200306-fr-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "fr": "Tit.; art. 1, 3 à 6"
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2020/415",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "consolidatedByPdf2": {
+          "it": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/254/20200306/it/pdf-a/fedlex-data-admin-ch-eli-cc-2020-254-20200306-it-pdf-a.pdf"
         },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2020/254/20200306",
+        "decisionDate": "2020-06-12",
+        "historicalImpact": false,
+        "consolidationDate": "2020-03-06"
+      },
+      {
+        "impactDate": "2020-03-06",
+        "commentFrom": {
+          "fr": "I"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2020/415",
         "language": [
           "http://publications.europa.eu/resource/authority/language/FRA"
         ],
+        "consolidatedByPdf2": {
+          "fr": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/254/20200306/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2020-254-20200306-fr-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2020/254/20200306",
+        "decisionDate": "2020-06-12",
+        "historicalImpact": false,
+        "consolidationDate": "2020-03-06"
+      },
+      {
+        "impactDate": "2020-03-06",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2020/254",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "consolidatedByPdf2": {
+          "fr": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/254/20200306/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2020-254-20200306-fr-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2020/254/20200306",
+        "decisionDate": "2020-03-06",
+        "historicalImpact": false,
+        "consolidationDate": "2020-03-06"
+      },
+      {
+        "impactDate": "2020-03-06",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2020/254",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "consolidatedByPdf2": {
+          "it": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2020/254/20200306/it/pdf-a/fedlex-data-admin-ch-eli-cc-2020-254-20200306-it-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2020/254/20200306",
+        "decisionDate": "2020-03-06",
         "historicalImpact": false,
         "consolidationDate": "2020-03-06"
       }
     ],
     "title": {
-      "de": "Verordnung <bd>vom 22. April 2020</bd> über die Entschädigung von Angehörigen der Armee und des Zivilschutzes im Einsatz zur Bewältigung der Coronapandemie (Covid-19-Verordnung Entschädigung Angehörige der Armee und des Zivilschutzes)",
-      "it": "Ordinanza <bd>del 22 aprile 2020</bd> sull'indennità dei militari in servizio d'appoggio per far fronte alla pandemia di coronavirus (Ordinanza COVID-19 indennità dei militari)",
-      "fr": "Ordonnance <bd>du 22 avril 2020</bd> sur l'indemnisation des militaires et des membres de la protection civile engagés pour surmonter la pandémie de coronavirus (Ordonnance COVID-19 indemnisation des militaires et des membres de la protection civile)"
+      "de": "Verordnung vom 22. April 2020 über die Entschädigung von Angehörigen der Armee und des Zivilschutzes im Einsatz zur Bewältigung der Coronapandemie (Covid-19-Verordnung Entschädigung Angehörige der Armee und des Zivilschutzes)",
+      "it": "Ordinanza del 22 aprile 2020 sull'indennità dei militari in servizio d'appoggio per far fronte alla pandemia di coronavirus (Ordinanza COVID-19 indennità dei militari)",
+      "fr": "Ordonnance du 22 avril 2020 sur l'indemnisation des militaires et des membres de la protection civile engagés pour surmonter la pandémie de coronavirus (Ordonnance COVID-19 indemnisation des militaires et des membres de la protection civile)"
     },
     "classifiedByTaxonomyEntryLabel": {
       "de": "SR 834.15",
       "fr": "RS 834.15",
       "it": "RS 834.15"
     },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
+    },
+    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
+    "sortingDateTime": "2020-03-05T23:00Z",
+    "classifiedByTaxonomyEntryLabel_raw": "834.15",
+    "sortingDate": "2020-03-06",
+    "titleAlternative": {
+      "de": "COVID-19-Verordnung Entschädigung Angehörige der Armee",
+      "it": "Ordinanza COVID-19 indennità dei militari",
+      "fr": "Ordonnance COVID-19 indemnisation des militaires"
+    },
+    "classifiedByTaxonomyEntryLabel_sort": "834.150",
+    "theme": {
+      "themeId": "8",
+      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/9225"
+    },
     "archivingDate": "2020-03-06"
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/2020/254/graph",
   "timestampms": null
 }
