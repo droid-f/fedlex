@@ -6,9 +6,6 @@
       "Work"
     ],
     "attributes": {
-      "dateNoLongerInForce": {
-        "xsd:date": "2004-01-01"
-      },
       "dateDocument": {
         "xsd:date": "2003-04-01"
       },
@@ -18,43 +15,37 @@
       "dateEndApplicability": {
         "xsd:date": "2003-12-31"
       },
-      "typeDocument": {
-        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/29"
-      },
       "dateEntryInForce": {
         "xsd:date": "2003-04-01"
+      },
+      "typeDocument": {
+        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/29"
       }
     },
     "references": {
-      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/9787",
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/cc/2003/150/de",
         "https://fedlex.data.admin.ch/eli/cc/2003/150/it",
         "https://fedlex.data.admin.ch/eli/cc/2003/150/fr"
-      ]
+      ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/9787"
     }
   },
   "included": [
     {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/9787",
-      "type": [
-        "Concept",
-        "LegalTaxonomy"
-      ]
-    },
-    {
       "uri": "https://fedlex.data.admin.ch/eli/cc/2003/150/de",
       "type": "Expression",
-      "attributes": {
-        "titleAlternative": {
-          "xsd:string": "SARS-Verordnung"
-        },
-        "title": {
-          "xsd:string": "Verordnung <bd>vom 1. April 2003</bd> betreffend Massnahmen des Bundesamtes für Gesundheit zur Prävention des Schweren Akuten Respiratorischen Syndroms (SARS) (SARS-Verordnung)"
-        }
-      },
       "references": {
         "language": "http://publications.europa.eu/resource/authority/language/DEU"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Verordnung vom 1. April 2003 betreffend Massnahmen des Bundesamtes für Gesundheit zur Prävention des Schweren Akuten Respiratorischen Syndroms (SARS) (SARS-Verordnung)"
+        },
+        "titleAlternative": {
+          "xsd:string": "SARS-Verordnung"
+        }
       }
     },
     {
@@ -65,24 +56,38 @@
       },
       "attributes": {
         "title": {
-          "xsd:string": "Ordinanza <bd>del 1° aprile 2003</bd> concernente i provvedimenti dell'Ufficio federale della sanità pubblica per la prevenzione della Sindrome respiratoria acuta grave (SARS) (Ordinanza SARS)"
+          "xsd:string": "Ordinanza del 1° aprile 2003 concernente i provvedimenti dell'Ufficio federale della sanità pubblica per la prevenzione della Sindrome respiratoria acuta grave (SARS) (Ordinanza SARS)"
         }
       }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/cc/2003/150/fr",
       "type": "Expression",
-      "attributes": {
-        "titleAlternative": {
-          "xsd:string": "SRAS-Ordonnance"
-        },
-        "title": {
-          "xsd:string": "Ordonnance <bd>du 1<sup>er</sup> avril 2003</bd> concernant les mesures de l'Office fédéral de la santé publique sur la prévention du Syndrome Respiratoire Aigu Sévère (SRAS) (SRAS-Ordonnance)"
-        }
-      },
       "references": {
         "language": "http://publications.europa.eu/resource/authority/language/FRA"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Ordonnance du 1<sup>er</sup> avril 2003 concernant les mesures de l'Office fédéral de la santé publique sur la prévention du Syndrome Respiratoire Aigu Sévère (SRAS) (SRAS-Ordonnance)"
+        },
+        "titleAlternative": {
+          "xsd:string": "SRAS-Ordonnance"
+        }
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/9787",
+      "type": [
+        "Concept",
+        "LegalTaxonomy"
+      ]
     },
     {
       "uri": "http://publications.europa.eu/resource/authority/language/DEU",
@@ -106,9 +111,7 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/2003/150/graph",
   "facets": {
-    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
     "consolidates": [
       {
         "dateDocument": "2003-06-25",
@@ -124,11 +127,6 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2003/281/de/pdf-a/fedlex-data-admin-ch-eli-oc-2003-281-de-pdf-a.pdf",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2003/281/de/pdf-a"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2003/281/de/pdf-x/fedlex-data-admin-ch-eli-oc-2003-281-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2003/281/de/pdf-x"
               }
             ],
             "memorialLabel": "AS 2003 1882",
@@ -145,11 +143,6 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2003/281/fr/doc/fedlex-data-admin-ch-eli-oc-2003-281-fr-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2003/281/fr/doc"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2003/281/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2003-281-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2003/281/fr/pdf-x"
               }
             ],
             "memorialLabel": "RO 2003 1882",
@@ -166,11 +159,6 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2003/281/it/doc/fedlex-data-admin-ch-eli-oc-2003-281-it-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2003/281/it/doc"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2003/281/it/pdf-x/fedlex-data-admin-ch-eli-oc-2003-281-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2003/281/it/pdf-x"
               }
             ],
             "memorialLabel": "RU 2003 1882",
@@ -195,23 +183,13 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2003/150/de/doc/fedlex-data-admin-ch-eli-oc-2003-150-de-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2003/150/de/doc"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2003/150/de/pdf-x/fedlex-data-admin-ch-eli-oc-2003-150-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2003/150/de/pdf-x"
               }
             ],
             "memorialLabel": "AS 2003 785",
-            "title": "Verordnung <bd> betreffend Massnahmen des Bundesamtes für Gesundheit zur Prävention des Schweren Akuten Respiratorischen Syndroms (SARS) (SARS-Verordnung)"
+            "title": "Verordnung betreffend Massnahmen des Bundesamtes für Gesundheit zur Prävention des Schweren Akuten Respiratorischen Syndroms (SARS) (SARS-Verordnung)"
           },
           "http://publications.europa.eu/resource/authority/language/FRA": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2003/150/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2003-150-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2003/150/fr/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2003/150/fr/doc/fedlex-data-admin-ch-eli-oc-2003-150-fr-doc.doc",
@@ -224,15 +202,10 @@
               }
             ],
             "memorialLabel": "RO 2003 785",
-            "title": "Ordonnance <bd> concernant les mesures de l'Office fédéral de la santé publique sur la prévention du Syndrome Respiratoire Aigu Sévère (SRAS) (SRAS-Ordonnance)"
+            "title": "Ordonnance concernant les mesures de l'Office fédéral de la santé publique sur la prévention du Syndrome Respiratoire Aigu Sévère (SRAS) (SRAS-Ordonnance)"
           },
           "http://publications.europa.eu/resource/authority/language/ITA": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2003/150/it/pdf-x/fedlex-data-admin-ch-eli-oc-2003-150-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2003/150/it/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2003/150/it/doc/fedlex-data-admin-ch-eli-oc-2003-150-it-doc.doc",
@@ -245,7 +218,7 @@
               }
             ],
             "memorialLabel": "RU 2003 785",
-            "title": "Ordinanza <bd> concernente i provvedimenti dell'Ufficio federale della sanità pubblica per la prevenzione della Sindrome respiratoria acuta grave (SARS) (Ordinanza SARS)"
+            "title": "Ordinanza concernente i provvedimenti dell'Ufficio federale della sanità pubblica per la prevenzione della Sindrome respiratoria acuta grave (SARS) (Ordinanza SARS)"
           }
         },
         "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/34",
@@ -253,86 +226,62 @@
         "uri": "https://fedlex.data.admin.ch/eli/oc/2003/150"
       }
     ],
-    "sortingDate": "2004-01-01",
-    "titleAlternative": {
-      "de": "SARS-Verordnung",
-      "fr": "SRAS-Ordonnance"
+    "calculatedEndDate": "2003-12-31",
+    "baseActReference": {
+      "de": "AS 2003 785",
+      "it": "RU 2003 785",
+      "fr": "RO 2003 785"
     },
-    "theme": {
-      "themeId": "8",
-      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/9225"
-    },
+    "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/34",
     "impacts": [
-      {
-        "impactDate": "2003-04-01",
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2003/150/20030401/de/pdf-a/fedlex-data-admin-ch-eli-cc-2003-150-20030401-de-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2003/150",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2003/150/20030401",
-        "decisionDate": "2003-04-01",
-        "historicalImpact": false,
-        "consolidationDate": "2003-04-01"
-      },
-      {
-        "impactDate": "2003-04-01",
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2003/150/20030401/it/pdf-a/fedlex-data-admin-ch-eli-cc-2003-150-20030401-it-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2003/150",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2003/150/20030401",
-        "decisionDate": "2003-04-01",
-        "historicalImpact": false,
-        "consolidationDate": "2003-04-01"
-      },
-      {
-        "impactDate": "2003-04-01",
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2003/150/20030401/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2003-150-20030401-fr-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2003/150",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2003/150/20030401",
-        "decisionDate": "2003-04-01",
-        "historicalImpact": false,
-        "consolidationDate": "2003-04-01"
-      },
       {
         "impactDate": "2003-07-01",
         "commentFrom": {
           "fr": "I"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2003/150/20030701/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2003-150-20030701-fr-pdf-a.pdf",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2003/281",
         "language": [
           "http://publications.europa.eu/resource/authority/language/FRA"
         ],
+        "consolidatedByPdf2": {
+          "fr": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2003/150/20030701/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2003-150-20030701-fr-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2003/150/20030701",
         "decisionDate": "2003-06-25",
         "historicalImpact": false,
         "consolidationDate": "2003-07-01"
+      },
+      {
+        "impactDate": "2003-04-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2003/150",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "consolidatedByPdf2": {
+          "fr": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2003/150/20030401/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2003-150-20030401-fr-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2003/150/20030401",
+        "decisionDate": "2003-04-01",
+        "historicalImpact": false,
+        "consolidationDate": "2003-04-01"
       },
       {
         "impactDate": "2003-07-01",
         "commentFrom": {
           "de": "I"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2003/150/20030701/de/pdf-a/fedlex-data-admin-ch-eli-cc-2003-150-20030701-de-pdf-a.pdf",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2003/281",
         "language": [
           "http://publications.europa.eu/resource/authority/language/DEU"
         ],
+        "consolidatedByPdf2": {
+          "de": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2003/150/20030701/de/pdf-a/fedlex-data-admin-ch-eli-cc-2003-150-20030701-de-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2003/150/20030701",
         "decisionDate": "2003-06-25",
@@ -340,11 +289,26 @@
         "consolidationDate": "2003-07-01"
       },
       {
+        "impactDate": "2003-04-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2003/150",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "consolidatedByPdf2": {
+          "de": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2003/150/20030401/de/pdf-a/fedlex-data-admin-ch-eli-cc-2003-150-20030401-de-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2003/150/20030401",
+        "decisionDate": "2003-04-01",
+        "historicalImpact": false,
+        "consolidationDate": "2003-04-01"
+      },
+      {
         "impactDate": "2003-07-01",
         "commentFrom": {
           "de": "V 25.06.2003 (I)"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2003/150/20030701/de/pdf-a/fedlex-data-admin-ch-eli-cc-2003-150-20030701-de-pdf-a.pdf",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
         "commentTo": {
           "de": "Art. 3"
@@ -353,6 +317,9 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/DEU"
         ],
+        "consolidatedByPdf2": {
+          "de": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2003/150/20030701/de/pdf-a/fedlex-data-admin-ch-eli-cc-2003-150-20030701-de-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2003/150/20030701",
         "historicalImpact": false,
@@ -363,12 +330,14 @@
         "commentFrom": {
           "it": "I"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2003/150/20030701/it/pdf-a/fedlex-data-admin-ch-eli-cc-2003-150-20030701-it-pdf-a.pdf",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2003/281",
         "language": [
           "http://publications.europa.eu/resource/authority/language/ITA"
         ],
+        "consolidatedByPdf2": {
+          "it": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2003/150/20030701/it/pdf-a/fedlex-data-admin-ch-eli-cc-2003-150-20030701-it-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2003/150/20030701",
         "decisionDate": "2003-06-25",
@@ -380,7 +349,6 @@
         "commentFrom": {
           "it": "O 25.06.2003 (I)"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2003/150/20030701/it/pdf-a/fedlex-data-admin-ch-eli-cc-2003-150-20030701-it-pdf-a.pdf",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
         "commentTo": {
           "it": "art. 3"
@@ -389,6 +357,9 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/ITA"
         ],
+        "consolidatedByPdf2": {
+          "it": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2003/150/20030701/it/pdf-a/fedlex-data-admin-ch-eli-cc-2003-150-20030701-it-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2003/150/20030701",
         "historicalImpact": false,
@@ -399,7 +370,6 @@
         "commentFrom": {
           "fr": "O 25.06.2003 (I)"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2003/150/20030701/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2003-150-20030701-fr-pdf-a.pdf",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
         "commentTo": {
           "fr": "Art. 3"
@@ -408,23 +378,66 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/FRA"
         ],
+        "consolidatedByPdf2": {
+          "fr": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2003/150/20030701/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2003-150-20030701-fr-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2003/150/20030701",
         "historicalImpact": false,
         "consolidationDate": "2003-07-01"
+      },
+      {
+        "impactDate": "2003-04-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2003/150",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "consolidatedByPdf2": {
+          "it": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2003/150/20030401/it/pdf-a/fedlex-data-admin-ch-eli-cc-2003-150-20030401-it-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2003/150/20030401",
+        "decisionDate": "2003-04-01",
+        "historicalImpact": false,
+        "consolidationDate": "2003-04-01"
       }
     ],
     "title": {
-      "de": "Verordnung <bd>vom 1. April 2003</bd> betreffend Massnahmen des Bundesamtes für Gesundheit zur Prävention des Schweren Akuten Respiratorischen Syndroms (SARS) (SARS-Verordnung)",
-      "it": "Ordinanza <bd>del 1° aprile 2003</bd> concernente i provvedimenti dell'Ufficio federale della sanità pubblica per la prevenzione della Sindrome respiratoria acuta grave (SARS) (Ordinanza SARS)",
-      "fr": "Ordonnance <bd>du 1<sup>er</sup> avril 2003</bd> concernant les mesures de l'Office fédéral de la santé publique sur la prévention du Syndrome Respiratoire Aigu Sévère (SRAS) (SRAS-Ordonnance)"
+      "de": "Verordnung vom 1. April 2003 betreffend Massnahmen des Bundesamtes für Gesundheit zur Prävention des Schweren Akuten Respiratorischen Syndroms (SARS) (SARS-Verordnung)",
+      "it": "Ordinanza del 1° aprile 2003 concernente i provvedimenti dell'Ufficio federale della sanità pubblica per la prevenzione della Sindrome respiratoria acuta grave (SARS) (Ordinanza SARS)",
+      "fr": "Ordonnance du 1<sup>er</sup> avril 2003 concernant les mesures de l'Office fédéral de la santé publique sur la prévention du Syndrome Respiratoire Aigu Sévère (SRAS) (SRAS-Ordonnance)"
     },
     "classifiedByTaxonomyEntryLabel": {
       "de": "SR 818.101.22",
       "fr": "RS 818.101.22",
       "it": "RS 818.101.22"
     },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
+    },
+    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
+    "sortingDateTime": "2003-06-30T22:00Z",
+    "classifiedByTaxonomyEntryLabel_raw": "818.101.22",
+    "sortingDate": "2003-07-01",
+    "titleAlternative": {
+      "de": "SARS-Verordnung",
+      "fr": "SRAS-Ordonnance"
+    },
+    "classifiedByTaxonomyEntryLabel_sort": "818.101.220",
+    "theme": {
+      "themeId": "8",
+      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/9225"
+    },
     "archivingDate": "2003-07-01"
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/2003/150/graph",
   "timestampms": null
 }

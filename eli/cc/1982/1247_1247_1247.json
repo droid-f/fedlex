@@ -6,9 +6,6 @@
       "Work"
     ],
     "attributes": {
-      "dateNoLongerInForce": {
-        "xsd:date": "1983-01-01"
-      },
       "dateDocument": {
         "xsd:date": "1982-07-08"
       },
@@ -18,30 +15,24 @@
       "dateEndApplicability": {
         "xsd:date": "1982-12-31"
       },
-      "typeDocument": {
-        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/26"
-      },
       "dateEntryInForce": {
         "xsd:date": "1982-07-15"
+      },
+      "typeDocument": {
+        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/26"
       }
     },
     "references": {
-      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/11280",
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/cc/1982/1247_1247_1247/fr",
         "https://fedlex.data.admin.ch/eli/cc/1982/1247_1247_1247/it",
         "https://fedlex.data.admin.ch/eli/cc/1982/1247_1247_1247/de"
-      ]
+      ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/11280"
     }
   },
   "included": [
-    {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/11280",
-      "type": [
-        "Concept",
-        "LegalTaxonomy"
-      ]
-    },
     {
       "uri": "https://fedlex.data.admin.ch/eli/cc/1982/1247_1247_1247/fr",
       "type": "Expression",
@@ -79,6 +70,20 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/11280",
+      "type": [
+        "Concept",
+        "LegalTaxonomy"
+      ]
+    },
+    {
       "uri": "http://publications.europa.eu/resource/authority/language/FRA",
       "type": [
         "Concept",
@@ -100,9 +105,7 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/1982/1247_1247_1247/graph",
   "facets": {
-    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
     "consolidates": [
       {
         "dateDocument": "1982-07-08",
@@ -124,10 +127,11 @@
         "uri": "https://fedlex.data.admin.ch/eli/oc/1982/1247_1247_1247"
       }
     ],
-    "sortingDate": "1983-01-01",
-    "theme": {
-      "themeId": "9",
-      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/10385"
+    "calculatedEndDate": "1982-12-31",
+    "baseActReference": {
+      "de": "AS 1982 1247",
+      "it": "RU 1982 1247",
+      "fr": "RO 1982 1247"
     },
     "impacts": [
       {
@@ -148,7 +152,7 @@
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/1982/1247_1247_1247",
         "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
+          "http://publications.europa.eu/resource/authority/language/FRA"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1982/1247_1247_1247/19820715",
@@ -161,7 +165,7 @@
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/1982/1247_1247_1247",
         "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
+          "http://publications.europa.eu/resource/authority/language/DEU"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1982/1247_1247_1247/19820715",
@@ -180,7 +184,27 @@
       "fr": "RS 942.313.911",
       "it": "RS 942.313.911"
     },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
+    },
+    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
+    "sortingDateTime": "1982-07-14T22:00Z",
+    "classifiedByTaxonomyEntryLabel_raw": "942.313.911",
+    "sortingDate": "1982-07-15",
+    "classifiedByTaxonomyEntryLabel_sort": "942.313.911",
+    "theme": {
+      "themeId": "9",
+      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/10385"
+    },
     "archivingDate": "1982-07-15"
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/1982/1247_1247_1247/graph",
   "timestampms": null
 }

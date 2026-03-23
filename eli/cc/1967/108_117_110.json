@@ -6,9 +6,6 @@
       "Work"
     ],
     "attributes": {
-      "dateNoLongerInForce": {
-        "xsd:date": "1985-01-01"
-      },
       "dateDocument": {
         "xsd:date": "1966-12-20"
       },
@@ -18,30 +15,24 @@
       "dateEndApplicability": {
         "xsd:date": "1984-12-31"
       },
-      "typeDocument": {
-        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/31"
-      },
       "dateEntryInForce": {
         "xsd:date": "1967-01-01"
+      },
+      "typeDocument": {
+        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/31"
       }
     },
     "references": {
-      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/2675",
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/cc/1967/108_117_110/fr",
         "https://fedlex.data.admin.ch/eli/cc/1967/108_117_110/de",
         "https://fedlex.data.admin.ch/eli/cc/1967/108_117_110/it"
-      ]
+      ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/2675"
     }
   },
   "included": [
-    {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/2675",
-      "type": [
-        "Concept",
-        "LegalTaxonomy"
-      ]
-    },
     {
       "uri": "https://fedlex.data.admin.ch/eli/cc/1967/108_117_110/fr",
       "type": "Expression",
@@ -79,6 +70,20 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/2675",
+      "type": [
+        "Concept",
+        "LegalTaxonomy"
+      ]
+    },
+    {
       "uri": "http://publications.europa.eu/resource/authority/language/FRA",
       "type": [
         "Concept",
@@ -100,9 +105,7 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/1967/108_117_110/graph",
   "facets": {
-    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/49",
     "consolidates": [
       {
         "dateDocument": "1975-11-10",
@@ -143,12 +146,26 @@
         "uri": "https://fedlex.data.admin.ch/eli/oc/1967/108_117_110"
       }
     ],
-    "sortingDate": "1985-01-01",
-    "theme": {
-      "themeId": "0.6",
-      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/1980"
+    "calculatedEndDate": "1984-12-31",
+    "baseActReference": {
+      "de": "AS 1967 108",
+      "it": "RU 1967 110",
+      "fr": "RO 1967 117"
     },
     "impacts": [
+      {
+        "impactDate": "1967-01-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1967/108_117_110",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1967/108_117_110/19670101",
+        "decisionDate": "1967-01-01",
+        "historicalImpact": false,
+        "consolidationDate": "1967-01-01"
+      },
       {
         "impactDate": "1967-01-01",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
@@ -167,19 +184,6 @@
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/1967/108_117_110",
         "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1967/108_117_110/19670101",
-        "decisionDate": "1967-01-01",
-        "historicalImpact": false,
-        "consolidationDate": "1967-01-01"
-      },
-      {
-        "impactDate": "1967-01-01",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1967/108_117_110",
-        "language": [
           "http://publications.europa.eu/resource/authority/language/DEU"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
@@ -193,7 +197,7 @@
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/1976/122_122_122",
         "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
+          "http://publications.europa.eu/resource/authority/language/DEU"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1967/108_117_110/19760101",
@@ -206,7 +210,7 @@
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/1976/122_122_122",
         "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
+          "http://publications.europa.eu/resource/authority/language/ITA"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1967/108_117_110/19760101",
@@ -238,7 +242,27 @@
       "fr": "RS 0.672.971.411",
       "it": "RS 0.672.971.411"
     },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
+    },
+    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/49",
+    "sortingDateTime": "1975-12-31T23:00Z",
+    "classifiedByTaxonomyEntryLabel_raw": "0.672.971.411",
+    "sortingDate": "1976-01-01",
+    "classifiedByTaxonomyEntryLabel_sort": "000.672.971.411",
+    "theme": {
+      "themeId": "0.6",
+      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/1980"
+    },
     "archivingDate": "1976-01-01"
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/1967/108_117_110/graph",
   "timestampms": null
 }
