@@ -15,30 +15,24 @@
       "basicAct": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/fga/1890/2_927_74_927"
       },
-      "typeDocument": {
-        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/16"
-      },
       "dateEntryInForce": {
         "xsd:date": "1890-02-02"
+      },
+      "typeDocument": {
+        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/16"
       }
     },
     "references": {
-      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/4791",
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/cc/1890/2_927_74_927_fga/de",
         "https://fedlex.data.admin.ch/eli/cc/1890/2_927_74_927_fga/fr",
         "https://fedlex.data.admin.ch/eli/cc/1890/2_927_74_927_fga/it"
-      ]
+      ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/4791"
     }
   },
   "included": [
-    {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/4791",
-      "type": [
-        "Concept",
-        "LegalTaxonomy"
-      ]
-    },
     {
       "uri": "https://fedlex.data.admin.ch/eli/cc/1890/2_927_74_927_fga/de",
       "type": "Expression",
@@ -76,6 +70,20 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/4791",
+      "type": [
+        "Concept",
+        "LegalTaxonomy"
+      ]
+    },
+    {
       "uri": "http://publications.europa.eu/resource/authority/language/DEU",
       "type": [
         "Concept",
@@ -97,9 +105,7 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/1890/2_927_74_927_fga/graph",
   "facets": {
-    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/48",
     "consolidates": [
       {
         "expression": {
@@ -107,7 +113,7 @@
             "manifestation": [
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
-                "fileUrl": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10014801",
+                "fileUrl": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10014801&action=open",
                 "uri": "https://fedlex.data.admin.ch/eli/fga/1890/2_927_74_927/de/pdf-a"
               }
             ],
@@ -129,7 +135,7 @@
               }
             ],
             "memorialLabel": "BBl 2006 5117",
-            "title": "Bundesbeschluss\t<bd> über die Gewährleistung der Verfassung des Kantons Basel-Stadt"
+            "title": "Bundesbeschluss\t über die Gewährleistung der Verfassung des Kantons Basel-Stadt"
           },
           "http://publications.europa.eu/resource/authority/language/FRA": {
             "manifestation": [
@@ -140,7 +146,7 @@
               }
             ],
             "memorialLabel": "FF 2006 4873",
-            "title": "Arrêté fédéral <bd> accordant la garantie fédérale à la Constitution du canton de Bâle-Ville"
+            "title": "Arrêté fédéral accordant la garantie fédérale à la Constitution du canton de Bâle-Ville"
           },
           "http://publications.europa.eu/resource/authority/language/ITA": {
             "manifestation": [
@@ -151,32 +157,19 @@
               }
             ],
             "memorialLabel": "FF 2006 4685",
-            "title": "Decreto federale <bd> che accorda la garanzia federale alla Costituzione del Cantone di Basilea Città"
+            "title": "Decreto federale che accorda la garanzia federale alla Costituzione del Cantone di Basilea Città"
           }
         },
         "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/5",
         "uri": "https://fedlex.data.admin.ch/eli/fga/2006/614"
       }
     ],
-    "sortingDate": "2006-07-13",
-    "theme": {
-      "themeId": "1",
-      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/4713"
+    "calculatedEndDate": "2006-07-12",
+    "abrogationSourceUri": "https://fedlex.data.admin.ch/eli/fga/2006/614",
+    "baseActReference": {
+      "de": "BBl 1890 II 927"
     },
     "impacts": [
-      {
-        "commentFrom": {
-          "de": "§ 141 Abs. 2"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/fga/2006/614",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
-        "decisionDate": "2005-03-23",
-        "historicalImpact": false
-      },
       {
         "commentFrom": {
           "it": "§ 141 cpv. 2"
@@ -189,6 +182,36 @@
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
         "decisionDate": "2005-03-23",
         "historicalImpact": false
+      },
+      {
+        "impactDate": "1890-02-02",
+        "fromActLabel": {
+          "fr": "FF 1890 III 74"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1890/2_927_74_927_fga/18900202",
+        "decisionDate": "1890-02-02",
+        "historicalImpact": false,
+        "consolidationDate": "1890-02-02"
+      },
+      {
+        "impactDate": "1890-02-02",
+        "fromActLabel": {
+          "de": "BBl 1890 II 927"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1890/2_927_74_927_fga/18900202",
+        "decisionDate": "1890-02-02",
+        "historicalImpact": false,
+        "consolidationDate": "1890-02-02"
       },
       {
         "commentFrom": {
@@ -204,49 +227,17 @@
         "historicalImpact": false
       },
       {
-        "impactDate": "1890-02-02",
-        "fromActLabel": {
-          "de": "BBl 1890 II 927"
+        "commentFrom": {
+          "de": "§ 141 Abs. 2"
         },
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1890/2_927_74_927_fga/18900202",
-        "decisionDate": "1890-02-02",
-        "historicalImpact": false,
-        "consolidationDate": "1890-02-02"
-      },
-      {
-        "impactDate": "1890-02-02",
-        "fromActLabel": {
-          "de": "BBl 1890 II 927"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/fga/2006/614",
         "language": [
           "http://publications.europa.eu/resource/authority/language/DEU"
         ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1890/2_927_74_927_fga/18900202",
-        "decisionDate": "1890-02-02",
-        "historicalImpact": false,
-        "consolidationDate": "1890-02-02"
-      },
-      {
-        "impactDate": "1890-02-02",
-        "fromActLabel": {
-          "de": "BBl 1890 II 927"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1890/2_927_74_927_fga/18900202",
-        "decisionDate": "1890-02-02",
-        "historicalImpact": false,
-        "consolidationDate": "1890-02-02"
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
+        "decisionDate": "2005-03-23",
+        "historicalImpact": false
       }
     ],
     "title": {
@@ -259,7 +250,33 @@
       "fr": "RS 131.222.1",
       "it": "RS 131.222.1"
     },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
+    },
+    "abrogationDecisionDate": "2006-05-24",
+    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/48",
+    "abrogationSource": {
+      "de": "BBl 2006 5117",
+      "it": "FF 2006 4685",
+      "fr": "FF 2006 4873"
+    },
+    "sortingDateTime": "1890-02-01T23:30:14Z",
+    "classifiedByTaxonomyEntryLabel_raw": "131.222.1",
+    "sortingDate": "2006-07-13",
+    "classifiedByTaxonomyEntryLabel_sort": "131.222.100",
+    "theme": {
+      "themeId": "1",
+      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/4713"
+    },
     "archivingDate": "1890-02-02"
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/1890/2_927_74_927_fga/graph",
   "timestampms": null
 }
