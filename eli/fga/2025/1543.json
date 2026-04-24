@@ -9,16 +9,8 @@
       "legalResourceGenre": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/legal-resource-genre/900"
       },
-      "dateDocument": {
-        "xsd:date": "2025-05-05"
-      },
-      "created": {
-        "xsd:dateTime": [
-          "2025-05-19T05:19:09.770Z"
-        ]
-      },
-      "sequenceInTheYearOfPublication": {
-        "xsd:int": 1543
+      "timeEntryInForce": {
+        "xsd:time": "00:00:00"
       },
       "modified": {
         "xsd:dateTime": [
@@ -31,11 +23,22 @@
       "processType": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/type-procedure/ord"
       },
-      "nonAnonymousWorkToRemoveDate": {
-        "xsd:date": "2025-11-19"
-      },
       "publicationDate": {
         "xsd:date": "2025-05-19"
+      },
+      "dateDocument": {
+        "xsd:date": "2025-05-05"
+      },
+      "created": {
+        "xsd:dateTime": [
+          "2025-05-19T05:19:09.770Z"
+        ]
+      },
+      "sequenceInTheYearOfPublication": {
+        "xsd:int": 1543
+      },
+      "retroactiveEntryInForce": {
+        "xsd:boolean": false
       }
     },
     "references": {
@@ -101,7 +104,26 @@
       "type": [
         "Memorial",
         "Work"
-      ]
+      ],
+      "attributes": {
+        "memorialNumber": {
+          "xsd:int": 95
+        },
+        "isMemberOf": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/2025"
+        },
+        "memorialYear": {
+          "xsd:int": 2025
+        },
+        "publicationDate": {
+          "xsd:date": "2025-05-19"
+        }
+      },
+      "references": {
+        "isRealizedBy": [
+          "https://fedlex.data.admin.ch/eli/collection/fga/2025/95/de"
+        ]
+      }
     },
     {
       "uri": "http://publications.europa.eu/resource/authority/language/DEU",
@@ -113,15 +135,35 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/2025/1543/de/docx",
       "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
       "attributes": {
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
         },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2025/1543/de/docx/fedlex-data-admin-ch-eli-fga-2025-1543-de-docx.docx"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2025/1543/de/docx/fedlex-data-admin-ch-eli-fga-2025-1543-de-docx-1.docx",
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2025/1543/de/docx/fedlex-data-admin-ch-eli-fga-2025-1543-de-docx-3.docx",
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2025/1543/de/docx/fedlex-data-admin-ch-eli-fga-2025-1543-de-docx.docx",
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2025/1543/de/docx/fedlex-data-admin-ch-eli-fga-2025-1543-de-docx-2.docx"
+          ]
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2025/1543/de/docx/fedlex-data-admin-ch-eli-fga-2025-1543-de-docx.docx"
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2025/1543/de/docx/fedlex-data-admin-ch-eli-fga-2025-1543-de-docx-4.docx"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2025/1543/de/docx/fedlex-data-admin-ch-eli-fga-2025-1543-de-docx-1.docx"
         }
       }
     },
@@ -132,14 +174,8 @@
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
         },
-        "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2025/1543/de/html-an/fedlex-data-admin-ch-eli-fga-2025-1543-de-html-an.html"
-        },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html-an"
-        },
-        "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2025/1543/de/html-an/fedlex-data-admin-ch-eli-fga-2025-1543-de-html-an.html"
         }
       }
     },
@@ -150,11 +186,19 @@
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
         },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2025/1543/de/html/fedlex-data-admin-ch-eli-fga-2025-1543-de-html.html"
+          ]
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2025/1543/de/html/fedlex-data-admin-ch-eli-fga-2025-1543-de-html.html"
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2025/1543/de/html/fedlex-data-admin-ch-eli-fga-2025-1543-de-html-1.html"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2025/1543/de/html/fedlex-data-admin-ch-eli-fga-2025-1543-de-html.html"
         }
       }
     },
@@ -165,8 +209,17 @@
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
         },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2025/1543/de/pdf-a/fedlex-data-admin-ch-eli-fga-2025-1543-de-pdf-a.pdf",
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2025/1543/de/pdf-a/fedlex-data-admin-ch-eli-fga-2025-1543-de-pdf-a-3.pdf",
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2025/1543/de/pdf-a/fedlex-data-admin-ch-eli-fga-2025-1543-de-pdf-a-2.pdf",
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2025/1543/de/pdf-a/fedlex-data-admin-ch-eli-fga-2025-1543-de-pdf-a-4.pdf",
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2025/1543/de/pdf-a/fedlex-data-admin-ch-eli-fga-2025-1543-de-pdf-a-1.pdf"
+          ]
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2025/1543/de/pdf-a/fedlex-data-admin-ch-eli-fga-2025-1543-de-pdf-a.pdf"
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2025/1543/de/pdf-a/fedlex-data-admin-ch-eli-fga-2025-1543-de-pdf-a-5.pdf"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
@@ -175,6 +228,9 @@
           "xsd:int": [
             2
           ]
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2025/1543/de/pdf-a/fedlex-data-admin-ch-eli-fga-2025-1543-de-pdf-a.pdf"
         }
       }
     },
@@ -185,14 +241,8 @@
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/XML"
         },
-        "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2025/1543/de/xml-an/fedlex-data-admin-ch-eli-fga-2025-1543-de-xml-an.xml"
-        },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/xml-an"
-        },
-        "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2025/1543/de/xml-an/fedlex-data-admin-ch-eli-fga-2025-1543-de-xml-an.xml"
         }
       }
     },
@@ -203,9 +253,6 @@
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
         },
-        "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2025/1543/de/pdf-a-an/fedlex-data-admin-ch-eli-fga-2025-1543-de-pdf-a-an.pdf"
-        },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a-an"
         },
@@ -213,9 +260,6 @@
           "xsd:int": [
             2
           ]
-        },
-        "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2025/1543/de/pdf-a-an/fedlex-data-admin-ch-eli-fga-2025-1543-de-pdf-a-an.pdf"
         }
       }
     },
@@ -226,11 +270,19 @@
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/XML"
         },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2025/1543/de/xml/fedlex-data-admin-ch-eli-fga-2025-1543-de-xml.xml"
+          ]
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2025/1543/de/xml/fedlex-data-admin-ch-eli-fga-2025-1543-de-xml.xml"
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2025/1543/de/xml/fedlex-data-admin-ch-eli-fga-2025-1543-de-xml-1.xml"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/xml"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2025/1543/de/xml/fedlex-data-admin-ch-eli-fga-2025-1543-de-xml.xml"
         }
       }
     },
@@ -241,16 +293,29 @@
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
         },
-        "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2025/1543/de/docx-an/fedlex-data-admin-ch-eli-fga-2025-1543-de-docx-an.docx"
-        },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx-an"
-        },
-        "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2025/1543/de/docx-an/fedlex-data-admin-ch-eli-fga-2025-1543-de-docx-an.docx"
         }
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/collection/fga/2025/95/de",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": ""
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+      "type": [
+        "Concept",
+        "LegalInstitution"
+      ]
     }
   ],
   "facets": {
@@ -264,10 +329,11 @@
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 2025 1543"
     },
-    "modified": "2025-05-19T07:19:37.714+02:00",
+    "modified": "2026-04-22T07:41:50.098685",
     "title": {
       "de": "Richtplan des Kantons Glarus, Genehmigung Richtplananpassung Siedlungsgebiet Glarus Nord und Abbaugebiet Haltengut"
     },
+    "groupIdentifier": "https://fedlex.data.admin.ch/eli/fga/2025/1543",
     "explanatoryReportListPerLanguage": {
       "de": false,
       "en": false,
