@@ -9,6 +9,9 @@
       "legalResourceGenre": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/legal-resource-genre/900"
       },
+      "timeEntryInForce": {
+        "xsd:time": "00:00:00"
+      },
       "modified": {
         "xsd:dateTime": [
           "2025-07-02T06:54:19.250Z"
@@ -33,6 +36,14 @@
       },
       "sequenceInTheYearOfPublication": {
         "xsd:int": 2075
+      },
+      "retroactiveEntryInForce": {
+        "xsd:boolean": false
+      },
+      "temporaryParliamentDraftId": {
+        "xsd:string": [
+          "24.041"
+        ]
       }
     },
     "references": {
@@ -159,7 +170,28 @@
       "type": [
         "Memorial",
         "Work"
-      ]
+      ],
+      "attributes": {
+        "memorialNumber": {
+          "xsd:int": 125
+        },
+        "isMemberOf": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/2025"
+        },
+        "memorialYear": {
+          "xsd:int": 2025
+        },
+        "publicationDate": {
+          "xsd:date": "2025-07-02"
+        }
+      },
+      "references": {
+        "isRealizedBy": [
+          "https://fedlex.data.admin.ch/eli/collection/fga/2025/125/it",
+          "https://fedlex.data.admin.ch/eli/collection/fga/2025/125/fr",
+          "https://fedlex.data.admin.ch/eli/collection/fga/2025/125/de"
+        ]
+      }
     },
     {
       "uri": "http://publications.europa.eu/resource/authority/language/ITA",
@@ -171,6 +203,10 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/2025/2075/it/docx",
       "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
       "attributes": {
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
@@ -287,6 +323,10 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/2025/2075/fr/docx",
       "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
       "attributes": {
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
@@ -407,6 +447,10 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/2025/2075/de/docx",
       "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
       "attributes": {
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
@@ -462,6 +506,42 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/collection/fga/2025/125/it",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/ITA"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": ""
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/collection/fga/2025/125/fr",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": ""
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/collection/fga/2025/125/de",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": ""
+        }
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
       "type": [
         "Concept",
@@ -489,7 +569,7 @@
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 2025 2075",
       "http://publications.europa.eu/resource/authority/language/ITA": "FF 2025 2075"
     },
-    "modified": "2025-07-02T08:53:56.062+02:00",
+    "modified": "2026-06-05T11:15:43.564253",
     "title": {
       "de": "Bundesbeschluss über die Förderung des grenzüberschreitenden Personenverkehrs auf der Schiene und von Massnahmen zur Vermeidung von Schäden und zur Dekarbonisierung von Anlagen im Emissionshandelssystem in den Jahren 2025–2030",
       "it": "Decreto federale concernente la promozione del trasporto ferroviario transfrontaliero di persone, dei provvedimenti di prevenzione dei danni e di decarbonizzazione degli impianti soggetti al sistema di scambio di quote di emissioni nel periodo 2025–2030",
