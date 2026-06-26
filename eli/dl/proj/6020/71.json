@@ -17,7 +17,7 @@
     "attributes": {
       "modified": {
         "xsd:dateTime": [
-          "2021-11-03T14:48:03.436Z"
+          "2026-06-26T11:23:34.692Z"
         ]
       },
       "eventId": {
@@ -25,7 +25,7 @@
       },
       "created": {
         "xsd:dateTime": [
-          "2021-11-03T14:48:03.436Z"
+          "2026-06-26T11:23:34.670Z"
         ]
       }
     }
@@ -38,6 +38,32 @@
         "Event",
         "LegislativeTask"
       ],
+      "references": {
+        "previousConsultationStatus": [
+          "https://fedlex.data.admin.ch/vocabulary/consultation-status/5"
+        ],
+        "isOpinionOf": [
+          "https://fedlex.data.admin.ch/vocabulary/legal-institution/247",
+          "https://fedlex.data.admin.ch/vocabulary/legal-institution/248",
+          "https://fedlex.data.admin.ch/vocabulary/legal-institution/246"
+        ],
+        "foreseenImpactToLegalResource": [
+          "https://fedlex.data.admin.ch/eli/cc/2002/569",
+          "https://fedlex.data.admin.ch/eli/cc/1986/46_46_46",
+          "https://fedlex.data.admin.ch/eli/cc/1995/3867_3867_3867",
+          "https://fedlex.data.admin.ch/eli/cc/63/1185_1183_1185",
+          "https://fedlex.data.admin.ch/eli/cc/1983/38_38_38",
+          "https://fedlex.data.admin.ch/eli/cc/1983/1205_1205_1205",
+          "https://fedlex.data.admin.ch/eli/cc/1961/29_29_29",
+          "https://fedlex.data.admin.ch/eli/cc/1984/543_543_543"
+        ],
+        "consultationStatus": "https://fedlex.data.admin.ch/vocabulary/consultation-status/5",
+        "hasSubTask": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/6020/71/cons_1/cons-pos",
+          "https://fedlex.data.admin.ch/eli/dl/proj/6020/71/cons_1/cons-open",
+          "https://fedlex.data.admin.ch/eli/dl/proj/6020/71/cons_1/cons-result"
+        ]
+      },
       "attributes": {
         "eventTitle": {
           "rdf:langString": {
@@ -68,29 +94,14 @@
         "eventId": {
           "xsd:string": "proj/2020/71/cons_1"
         }
-      },
-      "references": {
-        "isOpinionOf": [
-          "https://fedlex.data.admin.ch/vocabulary/legal-institution/247",
-          "https://fedlex.data.admin.ch/vocabulary/legal-institution/248",
-          "https://fedlex.data.admin.ch/vocabulary/legal-institution/246"
-        ],
-        "foreseenImpactToLegalResource": [
-          "https://fedlex.data.admin.ch/eli/cc/2002/569",
-          "https://fedlex.data.admin.ch/eli/cc/1986/46_46_46",
-          "https://fedlex.data.admin.ch/eli/cc/1995/3867_3867_3867",
-          "https://fedlex.data.admin.ch/eli/cc/63/1185_1183_1185",
-          "https://fedlex.data.admin.ch/eli/cc/1983/38_38_38",
-          "https://fedlex.data.admin.ch/eli/cc/1983/1205_1205_1205",
-          "https://fedlex.data.admin.ch/eli/cc/1961/29_29_29",
-          "https://fedlex.data.admin.ch/eli/cc/1984/543_543_543"
-        ],
-        "consultationStatus": "https://fedlex.data.admin.ch/vocabulary/consultation-status/5",
-        "hasSubTask": [
-          "https://fedlex.data.admin.ch/eli/dl/proj/6020/71/cons_1/cons-open",
-          "https://fedlex.data.admin.ch/eli/dl/proj/6020/71/cons_1/cons-result"
-        ]
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/consultation-status/5",
+      "type": [
+        "Concept",
+        "ConsultationStatus"
+      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/247",
@@ -170,11 +181,31 @@
       ]
     },
     {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/consultation-status/5",
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/6020/71/cons_1/cons-pos",
       "type": [
-        "Concept",
-        "ConsultationStatus"
-      ]
+        "ConsultationTask",
+        "Event",
+        "LegislativeTask",
+        "PositionStatementPublication"
+      ],
+      "references": {
+        "institutionInChargeOfTheEventLevel2": "https://fedlex.data.admin.ch/vocabulary/legal-institution/12",
+        "institutionInChargeOfTheEvent": "https://fedlex.data.admin.ch/vocabulary/legal-institution/S0",
+        "opinionHasDraftRelatedDocument": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/6020/71/cons_1/doc_9"
+        ],
+        "legalInstitutionForLegalSupport": [
+          "https://fedlex.data.admin.ch/vocabulary/legal-institution/12"
+        ],
+        "consultationHasModification": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/6020/71/cons_1/cons-pos/consultation-modification-history/1"
+        ]
+      },
+      "attributes": {
+        "created": {
+          "xsd:dateTime": "2026-06-26T11:23:32.075Z"
+        }
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/6020/71/cons_1/cons-open",
@@ -203,9 +234,6 @@
         ],
         "legalInstitutionForTechnicalSupport": [
           "https://fedlex.data.admin.ch/vocabulary/legal-institution/3272"
-        ],
-        "consultationHasModification": [
-          "https://fedlex.data.admin.ch/eli/dl/proj/6020/71/cons_1/cons-result/consultation-modification-history/1"
         ]
       },
       "attributes": {
@@ -260,6 +288,50 @@
         "Concept",
         "LegalInstitution"
       ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/6020/71/cons_1/doc_9",
+      "type": [
+        "DraftRelatedDocument",
+        "Work"
+      ],
+      "references": {
+        "draftProcessDocumentType": [
+          "https://fedlex.data.admin.ch/vocabulary/draft-document-type/21"
+        ],
+        "isRealizedBy": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/6020/71/cons_1/doc_9/fr",
+          "https://fedlex.data.admin.ch/eli/dl/proj/6020/71/cons_1/doc_9/it",
+          "https://fedlex.data.admin.ch/eli/dl/proj/6020/71/cons_1/doc_9/de"
+        ]
+      },
+      "attributes": {
+        "title": {
+          "rdf:langString": {
+            "de": [
+              "Stellungnahmen"
+            ],
+            "it": [
+              "Pareri"
+            ],
+            "fr": [
+              "Avis"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/6020/71/cons_1/cons-pos/consultation-modification-history/1",
+      "type": [
+        "ConsultationModificationHistory",
+        "Event"
+      ],
+      "attributes": {
+        "consultationStageDate": {
+          "xsd:dateTime": "2026-06-26T11:23:21.885Z"
+        }
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/6020/71/cons_1/doc_5",
@@ -493,18 +565,6 @@
       ]
     },
     {
-      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/6020/71/cons_1/cons-result/consultation-modification-history/1",
-      "type": [
-        "ConsultationModificationHistory",
-        "Event"
-      ],
-      "attributes": {
-        "consultationStageDate": {
-          "xsd:dateTime": "2021-11-03T14:48:03.436Z"
-        }
-      }
-    },
-    {
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/6020/71/cons_1/doc_8",
       "type": [
         "DraftRelatedDocument",
@@ -533,6 +593,70 @@
               "Rapport de résultats"
             ]
           }
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/6020/71/cons_1/cons-result/consultation-modification-history/1",
+      "type": [
+        "ConsultationModificationHistory",
+        "Event"
+      ],
+      "attributes": {
+        "consultationStageDate": {
+          "xsd:dateTime": "2021-11-03T14:48:03.436Z"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/draft-document-type/21",
+      "type": [
+        "Concept",
+        "DraftProcessDocumentType"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/6020/71/cons_1/doc_9/fr",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/6020/71/cons_1/doc_9/fr/pdf-a"
+        ]
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Avis"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/6020/71/cons_1/doc_9/it",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/ITA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/6020/71/cons_1/doc_9/it/pdf-a"
+        ]
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Pareri"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/6020/71/cons_1/doc_9/de",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/6020/71/cons_1/doc_9/de/pdf-a"
+        ]
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Stellungnahmen"
         }
       }
     },
@@ -939,11 +1063,88 @@
       }
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/6020/71/cons_1/doc_9/fr/pdf-a",
+      "type": "Manifestation",
+      "attributes": {
+        "manifestationByDefault": {
+          "xsd:boolean": true
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/dl/proj/6020/71/cons_1/doc_9/fr/pdf-a/fedlex-data-admin-ch-eli-dl-proj-6020-71-cons_1-doc_9-fr-pdf-a.pdf"
+        },
+        "publicationDate": {
+          "xsd:dateTime": "2026-06-26T11:23:21.893Z"
+        }
+      },
+      "references": {
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      }
+    },
+    {
       "uri": "http://publications.europa.eu/resource/authority/language/ITA",
       "type": [
         "Concept",
         "Language"
       ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/6020/71/cons_1/doc_9/it/pdf-a",
+      "type": "Manifestation",
+      "attributes": {
+        "manifestationByDefault": {
+          "xsd:boolean": true
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/dl/proj/6020/71/cons_1/doc_9/it/pdf-a/fedlex-data-admin-ch-eli-dl-proj-6020-71-cons_1-doc_9-it-pdf-a.pdf"
+        },
+        "publicationDate": {
+          "xsd:dateTime": "2026-06-26T11:23:21.893Z"
+        }
+      },
+      "references": {
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      }
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/6020/71/cons_1/doc_9/de/pdf-a",
+      "type": "Manifestation",
+      "attributes": {
+        "manifestationByDefault": {
+          "xsd:boolean": true
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/dl/proj/6020/71/cons_1/doc_9/de/pdf-a/fedlex-data-admin-ch-eli-dl-proj-6020-71-cons_1-doc_9-de-pdf-a.pdf"
+        },
+        "publicationDate": {
+          "xsd:dateTime": "2026-06-26T11:23:21.893Z"
+        }
+      },
+      "references": {
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/6020/71/cons_1/doc_5/it/pdf-a",
@@ -967,13 +1168,6 @@
       }
     },
     {
-      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
-      "type": [
-        "Concept",
-        "Language"
-      ]
-    },
-    {
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/6020/71/cons_1/doc_5/fr/pdf-a",
       "type": "Manifestation",
       "attributes": {
@@ -993,13 +1187,6 @@
       "references": {
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/6020/71/cons_1/doc_5/de/pdf-a",
@@ -1464,14 +1651,14 @@
       }
     },
     {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
       "type": [
         "Concept",
         "LegalInstitution"
       ]
     },
     {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
       "type": [
         "Concept",
         "LegalInstitution"
@@ -1479,7 +1666,7 @@
     }
   ],
   "facets": {
-    "sortingDateTime": "2021-11-03T14:48:03.436Z",
+    "sortingDateTime": "2026-06-26T11:23:34.692Z",
     "taxonomies": [
       {
         "taxonomyId": "830.11",
@@ -1515,7 +1702,8 @@
       }
     ],
     "sortingDate": "2021-11-03T14:48:03.436Z",
-    "statusChangedOnPublication": true,
+    "statusChangedOnPublication": false,
+    "modified": "2026-06-26T13:23:34.714130",
     "title": {
       "de": "Ausführungsbestimmungen zur Änderung des Bundesgesetzes über die Invalidenversicherung (Weiterentwicklung der IV)",
       "it": "Disposizioni d'esecuzione relative alla modifica della legge federale sull'assicurazione per l'invalidità (Ulteriore sviluppo dell'AI)",
@@ -1523,9 +1711,11 @@
     },
     "department": {
       "ConsultationPhase": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D5",
+      "PositionStatementPublication": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D5",
       "ResultOfAConsultationPublication": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D5"
     },
-    "consultationId": "2020/71"
+    "consultationId": "2020/71",
+    "groupIdentifier": "https://fedlex.data.admin.ch/eli/dl/proj/6020/71"
   },
   "graph": "https://fedlex.data.admin.ch/eli/dl/proj/6020/71/graph",
   "timestampms": null
