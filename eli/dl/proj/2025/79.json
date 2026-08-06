@@ -17,7 +17,7 @@
     "attributes": {
       "modified": {
         "xsd:dateTime": [
-          "2026-05-27T00:00:15.196Z"
+          "2026-08-06T11:25:36.494Z"
         ]
       },
       "eventId": {
@@ -25,7 +25,7 @@
       },
       "created": {
         "xsd:dateTime": [
-          "2026-05-27T00:00:15.161Z"
+          "2026-08-06T11:25:36.478Z"
         ]
       }
     }
@@ -79,8 +79,9 @@
           "https://fedlex.data.admin.ch/eli/cc/1995/3867_3867_3867",
           "https://fedlex.data.admin.ch/eli/cc/1995/4964_4964_4964"
         ],
-        "consultationStatus": "https://fedlex.data.admin.ch/vocabulary/consultation-status/3",
+        "consultationStatus": "https://fedlex.data.admin.ch/vocabulary/consultation-status/4",
         "hasSubTask": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2025/79/cons_1/cons-pos",
           "https://fedlex.data.admin.ch/eli/dl/proj/2025/79/cons_1/cons-planif",
           "https://fedlex.data.admin.ch/eli/dl/proj/2025/79/cons_1/cons-open"
         ]
@@ -122,11 +123,35 @@
       ]
     },
     {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/consultation-status/3",
+      "uri": "https://fedlex.data.admin.ch/vocabulary/consultation-status/4",
       "type": [
         "Concept",
         "ConsultationStatus"
       ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2025/79/cons_1/cons-pos",
+      "type": [
+        "ConsultationTask",
+        "Event",
+        "LegislativeTask",
+        "PositionStatementPublication"
+      ],
+      "references": {
+        "institutionInChargeOfTheEventLevel2": "https://fedlex.data.admin.ch/vocabulary/legal-institution/34",
+        "institutionInChargeOfTheEvent": "https://fedlex.data.admin.ch/vocabulary/legal-institution/S0",
+        "opinionHasDraftRelatedDocument": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2025/79/cons_1/doc_12"
+        ],
+        "consultationHasModification": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2025/79/cons_1/cons-pos/consultation-modification-history/1"
+        ]
+      },
+      "attributes": {
+        "created": {
+          "xsd:dateTime": "2026-08-06T11:25:34.354Z"
+        }
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2025/79/cons_1/cons-planif",
@@ -210,6 +235,50 @@
         "Concept",
         "LegalInstitution"
       ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2025/79/cons_1/doc_12",
+      "type": [
+        "DraftRelatedDocument",
+        "Work"
+      ],
+      "references": {
+        "draftProcessDocumentType": [
+          "https://fedlex.data.admin.ch/vocabulary/draft-document-type/21"
+        ],
+        "isRealizedBy": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2025/79/cons_1/doc_12/fr",
+          "https://fedlex.data.admin.ch/eli/dl/proj/2025/79/cons_1/doc_12/de",
+          "https://fedlex.data.admin.ch/eli/dl/proj/2025/79/cons_1/doc_12/it"
+        ]
+      },
+      "attributes": {
+        "title": {
+          "rdf:langString": {
+            "de": [
+              "Stellungnahmen"
+            ],
+            "it": [
+              "Pareri"
+            ],
+            "fr": [
+              "Avis"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2025/79/cons_1/cons-pos/consultation-modification-history/1",
+      "type": [
+        "ConsultationModificationHistory",
+        "Event"
+      ],
+      "attributes": {
+        "consultationStageDate": {
+          "xsd:dateTime": "2026-08-06T11:25:25.234Z"
+        }
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2025/79/cons_1/cons-planif/consultation-modification-history/1",
@@ -584,6 +653,58 @@
       "attributes": {
         "consultationStageDate": {
           "xsd:dateTime": "2026-02-19T08:57:03.406Z"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/draft-document-type/21",
+      "type": [
+        "Concept",
+        "DraftProcessDocumentType"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2025/79/cons_1/doc_12/fr",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2025/79/cons_1/doc_12/fr/pdf-a"
+        ]
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Avis"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2025/79/cons_1/doc_12/de",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2025/79/cons_1/doc_12/de/pdf-a"
+        ]
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Stellungnahmen"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2025/79/cons_1/doc_12/it",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/ITA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2025/79/cons_1/doc_12/it/pdf-a"
+        ]
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Pareri"
         }
       }
     },
@@ -1132,11 +1253,88 @@
       }
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2025/79/cons_1/doc_12/fr/pdf-a",
+      "type": "Manifestation",
+      "attributes": {
+        "manifestationByDefault": {
+          "xsd:boolean": true
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/dl/proj/2025/79/cons_1/doc_12/fr/pdf-a/fedlex-data-admin-ch-eli-dl-proj-2025-79-cons_1-doc_12-fr-pdf-a.pdf"
+        },
+        "publicationDate": {
+          "xsd:dateTime": "2026-08-06T11:25:25.243Z"
+        }
+      },
+      "references": {
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      }
+    },
+    {
       "uri": "http://publications.europa.eu/resource/authority/language/DEU",
       "type": [
         "Concept",
         "Language"
       ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2025/79/cons_1/doc_12/de/pdf-a",
+      "type": "Manifestation",
+      "attributes": {
+        "manifestationByDefault": {
+          "xsd:boolean": true
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/dl/proj/2025/79/cons_1/doc_12/de/pdf-a/fedlex-data-admin-ch-eli-dl-proj-2025-79-cons_1-doc_12-de-pdf-a.pdf"
+        },
+        "publicationDate": {
+          "xsd:dateTime": "2026-08-06T11:25:25.243Z"
+        }
+      },
+      "references": {
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      }
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/authority/language/ITA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2025/79/cons_1/doc_12/it/pdf-a",
+      "type": "Manifestation",
+      "attributes": {
+        "manifestationByDefault": {
+          "xsd:boolean": true
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/dl/proj/2025/79/cons_1/doc_12/it/pdf-a/fedlex-data-admin-ch-eli-dl-proj-2025-79-cons_1-doc_12-it-pdf-a.pdf"
+        },
+        "publicationDate": {
+          "xsd:dateTime": "2026-08-06T11:25:25.243Z"
+        }
+      },
+      "references": {
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2025/79/cons_1/doc_9/de/pdf-a",
@@ -1160,13 +1358,6 @@
       }
     },
     {
-      "uri": "http://publications.europa.eu/resource/authority/language/ITA",
-      "type": [
-        "Concept",
-        "Language"
-      ]
-    },
-    {
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2025/79/cons_1/doc_9/it/pdf-a",
       "type": "Manifestation",
       "attributes": {
@@ -1186,13 +1377,6 @@
       "references": {
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2025/79/cons_1/doc_9/fr/pdf-a",
@@ -1854,7 +2038,7 @@
     }
   ],
   "facets": {
-    "sortingDateTime": "2026-05-27T00:00:15.196Z",
+    "sortingDateTime": "2026-08-06T11:25:36.494Z",
     "taxonomies": [
       {
         "consolidationAbstract": "https://fedlex.data.admin.ch/eli/cc/1995/3867_3867_3867",
@@ -1865,15 +2049,16 @@
         "taxonomyId": "832.112.31"
       }
     ],
-    "sortingDate": "2026-02-19T08:57:03.406Z",
+    "sortingDate": "2026-08-06T13:25:25.234+02:00",
     "statusChangedOnPublication": true,
-    "modified": "2026-05-27T02:00:15.242375",
+    "modified": "2026-08-06T13:25:36.513940",
     "title": {
       "de": "Änderung der Verordnung über die Krankenversicherung (KVV) und der Krankenpflege-Leistungsverordnung (KLV) (Umsetzung des Kostendämpfungspakets 2 im Arzneimittelbereich)",
       "it": "Modifica dell’ordinanza sull’assicurazione malattie (OAMal) e dell’ordinanza sulle prestazioni (OPre) (Attuazione del pacchetto 2 di misure di contenimento dei costi nel settore dei medicamenti)",
       "fr": "Modification de l’ordonnance sur l’assurance-maladie (OAMal) et de l’ordonnance sur les prestations de l’assurance des soins (OPAS) (Mise en œuvre du deuxième volet de mesures visant à maîtriser les coûts dans le domaine des médicaments)"
     },
     "department": {
+      "PositionStatementPublication": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D5",
       "ConsultationPhase": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D5",
       "ConsultationPreparation": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D5"
     },
