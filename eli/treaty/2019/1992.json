@@ -1,225 +1,47 @@
 {
   "data": {
-    "uri": "https://fedlex.data.admin.ch/eli/treaty/2019/1992",
+    "uri": "https://fedlex.data.admin.ch/eli/proj/2019/1992",
     "type": [
+      "Draft",
       "Event",
-      "TreatyProcess"
+      "InitialDraft"
     ],
     "references": {
-      "treatyProcessHasResultingTreatyDocument": [
-        "https://fedlex.data.admin.ch/eli/treaty/2019/1992/treatyDocument/1"
-      ],
-      "treatySubject": [
-        "https://fedlex.data.admin.ch/vocabulary/treaty-subject-theme/45"
-      ],
-      "treatyUnderUmbrellaOf": [
-        "https://fedlex.data.admin.ch/vocabulary/international-actor/10416"
-      ],
-      "treatyProcessHasTask": [
-        "https://fedlex.data.admin.ch/eli/treaty/2019/1992/treatyRatification/1",
-        "https://fedlex.data.admin.ch/eli/treaty/2019/1992/registration/1",
-        "https://fedlex.data.admin.ch/eli/treaty/2019/1992/entryIntoForce/1",
-        "https://fedlex.data.admin.ch/eli/treaty/2019/1992/treatySignature/1",
-        "https://fedlex.data.admin.ch/eli/treaty/2019/1992/referral/1"
-      ],
-      "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1",
-      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/3324"
+      "draftHasStage": [
+        "https://fedlex.data.admin.ch/eli/proj/2019/1992/migstage/1"
+      ]
     },
     "attributes": {
-      "firstEntryIntoForceDate": {
-        "xsd:date": "2019-07-01"
-      },
-      "bilateral": {
-        "xsd:boolean": false
-      },
-      "modified": {
-        "xsd:dateTime": [
-          "2024-06-28T13:33:12.762Z"
+      "draftId": {
+        "xsd:string": [
+          "20191992"
         ]
       },
-      "treatySignatureDate": {
-        "xsd:date": "2018-09-07"
-      },
-      "created": {
-        "xsd:dateTime": [
-          "2024-06-28T13:33:12.738Z"
+      "hasResultingLegalResource": {
+        "rdfs:Resource": [
+          "https://fedlex.data.admin.ch/eli/oc/2019/385"
         ]
-      },
-      "treatyExpirationDate": {
-        "xsd:date": "2022-10-06"
-      },
-      "titleTreaty": {
-        "rdf:langString": {
-          "de": [
-            "Allgemeine Verfahrensordnung des Weltpostvereins"
-          ],
-          "it": [
-            "Regolamento generale dell'Unione postale universale"
-          ],
-          "fr": [
-            "Règlement général de l'Union postale universelle"
-          ]
-        }
       }
     }
   },
   "included": [
     {
-      "uri": "https://fedlex.data.admin.ch/eli/treaty/2019/1992/treatyDocument/1",
-      "type": [
-        "LegalResource",
-        "TreatyDocument",
-        "Work"
-      ],
+      "uri": "https://fedlex.data.admin.ch/eli/proj/2019/1992/migstage/1",
+      "type": "MigrationDraftStage",
       "attributes": {
-        "typeDocument": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/32"
-        }
-      },
-      "references": {
-        "modifiedBy": [
-          "https://fedlex.data.admin.ch/eli/treaty/2022/0038/TreatyDocument/1"
-        ]
-      }
-    },
-    {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/treaty-subject-theme/45",
-      "type": [
-        "Concept",
-        "TreatySubjectTheme"
-      ]
-    },
-    {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/international-actor/10416",
-      "type": [
-        "Concept",
-        "InternationalActor"
-      ]
-    },
-    {
-      "uri": "https://fedlex.data.admin.ch/eli/treaty/2019/1992/treatyRatification/1",
-      "type": [
-        "Event",
-        "TaskForTreaty",
-        "TreatyRatification"
-      ],
-      "attributes": {
-        "treatyPartyRatificationDate": {
-          "xsd:date": "2019-06-21"
-        }
-      },
-      "references": {
-        "treatyRatificationParty": "https://fedlex.data.admin.ch/vocabulary/country/718"
-      }
-    },
-    {
-      "uri": "https://fedlex.data.admin.ch/eli/treaty/2019/1992/registration/1",
-      "type": [
-        "Event",
-        "Registration",
-        "TaskForTreaty"
-      ],
-      "references": {
-        "depositary": "https://fedlex.data.admin.ch/vocabulary/international-actor/10416"
-      }
-    },
-    {
-      "uri": "https://fedlex.data.admin.ch/eli/treaty/2019/1992/entryIntoForce/1",
-      "type": [
-        "EntryIntoForce",
-        "Event",
-        "TaskForTreaty"
-      ],
-      "attributes": {
-        "entryIntoForceDate": {
+        "migrationDraftStageDate": {
           "xsd:date": "2019-07-01"
+        },
+        "migrationDraftStageType": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/migration-draft-stage-type/6712"
         }
-      },
-      "references": {
-        "entryIntoForceFor": "https://fedlex.data.admin.ch/vocabulary/country/718"
       }
-    },
-    {
-      "uri": "https://fedlex.data.admin.ch/eli/treaty/2019/1992/treatySignature/1",
-      "type": [
-        "Event",
-        "TaskForTreaty",
-        "TreatySignature"
-      ],
-      "attributes": {
-        "treatySignatureDate": {
-          "xsd:date": "2018-09-07"
-        }
-      },
-      "references": {
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ]
-      }
-    },
-    {
-      "uri": "https://fedlex.data.admin.ch/eli/treaty/2019/1992/referral/1",
-      "type": [
-        "Event",
-        "ReferralToConseilGouvernement",
-        "TaskForTreaty"
-      ]
-    },
-    {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1",
-      "type": [
-        "Concept",
-        "TreatyType"
-      ]
-    },
-    {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/3324",
-      "type": [
-        "Concept",
-        "LegalTaxonomy"
-      ]
-    },
-    {
-      "uri": "https://fedlex.data.admin.ch/eli/treaty/2022/0038/TreatyDocument/1",
-      "type": [
-        "LegalResource",
-        "TreatyDocument",
-        "Work"
-      ]
-    },
-    {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/country/718",
-      "type": [
-        "Concept",
-        "Country"
-      ]
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     }
   ],
   "facets": {
-    "consolidationAbstractUri": "https://fedlex.data.admin.ch/eli/cc/2019/366",
-    "sortingDateTime": "2024-06-28T13:33:12.762Z",
-    "classifiedByTaxonomyEntryLabel_raw": "0.783.511",
-    "sortingDate": "2018-09-07",
-    "classifiedByTaxonomyEntryLabel_sort": "000.783.511",
-    "firstEntryIntoForceDate": "2019-07-01",
-    "title": {
-      "de": "Allgemeine Verfahrensordnung des Weltpostvereins",
-      "it": "Regolamento generale dell'Unione postale universale",
-      "fr": "Règlement général de l'Union postale universelle"
-    },
-    "classifiedByTaxonomyEntryLabel": {
-      "de": "SR 0.783.511",
-      "fr": "RS 0.783.511",
-      "it": "RS 0.783.511"
-    }
+    "consultationId": "2019/1992",
+    "statusChangedOnPublication": false
   },
-  "graph": "https://fedlex.data.admin.ch/eli/treaty/2019/1992/graph",
+  "graph": "https://fedlex.data.admin.ch/eli/proj/2019/1992/graph",
   "timestampms": null
 }
