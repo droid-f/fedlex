@@ -6,8 +6,18 @@
       "Work"
     ],
     "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "2002-02-28T23:00:00.000Z"
+        ]
+      },
       "dateEndApplicability": {
         "xsd:date": "2002-12-31"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "2002-02-28T23:00:00.000Z"
+        ]
       },
       "isMemberOf": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/cc/24/233_245_233"
@@ -72,7 +82,8 @@
       "type": "Expression",
       "references": {
         "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/cc/24/233_245_233/20020301/it/pdf-a"
+          "https://fedlex.data.admin.ch/eli/cc/24/233_245_233/20020301/it/pdf-a",
+          "https://fedlex.data.admin.ch/eli/cc/24/233_245_233/20020301/it/doc"
         ],
         "language": "http://publications.europa.eu/resource/authority/language/ITA"
       },
@@ -87,6 +98,7 @@
       "type": "Expression",
       "references": {
         "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/cc/24/233_245_233/20020301/de/doc",
           "https://fedlex.data.admin.ch/eli/cc/24/233_245_233/20020301/de/pdf-a"
         ],
         "language": "http://publications.europa.eu/resource/authority/language/DEU"
@@ -195,11 +207,61 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/24/233_245_233/20020301/it/doc",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
+      },
+      "attributes": {
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/24/233_245_233/20020301/it/doc/fedlex-data-admin-ch-eli-cc-24-233_245_233-20020301-it-doc.doc"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
+        },
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": true
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/24/233_245_233/20020301/it/doc/fedlex-data-admin-ch-eli-cc-24-233_245_233-20020301-it-doc.doc"
+        }
+      }
+    },
+    {
       "uri": "http://publications.europa.eu/resource/authority/language/ITA",
       "type": [
         "Concept",
         "Language"
       ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/24/233_245_233/20020301/de/doc",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
+      },
+      "attributes": {
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/24/233_245_233/20020301/de/doc/fedlex-data-admin-ch-eli-cc-24-233_245_233-20020301-de-doc.doc"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
+        },
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": true
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/24/233_245_233/20020301/de/doc/fedlex-data-admin-ch-eli-cc-24-233_245_233-20020301-de-doc.doc"
+        }
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/cc/24/233_245_233/20020301/de/pdf-a",
@@ -243,7 +305,6 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/24/233_245_233/20020301/graph",
   "facets": {
     "consolidates": [
       {
@@ -307,7 +368,7 @@
     "consolidationAbstract": {
       "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/46",
       "basicAct": "https://fedlex.data.admin.ch/eli/oc/24/233_245_233",
-      "typeDocument": "https://fedlex.data.admin.ch/vocabulary/resource-type/54",
+      "typeDocument": "https://fedlex.data.admin.ch/vocabulary/resource-type/21",
       "titles": {
         "http://publications.europa.eu/resource/authority/language/DEU": {
           "titleShort": "ZGB",
@@ -318,9 +379,11 @@
           "title": "Code civil suisse du 10 décembre 1907"
         },
         "http://publications.europa.eu/resource/authority/language/ENG": {
+          "titleShort": "CC",
           "title": "Swiss Civil Code of 10 December 1907"
         },
         "http://publications.europa.eu/resource/authority/language/ROH": {
+          "titleShort": "CCS",
           "title": "Cudesch civil svizzer dals 10 da december 1907"
         },
         "http://publications.europa.eu/resource/authority/language/ITA": {
@@ -330,25 +393,27 @@
       }
     },
     "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/5703",
-    "classifiedByTaxonomyEntryLabel_sort": "00210",
+    "classifiedByTaxonomyEntryLabel_sort": "210",
     "theme": {
       "themeId": "2",
       "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/5701"
     },
     "impacts": [
       {
-        "impactDate": "2002-03-01",
+        "impactDate": "2022-01-01",
         "commentFrom": {
-          "it": "I"
+          "it": "LF 05.10.2001 (I)"
         },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "it": "art. 473"
+        },
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/57",
         "language": [
           "http://publications.europa.eu/resource/authority/language/ITA"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "decisionDate": "2001-10-05",
-        "historicalImpact": false
+        "historicalImpact": true
       },
       {
         "impactDate": "2022-01-01",
@@ -383,30 +448,14 @@
         "historicalImpact": true
       },
       {
-        "impactDate": "2022-01-01",
-        "commentFrom": {
-          "it": "LF 05.10.2001 (I)"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "it": "art. 473"
-        },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/57",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "historicalImpact": true
-      },
-      {
         "impactDate": "2002-03-01",
         "commentFrom": {
-          "fr": "I"
+          "it": "I"
         },
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/57",
         "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
+          "http://publications.europa.eu/resource/authority/language/ITA"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "decisionDate": "2001-10-05",
@@ -425,6 +474,20 @@
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "decisionDate": "2001-10-05",
         "historicalImpact": false
+      },
+      {
+        "impactDate": "2002-03-01",
+        "commentFrom": {
+          "fr": "I"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/57",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "decisionDate": "2001-10-05",
+        "historicalImpact": false
       }
     ],
     "classifiedByTaxonomyEntryLabel": {
@@ -433,5 +496,6 @@
       "it": "RS 210"
     }
   },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/24/233_245_233/20020301/graph",
   "timestampms": null
 }

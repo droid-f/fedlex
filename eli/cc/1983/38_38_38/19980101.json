@@ -6,8 +6,18 @@
       "Work"
     ],
     "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1997-12-31T23:00:00.000Z"
+        ]
+      },
       "dateEndApplicability": {
         "xsd:date": "1999-12-31"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1997-12-31T23:00:00.000Z"
+        ]
       },
       "isMemberOf": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/cc/1983/38_38_38"
@@ -67,7 +77,11 @@
       "uri": "https://fedlex.data.admin.ch/eli/cc/1983/38_38_38/19980101/fr",
       "type": "Expression",
       "references": {
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/cc/1983/38_38_38/19980101/fr/pdf-a",
+          "https://fedlex.data.admin.ch/eli/cc/1983/38_38_38/19980101/fr/docx"
+        ]
       },
       "attributes": {
         "title": {
@@ -116,6 +130,65 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/1983/38_38_38/19980101/fr/pdf-a",
+      "type": "Manifestation",
+      "attributes": {
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": true
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1983/38_38_38/19980101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-1983-38_38_38-19980101-fr-pdf-a.pdf"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/1983/38_38_38/19980101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-1983-38_38_38-19980101-fr-pdf-a.pdf"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/1983/38_38_38/19980101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-1983-38_38_38-19980101-fr-pdf-a-1.pdf"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1983/38_38_38/19980101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-1983-38_38_38-19980101-fr-pdf-a-1.pdf"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/1983/38_38_38/19980101/fr/docx",
+      "type": "Manifestation",
+      "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1983/38_38_38/19980101/fr/docx/fedlex-data-admin-ch-eli-cc-1983-38_38_38-19980101-fr-docx.docx"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/1983/38_38_38/19980101/fr/docx/fedlex-data-admin-ch-eli-cc-1983-38_38_38-19980101-fr-docx.docx"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/1983/38_38_38/19980101/fr/docx/fedlex-data-admin-ch-eli-cc-1983-38_38_38-19980101-fr-docx-1.docx"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1983/38_38_38/19980101/fr/docx/fedlex-data-admin-ch-eli-cc-1983-38_38_38-19980101-fr-docx-1.docx"
+        }
+      }
+    },
+    {
       "uri": "http://publications.europa.eu/resource/authority/language/DEU",
       "type": [
         "Concept",
@@ -123,7 +196,6 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/1983/38_38_38/19980101/graph",
   "facets": {
     "consolidates": [
       {
@@ -167,7 +239,7 @@
       }
     },
     "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/10192",
-    "classifiedByTaxonomyEntryLabel_sort": "00832.00202",
+    "classifiedByTaxonomyEntryLabel_sort": "832.202",
     "theme": {
       "themeId": "8",
       "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/9225"
@@ -176,17 +248,31 @@
       {
         "impactDate": "1998-01-01",
         "commentFrom": {
-          "fr": "O 15.12.1997 (I, II)"
+          "fr": "I, II"
         },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "fr": "Art. 1<i>a</i>, 2 à 4, 7, 11 à 13, 22 à 25, 27, 28, 30, 36, 41, 46, 49 à  51, 53, 55, 58, 60, 62, 69, 80, 84, 86,  90,  95, 96,  98, 103<i>a</i>, 105,  109, 112, 113, 115 à 117, 126, 134, 137, 147<i>a</i>; annexes 1 à 3"
-        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/1998/151_151_151",
         "language": [
           "http://publications.europa.eu/resource/authority/language/FRA"
         ],
+        "historicalImpactForLanguage": false,
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "decisionDate": "1997-12-15",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "1998-01-01",
+        "commentFrom": {
+          "it": "I, II"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1998/151_151_151",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "historicalImpactForLanguage": false,
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "decisionDate": "1997-12-15",
         "historicalImpact": false
       },
       {
@@ -202,21 +288,8 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/ITA"
         ],
+        "historicalImpactForLanguage": false,
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "1998-01-01",
-        "commentFrom": {
-          "it": "I, II"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1998/151_151_151",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "decisionDate": "1997-12-15",
         "historicalImpact": false
       },
       {
@@ -232,6 +305,24 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/DEU"
         ],
+        "historicalImpactForLanguage": false,
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "1998-01-01",
+        "commentFrom": {
+          "fr": "O 15.12.1997 (I, II)"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "fr": "Art. 1<i>a</i>, 2 à 4, 7, 11 à 13, 22 à 25, 27, 28, 30, 36, 41, 46, 49 à  51, 53, 55, 58, 60, 62, 69, 80, 84, 86,  90,  95, 96,  98, 103<i>a</i>, 105,  109, 112, 113, 115 à 117, 126, 134, 137, 147<i>a</i>; annexes 1 à 3"
+        },
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1998/151_151_151",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "historicalImpactForLanguage": false,
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "historicalImpact": false
       },
@@ -245,30 +336,19 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/DEU"
         ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "decisionDate": "1997-12-15",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "1998-01-01",
-        "commentFrom": {
-          "fr": "I, II"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1998/151_151_151",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
+        "historicalImpactForLanguage": false,
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "decisionDate": "1997-12-15",
         "historicalImpact": false
       }
     ],
+    "groupIdentifier": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/10192",
     "classifiedByTaxonomyEntryLabel": {
       "de": "SR 832.202",
       "fr": "RS 832.202",
       "it": "RS 832.202"
     }
   },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/1983/38_38_38/19980101/graph",
   "timestampms": null
 }

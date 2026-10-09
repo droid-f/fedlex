@@ -6,8 +6,18 @@
       "Work"
     ],
     "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1998-12-31T23:00:00.000Z"
+        ]
+      },
       "dateEndApplicability": {
         "xsd:date": "1999-12-31"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1998-12-31T23:00:00.000Z"
+        ]
       },
       "isMemberOf": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/cc/1993/717_717_717"
@@ -43,7 +53,11 @@
       "uri": "https://fedlex.data.admin.ch/eli/cc/1993/717_717_717/19990101/fr",
       "type": "Expression",
       "references": {
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/cc/1993/717_717_717/19990101/fr/docx",
+          "https://fedlex.data.admin.ch/eli/cc/1993/717_717_717/19990101/fr/pdf-a"
+        ]
       },
       "attributes": {
         "title": {
@@ -102,6 +116,45 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/1993/717_717_717/19990101/fr/docx",
+      "type": "Manifestation",
+      "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/1993/717_717_717/19990101/fr/docx/fedlex-data-admin-ch-eli-cc-1993-717_717_717-19990101-fr-docx.docx"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1993/717_717_717/19990101/fr/docx/fedlex-data-admin-ch-eli-cc-1993-717_717_717-19990101-fr-docx.docx"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/1993/717_717_717/19990101/fr/pdf-a",
+      "type": "Manifestation",
+      "attributes": {
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": true
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/1993/717_717_717/19990101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-1993-717_717_717-19990101-fr-pdf-a.pdf"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1993/717_717_717/19990101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-1993-717_717_717-19990101-fr-pdf-a.pdf"
+        }
+      }
+    },
+    {
       "uri": "http://publications.europa.eu/resource/authority/language/ITA",
       "type": [
         "Concept",
@@ -123,7 +176,6 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/1993/717_717_717/19990101/graph",
   "facets": {
     "consolidates": [
       {
@@ -186,6 +238,7 @@
     "classifiedByTaxonomyEntryLabel_raw": "642.124",
     "consolidationAbstract": {
       "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
+      "basicAct": "https://fedlex.data.admin.ch/eli/oc/1993/717_717_717",
       "typeDocument": "https://fedlex.data.admin.ch/vocabulary/resource-type/26",
       "titles": {
         "http://publications.europa.eu/resource/authority/language/DEU": {
@@ -200,7 +253,7 @@
       }
     },
     "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/8198",
-    "classifiedByTaxonomyEntryLabel_sort": "00642.00124",
+    "classifiedByTaxonomyEntryLabel_sort": "642.124",
     "theme": {
       "themeId": "6",
       "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/7743"
@@ -216,20 +269,7 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/ITA"
         ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "decisionDate": "1998-11-03",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "1999-01-01",
-        "commentFrom": {
-          "fr": "I"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1998/2724_2724_2724",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
+        "historicalImpactForLanguage": false,
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "decisionDate": "1998-11-03",
         "historicalImpact": false
@@ -244,16 +284,34 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/DEU"
         ],
+        "historicalImpactForLanguage": false,
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "decisionDate": "1998-11-03",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "1999-01-01",
+        "commentFrom": {
+          "fr": "I"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1998/2724_2724_2724",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "historicalImpactForLanguage": false,
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "decisionDate": "1998-11-03",
         "historicalImpact": false
       }
     ],
+    "groupIdentifier": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/8198",
     "classifiedByTaxonomyEntryLabel": {
       "de": "SR 642.124",
       "fr": "RS 642.124",
       "it": "RS 642.124"
     }
   },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/1993/717_717_717/19990101/graph",
   "timestampms": null
 }

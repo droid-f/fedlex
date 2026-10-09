@@ -6,8 +6,18 @@
       "Work"
     ],
     "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "2021-01-12T07:10:22.687Z"
+        ]
+      },
       "dateEndApplicability": {
         "xsd:date": "2022-12-31"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "2021-01-12T07:10:22.687Z"
+        ]
       },
       "isMemberOf": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/cc/2013/782"
@@ -35,6 +45,7 @@
           "https://fedlex.data.admin.ch/eli/cc/2013/782/20140101/de/pdf-a",
           "https://fedlex.data.admin.ch/eli/cc/2013/782/20140101/de/docx",
           "https://fedlex.data.admin.ch/eli/cc/2013/782/20140101/de/doc",
+          "https://fedlex.data.admin.ch/eli/cc/2013/782/20140101/de/xml",
           "https://fedlex.data.admin.ch/eli/cc/2013/782/20140101/de/html"
         ],
         "language": "http://publications.europa.eu/resource/authority/language/DEU"
@@ -53,7 +64,8 @@
           "https://fedlex.data.admin.ch/eli/cc/2013/782/20140101/fr/html",
           "https://fedlex.data.admin.ch/eli/cc/2013/782/20140101/fr/pdf-a",
           "https://fedlex.data.admin.ch/eli/cc/2013/782/20140101/fr/doc",
-          "https://fedlex.data.admin.ch/eli/cc/2013/782/20140101/fr/docx"
+          "https://fedlex.data.admin.ch/eli/cc/2013/782/20140101/fr/docx",
+          "https://fedlex.data.admin.ch/eli/cc/2013/782/20140101/fr/xml"
         ],
         "language": "http://publications.europa.eu/resource/authority/language/FRA"
       },
@@ -95,7 +107,8 @@
           "https://fedlex.data.admin.ch/eli/cc/2013/782/20140101/it/html",
           "https://fedlex.data.admin.ch/eli/cc/2013/782/20140101/it/pdf-a",
           "https://fedlex.data.admin.ch/eli/cc/2013/782/20140101/it/docx",
-          "https://fedlex.data.admin.ch/eli/cc/2013/782/20140101/it/doc"
+          "https://fedlex.data.admin.ch/eli/cc/2013/782/20140101/it/doc",
+          "https://fedlex.data.admin.ch/eli/cc/2013/782/20140101/it/xml"
         ],
         "language": "http://publications.europa.eu/resource/authority/language/ITA"
       },
@@ -113,6 +126,12 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": true
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2013-782-20140101-de-pdf-a.pdf"
         },
@@ -123,9 +142,6 @@
           "xsd:int": [
             12
           ]
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2013-782-20140101-de-pdf-a.pdf"
@@ -140,17 +156,14 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/de/docx/fedlex-data-admin-ch-eli-cc-2013-782-20140101-de-docx.docx"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
-        },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/de/docx/fedlex-data-admin-ch-eli-cc-2013-782-20140101-de-docx.docx"
@@ -165,20 +178,49 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/de/doc/fedlex-data-admin-ch-eli-cc-2013-782-20140101-de-doc.doc"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
-        },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/de/doc/fedlex-data-admin-ch-eli-cc-2013-782-20140101-de-doc.doc"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/2013/782/20140101/de/xml",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
+      },
+      "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/XML"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/de/xml/fedlex-data-admin-ch-eli-cc-2013-782-20140101-de-xml.xml"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/de/xml/fedlex-data-admin-ch-eli-cc-2013-782-20140101-de-xml.xml"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/de/xml/fedlex-data-admin-ch-eli-cc-2013-782-20140101-de-xml-1.xml"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/xml"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/de/xml/fedlex-data-admin-ch-eli-cc-2013-782-20140101-de-xml-1.xml"
         }
       }
     },
@@ -190,20 +232,29 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/de/html/fedlex-data-admin-ch-eli-cc-2013-782-20140101-de-html-1.html",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/de/html/fedlex-data-admin-ch-eli-cc-2013-782-20140101-de-html.html"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/de/html/fedlex-data-admin-ch-eli-cc-2013-782-20140101-de-html.html",
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/de/html/fedlex-data-admin-ch-eli-cc-2013-782-20140101-de-html-1.html"
+          ]
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/de/html/fedlex-data-admin-ch-eli-cc-2013-782-20140101-de-html.html"
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/de/html/fedlex-data-admin-ch-eli-cc-2013-782-20140101-de-html-2.html"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/de/html/fedlex-data-admin-ch-eli-cc-2013-782-20140101-de-html.html"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/de/html/fedlex-data-admin-ch-eli-cc-2013-782-20140101-de-html-2.html"
         }
       }
     },
@@ -222,20 +273,29 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/fr/html/fedlex-data-admin-ch-eli-cc-2013-782-20140101-fr-html.html",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/fr/html/fedlex-data-admin-ch-eli-cc-2013-782-20140101-fr-html-1.html"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/fr/html/fedlex-data-admin-ch-eli-cc-2013-782-20140101-fr-html.html",
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/fr/html/fedlex-data-admin-ch-eli-cc-2013-782-20140101-fr-html-1.html"
+          ]
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/fr/html/fedlex-data-admin-ch-eli-cc-2013-782-20140101-fr-html.html"
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/fr/html/fedlex-data-admin-ch-eli-cc-2013-782-20140101-fr-html-2.html"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/fr/html/fedlex-data-admin-ch-eli-cc-2013-782-20140101-fr-html.html"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/fr/html/fedlex-data-admin-ch-eli-cc-2013-782-20140101-fr-html-2.html"
         }
       }
     },
@@ -247,6 +307,12 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": true
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2013-782-20140101-fr-pdf-a.pdf"
         },
@@ -257,9 +323,6 @@
           "xsd:int": [
             12
           ]
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2013-782-20140101-fr-pdf-a.pdf"
@@ -274,17 +337,14 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/fr/doc/fedlex-data-admin-ch-eli-cc-2013-782-20140101-fr-doc.doc"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
-        },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/fr/doc/fedlex-data-admin-ch-eli-cc-2013-782-20140101-fr-doc.doc"
@@ -299,20 +359,49 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/fr/docx/fedlex-data-admin-ch-eli-cc-2013-782-20140101-fr-docx.docx"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
-        },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/fr/docx/fedlex-data-admin-ch-eli-cc-2013-782-20140101-fr-docx.docx"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/2013/782/20140101/fr/xml",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
+      },
+      "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/XML"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/fr/xml/fedlex-data-admin-ch-eli-cc-2013-782-20140101-fr-xml.xml"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/fr/xml/fedlex-data-admin-ch-eli-cc-2013-782-20140101-fr-xml.xml"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/fr/xml/fedlex-data-admin-ch-eli-cc-2013-782-20140101-fr-xml-1.xml"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/xml"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/fr/xml/fedlex-data-admin-ch-eli-cc-2013-782-20140101-fr-xml-1.xml"
         }
       }
     },
@@ -345,20 +434,29 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/it/html/fedlex-data-admin-ch-eli-cc-2013-782-20140101-it-html.html",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/it/html/fedlex-data-admin-ch-eli-cc-2013-782-20140101-it-html-1.html"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/it/html/fedlex-data-admin-ch-eli-cc-2013-782-20140101-it-html-1.html",
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/it/html/fedlex-data-admin-ch-eli-cc-2013-782-20140101-it-html.html"
+          ]
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/it/html/fedlex-data-admin-ch-eli-cc-2013-782-20140101-it-html.html"
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/it/html/fedlex-data-admin-ch-eli-cc-2013-782-20140101-it-html-2.html"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/it/html/fedlex-data-admin-ch-eli-cc-2013-782-20140101-it-html.html"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/it/html/fedlex-data-admin-ch-eli-cc-2013-782-20140101-it-html-2.html"
         }
       }
     },
@@ -370,6 +468,12 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": true
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/it/pdf-a/fedlex-data-admin-ch-eli-cc-2013-782-20140101-it-pdf-a.pdf"
         },
@@ -380,9 +484,6 @@
           "xsd:int": [
             12
           ]
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/it/pdf-a/fedlex-data-admin-ch-eli-cc-2013-782-20140101-it-pdf-a.pdf"
@@ -397,17 +498,14 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/it/docx/fedlex-data-admin-ch-eli-cc-2013-782-20140101-it-docx.docx"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
-        },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/it/docx/fedlex-data-admin-ch-eli-cc-2013-782-20140101-it-docx.docx"
@@ -422,20 +520,49 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/it/doc/fedlex-data-admin-ch-eli-cc-2013-782-20140101-it-doc.doc"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
-        },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/it/doc/fedlex-data-admin-ch-eli-cc-2013-782-20140101-it-doc.doc"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/2013/782/20140101/it/xml",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
+      },
+      "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/XML"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/it/xml/fedlex-data-admin-ch-eli-cc-2013-782-20140101-it-xml.xml"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/it/xml/fedlex-data-admin-ch-eli-cc-2013-782-20140101-it-xml.xml"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/it/xml/fedlex-data-admin-ch-eli-cc-2013-782-20140101-it-xml-1.xml"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/xml"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2013/782/20140101/it/xml/fedlex-data-admin-ch-eli-cc-2013-782-20140101-it-xml-1.xml"
         }
       }
     },
@@ -454,7 +581,6 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/2013/782/20140101/graph",
   "facets": {
     "consolidates": [
       {
@@ -474,7 +600,7 @@
               }
             ],
             "memorialLabel": "AS 2013 4403",
-            "title": "Verordnung <bd> gegen übermässige Vergütungen bei börsenkotierten Aktiengesellschaften (VegüV)"
+            "title": "Verordnung gegen übermässige Vergütungen bei börsenkotierten Aktiengesellschaften (VegüV)"
           },
           "http://publications.europa.eu/resource/authority/language/FRA": {
             "manifestation": [
@@ -490,7 +616,7 @@
               }
             ],
             "memorialLabel": "RO 2013 4403",
-            "title": "Ordonnance <bd> contre les rémunérations abusives dans les sociétés anonymes cotées en bourse (ORAb)"
+            "title": "Ordonnance contre les rémunérations abusives dans les sociétés anonymes cotées en bourse (ORAb)"
           },
           "http://publications.europa.eu/resource/authority/language/ITA": {
             "manifestation": [
@@ -506,7 +632,7 @@
               }
             ],
             "memorialLabel": "RU 2013 4403",
-            "title": "Ordinanza <bd> contro le retribuzioni abusive nelle società anonime quotate in borsa (OReSA)"
+            "title": "Ordinanza contro le retribuzioni abusive nelle società anonime quotate in borsa (OReSA)"
           }
         },
         "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/5",
@@ -514,578 +640,34 @@
         "uri": "https://fedlex.data.admin.ch/eli/oc/2013/782"
       }
     ],
-    "citations": [
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 23 Obligation de communiquer ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1983/797_797_797",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a23",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 23 Offenlegungspflicht ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1983/797_797_797",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a23",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 23 Obbligo di trasparenza ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1983/797_797_797",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a23",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 23 Obligation de communiquer ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1994/2386_2386_2386",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a23",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 22 Obligation de voter ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1994/2386_2386_2386",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a22",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 22 Stimmpflicht ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1994/2386_2386_2386",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a22",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 23 Offenlegungspflicht ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1994/2386_2386_2386",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a23",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 25 Strafbarkeit bei Vorsorgeeinrichtungen ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1994/2386_2386_2386",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a25",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 27 Anpassung von Statuten und Reglementen ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1994/2386_2386_2386",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a27",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 25 Punissabilité dans le domaine des institutions de prévoyance ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1994/2386_2386_2386",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a25",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 32 Stimm- und Offenlegungspflicht ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1994/2386_2386_2386",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a32",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 22 Obbligo di voto ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1994/2386_2386_2386",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a22",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 23 Obbligo di trasparenza ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1994/2386_2386_2386",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a23",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 25 Punibilità nell’ambito degli istituti di previdenza ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1994/2386_2386_2386",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a25",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 27 Adeguamento degli statuti e regolamenti ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1994/2386_2386_2386",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a27",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 32 Obbligo di voto e di trasparenza ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1994/2386_2386_2386",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a32",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 27 Adaptation des statuts et des règlements ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1994/2386_2386_2386",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a27",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 32 Obligation de voter et de communiquer ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1994/2386_2386_2386",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a32",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 24 Punissabilité des membres du conseil d’administration, de la direction et du conseil consultatif ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/54/757_781_799",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a24",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 24 Strafbarkeit der Mitglieder des Verwaltungsrates, der Geschäftsleitung und des Beirates ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/54/757_781_799",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a24",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 24 Punibilità dei membri del consiglio d’amministrazione, della direzione e del consiglio consultivo ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/54/757_781_799",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a24",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 9 Octroi des pouvoirs et instructions ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/27/317_321_377",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a9",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 11 Représentation interdite ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/27/317_321_377",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a11",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 13 En général ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/27/317_321_377",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a13",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 17 Vérification par l’organe de révision ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/27/317_321_377",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a17",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 1 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/27/317_321_377",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a1",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 8 Wahl und Amtsdauer ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/27/317_321_377",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a8",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 9 Erteilung von Vollmachten und Weisungen ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/27/317_321_377",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a9",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 11 Unzulässige institutionelle Stimmrechtsvertretung ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/27/317_321_377",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a11",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 13 Allgemeine Bestimmungen ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/27/317_321_377",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a13",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 17 Prüfung durch die Revisionsstelle ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/27/317_321_377",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a17",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 1 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/27/317_321_377",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a1",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 8 Elezione e durata del mandato ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/27/317_321_377",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a8",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 9 Conferimento di procure e istruzioni ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/27/317_321_377",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a9",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 11 Rappresentanza istituzionale vietata ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/27/317_321_377",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a11",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 13 Disposizioni generali ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/27/317_321_377",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a13",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 17 Verifica dell’ufficio di revisione ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/27/317_321_377",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a17",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 1 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/27/317_321_377",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a1",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 8 Election et durée des fonctions ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/27/317_321_377",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a8",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 26 Anwendbares Recht im Allgemeinen ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/24/233_245_233",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a26",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 26 Droit applicable: en général ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/24/233_245_233",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a26",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 26 Diritto applicabile in generale ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/24/233_245_233",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a26",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1999/404",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1999/404",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1999/404",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      }
-    ],
+    "classifiedByTaxonomyEntryLabel_raw": "221.331",
     "consolidationAbstract": {
       "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
       "dateNoLongerInForce": "2023-01-01",
+      "basicAct": "https://fedlex.data.admin.ch/eli/oc/2013/782",
       "typeDocument": "https://fedlex.data.admin.ch/vocabulary/resource-type/29",
       "titles": {
         "http://publications.europa.eu/resource/authority/language/DEU": {
           "titleShort": "VegüV",
-          "title": "Verordnung <bd>vom 20. November 2013</bd> gegen übermässige Vergütungen bei börsenkotierten Aktiengesellschaften (VegüV)"
+          "title": "Verordnung vom 20. November 2013 gegen übermässige Vergütungen bei börsenkotierten Aktiengesellschaften (VegüV)"
         },
         "http://publications.europa.eu/resource/authority/language/FRA": {
           "titleShort": "ORAb",
-          "title": "Ordonnance <bd>du 20 novembre 2013</bd> contre les rémunérations abusives dans les sociétés anonymes cotées en bourse (ORAb)"
+          "title": "Ordonnance du 20 novembre 2013 contre les rémunérations abusives dans les sociétés anonymes cotées en bourse (ORAb)"
         },
         "http://publications.europa.eu/resource/authority/language/ITA": {
           "titleShort": "OReSA",
-          "title": "Ordinanza <bd>del 20 novembre 2013</bd> contro le retribuzioni abusive nelle società anonime quotate in borsa (OReSA)"
+          "title": "Ordinanza del 20 novembre 2013 contro le retribuzioni abusive nelle società anonime quotate in borsa (OReSA)"
         }
       }
     },
     "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/5927",
+    "classifiedByTaxonomyEntryLabel_sort": "221.331",
     "theme": {
       "themeId": "2",
       "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/5701"
     },
     "impacts": [
-      {
-        "impactDate": "2014-01-01",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2013/782",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "decisionDate": "2014-01-01",
-        "historicalImpact": false
-      },
       {
         "impactDate": "2014-01-01",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
@@ -1107,6 +689,17 @@
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
         "decisionDate": "2014-01-01",
         "historicalImpact": false
+      },
+      {
+        "impactDate": "2014-01-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2013/782",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "decisionDate": "2014-01-01",
+        "historicalImpact": false
       }
     ],
     "classifiedByTaxonomyEntryLabel": {
@@ -1115,5 +708,6 @@
       "it": "RS 221.331"
     }
   },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/2013/782/20140101/graph",
   "timestampms": null
 }
