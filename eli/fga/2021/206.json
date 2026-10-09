@@ -12,14 +12,27 @@
       "dateDocument": {
         "xsd:date": "2021-02-11"
       },
+      "created": {
+        "xsd:dateTime": [
+          "2021-02-10T23:00:00.000Z"
+        ]
+      },
       "sequenceInTheYearOfPublication": {
         "xsd:int": 206
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "2021-02-10T23:00:00.000Z"
+        ]
       },
       "typeDocument": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/33"
       },
       "processType": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/type-procedure/ord"
+      },
+      "nonAnonymousWorkToRemoveDate": {
+        "xsd:date": "2021-08-11"
       },
       "publicationDate": {
         "xsd:date": "2021-02-11"
@@ -52,28 +65,31 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/2021/206/fr",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/2021/206/fr/docx",
-          "https://fedlex.data.admin.ch/eli/fga/2021/206/fr/pdf-a-an",
-          "https://fedlex.data.admin.ch/eli/fga/2021/206/fr/docx-an",
-          "https://fedlex.data.admin.ch/eli/fga/2021/206/fr/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "FF 2021 206"
+        },
         "memorialName": {
           "xsd:string": "FF"
         },
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/2021/16/fr"
         },
-        "memorialYear": {
-          "xsd:int": 2021
-        },
         "title": {
           "xsd:string": "Communication de l’Administration fédérale des contributions (AFC) – Assistance administrative"
+        },
+        "memorialYear": {
+          "xsd:int": 2021
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/2021/206/fr/docx",
+          "https://fedlex.data.admin.ch/eli/fga/2021/206/fr/pdf-a-an",
+          "https://fedlex.data.admin.ch/eli/fga/2021/206/fr/docx-an",
+          "https://fedlex.data.admin.ch/eli/fga/2021/206/fr/pdf-a"
+        ]
       }
     },
     {
@@ -84,9 +100,27 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/2021/206/fr/docx",
       "type": "Manifestation",
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2021/206/fr/docx/fedlex-data-admin-ch-eli-fga-2021-206-fr-docx.docx",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2021/206/fr/docx/fedlex-data-admin-ch-eli-fga-2021-206-fr-docx-3.docx",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2021/206/fr/docx/fedlex-data-admin-ch-eli-fga-2021-206-fr-docx-1.docx",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2021/206/fr/docx/fedlex-data-admin-ch-eli-fga-2021-206-fr-docx-2.docx"
+          ]
+        },
         "wasExemplifiedByPrivate": {
           "rdfs:Resource": [
             "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2021/206/fr/docx/fedlex-data-admin-ch-eli-fga-2021-206-fr-docx-2.docx",
@@ -101,20 +135,6 @@
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
-        },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
-        },
-        "wasExemplifiedBy": {
-          "rdfs:Resource": [
-            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2021/206/fr/docx/fedlex-data-admin-ch-eli-fga-2021-206-fr-docx.docx",
-            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2021/206/fr/docx/fedlex-data-admin-ch-eli-fga-2021-206-fr-docx-3.docx",
-            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2021/206/fr/docx/fedlex-data-admin-ch-eli-fga-2021-206-fr-docx-1.docx",
-            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2021/206/fr/docx/fedlex-data-admin-ch-eli-fga-2021-206-fr-docx-2.docx"
-          ]
         }
       }
     },
@@ -122,17 +142,19 @@
       "uri": "https://fedlex.data.admin.ch/eli/fga/2021/206/fr/pdf-a-an",
       "type": "Manifestation",
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2021/206/fr/pdf-a-an/fedlex-data-admin-ch-eli-fga-2021-206-fr-pdf-a-an.pdf"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a-an"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        "numberOfPages": {
+          "xsd:int": [
+            2
+          ]
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2021/206/fr/pdf-a-an/fedlex-data-admin-ch-eli-fga-2021-206-fr-pdf-a-an.pdf"
@@ -143,17 +165,14 @@
       "uri": "https://fedlex.data.admin.ch/eli/fga/2021/206/fr/docx-an",
       "type": "Manifestation",
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2021/206/fr/docx-an/fedlex-data-admin-ch-eli-fga-2021-206-fr-docx-an.docx"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx-an"
-        },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2021/206/fr/docx-an/fedlex-data-admin-ch-eli-fga-2021-206-fr-docx-an.docx"
@@ -164,6 +183,9 @@
       "uri": "https://fedlex.data.admin.ch/eli/fga/2021/206/fr/pdf-a",
       "type": "Manifestation",
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "wasExemplifiedByPrivate": {
           "rdfs:Resource": [
             "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2021/206/fr/pdf-a/fedlex-data-admin-ch-eli-fga-2021-206-fr-pdf-a.pdf",
@@ -175,34 +197,36 @@
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
-        },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/2021/206/graph",
   "facets": {
     "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/51",
+    "sortingDateTime": "2021-02-10T23:00Z",
     "sortingDate": "2021-02-11",
+    "memorialLabel_sort": {
+      "fr": "2021.99.000206"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 2021 206"
     },
     "modified": "2021-04-01T09:12:27.008637",
     "title": {
       "fr": "Communication de l’Administration fédérale des contributions (AFC) – Assistance administrative"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/2021/206/graph",
   "timestampms": null
 }

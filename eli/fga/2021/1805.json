@@ -12,14 +12,27 @@
       "dateDocument": {
         "xsd:date": "2021-08-06"
       },
+      "created": {
+        "xsd:dateTime": [
+          "2021-08-05T22:00:00.000Z"
+        ]
+      },
       "sequenceInTheYearOfPublication": {
         "xsd:int": 1805
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "2021-08-05T22:00:00.000Z"
+        ]
       },
       "typeDocument": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/33"
       },
       "processType": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/type-procedure/ord"
+      },
+      "nonAnonymousWorkToRemoveDate": {
+        "xsd:date": "2022-02-06"
       },
       "publicationDate": {
         "xsd:date": "2021-08-06"
@@ -52,26 +65,29 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/2021/1805/fr",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/2021/1805/fr/docx",
-          "https://fedlex.data.admin.ch/eli/fga/2021/1805/fr/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "FF 2021 1805"
+        },
         "memorialName": {
           "xsd:string": "FF"
         },
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/2021/137/fr"
         },
-        "memorialYear": {
-          "xsd:int": 2021
-        },
         "title": {
           "xsd:string": "Décision finale de l’Administration fédérale des contributions (AFC) en matière d’assistance administrative"
+        },
+        "memorialYear": {
+          "xsd:int": 2021
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/2021/1805/fr/pdf-a",
+          "https://fedlex.data.admin.ch/eli/fga/2021/1805/fr/docx"
+        ]
       }
     },
     {
@@ -82,60 +98,69 @@
       ]
     },
     {
-      "uri": "https://fedlex.data.admin.ch/eli/fga/2021/1805/fr/docx",
-      "type": "Manifestation",
-      "attributes": {
-        "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2021/1805/fr/docx/fedlex-data-admin-ch-eli-fga-2021-1805-fr-docx.docx"
-        },
-        "userFormat": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
-        },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
-        }
-      }
-    },
-    {
-      "uri": "https://fedlex.data.admin.ch/eli/fga/2021/1805/fr/pdf-a",
-      "type": "Manifestation",
-      "attributes": {
-        "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2021/1805/fr/pdf-a/fedlex-data-admin-ch-eli-fga-2021-1805-fr-pdf-a.pdf"
-        },
-        "userFormat": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
-        },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        }
-      }
-    },
-    {
       "uri": "http://publications.europa.eu/resource/authority/language/FRA",
       "type": [
         "Concept",
         "Language"
       ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/fga/2021/1805/fr/pdf-a",
+      "type": "Manifestation",
+      "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2021/1805/fr/pdf-a/fedlex-data-admin-ch-eli-fga-2021-1805-fr-pdf-a.pdf"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/fga/2021/1805/fr/docx",
+      "type": "Manifestation",
+      "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2021/1805/fr/docx/fedlex-data-admin-ch-eli-fga-2021-1805-fr-docx.docx"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
+        }
+      }
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/2021/1805/graph",
   "facets": {
     "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/51",
+    "sortingDateTime": "2021-08-05T22:00Z",
     "sortingDate": "2021-08-06",
+    "memorialLabel_sort": {
+      "fr": "2021.99.001805"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 2021 1805"
     },
     "modified": "2021-08-06T07:47:27.780982",
     "title": {
       "fr": "Décision finale de l’Administration fédérale des contributions (AFC) en matière d’assistance administrative"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/2021/1805/graph",
   "timestampms": null
 }
