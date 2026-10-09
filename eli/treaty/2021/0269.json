@@ -1,59 +1,52 @@
 {
   "data": {
-    "uri": "https://fedlex.data.admin.ch/eli/treaty/2021/0269",
+    "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/0269",
     "type": [
       "Event",
       "TreatyProcess"
     ],
     "references": {
       "treatyProcessHasResultingTreatyDocument": [
-        "https://fedlex.data.admin.ch/eli/treaty/2021/0269/TreatyDocument/1"
+        "https://fedlex.data.admin.ch/eli/treaty/9999/0269/treatyDocument/1"
       ],
       "treatySubject": [
-        "https://fedlex.data.admin.ch/vocabulary/treaty-subject-theme/44"
-      ],
-      "treatyUnderUmbrellaOf": [
-        "https://fedlex.data.admin.ch/vocabulary/international-actor/1003"
+        "https://fedlex.data.admin.ch/vocabulary/treaty-subject-theme/52"
       ],
       "treatyProcessHasTask": [
-        "https://fedlex.data.admin.ch/eli/treaty/2021/0269/TreatySignature/1",
-        "https://fedlex.data.admin.ch/eli/treaty/2021/0269/EntryIntoForce/1"
+        "https://fedlex.data.admin.ch/eli/treaty/9999/0269/treatyRatification/1",
+        "https://fedlex.data.admin.ch/eli/treaty/9999/0269/referral/1",
+        "https://fedlex.data.admin.ch/eli/treaty/9999/0269/treatySignature/1",
+        "https://fedlex.data.admin.ch/eli/treaty/9999/0269/entryIntoForce/1"
       ],
-      "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1"
+      "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1",
+      "treatyPartyCountry": [
+        "https://fedlex.data.admin.ch/vocabulary/country/249"
+      ]
     },
     "attributes": {
       "bilateral": {
-        "xsd:boolean": false
+        "xsd:boolean": true
       },
       "modified": {
         "xsd:dateTime": [
-          "2024-07-25T06:53:46.921Z"
+          "1987-05-19T22:00:00.000Z"
         ]
       },
       "treatySignatureDate": {
-        "xsd:date": "1995-11-23"
-      },
-      "treatySignaturePlace": {
-        "xsd:string": "Londres"
+        "xsd:date": "1987-05-20"
       },
       "created": {
         "xsd:dateTime": [
-          "2024-07-25T06:53:46.902Z"
+          "1987-05-19T22:00:00.000Z"
         ]
+      },
+      "treatyExpirationDate": {
+        "xsd:date": "1995-01-01"
       },
       "titleTreaty": {
         "rdf:langString": {
-          "de": [
-            "(1995) Resolution (A.784.(19)  zur Änderung des Reglements 49(7) (Anhang II) gemäss seines Art.29(3) - Internationales Freibord-Übereinkommen vom 5. April 1966 (mit Anlagen)"
-          ],
           "en": [
-            "(1995) Amendments by  Resolution A.784(19)  to Regulation 49(7)(b) \nof the Convention in accordance with article 29(3) - International Convention on Load Lines of April 5, 1955"
-          ],
-          "it": [
-            "(1995) Risoluzione (A.784.(19)  Modifica la regola 49(7)(b) dell'allegato II della convenzione sel. suo art. 29(3) - Convenzione internazionale sul bordo libero del 5 aprile 1966 (con allegati)"
-          ],
-          "fr": [
-            "(1995)  Résolution (A.784.(19)  amendant le règlement 49(7)(b) (Annexe II) de la Convention sel. son art. 29(3) - Convention internationale du 5 avril 1966 sur les lignes de charge (avec annexes)"
+            "Agreement between the Government of the Swiss Confederation and the Government of the People's Republic of China on the granting of a second Mixed Financing"
           ]
         }
       }
@@ -61,39 +54,57 @@
   },
   "included": [
     {
-      "uri": "https://fedlex.data.admin.ch/eli/treaty/2021/0269/TreatyDocument/1",
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/0269/treatyDocument/1",
       "type": [
         "LegalResource",
         "TreatyDocument",
         "Work"
       ],
       "references": {
-        "modifies": [
-          "https://fedlex.data.admin.ch/eli/treaty/1966/0085/treatyDocument/1"
+        "workHasAnnex": [
+          "https://fedlex.data.admin.ch/eli/treaty/9999/02691002/treatyDocument/1",
+          "https://fedlex.data.admin.ch/eli/treaty/9999/02691001/treatyDocument/1"
         ]
       },
       "attributes": {
         "typeDocument": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/32"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/31"
         }
       }
     },
     {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/treaty-subject-theme/44",
+      "uri": "https://fedlex.data.admin.ch/vocabulary/treaty-subject-theme/52",
       "type": [
         "Concept",
         "TreatySubjectTheme"
       ]
     },
     {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/international-actor/1003",
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/0269/treatyRatification/1",
       "type": [
-        "Concept",
-        "InternationalActor"
+        "Event",
+        "TaskForTreaty",
+        "TreatyRatification"
+      ],
+      "attributes": {
+        "treatyPartyRatificationDate": {
+          "xsd:date": "1987-12-09"
+        }
+      },
+      "references": {
+        "treatyRatificationParty": "https://fedlex.data.admin.ch/vocabulary/country/718"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/0269/referral/1",
+      "type": [
+        "Event",
+        "ReferralToConseilGouvernement",
+        "TaskForTreaty"
       ]
     },
     {
-      "uri": "https://fedlex.data.admin.ch/eli/treaty/2021/0269/TreatySignature/1",
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/0269/treatySignature/1",
       "type": [
         "Event",
         "TaskForTreaty",
@@ -106,12 +117,17 @@
       }
     },
     {
-      "uri": "https://fedlex.data.admin.ch/eli/treaty/2021/0269/EntryIntoForce/1",
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/0269/entryIntoForce/1",
       "type": [
         "EntryIntoForce",
         "Event",
         "TaskForTreaty"
       ],
+      "attributes": {
+        "entryIntoForceDate": {
+          "xsd:date": "1987-12-09"
+        }
+      },
       "references": {
         "entryIntoForceFor": "https://fedlex.data.admin.ch/vocabulary/country/718"
       }
@@ -124,7 +140,14 @@
       ]
     },
     {
-      "uri": "https://fedlex.data.admin.ch/eli/treaty/1966/0085/treatyDocument/1",
+      "uri": "https://fedlex.data.admin.ch/vocabulary/country/249",
+      "type": [
+        "Concept",
+        "Country"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/02691002/treatyDocument/1",
       "type": [
         "LegalResource",
         "TreatyDocument",
@@ -132,10 +155,11 @@
       ]
     },
     {
-      "uri": "http://publications.europa.eu/resource/authority/language/ENG",
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/9999/02691001/treatyDocument/1",
       "type": [
-        "Concept",
-        "Language"
+        "LegalResource",
+        "TreatyDocument",
+        "Work"
       ]
     },
     {
@@ -144,18 +168,23 @@
         "Concept",
         "Country"
       ]
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/authority/language/ENG",
+      "type": [
+        "Concept",
+        "Language"
+      ]
     }
   ],
   "facets": {
+    "sortingDateTime": "1987-05-19T22:00Z",
+    "firstEntryIntoForceDate": "1987-12-09",
     "title": {
-      "de": "(1995) Resolution (A.784.(19)  zur Änderung des Reglements 49(7) (Anhang II) gemäss seines Art.29(3) - Internationales Freibord-Übereinkommen vom 5. April 1966 (mit Anlagen)",
-      "en": "(1995) Amendments by  Resolution A.784(19)  to Regulation 49(7)(b) \nof the Convention in accordance with article 29(3) - International Convention on Load Lines of April 5, 1955",
-      "it": "(1995) Risoluzione (A.784.(19)  Modifica la regola 49(7)(b) dell'allegato II della convenzione sel. suo art. 29(3) - Convenzione internazionale sul bordo libero del 5 aprile 1966 (con allegati)",
-      "fr": "(1995)  Résolution (A.784.(19)  amendant le règlement 49(7)(b) (Annexe II) de la Convention sel. son art. 29(3) - Convention internationale du 5 avril 1966 sur les lignes de charge (avec annexes)"
+      "en": "Agreement between the Government of the Swiss Confederation and the Government of the People's Republic of China on the granting of a second Mixed Financing"
     },
-    "sortingDateTime": "2024-07-25T06:53:46.921Z",
-    "sortingDate": "1995-11-23"
+    "sortingDate": "1987-05-20"
   },
-  "graph": "https://fedlex.data.admin.ch/eli/treaty/2021/0269/graph",
+  "graph": "https://fedlex.data.admin.ch/eli/treaty/9999/0269/graph",
   "timestampms": null
 }

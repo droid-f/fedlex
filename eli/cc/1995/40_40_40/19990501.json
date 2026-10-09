@@ -6,8 +6,18 @@
       "Work"
     ],
     "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1999-04-30T22:00:00.000Z"
+        ]
+      },
       "dateEndApplicability": {
         "xsd:date": "2008-12-31"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1999-04-30T22:00:00.000Z"
+        ]
       },
       "isMemberOf": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/cc/1995/40_40_40"
@@ -31,7 +41,11 @@
       "uri": "https://fedlex.data.admin.ch/eli/cc/1995/40_40_40/19990501/fr",
       "type": "Expression",
       "references": {
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/cc/1995/40_40_40/19990501/fr/pdf-a",
+          "https://fedlex.data.admin.ch/eli/cc/1995/40_40_40/19990501/fr/docx"
+        ]
       },
       "attributes": {
         "title": {
@@ -95,6 +109,50 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/1995/40_40_40/19990501/fr/pdf-a",
+      "type": "Manifestation",
+      "attributes": {
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": true
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/1995/40_40_40/19990501/fr/pdf-a/fedlex-data-admin-ch-eli-cc-1995-40_40_40-19990501-fr-pdf-a.pdf"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "numberOfPages": {
+          "xsd:int": [
+            8
+          ]
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1995/40_40_40/19990501/fr/pdf-a/fedlex-data-admin-ch-eli-cc-1995-40_40_40-19990501-fr-pdf-a.pdf"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/1995/40_40_40/19990501/fr/docx",
+      "type": "Manifestation",
+      "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/1995/40_40_40/19990501/fr/docx/fedlex-data-admin-ch-eli-cc-1995-40_40_40-19990501-fr-docx.docx"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1995/40_40_40/19990501/fr/docx/fedlex-data-admin-ch-eli-cc-1995-40_40_40-19990501-fr-docx.docx"
+        }
+      }
+    },
+    {
       "uri": "http://publications.europa.eu/resource/authority/language/ITA",
       "type": [
         "Concept",
@@ -123,7 +181,6 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/1995/40_40_40/19990501/graph",
   "facets": {
     "consolidates": [
       {
@@ -148,14 +205,14 @@
           "http://publications.europa.eu/resource/authority/language/FRA": {
             "manifestation": [
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/1999/225/fr/pdf-a/fedlex-data-admin-ch-eli-oc-1999-225-fr-pdf-a.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/1999/225/fr/pdf-a"
-              },
-              {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/1999/225/fr/doc/fedlex-data-admin-ch-eli-oc-1999-225-fr-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/1999/225/fr/doc"
+              },
+              {
+                "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
+                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/1999/225/fr/pdf-a/fedlex-data-admin-ch-eli-oc-1999-225-fr-pdf-a.pdf",
+                "uri": "https://fedlex.data.admin.ch/eli/oc/1999/225/fr/pdf-a"
               }
             ],
             "memorialLabel": "RO 1999 1511",
@@ -204,7 +261,7 @@
       }
     },
     "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/7291",
-    "classifiedByTaxonomyEntryLabel_sort": "00510.00032",
+    "classifiedByTaxonomyEntryLabel_sort": "510.320",
     "theme": {
       "themeId": "5",
       "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/7227"
@@ -213,16 +270,62 @@
       {
         "impactDate": "1999-05-01",
         "commentFrom": {
-          "it": "O 14.04.1999 (art. 10)"
+          "de": "Art. 10"
         },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "it": "art. 6"
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1999/225",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "historicalImpactForLanguage": false,
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "decisionDate": "1999-04-14",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "1999-05-01",
+        "commentFrom": {
+          "fr": "art. 10"
         },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1999/225",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "historicalImpactForLanguage": false,
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "decisionDate": "1999-04-14",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "1999-05-01",
+        "commentFrom": {
+          "it": "art. 10"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/1999/225",
         "language": [
           "http://publications.europa.eu/resource/authority/language/ITA"
         ],
+        "historicalImpactForLanguage": false,
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "decisionDate": "1999-04-14",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "1999-05-01",
+        "commentFrom": {
+          "de": "V 14.04.1999 (Art. 10)"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "de": "Art. 6"
+        },
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1999/225",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "historicalImpactForLanguage": false,
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "historicalImpact": true
       },
@@ -239,73 +342,35 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/FRA"
         ],
+        "historicalImpactForLanguage": false,
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "historicalImpact": true
       },
       {
         "impactDate": "1999-05-01",
         "commentFrom": {
-          "de": "V 14.04.1999 (Art. 10)"
+          "it": "O 14.04.1999 (art. 10)"
         },
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
         "commentTo": {
-          "de": "Art. 6"
+          "it": "art. 6"
         },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1999/225",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "historicalImpact": true
-      },
-      {
-        "impactDate": "1999-05-01",
-        "commentFrom": {
-          "it": "art. 10"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/1999/225",
         "language": [
           "http://publications.europa.eu/resource/authority/language/ITA"
         ],
+        "historicalImpactForLanguage": false,
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "decisionDate": "1999-04-14",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "1999-05-01",
-        "commentFrom": {
-          "fr": "art. 10"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1999/225",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "decisionDate": "1999-04-14",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "1999-05-01",
-        "commentFrom": {
-          "de": "Art. 10"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1999/225",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "decisionDate": "1999-04-14",
-        "historicalImpact": false
+        "historicalImpact": true
       }
     ],
+    "groupIdentifier": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/7291",
     "classifiedByTaxonomyEntryLabel": {
       "de": "SR 510.32",
       "fr": "RS 510.32",
       "it": "RS 510.32"
     }
   },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/1995/40_40_40/19990501/graph",
   "timestampms": null
 }

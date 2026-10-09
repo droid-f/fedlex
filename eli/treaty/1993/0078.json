@@ -33,6 +33,7 @@
         "https://fedlex.data.admin.ch/eli/treaty/1993/0078/notification/13",
         "https://fedlex.data.admin.ch/eli/treaty/1993/0078/notification/14",
         "https://fedlex.data.admin.ch/eli/treaty/1993/0078/notification/15",
+        "https://fedlex.data.admin.ch/eli/treaty/1993/0078/EntryIntoForce/1",
         "https://fedlex.data.admin.ch/eli/treaty/1993/0078/notification/9",
         "https://fedlex.data.admin.ch/eli/treaty/1993/0078/notification/6",
         "https://fedlex.data.admin.ch/eli/treaty/1993/0078/entryIntoForce/1",
@@ -40,11 +41,11 @@
         "https://fedlex.data.admin.ch/eli/treaty/1993/0078/notification/8",
         "https://fedlex.data.admin.ch/eli/treaty/1993/0078/notification/7",
         "https://fedlex.data.admin.ch/eli/treaty/1993/0078/referral/1",
-        "https://fedlex.data.admin.ch/eli/treaty/1993/0078/registration/1",
+        "https://fedlex.data.admin.ch/eli/treaty/1993/0078/Notification/1",
+        "https://fedlex.data.admin.ch/eli/treaty/1993/0078/Notification/2",
         "https://fedlex.data.admin.ch/eli/treaty/1993/0078/treatySignature/1"
       ],
-      "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1",
-      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/2325"
+      "treatyType": "https://fedlex.data.admin.ch/vocabulary/treaty-type/1"
     },
     "attributes": {
       "firstEntryIntoForceDate": {
@@ -53,8 +54,18 @@
       "bilateral": {
         "xsd:boolean": false
       },
+      "modified": {
+        "xsd:dateTime": [
+          "2025-02-19T08:34:36.214Z"
+        ]
+      },
       "treatySignatureDate": {
         "xsd:date": "1993-03-29"
+      },
+      "created": {
+        "xsd:dateTime": [
+          "2025-02-19T08:34:36.203Z"
+        ]
       },
       "treatyExpirationDate": {
         "xsd:date": "2007-01-01"
@@ -378,6 +389,17 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1993/0078/EntryIntoForce/1",
+      "type": [
+        "EntryIntoForce",
+        "Event",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "entryIntoForceFor": "https://fedlex.data.admin.ch/vocabulary/country/718"
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/1993/0078/notification/9",
       "type": [
         "Event",
@@ -495,12 +517,28 @@
       }
     },
     {
-      "uri": "https://fedlex.data.admin.ch/eli/treaty/1993/0078/registration/1",
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1993/0078/Notification/1",
       "type": [
         "Event",
-        "Registration",
+        "Notification",
         "TaskForTreaty"
-      ]
+      ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/5",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/214"
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/treaty/1993/0078/Notification/2",
+      "type": [
+        "Event",
+        "Notification",
+        "TaskForTreaty"
+      ],
+      "references": {
+        "notificationType": "https://fedlex.data.admin.ch/vocabulary/notification-type/5",
+        "notificationFrom": "https://fedlex.data.admin.ch/vocabulary/country/514"
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/treaty/1993/0078/treatySignature/1",
@@ -520,13 +558,6 @@
       "type": [
         "Concept",
         "TreatyType"
-      ]
-    },
-    {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/2325",
-      "type": [
-        "Concept",
-        "LegalTaxonomy"
       ]
     },
     {
@@ -754,6 +785,13 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/notification-type/5",
+      "type": [
+        "Concept",
+        "NotificationType"
+      ]
+    },
+    {
       "uri": "http://publications.europa.eu/resource/authority/language/ENG",
       "type": [
         "Concept",
@@ -761,12 +799,21 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/treaty/1993/0078/graph",
   "facets": {
-    "consolidationAbstractUri": "https://fedlex.data.admin.ch/eli/cc/1994/1349_1349_1349",
-    "sortingDate": "1993-03-29",
+    "sortingDateTime": "2025-02-19T08:34:36.214Z",
+    "firstEntryIntoForceDate": "1994-06-01",
+    "title": {
+      "de": "Abkommen vom 29. März 1993 zwischen den EFTA-Staaten und der Republik Bulgarien (mit Verständigungsprotokoll, Vereinb. und Anhängen) ",
+      "it": "Accordo del 29 marzo 1993 tra gli Stati dell'AELS e la Repubblica di Bulgaria (con Protocollo, Scambio di lettere e All.) ",
+      "fr": "Accord du 29 mars 1993 entre les Etats de l'AELE et la République de Bulgarie (avec prot., ar. et annexes) "
+    },
     "acts": [
       {
+        "memorialLabel_sort": {
+          "de": "1994.99.001348",
+          "it": "1994.99.001348",
+          "fr": "1994.99.001348"
+        },
         "memorialLabel": {
           "http://publications.europa.eu/resource/authority/language/DEU": "AS 1994 1348",
           "http://publications.europa.eu/resource/authority/language/FRA": "RO 1994 1348",
@@ -775,12 +822,20 @@
         "uri": "https://fedlex.data.admin.ch/eli/oc/1994/1348_1348_1348"
       },
       {
+        "memorialLabel_sort": {
+          "de": "1994.01.000885"
+        },
         "memorialLabel": {
           "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1994 I 885"
         },
         "uri": "https://fedlex.data.admin.ch/eli/fga/1994/1_885__"
       },
       {
+        "memorialLabel_sort": {
+          "de": "1994.99.001349",
+          "it": "1994.99.001349",
+          "fr": "1994.99.001349"
+        },
         "memorialLabel": {
           "http://publications.europa.eu/resource/authority/language/DEU": "AS 1994 1349",
           "http://publications.europa.eu/resource/authority/language/FRA": "RO 1994 1349",
@@ -790,11 +845,8 @@
         "publicationDate": "1994-06-01"
       }
     ],
-    "classifiedByTaxonomyEntryLabel": {
-      "de": "SR 0.632.312.141",
-      "fr": "RS 0.632.312.141",
-      "it": "RS 0.632.312.141"
-    }
+    "sortingDate": "1993-03-29"
   },
+  "graph": "https://fedlex.data.admin.ch/eli/treaty/1993/0078/graph",
   "timestampms": null
 }
