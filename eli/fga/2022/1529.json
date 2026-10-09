@@ -12,8 +12,18 @@
       "dateDocument": {
         "xsd:date": "2022-06-23"
       },
+      "created": {
+        "xsd:dateTime": [
+          "2022-06-22T22:00:00.000Z"
+        ]
+      },
       "sequenceInTheYearOfPublication": {
         "xsd:int": 1529
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "2022-06-22T22:00:00.000Z"
+        ]
       },
       "typeDocument": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/33"
@@ -55,7 +65,25 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/2022/1529/fr",
       "type": "Expression",
+      "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "FF 2022 1529"
+        },
+        "memorialName": {
+          "xsd:string": "FF"
+        },
+        "isPartOf": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/2022/120/fr"
+        },
+        "title": {
+          "xsd:string": "Décision finale de l’Administration fédérale des contributions (AFC) en matière d’assistance administrative"
+        },
+        "memorialYear": {
+          "xsd:int": 2022
+        }
+      },
       "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
         "isEmbodiedBy": [
           "https://fedlex.data.admin.ch/eli/fga/2022/1529/fr/docx",
           "https://fedlex.data.admin.ch/eli/fga/2022/1529/fr/pdf-a",
@@ -65,22 +93,7 @@
           "https://fedlex.data.admin.ch/eli/fga/2022/1529/fr/html",
           "https://fedlex.data.admin.ch/eli/fga/2022/1529/fr/xml",
           "https://fedlex.data.admin.ch/eli/fga/2022/1529/fr/docx-an"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      "attributes": {
-        "memorialName": {
-          "xsd:string": "FF"
-        },
-        "isPartOf": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/2022/120/fr"
-        },
-        "memorialYear": {
-          "xsd:int": 2022
-        },
-        "title": {
-          "xsd:string": "Décision finale de l’Administration fédérale des contributions (AFC) en matière d’assistance administrative"
-        }
+        ]
       }
     },
     {
@@ -91,20 +104,24 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/2022/1529/fr/docx",
       "type": "Manifestation",
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2022/1529/fr/docx/fedlex-data-admin-ch-eli-fga-2022-1529-fr-docx.docx"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
-        },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
         }
       }
     },
@@ -112,22 +129,19 @@
       "uri": "https://fedlex.data.admin.ch/eli/fga/2022/1529/fr/pdf-a",
       "type": "Manifestation",
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2022/1529/fr/pdf-a/fedlex-data-admin-ch-eli-fga-2022-1529-fr-pdf-a.pdf"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
         "numberOfPages": {
           "xsd:int": [
             2
           ]
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
         }
       }
     },
@@ -135,17 +149,14 @@
       "uri": "https://fedlex.data.admin.ch/eli/fga/2022/1529/fr/xml-an",
       "type": "Manifestation",
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/XML"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2022/1529/fr/xml-an/fedlex-data-admin-ch-eli-fga-2022-1529-fr-xml-an.xml"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/xml-an"
-        },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/XML"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2022/1529/fr/xml-an/fedlex-data-admin-ch-eli-fga-2022-1529-fr-xml-an.xml"
@@ -156,22 +167,19 @@
       "uri": "https://fedlex.data.admin.ch/eli/fga/2022/1529/fr/pdf-a-an",
       "type": "Manifestation",
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2022/1529/fr/pdf-a-an/fedlex-data-admin-ch-eli-fga-2022-1529-fr-pdf-a-an.pdf"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a-an"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
         "numberOfPages": {
           "xsd:int": [
             2
           ]
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2022/1529/fr/pdf-a-an/fedlex-data-admin-ch-eli-fga-2022-1529-fr-pdf-a-an.pdf"
@@ -182,17 +190,14 @@
       "uri": "https://fedlex.data.admin.ch/eli/fga/2022/1529/fr/html-an",
       "type": "Manifestation",
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2022/1529/fr/html-an/fedlex-data-admin-ch-eli-fga-2022-1529-fr-html-an.html"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html-an"
-        },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2022/1529/fr/html-an/fedlex-data-admin-ch-eli-fga-2022-1529-fr-html-an.html"
@@ -203,17 +208,14 @@
       "uri": "https://fedlex.data.admin.ch/eli/fga/2022/1529/fr/html",
       "type": "Manifestation",
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2022/1529/fr/html/fedlex-data-admin-ch-eli-fga-2022-1529-fr-html.html"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html"
-        },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
         }
       }
     },
@@ -221,17 +223,14 @@
       "uri": "https://fedlex.data.admin.ch/eli/fga/2022/1529/fr/xml",
       "type": "Manifestation",
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/XML"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2022/1529/fr/xml/fedlex-data-admin-ch-eli-fga-2022-1529-fr-xml.xml"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/xml"
-        },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/XML"
         }
       }
     },
@@ -239,42 +238,47 @@
       "uri": "https://fedlex.data.admin.ch/eli/fga/2022/1529/fr/docx-an",
       "type": "Manifestation",
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2022/1529/fr/docx-an/fedlex-data-admin-ch-eli-fga-2022-1529-fr-docx-an.docx"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx-an"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
-        },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2022/1529/fr/docx-an/fedlex-data-admin-ch-eli-fga-2022-1529-fr-docx-an.docx"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/2022/1529/graph",
   "facets": {
     "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/51",
+    "sortingDateTime": "2022-06-22T22:00Z",
     "sortingDate": "2022-06-23",
+    "memorialLabel_sort": {
+      "fr": "2022.99.001529"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 2022 1529"
     },
     "modified": "2022-06-23T08:47:20.555937",
     "title": {
       "fr": "Décision finale de l’Administration fédérale des contributions (AFC) en matière d’assistance administrative"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/2022/1529/graph",
   "timestampms": null
 }

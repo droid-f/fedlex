@@ -17,7 +17,7 @@
     "attributes": {
       "modified": {
         "xsd:dateTime": [
-          "2023-10-17T16:31:03.588Z"
+          "2024-06-19T14:48:46.791Z"
         ]
       },
       "eventId": {
@@ -25,7 +25,7 @@
       },
       "created": {
         "xsd:dateTime": [
-          "2023-10-17T16:31:03.567Z"
+          "2024-06-19T14:48:46.772Z"
         ]
       }
     }
@@ -78,8 +78,9 @@
         "foreseenImpactToLegalResource": [
           "https://fedlex.data.admin.ch/eli/cc/1999/170"
         ],
-        "consultationStatus": "https://fedlex.data.admin.ch/vocabulary/consultation-status/4",
+        "consultationStatus": "https://fedlex.data.admin.ch/vocabulary/consultation-status/5",
         "hasSubTask": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/cons-result",
           "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/cons-pos",
           "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/cons-open"
         ]
@@ -114,11 +115,35 @@
       ]
     },
     {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/consultation-status/4",
+      "uri": "https://fedlex.data.admin.ch/vocabulary/consultation-status/5",
       "type": [
         "Concept",
         "ConsultationStatus"
       ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/cons-result",
+      "type": [
+        "ConsultationTask",
+        "Event",
+        "LegislativeTask",
+        "ResultOfAConsultationPublication"
+      ],
+      "references": {
+        "institutionInChargeOfTheEventLevel2": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
+        "institutionInChargeOfTheEvent": "https://fedlex.data.admin.ch/vocabulary/legal-institution/S0",
+        "opinionHasDraftRelatedDocument": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_7"
+        ],
+        "consultationHasModification": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/cons-result/consultation-modification-history/1"
+        ]
+      },
+      "attributes": {
+        "created": {
+          "xsd:dateTime": "2024-06-19T14:48:43.937Z"
+        }
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/cons-pos",
@@ -137,6 +162,11 @@
         "consultationHasModification": [
           "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/cons-pos/consultation-modification-history/1"
         ]
+      },
+      "attributes": {
+        "created": {
+          "xsd:dateTime": "2023-10-17T16:31:01.078Z"
+        }
       }
     },
     {
@@ -167,6 +197,9 @@
         "eventEndDate": {
           "xsd:date": "2023-10-07"
         },
+        "created": {
+          "xsd:dateTime": "2023-06-16T13:38:06.797Z"
+        },
         "eventStartDate": {
           "xsd:date": "2023-06-16"
         }
@@ -185,6 +218,50 @@
         "Concept",
         "LegalInstitution"
       ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_7",
+      "type": [
+        "DraftRelatedDocument",
+        "Work"
+      ],
+      "references": {
+        "draftProcessDocumentType": [
+          "https://fedlex.data.admin.ch/vocabulary/draft-document-type/31"
+        ],
+        "isRealizedBy": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_7/de",
+          "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_7/fr",
+          "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_7/it"
+        ]
+      },
+      "attributes": {
+        "title": {
+          "rdf:langString": {
+            "de": [
+              "Ergebnisbericht"
+            ],
+            "it": [
+              "Rapporto sui risultati"
+            ],
+            "fr": [
+              "Rapport de résultats"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/cons-result/consultation-modification-history/1",
+      "type": [
+        "ConsultationModificationHistory",
+        "Event"
+      ],
+      "attributes": {
+        "consultationStageDate": {
+          "xsd:dateTime": "2024-06-19T14:48:43.930Z"
+        }
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_6",
@@ -403,6 +480,58 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/draft-document-type/31",
+      "type": [
+        "Concept",
+        "DraftProcessDocumentType"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_7/de",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_7/de/pdf-a"
+        ]
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Ergebnisbericht"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_7/fr",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_7/fr/pdf-a"
+        ]
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Rapport de résultats"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_7/it",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/ITA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_7/it/pdf-a"
+        ]
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Rapporto sui risultati"
+        }
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/vocabulary/draft-document-type/21",
       "type": [
         "Concept",
@@ -413,10 +542,10 @@
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_6/fr",
       "type": "Expression",
       "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
         "isEmbodiedBy": [
           "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_6/fr/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+        ]
       },
       "attributes": {
         "title": {
@@ -428,10 +557,10 @@
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_6/it",
       "type": "Expression",
       "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/ITA",
         "isEmbodiedBy": [
           "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_6/it/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
+        ]
       },
       "attributes": {
         "title": {
@@ -443,10 +572,10 @@
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_6/de",
       "type": "Expression",
       "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
         "isEmbodiedBy": [
           "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_6/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
+        ]
       },
       "attributes": {
         "title": {
@@ -465,10 +594,10 @@
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_5/fr",
       "type": "Expression",
       "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
         "isEmbodiedBy": [
           "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_5/fr/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+        ]
       },
       "attributes": {
         "title": {
@@ -480,10 +609,10 @@
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_5/it",
       "type": "Expression",
       "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/ITA",
         "isEmbodiedBy": [
           "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_5/it/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
+        ]
       },
       "attributes": {
         "title": {
@@ -495,10 +624,10 @@
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_5/de",
       "type": "Expression",
       "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
         "isEmbodiedBy": [
           "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_5/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
+        ]
       },
       "attributes": {
         "title": {
@@ -517,10 +646,10 @@
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_3/fr",
       "type": "Expression",
       "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
         "isEmbodiedBy": [
           "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_3/fr/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+        ]
       },
       "attributes": {
         "title": {
@@ -532,10 +661,10 @@
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_3/it",
       "type": "Expression",
       "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/ITA",
         "isEmbodiedBy": [
           "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_3/it/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
+        ]
       },
       "attributes": {
         "title": {
@@ -547,10 +676,10 @@
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_3/de",
       "type": "Expression",
       "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
         "isEmbodiedBy": [
           "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_3/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
+        ]
       },
       "attributes": {
         "title": {
@@ -562,10 +691,10 @@
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_4/it",
       "type": "Expression",
       "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/ITA",
         "isEmbodiedBy": [
           "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_4/it/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
+        ]
       },
       "attributes": {
         "title": {
@@ -577,10 +706,10 @@
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_4/fr",
       "type": "Expression",
       "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
         "isEmbodiedBy": [
           "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_4/fr/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+        ]
       },
       "attributes": {
         "title": {
@@ -592,10 +721,10 @@
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_4/de",
       "type": "Expression",
       "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
         "isEmbodiedBy": [
           "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_4/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
+        ]
       },
       "attributes": {
         "title": {
@@ -614,10 +743,10 @@
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_2/de",
       "type": "Expression",
       "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
         "isEmbodiedBy": [
           "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_2/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
+        ]
       },
       "attributes": {
         "title": {
@@ -629,10 +758,10 @@
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_2/fr",
       "type": "Expression",
       "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
         "isEmbodiedBy": [
           "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_2/fr/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+        ]
       },
       "attributes": {
         "title": {
@@ -644,10 +773,10 @@
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_2/it",
       "type": "Expression",
       "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/ITA",
         "isEmbodiedBy": [
           "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_2/it/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
+        ]
       },
       "attributes": {
         "title": {
@@ -666,10 +795,10 @@
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_1/fr",
       "type": "Expression",
       "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
         "isEmbodiedBy": [
           "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_1/fr/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+        ]
       },
       "attributes": {
         "title": {
@@ -681,10 +810,10 @@
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_1/it",
       "type": "Expression",
       "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/ITA",
         "isEmbodiedBy": [
           "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_1/it/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
+        ]
       },
       "attributes": {
         "title": {
@@ -696,15 +825,99 @@
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_1/de",
       "type": "Expression",
       "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
         "isEmbodiedBy": [
           "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_1/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
+        ]
       },
       "attributes": {
         "title": {
           "xsd:string": "Vernehmlassungsvorlage"
         }
+      }
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_7/de/pdf-a",
+      "type": "Manifestation",
+      "attributes": {
+        "manifestationByDefault": {
+          "xsd:boolean": true
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_7/de/pdf-a/fedlex-data-admin-ch-eli-dl-proj-2023-46-cons_1-doc_7-de-pdf-a.pdf"
+        },
+        "publicationDate": {
+          "xsd:dateTime": "2024-06-19T14:48:43.937Z"
+        }
+      },
+      "references": {
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      }
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_7/fr/pdf-a",
+      "type": "Manifestation",
+      "attributes": {
+        "manifestationByDefault": {
+          "xsd:boolean": true
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_7/fr/pdf-a/fedlex-data-admin-ch-eli-dl-proj-2023-46-cons_1-doc_7-fr-pdf-a.pdf"
+        },
+        "publicationDate": {
+          "xsd:dateTime": "2024-06-19T14:48:43.937Z"
+        }
+      },
+      "references": {
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      }
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/authority/language/ITA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_7/it/pdf-a",
+      "type": "Manifestation",
+      "attributes": {
+        "manifestationByDefault": {
+          "xsd:boolean": true
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_7/it/pdf-a/fedlex-data-admin-ch-eli-dl-proj-2023-46-cons_1-doc_7-it-pdf-a.pdf"
+        },
+        "publicationDate": {
+          "xsd:dateTime": "2024-06-19T14:48:43.937Z"
+        }
+      },
+      "references": {
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
       }
     },
     {
@@ -729,13 +942,6 @@
       }
     },
     {
-      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
-      "type": [
-        "Concept",
-        "Language"
-      ]
-    },
-    {
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_6/it/pdf-a",
       "type": "Manifestation",
       "attributes": {
@@ -757,13 +963,6 @@
       }
     },
     {
-      "uri": "http://publications.europa.eu/resource/authority/language/ITA",
-      "type": [
-        "Concept",
-        "Language"
-      ]
-    },
-    {
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_6/de/pdf-a",
       "type": "Manifestation",
       "attributes": {
@@ -783,13 +982,6 @@
       "references": {
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/cons_1/doc_5/fr/pdf-a",
@@ -1114,21 +1306,29 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/graph",
   "facets": {
-    "sortingDateTime": "2023-10-17T16:31:03.588Z",
+    "sortingDateTime": "2024-06-19T14:48:46.791Z",
     "taxonomies": [
       {
-        "consolidationAbstract": "https://fedlex.data.admin.ch/eli/cc/1999/170",
-        "taxonomyId": "172.010.1"
+        "taxonomyId": "172.010.1",
+        "consolidationAbstract": "https://fedlex.data.admin.ch/eli/cc/1999/170"
       }
     ],
-    "sortingDate": "2023-10-17T18:31:01.074+02:00",
-    "modified": "2023-10-17T18:31:03.608926",
+    "sortingDate": "2024-06-19T16:48:43.930+02:00",
+    "statusChangedOnPublication": true,
+    "modified": "2024-06-19T16:48:46.810541",
+    "title": {
+      "de": "Änderung der Regierungs- und Verwaltungsorganisationsverordnung (Nutzung sozialer Medien durch die Bundesverwaltung)",
+      "it": "Modifica dell’ordinanza sull’organizzazione del Governo e dell’Amministrazione (Uso dei media sociali da parte dell’Amministrazione federale)",
+      "fr": "Modification de l’ordonnance sur l’organisation du gouvernement et de l’administration (utilisation des médias sociaux par l’administration fédérale)"
+    },
     "department": {
       "PositionStatementPublication": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D1",
-      "ConsultationPhase": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D1"
-    }
+      "ConsultationPhase": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D1",
+      "ResultOfAConsultationPublication": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D1"
+    },
+    "consultationId": "2023/46"
   },
+  "graph": "https://fedlex.data.admin.ch/eli/dl/proj/2023/46/graph",
   "timestampms": null
 }
