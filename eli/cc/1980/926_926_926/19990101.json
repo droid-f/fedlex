@@ -6,8 +6,18 @@
       "Work"
     ],
     "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1998-12-31T23:00:00.000Z"
+        ]
+      },
       "dateEndApplicability": {
         "xsd:date": "2006-10-29"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1998-12-31T23:00:00.000Z"
+        ]
       },
       "isMemberOf": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/cc/1980/926_926_926"
@@ -67,7 +77,11 @@
       "uri": "https://fedlex.data.admin.ch/eli/cc/1980/926_926_926/19990101/fr",
       "type": "Expression",
       "references": {
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/cc/1980/926_926_926/19990101/fr/docx",
+          "https://fedlex.data.admin.ch/eli/cc/1980/926_926_926/19990101/fr/pdf-a"
+        ]
       },
       "attributes": {
         "title": {
@@ -116,6 +130,45 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/1980/926_926_926/19990101/fr/docx",
+      "type": "Manifestation",
+      "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/1980/926_926_926/19990101/fr/docx/fedlex-data-admin-ch-eli-cc-1980-926_926_926-19990101-fr-docx.docx"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1980/926_926_926/19990101/fr/docx/fedlex-data-admin-ch-eli-cc-1980-926_926_926-19990101-fr-docx.docx"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/1980/926_926_926/19990101/fr/pdf-a",
+      "type": "Manifestation",
+      "attributes": {
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": true
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/1980/926_926_926/19990101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-1980-926_926_926-19990101-fr-pdf-a.pdf"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1980/926_926_926/19990101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-1980-926_926_926-19990101-fr-pdf-a.pdf"
+        }
+      }
+    },
+    {
       "uri": "http://publications.europa.eu/resource/authority/language/ENG",
       "type": [
         "Concept",
@@ -123,7 +176,6 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/1980/926_926_926/19990101/graph",
   "facets": {
     "consolidates": [
       {
@@ -205,12 +257,29 @@
       }
     },
     "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/11213",
-    "classifiedByTaxonomyEntryLabel_sort": "00941.00292",
+    "classifiedByTaxonomyEntryLabel_sort": "941.292",
     "theme": {
       "themeId": "9",
       "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/10385"
     },
     "impacts": [
+      {
+        "impactDate": "1999-01-01",
+        "commentFrom": {
+          "fr": "O 25.11.1998 (III 2)"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "fr": "Art. 3, 12"
+        },
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1999/22",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "historicalImpactForLanguage": false,
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "historicalImpact": false
+      },
       {
         "impactDate": "1999-01-01",
         "commentFrom": {
@@ -224,6 +293,7 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/DEU"
         ],
+        "historicalImpactForLanguage": false,
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "historicalImpact": false
       },
@@ -237,6 +307,7 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/ITA"
         ],
+        "historicalImpactForLanguage": false,
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "decisionDate": "1998-11-25",
         "historicalImpact": false
@@ -251,6 +322,7 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/FRA"
         ],
+        "historicalImpactForLanguage": false,
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "decisionDate": "1998-11-25",
         "historicalImpact": false
@@ -265,6 +337,7 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/DEU"
         ],
+        "historicalImpactForLanguage": false,
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "decisionDate": "1998-11-25",
         "historicalImpact": false
@@ -282,31 +355,18 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/ITA"
         ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "1999-01-01",
-        "commentFrom": {
-          "fr": "O 25.11.1998 (III 2)"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "fr": "Art. 3, 12"
-        },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1999/22",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
+        "historicalImpactForLanguage": false,
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "historicalImpact": false
       }
     ],
+    "groupIdentifier": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/11213",
     "classifiedByTaxonomyEntryLabel": {
       "de": "SR 941.292",
       "fr": "RS 941.292",
       "it": "RS 941.292"
     }
   },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/1980/926_926_926/19990101/graph",
   "timestampms": null
 }

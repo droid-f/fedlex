@@ -6,8 +6,18 @@
       "Work"
     ],
     "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "2002-05-31T22:00:00.000Z"
+        ]
+      },
       "dateEndApplicability": {
         "xsd:date": "2002-12-31"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "2002-05-31T22:00:00.000Z"
+        ]
       },
       "isMemberOf": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/cc/63/837_843_843"
@@ -20,8 +30,8 @@
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/cc/63/837_843_843/20020601/fr",
         "https://fedlex.data.admin.ch/eli/cc/63/837_843_843/20020601/en",
-        "https://fedlex.data.admin.ch/eli/cc/63/837_843_843/20020601/rm",
         "https://fedlex.data.admin.ch/eli/cc/63/837_843_843/20020601/it",
+        "https://fedlex.data.admin.ch/eli/cc/63/837_843_843/20020601/rm",
         "https://fedlex.data.admin.ch/eli/cc/63/837_843_843/20020601/de"
       ]
     }
@@ -55,10 +65,13 @@
       }
     },
     {
-      "uri": "https://fedlex.data.admin.ch/eli/cc/63/837_843_843/20020601/rm",
+      "uri": "https://fedlex.data.admin.ch/eli/cc/63/837_843_843/20020601/it",
       "type": "Expression",
       "references": {
-        "language": "http://publications.europa.eu/resource/authority/language/ROH"
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/cc/63/837_843_843/20020601/it/pdf-a"
+        ],
+        "language": "http://publications.europa.eu/resource/authority/language/ITA"
       },
       "attributes": {
         "title": {
@@ -67,13 +80,10 @@
       }
     },
     {
-      "uri": "https://fedlex.data.admin.ch/eli/cc/63/837_843_843/20020601/it",
+      "uri": "https://fedlex.data.admin.ch/eli/cc/63/837_843_843/20020601/rm",
       "type": "Expression",
       "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/cc/63/837_843_843/20020601/it/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
+        "language": "http://publications.europa.eu/resource/authority/language/ROH"
       },
       "attributes": {
         "title": {
@@ -138,13 +148,6 @@
       ]
     },
     {
-      "uri": "http://publications.europa.eu/resource/authority/language/ROH",
-      "type": [
-        "Concept",
-        "Language"
-      ]
-    },
-    {
       "uri": "https://fedlex.data.admin.ch/eli/cc/63/837_843_843/20020601/it/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -173,6 +176,13 @@
     },
     {
       "uri": "http://publications.europa.eu/resource/authority/language/ITA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/authority/language/ROH",
       "type": [
         "Concept",
         "Language"
@@ -220,7 +230,6 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/63/837_843_843/20020601/graph",
   "facets": {
     "consolidates": [
       {
@@ -340,7 +349,7 @@
     "consolidationAbstract": {
       "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/46",
       "basicAct": "https://fedlex.data.admin.ch/eli/oc/63/837_843_843",
-      "typeDocument": "https://fedlex.data.admin.ch/vocabulary/resource-type/54",
+      "typeDocument": "https://fedlex.data.admin.ch/vocabulary/resource-type/21",
       "titles": {
         "http://publications.europa.eu/resource/authority/language/DEU": {
           "titleShort": "AHVG",
@@ -351,6 +360,7 @@
           "title": "Loi fédérale du 20 décembre 1946 sur l'assurance-vieillesse et survivants (LAVS)"
         },
         "http://publications.europa.eu/resource/authority/language/ROH": {
+          "titleShort": "LAVS",
           "title": "Lescha federala dals 20 da december 1946 davart l'assicuranza per vegls e survivents (LAVS)"
         },
         "http://publications.europa.eu/resource/authority/language/ITA": {
@@ -360,12 +370,28 @@
       }
     },
     "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/10002",
-    "classifiedByTaxonomyEntryLabel_sort": "00831.00010",
+    "classifiedByTaxonomyEntryLabel_sort": "831.100",
     "theme": {
       "themeId": "8",
       "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/9225"
     },
     "impacts": [
+      {
+        "impactDate": "2002-06-01",
+        "commentFrom": {
+          "it": "LF 14.12.2001 (I 3)"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "it": "art. 2; disp. trans."
+        },
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/139",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "historicalImpact": false
+      },
       {
         "impactDate": "2002-06-01",
         "commentFrom": {
@@ -383,29 +409,45 @@
       {
         "impactDate": "2002-06-01",
         "commentFrom": {
-          "fr": "I ch. 4"
+          "it": "I n. 3"
         },
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/140",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/139",
         "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
+          "http://publications.europa.eu/resource/authority/language/ITA"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "decisionDate": "1999-10-08",
+        "decisionDate": "2001-12-14",
         "historicalImpact": false
       },
       {
         "impactDate": "2002-06-01",
         "commentFrom": {
-          "it": "I n. 4"
+          "fr": "I ch. 3"
         },
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/140",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/139",
         "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
+          "http://publications.europa.eu/resource/authority/language/FRA"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "decisionDate": "1999-10-08",
+        "decisionDate": "2001-12-14",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "2002-06-01",
+        "commentFrom": {
+          "de": "BG 08.10.1999 (I 4)"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "de": "Tit. vor Art. 153<i>a</i>, 154"
+        },
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/140",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "historicalImpact": false
       },
       {
@@ -427,17 +469,15 @@
       {
         "impactDate": "2002-06-01",
         "commentFrom": {
-          "de": "BG 08.10.1999 (I 4)"
+          "it": "I n. 4"
         },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "de": "Tit. vor Art. 153<i>a</i>, 154"
-        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/140",
         "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
+          "http://publications.europa.eu/resource/authority/language/ITA"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "decisionDate": "1999-10-08",
         "historicalImpact": false
       },
       {
@@ -475,17 +515,15 @@
       {
         "impactDate": "2002-06-01",
         "commentFrom": {
-          "it": "LF 14.12.2001 (I 3)"
+          "de": "I Ziff. 3"
         },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "it": "art. 2; disp. trans."
-        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/139",
         "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
+          "http://publications.europa.eu/resource/authority/language/DEU"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "decisionDate": "2001-12-14",
         "historicalImpact": false
       },
       {
@@ -507,43 +545,15 @@
       {
         "impactDate": "2002-06-01",
         "commentFrom": {
-          "de": "I Ziff. 3"
+          "fr": "I ch. 4"
         },
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/139",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "decisionDate": "2001-12-14",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "2002-06-01",
-        "commentFrom": {
-          "fr": "I ch. 3"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/139",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/140",
         "language": [
           "http://publications.europa.eu/resource/authority/language/FRA"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "decisionDate": "2001-12-14",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "2002-06-01",
-        "commentFrom": {
-          "it": "I n. 3"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/139",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "decisionDate": "2001-12-14",
+        "decisionDate": "1999-10-08",
         "historicalImpact": false
       }
     ],
@@ -553,5 +563,6 @@
       "it": "RS 831.10"
     }
   },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/63/837_843_843/20020601/graph",
   "timestampms": null
 }

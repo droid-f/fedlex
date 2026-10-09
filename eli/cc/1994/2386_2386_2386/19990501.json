@@ -6,8 +6,18 @@
       "Work"
     ],
     "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1999-04-30T22:00:00.000Z"
+        ]
+      },
       "dateEndApplicability": {
         "xsd:date": "1999-12-31"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1999-04-30T22:00:00.000Z"
+        ]
       },
       "isMemberOf": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/cc/1994/2386_2386_2386"
@@ -31,7 +41,11 @@
       "uri": "https://fedlex.data.admin.ch/eli/cc/1994/2386_2386_2386/19990501/fr",
       "type": "Expression",
       "references": {
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/cc/1994/2386_2386_2386/19990501/fr/docx",
+          "https://fedlex.data.admin.ch/eli/cc/1994/2386_2386_2386/19990501/fr/pdf-a"
+        ]
       },
       "attributes": {
         "title": {
@@ -95,6 +109,45 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/1994/2386_2386_2386/19990501/fr/docx",
+      "type": "Manifestation",
+      "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/1994/2386_2386_2386/19990501/fr/docx/fedlex-data-admin-ch-eli-cc-1994-2386_2386_2386-19990501-fr-docx.docx"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1994/2386_2386_2386/19990501/fr/docx/fedlex-data-admin-ch-eli-cc-1994-2386_2386_2386-19990501-fr-docx.docx"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/1994/2386_2386_2386/19990501/fr/pdf-a",
+      "type": "Manifestation",
+      "attributes": {
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": true
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/1994/2386_2386_2386/19990501/fr/pdf-a/fedlex-data-admin-ch-eli-cc-1994-2386_2386_2386-19990501-fr-pdf-a.pdf"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1994/2386_2386_2386/19990501/fr/pdf-a/fedlex-data-admin-ch-eli-cc-1994-2386_2386_2386-19990501-fr-pdf-a.pdf"
+        }
+      }
+    },
+    {
       "uri": "http://publications.europa.eu/resource/authority/language/ROH",
       "type": [
         "Concept",
@@ -123,7 +176,6 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/1994/2386_2386_2386/19990501/graph",
   "facets": {
     "consolidates": [
       {
@@ -187,7 +239,7 @@
     "consolidationAbstract": {
       "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/46",
       "basicAct": "https://fedlex.data.admin.ch/eli/oc/1994/2386_2386_2386",
-      "typeDocument": "https://fedlex.data.admin.ch/vocabulary/resource-type/54",
+      "typeDocument": "https://fedlex.data.admin.ch/vocabulary/resource-type/21",
       "titles": {
         "http://publications.europa.eu/resource/authority/language/DEU": {
           "titleAlternative": "Freizügigkeitsgesetz",
@@ -207,26 +259,12 @@
       }
     },
     "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/10100",
-    "classifiedByTaxonomyEntryLabel_sort": "00831.00042",
+    "classifiedByTaxonomyEntryLabel_sort": "831.420",
     "theme": {
       "themeId": "8",
       "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/9225"
     },
     "impacts": [
-      {
-        "impactDate": "1999-05-01",
-        "commentFrom": {
-          "it": "I"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1999/199",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "decisionDate": "1998-12-18",
-        "historicalImpact": false
-      },
       {
         "impactDate": "1999-05-01",
         "commentFrom": {
@@ -237,8 +275,26 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/FRA"
         ],
+        "historicalImpactForLanguage": false,
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "decisionDate": "1998-12-18",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "1999-05-01",
+        "commentFrom": {
+          "fr": "LF 18.12.1998 (I)"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "fr": "Art. 24<i>c</i> à 24<i>f</i>"
+        },
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1999/199",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "historicalImpactForLanguage": false,
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "historicalImpact": false
       },
       {
@@ -251,6 +307,39 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/DEU"
         ],
+        "historicalImpactForLanguage": false,
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "decisionDate": "1998-12-18",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "1999-05-01",
+        "commentFrom": {
+          "de": "BG 18.12.1998 (I)"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "de": "Art 24<i>c</i>-24<i>f</i>"
+        },
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1999/199",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "historicalImpactForLanguage": false,
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "1999-05-01",
+        "commentFrom": {
+          "it": "I"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1999/199",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "historicalImpactForLanguage": false,
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "decisionDate": "1998-12-18",
         "historicalImpact": false
@@ -268,47 +357,18 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/ITA"
         ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "1999-05-01",
-        "commentFrom": {
-          "fr": "LF 18.12.1998 (I)"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "fr": "Art. 24<i>c</i> à 24<i>f</i>"
-        },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1999/199",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "1999-05-01",
-        "commentFrom": {
-          "de": "BG 18.12.1998 (I)"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "de": "Art 24<i>c</i>-24<i>f</i>"
-        },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1999/199",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
+        "historicalImpactForLanguage": false,
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "historicalImpact": false
       }
     ],
+    "groupIdentifier": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/10100",
     "classifiedByTaxonomyEntryLabel": {
       "de": "SR 831.42",
       "fr": "RS 831.42",
       "it": "RS 831.42"
     }
   },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/1994/2386_2386_2386/19990501/graph",
   "timestampms": null
 }
