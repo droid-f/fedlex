@@ -5,11 +5,11 @@ This repository contains the consolidated objects of the main works available in
 
 [^1]: Diritto federale, Foglio federale, Raccolta Ufficiale, Raccolta Sistematica, Trattati, Procedure di consultazione; Droit fédéral, Feuille fédérale, Recueil officiel, Recueil systématique, Traités, Procédures de consultation; Bundesrecht, Bundesblatt, Amtliche Sammlung, Systematische Rechtssammlung, Staatsverträge, Vernehmlassungen.
 
-- Federal gazette (BBl, FF): ``/eli/fga`` (~146'000 objects[^2]).
-- Official compilation (AS, RO, RU): ``/eli/oc`` (~45'000 objects[^2]).
-- Classified compilation (SR, RS): ``/eli/cc`` (~17'000 objects and ~50'000 consolidated objects).
-- Treaties: ``/eli/treaty`` (~18'500 objects).
-- Consultation procedures: ``/eli/dl/proj`` (~2'000 objects from 1992). 
+- Federal gazette (BBl, FF): ``/eli/fga`` (~162'000 objects[^2]).
+- Official compilation (AS, RO, RU): ``/eli/oc`` (~50'000 objects[^2]).
+- Classified compilation (SR, RS): ``/eli/cc`` (~17'000 objects and ~56'000 consolidated objects).
+- Treaties: ``/eli/treaty`` (~20'000 objects).
+- Consultation procedures: ``/eli/dl/proj`` (~5'000 objects from 1992). 
 
 Morover, the 40 vocabularies with their entries referred in the objects above are available in the directory ``/vocabularies``. The repository [fedlex-assets](https://github.com/droid-f/fedlex-assets) presents the ``HTML`` manifestation of the consolidated objects. 
 
@@ -22,8 +22,10 @@ Although the object structure, quality and conventions may raise some questions,
 
 ``JSON`` objects are prettified in order to take advantage of git to track changes.
 
+On 2026-10-10 the whole repository was re-synchronised with Fedlex: about 200'000 objects changed upstream since August 2025 were updated, and 1'309 works no longer served by Fedlex (absent from both its search index and its SPARQL endpoint) were removed, see the commit "Remove 1309 works gone upstream". Since then every object is checked against Fedlex once a day.
+
 ## Additional files
-- The file ``/updates.json`` is generated after each commit, this include the last crawler update date for each file. 
+- The file ``/updates.json`` is generated once a day, this include the last crawler update date for each file. 
 
 ## Feedbacks
 Feedbacks are welcome. For suggestions, missing or incorrect data open an issue.
