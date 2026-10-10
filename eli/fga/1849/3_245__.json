@@ -5,34 +5,38 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1849-12-14T23:25:52.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1849-12-14T23:25:52.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1849-12-15"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1849/3_245__/de"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1849/65"
-    },
-    "attributes": {
-      "publicationDate": {
-        "xsd:date": "1849-12-15"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1849/3_245__/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1849/3_245__/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1849 III 245"
+        },
         "memorialName": {
           "xsd:string": "BBl"
-        },
-        "memorialPageTo": {
-          "xsd:int": 302
         },
         "memorialPage": {
           "xsd:int": 245
@@ -40,12 +44,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1849/65/de"
         },
-        "memorialYear": {
-          "xsd:int": 1849
-        },
         "title": {
           "xsd:string": "Bericht der Minderheit der vom schweizerischen Ständerat niedergesetzten Kommission über den Gesetzesvorschlag für das eidgenössische Münzwesen und denjenigen für Ausführung der schweizerischen Münzreform. (Dem Ständerat erstattet den 12. Dezember)."
+        },
+        "memorialPageTo": {
+          "xsd:int": 302
+        },
+        "memorialYear": {
+          "xsd:int": 1849
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1849/3_245__/de/pdf-a"
+        ]
       }
     },
     {
@@ -56,6 +69,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1849/3_245__/de/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -63,26 +83,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10000228"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10000228&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10000228"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10000228&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -92,18 +105,34 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1849/3_245__/graph",
   "facets": {
+    "sortingDateTime": "1849-12-14T23:25:52Z",
     "sortingDate": "1849-12-15",
+    "memorialLabel_sort": {
+      "de": "1849.03.000245"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1849 III 245"
     },
+    "modified": "1849-12-15T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 245
     },
     "title": {
       "de": "Bericht der Minderheit der vom schweizerischen Ständerat niedergesetzten Kommission über den Gesetzesvorschlag für das eidgenössische Münzwesen und denjenigen für Ausführung der schweizerischen Münzreform. (Dem Ständerat erstattet den 12. Dezember)."
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1849/3_245__/graph",
   "timestampms": null
 }

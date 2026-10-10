@@ -5,35 +5,39 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1926-10-12T23:00:00.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1926-10-12T23:00:00.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1926-10-13"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1926/2_541_561_601/de",
         "https://fedlex.data.admin.ch/eli/fga/1926/2_541_561_601/fr"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1926/41"
-    },
-    "attributes": {
-      "publicationDate": {
-        "xsd:date": "1926-10-13"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1926/2_541_561_601/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1926/2_541_561_601/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1926 II 541"
+        },
         "memorialName": {
           "xsd:string": "BBl"
-        },
-        "memorialPageTo": {
-          "xsd:int": 542
         },
         "memorialPage": {
           "xsd:int": 541
@@ -41,29 +45,32 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1926/41/de"
         },
-        "memorialYear": {
-          "xsd:int": 1926
-        },
         "title": {
           "xsd:string": "Bundesgesetz betreffend Abänderung von Artikel 17 des Bundesgesetzes vom 21. Juni 1907 betreffend die Erfindungspatente. (Vom 9. Oktober 1926.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 542
+        },
+        "memorialYear": {
+          "xsd:int": 1926
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1926/2_541_561_601/de/pdf-a"
+        ]
       }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1926/2_541_561_601/fr",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1926/2_541_561_601/fr/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "FF 1926 II 561"
+        },
         "memorialName": {
           "xsd:string": "FF"
-        },
-        "memorialPageTo": {
-          "xsd:int": 562
         },
         "memorialPage": {
           "xsd:int": 561
@@ -71,12 +78,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1926/41/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1926
-        },
         "title": {
           "xsd:string": "LOI FÉDÉRALE portant révision de l'article 17 de la loi fédérale du 21 juin 1907 sur les brevets d'invention. (Du 9 octobre 1926.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 562
+        },
+        "memorialYear": {
+          "xsd:int": 1926
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1926/2_541_561_601/fr/pdf-a"
+        ]
       }
     },
     {
@@ -87,6 +103,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1926/2_541_561_601/de/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -94,22 +117,22 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10029845"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10029845&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10029845"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10029845&action=open"
         }
       }
     },
     {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
       "type": [
         "Concept",
         "Language"
@@ -123,26 +146,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10084763"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10084763&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10084763"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10084763&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -152,13 +168,19 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1926/2_541_561_601/graph",
   "facets": {
+    "sortingDateTime": "1926-10-12T23:00Z",
     "sortingDate": "1926-10-13",
+    "memorialLabel_sort": {
+      "de": "1926.02.000541",
+      "fr": "1926.02.000561"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1926 II 541",
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 1926 II 561"
     },
+    "modified": "1926-10-13T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 541,
       "http://publications.europa.eu/resource/authority/language/FRA": 561
@@ -166,7 +188,18 @@
     "title": {
       "de": "Bundesgesetz betreffend Abänderung von Artikel 17 des Bundesgesetzes vom 21. Juni 1907 betreffend die Erfindungspatente. (Vom 9. Oktober 1926.)",
       "fr": "LOI FÉDÉRALE portant révision de l'article 17 de la loi fédérale du 21 juin 1907 sur les brevets d'invention. (Du 9 octobre 1926.)"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1926/2_541_561_601/graph",
   "timestampms": null
 }

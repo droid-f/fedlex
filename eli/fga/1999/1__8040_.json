@@ -48,23 +48,12 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1999/1__8040_/fr",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1999/1__8040_/fr/pdf-x",
-          "https://fedlex.data.admin.ch/eli/fga/1999/1__8040_/fr/doc",
-          "https://fedlex.data.admin.ch/eli/fga/1999/1__8040_/fr/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "FF 1999 8040"
+        },
         "memorialName": {
           "xsd:string": "FF"
-        },
-        "memorialPageTo": {
-          "xsd:int": 8057
-        },
-        "titleAlternative": {
-          "xsd:string": "Publications des départements et des offices de la Confédération"
         },
         "memorialPage": {
           "xsd:int": 8040
@@ -72,12 +61,26 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1999/43/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1999
-        },
         "title": {
           "xsd:string": "Permis de construire militaire: \"Aérodrome militaire de Payerne\""
+        },
+        "memorialPageTo": {
+          "xsd:int": 8057
+        },
+        "titleAlternative": {
+          "xsd:string": "Publications des départements et des offices de la Confédération"
+        },
+        "memorialYear": {
+          "xsd:int": 1999
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1999/1__8040_/fr/pdf-x",
+          "https://fedlex.data.admin.ch/eli/fga/1999/1__8040_/fr/doc",
+          "https://fedlex.data.admin.ch/eli/fga/1999/1__8040_/fr/pdf-a"
+        ]
       }
     },
     {
@@ -88,6 +91,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1999/1__8040_/fr/pdf-x",
       "type": "Manifestation",
       "references": {
@@ -95,14 +105,14 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDFX"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/1999/1__8040_/fr/pdf-x/fedlex-data-admin-ch-eli-fga-1999-1__8040_-fr-pdf-x.pdf"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-x"
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDFX"
         }
       }
     },
@@ -114,14 +124,14 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/1999/1__8040_/fr/doc/fedlex-data-admin-ch-eli-fga-1999-1__8040_-fr-doc.doc"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
         }
       }
     },
@@ -133,26 +143,24 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/1999/1__8040_/fr/pdf-a/fedlex-data-admin-ch-eli-fga-1999-1__8040_-fr-pdf-a.pdf"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        "numberOfPages": {
+          "xsd:int": [
+            8
+          ]
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/1999/1__8040_/fr/pdf-a/fedlex-data-admin-ch-eli-fga-1999-1__8040_-fr-pdf-a.pdf"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -162,7 +170,6 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1999/1__8040_/graph",
   "facets": {
     "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/51",
     "sortingDateTime": "1999-11-01T23:00Z",
@@ -170,15 +177,31 @@
     "titleAlternative": {
       "fr": "Publications des départements et des offices de la Confédération"
     },
+    "memorialLabel_sort": {
+      "fr": "1999.99.008040"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 1999 8040"
     },
+    "modified": "1999-11-02T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/FRA": 8040
     },
     "title": {
       "fr": "Permis de construire militaire: \"Aérodrome militaire de Payerne\""
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1999/1__8040_/graph",
   "timestampms": null
 }

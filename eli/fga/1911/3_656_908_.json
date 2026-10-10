@@ -5,35 +5,39 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1911-06-27T23:00:00.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1911-06-27T23:00:00.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1911-06-28"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1911/3_656_908_/fr",
         "https://fedlex.data.admin.ch/eli/fga/1911/3_656_908_/de"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1911/26"
-    },
-    "attributes": {
-      "publicationDate": {
-        "xsd:date": "1911-06-28"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1911/3_656_908_/fr",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1911/3_656_908_/fr/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "FF 1911 III 908"
+        },
         "memorialName": {
           "xsd:string": "FF"
-        },
-        "memorialPageTo": {
-          "xsd:int": 911
         },
         "memorialPage": {
           "xsd:int": 908
@@ -41,29 +45,32 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1911/26/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1911
-        },
         "title": {
           "xsd:string": "Loi fédérale portant révision de la loi fédérale du 6 octobre 1905 sur la Banque nationale suisse. (Du 24 juin 1911.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 911
+        },
+        "memorialYear": {
+          "xsd:int": 1911
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1911/3_656_908_/fr/pdf-a"
+        ]
       }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1911/3_656_908_/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1911/3_656_908_/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1911 III 656"
+        },
         "memorialName": {
           "xsd:string": "BBl"
-        },
-        "memorialPageTo": {
-          "xsd:int": 659
         },
         "memorialPage": {
           "xsd:int": 656
@@ -71,12 +78,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1911/26/de"
         },
-        "memorialYear": {
-          "xsd:int": 1911
-        },
         "title": {
           "xsd:string": "Bundesgesetz betreffend Abänderung des Bundesgesetzes vom 6. Oktober 1905 Über die schweizerische Nationalbank. (Vom 24. Juni 1911.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 659
+        },
+        "memorialYear": {
+          "xsd:int": 1911
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1911/3_656_908_/de/pdf-a"
+        ]
       }
     },
     {
@@ -87,6 +103,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1911/3_656_908_/fr/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -94,22 +117,22 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10079160"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10079160&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10079160"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10079160&action=open"
         }
       }
     },
     {
-      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
       "type": [
         "Concept",
         "Language"
@@ -123,26 +146,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10024244"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10024244&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10024244"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10024244&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -152,13 +168,19 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1911/3_656_908_/graph",
   "facets": {
+    "sortingDateTime": "1911-06-27T23:00Z",
     "sortingDate": "1911-06-28",
+    "memorialLabel_sort": {
+      "de": "1911.03.000656",
+      "fr": "1911.03.000908"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1911 III 656",
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 1911 III 908"
     },
+    "modified": "1911-06-28T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 656,
       "http://publications.europa.eu/resource/authority/language/FRA": 908
@@ -166,7 +188,18 @@
     "title": {
       "de": "Bundesgesetz betreffend Abänderung des Bundesgesetzes vom 6. Oktober 1905 Über die schweizerische Nationalbank. (Vom 24. Juni 1911.)",
       "fr": "Loi fédérale portant révision de la loi fédérale du 6 octobre 1905 sur la Banque nationale suisse. (Du 24 juin 1911.)"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1911/3_656_908_/graph",
   "timestampms": null
 }

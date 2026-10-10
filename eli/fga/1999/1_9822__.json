@@ -48,23 +48,12 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1999/1_9822__/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1999/1_9822__/de/pdf-x",
-          "https://fedlex.data.admin.ch/eli/fga/1999/1_9822__/de/pdf-a",
-          "https://fedlex.data.admin.ch/eli/fga/1999/1_9822__/de/doc"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1999 9822"
+        },
         "memorialName": {
           "xsd:string": "BBl"
-        },
-        "memorialPageTo": {
-          "xsd:int": 9822
-        },
-        "titleAlternative": {
-          "xsd:string": "Bekanntmachungen der Gerichte"
         },
         "memorialPage": {
           "xsd:int": 9822
@@ -72,12 +61,26 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1999/50/de"
         },
-        "memorialYear": {
-          "xsd:int": 1999
-        },
         "title": {
           "xsd:string": "Einstellung Gerber"
+        },
+        "memorialPageTo": {
+          "xsd:int": 9822
+        },
+        "titleAlternative": {
+          "xsd:string": "Bekanntmachungen der Gerichte"
+        },
+        "memorialYear": {
+          "xsd:int": 1999
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1999/1_9822__/de/pdf-x",
+          "https://fedlex.data.admin.ch/eli/fga/1999/1_9822__/de/pdf-a",
+          "https://fedlex.data.admin.ch/eli/fga/1999/1_9822__/de/doc"
+        ]
       }
     },
     {
@@ -88,6 +91,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1999/1_9822__/de/pdf-x",
       "type": "Manifestation",
       "references": {
@@ -95,14 +105,14 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDFX"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/1999/1_9822__/de/pdf-x/fedlex-data-admin-ch-eli-fga-1999-1_9822__-de-pdf-x.pdf"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-x"
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDFX"
         }
       }
     },
@@ -114,14 +124,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/1999/1_9822__/de/pdf-a/fedlex-data-admin-ch-eli-fga-1999-1_9822__-de-pdf-a.pdf"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        "numberOfPages": {
+          "xsd:int": [
+            1
+          ]
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/1999/1_9822__/de/pdf-a/fedlex-data-admin-ch-eli-fga-1999-1_9822__-de-pdf-a.pdf"
@@ -136,23 +151,16 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/1999/1_9822__/de/doc/fedlex-data-admin-ch-eli-fga-1999-1_9822__-de-doc.doc"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -162,7 +170,6 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1999/1_9822__/graph",
   "facets": {
     "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/51",
     "sortingDateTime": "1999-12-20T23:00Z",
@@ -170,15 +177,31 @@
     "titleAlternative": {
       "de": "Bekanntmachungen der Gerichte"
     },
+    "memorialLabel_sort": {
+      "de": "1999.99.009822"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1999 9822"
     },
+    "modified": "1999-12-21T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 9822
     },
     "title": {
       "de": "Einstellung Gerber"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1999/1_9822__/graph",
   "timestampms": null
 }

@@ -16,9 +16,6 @@
           "1984-10-29T23:00:00.000Z"
         ]
       },
-      "typeDocument": {
-        "rdfs:Resource": "http://example.com"
-      },
       "publicationDate": {
         "xsd:date": "1984-10-30"
       }
@@ -34,18 +31,12 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1984/3___165/it",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1984/3___165/it/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "FF 1984 III 165"
+        },
         "memorialName": {
           "xsd:string": "FF"
-        },
-        "memorialPageTo": {
-          "xsd:int": 331
         },
         "memorialPage": {
           "xsd:int": 165
@@ -53,12 +44,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1984/43/it"
         },
-        "memorialYear": {
-          "xsd:int": 1984
-        },
         "title": {
           "xsd:string": "Messaggio concernente una legge federale sul diritto d'autore (LDA), la Convenzione di Berna per la protezione di opere letterarie ed artistiche riveduta a Parigi, e la Convenzione universale sul diritto d'autore e i suoi Protocolli addizionali 1 e 2, riveduti a Parigi del 29 agosto 1984"
+        },
+        "memorialPageTo": {
+          "xsd:int": 331
+        },
+        "memorialYear": {
+          "xsd:int": 1984
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/ITA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1984/3___165/it/pdf-a"
+        ]
       }
     },
     {
@@ -69,6 +69,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/ITA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1984/3___165/it/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -76,26 +83,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10114608&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10114608&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/ITA",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -105,19 +105,34 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1984/3___165/graph",
   "facets": {
     "sortingDateTime": "1984-10-29T23:00Z",
     "sortingDate": "1984-10-30",
+    "memorialLabel_sort": {
+      "it": "1984.03.000165"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/ITA": "FF 1984 III 165"
     },
+    "modified": "1984-10-30T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/ITA": 165
     },
     "title": {
       "it": "Messaggio concernente una legge federale sul diritto d'autore (LDA), la Convenzione di Berna per la protezione di opere letterarie ed artistiche riveduta a Parigi, e la Convenzione universale sul diritto d'autore e i suoi Protocolli addizionali 1 e 2, riveduti a Parigi del 29 agosto 1984"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1984/3___165/graph",
   "timestampms": null
 }

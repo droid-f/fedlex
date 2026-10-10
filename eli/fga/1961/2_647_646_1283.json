@@ -5,38 +5,39 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1961-10-04T23:00:00.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1961-10-04T23:00:00.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1961-10-05"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1961/2_647_646_1283/de",
         "https://fedlex.data.admin.ch/eli/fga/1961/2_647_646_1283/fr"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1961/40"
-    },
-    "attributes": {
-      "typeDocument": {
-        "rdfs:Resource": "http://example.com"
-      },
-      "publicationDate": {
-        "xsd:date": "1961-10-05"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1961/2_647_646_1283/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1961/2_647_646_1283/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1961 II 647"
+        },
         "memorialName": {
           "xsd:string": "BBl"
-        },
-        "memorialPageTo": {
-          "xsd:int": 648
         },
         "memorialPage": {
           "xsd:int": 647
@@ -44,29 +45,32 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1961/40/de"
         },
-        "memorialYear": {
-          "xsd:int": 1961
-        },
         "title": {
           "xsd:string": "Bundesbeschluss betreffend die Änderung des Generalzolltarifs (Vom 27. September 1961)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 648
+        },
+        "memorialYear": {
+          "xsd:int": 1961
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1961/2_647_646_1283/de/pdf-a"
+        ]
       }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1961/2_647_646_1283/fr",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1961/2_647_646_1283/fr/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "FF 1961 II 646"
+        },
         "memorialName": {
           "xsd:string": "FF"
-        },
-        "memorialPageTo": {
-          "xsd:int": 647
         },
         "memorialPage": {
           "xsd:int": 646
@@ -74,12 +78,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1961/40/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1961
-        },
         "title": {
           "xsd:string": "ARRÊTÉ FÉDÉRAL modifiant le tarif général des douanes (Du 27 septembre 1961)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 647
+        },
+        "memorialYear": {
+          "xsd:int": 1961
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1961/2_647_646_1283/fr/pdf-a"
+        ]
       }
     },
     {
@@ -90,6 +103,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1961/2_647_646_1283/de/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -97,22 +117,22 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10041472"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10041472&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10041472"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10041472&action=open"
         }
       }
     },
     {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
       "type": [
         "Concept",
         "Language"
@@ -126,26 +146,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10096306"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10096306&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10096306"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10096306&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -155,13 +168,19 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1961/2_647_646_1283/graph",
   "facets": {
+    "sortingDateTime": "1961-10-04T23:00Z",
     "sortingDate": "1961-10-05",
+    "memorialLabel_sort": {
+      "de": "1961.02.000647",
+      "fr": "1961.02.000646"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1961 II 647",
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 1961 II 646"
     },
+    "modified": "1961-10-05T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 647,
       "http://publications.europa.eu/resource/authority/language/FRA": 646
@@ -169,7 +188,18 @@
     "title": {
       "de": "Bundesbeschluss betreffend die Änderung des Generalzolltarifs (Vom 27. September 1961)",
       "fr": "ARRÊTÉ FÉDÉRAL modifiant le tarif général des douanes (Du 27 septembre 1961)"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1961/2_647_646_1283/graph",
   "timestampms": null
 }

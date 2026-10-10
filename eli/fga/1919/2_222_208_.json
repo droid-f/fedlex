@@ -5,35 +5,39 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1919-05-13T23:00:00.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1919-05-13T23:00:00.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1919-05-14"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1919/2_222_208_/de",
         "https://fedlex.data.admin.ch/eli/fga/1919/2_222_208_/fr"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1919/19"
-    },
-    "attributes": {
-      "publicationDate": {
-        "xsd:date": "1919-05-14"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1919/2_222_208_/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1919/2_222_208_/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1919 II 222"
+        },
         "memorialName": {
           "xsd:string": "BBl"
-        },
-        "memorialPageTo": {
-          "xsd:int": 232
         },
         "memorialPage": {
           "xsd:int": 222
@@ -41,29 +45,32 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1919/19/de"
         },
-        "memorialYear": {
-          "xsd:int": 1919
-        },
         "title": {
           "xsd:string": "Zweiter Bericht des Bundesrates an die Bundesversammlung über das Volksbegehren betreffend Unterstellung von Staatsverträgen unter das Referendum. (Vom 9. Mai 1919.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 232
+        },
+        "memorialYear": {
+          "xsd:int": 1919
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1919/2_222_208_/de/pdf-a"
+        ]
       }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1919/2_222_208_/fr",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1919/2_222_208_/fr/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "FF 1919 II 208"
+        },
         "memorialName": {
           "xsd:string": "FF"
-        },
-        "memorialPageTo": {
-          "xsd:int": 218
         },
         "memorialPage": {
           "xsd:int": 208
@@ -71,12 +78,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1919/19/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1919
-        },
         "title": {
           "xsd:string": "Second rapport du Conseil fédéral à l'Assemblée fédérale sur l'initiative populaire tendant à soumettre au referendum certains traités internationaux. (Du 9 mai 1919.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 218
+        },
+        "memorialYear": {
+          "xsd:int": 1919
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1919/2_222_208_/fr/pdf-a"
+        ]
       }
     },
     {
@@ -87,6 +103,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1919/2_222_208_/de/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -94,22 +117,22 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10027106"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10027106&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10027106"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10027106&action=open"
         }
       }
     },
     {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
       "type": [
         "Concept",
         "Language"
@@ -123,26 +146,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10082016"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10082016&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10082016"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10082016&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -152,13 +168,19 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1919/2_222_208_/graph",
   "facets": {
+    "sortingDateTime": "1919-05-13T23:00Z",
     "sortingDate": "1919-05-14",
+    "memorialLabel_sort": {
+      "de": "1919.02.000222",
+      "fr": "1919.02.000208"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1919 II 222",
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 1919 II 208"
     },
+    "modified": "1919-05-14T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 222,
       "http://publications.europa.eu/resource/authority/language/FRA": 208
@@ -166,7 +188,18 @@
     "title": {
       "de": "Zweiter Bericht des Bundesrates an die Bundesversammlung über das Volksbegehren betreffend Unterstellung von Staatsverträgen unter das Referendum. (Vom 9. Mai 1919.)",
       "fr": "Second rapport du Conseil fédéral à l'Assemblée fédérale sur l'initiative populaire tendant à soumettre au referendum certains traités internationaux. (Du 9 mai 1919.)"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1919/2_222_208_/graph",
   "timestampms": null
 }

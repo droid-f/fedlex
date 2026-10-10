@@ -5,37 +5,38 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1991-01-21T23:00:00.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1991-01-21T23:00:00.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1991-01-22"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1991/1___117/it"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1991/2"
-    },
-    "attributes": {
-      "typeDocument": {
-        "rdfs:Resource": "http://example.com"
-      },
-      "publicationDate": {
-        "xsd:date": "1991-01-22"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1991/1___117/it",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1991/1___117/it/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "FF 1991 I 117"
+        },
         "memorialName": {
           "xsd:string": "FF"
-        },
-        "memorialPageTo": {
-          "xsd:int": 147
         },
         "memorialPage": {
           "xsd:int": 117
@@ -43,12 +44,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1991/2/it"
         },
-        "memorialYear": {
-          "xsd:int": 1991
-        },
         "title": {
           "xsd:string": "Messaggio sul finanziamento della ricerca e dello sviluppo orientati verso la pratica negli anni 1992-95 (Commissione per il promovimento della ricerca scientifica, CPRS) e sul finanziamento della cooperazione tecnologica nell'ambito di EUREKA negli anni 1992-95 del 26 novembre 1990"
+        },
+        "memorialPageTo": {
+          "xsd:int": 147
+        },
+        "memorialYear": {
+          "xsd:int": 1991
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/ITA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1991/1___117/it/pdf-a"
+        ]
       }
     },
     {
@@ -59,6 +69,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/ITA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1991/1___117/it/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -66,26 +83,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10116557"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10116557&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10116557"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10116557&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/ITA",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -95,18 +105,34 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1991/1___117/graph",
   "facets": {
+    "sortingDateTime": "1991-01-21T23:00Z",
     "sortingDate": "1991-01-22",
+    "memorialLabel_sort": {
+      "it": "1991.01.000117"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/ITA": "FF 1991 I 117"
     },
+    "modified": "1991-01-22T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/ITA": 117
     },
     "title": {
       "it": "Messaggio sul finanziamento della ricerca e dello sviluppo orientati verso la pratica negli anni 1992-95 (Commissione per il promovimento della ricerca scientifica, CPRS) e sul finanziamento della cooperazione tecnologica nell'ambito di EUREKA negli anni 1992-95 del 26 novembre 1990"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1991/1___117/graph",
   "timestampms": null
 }

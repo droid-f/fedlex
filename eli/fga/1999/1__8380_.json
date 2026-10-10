@@ -51,23 +51,12 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1999/1__8380_/fr",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1999/1__8380_/fr/doc",
-          "https://fedlex.data.admin.ch/eli/fga/1999/1__8380_/fr/pdf-a",
-          "https://fedlex.data.admin.ch/eli/fga/1999/1__8380_/fr/pdf-x"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "FF 1999 8380"
+        },
         "memorialName": {
           "xsd:string": "FF"
-        },
-        "memorialPageTo": {
-          "xsd:int": 8380
-        },
-        "titleAlternative": {
-          "xsd:string": "Publications des tribunaux"
         },
         "memorialPage": {
           "xsd:int": 8380
@@ -75,12 +64,26 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1999/44/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1999
-        },
         "title": {
           "xsd:string": "Citations Champod et Tawfik"
+        },
+        "memorialPageTo": {
+          "xsd:int": 8380
+        },
+        "titleAlternative": {
+          "xsd:string": "Publications des tribunaux"
+        },
+        "memorialYear": {
+          "xsd:int": 1999
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1999/1__8380_/fr/doc",
+          "https://fedlex.data.admin.ch/eli/fga/1999/1__8380_/fr/pdf-a",
+          "https://fedlex.data.admin.ch/eli/fga/1999/1__8380_/fr/pdf-x"
+        ]
       }
     },
     {
@@ -91,6 +94,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1999/1__8380_/fr/doc",
       "type": "Manifestation",
       "references": {
@@ -98,14 +108,14 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/1999/1__8380_/fr/doc/fedlex-data-admin-ch-eli-fga-1999-1__8380_-fr-doc.doc"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
         }
       }
     },
@@ -117,14 +127,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/1999/1__8380_/fr/pdf-a/fedlex-data-admin-ch-eli-fga-1999-1__8380_-fr-pdf-a.pdf"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        "numberOfPages": {
+          "xsd:int": [
+            1
+          ]
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/1999/1__8380_/fr/pdf-a/fedlex-data-admin-ch-eli-fga-1999-1__8380_-fr-pdf-a.pdf"
@@ -139,23 +154,16 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDFX"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/1999/1__8380_/fr/pdf-x/fedlex-data-admin-ch-eli-fga-1999-1__8380_-fr-pdf-x.pdf"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-x"
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDFX"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -165,7 +173,6 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1999/1__8380_/graph",
   "facets": {
     "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/51",
     "sortingDateTime": "1999-11-08T23:00Z",
@@ -173,15 +180,31 @@
     "titleAlternative": {
       "fr": "Publications des tribunaux"
     },
+    "memorialLabel_sort": {
+      "fr": "1999.99.008380"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 1999 8380"
     },
+    "modified": "1999-11-09T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/FRA": 8380
     },
     "title": {
       "fr": "Citations Champod et Tawfik"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1999/1__8380_/graph",
   "timestampms": null
 }

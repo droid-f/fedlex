@@ -5,34 +5,38 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1890-10-17T23:30:14.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1890-10-17T23:30:14.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1890-10-18"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1890/4_610__/de"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1890/43"
-    },
-    "attributes": {
-      "publicationDate": {
-        "xsd:date": "1890-10-18"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1890/4_610__/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1890/4_610__/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1890 IV 610"
+        },
         "memorialName": {
           "xsd:string": "BBl"
-        },
-        "memorialPageTo": {
-          "xsd:int": 620
         },
         "memorialPage": {
           "xsd:int": 610
@@ -40,12 +44,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1890/43/de"
         },
-        "memorialYear": {
-          "xsd:int": 1890
-        },
         "title": {
           "xsd:string": "Gutachten über die Frage: „Ob und unter welchen Bedingungen sowohl der Bau als der Betrieb einer Eisenbahn auf die Jungfrau ohne ausnahmsweise Gefährdung von Menschenleben (Gesundheit) möglich sei, und zwar sowohl nach dem System Köchlin als auch nach dem System Trautweiler.\""
+        },
+        "memorialPageTo": {
+          "xsd:int": 620
+        },
+        "memorialYear": {
+          "xsd:int": 1890
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1890/4_610__/de/pdf-a"
+        ]
       }
     },
     {
@@ -56,6 +69,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1890/4_610__/de/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -63,26 +83,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10015000"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10015000&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10015000"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10015000&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -92,18 +105,34 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1890/4_610__/graph",
   "facets": {
+    "sortingDateTime": "1890-10-17T23:30:14Z",
     "sortingDate": "1890-10-18",
+    "memorialLabel_sort": {
+      "de": "1890.04.000610"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1890 IV 610"
     },
+    "modified": "1890-10-18T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 610
     },
     "title": {
       "de": "Gutachten über die Frage: „Ob und unter welchen Bedingungen sowohl der Bau als der Betrieb einer Eisenbahn auf die Jungfrau ohne ausnahmsweise Gefährdung von Menschenleben (Gesundheit) möglich sei, und zwar sowohl nach dem System Köchlin als auch nach dem System Trautweiler.\""
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1890/4_610__/graph",
   "timestampms": null
 }

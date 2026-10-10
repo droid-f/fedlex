@@ -5,34 +5,38 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1911-03-14T23:00:00.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1911-03-14T23:00:00.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1911-03-15"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1911/1_660__/de"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1911/11"
-    },
-    "attributes": {
-      "publicationDate": {
-        "xsd:date": "1911-03-15"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1911/1_660__/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1911/1_660__/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1911 I 660"
+        },
         "memorialName": {
           "xsd:string": "BBl"
-        },
-        "memorialPageTo": {
-          "xsd:int": 668
         },
         "memorialPage": {
           "xsd:int": 660
@@ -40,12 +44,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1911/11/de"
         },
-        "memorialYear": {
-          "xsd:int": 1911
-        },
         "title": {
           "xsd:string": "Bericht des Bundesrates an die Bundesversammlung über die Beschwerde von Friedrich Schnell und Arthur Weher, beide in der Wintermatt Gemeinde Kirchlindach, gegen den Entscheid des Bundesrats vom 15. November 1910 betreffend Verweigerung eines Wirtschaftspatents. (Vom 7. März 1911.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 668
+        },
+        "memorialYear": {
+          "xsd:int": 1911
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1911/1_660__/de/pdf-a"
+        ]
       }
     },
     {
@@ -56,6 +69,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1911/1_660__/de/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -63,26 +83,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10024123"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10024123&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10024123"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10024123&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -92,18 +105,34 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1911/1_660__/graph",
   "facets": {
+    "sortingDateTime": "1911-03-14T23:00Z",
     "sortingDate": "1911-03-15",
+    "memorialLabel_sort": {
+      "de": "1911.01.000660"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1911 I 660"
     },
+    "modified": "1911-03-15T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 660
     },
     "title": {
       "de": "Bericht des Bundesrates an die Bundesversammlung über die Beschwerde von Friedrich Schnell und Arthur Weher, beide in der Wintermatt Gemeinde Kirchlindach, gegen den Entscheid des Bundesrats vom 15. November 1910 betreffend Verweigerung eines Wirtschaftspatents. (Vom 7. März 1911.)"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1911/1_660__/graph",
   "timestampms": null
 }

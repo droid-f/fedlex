@@ -5,34 +5,38 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1860-04-13T23:30:14.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1860-04-13T23:30:14.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1860-04-14"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1860/1__567_/fr"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1860/20"
-    },
-    "attributes": {
-      "publicationDate": {
-        "xsd:date": "1860-04-14"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1860/1__567_/fr",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1860/1__567_/fr/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "FF 1860 I 567"
+        },
         "memorialName": {
           "xsd:string": "FF"
-        },
-        "memorialPageTo": {
-          "xsd:int": 572
         },
         "memorialPage": {
           "xsd:int": 567
@@ -40,12 +44,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1860/20/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1860
-        },
         "title": {
           "xsd:string": "RAPPORT do la Commission du Conseil national concernant le recours de Jak. Guggenheim, de Lengnau, Canton d'Argovie, et de ses trois fils Maurice, Maximilien et Léopold Guggenheim, tons domiciliés à Herrliberg et Horgen, Canton de Zurich, sur un jugement de la Cour suprême du Canton d'Argovie, du 16 Juin 1859. (Du 11 Janvier.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 572
+        },
+        "memorialYear": {
+          "xsd:int": 1860
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1860/1__567_/fr/pdf-a"
+        ]
       }
     },
     {
@@ -56,6 +69,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1860/1__567_/fr/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -63,26 +83,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10058223"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10058223&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10058223"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10058223&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -92,18 +105,34 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1860/1__567_/graph",
   "facets": {
+    "sortingDateTime": "1860-04-13T23:30:14Z",
     "sortingDate": "1860-04-14",
+    "memorialLabel_sort": {
+      "fr": "1860.01.000567"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 1860 I 567"
     },
+    "modified": "1860-04-14T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/FRA": 567
     },
     "title": {
       "fr": "RAPPORT do la Commission du Conseil national concernant le recours de Jak. Guggenheim, de Lengnau, Canton d'Argovie, et de ses trois fils Maurice, Maximilien et Léopold Guggenheim, tons domiciliés à Herrliberg et Horgen, Canton de Zurich, sur un jugement de la Cour suprême du Canton d'Argovie, du 16 Juin 1859. (Du 11 Janvier.)"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1860/1__567_/graph",
   "timestampms": null
 }

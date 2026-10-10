@@ -5,34 +5,38 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1917-01-09T23:00:00.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1917-01-09T23:00:00.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1917-01-10"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1917/1_25__/de"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1917/2"
-    },
-    "attributes": {
-      "publicationDate": {
-        "xsd:date": "1917-01-10"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1917/1_25__/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1917/1_25__/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1917 I 25"
+        },
         "memorialName": {
           "xsd:string": "BBl"
-        },
-        "memorialPageTo": {
-          "xsd:int": 26
         },
         "memorialPage": {
           "xsd:int": 25
@@ -40,12 +44,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1917/2/de"
         },
-        "memorialYear": {
-          "xsd:int": 1917
-        },
         "title": {
           "xsd:string": "Kreisschreiben des schweizerischen Bundesrates an sämtliche Kantonsregierungen betreffend die Übertragung der Oberaufsicht über das Militärsteuerwese an das Finanzdepartement. (Vom 3. Januar 1917.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 26
+        },
+        "memorialYear": {
+          "xsd:int": 1917
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1917/1_25__/de/pdf-a"
+        ]
       }
     },
     {
@@ -56,6 +69,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1917/1_25__/de/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -63,26 +83,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10026268"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10026268&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10026268"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10026268&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -92,18 +105,34 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1917/1_25__/graph",
   "facets": {
+    "sortingDateTime": "1917-01-09T23:00Z",
     "sortingDate": "1917-01-10",
+    "memorialLabel_sort": {
+      "de": "1917.01.000025"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1917 I 25"
     },
+    "modified": "1917-01-10T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 25
     },
     "title": {
       "de": "Kreisschreiben des schweizerischen Bundesrates an sämtliche Kantonsregierungen betreffend die Übertragung der Oberaufsicht über das Militärsteuerwese an das Finanzdepartement. (Vom 3. Januar 1917.)"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1917/1_25__/graph",
   "timestampms": null
 }

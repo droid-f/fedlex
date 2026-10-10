@@ -48,17 +48,21 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/2000/577/it",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/2000/577/it/pdf-a",
-          "https://fedlex.data.admin.ch/eli/fga/2000/577/it/pdf-x",
-          "https://fedlex.data.admin.ch/eli/fga/2000/577/it/doc"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "FF 2000 2560"
+        },
         "memorialName": {
           "xsd:string": "FF"
+        },
+        "memorialPage": {
+          "xsd:int": 2560
+        },
+        "isPartOf": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/2000/19/it"
+        },
+        "title": {
+          "xsd:string": "Aeroporto di Lugano-Agno Approvazione dei piani relativi all'ampliamento del parcheggio P1 "
         },
         "memorialPageTo": {
           "xsd:int": 2560
@@ -66,21 +70,20 @@
         "titleAlternative": {
           "xsd:string": "Aeroporto di Lugano-Agno Approvazione dei piani relativi all'ampliamento del parcheggio P1"
         },
-        "memorialPage": {
-          "xsd:int": 2560
-        },
         "titleShort": {
           "xsd:string": "Aeroporto di Lugano-Agno Decisione P1"
         },
-        "isPartOf": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/2000/19/it"
-        },
         "memorialYear": {
           "xsd:int": 2000
-        },
-        "title": {
-          "xsd:string": "Aeroporto di Lugano-Agno Approvazione dei piani relativi all'ampliamento del parcheggio P1 "
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/ITA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/2000/577/it/pdf-a",
+          "https://fedlex.data.admin.ch/eli/fga/2000/577/it/pdf-x",
+          "https://fedlex.data.admin.ch/eli/fga/2000/577/it/doc"
+        ]
       }
     },
     {
@@ -91,6 +94,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/ITA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/2000/577/it/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -98,14 +108,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2000/577/it/pdf-a/fedlex-data-admin-ch-eli-fga-2000-577-it-pdf-a.pdf"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        "numberOfPages": {
+          "xsd:int": [
+            1
+          ]
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2000/577/it/pdf-a/fedlex-data-admin-ch-eli-fga-2000-577-it-pdf-a.pdf"
@@ -120,14 +135,14 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDFX"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2000/577/it/pdf-x/fedlex-data-admin-ch-eli-fga-2000-577-it-pdf-x.pdf"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-x"
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDFX"
         }
       }
     },
@@ -139,23 +154,16 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2000/577/it/doc/fedlex-data-admin-ch-eli-fga-2000-577-it-doc.doc"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/ITA",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -165,7 +173,6 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/2000/577/graph",
   "facets": {
     "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/51",
     "sortingDateTime": "2000-05-15T22:00Z",
@@ -173,9 +180,14 @@
     "titleAlternative": {
       "it": "Aeroporto di Lugano-Agno Approvazione dei piani relativi all'ampliamento del parcheggio P1"
     },
+    "memorialLabel_sort": {
+      "it": "2000.99.002560"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/ITA": "FF 2000 2560"
     },
+    "modified": "2000-05-16T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/ITA": 2560
     },
@@ -184,7 +196,18 @@
     },
     "title": {
       "it": "Aeroporto di Lugano-Agno Approvazione dei piani relativi all'ampliamento del parcheggio P1 "
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/2000/577/graph",
   "timestampms": null
 }

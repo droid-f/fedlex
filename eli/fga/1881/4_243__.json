@@ -5,34 +5,38 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1881-11-11T23:30:14.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1881-11-11T23:30:14.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1881-11-12"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1881/4_243__/de"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1881/48"
-    },
-    "attributes": {
-      "publicationDate": {
-        "xsd:date": "1881-11-12"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1881/4_243__/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1881/4_243__/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1881 IV 243"
+        },
         "memorialName": {
           "xsd:string": "BBl"
-        },
-        "memorialPageTo": {
-          "xsd:int": 244
         },
         "memorialPage": {
           "xsd:int": 243
@@ -40,12 +44,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1881/48/de"
         },
-        "memorialYear": {
-          "xsd:int": 1881
-        },
         "title": {
           "xsd:string": "Bundesratsbeschluss betreffend Abänderung der Verordnung für die eidg. Medizinalprüfungen , vom 2. Juli 1880 *), bezüglich des im Anhang unter II enthaltenen Maturitätsprogramms für Pharmazeuten. (Vom 4. November 1881.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 244
+        },
+        "memorialYear": {
+          "xsd:int": 1881
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1881/4_243__/de/pdf-a"
+        ]
       }
     },
     {
@@ -56,6 +69,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1881/4_243__/de/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -63,26 +83,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10011250"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10011250&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10011250"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10011250&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -92,18 +105,34 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1881/4_243__/graph",
   "facets": {
+    "sortingDateTime": "1881-11-11T23:30:14Z",
     "sortingDate": "1881-11-12",
+    "memorialLabel_sort": {
+      "de": "1881.04.000243"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1881 IV 243"
     },
+    "modified": "1881-11-12T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 243
     },
     "title": {
       "de": "Bundesratsbeschluss betreffend Abänderung der Verordnung für die eidg. Medizinalprüfungen , vom 2. Juli 1880 *), bezüglich des im Anhang unter II enthaltenen Maturitätsprogramms für Pharmazeuten. (Vom 4. November 1881.)"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1881/4_243__/graph",
   "timestampms": null
 }

@@ -5,38 +5,39 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1949-05-18T23:00:00.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1949-05-18T23:00:00.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1949-05-19"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1949/1_993_989_/de",
         "https://fedlex.data.admin.ch/eli/fga/1949/1_993_989_/fr"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1949/20"
-    },
-    "attributes": {
-      "typeDocument": {
-        "rdfs:Resource": "http://example.com"
-      },
-      "publicationDate": {
-        "xsd:date": "1949-05-19"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1949/1_993_989_/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1949/1_993_989_/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1949 I 993"
+        },
         "memorialName": {
           "xsd:string": "BBl"
-        },
-        "memorialPageTo": {
-          "xsd:int": 999
         },
         "memorialPage": {
           "xsd:int": 993
@@ -44,29 +45,32 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1949/20/de"
         },
-        "memorialYear": {
-          "xsd:int": 1949
-        },
         "title": {
           "xsd:string": "Botschaft des Bundesrates an die Bundesversammlung betreffend die Ergänzung des Bundesgesetzes über die Sicherstellung der Landesversorgung mit lebenswichtigen Gütern (Vom 13. Mai 1949)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 999
+        },
+        "memorialYear": {
+          "xsd:int": 1949
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1949/1_993_989_/de/pdf-a"
+        ]
       }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1949/1_993_989_/fr",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1949/1_993_989_/fr/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "FF 1949 I 989"
+        },
         "memorialName": {
           "xsd:string": "FF"
-        },
-        "memorialPageTo": {
-          "xsd:int": 995
         },
         "memorialPage": {
           "xsd:int": 989
@@ -74,12 +78,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1949/20/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1949
-        },
         "title": {
           "xsd:string": "MESSAGE du Conseil fédéral à l'Assemblée fédérale concernant la modification de la loi qui tend à assurer l'approvisionnement du pays en marchandises indispensables (Du 13 mai 1949)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 995
+        },
+        "memorialYear": {
+          "xsd:int": 1949
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1949/1_993_989_/fr/pdf-a"
+        ]
       }
     },
     {
@@ -90,6 +103,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1949/1_993_989_/de/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -97,22 +117,22 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10036639"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10036639&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10036639"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10036639&action=open"
         }
       }
     },
     {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
       "type": [
         "Concept",
         "Language"
@@ -126,26 +146,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10091536"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10091536&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10091536"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10091536&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -155,13 +168,19 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1949/1_993_989_/graph",
   "facets": {
+    "sortingDateTime": "1949-05-18T23:00Z",
     "sortingDate": "1949-05-19",
+    "memorialLabel_sort": {
+      "de": "1949.01.000993",
+      "fr": "1949.01.000989"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1949 I 993",
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 1949 I 989"
     },
+    "modified": "1949-05-19T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 993,
       "http://publications.europa.eu/resource/authority/language/FRA": 989
@@ -169,7 +188,18 @@
     "title": {
       "de": "Botschaft des Bundesrates an die Bundesversammlung betreffend die Ergänzung des Bundesgesetzes über die Sicherstellung der Landesversorgung mit lebenswichtigen Gütern (Vom 13. Mai 1949)",
       "fr": "MESSAGE du Conseil fédéral à l'Assemblée fédérale concernant la modification de la loi qui tend à assurer l'approvisionnement du pays en marchandises indispensables (Du 13 mai 1949)"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1949/1_993_989_/graph",
   "timestampms": null
 }

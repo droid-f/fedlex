@@ -5,38 +5,39 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1958-01-29T23:00:00.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1958-01-29T23:00:00.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1958-01-30"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1958/1_245_265_/fr",
         "https://fedlex.data.admin.ch/eli/fga/1958/1_245_265_/de"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1958/4"
-    },
-    "attributes": {
-      "typeDocument": {
-        "rdfs:Resource": "http://example.com"
-      },
-      "publicationDate": {
-        "xsd:date": "1958-01-30"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1958/1_245_265_/fr",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1958/1_245_265_/fr/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "FF 1958 I 265"
+        },
         "memorialName": {
           "xsd:string": "FF"
-        },
-        "memorialPageTo": {
-          "xsd:int": 274
         },
         "memorialPage": {
           "xsd:int": 265
@@ -44,29 +45,32 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1958/4/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1958
-        },
         "title": {
           "xsd:string": "MESSAGE du Conseil fédéral à l'Assemblée fédérale concernant la modification de la loi sur le ravitaillement du pays en blé (Du 24 janvier 1958)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 274
+        },
+        "memorialYear": {
+          "xsd:int": 1958
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1958/1_245_265_/fr/pdf-a"
+        ]
       }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1958/1_245_265_/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1958/1_245_265_/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1958 I 245"
+        },
         "memorialName": {
           "xsd:string": "BBl"
-        },
-        "memorialPageTo": {
-          "xsd:int": 254
         },
         "memorialPage": {
           "xsd:int": 245
@@ -74,12 +78,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1958/4/de"
         },
-        "memorialYear": {
-          "xsd:int": 1958
-        },
         "title": {
           "xsd:string": "Botschaft des Bundesrates an die Bundesversammlung betreffend die Abänderung des Bundesgesetzes über die Getreideversorgung des Landes (Vom 24. Januar 1958)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 254
+        },
+        "memorialYear": {
+          "xsd:int": 1958
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1958/1_245_265_/de/pdf-a"
+        ]
       }
     },
     {
@@ -90,6 +103,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1958/1_245_265_/fr/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -97,22 +117,22 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10094925"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10094925&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10094925"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10094925&action=open"
         }
       }
     },
     {
-      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
       "type": [
         "Concept",
         "Language"
@@ -126,26 +146,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10040087"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10040087&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10040087"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10040087&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -155,13 +168,19 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1958/1_245_265_/graph",
   "facets": {
+    "sortingDateTime": "1958-01-29T23:00Z",
     "sortingDate": "1958-01-30",
+    "memorialLabel_sort": {
+      "de": "1958.01.000245",
+      "fr": "1958.01.000265"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1958 I 245",
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 1958 I 265"
     },
+    "modified": "1958-01-30T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 245,
       "http://publications.europa.eu/resource/authority/language/FRA": 265
@@ -169,7 +188,18 @@
     "title": {
       "de": "Botschaft des Bundesrates an die Bundesversammlung betreffend die Abänderung des Bundesgesetzes über die Getreideversorgung des Landes (Vom 24. Januar 1958)",
       "fr": "MESSAGE du Conseil fédéral à l'Assemblée fédérale concernant la modification de la loi sur le ravitaillement du pays en blé (Du 24 janvier 1958)"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1958/1_245_265_/graph",
   "timestampms": null
 }

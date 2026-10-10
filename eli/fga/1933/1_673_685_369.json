@@ -5,38 +5,39 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1933-04-18T23:00:00.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1933-04-18T23:00:00.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1933-04-19"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1933/1_673_685_369/fr",
         "https://fedlex.data.admin.ch/eli/fga/1933/1_673_685_369/de"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1933/16"
-    },
-    "attributes": {
-      "typeDocument": {
-        "rdfs:Resource": "http://example.com"
-      },
-      "publicationDate": {
-        "xsd:date": "1933-04-19"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1933/1_673_685_369/fr",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1933/1_673_685_369/fr/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "FF 1933 I 685"
+        },
         "memorialName": {
           "xsd:string": "FF"
-        },
-        "memorialPageTo": {
-          "xsd:int": 686
         },
         "memorialPage": {
           "xsd:int": 685
@@ -44,29 +45,32 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1933/16/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1933
-        },
         "title": {
           "xsd:string": "Arrêté fédéral prorogeant la durée de l'arrêté fédéral du 16 mars 1929 qui alloue une subvention aux vieillards indigents. (Du 13 avril 1933.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 686
+        },
+        "memorialYear": {
+          "xsd:int": 1933
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1933/1_673_685_369/fr/pdf-a"
+        ]
       }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1933/1_673_685_369/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1933/1_673_685_369/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1933 I 673"
+        },
         "memorialName": {
           "xsd:string": "BBl"
-        },
-        "memorialPageTo": {
-          "xsd:int": 674
         },
         "memorialPage": {
           "xsd:int": 673
@@ -74,12 +78,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1933/16/de"
         },
-        "memorialYear": {
-          "xsd:int": 1933
-        },
         "title": {
           "xsd:string": "Bundesbeschluss betreffend die Verlängerung des Bundesbeschlusses vom 16. März 1929 über die Unterstützung bedürftiger Greise. (Vom 13. April 1933.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 674
+        },
+        "memorialYear": {
+          "xsd:int": 1933
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1933/1_673_685_369/de/pdf-a"
+        ]
       }
     },
     {
@@ -90,6 +103,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1933/1_673_685_369/fr/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -97,22 +117,22 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10086884"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10086884&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10086884"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10086884&action=open"
         }
       }
     },
     {
-      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
       "type": [
         "Concept",
         "Language"
@@ -126,26 +146,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10031969"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10031969&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10031969"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10031969&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -155,13 +168,19 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1933/1_673_685_369/graph",
   "facets": {
+    "sortingDateTime": "1933-04-18T23:00Z",
     "sortingDate": "1933-04-19",
+    "memorialLabel_sort": {
+      "de": "1933.01.000673",
+      "fr": "1933.01.000685"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1933 I 673",
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 1933 I 685"
     },
+    "modified": "1933-04-19T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 673,
       "http://publications.europa.eu/resource/authority/language/FRA": 685
@@ -169,7 +188,18 @@
     "title": {
       "de": "Bundesbeschluss betreffend die Verlängerung des Bundesbeschlusses vom 16. März 1929 über die Unterstützung bedürftiger Greise. (Vom 13. April 1933.)",
       "fr": "Arrêté fédéral prorogeant la durée de l'arrêté fédéral du 16 mars 1929 qui alloue une subvention aux vieillards indigents. (Du 13 avril 1933.)"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1933/1_673_685_369/graph",
   "timestampms": null
 }

@@ -5,38 +5,39 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1908-06-23T23:00:00.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1908-06-23T23:00:00.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1908-06-24"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1908/4_201_318_/fr",
         "https://fedlex.data.admin.ch/eli/fga/1908/4_201_318_/de"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1908/26"
-    },
-    "attributes": {
-      "typeDocument": {
-        "rdfs:Resource": "http://example.com"
-      },
-      "publicationDate": {
-        "xsd:date": "1908-06-24"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1908/4_201_318_/fr",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1908/4_201_318_/fr/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "FF 1908 IV 318"
+        },
         "memorialName": {
           "xsd:string": "FF"
-        },
-        "memorialPageTo": {
-          "xsd:int": 343
         },
         "memorialPage": {
           "xsd:int": 318
@@ -44,29 +45,32 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1908/26/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1908
-        },
         "title": {
           "xsd:string": "Message du Conseil fédéral à l'Assemblée fédérale concernant un projet de révision de la loi sur les traitements des fonctionnaires et employés fédéraux. (Du 15 juin 1908.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 343
+        },
+        "memorialYear": {
+          "xsd:int": 1908
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1908/4_201_318_/fr/pdf-a"
+        ]
       }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1908/4_201_318_/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1908/4_201_318_/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1908 IV 201"
+        },
         "memorialName": {
           "xsd:string": "BBl"
-        },
-        "memorialPageTo": {
-          "xsd:int": 225
         },
         "memorialPage": {
           "xsd:int": 201
@@ -74,12 +78,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1908/26/de"
         },
-        "memorialYear": {
-          "xsd:int": 1908
-        },
         "title": {
           "xsd:string": "Botschaft des Bundesrates an die Bundesversammlung, betreffend die Revision des Bundesgesetzes über die Besoldungen der eidgenössischen Beamten und Angestellten, vom 2. Juli 1897. (Vom 15. Juni 1908.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 225
+        },
+        "memorialYear": {
+          "xsd:int": 1908
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1908/4_201_318_/de/pdf-a"
+        ]
       }
     },
     {
@@ -90,6 +103,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1908/4_201_318_/fr/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -97,22 +117,22 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10077850"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10077850&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10077850"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10077850&action=open"
         }
       }
     },
     {
-      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
       "type": [
         "Concept",
         "Language"
@@ -126,26 +146,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10022953"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10022953&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10022953"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10022953&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -155,13 +168,19 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1908/4_201_318_/graph",
   "facets": {
+    "sortingDateTime": "1908-06-23T23:00Z",
     "sortingDate": "1908-06-24",
+    "memorialLabel_sort": {
+      "de": "1908.04.000201",
+      "fr": "1908.04.000318"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1908 IV 201",
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 1908 IV 318"
     },
+    "modified": "1908-06-24T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 201,
       "http://publications.europa.eu/resource/authority/language/FRA": 318
@@ -169,7 +188,18 @@
     "title": {
       "de": "Botschaft des Bundesrates an die Bundesversammlung, betreffend die Revision des Bundesgesetzes über die Besoldungen der eidgenössischen Beamten und Angestellten, vom 2. Juli 1897. (Vom 15. Juni 1908.)",
       "fr": "Message du Conseil fédéral à l'Assemblée fédérale concernant un projet de révision de la loi sur les traitements des fonctionnaires et employés fédéraux. (Du 15 juin 1908.)"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1908/4_201_318_/graph",
   "timestampms": null
 }

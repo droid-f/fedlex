@@ -5,37 +5,38 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1893-12-19T23:30:14.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1893-12-19T23:30:14.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1893-12-20"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1893/5__526_/fr"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1893/53"
-    },
-    "attributes": {
-      "typeDocument": {
-        "rdfs:Resource": "http://example.com"
-      },
-      "publicationDate": {
-        "xsd:date": "1893-12-20"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1893/5__526_/fr",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1893/5__526_/fr/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "FF 1893 V 526"
+        },
         "memorialName": {
           "xsd:string": "FF"
-        },
-        "memorialPageTo": {
-          "xsd:int": 531
         },
         "memorialPage": {
           "xsd:int": 526
@@ -43,12 +44,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1893/53/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1893
-        },
         "title": {
           "xsd:string": "Message du conseil fédéral à l'assemblée fédérale concernant: 1. le renouvellement et le transfert de la concession, ainsi que la prolongation de délai pour les chemins de fer à voie étroite d'Appenzell à Altstätten et d'Appenzell à Gais; 2. le transfert de la concession et la prolongation de délai pour le chemin de fer à voie étroite (en partie à crémaillère) d'Appenzell à Wagenlucke (chemin de fer du Säntis). (Du 14 décembre 1893.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 531
+        },
+        "memorialYear": {
+          "xsd:int": 1893
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1893/5__526_/fr/pdf-a"
+        ]
       }
     },
     {
@@ -59,6 +69,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1893/5__526_/fr/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -66,26 +83,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10071367"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10071367&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10071367"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10071367&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -95,18 +105,34 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1893/5__526_/graph",
   "facets": {
+    "sortingDateTime": "1893-12-19T23:30:14Z",
     "sortingDate": "1893-12-20",
+    "memorialLabel_sort": {
+      "fr": "1893.05.000526"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 1893 V 526"
     },
+    "modified": "1893-12-20T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/FRA": 526
     },
     "title": {
       "fr": "Message du conseil fédéral à l'assemblée fédérale concernant: 1. le renouvellement et le transfert de la concession, ainsi que la prolongation de délai pour les chemins de fer à voie étroite d'Appenzell à Altstätten et d'Appenzell à Gais; 2. le transfert de la concession et la prolongation de délai pour le chemin de fer à voie étroite (en partie à crémaillère) d'Appenzell à Wagenlucke (chemin de fer du Säntis). (Du 14 décembre 1893.)"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1893/5__526_/graph",
   "timestampms": null
 }

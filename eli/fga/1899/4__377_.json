@@ -5,34 +5,38 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1899-08-08T23:00:00.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1899-08-08T23:00:00.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1899-08-09"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1899/4__377_/fr"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1899/32"
-    },
-    "attributes": {
-      "publicationDate": {
-        "xsd:date": "1899-08-09"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1899/4__377_/fr",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1899/4__377_/fr/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "FF 1899 IV 377"
+        },
         "memorialName": {
           "xsd:string": "FF"
-        },
-        "memorialPageTo": {
-          "xsd:int": 418
         },
         "memorialPage": {
           "xsd:int": 377
@@ -40,12 +44,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1899/32/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1899
-        },
         "title": {
           "xsd:string": "Rapport du Département des Postes et des Chemins de Fer (division des chemins de fer) au Conseil fédéral concernant la fixation des versements annuels au fonds de renouvellement en vertu des articles 11 et 12 de la loi sur la comptabilité des chemins de fer. (Du 6 juin 1899)."
+        },
+        "memorialPageTo": {
+          "xsd:int": 418
+        },
+        "memorialYear": {
+          "xsd:int": 1899
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1899/4__377_/fr/pdf-a"
+        ]
       }
     },
     {
@@ -56,6 +69,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1899/4__377_/fr/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -63,26 +83,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10073778"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10073778&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10073778"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10073778&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -92,18 +105,34 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1899/4__377_/graph",
   "facets": {
+    "sortingDateTime": "1899-08-08T23:00Z",
     "sortingDate": "1899-08-09",
+    "memorialLabel_sort": {
+      "fr": "1899.04.000377"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 1899 IV 377"
     },
+    "modified": "1899-08-09T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/FRA": 377
     },
     "title": {
       "fr": "Rapport du Département des Postes et des Chemins de Fer (division des chemins de fer) au Conseil fédéral concernant la fixation des versements annuels au fonds de renouvellement en vertu des articles 11 et 12 de la loi sur la comptabilité des chemins de fer. (Du 6 juin 1899)."
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1899/4__377_/graph",
   "timestampms": null
 }

@@ -5,35 +5,39 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1922-06-11T23:00:00.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1922-06-11T23:00:00.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1922-06-12"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1922/2_771_795_725/fr",
         "https://fedlex.data.admin.ch/eli/fga/1922/2_771_795_725/de"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1922/28"
-    },
-    "attributes": {
-      "publicationDate": {
-        "xsd:date": "1922-06-12"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1922/2_771_795_725/fr",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1922/2_771_795_725/fr/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "FF 1922 II 795"
+        },
         "memorialName": {
           "xsd:string": "FF"
-        },
-        "memorialPageTo": {
-          "xsd:int": 796
         },
         "memorialPage": {
           "xsd:int": 795
@@ -41,29 +45,32 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1922/28/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1922
-        },
         "title": {
           "xsd:string": "Loi fédérale relative à la conversion de l'amende en emprisonnement. (Du 1er juillet 1922.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 796
+        },
+        "memorialYear": {
+          "xsd:int": 1922
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1922/2_771_795_725/fr/pdf-a"
+        ]
       }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1922/2_771_795_725/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1922/2_771_795_725/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1922 II 771"
+        },
         "memorialName": {
           "xsd:string": "BBl"
-        },
-        "memorialPageTo": {
-          "xsd:int": 772
         },
         "memorialPage": {
           "xsd:int": 771
@@ -71,12 +78,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1922/28/de"
         },
-        "memorialYear": {
-          "xsd:int": 1922
-        },
         "title": {
           "xsd:string": "Bundesgesetz betreffend Umwandlung der Geldbusse in Gefängnis. (Vom 1. Juli 1922.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 772
+        },
+        "memorialYear": {
+          "xsd:int": 1922
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1922/2_771_795_725/de/pdf-a"
+        ]
       }
     },
     {
@@ -87,6 +103,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1922/2_771_795_725/fr/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -94,22 +117,22 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10083319"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10083319&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10083319"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10083319&action=open"
         }
       }
     },
     {
-      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
       "type": [
         "Concept",
         "Language"
@@ -123,26 +146,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10028397"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10028397&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10028397"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10028397&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -152,13 +168,19 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1922/2_771_795_725/graph",
   "facets": {
+    "sortingDateTime": "1922-06-11T23:00Z",
     "sortingDate": "1922-06-12",
+    "memorialLabel_sort": {
+      "de": "1922.02.000771",
+      "fr": "1922.02.000795"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1922 II 771",
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 1922 II 795"
     },
+    "modified": "1922-06-12T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 771,
       "http://publications.europa.eu/resource/authority/language/FRA": 795
@@ -166,7 +188,18 @@
     "title": {
       "de": "Bundesgesetz betreffend Umwandlung der Geldbusse in Gefängnis. (Vom 1. Juli 1922.)",
       "fr": "Loi fédérale relative à la conversion de l'amende en emprisonnement. (Du 1er juillet 1922.)"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1922/2_771_795_725/graph",
   "timestampms": null
 }

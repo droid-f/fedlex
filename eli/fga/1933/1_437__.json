@@ -5,34 +5,38 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1933-03-28T23:00:00.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1933-03-28T23:00:00.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1933-03-29"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1933/1_437__/de"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1933/13"
-    },
-    "attributes": {
-      "publicationDate": {
-        "xsd:date": "1933-03-29"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1933/1_437__/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1933/1_437__/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1933 I 437"
+        },
         "memorialName": {
           "xsd:string": "BBl"
-        },
-        "memorialPageTo": {
-          "xsd:int": 504
         },
         "memorialPage": {
           "xsd:int": 437
@@ -40,12 +44,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1933/13/de"
         },
-        "memorialYear": {
-          "xsd:int": 1933
-        },
         "title": {
           "xsd:string": "V. Bericht des Bundesrates an die Bundesversammlung betreffend die gemäss Bundesbeschluss vom 23. Dezember 1931 über die Beschränkung der Einfuhr erlassenen Massnahmen. (Vom 22. März 1933.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 504
+        },
+        "memorialYear": {
+          "xsd:int": 1933
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1933/1_437__/de/pdf-a"
+        ]
       }
     },
     {
@@ -56,6 +69,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1933/1_437__/de/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -63,26 +83,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10031945"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10031945&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10031945"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10031945&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -92,18 +105,34 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1933/1_437__/graph",
   "facets": {
+    "sortingDateTime": "1933-03-28T23:00Z",
     "sortingDate": "1933-03-29",
+    "memorialLabel_sort": {
+      "de": "1933.01.000437"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1933 I 437"
     },
+    "modified": "1933-03-29T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 437
     },
     "title": {
       "de": "V. Bericht des Bundesrates an die Bundesversammlung betreffend die gemäss Bundesbeschluss vom 23. Dezember 1931 über die Beschränkung der Einfuhr erlassenen Massnahmen. (Vom 22. März 1933.)"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1933/1_437__/graph",
   "timestampms": null
 }

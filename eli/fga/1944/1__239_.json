@@ -5,34 +5,38 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1944-03-29T23:00:00.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1944-03-29T23:00:00.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1944-03-30"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1944/1__239_/fr"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1944/7"
-    },
-    "attributes": {
-      "publicationDate": {
-        "xsd:date": "1944-03-30"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1944/1__239_/fr",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1944/1__239_/fr/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "FF 1944 I 239"
+        },
         "memorialName": {
           "xsd:string": "FF"
-        },
-        "memorialPageTo": {
-          "xsd:int": 240
         },
         "memorialPage": {
           "xsd:int": 239
@@ -40,12 +44,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1944/7/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1944
-        },
         "title": {
           "xsd:string": "Arrêté du Conseil fédéral donnant force obligatoire générale au relèvement de l'allocation de renchérissement et de l'allocation pour enfants auxquelles ladite force a été conférée en date du 5 octobre 1943 pour les ouvriers serruriers et constructeurs. (Du 15 mars 1944.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 240
+        },
+        "memorialYear": {
+          "xsd:int": 1944
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1944/1__239_/fr/pdf-a"
+        ]
       }
     },
     {
@@ -56,6 +69,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1944/1__239_/fr/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -63,26 +83,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10089976"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10089976&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10089976"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10089976&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -92,18 +105,34 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1944/1__239_/graph",
   "facets": {
+    "sortingDateTime": "1944-03-29T23:00Z",
     "sortingDate": "1944-03-30",
+    "memorialLabel_sort": {
+      "fr": "1944.01.000239"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 1944 I 239"
     },
+    "modified": "1944-03-30T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/FRA": 239
     },
     "title": {
       "fr": "Arrêté du Conseil fédéral donnant force obligatoire générale au relèvement de l'allocation de renchérissement et de l'allocation pour enfants auxquelles ladite force a été conférée en date du 5 octobre 1943 pour les ouvriers serruriers et constructeurs. (Du 15 mars 1944.)"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1944/1__239_/graph",
   "timestampms": null
 }

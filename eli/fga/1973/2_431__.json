@@ -5,34 +5,38 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1973-09-09T23:00:00.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1973-09-09T23:00:00.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1973-09-10"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1973/2_431__/de"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1973/36"
-    },
-    "attributes": {
-      "publicationDate": {
-        "xsd:date": "1973-09-10"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1973/2_431__/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1973/2_431__/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1973 II 431"
+        },
         "memorialName": {
           "xsd:string": "BBl"
-        },
-        "memorialPageTo": {
-          "xsd:int": 445
         },
         "memorialPage": {
           "xsd:int": 431
@@ -40,12 +44,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1973/36/de"
         },
-        "memorialYear": {
-          "xsd:int": 1973
-        },
         "title": {
           "xsd:string": "Initiative Jaeger-St. Gallen Initiative Schmid Arthur betreffend Revision des Geschäftsverkehrsgesetzes Wahl der ständigen Kommissionen Bericht der Kommission des Nationalrates (Vom 16. August 1973)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 445
+        },
+        "memorialYear": {
+          "xsd:int": 1973
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1973/2_431__/de/pdf-a"
+        ]
       }
     },
     {
@@ -56,6 +69,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1973/2_431__/de/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -63,26 +83,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10045845"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10045845&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10045845"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10045845&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -92,18 +105,34 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1973/2_431__/graph",
   "facets": {
+    "sortingDateTime": "1973-09-09T23:00Z",
     "sortingDate": "1973-09-10",
+    "memorialLabel_sort": {
+      "de": "1973.02.000431"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1973 II 431"
     },
+    "modified": "1973-09-10T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 431
     },
     "title": {
       "de": "Initiative Jaeger-St. Gallen Initiative Schmid Arthur betreffend Revision des Geschäftsverkehrsgesetzes Wahl der ständigen Kommissionen Bericht der Kommission des Nationalrates (Vom 16. August 1973)"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1973/2_431__/graph",
   "timestampms": null
 }

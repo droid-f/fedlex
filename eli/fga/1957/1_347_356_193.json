@@ -5,35 +5,39 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1957-02-13T23:00:00.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1957-02-13T23:00:00.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1957-02-14"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1957/1_347_356_193/fr",
         "https://fedlex.data.admin.ch/eli/fga/1957/1_347_356_193/de"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1957/7"
-    },
-    "attributes": {
-      "publicationDate": {
-        "xsd:date": "1957-02-14"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1957/1_347_356_193/fr",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1957/1_347_356_193/fr/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "FF 1957 I 356"
+        },
         "memorialName": {
           "xsd:string": "FF"
-        },
-        "memorialPageTo": {
-          "xsd:int": 383
         },
         "memorialPage": {
           "xsd:int": 356
@@ -41,29 +45,32 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1957/7/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1957
-        },
         "title": {
           "xsd:string": "RAPPORT du Conseil fédéral à l'Assemblée fédérale sur l'initiative populaire contre l'abus de la puissance économique (Du 8 février 1957)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 383
+        },
+        "memorialYear": {
+          "xsd:int": 1957
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1957/1_347_356_193/fr/pdf-a"
+        ]
       }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1957/1_347_356_193/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1957/1_347_356_193/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1957 I 347"
+        },
         "memorialName": {
           "xsd:string": "BBl"
-        },
-        "memorialPageTo": {
-          "xsd:int": 371
         },
         "memorialPage": {
           "xsd:int": 347
@@ -71,12 +78,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1957/7/de"
         },
-        "memorialYear": {
-          "xsd:int": 1957
-        },
         "title": {
           "xsd:string": "Bericht des Bundesrates an die Bundesversammlung über das Volksbegehren gegen den Missbrauch wirtschaftlicher Macht (Vom 8. Februar 1957)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 371
+        },
+        "memorialYear": {
+          "xsd:int": 1957
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1957/1_347_356_193/de/pdf-a"
+        ]
       }
     },
     {
@@ -87,6 +103,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1957/1_347_356_193/fr/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -94,22 +117,22 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10094562"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10094562&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10094562"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10094562&action=open"
         }
       }
     },
     {
-      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
       "type": [
         "Concept",
         "Language"
@@ -123,26 +146,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10039715"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10039715&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10039715"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10039715&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -152,13 +168,19 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1957/1_347_356_193/graph",
   "facets": {
+    "sortingDateTime": "1957-02-13T23:00Z",
     "sortingDate": "1957-02-14",
+    "memorialLabel_sort": {
+      "de": "1957.01.000347",
+      "fr": "1957.01.000356"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1957 I 347",
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 1957 I 356"
     },
+    "modified": "1957-02-14T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 347,
       "http://publications.europa.eu/resource/authority/language/FRA": 356
@@ -166,7 +188,18 @@
     "title": {
       "de": "Bericht des Bundesrates an die Bundesversammlung über das Volksbegehren gegen den Missbrauch wirtschaftlicher Macht (Vom 8. Februar 1957)",
       "fr": "RAPPORT du Conseil fédéral à l'Assemblée fédérale sur l'initiative populaire contre l'abus de la puissance économique (Du 8 février 1957)"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1957/1_347_356_193/graph",
   "timestampms": null
 }

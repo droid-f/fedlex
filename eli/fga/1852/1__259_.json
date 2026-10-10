@@ -5,37 +5,38 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1852-04-09T23:25:52.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1852-04-09T23:25:52.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1852-04-10"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1852/1__259_/fr"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1852/16"
-    },
-    "attributes": {
-      "typeDocument": {
-        "rdfs:Resource": "http://example.com"
-      },
-      "publicationDate": {
-        "xsd:date": "1852-04-10"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1852/1__259_/fr",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1852/1__259_/fr/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "FF 1852 I 259"
+        },
         "memorialName": {
           "xsd:string": "FF"
-        },
-        "memorialPageTo": {
-          "xsd:int": 305
         },
         "memorialPage": {
           "xsd:int": 259
@@ -43,12 +44,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1852/16/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1852
-        },
         "title": {
           "xsd:string": "MESSAGE du Conseil fédéral suisse aux deux Conseils législatifs de la Confédération, concernant l'échelle de répartition du bénéfice net de la Régale des postes entre les cantons. (Du 25 Juin 1851.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 305
+        },
+        "memorialYear": {
+          "xsd:int": 1852
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1852/1__259_/fr/pdf-a"
+        ]
       }
     },
     {
@@ -59,6 +69,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1852/1__259_/fr/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -66,26 +83,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10056104"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10056104&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10056104"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10056104&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -95,18 +105,34 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1852/1__259_/graph",
   "facets": {
+    "sortingDateTime": "1852-04-09T23:25:52Z",
     "sortingDate": "1852-04-10",
+    "memorialLabel_sort": {
+      "fr": "1852.01.000259"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 1852 I 259"
     },
+    "modified": "1852-04-10T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/FRA": 259
     },
     "title": {
       "fr": "MESSAGE du Conseil fédéral suisse aux deux Conseils législatifs de la Confédération, concernant l'échelle de répartition du bénéfice net de la Régale des postes entre les cantons. (Du 25 Juin 1851.)"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1852/1__259_/graph",
   "timestampms": null
 }

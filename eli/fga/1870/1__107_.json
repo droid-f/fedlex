@@ -5,34 +5,38 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1870-02-04T23:30:14.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1870-02-04T23:30:14.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1870-02-05"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1870/1__107_/fr"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1870/5"
-    },
-    "attributes": {
-      "publicationDate": {
-        "xsd:date": "1870-02-05"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1870/1__107_/fr",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1870/1__107_/fr/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "FF 1870 I 107"
+        },
         "memorialName": {
           "xsd:string": "FF"
-        },
-        "memorialPageTo": {
-          "xsd:int": 189
         },
         "memorialPage": {
           "xsd:int": 107
@@ -40,12 +44,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1870/5/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1870
-        },
         "title": {
           "xsd:string": "ACTE DE CONCESSION au Comité du St. Gothard pour la construction d'un chemin de fer de Biasca à la frontière tessinoise du côté d'Uri et de Lugano à Bellinzone. (Du 15 Mai 1869.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 189
+        },
+        "memorialYear": {
+          "xsd:int": 1870
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1870/1__107_/fr/pdf-a"
+        ]
       }
     },
     {
@@ -56,6 +69,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1870/1__107_/fr/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -63,26 +83,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10061444"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10061444&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10061444"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10061444&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -92,18 +105,34 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1870/1__107_/graph",
   "facets": {
+    "sortingDateTime": "1870-02-04T23:30:14Z",
     "sortingDate": "1870-02-05",
+    "memorialLabel_sort": {
+      "fr": "1870.01.000107"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 1870 I 107"
     },
+    "modified": "1870-02-05T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/FRA": 107
     },
     "title": {
       "fr": "ACTE DE CONCESSION au Comité du St. Gothard pour la construction d'un chemin de fer de Biasca à la frontière tessinoise du côté d'Uri et de Lugano à Bellinzone. (Du 15 Mai 1869.)"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1870/1__107_/graph",
   "timestampms": null
 }

@@ -5,34 +5,38 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1943-12-08T23:00:00.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1943-12-08T23:00:00.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1943-12-09"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1943/1__1251_/fr"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1943/25"
-    },
-    "attributes": {
-      "publicationDate": {
-        "xsd:date": "1943-12-09"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1943/1__1251_/fr",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1943/1__1251_/fr/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "FF 1943 I 1251"
+        },
         "memorialName": {
           "xsd:string": "FF"
-        },
-        "memorialPageTo": {
-          "xsd:int": 1279
         },
         "memorialPage": {
           "xsd:int": 1251
@@ -40,12 +44,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1943/25/fr"
         },
-        "memorialYear": {
-          "xsd:int": 1943
-        },
         "title": {
           "xsd:string": "RAPPORTS des cantons sur l'emploi, à la lutte contre l'alcoolisme, du dix pour cent de leur part aux recettes de la régie fédérale des alcools pour la période du 1er juillet 1941 au 30 juin 1942. Quarante-neuvième message adressé sur cette matière par le Conseil fédéral à l'Assemblée fédérale. (Du 7 décembre 1943.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 1279
+        },
+        "memorialYear": {
+          "xsd:int": 1943
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1943/1__1251_/fr/pdf-a"
+        ]
       }
     },
     {
@@ -56,6 +69,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1943/1__1251_/fr/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -63,26 +83,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10089917"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10089917&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10089917"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10089917&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -92,18 +105,34 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1943/1__1251_/graph",
   "facets": {
+    "sortingDateTime": "1943-12-08T23:00Z",
     "sortingDate": "1943-12-09",
+    "memorialLabel_sort": {
+      "fr": "1943.01.001251"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 1943 I 1251"
     },
+    "modified": "1943-12-09T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/FRA": 1251
     },
     "title": {
       "fr": "RAPPORTS des cantons sur l'emploi, à la lutte contre l'alcoolisme, du dix pour cent de leur part aux recettes de la régie fédérale des alcools pour la période du 1er juillet 1941 au 30 juin 1942. Quarante-neuvième message adressé sur cette matière par le Conseil fédéral à l'Assemblée fédérale. (Du 7 décembre 1943.)"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1943/1__1251_/graph",
   "timestampms": null
 }

@@ -5,34 +5,38 @@
       "Act",
       "Work"
     ],
+    "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1889-04-19T23:30:14.000Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1889-04-19T23:30:14.000Z"
+        ]
+      },
+      "publicationDate": {
+        "xsd:date": "1889-04-20"
+      }
+    },
     "references": {
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/1889/2_105__/de"
       ],
       "isPartOf": "https://fedlex.data.admin.ch/eli/collection/fga/1889/16"
-    },
-    "attributes": {
-      "publicationDate": {
-        "xsd:date": "1889-04-20"
-      }
     }
   },
   "included": [
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1889/2_105__/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/1889/2_105__/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 1889 II 105"
+        },
         "memorialName": {
           "xsd:string": "BBl"
-        },
-        "memorialPageTo": {
-          "xsd:int": 123
         },
         "memorialPage": {
           "xsd:int": 105
@@ -40,12 +44,21 @@
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/1889/16/de"
         },
-        "memorialYear": {
-          "xsd:int": 1889
-        },
         "title": {
           "xsd:string": "Bundesratsbeschluss über den Rekurs des Stadtrates von Luzern und des Vorstandes der Christkatholischen Genossenschaft Luzern gegen die Schlussnahme der Regierung des Kts. Luzern vom 10. Januar 1889 betreffend die Benützung der Mariahilfkirche in Luzern. (Vom 25. März 1889.)"
+        },
+        "memorialPageTo": {
+          "xsd:int": 123
+        },
+        "memorialYear": {
+          "xsd:int": 1889
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/1889/2_105__/de/pdf-a"
+        ]
       }
     },
     {
@@ -56,6 +69,13 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/1889/2_105__/de/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -63,26 +83,19 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10014342"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10014342&action=open"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10014342"
+          "rdfs:Resource": "https://www.amtsdruckschriften.bar.admin.ch/viewOrigDoc.do?id=10014342&action=open"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
@@ -92,18 +105,34 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/1889/2_105__/graph",
   "facets": {
+    "sortingDateTime": "1889-04-19T23:30:14Z",
     "sortingDate": "1889-04-20",
+    "memorialLabel_sort": {
+      "de": "1889.02.000105"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 1889 II 105"
     },
+    "modified": "1889-04-20T00:00:00",
     "memorialPage": {
       "http://publications.europa.eu/resource/authority/language/DEU": 105
     },
     "title": {
       "de": "Bundesratsbeschluss über den Rekurs des Stadtrates von Luzern und des Vorstandes der Christkatholischen Genossenschaft Luzern gegen die Schlussnahme der Regierung des Kts. Luzern vom 10. Januar 1889 betreffend die Benützung der Mariahilfkirche in Luzern. (Vom 25. März 1889.)"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/1889/2_105__/graph",
   "timestampms": null
 }

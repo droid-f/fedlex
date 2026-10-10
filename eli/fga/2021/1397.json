@@ -12,11 +12,21 @@
       "dateDocument": {
         "xsd:date": "2021-06-16"
       },
+      "created": {
+        "xsd:dateTime": [
+          "2021-06-23T22:00:00.000Z"
+        ]
+      },
       "sequenceInTheYearOfPublication": {
         "xsd:int": 1397
       },
       "dateEntryInForce": {
         "xsd:date": "2021-08-15"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "2021-06-23T22:00:00.000Z"
+        ]
       },
       "typeDocument": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/6"
@@ -29,6 +39,7 @@
       }
     },
     "references": {
+      "legalResourcePublicationCompleteness": "https://fedlex.data.admin.ch/vocabulary/publication-completeness/complete",
       "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/3250",
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/fga/2021/1397/de"
@@ -37,6 +48,13 @@
     }
   },
   "included": [
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/publication-completeness/complete",
+      "type": [
+        "Concept",
+        "PublicationCompleteness"
+      ]
+    },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/3250",
       "type": [
@@ -47,26 +65,29 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/2021/1397/de",
       "type": "Expression",
-      "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/fga/2021/1397/de/docx",
-          "https://fedlex.data.admin.ch/eli/fga/2021/1397/de/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
       "attributes": {
+        "identifier": {
+          "https://fedlex.data.admin.ch/vocabulary/identifier-type/act-reference": "BBl 2021 1397"
+        },
         "memorialName": {
           "xsd:string": "BBl"
         },
         "isPartOf": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/2021/106/de"
         },
-        "memorialYear": {
-          "xsd:int": 2021
-        },
         "title": {
           "xsd:string": "Bundesratsbeschluss über die Allgemeinverbindlicherklärung des Berufsbildungsfonds Naturstein"
+        },
+        "memorialYear": {
+          "xsd:int": 2021
         }
+      },
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/fga/2021/1397/de/docx",
+          "https://fedlex.data.admin.ch/eli/fga/2021/1397/de/pdf-a"
+        ]
       }
     },
     {
@@ -77,20 +98,24 @@
       ]
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/fga/2021/1397/de/docx",
       "type": "Manifestation",
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2021/1397/de/docx/fedlex-data-admin-ch-eli-fga-2021-1397-de-docx.docx"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
-        },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2021/1397/de/docx/fedlex-data-admin-ch-eli-fga-2021-1397-de-docx.docx"
@@ -101,41 +126,47 @@
       "uri": "https://fedlex.data.admin.ch/eli/fga/2021/1397/de/pdf-a",
       "type": "Manifestation",
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/fga/2021/1397/de/pdf-a/fedlex-data-admin-ch-eli-fga-2021-1397-de-pdf-a.pdf"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2021/1397/de/pdf-a/fedlex-data-admin-ch-eli-fga-2021-1397-de-pdf-a.pdf"
         }
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/DEU",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/fga/2021/1397/graph",
   "facets": {
     "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/51",
+    "sortingDateTime": "2021-06-23T22:00Z",
     "sortingDate": "2021-06-24",
+    "memorialLabel_sort": {
+      "de": "2021.99.001397"
+    },
+    "stateOfNecessity": false,
     "memorialLabel": {
       "http://publications.europa.eu/resource/authority/language/DEU": "BBl 2021 1397"
     },
+    "modified": "2021-06-24T07:16:48.076927",
     "title": {
       "de": "Bundesratsbeschluss über die Allgemeinverbindlicherklärung des Berufsbildungsfonds Naturstein"
+    },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
     }
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/fga/2021/1397/graph",
   "timestampms": null
 }
