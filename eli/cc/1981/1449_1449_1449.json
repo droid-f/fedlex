@@ -15,30 +15,24 @@
       "basicAct": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/oc/1981/1449_1449_1449"
       },
-      "typeDocument": {
-        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/29"
-      },
       "dateEntryInForce": {
         "xsd:date": "1981-09-22"
+      },
+      "typeDocument": {
+        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/29"
       }
     },
     "references": {
-      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/8334",
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/cc/1981/1449_1449_1449/it",
         "https://fedlex.data.admin.ch/eli/cc/1981/1449_1449_1449/fr",
         "https://fedlex.data.admin.ch/eli/cc/1981/1449_1449_1449/de"
-      ]
+      ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/8334"
     }
   },
   "included": [
-    {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/8334",
-      "type": [
-        "Concept",
-        "LegalTaxonomy"
-      ]
-    },
     {
       "uri": "https://fedlex.data.admin.ch/eli/cc/1981/1449_1449_1449/it",
       "type": "Expression",
@@ -76,6 +70,20 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/8334",
+      "type": [
+        "Concept",
+        "LegalTaxonomy"
+      ]
+    },
+    {
       "uri": "http://publications.europa.eu/resource/authority/language/ITA",
       "type": [
         "Concept",
@@ -97,9 +105,7 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/1981/1449_1449_1449/graph",
   "facets": {
-    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
     "consolidates": [
       {
         "dateDocument": "1981-09-09",
@@ -140,10 +146,12 @@
         "uri": "https://fedlex.data.admin.ch/eli/oc/1985/590_590_590"
       }
     ],
-    "sortingDate": "1985-07-01",
-    "theme": {
-      "themeId": "6",
-      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/7743"
+    "calculatedEndDate": "1985-06-30",
+    "abrogationSourceUri": "https://fedlex.data.admin.ch/eli/oc/1985/590_590_590",
+    "baseActReference": {
+      "de": "AS 1981 1449",
+      "it": "RU 1981 1449",
+      "fr": "RO 1981 1449"
     },
     "impacts": [
       {
@@ -151,7 +159,7 @@
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/1981/1449_1449_1449",
         "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
+          "http://publications.europa.eu/resource/authority/language/DEU"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1981/1449_1449_1449/19810922",
@@ -160,11 +168,25 @@
         "consolidationDate": "1981-09-22"
       },
       {
+        "impactDate": "1985-07-01",
+        "commentFrom": {
+          "de": "Art. 3"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1985/590_590_590",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
+        "decisionDate": "1985-04-17",
+        "historicalImpact": false
+      },
+      {
         "impactDate": "1981-09-22",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/1981/1449_1449_1449",
         "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
+          "http://publications.europa.eu/resource/authority/language/ITA"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1981/1449_1449_1449/19810922",
@@ -212,20 +234,6 @@
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
         "decisionDate": "1985-04-17",
         "historicalImpact": false
-      },
-      {
-        "impactDate": "1985-07-01",
-        "commentFrom": {
-          "de": "Art. 3"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1985/590_590_590",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
-        "decisionDate": "1985-04-17",
-        "historicalImpact": false
       }
     ],
     "title": {
@@ -238,7 +246,33 @@
       "fr": "RS 683.22",
       "it": "RS 683.22"
     },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
+    },
+    "abrogationDecisionDate": "1985-04-17",
+    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
+    "abrogationSource": {
+      "de": "AS 1985 590",
+      "it": "RU 1985 590",
+      "fr": "RO 1985 590"
+    },
+    "sortingDateTime": "1981-09-21T22:00Z",
+    "classifiedByTaxonomyEntryLabel_raw": "683.22",
+    "sortingDate": "1985-07-01",
+    "classifiedByTaxonomyEntryLabel_sort": "683.220",
+    "theme": {
+      "themeId": "6",
+      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/7743"
+    },
     "archivingDate": "1981-09-22"
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/1981/1449_1449_1449/graph",
   "timestampms": null
 }

@@ -6,8 +6,18 @@
       "Work"
     ],
     "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "2022-08-03T12:08:49.845Z"
+        ]
+      },
       "dateEndApplicability": {
         "xsd:date": "2021-05-31"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "2022-08-03T12:08:49.845Z"
+        ]
       },
       "isMemberOf": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/cc/2007/418"
@@ -35,7 +45,8 @@
           "https://fedlex.data.admin.ch/eli/cc/2007/418/20190601/it/pdf-a",
           "https://fedlex.data.admin.ch/eli/cc/2007/418/20190601/it/doc",
           "https://fedlex.data.admin.ch/eli/cc/2007/418/20190601/it/docx",
-          "https://fedlex.data.admin.ch/eli/cc/2007/418/20190601/it/html"
+          "https://fedlex.data.admin.ch/eli/cc/2007/418/20190601/it/html",
+          "https://fedlex.data.admin.ch/eli/cc/2007/418/20190601/it/xml"
         ],
         "language": "http://publications.europa.eu/resource/authority/language/ITA"
       },
@@ -62,6 +73,7 @@
       "type": "Expression",
       "references": {
         "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/cc/2007/418/20190601/fr/xml",
           "https://fedlex.data.admin.ch/eli/cc/2007/418/20190601/fr/html",
           "https://fedlex.data.admin.ch/eli/cc/2007/418/20190601/fr/docx",
           "https://fedlex.data.admin.ch/eli/cc/2007/418/20190601/fr/pdf-a",
@@ -95,7 +107,8 @@
           "https://fedlex.data.admin.ch/eli/cc/2007/418/20190601/de/doc",
           "https://fedlex.data.admin.ch/eli/cc/2007/418/20190601/de/docx",
           "https://fedlex.data.admin.ch/eli/cc/2007/418/20190601/de/pdf-a",
-          "https://fedlex.data.admin.ch/eli/cc/2007/418/20190601/de/html"
+          "https://fedlex.data.admin.ch/eli/cc/2007/418/20190601/de/html",
+          "https://fedlex.data.admin.ch/eli/cc/2007/418/20190601/de/xml"
         ],
         "language": "http://publications.europa.eu/resource/authority/language/DEU"
       },
@@ -113,6 +126,12 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": true
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/it/pdf-a/fedlex-data-admin-ch-eli-cc-2007-418-20190601-it-pdf-a.pdf"
         },
@@ -123,9 +142,6 @@
           "xsd:int": [
             22
           ]
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/it/pdf-a/fedlex-data-admin-ch-eli-cc-2007-418-20190601-it-pdf-a.pdf"
@@ -140,17 +156,14 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/it/doc/fedlex-data-admin-ch-eli-cc-2007-418-20190601-it-doc.doc"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
-        },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/it/doc/fedlex-data-admin-ch-eli-cc-2007-418-20190601-it-doc.doc"
@@ -165,17 +178,14 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/it/docx/fedlex-data-admin-ch-eli-cc-2007-418-20190601-it-docx.docx"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
-        },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/it/docx/fedlex-data-admin-ch-eli-cc-2007-418-20190601-it-docx.docx"
@@ -190,20 +200,61 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/it/html/fedlex-data-admin-ch-eli-cc-2007-418-20190601-it-html.html",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/it/html/fedlex-data-admin-ch-eli-cc-2007-418-20190601-it-html-1.html"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/it/html/fedlex-data-admin-ch-eli-cc-2007-418-20190601-it-html-1.html",
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/it/html/fedlex-data-admin-ch-eli-cc-2007-418-20190601-it-html.html"
+          ]
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/it/html/fedlex-data-admin-ch-eli-cc-2007-418-20190601-it-html.html"
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/it/html/fedlex-data-admin-ch-eli-cc-2007-418-20190601-it-html-2.html"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/it/html/fedlex-data-admin-ch-eli-cc-2007-418-20190601-it-html-2.html"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/2007/418/20190601/it/xml",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
+      },
+      "attributes": {
         "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/XML"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/it/xml/fedlex-data-admin-ch-eli-cc-2007-418-20190601-it-xml.xml"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/it/xml/fedlex-data-admin-ch-eli-cc-2007-418-20190601-it-xml.xml"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/it/xml/fedlex-data-admin-ch-eli-cc-2007-418-20190601-it-xml-1.xml"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/xml"
         },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/it/html/fedlex-data-admin-ch-eli-cc-2007-418-20190601-it-html.html"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/it/xml/fedlex-data-admin-ch-eli-cc-2007-418-20190601-it-xml-1.xml"
         }
       }
     },
@@ -222,6 +273,38 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/2007/418/20190601/fr/xml",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
+      },
+      "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/XML"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/fr/xml/fedlex-data-admin-ch-eli-cc-2007-418-20190601-fr-xml.xml"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/fr/xml/fedlex-data-admin-ch-eli-cc-2007-418-20190601-fr-xml.xml"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/fr/xml/fedlex-data-admin-ch-eli-cc-2007-418-20190601-fr-xml-1.xml"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/xml"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/fr/xml/fedlex-data-admin-ch-eli-cc-2007-418-20190601-fr-xml-1.xml"
+        }
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/cc/2007/418/20190601/fr/html",
       "type": "Manifestation",
       "references": {
@@ -229,20 +312,29 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/fr/html/fedlex-data-admin-ch-eli-cc-2007-418-20190601-fr-html.html",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/fr/html/fedlex-data-admin-ch-eli-cc-2007-418-20190601-fr-html-1.html"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/fr/html/fedlex-data-admin-ch-eli-cc-2007-418-20190601-fr-html-1.html",
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/fr/html/fedlex-data-admin-ch-eli-cc-2007-418-20190601-fr-html.html"
+          ]
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/fr/html/fedlex-data-admin-ch-eli-cc-2007-418-20190601-fr-html.html"
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/fr/html/fedlex-data-admin-ch-eli-cc-2007-418-20190601-fr-html-2.html"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/fr/html/fedlex-data-admin-ch-eli-cc-2007-418-20190601-fr-html.html"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/fr/html/fedlex-data-admin-ch-eli-cc-2007-418-20190601-fr-html-2.html"
         }
       }
     },
@@ -254,17 +346,14 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/fr/docx/fedlex-data-admin-ch-eli-cc-2007-418-20190601-fr-docx.docx"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
-        },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/fr/docx/fedlex-data-admin-ch-eli-cc-2007-418-20190601-fr-docx.docx"
@@ -279,6 +368,12 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": true
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2007-418-20190601-fr-pdf-a.pdf"
         },
@@ -289,9 +384,6 @@
           "xsd:int": [
             22
           ]
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2007-418-20190601-fr-pdf-a.pdf"
@@ -306,17 +398,14 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/fr/doc/fedlex-data-admin-ch-eli-cc-2007-418-20190601-fr-doc.doc"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
-        },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/fr/doc/fedlex-data-admin-ch-eli-cc-2007-418-20190601-fr-doc.doc"
@@ -345,6 +434,14 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/de/doc/fedlex-data-admin-ch-eli-cc-2007-418-20190601-de-doc.doc"
+          ]
+        },
         "wasExemplifiedByPrivate": {
           "rdfs:Resource": [
             "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/de/doc/fedlex-data-admin-ch-eli-cc-2007-418-20190601-de-doc.doc"
@@ -356,19 +453,8 @@
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
-        },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/de/doc/fedlex-data-admin-ch-eli-cc-2007-418-20190601-de-doc-1.doc"
-        },
-        "wasExemplifiedBy": {
-          "rdfs:Resource": [
-            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/de/doc/fedlex-data-admin-ch-eli-cc-2007-418-20190601-de-doc.doc"
-          ]
         }
       }
     },
@@ -380,6 +466,14 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/de/docx/fedlex-data-admin-ch-eli-cc-2007-418-20190601-de-docx.docx"
+          ]
+        },
         "wasExemplifiedByPrivate": {
           "rdfs:Resource": [
             "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/de/docx/fedlex-data-admin-ch-eli-cc-2007-418-20190601-de-docx.docx"
@@ -391,19 +485,8 @@
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
-        },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/de/docx/fedlex-data-admin-ch-eli-cc-2007-418-20190601-de-docx-1.docx"
-        },
-        "wasExemplifiedBy": {
-          "rdfs:Resource": [
-            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/de/docx/fedlex-data-admin-ch-eli-cc-2007-418-20190601-de-docx.docx"
-          ]
         }
       }
     },
@@ -415,6 +498,17 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": true
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/de/pdf-a/fedlex-data-admin-ch-eli-cc-2007-418-20190601-de-pdf-a.pdf"
+          ]
+        },
         "wasExemplifiedByPrivate": {
           "rdfs:Resource": [
             "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/de/pdf-a/fedlex-data-admin-ch-eli-cc-2007-418-20190601-de-pdf-a.pdf"
@@ -426,24 +520,13 @@
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
         "numberOfPages": {
           "xsd:int": [
             22
           ]
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/de/pdf-a/fedlex-data-admin-ch-eli-cc-2007-418-20190601-de-pdf-a-1.pdf"
-        },
-        "wasExemplifiedBy": {
-          "rdfs:Resource": [
-            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/de/pdf-a/fedlex-data-admin-ch-eli-cc-2007-418-20190601-de-pdf-a.pdf"
-          ]
         }
       }
     },
@@ -455,30 +538,63 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/de/html/fedlex-data-admin-ch-eli-cc-2007-418-20190601-de-html.html",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/de/html/fedlex-data-admin-ch-eli-cc-2007-418-20190601-de-html-2.html",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/de/html/fedlex-data-admin-ch-eli-cc-2007-418-20190601-de-html-1.html"
+          ]
+        },
         "wasExemplifiedByPrivate": {
           "rdfs:Resource": [
-            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/de/html/fedlex-data-admin-ch-eli-cc-2007-418-20190601-de-html.html"
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/de/html/fedlex-data-admin-ch-eli-cc-2007-418-20190601-de-html-1.html",
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/de/html/fedlex-data-admin-ch-eli-cc-2007-418-20190601-de-html.html",
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/de/html/fedlex-data-admin-ch-eli-cc-2007-418-20190601-de-html-2.html"
           ]
         },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/de/html/fedlex-data-admin-ch-eli-cc-2007-418-20190601-de-html-1.html"
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/de/html/fedlex-data-admin-ch-eli-cc-2007-418-20190601-de-html-3.html"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/de/html/fedlex-data-admin-ch-eli-cc-2007-418-20190601-de-html-1.html"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/de/html/fedlex-data-admin-ch-eli-cc-2007-418-20190601-de-html-3.html"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/2007/418/20190601/de/xml",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
+      },
+      "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/XML"
         },
         "wasExemplifiedBy": {
           "rdfs:Resource": [
-            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/de/html/fedlex-data-admin-ch-eli-cc-2007-418-20190601-de-html.html"
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/de/xml/fedlex-data-admin-ch-eli-cc-2007-418-20190601-de-xml.xml"
           ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/de/xml/fedlex-data-admin-ch-eli-cc-2007-418-20190601-de-xml.xml"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/de/xml/fedlex-data-admin-ch-eli-cc-2007-418-20190601-de-xml-1.xml"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/xml"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/418/20190601/de/xml/fedlex-data-admin-ch-eli-cc-2007-418-20190601-de-xml-1.xml"
         }
       }
     },
@@ -497,7 +613,6 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/2007/418/20190601/graph",
   "facets": {
     "consolidates": [
       {
@@ -557,2532 +672,11 @@
         "uri": "https://fedlex.data.admin.ch/eli/oc/2019/264"
       }
     ],
-    "citations": [
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 20 Tâches de la société nationale du réseau de transport ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/47/689_701_723",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a20",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 33 Disposition transitoire sur la société nationale du réseau de transport ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/47/689_701_723",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a33",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 20 Compiti della società nazionale di rete ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/47/689_701_723",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a20",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 33 Disposizione transitoria concernente la società nazionale di rete ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/47/689_701_723",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a33",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 20 Aufgaben der nationalen Netzgesellschaft ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/47/689_701_723",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a20",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 33 Übergangsbestimmung für die nationale Netzgesellschaft ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/47/689_701_723",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a33",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Section 2a Systèmes de mesure et de commande ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2013/1476",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a17",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 20a Contrôle de sécurité relatif aux personnes ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2013/1476",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a20a",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Obbligo di fornitura e impostazione tariffale per i consumatori fissi finali ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2013/1476",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Obbligo di fornitura e impostazione tariffale per i consumatori fissi finali ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2013/1476",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 14 Corrispettivo per l’utilizzazione della rete ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2013/1476",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a14",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 14 Corrispettivo per l’utilizzazione della rete ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2013/1476",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a14",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 15 Costi di rete computabili ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2013/1476",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a15",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Sezione 2a: Misurazioni e sistemi di controllo ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2013/1476",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a17",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 20a Controlli di sicurezza relativi alle persone ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2013/1476",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a20a",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 14 Netznutzungsentgelt ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2013/1476",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a14",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Lieferpflicht und Tarifgestaltung für feste Endverbraucher ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2013/1476",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Lieferpflicht und Tarifgestaltung für feste Endverbraucher ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2013/1476",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 14 Netznutzungsentgelt ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2013/1476",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a14",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Obligation de fourniture et tarification pour consommateurs captifs ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2013/1476",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Obligation de fourniture et tarification pour consommateurs captifs ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2013/1476",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 14 Rémunération pour l’utilisation du réseau ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2013/1476",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a14",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "2a. Abschnitt: Messwesen und Steuersysteme ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2013/1476",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a17",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 20a Personensicherheitsprüfung ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2013/1476",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a20a",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 14 Rémunération pour l’utilisation du réseau ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2013/1476",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a14",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 33b Disposition transitoire relative à la modification du 17 mars 2017 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2007/418",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a33b",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 33b Disposizione transitoria della modifica del 17 marzo 2017 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2007/418",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a33b",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 33b Übergangsbestimmung zur Änderung vom 17. März 2017 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2007/418",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a33b",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 29 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1974/1857_1857_1857",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a29",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 29 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1974/1857_1857_1857",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a29",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 29 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1974/1857_1857_1857",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a29",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 24 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1997/2022_2022_2022",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a24",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 24 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1997/2022_2022_2022",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a24",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 24 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1997/2022_2022_2022",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a24",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Obbligo di fornitura e impostazione tariffale per i consumatori fissi finali ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2017/762",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Obbligo di fornitura e impostazione tariffale per i consumatori fissi finali ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2017/762",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Lieferpflicht und Tarifgestaltung für feste Endverbraucher ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2017/762",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Lieferpflicht und Tarifgestaltung für feste Endverbraucher ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2017/762",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Obligation de fourniture et tarification pour consommateurs captifs ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2017/762",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Obligation de fourniture et tarification pour consommateurs captifs ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2017/762",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Section 2a Systèmes de mesure et de commande ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/762",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a17",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 14 Rémunération pour l’utilisation du réseau ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/762",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a14",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 20a Contrôle de sécurité relatif aux personnes ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/762",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a20a",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Obbligo di fornitura e impostazione tariffale per i consumatori fissi finali ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/762",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Obbligo di fornitura e impostazione tariffale per i consumatori fissi finali ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/762",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 7 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/762",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a7",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 14 Corrispettivo per l’utilizzazione della rete ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/762",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a14",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 14 Corrispettivo per l’utilizzazione della rete ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/762",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a14",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 15 Costi di rete computabili ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/762",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a15",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Sezione 2a: Misurazioni e sistemi di controllo ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/762",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a17",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 20a Controlli di sicurezza relativi alle persone ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/762",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a20a",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Lieferpflicht und Tarifgestaltung für feste Endverbraucher ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/762",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Lieferpflicht und Tarifgestaltung für feste Endverbraucher ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/762",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 14 Netznutzungsentgelt ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/762",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a14",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 7 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/762",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a7",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 14 Netznutzungsentgelt ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/762",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a14",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Obligation de fourniture et tarification pour consommateurs captifs ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/762",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Obligation de fourniture et tarification pour consommateurs captifs ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/762",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 7 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/762",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a7",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 14 Rémunération pour l’utilisation du réseau ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/762",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a14",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "2a. Abschnitt: Messwesen und Steuersysteme ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/762",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a17",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 20a Personensicherheitsprüfung ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/762",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a20a",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 17c Protection des données ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1993/1945_1945_1945",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a17c",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 17c Protezione dei dati ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1993/1945_1945_1945",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a17c",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 17c Datenschutz ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1993/1945_1945_1945",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a17c",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 15a Costi fatturati individualmente per l’energia di compensazione ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2003/510",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a15a",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 20a Contrôle de sécurité relatif aux personnes ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1998/1546_1546_1546",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a20a",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 20a Controlli di sicurezza relativi alle persone ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1998/1546_1546_1546",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a20a",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 20a Personensicherheitsprüfung ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1998/1546_1546_1546",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a20a",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 15 Coûts de réseau imputables ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/19/259_252_257",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a15",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 15 Anrechenbare Netzkosten ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/19/259_252_257",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a15",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 15 Costi di rete computabili ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/19/259_252_257",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a15",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 3a Concessioni cantonali e comunali ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2012/369",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a3a",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 5 Comprensori e garanzia dell’allacciamento ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2012/369",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a5",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 3a Kantonale und kommunale Konzessionen ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2012/369",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a3a",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 5 Netzgebiete und Anschlussgarantie ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2012/369",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a5",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 3a Concessions cantonales et communales ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2012/369",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a3a",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 5 Zones de desserte et garantie de raccordement ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2012/369",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a5",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 15 Coûts de réseau imputables ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/785",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a15",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 15 Coûts de réseau imputables ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/785",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a15",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 15 Coûts de réseau imputables ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/785",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a15",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 15 Anrechenbare Netzkosten ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/785",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a15",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 17 Accès au réseau en cas de congestion au niveau du réseau de transport transfrontalier ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/785",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a17",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 18 Société nationale du réseau de transport ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/785",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a18",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 20 Tâches de la société nationale du réseau de transport ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/785",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a20",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 20 Tâches de la société nationale du réseau de transport ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/785",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a20",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 21 Organisation ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/785",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a21",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 25 Obligation de renseigner et assistance administrative ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/785",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a25",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 15 Anrechenbare Netzkosten ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/785",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a15",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Obbligo di fornitura e impostazione tariffale per i consumatori fissi finali ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/785",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Obbligo di fornitura e impostazione tariffale per i consumatori fissi finali ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/785",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Sezione 3: Sviluppo delle reti ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/785",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a9",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 15 Costi di rete computabili ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/785",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a15",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 15 Costi di rete computabili ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/785",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a15",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 15 Costi di rete computabili ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/785",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a15",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 17 Accesso alla rete in caso di congestioni nella rete di trasporto transfrontaliera ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/785",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a17",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 18 Società nazionale di rete ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/785",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a18",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 20 Compiti della società nazionale di rete ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/785",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a20",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 21 Organizzazione ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/785",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a21",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 25 Obbligo d’informare e assistenza amministrativa ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/785",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a25",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Lieferpflicht und Tarifgestaltung für feste Endverbraucher ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/785",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Lieferpflicht und Tarifgestaltung für feste Endverbraucher ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/785",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "3. Abschnitt: Netzentwicklung ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/785",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a9",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Obligation de fourniture et tarification pour consommateurs captifs ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/785",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Obligation de fourniture et tarification pour consommateurs captifs ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/785",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Section 3 Développement du réseau ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/785",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a9",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 17 Netzzugang bei Engpässen im grenzüberschreitenden Übertragungsnetz ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/785",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a17",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 18 Nationale Netzgesellschaft ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/785",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a18",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 20 Aufgaben der nationalen Netzgesellschaft ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/785",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a20",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 21 Organisation ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/785",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a21",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 25 Auskunftspflicht und Amtshilfe ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/785",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a25",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 15 Anrechenbare Netzkosten ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/785",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a15",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 3a Concessioni cantonali e comunali ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2011/426",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a3a",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 5 Comprensori e garanzia dell’allacciamento ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2011/426",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a5",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 3a Kantonale und kommunale Konzessionen ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2011/426",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a3a",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 5 Netzgebiete und Anschlussgarantie ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2011/426",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a5",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 3a Concessions cantonales et communales ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2011/426",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a3a",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 5 Zones de desserte et garantie de raccordement ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2011/426",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a5",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 15a Coûts facturés individuellement pour l’énergie d’ajustement ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2014/926",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a15a",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 33a Disposition transitoire de la modification du 12 décembre 2014 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2014/926",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a33a",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 4 Definizioni ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2014/926",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a4",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 4 Definizioni ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2014/926",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a4",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 4 Definizioni ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2014/926",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a4",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 15a Individuell in Rechnung gestellte Kosten für Ausgleichsenergie ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2014/926",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a15a",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 14 Corrispettivo per l’utilizzazione della rete ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2014/926",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a14",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 14 Corrispettivo per l’utilizzazione della rete ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2014/926",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a14",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 15a Costi fatturati individualmente per l’energia di compensazione ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2014/926",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a15a",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 33a Disposizione transitoria della modifica del 12 dicembre 2014 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2014/926",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a33a",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 4 Begriffe ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2014/926",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a4",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 4 Begriffe ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2014/926",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a4",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 14 Netznutzungsentgelt ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2014/926",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a14",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 4 Définitions ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2014/926",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a4",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 4 Définitions ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2014/926",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a4",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 14 Rémunération pour l’utilisation du réseau ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2014/926",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a14",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 14 Netznutzungsentgelt ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2014/926",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a14",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 33a Übergangsbestimmung zur Änderung vom 12. Dezember 2014 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2014/926",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a33a",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 14 Rémunération pour l’utilisation du réseau ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2014/926",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a14",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 17 Accès au réseau en cas de congestion au niveau du réseau de transport transfrontalier ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/1952",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a17",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 33b Disposition transitoire relative à la modification du 17 mars 2017 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/1952",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a33b",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 17 Netzzugang bei Engpässen im grenzüberschreitenden Übertragungsnetz ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/1952",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a17",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 17 Accesso alla rete in caso di congestioni nella rete di trasporto transfrontaliera ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/1952",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a17",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 33b Disposizione transitoria della modifica del 17 marzo 2017 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/1952",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a33b",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 33b Übergangsbestimmung zur Änderung vom 17. März 2017 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2016/1952",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a33b",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 15a Coûts facturés individuellement pour l’énergie d’ajustement ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2015/272",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a15a",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 33a Disposition transitoire de la modification du 12 décembre 2014 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2015/272",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a33a",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 4 Definizioni ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2015/272",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a4",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 4 Definizioni ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2015/272",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a4",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 4 Definizioni ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2015/272",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a4",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 15a Individuell in Rechnung gestellte Kosten für Ausgleichsenergie ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2015/272",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a15a",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 14 Corrispettivo per l’utilizzazione della rete ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2015/272",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a14",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 14 Corrispettivo per l’utilizzazione della rete ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2015/272",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a14",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 15a Costi fatturati individualmente per l’energia di compensazione ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2015/272",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a15a",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 14 Netznutzungsentgelt ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2015/272",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a14",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 33a Disposizione transitoria della modifica del 12 dicembre 2014 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2015/272",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a33a",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 4 Begriffe ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2015/272",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a4",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 4 Begriffe ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2015/272",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a4",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 4 Définitions ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2015/272",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a4",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 4 Définitions ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2015/272",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a4",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 14 Netznutzungsentgelt ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2015/272",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a14",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 14 Rémunération pour l’utilisation du réseau ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2015/272",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a14",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 33a Übergangsbestimmung zur Änderung vom 12. Dezember 2014 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2015/272",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a33a",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 14 Rémunération pour l’utilisation du réseau ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2015/272",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a14",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 17 Accès au réseau en cas de congestion au niveau du réseau de transport transfrontalier ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/537",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a17",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 33b Disposition transitoire relative à la modification du 17 mars 2017 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/537",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a33b",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 17 Netzzugang bei Engpässen im grenzüberschreitenden Übertragungsnetz ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/537",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a17",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 17 Accesso alla rete in caso di congestioni nella rete di trasporto transfrontaliera ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/537",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a17",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 33b Disposizione transitoria della modifica del 17 marzo 2017 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/537",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a33b",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 33b Übergangsbestimmung zur Änderung vom 17. März 2017 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/537",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a33b",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 15 Anrechenbare Netzkosten ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a15",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 15 Coûts de réseau imputables ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a15",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 15 Coûts de réseau imputables ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a15",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 17 Accès au réseau en cas de congestion au niveau du réseau de transport transfrontalier ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a17",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 18 Société nationale du réseau de transport ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a18",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 20 Tâches de la société nationale du réseau de transport ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a20",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 20 Tâches de la société nationale du réseau de transport ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a20",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 20 Tâches de la société nationale du réseau de transport ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a20",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 20 Tâches de la société nationale du réseau de transport ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a20",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 21 Organisation ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a21",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 15 Anrechenbare Netzkosten ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a15",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 25 Obligation de renseigner et assistance administrative ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a25",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Obbligo di fornitura e impostazione tariffale per i consumatori fissi finali ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Obbligo di fornitura e impostazione tariffale per i consumatori fissi finali ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Sezione 3: Sviluppo delle reti ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a9",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 15 Costi di rete computabili ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a15",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 15 Costi di rete computabili ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a15",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 15 Costi di rete computabili ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a15",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 17 Accesso alla rete in caso di congestioni nella rete di trasporto transfrontaliera ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a17",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 17 Netzzugang bei Engpässen im grenzüberschreitenden Übertragungsnetz ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a17",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 18 Società nazionale di rete ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a18",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 20 Compiti della società nazionale di rete ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a20",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 20 Compiti della società nazionale di rete ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a20",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 21 Organizzazione ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a21",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 25 Obbligo d’informare e assistenza amministrativa ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a25",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Lieferpflicht und Tarifgestaltung für feste Endverbraucher ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Lieferpflicht und Tarifgestaltung für feste Endverbraucher ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "3. Abschnitt: Netzentwicklung ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a9",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Obligation de fourniture et tarification pour consommateurs captifs ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Obligation de fourniture et tarification pour consommateurs captifs ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Section 3 Développement du réseau ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a9",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 18 Nationale Netzgesellschaft ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a18",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 20 Aufgaben der nationalen Netzgesellschaft ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a20",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 15 Anrechenbare Netzkosten ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a15",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 21 Organisation ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a21",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 25 Auskunftspflicht und Amtshilfe ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a25",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 15 Coûts de réseau imputables ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a15",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1999/404",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1999/404",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1999/404",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2005/197",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2005/197",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/fga/2005/197",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      }
-    ],
     "classifiedByTaxonomyEntryLabel_raw": "734.7",
     "consolidationAbstract": {
       "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/46",
-      "typeDocument": "https://fedlex.data.admin.ch/vocabulary/resource-type/54",
+      "basicAct": "https://fedlex.data.admin.ch/eli/oc/2007/418",
+      "typeDocument": "https://fedlex.data.admin.ch/vocabulary/resource-type/21",
       "titles": {
         "http://publications.europa.eu/resource/authority/language/DEU": {
           "titleAlternative": "Stromversorgungsgesetz",
@@ -3100,58 +694,12 @@
       }
     },
     "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/8592",
-    "classifiedByTaxonomyEntryLabel_sort": "00734.00007",
+    "classifiedByTaxonomyEntryLabel_sort": "734.700",
     "theme": {
       "themeId": "7",
       "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/8349"
     },
     "impacts": [
-      {
-        "impactDate": "2019-06-01",
-        "commentFrom": {
-          "it": "LF 15.12.2017 (I 2)"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "it": "espressioni; art. 6, 8; tit. prima dell'art. 9<i>a</i>; art. 9<i>a</i>-9<i>e</i>, 15, 17; tit. prima dell'art. 17<i>a</i>; art. 17<i>a</i>-17<i>c</i>, 18, 20, 22"
-        },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "2019-06-01",
-        "commentFrom": {
-          "fr": "LF 15.12.2017 (I 2)"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "fr": "Expressions; art. 6, 8; tit. avant l'art. 9<i>a</i>; art. 9<i>a</i> à 9<i>e</i>, 15, 17; tit. avant l'art. 17<i>a</i>; art. 17<i>a</i> à 17<i>c</i>, 18, 20, 22"
-        },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "2019-06-01",
-        "commentFrom": {
-          "fr": "I 2"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2019/264",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "decisionDate": "2017-12-15",
-        "historicalImpact": false
-      },
       {
         "impactDate": "2019-06-01",
         "commentFrom": {
@@ -3173,13 +721,59 @@
         },
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
         "commentTo": {
-          "de": "Ausdrücke; Art. 6, 8; Tit. vor Art. 9<i>a</i>; Art. 9<i>a</i>-9<i>e</i>, 15, 17; Tit. vor Art. 17<i>a</i>; Art. 17<i>a</i>-17<i>c</i>, 18, 20, 22"
+          "de": "Ausdrücke; Art. 8; Tit. vor Art. 9<i>a</i>; Art. 9<i>a</i><sup>ter</sup>-9<i>e</i>, 15, 17, 17<i>b</i>, 18, 20, 22"
         },
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2019/264",
         "language": [
           "http://publications.europa.eu/resource/authority/language/DEU"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "2019-06-01",
+        "commentFrom": {
+          "fr": "LF 15.12.2017 (I 2)"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "fr": "Expressions; art. 8; tit. avant l'art. 9<i>a</i>; art. 9<i>a</i><sup>ter</sup> à 9<i>e</i>, 15, 17, 17<i>b</i>, 18, 20, 22"
+        },
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2019/264",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "2019-06-01",
+        "commentFrom": {
+          "it": "LF 15.12.2017 (I 2)"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "it": "espressioni; art. 8; tit. prima dell'art. 9<i>a</i>; art. 9<i>a</i><sup>ter</sup>-9<i>e</i>, 15, 17, 17<i>b</i>, 18, 20, 22"
+        },
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2019/264",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "2019-06-01",
+        "commentFrom": {
+          "fr": "I 2"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2019/264",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "decisionDate": "2017-12-15",
         "historicalImpact": false
       },
       {
@@ -3203,5 +797,6 @@
       "it": "RS 734.7"
     }
   },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/2007/418/20190601/graph",
   "timestampms": null
 }

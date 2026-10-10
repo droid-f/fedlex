@@ -6,8 +6,18 @@
       "Work"
     ],
     "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1999-06-30T22:00:00.000Z"
+        ]
+      },
       "dateEndApplicability": {
         "xsd:date": "2001-06-30"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1999-06-30T22:00:00.000Z"
+        ]
       },
       "isMemberOf": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/cc/1983/994_994_994"
@@ -20,8 +30,8 @@
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/cc/1983/994_994_994/19990701/de",
         "https://fedlex.data.admin.ch/eli/cc/1983/994_994_994/19990701/fr",
-        "https://fedlex.data.admin.ch/eli/cc/1983/994_994_994/19990701/it",
         "https://fedlex.data.admin.ch/eli/cc/1983/994_994_994/19990701/rm",
+        "https://fedlex.data.admin.ch/eli/cc/1983/994_994_994/19990701/it",
         "https://fedlex.data.admin.ch/eli/cc/1983/994_994_994/19990701/en"
       ]
     }
@@ -43,19 +53,11 @@
       "uri": "https://fedlex.data.admin.ch/eli/cc/1983/994_994_994/19990701/fr",
       "type": "Expression",
       "references": {
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      "attributes": {
-        "title": {
-          "xsd:string": "Consolidation: 531.215.17 - 1999-07-01"
-        }
-      }
-    },
-    {
-      "uri": "https://fedlex.data.admin.ch/eli/cc/1983/994_994_994/19990701/it",
-      "type": "Expression",
-      "references": {
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/cc/1983/994_994_994/19990701/fr/pdf-a",
+          "https://fedlex.data.admin.ch/eli/cc/1983/994_994_994/19990701/fr/docx"
+        ]
       },
       "attributes": {
         "title": {
@@ -68,6 +70,18 @@
       "type": "Expression",
       "references": {
         "language": "http://publications.europa.eu/resource/authority/language/ROH"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Consolidation: 531.215.17 - 1999-07-01"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/1983/994_994_994/19990701/it",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/ITA"
       },
       "attributes": {
         "title": {
@@ -102,14 +116,58 @@
       ]
     },
     {
-      "uri": "http://publications.europa.eu/resource/authority/language/ITA",
+      "uri": "https://fedlex.data.admin.ch/eli/cc/1983/994_994_994/19990701/fr/pdf-a",
+      "type": "Manifestation",
+      "attributes": {
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": true
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/1983/994_994_994/19990701/fr/pdf-a/fedlex-data-admin-ch-eli-cc-1983-994_994_994-19990701-fr-pdf-a.pdf"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "numberOfPages": {
+          "xsd:int": [
+            22
+          ]
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1983/994_994_994/19990701/fr/pdf-a/fedlex-data-admin-ch-eli-cc-1983-994_994_994-19990701-fr-pdf-a.pdf"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/1983/994_994_994/19990701/fr/docx",
+      "type": "Manifestation",
+      "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/1983/994_994_994/19990701/fr/docx/fedlex-data-admin-ch-eli-cc-1983-994_994_994-19990701-fr-docx.docx"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1983/994_994_994/19990701/fr/docx/fedlex-data-admin-ch-eli-cc-1983-994_994_994-19990701-fr-docx.docx"
+        }
+      }
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/authority/language/ROH",
       "type": [
         "Concept",
         "Language"
       ]
     },
     {
-      "uri": "http://publications.europa.eu/resource/authority/language/ROH",
+      "uri": "http://publications.europa.eu/resource/authority/language/ITA",
       "type": [
         "Concept",
         "Language"
@@ -123,7 +181,6 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/1983/994_994_994/19990701/graph",
   "facets": {
     "consolidates": [
       {
@@ -187,6 +244,7 @@
     "consolidationAbstract": {
       "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
       "dateNoLongerInForce": "2001-07-01",
+      "basicAct": "https://fedlex.data.admin.ch/eli/oc/1983/994_994_994",
       "typeDocument": "https://fedlex.data.admin.ch/vocabulary/resource-type/29",
       "titles": {
         "http://publications.europa.eu/resource/authority/language/DEU": {
@@ -201,26 +259,12 @@
       }
     },
     "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/7692",
-    "classifiedByTaxonomyEntryLabel_sort": "00531.00215.00017",
+    "classifiedByTaxonomyEntryLabel_sort": "531.215.170",
     "theme": {
       "themeId": "5",
       "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/7227"
     },
     "impacts": [
-      {
-        "impactDate": "1999-07-01",
-        "commentFrom": {
-          "de": "I"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1999/263",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "decisionDate": "1999-05-26",
-        "historicalImpact": false
-      },
       {
         "impactDate": "1999-07-01",
         "commentFrom": {
@@ -234,51 +278,8 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/FRA"
         ],
+        "historicalImpactForLanguage": false,
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "1999-07-01",
-        "commentFrom": {
-          "it": "O 26.05.1999 (I)"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "it": "all."
-        },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1999/263",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "1999-07-01",
-        "commentFrom": {
-          "fr": "I"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1999/263",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "decisionDate": "1999-05-26",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "1999-07-01",
-        "commentFrom": {
-          "it": "I"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1999/263",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "decisionDate": "1999-05-26",
         "historicalImpact": false
       },
       {
@@ -294,15 +295,80 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/DEU"
         ],
+        "historicalImpactForLanguage": false,
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "1999-07-01",
+        "commentFrom": {
+          "it": "I"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1999/263",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "historicalImpactForLanguage": false,
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "decisionDate": "1999-05-26",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "1999-07-01",
+        "commentFrom": {
+          "fr": "I"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1999/263",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "historicalImpactForLanguage": false,
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "decisionDate": "1999-05-26",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "1999-07-01",
+        "commentFrom": {
+          "it": "O 26.05.1999 (I)"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "it": "all."
+        },
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1999/263",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "historicalImpactForLanguage": false,
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "1999-07-01",
+        "commentFrom": {
+          "de": "I"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1999/263",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "historicalImpactForLanguage": false,
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "decisionDate": "1999-05-26",
         "historicalImpact": false
       }
     ],
+    "groupIdentifier": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/7692",
     "classifiedByTaxonomyEntryLabel": {
       "de": "SR 531.215.17",
       "fr": "RS 531.215.17",
       "it": "RS 531.215.17"
     }
   },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/1983/994_994_994/19990701/graph",
   "timestampms": null
 }

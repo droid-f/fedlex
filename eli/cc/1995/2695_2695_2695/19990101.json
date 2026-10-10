@@ -6,8 +6,18 @@
       "Work"
     ],
     "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1998-12-31T23:00:00.000Z"
+        ]
+      },
       "dateEndApplicability": {
         "xsd:date": "1999-06-30"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1998-12-31T23:00:00.000Z"
+        ]
       },
       "isMemberOf": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/cc/1995/2695_2695_2695"
@@ -67,7 +77,11 @@
       "uri": "https://fedlex.data.admin.ch/eli/cc/1995/2695_2695_2695/19990101/fr",
       "type": "Expression",
       "references": {
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/cc/1995/2695_2695_2695/19990101/fr/docx",
+          "https://fedlex.data.admin.ch/eli/cc/1995/2695_2695_2695/19990101/fr/pdf-a"
+        ]
       },
       "attributes": {
         "title": {
@@ -116,6 +130,45 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/1995/2695_2695_2695/19990101/fr/docx",
+      "type": "Manifestation",
+      "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/1995/2695_2695_2695/19990101/fr/docx/fedlex-data-admin-ch-eli-cc-1995-2695_2695_2695-19990101-fr-docx.docx"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1995/2695_2695_2695/19990101/fr/docx/fedlex-data-admin-ch-eli-cc-1995-2695_2695_2695-19990101-fr-docx.docx"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/1995/2695_2695_2695/19990101/fr/pdf-a",
+      "type": "Manifestation",
+      "attributes": {
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": true
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/1995/2695_2695_2695/19990101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-1995-2695_2695_2695-19990101-fr-pdf-a.pdf"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1995/2695_2695_2695/19990101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-1995-2695_2695_2695-19990101-fr-pdf-a.pdf"
+        }
+      }
+    },
+    {
       "uri": "http://publications.europa.eu/resource/authority/language/ENG",
       "type": [
         "Concept",
@@ -123,7 +176,6 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/1995/2695_2695_2695/19990101/graph",
   "facets": {
     "consolidates": [
       {
@@ -186,6 +238,7 @@
     "classifiedByTaxonomyEntryLabel_raw": "632.319",
     "consolidationAbstract": {
       "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
+      "basicAct": "https://fedlex.data.admin.ch/eli/oc/1995/2695_2695_2695",
       "typeDocument": "https://fedlex.data.admin.ch/vocabulary/resource-type/29",
       "titles": {
         "http://publications.europa.eu/resource/authority/language/DEU": {
@@ -194,7 +247,7 @@
         },
         "http://publications.europa.eu/resource/authority/language/FRA": {
           "titleAlternative": "Ordonnance sur le libre-échange 2",
-          "title": "Ordonnance du 27 juin 1995 sur les droits de douane applicables aux marchandises dans le trafic avec les Etats partenaires de libre-échange (excepté les Etats membres de l'UE et de l'AELE) (Ordonnance sur le libre-échange 2)"
+          "title": "Ordonnance du 27 juin 1995 sur les droits de douane applicables aux marchandises dans le trafic avec les États partenaires de libre-échange (excepté les États membres de l'UE et de l'AELE) (Ordonnance sur le libre-échange 2)"
         },
         "http://publications.europa.eu/resource/authority/language/ITA": {
           "titleAlternative": "Ordinanza sul libero scambio 2",
@@ -203,12 +256,27 @@
       }
     },
     "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/8041",
-    "classifiedByTaxonomyEntryLabel_sort": "00632.00319",
+    "classifiedByTaxonomyEntryLabel_sort": "632.319",
     "theme": {
       "themeId": "6",
       "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/7743"
     },
     "impacts": [
+      {
+        "impactDate": "1999-01-01",
+        "commentFrom": {
+          "fr": "Art. 5"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1999/36",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "historicalImpactForLanguage": false,
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "decisionDate": "1998-12-07",
+        "historicalImpact": false
+      },
       {
         "impactDate": "1999-01-01",
         "commentFrom": {
@@ -219,6 +287,7 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/ITA"
         ],
+        "historicalImpactForLanguage": false,
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "decisionDate": "1998-12-07",
         "historicalImpact": false
@@ -233,30 +302,19 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/DEU"
         ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "decisionDate": "1998-12-07",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "1999-01-01",
-        "commentFrom": {
-          "fr": "Art. 5"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1999/36",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
+        "historicalImpactForLanguage": false,
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "decisionDate": "1998-12-07",
         "historicalImpact": false
       }
     ],
+    "groupIdentifier": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/8041",
     "classifiedByTaxonomyEntryLabel": {
       "de": "SR 632.319",
       "fr": "RS 632.319",
       "it": "RS 632.319"
     }
   },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/1995/2695_2695_2695/19990101/graph",
   "timestampms": null
 }

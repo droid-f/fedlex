@@ -15,30 +15,24 @@
       "basicAct": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/oc/1982/106_106_106"
       },
-      "typeDocument": {
-        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/31"
-      },
       "dateEntryInForce": {
         "xsd:date": "1981-12-23"
+      },
+      "typeDocument": {
+        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/31"
       }
     },
     "references": {
-      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/4463",
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/cc/1982/106_106_106/fr",
         "https://fedlex.data.admin.ch/eli/cc/1982/106_106_106/it",
         "https://fedlex.data.admin.ch/eli/cc/1982/106_106_106/de"
-      ]
+      ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/4463"
     }
   },
   "included": [
-    {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/4463",
-      "type": [
-        "Concept",
-        "LegalTaxonomy"
-      ]
-    },
     {
       "uri": "https://fedlex.data.admin.ch/eli/cc/1982/106_106_106/fr",
       "type": "Expression",
@@ -76,6 +70,20 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/4463",
+      "type": [
+        "Concept",
+        "LegalTaxonomy"
+      ]
+    },
+    {
       "uri": "http://publications.europa.eu/resource/authority/language/FRA",
       "type": [
         "Concept",
@@ -97,9 +105,7 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/1982/106_106_106/graph",
   "facets": {
-    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/49",
     "consolidates": [
       {
         "dateDocument": "1981-06-15",
@@ -127,11 +133,6 @@
           "http://publications.europa.eu/resource/authority/language/DEU": {
             "manifestation": [
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2001/264/de/pdf-x/fedlex-data-admin-ch-eli-oc-2001-264-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2001/264/de/pdf-x"
-              },
-              {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2001/264/de/doc/fedlex-data-admin-ch-eli-oc-2001-264-de-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2001/264/de/doc"
@@ -156,11 +157,6 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2001/264/fr/pdf-a/fedlex-data-admin-ch-eli-oc-2001-264-fr-pdf-a.pdf",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2001/264/fr/pdf-a"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2001/264/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2001-264-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2001/264/fr/pdf-x"
               }
             ],
             "memorialLabel": "RO 2001 1692",
@@ -177,11 +173,6 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2001/264/it/doc/fedlex-data-admin-ch-eli-oc-2001-264-it-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2001/264/it/doc"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2001/264/it/pdf-x/fedlex-data-admin-ch-eli-oc-2001-264-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2001/264/it/pdf-x"
               }
             ],
             "memorialLabel": "RU 2001 1692",
@@ -193,11 +184,14 @@
         "uri": "https://fedlex.data.admin.ch/eli/oc/2001/264"
       }
     ],
-    "sortingDate": "2000-09-21",
-    "theme": {
-      "themeId": "0.9",
-      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/3995"
+    "calculatedEndDate": "2000-09-20",
+    "abrogationSourceUri": "https://fedlex.data.admin.ch/eli/oc/2001/264",
+    "baseActReference": {
+      "de": "AS 1982 106",
+      "it": "RU 1982 106",
+      "fr": "RO 1982 106"
     },
+    "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/116",
     "impacts": [
       {
         "impactDate": "1981-12-23",
@@ -217,6 +211,30 @@
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/1982/106_106_106",
         "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1982/106_106_106/19811223",
+        "decisionDate": "1981-12-23",
+        "historicalImpact": false,
+        "consolidationDate": "1981-12-23"
+      },
+      {
+        "impactDate": "2000-09-21",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2001/264",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/29",
+        "decisionDate": "2001-07-17",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "1981-12-23",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1982/106_106_106",
+        "language": [
           "http://publications.europa.eu/resource/authority/language/FRA"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
@@ -226,17 +244,15 @@
         "consolidationDate": "1981-12-23"
       },
       {
-        "impactDate": "1981-12-23",
+        "impactDate": "2000-09-21",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1982/106_106_106",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2001/264",
         "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
+          "http://publications.europa.eu/resource/authority/language/FRA"
         ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1982/106_106_106/19811223",
-        "decisionDate": "1981-12-23",
-        "historicalImpact": false,
-        "consolidationDate": "1981-12-23"
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/29",
+        "decisionDate": "2001-07-17",
+        "historicalImpact": false
       },
       {
         "impactDate": "2000-09-21",
@@ -244,28 +260,6 @@
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2001/264",
         "language": [
           "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/29",
-        "decisionDate": "2001-07-17",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "2000-09-21",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2001/264",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/29",
-        "decisionDate": "2001-07-17",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "2000-09-21",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2001/264",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/29",
         "decisionDate": "2001-07-17",
@@ -282,7 +276,33 @@
       "fr": "RS 0.973.274.92",
       "it": "RS 0.973.274.92"
     },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
+    },
+    "abrogationDecisionDate": "2001-07-17",
+    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/49",
+    "abrogationSource": {
+      "de": "AS 2001 1692",
+      "it": "RU 2001 1692",
+      "fr": "RO 2001 1692"
+    },
+    "sortingDateTime": "1981-12-22T23:00Z",
+    "classifiedByTaxonomyEntryLabel_raw": "0.973.274.92",
+    "sortingDate": "2000-09-21",
+    "classifiedByTaxonomyEntryLabel_sort": "000.973.274.920",
+    "theme": {
+      "themeId": "0.9",
+      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/3995"
+    },
     "archivingDate": "1981-12-23"
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/1982/106_106_106/graph",
   "timestampms": null
 }

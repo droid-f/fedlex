@@ -6,8 +6,18 @@
       "Work"
     ],
     "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "2014-06-30T22:00:00.000Z"
+        ]
+      },
       "dateEndApplicability": {
         "xsd:date": "2015-12-31"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "2014-06-30T22:00:00.000Z"
+        ]
       },
       "isMemberOf": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/cc/24/233_245_233"
@@ -63,7 +73,8 @@
       "type": "Expression",
       "references": {
         "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/cc/24/233_245_233/20140701/it/pdf-a"
+          "https://fedlex.data.admin.ch/eli/cc/24/233_245_233/20140701/it/pdf-a",
+          "https://fedlex.data.admin.ch/eli/cc/24/233_245_233/20140701/it/doc"
         ],
         "language": "http://publications.europa.eu/resource/authority/language/ITA"
       },
@@ -93,6 +104,7 @@
       "type": "Expression",
       "references": {
         "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/cc/24/233_245_233/20140701/de/doc",
           "https://fedlex.data.admin.ch/eli/cc/24/233_245_233/20140701/de/pdf-a"
         ],
         "language": "http://publications.europa.eu/resource/authority/language/DEU"
@@ -221,6 +233,31 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/24/233_245_233/20140701/it/doc",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
+      },
+      "attributes": {
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/24/233_245_233/20140701/it/doc/fedlex-data-admin-ch-eli-cc-24-233_245_233-20140701-it-doc.doc"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
+        },
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": true
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/24/233_245_233/20140701/it/doc/fedlex-data-admin-ch-eli-cc-24-233_245_233-20140701-it-doc.doc"
+        }
+      }
+    },
+    {
       "uri": "http://publications.europa.eu/resource/authority/language/ITA",
       "type": [
         "Concept",
@@ -260,6 +297,31 @@
         "Concept",
         "Language"
       ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/24/233_245_233/20140701/de/doc",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
+      },
+      "attributes": {
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/24/233_245_233/20140701/de/doc/fedlex-data-admin-ch-eli-cc-24-233_245_233-20140701-de-doc.doc"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
+        },
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": true
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/24/233_245_233/20140701/de/doc/fedlex-data-admin-ch-eli-cc-24-233_245_233-20140701-de-doc.doc"
+        }
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/cc/24/233_245_233/20140701/de/pdf-a",
@@ -303,7 +365,6 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/24/233_245_233/20140701/graph",
   "facets": {
     "consolidates": [
       {
@@ -366,7 +427,8 @@
     "classifiedByTaxonomyEntryLabel_raw": "210",
     "consolidationAbstract": {
       "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/46",
-      "typeDocument": "https://fedlex.data.admin.ch/vocabulary/resource-type/54",
+      "basicAct": "https://fedlex.data.admin.ch/eli/oc/24/233_245_233",
+      "typeDocument": "https://fedlex.data.admin.ch/vocabulary/resource-type/21",
       "titles": {
         "http://publications.europa.eu/resource/authority/language/DEU": {
           "titleShort": "ZGB",
@@ -377,9 +439,11 @@
           "title": "Code civil suisse du 10 décembre 1907"
         },
         "http://publications.europa.eu/resource/authority/language/ENG": {
+          "titleShort": "CC",
           "title": "Swiss Civil Code of 10 December 1907"
         },
         "http://publications.europa.eu/resource/authority/language/ROH": {
+          "titleShort": "CCS",
           "title": "Cudesch civil svizzer dals 10 da december 1907"
         },
         "http://publications.europa.eu/resource/authority/language/ITA": {
@@ -389,60 +453,12 @@
       }
     },
     "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/5703",
-    "classifiedByTaxonomyEntryLabel_sort": "00210",
+    "classifiedByTaxonomyEntryLabel_sort": "210",
     "theme": {
       "themeId": "2",
       "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/5701"
     },
     "impacts": [
-      {
-        "impactDate": "2022-01-01",
-        "commentFrom": {
-          "fr": "LF 21.06.2013 (I)"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "fr": "Art. 309"
-        },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2014/53",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/2",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "2022-01-01",
-        "commentFrom": {
-          "de": "BG 21.06.2013 (I)"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "de": "Art. 133, 134, 179, 270<i>a</i>, 275, 296-298, 298<i>a</i>-298<i>d</i>, 301, 301<i>a</i>, 302-304, 308, 310, 311; SchlT Art. 12"
-        },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2014/53",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "2022-01-01",
-        "commentFrom": {
-          "it": "LF 21.06.2013 (I)"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "it": "art. 309"
-        },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2014/53",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/2",
-        "historicalImpact": false
-      },
       {
         "impactDate": "2022-01-01",
         "commentFrom": {
@@ -490,17 +506,51 @@
         "historicalImpact": false
       },
       {
-        "impactDate": "2014-07-01",
+        "impactDate": "2022-01-01",
         "commentFrom": {
-          "it": "I"
+          "de": "BG 21.06.2013 (I)"
         },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "de": "Art. 309"
+        },
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2014/53",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/2",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "2022-01-01",
+        "commentFrom": {
+          "fr": "LF 21.06.2013 (I)"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "fr": "Art. 309"
+        },
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2014/53",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/2",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "2022-01-01",
+        "commentFrom": {
+          "it": "LF 21.06.2013 (I)"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "it": "art. 309"
+        },
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2014/53",
         "language": [
           "http://publications.europa.eu/resource/authority/language/ITA"
         ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "decisionDate": "2013-06-21",
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/2",
         "historicalImpact": false
       },
       {
@@ -518,19 +568,33 @@
         "historicalImpact": false
       },
       {
+        "impactDate": "2014-07-01",
+        "commentFrom": {
+          "it": "I"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2014/53",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "decisionDate": "2013-06-21",
+        "historicalImpact": false
+      },
+      {
         "impactDate": "2022-01-01",
         "commentFrom": {
           "de": "BG 21.06.2013 (I)"
         },
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
         "commentTo": {
-          "de": "Art. 309"
+          "de": "Art. 133, 134, 179, 270<i>a</i>, 275, 296-298, 298<i>a</i>-298<i>d</i>, 301, 301<i>a</i>, 302-304, 308, 310, 311; SchlT Art. 12"
         },
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2014/53",
         "language": [
           "http://publications.europa.eu/resource/authority/language/DEU"
         ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/2",
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "historicalImpact": false
       }
     ],
@@ -540,5 +604,6 @@
       "it": "RS 210"
     }
   },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/24/233_245_233/20140701/graph",
   "timestampms": null
 }

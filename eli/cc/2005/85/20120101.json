@@ -6,8 +6,18 @@
       "Work"
     ],
     "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "2011-12-31T23:00:00.000Z"
+        ]
+      },
       "dateEndApplicability": {
         "xsd:date": "2012-12-31"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "2011-12-31T23:00:00.000Z"
+        ]
       },
       "isMemberOf": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/cc/2005/85"
@@ -18,8 +28,8 @@
     },
     "references": {
       "isRealizedBy": [
-        "https://fedlex.data.admin.ch/eli/cc/2005/85/20120101/fr",
         "https://fedlex.data.admin.ch/eli/cc/2005/85/20120101/rm",
+        "https://fedlex.data.admin.ch/eli/cc/2005/85/20120101/fr",
         "https://fedlex.data.admin.ch/eli/cc/2005/85/20120101/it",
         "https://fedlex.data.admin.ch/eli/cc/2005/85/20120101/en",
         "https://fedlex.data.admin.ch/eli/cc/2005/85/20120101/de"
@@ -28,13 +38,10 @@
   },
   "included": [
     {
-      "uri": "https://fedlex.data.admin.ch/eli/cc/2005/85/20120101/fr",
+      "uri": "https://fedlex.data.admin.ch/eli/cc/2005/85/20120101/rm",
       "type": "Expression",
       "references": {
-        "isEmbodiedBy": [
-          "https://fedlex.data.admin.ch/eli/cc/2005/85/20120101/fr/pdf-a"
-        ],
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+        "language": "http://publications.europa.eu/resource/authority/language/ROH"
       },
       "attributes": {
         "title": {
@@ -43,10 +50,13 @@
       }
     },
     {
-      "uri": "https://fedlex.data.admin.ch/eli/cc/2005/85/20120101/rm",
+      "uri": "https://fedlex.data.admin.ch/eli/cc/2005/85/20120101/fr",
       "type": "Expression",
       "references": {
-        "language": "http://publications.europa.eu/resource/authority/language/ROH"
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/cc/2005/85/20120101/fr/pdf-a"
+        ],
+        "language": "http://publications.europa.eu/resource/authority/language/FRA"
       },
       "attributes": {
         "title": {
@@ -97,6 +107,13 @@
       }
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/ROH",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/cc/2005/85/20120101/fr/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -125,13 +142,6 @@
     },
     {
       "uri": "http://publications.europa.eu/resource/authority/language/FRA",
-      "type": [
-        "Concept",
-        "Language"
-      ]
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/ROH",
       "type": [
         "Concept",
         "Language"
@@ -220,7 +230,6 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/2005/85/20120101/graph",
   "facets": {
     "consolidates": [
       {
@@ -284,6 +293,7 @@
     "consolidationAbstract": {
       "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
       "dateNoLongerInForce": "2022-01-01",
+      "basicAct": "https://fedlex.data.admin.ch/eli/oc/2005/85",
       "typeDocument": "https://fedlex.data.admin.ch/vocabulary/resource-type/27",
       "titles": {
         "http://publications.europa.eu/resource/authority/language/DEU": {
@@ -298,7 +308,7 @@
       }
     },
     "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/6362",
-    "classifiedByTaxonomyEntryLabel_sort": "00412.00101.00220.00002",
+    "classifiedByTaxonomyEntryLabel_sort": "412.101.220.020",
     "theme": {
       "themeId": "4",
       "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/6332"
@@ -306,15 +316,24 @@
     "impacts": [
       {
         "impactDate": "2012-01-01",
-        "commentFrom": {
-          "it": "O della SEFRI 04.07.2011"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2011/611",
         "language": [
           "http://publications.europa.eu/resource/authority/language/ITA"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "decisionDate": "2011-07-04",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "2012-01-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2011/611",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "decisionDate": "2011-07-04",
         "historicalImpact": false
       },
       {
@@ -332,28 +351,6 @@
       },
       {
         "impactDate": "2012-01-01",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2011/611",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "decisionDate": "2011-07-04",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "2012-01-01",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2011/611",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "decisionDate": "2011-07-04",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "2012-01-01",
         "commentFrom": {
           "de": "V des SBFI 04.07.2011"
         },
@@ -367,10 +364,23 @@
       },
       {
         "impactDate": "2012-01-01",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "commentFrom": {
+          "it": "O della SEFRI 04.07.2011"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2011/611",
         "language": [
           "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "2012-01-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2011/611",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "decisionDate": "2011-07-04",
@@ -383,5 +393,6 @@
       "it": "RS 412.101.220.02"
     }
   },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/2005/85/20120101/graph",
   "timestampms": null
 }

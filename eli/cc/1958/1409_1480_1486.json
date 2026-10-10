@@ -15,30 +15,24 @@
       "basicAct": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/oc/1958/1409_1480_1486"
       },
-      "typeDocument": {
-        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/26"
-      },
       "dateEntryInForce": {
         "xsd:date": "1959-01-01"
+      },
+      "typeDocument": {
+        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/26"
       }
     },
     "references": {
-      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/8793",
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/cc/1958/1409_1480_1486/it",
         "https://fedlex.data.admin.ch/eli/cc/1958/1409_1480_1486/fr",
         "https://fedlex.data.admin.ch/eli/cc/1958/1409_1480_1486/de"
-      ]
+      ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/8793"
     }
   },
   "included": [
-    {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/8793",
-      "type": [
-        "Concept",
-        "LegalTaxonomy"
-      ]
-    },
     {
       "uri": "https://fedlex.data.admin.ch/eli/cc/1958/1409_1480_1486/it",
       "type": "Expression",
@@ -76,6 +70,20 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/8793",
+      "type": [
+        "Concept",
+        "LegalTaxonomy"
+      ]
+    },
+    {
       "uri": "http://publications.europa.eu/resource/authority/language/ITA",
       "type": [
         "Concept",
@@ -97,9 +105,7 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/1958/1409_1480_1486/graph",
   "facets": {
-    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
     "consolidates": [
       {
         "dateDocument": "1958-12-22",
@@ -140,25 +146,40 @@
         "uri": "https://fedlex.data.admin.ch/eli/oc/1979/908_908_908"
       }
     ],
-    "sortingDate": "1979-01-01",
-    "theme": {
-      "themeId": "7",
-      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/8349"
+    "calculatedEndDate": "1978-12-31",
+    "abrogationSourceUri": "https://fedlex.data.admin.ch/eli/oc/1979/908_908_908",
+    "baseActReference": {
+      "de": "AS 1958 1409",
+      "it": "RU 1958 1486",
+      "fr": "RO 1958 1480"
     },
     "impacts": [
       {
         "impactDate": "1979-01-01",
         "commentFrom": {
-          "de": "Art. 6"
+          "fr": "Art. 6"
         },
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/1979/908_908_908",
         "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
+          "http://publications.europa.eu/resource/authority/language/FRA"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
         "decisionDate": "1978-12-27",
         "historicalImpact": false
+      },
+      {
+        "impactDate": "1959-01-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1958/1409_1480_1486",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1958/1409_1480_1486/19590101",
+        "decisionDate": "1959-01-01",
+        "historicalImpact": false,
+        "consolidationDate": "1959-01-01"
       },
       {
         "impactDate": "1959-01-01",
@@ -174,17 +195,18 @@
         "consolidationDate": "1959-01-01"
       },
       {
-        "impactDate": "1959-01-01",
+        "impactDate": "1979-01-01",
+        "commentFrom": {
+          "de": "Art. 6"
+        },
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1958/1409_1480_1486",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1979/908_908_908",
         "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
+          "http://publications.europa.eu/resource/authority/language/DEU"
         ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1958/1409_1480_1486/19590101",
-        "decisionDate": "1959-01-01",
-        "historicalImpact": false,
-        "consolidationDate": "1959-01-01"
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
+        "decisionDate": "1978-12-27",
+        "historicalImpact": false
       },
       {
         "impactDate": "1959-01-01",
@@ -212,20 +234,6 @@
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
         "decisionDate": "1978-12-27",
         "historicalImpact": false
-      },
-      {
-        "impactDate": "1979-01-01",
-        "commentFrom": {
-          "fr": "Art. 6"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1979/908_908_908",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
-        "decisionDate": "1978-12-27",
-        "historicalImpact": false
       }
     ],
     "title": {
@@ -238,7 +246,33 @@
       "fr": "RS 742.222",
       "it": "RS 742.222"
     },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
+    },
+    "abrogationDecisionDate": "1978-12-27",
+    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
+    "abrogationSource": {
+      "de": "AS 1979 908",
+      "it": "RU 1979 908",
+      "fr": "RO 1979 908"
+    },
+    "sortingDateTime": "1958-12-31T23:00Z",
+    "classifiedByTaxonomyEntryLabel_raw": "742.222",
+    "sortingDate": "1979-01-01",
+    "classifiedByTaxonomyEntryLabel_sort": "742.222",
+    "theme": {
+      "themeId": "7",
+      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/8349"
+    },
     "archivingDate": "1959-01-01"
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/1958/1409_1480_1486/graph",
   "timestampms": null
 }

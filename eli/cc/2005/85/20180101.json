@@ -6,8 +6,18 @@
       "Work"
     ],
     "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "2021-01-14T22:58:22.632Z"
+        ]
+      },
       "dateEndApplicability": {
         "xsd:date": "2021-12-31"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "2021-01-14T22:58:22.632Z"
+        ]
       },
       "isMemberOf": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/cc/2005/85"
@@ -44,6 +54,7 @@
       "type": "Expression",
       "references": {
         "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/cc/2005/85/20180101/it/xml",
           "https://fedlex.data.admin.ch/eli/cc/2005/85/20180101/it/pdf-a",
           "https://fedlex.data.admin.ch/eli/cc/2005/85/20180101/it/doc",
           "https://fedlex.data.admin.ch/eli/cc/2005/85/20180101/it/html",
@@ -64,6 +75,7 @@
         "isEmbodiedBy": [
           "https://fedlex.data.admin.ch/eli/cc/2005/85/20180101/fr/doc",
           "https://fedlex.data.admin.ch/eli/cc/2005/85/20180101/fr/pdf-a",
+          "https://fedlex.data.admin.ch/eli/cc/2005/85/20180101/fr/xml",
           "https://fedlex.data.admin.ch/eli/cc/2005/85/20180101/fr/docx",
           "https://fedlex.data.admin.ch/eli/cc/2005/85/20180101/fr/html"
         ],
@@ -92,6 +104,7 @@
       "type": "Expression",
       "references": {
         "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/xml",
           "https://fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/pdf-a",
           "https://fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/doc",
           "https://fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/docx",
@@ -113,6 +126,38 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/2005/85/20180101/it/xml",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
+      },
+      "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/XML"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/it/xml/fedlex-data-admin-ch-eli-cc-2005-85-20180101-it-xml.xml"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/it/xml/fedlex-data-admin-ch-eli-cc-2005-85-20180101-it-xml.xml"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/it/xml/fedlex-data-admin-ch-eli-cc-2005-85-20180101-it-xml-1.xml"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/xml"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/it/xml/fedlex-data-admin-ch-eli-cc-2005-85-20180101-it-xml-1.xml"
+        }
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/cc/2005/85/20180101/it/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -120,14 +165,22 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": true
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/it/pdf-a/fedlex-data-admin-ch-eli-cc-2005-85-20180101-it-pdf-a.pdf"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        "numberOfPages": {
+          "xsd:int": [
+            12
+          ]
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/it/pdf-a/fedlex-data-admin-ch-eli-cc-2005-85-20180101-it-pdf-a.pdf"
@@ -142,17 +195,14 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/it/doc/fedlex-data-admin-ch-eli-cc-2005-85-20180101-it-doc.doc"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
-        },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/it/doc/fedlex-data-admin-ch-eli-cc-2005-85-20180101-it-doc.doc"
@@ -167,20 +217,29 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/it/html/fedlex-data-admin-ch-eli-cc-2005-85-20180101-it-html.html",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/it/html/fedlex-data-admin-ch-eli-cc-2005-85-20180101-it-html-1.html"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/it/html/fedlex-data-admin-ch-eli-cc-2005-85-20180101-it-html-1.html",
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/it/html/fedlex-data-admin-ch-eli-cc-2005-85-20180101-it-html.html"
+          ]
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/it/html/fedlex-data-admin-ch-eli-cc-2005-85-20180101-it-html.html"
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/it/html/fedlex-data-admin-ch-eli-cc-2005-85-20180101-it-html-2.html"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/it/html/fedlex-data-admin-ch-eli-cc-2005-85-20180101-it-html.html"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/it/html/fedlex-data-admin-ch-eli-cc-2005-85-20180101-it-html-2.html"
         }
       }
     },
@@ -192,6 +251,18 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/it/docx/fedlex-data-admin-ch-eli-cc-2005-85-20180101-it-docx-3.docx",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/it/docx/fedlex-data-admin-ch-eli-cc-2005-85-20180101-it-docx-4.docx",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/it/docx/fedlex-data-admin-ch-eli-cc-2005-85-20180101-it-docx-1.docx",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/it/docx/fedlex-data-admin-ch-eli-cc-2005-85-20180101-it-docx.docx",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/it/docx/fedlex-data-admin-ch-eli-cc-2005-85-20180101-it-docx-2.docx"
+          ]
+        },
         "wasExemplifiedByPrivate": {
           "rdfs:Resource": [
             "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/it/docx/fedlex-data-admin-ch-eli-cc-2005-85-20180101-it-docx-3.docx",
@@ -207,23 +278,8 @@
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
-        },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/it/docx/fedlex-data-admin-ch-eli-cc-2005-85-20180101-it-docx-5.docx"
-        },
-        "wasExemplifiedBy": {
-          "rdfs:Resource": [
-            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/it/docx/fedlex-data-admin-ch-eli-cc-2005-85-20180101-it-docx-3.docx",
-            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/it/docx/fedlex-data-admin-ch-eli-cc-2005-85-20180101-it-docx-4.docx",
-            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/it/docx/fedlex-data-admin-ch-eli-cc-2005-85-20180101-it-docx-1.docx",
-            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/it/docx/fedlex-data-admin-ch-eli-cc-2005-85-20180101-it-docx.docx",
-            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/it/docx/fedlex-data-admin-ch-eli-cc-2005-85-20180101-it-docx-2.docx"
-          ]
         }
       }
     },
@@ -242,17 +298,14 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/fr/doc/fedlex-data-admin-ch-eli-cc-2005-85-20180101-fr-doc.doc"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
-        },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/fr/doc/fedlex-data-admin-ch-eli-cc-2005-85-20180101-fr-doc.doc"
@@ -267,17 +320,57 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": true
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2005-85-20180101-fr-pdf-a.pdf"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        "numberOfPages": {
+          "xsd:int": [
+            12
+          ]
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2005-85-20180101-fr-pdf-a.pdf"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/2005/85/20180101/fr/xml",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
+      },
+      "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/XML"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/fr/xml/fedlex-data-admin-ch-eli-cc-2005-85-20180101-fr-xml.xml"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/fr/xml/fedlex-data-admin-ch-eli-cc-2005-85-20180101-fr-xml.xml"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/fr/xml/fedlex-data-admin-ch-eli-cc-2005-85-20180101-fr-xml-1.xml"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/xml"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/fr/xml/fedlex-data-admin-ch-eli-cc-2005-85-20180101-fr-xml-1.xml"
         }
       }
     },
@@ -289,6 +382,18 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/fr/docx/fedlex-data-admin-ch-eli-cc-2005-85-20180101-fr-docx-4.docx",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/fr/docx/fedlex-data-admin-ch-eli-cc-2005-85-20180101-fr-docx-2.docx",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/fr/docx/fedlex-data-admin-ch-eli-cc-2005-85-20180101-fr-docx-3.docx",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/fr/docx/fedlex-data-admin-ch-eli-cc-2005-85-20180101-fr-docx.docx",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/fr/docx/fedlex-data-admin-ch-eli-cc-2005-85-20180101-fr-docx-1.docx"
+          ]
+        },
         "wasExemplifiedByPrivate": {
           "rdfs:Resource": [
             "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/fr/docx/fedlex-data-admin-ch-eli-cc-2005-85-20180101-fr-docx.docx",
@@ -304,23 +409,8 @@
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
-        },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/fr/docx/fedlex-data-admin-ch-eli-cc-2005-85-20180101-fr-docx-5.docx"
-        },
-        "wasExemplifiedBy": {
-          "rdfs:Resource": [
-            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/fr/docx/fedlex-data-admin-ch-eli-cc-2005-85-20180101-fr-docx-4.docx",
-            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/fr/docx/fedlex-data-admin-ch-eli-cc-2005-85-20180101-fr-docx-2.docx",
-            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/fr/docx/fedlex-data-admin-ch-eli-cc-2005-85-20180101-fr-docx-3.docx",
-            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/fr/docx/fedlex-data-admin-ch-eli-cc-2005-85-20180101-fr-docx.docx",
-            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/fr/docx/fedlex-data-admin-ch-eli-cc-2005-85-20180101-fr-docx-1.docx"
-          ]
         }
       }
     },
@@ -332,20 +422,29 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/fr/html/fedlex-data-admin-ch-eli-cc-2005-85-20180101-fr-html-1.html",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/fr/html/fedlex-data-admin-ch-eli-cc-2005-85-20180101-fr-html.html"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/fr/html/fedlex-data-admin-ch-eli-cc-2005-85-20180101-fr-html.html",
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/fr/html/fedlex-data-admin-ch-eli-cc-2005-85-20180101-fr-html-1.html"
+          ]
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/fr/html/fedlex-data-admin-ch-eli-cc-2005-85-20180101-fr-html.html"
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/fr/html/fedlex-data-admin-ch-eli-cc-2005-85-20180101-fr-html-2.html"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/fr/html/fedlex-data-admin-ch-eli-cc-2005-85-20180101-fr-html.html"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/fr/html/fedlex-data-admin-ch-eli-cc-2005-85-20180101-fr-html-2.html"
         }
       }
     },
@@ -364,6 +463,38 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/xml",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
+      },
+      "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/XML"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/xml/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-xml.xml"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/xml/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-xml.xml"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/xml/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-xml-1.xml"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/xml"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/xml/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-xml-1.xml"
+        }
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -371,14 +502,22 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": true
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-pdf-a.pdf"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        "numberOfPages": {
+          "xsd:int": [
+            12
+          ]
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-pdf-a.pdf"
@@ -393,17 +532,14 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/doc/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-doc.doc"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
-        },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/doc/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-doc.doc"
@@ -418,6 +554,17 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/docx/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-docx-3.docx",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/docx/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-docx-1.docx",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/docx/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-docx-2.docx",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/docx/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-docx.docx"
+          ]
+        },
         "wasExemplifiedByPrivate": {
           "rdfs:Resource": [
             "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/docx/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-docx-1.docx",
@@ -432,22 +579,8 @@
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
-        },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/docx/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-docx-4.docx"
-        },
-        "wasExemplifiedBy": {
-          "rdfs:Resource": [
-            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/docx/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-docx-3.docx",
-            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/docx/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-docx-1.docx",
-            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/docx/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-docx-2.docx",
-            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/docx/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-docx.docx"
-          ]
         }
       }
     },
@@ -459,36 +592,37 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/html/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-html-4.html",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/html/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-html-1.html",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/html/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-html-3.html",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/html/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-html-2.html",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/html/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-html-5.html",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/html/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-html.html"
+          ]
+        },
         "wasExemplifiedByPrivate": {
           "rdfs:Resource": [
             "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/html/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-html-1.html",
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/html/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-html-5.html",
             "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/html/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-html-3.html",
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/html/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-html-4.html",
             "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/html/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-html.html",
             "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/html/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-html-2.html"
           ]
         },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/html/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-html-4.html"
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/html/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-html-6.html"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/html/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-html-4.html"
-        },
-        "wasExemplifiedBy": {
-          "rdfs:Resource": [
-            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/html/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-html-1.html",
-            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/html/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-html-3.html",
-            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/html/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-html-2.html",
-            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/html/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-html.html"
-          ]
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2005/85/20180101/de/html/fedlex-data-admin-ch-eli-cc-2005-85-20180101-de-html-6.html"
         }
       }
     },
@@ -507,7 +641,6 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/2005/85/20180101/graph",
   "facets": {
     "consolidates": [
       {
@@ -521,13 +654,8 @@
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2017/787/de/doc"
               },
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2017/787/de/pdf-x/fedlex-data-admin-ch-eli-oc-2017-787-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2017/787/de/pdf-x"
-              },
-              {
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2017/787/de/pdf-a/fedlex-data-admin-ch-eli-oc-2017-787-de-pdf-a.pdf",
+                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2017/787/de/pdf-a/fedlex-data-admin-ch-eli-oc-2017-787-de-pdf-a-1.pdf",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2017/787/de/pdf-a"
               }
             ],
@@ -538,13 +666,8 @@
             "manifestation": [
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2017/787/fr/pdf-a/fedlex-data-admin-ch-eli-oc-2017-787-fr-pdf-a.pdf",
+                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2017/787/fr/pdf-a/fedlex-data-admin-ch-eli-oc-2017-787-fr-pdf-a-1.pdf",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2017/787/fr/pdf-a"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2017/787/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2017-787-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2017/787/fr/pdf-x"
               },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
@@ -559,18 +682,13 @@
             "manifestation": [
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2017/787/it/pdf-a/fedlex-data-admin-ch-eli-oc-2017-787-it-pdf-a.pdf",
+                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2017/787/it/pdf-a/fedlex-data-admin-ch-eli-oc-2017-787-it-pdf-a-1.pdf",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2017/787/it/pdf-a"
               },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2017/787/it/doc/fedlex-data-admin-ch-eli-oc-2017-787-it-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2017/787/it/doc"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2017/787/it/pdf-x/fedlex-data-admin-ch-eli-oc-2017-787-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2017/787/it/pdf-x"
               }
             ],
             "memorialLabel": "RU 2017 7259",
@@ -588,13 +706,8 @@
             "manifestation": [
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2017/516/de/pdf-a/fedlex-data-admin-ch-eli-oc-2017-516-de-pdf-a.pdf",
+                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2017/516/de/pdf-a/fedlex-data-admin-ch-eli-oc-2017-516-de-pdf-a-1.pdf",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2017/516/de/pdf-a"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2017/516/de/pdf-x/fedlex-data-admin-ch-eli-oc-2017-516-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2017/516/de/pdf-x"
               },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
@@ -608,18 +721,13 @@
           "http://publications.europa.eu/resource/authority/language/FRA": {
             "manifestation": [
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2017/516/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2017-516-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2017/516/fr/pdf-x"
-              },
-              {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2017/516/fr/doc/fedlex-data-admin-ch-eli-oc-2017-516-fr-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2017/516/fr/doc"
               },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2017/516/fr/pdf-a/fedlex-data-admin-ch-eli-oc-2017-516-fr-pdf-a.pdf",
+                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2017/516/fr/pdf-a/fedlex-data-admin-ch-eli-oc-2017-516-fr-pdf-a-1.pdf",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2017/516/fr/pdf-a"
               }
             ],
@@ -635,13 +743,8 @@
               },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2017/516/it/pdf-a/fedlex-data-admin-ch-eli-oc-2017-516-it-pdf-a.pdf",
+                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2017/516/it/pdf-a/fedlex-data-admin-ch-eli-oc-2017-516-it-pdf-a-1.pdf",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2017/516/it/pdf-a"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2017/516/it/pdf-x/fedlex-data-admin-ch-eli-oc-2017-516-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2017/516/it/pdf-x"
               }
             ],
             "memorialLabel": "RU 2017 4821",
@@ -653,794 +756,31 @@
         "uri": "https://fedlex.data.admin.ch/eli/oc/2017/516"
       }
     ],
-    "citations": [
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 16 Admission ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a16",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 17 Objet, étendue et organisation de la procédure de qualification ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a17",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 18 Conditions de réussite ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a18",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 23 Commission suisse pour le développement professionnel et la qualité de la formation dans le commerce de détail ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a23",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 23 Commission suisse pour le développement professionnel et la qualité de la formation dans le commerce de détail ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a23",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 23 Commission suisse pour le développement professionnel et la qualité de la formation dans le commerce de détail ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a23",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Section 11 Dispositions finales ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a24",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 24a Dispositions transitoires relatives à la modification du 7 août 2017 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a24a",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 25 Entrée en vigueur ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a25",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 10 Piano di formazione ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a10",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Sezione 6: Requisiti per gli operatori della formazione di base organizzata dall’azienda e numero massimo di persone in formazione in azienda ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a11",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Sezione 7: Documentazione dell’apprendimento, rapporto di formazione e documentazione delle prestazioni ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a13",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 10 Bildungsplan ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a10",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "6. Abschnitt: Anforderungen an die Anbieter der betrieblich organisierten Grundbildung und Höchstzahl der Lernenden im Betrieb ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a11",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "7. Abschnitt: Lerndokumentation, Bildungsbericht und Leistungsdokumentationen ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a13",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 16 Zulassung ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a16",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 17 Gegenstand, Umfang und Durchführung des Qualifikationsverfahrens ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a17",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 18 Bestehen ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a18",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 23 Schweizerische Kommission für Berufsentwicklung und Qualität im Detailhandel ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a23",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 23 Schweizerische Kommission für Berufsentwicklung und Qualität im Detailhandel ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a23",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 23 Schweizerische Kommission für Berufsentwicklung und Qualität im Detailhandel ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a23",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "11. Abschnitt: Schlussbestimmungen ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a24",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 24a Übergangsbestimmungen zur Änderung vom 7. August 2017 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a24a",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 25 Inkrafttreten ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a25",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 16 Ammissione ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a16",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 17 Oggetto, durata e svolgimento ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a17",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 18 Superamento ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a18",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 23 Commissione svizzera per lo sviluppo professionale e la qualità nel commercio al dettaglio ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a23",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 10 Plan de formation ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a10",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 23 Commissione svizzera per lo sviluppo professionale e la qualità nel commercio al dettaglio ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a23",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 23 Commissione svizzera per lo sviluppo professionale e la qualità nel commercio al dettaglio ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a23",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Sezione 11: Disposizioni finali ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a24",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 24a Disposizioni transitorie della modifica del 7 agosto 2017 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a24a",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 25 Entrata in vigore ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a25",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Section 6 Exigences posées aux prestataires de la formation initiale en entreprise et nombre maximal de personnes en formation dans l’entreprise ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a11",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Section 7 Dossier de formation, rapport de formation et dossiers des prestations ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a13",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 14b Leistungsdokumentation über die Bildung in beruflicher Praxis ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/787",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a14b",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 15a Leistungsdokumentation in den überbetrieblichen Kursen ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/787",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a15a",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 14b Documentazione delle prestazioni nella formazione professionale pratica ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/787",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a14b",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 15a Documentazione delle prestazioni nei corsi interaziendali ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/787",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a15a",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 14b Dossier des prestations relatives à la formation à la pratique professionnelle ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/787",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a14b",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 15a Dossier des prestations fournies durant les cours interentreprises ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/787",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a15a",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "412.101.220.02 Ordinanza della SEFRI sulla formazione professionale di base Assistente del commercio al dettaglio con certificato federale di formazione pratica (CFP) ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "412.101.220.02 Verordnung des SBFI über die berufliche Grundbildung Detailhandelsassistentin/Detailhandelsassistent mit eidgenössischem Berufsattest (EBA) ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "412.101.220.02 Ordonnance du SEFRI sur la formation professionnelle initiale d’assistante du commerce de détail/assistant du commerce de détail avec attestation fédérale de formation professionnelle (AFP) * ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "412.101.220.02 Ordinanza della SEFRI sulla formazione professionale di base Assistente del commercio al dettaglio con certificato federale di formazione pratica (CFP) ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2004/746",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "412.101.220.02 Verordnung des SBFI über die berufliche Grundbildung Detailhandelsassistentin/Detailhandelsassistent mit eidgenössischem Berufsattest (EBA) ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2004/746",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "412.101.220.02 Ordonnance du SEFRI sur la formation professionnelle initiale d’assistante du commerce de détail/assistant du commerce de détail avec attestation fédérale de formation professionnelle (AFP) * ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2004/746",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2003/674",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2003/674",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2003/674",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2003/748",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2003/748",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2003/748",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      }
-    ],
+    "classifiedByTaxonomyEntryLabel_raw": "412.101.220.02",
     "consolidationAbstract": {
       "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
       "dateNoLongerInForce": "2022-01-01",
+      "basicAct": "https://fedlex.data.admin.ch/eli/oc/2005/85",
       "typeDocument": "https://fedlex.data.admin.ch/vocabulary/resource-type/27",
       "titles": {
         "http://publications.europa.eu/resource/authority/language/DEU": {
-          "title": "Verordnung des SBFI <bd>vom 8. Dezember 2004</bd> über die berufliche Grundbildung Detailhandelsassistentin/Detailhandelsassistent"
+          "title": "Verordnung des SBFI vom 8. Dezember 2004 über die berufliche Grundbildung Detailhandelsassistentin/Detailhandelsassistent"
         },
         "http://publications.europa.eu/resource/authority/language/FRA": {
-          "title": "Ordonnance du SEFRI <bd>du 8 décembre 2004</bd> sur la formation professionnelle initiale d'assistante du commerce de détail/assistant du commerce de détail"
+          "title": "Ordonnance du SEFRI du 8 décembre 2004 sur la formation professionnelle initiale d'assistante du commerce de détail/assistant du commerce de détail"
         },
         "http://publications.europa.eu/resource/authority/language/ITA": {
-          "title": "Ordinanza della SEFRI <bd>dell' 8 dicembre 2004</bd> sulla formazione professionale di base Assistente del commercio al dettaglio"
+          "title": "Ordinanza della SEFRI dell' 8 dicembre 2004 sulla formazione professionale di base Assistente del commercio al dettaglio"
         }
       }
     },
     "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/6362",
+    "classifiedByTaxonomyEntryLabel_sort": "412.101.220.020",
     "theme": {
       "themeId": "4",
       "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/6332"
     },
     "impacts": [
-      {
-        "impactDate": "2018-01-01",
-        "commentFrom": {
-          "it": "O della SEFRI 07.08.2017 (I)"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "it": "elenco; art. 10; tit. prima dell'art. 12; art. 12, 13; prima dell'art. 14; art. 14, 14<i>a</i>, 14<i>b</i>; 15; 15<i>a</i>, 16-18, 23; tit. prima dell'art. 24<i>a</i>; art. 24<i>a</i>, 25"
-        },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "2018-01-01",
-        "commentFrom": {
-          "fr": "I"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "decisionDate": "2017-08-07",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "2018-01-01",
-        "commentFrom": {
-          "it": "O della SEFRI 07.08.2017 (I)"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "it": "tit. prima dell'art. 25"
-        },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/2",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "2018-01-01",
-        "commentFrom": {
-          "de": "Betrifft nur den französischen Text."
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2017/787",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/6",
-        "decisionDate": "2017-12-12",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "2018-01-01",
-        "commentFrom": {
-          "it": "I"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "decisionDate": "2017-08-07",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "2018-01-01",
-        "commentFrom": {
-          "it": "Concerne soltanto il testo francese."
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2017/787",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/6",
-        "decisionDate": "2017-12-12",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "2018-01-01",
-        "commentFrom": {
-          "fr": "Errata"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2017/787",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/6",
-        "decisionDate": "2017-12-12",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "2018-01-01",
-        "commentFrom": {
-          "de": "V des SBFI 07.08.2017 (I)"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "de": "Tit. vor Art. 25"
-        },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/2",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "2018-01-01",
-        "commentFrom": {
-          "de": "V des SBFI 07.08.2017 (I)"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "de": "Berufsverzeichnis; Art. 10; Tit. vor Art. 12; Art. 12, 13; Tit. vor Art. 14; Art. 14, 14<i>a</i>, 14<i>b</i>; 15; 15<i>a</i>, 16-18, 23; Tit. vor Art. 24<i>a</i>; Art. 24<i>a</i>, 25"
-        },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2017/516",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "historicalImpact": false
-      },
       {
         "impactDate": "2018-01-01",
         "commentFrom": {
@@ -1475,6 +815,125 @@
       },
       {
         "impactDate": "2018-01-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "fr": "Mod. 07.08.2017 (art. 14<i>b</i>, 15<i>a</i>)"
+        },
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2017/787",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/6",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "2018-01-01",
+        "commentFrom": {
+          "it": "Concerne soltanto il testo francese."
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2017/787",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/6",
+        "decisionDate": "2017-12-12",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "2018-01-01",
+        "commentFrom": {
+          "fr": "Errata"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2017/787",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/6",
+        "decisionDate": "2017-12-12",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "2018-01-01",
+        "commentFrom": {
+          "de": "Betrifft nur den französischen Text."
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2017/787",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/6",
+        "decisionDate": "2017-12-12",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "2018-01-01",
+        "commentFrom": {
+          "it": "O della SEFRI 07.08.2017 (I)"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "it": "elenco; art. 10; tit. prima dell'art. 12; art. 12, 13; prima dell'art. 14; art. 14, 14<i>a</i>, 14<i>b</i>; 15; 15<i>a</i>, 16-18, 23; tit. prima dell'art. 24<i>a</i>; art. 24<i>a</i>, 25"
+        },
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2017/516",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "2018-01-01",
+        "commentFrom": {
+          "it": "O della SEFRI 07.08.2017 (I)"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "it": "tit. prima dell'art. 25"
+        },
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2017/516",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/2",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "2018-01-01",
+        "commentFrom": {
+          "de": "V des SBFI 07.08.2017 (I)"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "de": "Berufsverzeichnis; Art. 10; Tit. vor Art. 12; Art. 12, 13; Tit. vor Art. 14; Art. 14, 14<i>a</i>, 14<i>b</i>; 15; 15<i>a</i>, 16-18, 23; Tit. vor Art. 24<i>a</i>; Art. 24<i>a</i>, 25"
+        },
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2017/516",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "2018-01-01",
+        "commentFrom": {
+          "de": "V des SBFI 07.08.2017 (I)"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "de": "Tit. vor Art. 25"
+        },
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2017/516",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/2",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "2018-01-01",
         "commentFrom": {
           "de": "I"
         },
@@ -1489,15 +948,30 @@
       },
       {
         "impactDate": "2018-01-01",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "fr": "Mod. 07.08.2017 (art. 14<i>b</i>, 15<i>a</i>)"
+        "commentFrom": {
+          "it": "I"
         },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2017/787",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2017/516",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "decisionDate": "2017-08-07",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "2018-01-01",
+        "commentFrom": {
+          "fr": "I"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2017/516",
         "language": [
           "http://publications.europa.eu/resource/authority/language/FRA"
         ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/6",
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "decisionDate": "2017-08-07",
         "historicalImpact": false
       }
     ],
@@ -1507,5 +981,6 @@
       "it": "RS 412.101.220.02"
     }
   },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/2005/85/20180101/graph",
   "timestampms": null
 }

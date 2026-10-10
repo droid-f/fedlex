@@ -6,8 +6,18 @@
       "Work"
     ],
     "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1998-09-30T22:00:00.000Z"
+        ]
+      },
       "dateEndApplicability": {
         "xsd:date": "2003-12-31"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1998-09-30T22:00:00.000Z"
+        ]
       },
       "isMemberOf": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/cc/1995/170_170_170"
@@ -55,7 +65,11 @@
       "uri": "https://fedlex.data.admin.ch/eli/cc/1995/170_170_170/19981001/fr",
       "type": "Expression",
       "references": {
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/cc/1995/170_170_170/19981001/fr/docx",
+          "https://fedlex.data.admin.ch/eli/cc/1995/170_170_170/19981001/fr/pdf-a"
+        ]
       },
       "attributes": {
         "title": {
@@ -109,6 +123,45 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/1995/170_170_170/19981001/fr/docx",
+      "type": "Manifestation",
+      "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/1995/170_170_170/19981001/fr/docx/fedlex-data-admin-ch-eli-cc-1995-170_170_170-19981001-fr-docx.docx"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1995/170_170_170/19981001/fr/docx/fedlex-data-admin-ch-eli-cc-1995-170_170_170-19981001-fr-docx.docx"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/1995/170_170_170/19981001/fr/pdf-a",
+      "type": "Manifestation",
+      "attributes": {
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": true
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/1995/170_170_170/19981001/fr/pdf-a/fedlex-data-admin-ch-eli-cc-1995-170_170_170-19981001-fr-pdf-a.pdf"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1995/170_170_170/19981001/fr/pdf-a/fedlex-data-admin-ch-eli-cc-1995-170_170_170-19981001-fr-pdf-a.pdf"
+        }
+      }
+    },
+    {
       "uri": "http://publications.europa.eu/resource/authority/language/ITA",
       "type": [
         "Concept",
@@ -123,7 +176,6 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/1995/170_170_170/19981001/graph",
   "facets": {
     "consolidates": [
       {
@@ -164,14 +216,14 @@
           "http://publications.europa.eu/resource/authority/language/ITA": {
             "manifestation": [
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/1998/2288_2288_2288/it/doc/fedlex-data-admin-ch-eli-oc-1998-2288_2288_2288-it-doc.doc",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/1998/2288_2288_2288/it/doc"
-              },
-              {
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/1998/2288_2288_2288/it/pdf-a/fedlex-data-admin-ch-eli-oc-1998-2288_2288_2288-it-pdf-a.pdf",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/1998/2288_2288_2288/it/pdf-a"
+              },
+              {
+                "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
+                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/1998/2288_2288_2288/it/doc/fedlex-data-admin-ch-eli-oc-1998-2288_2288_2288-it-doc.doc",
+                "uri": "https://fedlex.data.admin.ch/eli/oc/1998/2288_2288_2288/it/doc"
               }
             ],
             "memorialLabel": "RU 1998 2288",
@@ -186,29 +238,77 @@
     "classifiedByTaxonomyEntryLabel_raw": "510.107.0",
     "consolidationAbstract": {
       "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
+      "basicAct": "https://fedlex.data.admin.ch/eli/oc/1995/170_170_170",
       "typeDocument": "https://fedlex.data.admin.ch/vocabulary/resource-type/29",
       "titles": {
         "http://publications.europa.eu/resource/authority/language/DEU": {
-          "titleShort": "DR 04",
+          "titleShort": "DRA",
           "title": "Dienstreglement der Armee vom 22. Juni 1994 (DRA)"
         },
         "http://publications.europa.eu/resource/authority/language/FRA": {
-          "titleShort": "RS 04",
-          "title": "Règlement de service de l'armée (RSA) du 22 juin 1994"
+          "titleShort": "RSA",
+          "title": "Règlement de service de l'armée du 22 juin 1994 (RSA)"
         },
         "http://publications.europa.eu/resource/authority/language/ITA": {
-          "titleShort": "RS 04",
+          "titleShort": "RSE",
           "title": "Regolamento di servizio dell'esercito del 22  giugno 1994 (RSE)"
         }
       }
     },
     "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/7253",
-    "classifiedByTaxonomyEntryLabel_sort": "00510.00107.00000",
+    "classifiedByTaxonomyEntryLabel_sort": "510.107.000",
     "theme": {
       "themeId": "5",
       "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/7227"
     },
     "impacts": [
+      {
+        "impactDate": "1998-10-01",
+        "commentFrom": {
+          "fr": "I à III"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1998/2288_2288_2288",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "historicalImpactForLanguage": false,
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "decisionDate": "1998-09-09",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "1998-10-01",
+        "commentFrom": {
+          "de": "V 09.09.1998 (II, III)"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "de": "Anhang 2"
+        },
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1998/2288_2288_2288",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "historicalImpactForLanguage": false,
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "1998-10-01",
+        "commentFrom": {
+          "de": "I-III"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1998/2288_2288_2288",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "historicalImpactForLanguage": false,
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "decisionDate": "1998-09-09",
+        "historicalImpact": false
+      },
       {
         "impactDate": "1998-10-01",
         "commentFrom": {
@@ -222,6 +322,7 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/ITA"
         ],
+        "historicalImpactForLanguage": false,
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "historicalImpact": false
       },
@@ -235,20 +336,7 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/ITA"
         ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "decisionDate": "1998-09-09",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "1998-10-01",
-        "commentFrom": {
-          "fr": "I à III"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1998/2288_2288_2288",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
+        "historicalImpactForLanguage": false,
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "decisionDate": "1998-09-09",
         "historicalImpact": false
@@ -266,45 +354,18 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/FRA"
         ],
+        "historicalImpactForLanguage": false,
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "1998-10-01",
-        "commentFrom": {
-          "de": "V 09.09.1998 (II, III)"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "de": "Anhang 2"
-        },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1998/2288_2288_2288",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "1998-10-01",
-        "commentFrom": {
-          "de": "I-III"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1998/2288_2288_2288",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "decisionDate": "1998-09-09",
         "historicalImpact": false
       }
     ],
+    "groupIdentifier": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/7253",
     "classifiedByTaxonomyEntryLabel": {
       "de": "SR 510.107.0",
       "fr": "RS 510.107.0",
       "it": "RS 510.107.0"
     }
   },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/1995/170_170_170/19981001/graph",
   "timestampms": null
 }

@@ -6,8 +6,18 @@
       "Work"
     ],
     "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1999-06-30T22:00:00.000Z"
+        ]
+      },
       "dateEndApplicability": {
         "xsd:date": "2003-03-31"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1999-06-30T22:00:00.000Z"
+        ]
       },
       "isMemberOf": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/cc/1999/276"
@@ -67,7 +77,11 @@
       "uri": "https://fedlex.data.admin.ch/eli/cc/1999/276/19990701/fr",
       "type": "Expression",
       "references": {
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/cc/1999/276/19990701/fr/pdf-a",
+          "https://fedlex.data.admin.ch/eli/cc/1999/276/19990701/fr/docx"
+        ]
       },
       "attributes": {
         "title": {
@@ -116,6 +130,50 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/1999/276/19990701/fr/pdf-a",
+      "type": "Manifestation",
+      "attributes": {
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": true
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/1999/276/19990701/fr/pdf-a/fedlex-data-admin-ch-eli-cc-1999-276-19990701-fr-pdf-a.pdf"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "numberOfPages": {
+          "xsd:int": [
+            18
+          ]
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1999/276/19990701/fr/pdf-a/fedlex-data-admin-ch-eli-cc-1999-276-19990701-fr-pdf-a.pdf"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/1999/276/19990701/fr/docx",
+      "type": "Manifestation",
+      "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/1999/276/19990701/fr/docx/fedlex-data-admin-ch-eli-cc-1999-276-19990701-fr-docx.docx"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1999/276/19990701/fr/docx/fedlex-data-admin-ch-eli-cc-1999-276-19990701-fr-docx.docx"
+        }
+      }
+    },
+    {
       "uri": "http://publications.europa.eu/resource/authority/language/DEU",
       "type": [
         "Concept",
@@ -123,7 +181,6 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/1999/276/19990701/graph",
   "facets": {
     "consolidates": [
       {
@@ -187,6 +244,7 @@
     "consolidationAbstract": {
       "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
       "dateNoLongerInForce": "2018-01-01",
+      "basicAct": "https://fedlex.data.admin.ch/eli/oc/1999/276",
       "typeDocument": "https://fedlex.data.admin.ch/vocabulary/resource-type/29",
       "titles": {
         "http://publications.europa.eu/resource/authority/language/DEU": {
@@ -204,7 +262,7 @@
       }
     },
     "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/8316",
-    "classifiedByTaxonomyEntryLabel_sort": "00680.00011",
+    "classifiedByTaxonomyEntryLabel_sort": "680.110",
     "theme": {
       "themeId": "6",
       "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/7743"
@@ -215,8 +273,21 @@
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/1999/276",
         "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "historicalImpactForLanguage": false,
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "decisionDate": "1999-07-01",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "1999-07-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1999/276",
+        "language": [
           "http://publications.europa.eu/resource/authority/language/DEU"
         ],
+        "historicalImpactForLanguage": false,
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
         "decisionDate": "1999-07-01",
         "historicalImpact": false
@@ -228,27 +299,19 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/ITA"
         ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "decisionDate": "1999-07-01",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "1999-07-01",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1999/276",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
+        "historicalImpactForLanguage": false,
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
         "decisionDate": "1999-07-01",
         "historicalImpact": false
       }
     ],
+    "groupIdentifier": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/8316",
     "classifiedByTaxonomyEntryLabel": {
       "de": "SR 680.11",
       "fr": "RS 680.11",
       "it": "RS 680.11"
     }
   },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/1999/276/19990701/graph",
   "timestampms": null
 }

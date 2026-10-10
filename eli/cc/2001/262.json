@@ -15,30 +15,24 @@
       "basicAct": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/oc/2001/262"
       },
-      "typeDocument": {
-        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/29"
-      },
       "dateEntryInForce": {
         "xsd:date": "2001-06-28"
+      },
+      "typeDocument": {
+        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/29"
       }
     },
     "references": {
-      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/11378",
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/cc/2001/262/de",
         "https://fedlex.data.admin.ch/eli/cc/2001/262/fr",
         "https://fedlex.data.admin.ch/eli/cc/2001/262/it"
-      ]
+      ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/11378"
     }
   },
   "included": [
-    {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/11378",
-      "type": [
-        "Concept",
-        "LegalTaxonomy"
-      ]
-    },
     {
       "uri": "https://fedlex.data.admin.ch/eli/cc/2001/262/de",
       "type": "Expression",
@@ -47,7 +41,7 @@
       },
       "attributes": {
         "title": {
-          "xsd:string": "Verordnung <bd>vom 27. Juni 2001</bd> über Massnahmen gegenüber Liberia"
+          "xsd:string": "Verordnung vom 27. Juni 2001 über Massnahmen gegenüber Liberia"
         }
       }
     },
@@ -59,7 +53,7 @@
       },
       "attributes": {
         "title": {
-          "xsd:string": "Ordonnance <bd>du 27 juin 2001</bd> instituant des mesures à l'encontre du Liberia"
+          "xsd:string": "Ordonnance du 27 juin 2001 instituant des mesures à l'encontre du Liberia"
         }
       }
     },
@@ -71,9 +65,23 @@
       },
       "attributes": {
         "title": {
-          "xsd:string": "Ordinanza <bd>del 27 giugno 2001</bd> che istituisce provvedimenti nei confronti della Liberia"
+          "xsd:string": "Ordinanza del 27 giugno 2001 che istituisce provvedimenti nei confronti della Liberia"
         }
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/11378",
+      "type": [
+        "Concept",
+        "LegalTaxonomy"
+      ]
     },
     {
       "uri": "http://publications.europa.eu/resource/authority/language/DEU",
@@ -97,20 +105,13 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/2001/262/graph",
   "facets": {
-    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
     "consolidates": [
       {
         "dateDocument": "2002-06-19",
         "expression": {
           "http://publications.europa.eu/resource/authority/language/DEU": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2002/295/de/pdf-x/fedlex-data-admin-ch-eli-oc-2002-295-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2002/295/de/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2002/295/de/doc/fedlex-data-admin-ch-eli-oc-2002-295-de-doc.doc",
@@ -136,11 +137,6 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2002/295/fr/doc/fedlex-data-admin-ch-eli-oc-2002-295-fr-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2002/295/fr/doc"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2002/295/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2002-295-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2002/295/fr/pdf-x"
               }
             ],
             "memorialLabel": "RO 2002 1949",
@@ -152,11 +148,6 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2002/295/it/pdf-a/fedlex-data-admin-ch-eli-oc-2002-295-it-pdf-a.pdf",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2002/295/it/pdf-a"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2002/295/it/pdf-x/fedlex-data-admin-ch-eli-oc-2002-295-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2002/295/it/pdf-x"
               },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
@@ -186,44 +177,29 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2001/262/de/doc/fedlex-data-admin-ch-eli-oc-2001-262-de-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2001/262/de/doc"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2001/262/de/pdf-x/fedlex-data-admin-ch-eli-oc-2001-262-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2001/262/de/pdf-x"
               }
             ],
             "memorialLabel": "AS 2001 1686",
-            "title": "Verordnung <bd> über Massnahmen gegenüber Liberia"
+            "title": "Verordnung über Massnahmen gegenüber Liberia"
           },
           "http://publications.europa.eu/resource/authority/language/FRA": {
             "manifestation": [
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2001/262/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2001-262-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2001/262/fr/pdf-x"
+                "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
+                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2001/262/fr/doc/fedlex-data-admin-ch-eli-oc-2001-262-fr-doc.doc",
+                "uri": "https://fedlex.data.admin.ch/eli/oc/2001/262/fr/doc"
               },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2001/262/fr/pdf-a/fedlex-data-admin-ch-eli-oc-2001-262-fr-pdf-a.pdf",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2001/262/fr/pdf-a"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2001/262/fr/doc/fedlex-data-admin-ch-eli-oc-2001-262-fr-doc.doc",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2001/262/fr/doc"
               }
             ],
             "memorialLabel": "RO 2001 1686",
-            "title": "Ordonnance <bd> instituant des mesures à l'encontre du Liberia"
+            "title": "Ordonnance instituant des mesures à l'encontre du Liberia"
           },
           "http://publications.europa.eu/resource/authority/language/ITA": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2001/262/it/pdf-x/fedlex-data-admin-ch-eli-oc-2001-262-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2001/262/it/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2001/262/it/pdf-a/fedlex-data-admin-ch-eli-oc-2001-262-it-pdf-a.pdf",
@@ -236,7 +212,7 @@
               }
             ],
             "memorialLabel": "RU 2001 1686",
-            "title": "Ordinanza <bd> che istituisce provvedimenti nei confronti della Liberia"
+            "title": "Ordinanza che istituisce provvedimenti nei confronti della Liberia"
           }
         },
         "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/116",
@@ -257,15 +233,10 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2005/43/de/doc/fedlex-data-admin-ch-eli-oc-2005-43-de-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2005/43/de/doc"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2005/43/de/pdf-x/fedlex-data-admin-ch-eli-oc-2005-43-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2005/43/de/pdf-x"
               }
             ],
             "memorialLabel": "AS 2005 313",
-            "title": "Verordnung <bd> über Massnahmen gegenüber Liberia"
+            "title": "Verordnung über Massnahmen gegenüber Liberia"
           },
           "http://publications.europa.eu/resource/authority/language/FRA": {
             "manifestation": [
@@ -278,15 +249,10 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2005/43/fr/doc/fedlex-data-admin-ch-eli-oc-2005-43-fr-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2005/43/fr/doc"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2005/43/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2005-43-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2005/43/fr/pdf-x"
               }
             ],
             "memorialLabel": "RO 2005 313",
-            "title": "Ordonnance <bd> instituant des mesures à l'encontre du Libéria"
+            "title": "Ordonnance instituant des mesures à l'encontre du Libéria"
           },
           "http://publications.europa.eu/resource/authority/language/ITA": {
             "manifestation": [
@@ -299,15 +265,10 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2005/43/it/pdf-a/fedlex-data-admin-ch-eli-oc-2005-43-it-pdf-a.pdf",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2005/43/it/pdf-a"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2005/43/it/pdf-x/fedlex-data-admin-ch-eli-oc-2005-43-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2005/43/it/pdf-x"
               }
             ],
             "memorialLabel": "RU 2005 313",
-            "title": "Ordinanza <bd> che istituisce provvedimenti nei confronti della Liberia"
+            "title": "Ordinanza che istituisce provvedimenti nei confronti della Liberia"
           }
         },
         "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/116",
@@ -328,11 +289,6 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2002/631/de/doc/fedlex-data-admin-ch-eli-oc-2002-631-de-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2002/631/de/doc"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2002/631/de/pdf-x/fedlex-data-admin-ch-eli-oc-2002-631-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2002/631/de/pdf-x"
               }
             ],
             "memorialLabel": "AS 2002 3964",
@@ -340,11 +296,6 @@
           },
           "http://publications.europa.eu/resource/authority/language/FRA": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2002/631/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2002-631-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2002/631/fr/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2002/631/fr/doc/fedlex-data-admin-ch-eli-oc-2002-631-fr-doc.doc",
@@ -361,11 +312,6 @@
           },
           "http://publications.europa.eu/resource/authority/language/ITA": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2002/631/it/pdf-x/fedlex-data-admin-ch-eli-oc-2002-631-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2002/631/it/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2002/631/it/doc/fedlex-data-admin-ch-eli-oc-2002-631-it-doc.doc",
@@ -391,11 +337,6 @@
           "http://publications.europa.eu/resource/authority/language/DEU": {
             "manifestation": [
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2003/324/de/pdf-x/fedlex-data-admin-ch-eli-oc-2003-324-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2003/324/de/pdf-x"
-              },
-              {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2003/324/de/doc/fedlex-data-admin-ch-eli-oc-2003-324-de-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2003/324/de/doc"
@@ -417,11 +358,6 @@
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2003/324/fr/doc"
               },
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2003/324/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2003-324-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2003/324/fr/pdf-x"
-              },
-              {
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2003/324/fr/pdf-a/fedlex-data-admin-ch-eli-oc-2003-324-fr-pdf-a.pdf",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2003/324/fr/pdf-a"
@@ -432,11 +368,6 @@
           },
           "http://publications.europa.eu/resource/authority/language/ITA": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2003/324/it/pdf-x/fedlex-data-admin-ch-eli-oc-2003-324-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2003/324/it/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2003/324/it/doc/fedlex-data-admin-ch-eli-oc-2003-324-it-doc.doc",
@@ -470,11 +401,6 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2003/323/de/doc/fedlex-data-admin-ch-eli-oc-2003-323-de-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2003/323/de/doc"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2003/323/de/pdf-x/fedlex-data-admin-ch-eli-oc-2003-323-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2003/323/de/pdf-x"
               }
             ],
             "memorialLabel": "AS 2003 2185",
@@ -491,11 +417,6 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2003/323/fr/pdf-a/fedlex-data-admin-ch-eli-oc-2003-323-fr-pdf-a.pdf",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2003/323/fr/pdf-a"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2003/323/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2003-323-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2003/323/fr/pdf-x"
               }
             ],
             "memorialLabel": "RO 2003 2185",
@@ -507,11 +428,6 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2003/323/it/pdf-a/fedlex-data-admin-ch-eli-oc-2003-323-it-pdf-a.pdf",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2003/323/it/pdf-a"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2003/323/it/pdf-x/fedlex-data-admin-ch-eli-oc-2003-323-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2003/323/it/pdf-x"
               },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
@@ -528,28 +444,383 @@
         "uri": "https://fedlex.data.admin.ch/eli/oc/2003/323"
       }
     ],
-    "sortingDate": "2005-01-20",
-    "theme": {
-      "themeId": "9",
-      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/10385"
+    "calculatedEndDate": "2005-01-19",
+    "abrogationSourceUri": "https://fedlex.data.admin.ch/eli/oc/2005/43",
+    "baseActReference": {
+      "de": "AS 2001 1686",
+      "it": "RU 2001 1686",
+      "fr": "RO 2001 1686"
     },
+    "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/116",
     "impacts": [
       {
-        "impactDate": "2003-07-09",
+        "impactDate": "2003-01-01",
         "commentFrom": {
-          "de": "I"
+          "de": "V 30.10.2002 (I)"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030709/de/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030709-de-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2003/324",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "de": "Art. 5-8"
+        },
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/631",
         "language": [
           "http://publications.europa.eu/resource/authority/language/DEU"
         ],
+        "consolidatedByPdf2": {
+          "de": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030101-de-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/2",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030101",
+        "historicalImpact": false,
+        "consolidationDate": "2003-01-01"
+      },
+      {
+        "impactDate": "2003-01-01",
+        "commentFrom": {
+          "it": "I"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/631",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "consolidatedByPdf2": {
+          "it": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030101/it/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030101-it-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030101",
+        "decisionDate": "2002-10-30",
+        "historicalImpact": false,
+        "consolidationDate": "2003-01-01"
+      },
+      {
+        "impactDate": "2003-01-01",
+        "commentFrom": {
+          "de": "V 30.10.2002 (I)"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "de": "Ingr.; Art. 3<i>a</i>, 4, 9"
+        },
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/631",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "consolidatedByPdf2": {
+          "de": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030101-de-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030101",
+        "historicalImpact": false,
+        "consolidationDate": "2003-01-01"
+      },
+      {
+        "impactDate": "2003-01-01",
+        "commentFrom": {
+          "it": "O 30.10.2002 (I)"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "it": "art. 5-8"
+        },
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/631",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "consolidatedByPdf2": {
+          "it": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030101/it/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030101-it-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/2",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030101",
+        "historicalImpact": false,
+        "consolidationDate": "2003-01-01"
+      },
+      {
+        "impactDate": "2003-01-01",
+        "commentFrom": {
+          "de": "I"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/631",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "consolidatedByPdf2": {
+          "de": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030101-de-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030101",
+        "decisionDate": "2002-10-30",
+        "historicalImpact": false,
+        "consolidationDate": "2003-01-01"
+      },
+      {
+        "impactDate": "2002-06-28",
+        "commentFrom": {
+          "it": "I, II"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/295",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "consolidatedByPdf2": {
+          "it": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20020628/it/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20020628-it-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20020628",
+        "decisionDate": "2002-06-19",
+        "historicalImpact": false,
+        "consolidationDate": "2002-06-28"
+      },
+      {
+        "impactDate": "2003-01-01",
+        "commentFrom": {
+          "fr": "O 30.10.2002 (I)"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "fr": "Préamb.; art. 3<i>a</i>, 4, 9"
+        },
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/631",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "consolidatedByPdf2": {
+          "fr": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030101-fr-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030101",
+        "historicalImpact": false,
+        "consolidationDate": "2003-01-01"
+      },
+      {
+        "impactDate": "2003-01-01",
+        "commentFrom": {
+          "fr": "O 30.10.2002 (I)"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "fr": "Art. 5 à 8"
+        },
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/631",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "consolidatedByPdf2": {
+          "fr": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030101-fr-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/2",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030101",
+        "historicalImpact": false,
+        "consolidationDate": "2003-01-01"
+      },
+      {
+        "impactDate": "2003-01-01",
+        "commentFrom": {
+          "fr": "I"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/631",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "consolidatedByPdf2": {
+          "fr": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030101-fr-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030101",
+        "decisionDate": "2002-10-30",
+        "historicalImpact": false,
+        "consolidationDate": "2003-01-01"
+      },
+      {
+        "impactDate": "2001-06-28",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2001/262",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "consolidatedByPdf2": {
+          "de": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20010628/de/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20010628-de-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20010628",
+        "decisionDate": "2001-06-28",
+        "historicalImpact": false,
+        "consolidationDate": "2001-06-28"
+      },
+      {
+        "impactDate": "2003-07-09",
+        "commentFrom": {
+          "it": "I"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2003/323",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "consolidatedByPdf2": {
+          "it": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030709/it/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030709-it-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030709",
         "decisionDate": "2003-07-02",
         "historicalImpact": false,
         "consolidationDate": "2003-07-09"
+      },
+      {
+        "impactDate": "2003-07-09",
+        "commentFrom": {
+          "fr": "O 02.07.2003 (I)"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "fr": "Art. 2<i>a</i>"
+        },
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2003/323",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "consolidatedByPdf2": {
+          "fr": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030709/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030709-fr-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030709",
+        "historicalImpact": false,
+        "consolidationDate": "2003-07-09"
+      },
+      {
+        "impactDate": "2003-07-09",
+        "commentFrom": {
+          "it": "O 02.07.2003 (I)"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "it": "art. 2<i>a</i>"
+        },
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2003/323",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "consolidatedByPdf2": {
+          "it": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030709/it/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030709-it-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030709",
+        "historicalImpact": false,
+        "consolidationDate": "2003-07-09"
+      },
+      {
+        "impactDate": "2003-07-09",
+        "commentFrom": {
+          "de": "I"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2003/323",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "consolidatedByPdf2": {
+          "de": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030709/de/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030709-de-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030709",
+        "decisionDate": "2003-07-02",
+        "historicalImpact": false,
+        "consolidationDate": "2003-07-09"
+      },
+      {
+        "impactDate": "2003-07-09",
+        "commentFrom": {
+          "fr": "I"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2003/323",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "consolidatedByPdf2": {
+          "fr": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030709/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030709-fr-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030709",
+        "decisionDate": "2003-07-02",
+        "historicalImpact": false,
+        "consolidationDate": "2003-07-09"
+      },
+      {
+        "impactDate": "2003-07-09",
+        "commentFrom": {
+          "de": "V 02.07.2003 (I)"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "de": "Art. 2<i>a</i>"
+        },
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2003/323",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "consolidatedByPdf2": {
+          "de": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030709/de/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030709-de-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030709",
+        "historicalImpact": false,
+        "consolidationDate": "2003-07-09"
+      },
+      {
+        "impactDate": "2003-07-09",
+        "commentFrom": {
+          "it": "I"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2003/324",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "consolidatedByPdf2": {
+          "it": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030709/it/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030709-it-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030709",
+        "decisionDate": "2003-07-02",
+        "historicalImpact": false,
+        "consolidationDate": "2003-07-09"
+      },
+      {
+        "impactDate": "2003-07-09",
+        "commentFrom": {
+          "fr": "I"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2003/324",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "consolidatedByPdf2": {
+          "fr": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030709/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030709-fr-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030709",
+        "decisionDate": "2003-07-02",
+        "historicalImpact": false,
+        "consolidationDate": "2003-07-09"
+      },
+      {
+        "impactDate": "2005-01-20",
+        "commentFrom": {
+          "de": "Art. 10"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2005/43",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
+        "decisionDate": "2005-01-19",
+        "historicalImpact": false
       },
       {
         "impactDate": "2005-01-20",
@@ -580,196 +851,10 @@
         "historicalImpact": false
       },
       {
-        "impactDate": "2005-01-20",
-        "commentFrom": {
-          "de": "Art. 10"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2005/43",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
-        "decisionDate": "2005-01-19",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "2003-01-01",
-        "commentFrom": {
-          "it": "O 30.10.2002 (I)"
-        },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030101/it/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030101-it-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "it": "art. 5-8"
-        },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/631",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/2",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030101",
-        "historicalImpact": false,
-        "consolidationDate": "2003-01-01"
-      },
-      {
-        "impactDate": "2003-01-01",
-        "commentFrom": {
-          "it": "O 30.10.2002 (I)"
-        },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030101/it/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030101-it-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "it": "ingr.; art. 3<i>a</i>, 4, 9"
-        },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/631",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030101",
-        "historicalImpact": false,
-        "consolidationDate": "2003-01-01"
-      },
-      {
-        "impactDate": "2003-01-01",
-        "commentFrom": {
-          "fr": "O 30.10.2002 (I)"
-        },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030101-fr-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "fr": "Préamb.; art. 3<i>a</i>, 4, 9"
-        },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/631",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030101",
-        "historicalImpact": false,
-        "consolidationDate": "2003-01-01"
-      },
-      {
-        "impactDate": "2003-01-01",
-        "commentFrom": {
-          "fr": "O 30.10.2002 (I)"
-        },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030101-fr-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "fr": "Art. 5 à 8"
-        },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/631",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/2",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030101",
-        "historicalImpact": false,
-        "consolidationDate": "2003-01-01"
-      },
-      {
-        "impactDate": "2003-01-01",
-        "commentFrom": {
-          "de": "V 30.10.2002 (I)"
-        },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030101-de-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "de": "Art. 5-8"
-        },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/631",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/2",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030101",
-        "historicalImpact": false,
-        "consolidationDate": "2003-01-01"
-      },
-      {
-        "impactDate": "2003-01-01",
-        "commentFrom": {
-          "de": "V 30.10.2002 (I)"
-        },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030101-de-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "de": "Ingr.; Art. 3<i>a</i>, 4, 9"
-        },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/631",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030101",
-        "historicalImpact": false,
-        "consolidationDate": "2003-01-01"
-      },
-      {
-        "impactDate": "2003-07-09",
-        "commentFrom": {
-          "it": "O 02.07.2003 (I)"
-        },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030709/it/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030709-it-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "it": "all."
-        },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2003/324",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030709",
-        "historicalImpact": false,
-        "consolidationDate": "2003-07-09"
-      },
-      {
-        "impactDate": "2003-07-09",
-        "commentFrom": {
-          "it": "O 02.07.2003 (I)"
-        },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030709/it/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030709-it-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "it": "art. 2<i>a</i>"
-        },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2003/323",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030709",
-        "historicalImpact": false,
-        "consolidationDate": "2003-07-09"
-      },
-      {
         "impactDate": "2003-07-09",
         "commentFrom": {
           "fr": "O 02.07.2003 (I)"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030709/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030709-fr-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "fr": "Art. 2<i>a</i>"
-        },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2003/323",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030709",
-        "historicalImpact": false,
-        "consolidationDate": "2003-07-09"
-      },
-      {
-        "impactDate": "2003-07-09",
-        "commentFrom": {
-          "fr": "O 02.07.2003 (I)"
-        },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030709/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030709-fr-pdf-a.pdf",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
         "commentTo": {
           "fr": "Annexe"
@@ -778,17 +863,35 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/FRA"
         ],
+        "consolidatedByPdf2": {
+          "fr": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030709/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030709-fr-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030709",
         "historicalImpact": false,
         "consolidationDate": "2003-07-09"
       },
       {
+        "impactDate": "2001-06-28",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2001/262",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "consolidatedByPdf2": {
+          "fr": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20010628/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20010628-fr-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20010628",
+        "decisionDate": "2001-06-28",
+        "historicalImpact": false,
+        "consolidationDate": "2001-06-28"
+      },
+      {
         "impactDate": "2003-07-09",
         "commentFrom": {
           "de": "V 02.07.2003 (I)"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030709/de/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030709-de-pdf-a.pdf",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
         "commentTo": {
           "de": "Anhang"
@@ -797,160 +900,102 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/DEU"
         ],
+        "consolidatedByPdf2": {
+          "de": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030709/de/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030709-de-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030709",
         "historicalImpact": false,
         "consolidationDate": "2003-07-09"
       },
       {
-        "impactDate": "2003-07-09",
-        "commentFrom": {
-          "de": "V 02.07.2003 (I)"
-        },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030709/de/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030709-de-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "de": "Art. 2<i>a</i>"
-        },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2003/323",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030709",
-        "historicalImpact": false,
-        "consolidationDate": "2003-07-09"
-      },
-      {
-        "impactDate": "2003-07-09",
-        "commentFrom": {
-          "it": "I"
-        },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030709/it/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030709-it-pdf-a.pdf",
+        "impactDate": "2001-06-28",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2003/323",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2001/262",
         "language": [
           "http://publications.europa.eu/resource/authority/language/ITA"
         ],
+        "consolidatedByPdf2": {
+          "it": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20010628/it/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20010628-it-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20010628",
+        "decisionDate": "2001-06-28",
+        "historicalImpact": false,
+        "consolidationDate": "2001-06-28"
+      },
+      {
+        "impactDate": "2003-07-09",
+        "commentFrom": {
+          "it": "O 02.07.2003 (I)"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "it": "all."
+        },
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2003/324",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "consolidatedByPdf2": {
+          "it": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030709/it/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030709-it-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030709",
+        "historicalImpact": false,
+        "consolidationDate": "2003-07-09"
+      },
+      {
+        "impactDate": "2003-07-09",
+        "commentFrom": {
+          "de": "I"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2003/324",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "consolidatedByPdf2": {
+          "de": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030709/de/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030709-de-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030709",
         "decisionDate": "2003-07-02",
         "historicalImpact": false,
         "consolidationDate": "2003-07-09"
-      },
-      {
-        "impactDate": "2003-01-01",
-        "commentFrom": {
-          "fr": "I"
-        },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030101-fr-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/631",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030101",
-        "decisionDate": "2002-10-30",
-        "historicalImpact": false,
-        "consolidationDate": "2003-01-01"
-      },
-      {
-        "impactDate": "2003-01-01",
-        "commentFrom": {
-          "it": "I"
-        },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030101/it/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030101-it-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/631",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030101",
-        "decisionDate": "2002-10-30",
-        "historicalImpact": false,
-        "consolidationDate": "2003-01-01"
-      },
-      {
-        "impactDate": "2002-06-28",
-        "commentFrom": {
-          "it": "I, II"
-        },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20020628/it/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20020628-it-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/295",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20020628",
-        "decisionDate": "2002-06-19",
-        "historicalImpact": false,
-        "consolidationDate": "2002-06-28"
-      },
-      {
-        "impactDate": "2003-01-01",
-        "commentFrom": {
-          "de": "I"
-        },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030101-de-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/631",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030101",
-        "decisionDate": "2002-10-30",
-        "historicalImpact": false,
-        "consolidationDate": "2003-01-01"
       },
       {
         "impactDate": "2002-06-28",
         "commentFrom": {
           "de": "I, II"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20020628/de/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20020628-de-pdf-a.pdf",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/295",
         "language": [
           "http://publications.europa.eu/resource/authority/language/DEU"
         ],
+        "consolidatedByPdf2": {
+          "de": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20020628/de/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20020628-de-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20020628",
         "decisionDate": "2002-06-19",
         "historicalImpact": false,
         "consolidationDate": "2002-06-28"
-      },
-      {
-        "impactDate": "2003-07-09",
-        "commentFrom": {
-          "fr": "I"
-        },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030709/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030709-fr-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2003/323",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030709",
-        "decisionDate": "2003-07-02",
-        "historicalImpact": false,
-        "consolidationDate": "2003-07-09"
       },
       {
         "impactDate": "2002-06-28",
         "commentFrom": {
           "fr": "I, II"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20020628/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20020628-fr-pdf-a.pdf",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/295",
         "language": [
           "http://publications.europa.eu/resource/authority/language/FRA"
         ],
+        "consolidatedByPdf2": {
+          "fr": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20020628/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20020628-fr-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20020628",
         "decisionDate": "2002-06-19",
@@ -958,110 +1003,64 @@
         "consolidationDate": "2002-06-28"
       },
       {
-        "impactDate": "2003-07-09",
+        "impactDate": "2003-01-01",
         "commentFrom": {
-          "de": "I"
+          "it": "O 30.10.2002 (I)"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030709/de/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030709-de-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2003/323",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030709",
-        "decisionDate": "2003-07-02",
-        "historicalImpact": false,
-        "consolidationDate": "2003-07-09"
-      },
-      {
-        "impactDate": "2003-07-09",
-        "commentFrom": {
-          "it": "I"
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "it": "ingr.; art. 3<i>a</i>, 4, 9"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030709/it/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030709-it-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2003/324",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2002/631",
         "language": [
           "http://publications.europa.eu/resource/authority/language/ITA"
         ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030709",
-        "decisionDate": "2003-07-02",
-        "historicalImpact": false,
-        "consolidationDate": "2003-07-09"
-      },
-      {
-        "impactDate": "2001-06-28",
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20010628/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20010628-fr-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2001/262",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20010628",
-        "decisionDate": "2001-06-28",
-        "historicalImpact": false,
-        "consolidationDate": "2001-06-28"
-      },
-      {
-        "impactDate": "2003-07-09",
-        "commentFrom": {
-          "fr": "I"
+        "consolidatedByPdf2": {
+          "it": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030101/it/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030101-it-pdf-a.pdf"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20030709/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20030709-fr-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2003/324",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030709",
-        "decisionDate": "2003-07-02",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20030101",
         "historicalImpact": false,
-        "consolidationDate": "2003-07-09"
-      },
-      {
-        "impactDate": "2001-06-28",
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20010628/it/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20010628-it-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2001/262",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20010628",
-        "decisionDate": "2001-06-28",
-        "historicalImpact": false,
-        "consolidationDate": "2001-06-28"
-      },
-      {
-        "impactDate": "2001-06-28",
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2001/262/20010628/de/pdf-a/fedlex-data-admin-ch-eli-cc-2001-262-20010628-de-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2001/262",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2001/262/20010628",
-        "decisionDate": "2001-06-28",
-        "historicalImpact": false,
-        "consolidationDate": "2001-06-28"
+        "consolidationDate": "2003-01-01"
       }
     ],
     "title": {
-      "de": "Verordnung <bd>vom 27. Juni 2001</bd> über Massnahmen gegenüber Liberia",
-      "it": "Ordinanza <bd>del 27 giugno 2001</bd> che istituisce provvedimenti nei confronti della Liberia",
-      "fr": "Ordonnance <bd>du 27 juin 2001</bd> instituant des mesures à l'encontre du Liberia"
+      "de": "Verordnung vom 27. Juni 2001 über Massnahmen gegenüber Liberia",
+      "it": "Ordinanza del 27 giugno 2001 che istituisce provvedimenti nei confronti della Liberia",
+      "fr": "Ordonnance du 27 juin 2001 instituant des mesures à l'encontre du Liberia"
     },
     "classifiedByTaxonomyEntryLabel": {
       "de": "SR 946.208.1",
       "fr": "RS 946.208.1",
       "it": "RS 946.208.1"
     },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
+    },
+    "abrogationDecisionDate": "2005-01-19",
+    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
+    "abrogationSource": {
+      "de": "AS 2005 313",
+      "it": "RU 2005 313",
+      "fr": "RO 2005 313"
+    },
+    "sortingDateTime": "2003-07-08T22:00Z",
+    "classifiedByTaxonomyEntryLabel_raw": "946.208.1",
+    "sortingDate": "2005-01-20",
+    "classifiedByTaxonomyEntryLabel_sort": "946.208.100",
+    "theme": {
+      "themeId": "9",
+      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/10385"
+    },
     "archivingDate": "2003-07-09"
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/2001/262/graph",
   "timestampms": null
 }

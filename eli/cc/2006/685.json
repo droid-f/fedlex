@@ -15,30 +15,24 @@
       "basicAct": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/oc/2006/685"
       },
-      "typeDocument": {
-        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/3"
-      },
       "dateEntryInForce": {
         "xsd:date": "2007-01-01"
+      },
+      "typeDocument": {
+        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/3"
       }
     },
     "references": {
-      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/5642",
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/cc/2006/685/it",
         "https://fedlex.data.admin.ch/eli/cc/2006/685/fr",
         "https://fedlex.data.admin.ch/eli/cc/2006/685/de"
-      ]
+      ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/5642"
     }
   },
   "included": [
-    {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/5642",
-      "type": [
-        "Concept",
-        "LegalTaxonomy"
-      ]
-    },
     {
       "uri": "https://fedlex.data.admin.ch/eli/cc/2006/685/it",
       "type": "Expression",
@@ -47,7 +41,7 @@
       },
       "attributes": {
         "title": {
-          "xsd:string": "Regolamento <bd>del 20 giugno 2006</bd> del Tribunale penale federale"
+          "xsd:string": "Regolamento del 20 giugno 2006 del Tribunale penale federale"
         }
       }
     },
@@ -59,7 +53,7 @@
       },
       "attributes": {
         "title": {
-          "xsd:string": "Règlement <bd>du 20 juin 2006</bd> du Tribunal pénal fédéral"
+          "xsd:string": "Règlement du 20 juin 2006 du Tribunal pénal fédéral"
         }
       }
     },
@@ -71,9 +65,23 @@
       },
       "attributes": {
         "title": {
-          "xsd:string": "Reglement <bd>vom 20. Juni 2006</bd> für das Bundesstrafgericht"
+          "xsd:string": "Reglement vom 20. Juni 2006 für das Bundesstrafgericht"
         }
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/5642",
+      "type": [
+        "Concept",
+        "LegalTaxonomy"
+      ]
     },
     {
       "uri": "http://publications.europa.eu/resource/authority/language/ITA",
@@ -97,20 +105,13 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/2006/685/graph",
   "facets": {
-    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/48",
     "consolidates": [
       {
         "dateDocument": "2006-06-20",
         "expression": {
           "http://publications.europa.eu/resource/authority/language/DEU": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2006/685/de/pdf-x/fedlex-data-admin-ch-eli-oc-2006-685-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2006/685/de/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2006/685/de/doc/fedlex-data-admin-ch-eli-oc-2006-685-de-doc.doc",
@@ -123,36 +124,26 @@
               }
             ],
             "memorialLabel": "AS 2006 4459",
-            "title": "Reglement <bd> für das Bundesstrafgericht"
+            "title": "Reglement für das Bundesstrafgericht"
           },
           "http://publications.europa.eu/resource/authority/language/FRA": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2006/685/fr/pdf-a/fedlex-data-admin-ch-eli-oc-2006-685-fr-pdf-a.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2006/685/fr/pdf-a"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2006/685/fr/doc/fedlex-data-admin-ch-eli-oc-2006-685-fr-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2006/685/fr/doc"
               },
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2006/685/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2006-685-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2006/685/fr/pdf-x"
+                "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
+                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2006/685/fr/pdf-a/fedlex-data-admin-ch-eli-oc-2006-685-fr-pdf-a.pdf",
+                "uri": "https://fedlex.data.admin.ch/eli/oc/2006/685/fr/pdf-a"
               }
             ],
             "memorialLabel": "RO 2006 4459",
-            "title": "Règlement <bd> du Tribunal pénal fédéral"
+            "title": "Règlement du Tribunal pénal fédéral"
           },
           "http://publications.europa.eu/resource/authority/language/ITA": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2006/685/it/pdf-x/fedlex-data-admin-ch-eli-oc-2006-685-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2006/685/it/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2006/685/it/doc/fedlex-data-admin-ch-eli-oc-2006-685-it-doc.doc",
@@ -165,7 +156,7 @@
               }
             ],
             "memorialLabel": "RU 2006 4459",
-            "title": "Regolamento <bd> del Tribunale penale federale"
+            "title": "Regolamento del Tribunale penale federale"
           }
         },
         "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D16",
@@ -178,11 +169,6 @@
           "http://publications.europa.eu/resource/authority/language/DEU": {
             "manifestation": [
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2010/825/de/pdf-x/fedlex-data-admin-ch-eli-oc-2010-825-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2010/825/de/pdf-x"
-              },
-              {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2010/825/de/doc/fedlex-data-admin-ch-eli-oc-2010-825-de-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2010/825/de/doc"
@@ -194,7 +180,7 @@
               }
             ],
             "memorialLabel": "AS 2010 5809",
-            "title": "Organisationsreglement <bd> für das Bundesstrafgericht (Organisationsreglement BStGer, BStGerOR)"
+            "title": "Organisationsreglement für das Bundesstrafgericht (Organisationsreglement BStGer, BStGerOR)"
           },
           "http://publications.europa.eu/resource/authority/language/FRA": {
             "manifestation": [
@@ -204,26 +190,16 @@
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2010/825/fr/doc"
               },
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2010/825/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2010-825-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2010/825/fr/pdf-x"
-              },
-              {
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2010/825/fr/pdf-a/fedlex-data-admin-ch-eli-oc-2010-825-fr-pdf-a.pdf",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2010/825/fr/pdf-a"
               }
             ],
             "memorialLabel": "RO 2010 5809",
-            "title": "Règlement <bd> sur l'organisation du Tribunal pénal fédéral (Règlement sur l'organisation du TPF, ROTPF)"
+            "title": "Règlement sur l'organisation du Tribunal pénal fédéral (Règlement sur l'organisation du TPF, ROTPF)"
           },
           "http://publications.europa.eu/resource/authority/language/ITA": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2010/825/it/pdf-x/fedlex-data-admin-ch-eli-oc-2010-825-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2010/825/it/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2010/825/it/doc/fedlex-data-admin-ch-eli-oc-2010-825-it-doc.doc",
@@ -236,7 +212,7 @@
               }
             ],
             "memorialLabel": "RU 2010 5809",
-            "title": "Regolamento <bd> sull'organizzazione del Tribunale penale federale (Regolamento sull'organizzazione del TPF, ROTPF)"
+            "title": "Regolamento sull'organizzazione del Tribunale penale federale (Regolamento sull'organizzazione del TPF, ROTPF)"
           }
         },
         "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D16",
@@ -254,11 +230,6 @@
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2008/304/de/doc"
               },
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2008/304/de/pdf-x/fedlex-data-admin-ch-eli-oc-2008-304-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2008/304/de/pdf-x"
-              },
-              {
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2008/304/de/pdf-a/fedlex-data-admin-ch-eli-oc-2008-304-de-pdf-a.pdf",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2008/304/de/pdf-a"
@@ -273,11 +244,6 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2008/304/fr/pdf-a/fedlex-data-admin-ch-eli-oc-2008-304-fr-pdf-a.pdf",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2008/304/fr/pdf-a"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2008/304/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2008-304-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2008/304/fr/pdf-x"
               },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
@@ -299,11 +265,6 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2008/304/it/doc/fedlex-data-admin-ch-eli-oc-2008-304-it-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2008/304/it/doc"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2008/304/it/pdf-x/fedlex-data-admin-ch-eli-oc-2008-304-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2008/304/it/pdf-x"
               }
             ],
             "memorialLabel": "RU 2008 2115",
@@ -315,38 +276,93 @@
         "uri": "https://fedlex.data.admin.ch/eli/oc/2008/304"
       }
     ],
-    "sortingDate": "2011-01-01",
-    "theme": {
-      "themeId": "1",
-      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/4713"
+    "calculatedEndDate": "2010-12-31",
+    "abrogationSourceUri": "https://fedlex.data.admin.ch/eli/oc/2010/825",
+    "baseActReference": {
+      "de": "AS 2006 4459",
+      "it": "RU 2006 4459",
+      "fr": "RO 2006 4459"
     },
+    "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D16",
     "impacts": [
+      {
+        "impactDate": "2007-01-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2006/685",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "consolidatedByPdf2": {
+          "it": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2006/685/20070101/it/pdf-a/fedlex-data-admin-ch-eli-cc-2006-685-20070101-it-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2006/685/20070101",
+        "decisionDate": "2007-01-01",
+        "historicalImpact": false,
+        "consolidationDate": "2007-01-01"
+      },
       {
         "impactDate": "2008-01-01",
         "commentFrom": {
-          "de": "I"
+          "de": "Beschluss des BstGer 27.11.2007 (I)"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2006/685/20080101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2006-685-20080101-de-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "de": "Art. 10"
+        },
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2008/304",
         "language": [
           "http://publications.europa.eu/resource/authority/language/DEU"
         ],
+        "consolidatedByPdf2": {
+          "de": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2006/685/20080101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2006-685-20080101-de-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2006/685/20080101",
-        "decisionDate": "2007-11-27",
         "historicalImpact": false,
         "consolidationDate": "2008-01-01"
       },
       {
+        "impactDate": "2007-01-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2006/685",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "consolidatedByPdf2": {
+          "de": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2006/685/20070101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2006-685-20070101-de-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2006/685/20070101",
+        "decisionDate": "2007-01-01",
+        "historicalImpact": false,
+        "consolidationDate": "2007-01-01"
+      },
+      {
+        "impactDate": "2007-01-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2006/685",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "consolidatedByPdf2": {
+          "fr": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2006/685/20070101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2006-685-20070101-fr-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2006/685/20070101",
+        "decisionDate": "2007-01-01",
+        "historicalImpact": false,
+        "consolidationDate": "2007-01-01"
+      },
+      {
         "impactDate": "2011-01-01",
         "commentFrom": {
-          "it": "art. 23"
+          "de": "Art. 23"
         },
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2010/825",
         "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
+          "http://publications.europa.eu/resource/authority/language/DEU"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
         "decisionDate": "2010-08-31",
@@ -369,37 +385,41 @@
       {
         "impactDate": "2011-01-01",
         "commentFrom": {
-          "de": "Art. 23"
+          "it": "art. 23"
         },
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2010/825",
         "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
+          "http://publications.europa.eu/resource/authority/language/ITA"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
         "decisionDate": "2010-08-31",
         "historicalImpact": false
       },
       {
-        "impactDate": "2007-01-01",
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2006/685/20070101/it/pdf-a/fedlex-data-admin-ch-eli-cc-2006-685-20070101-it-pdf-a.pdf",
+        "impactDate": "2008-01-01",
+        "commentFrom": {
+          "fr": "I"
+        },
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2006/685",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2008/304",
         "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
+          "http://publications.europa.eu/resource/authority/language/FRA"
         ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2006/685/20070101",
-        "decisionDate": "2007-01-01",
+        "consolidatedByPdf2": {
+          "fr": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2006/685/20080101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2006-685-20080101-fr-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2006/685/20080101",
+        "decisionDate": "2007-11-27",
         "historicalImpact": false,
-        "consolidationDate": "2007-01-01"
+        "consolidationDate": "2008-01-01"
       },
       {
         "impactDate": "2008-01-01",
         "commentFrom": {
           "it": "D del TPF 27.11.2007 (I)"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2006/685/20080101/it/pdf-a/fedlex-data-admin-ch-eli-cc-2006-685-20080101-it-pdf-a.pdf",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
         "commentTo": {
           "it": "art. 10"
@@ -408,74 +428,30 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/ITA"
         ],
+        "consolidatedByPdf2": {
+          "it": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2006/685/20080101/it/pdf-a/fedlex-data-admin-ch-eli-cc-2006-685-20080101-it-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2006/685/20080101",
         "historicalImpact": false,
         "consolidationDate": "2008-01-01"
       },
       {
-        "impactDate": "2007-01-01",
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2006/685/20070101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2006-685-20070101-fr-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2006/685",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2006/685/20070101",
-        "decisionDate": "2007-01-01",
-        "historicalImpact": false,
-        "consolidationDate": "2007-01-01"
-      },
-      {
         "impactDate": "2008-01-01",
         "commentFrom": {
-          "fr": "A du TPF 27.11.2007 (I)"
+          "de": "I"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2006/685/20080101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2006-685-20080101-fr-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "fr": "Art. 10"
-        },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2008/304",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2006/685/20080101",
-        "historicalImpact": false,
-        "consolidationDate": "2008-01-01"
-      },
-      {
-        "impactDate": "2007-01-01",
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2006/685/20070101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2006-685-20070101-de-pdf-a.pdf",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2006/685",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2006/685/20070101",
-        "decisionDate": "2007-01-01",
-        "historicalImpact": false,
-        "consolidationDate": "2007-01-01"
-      },
-      {
-        "impactDate": "2008-01-01",
-        "commentFrom": {
-          "de": "Beschluss des BstGer 27.11.2007 (I)"
-        },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2006/685/20080101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2006-685-20080101-de-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "de": "Art. 10"
-        },
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2008/304",
         "language": [
           "http://publications.europa.eu/resource/authority/language/DEU"
         ],
+        "consolidatedByPdf2": {
+          "de": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2006/685/20080101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2006-685-20080101-de-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2006/685/20080101",
+        "decisionDate": "2007-11-27",
         "historicalImpact": false,
         "consolidationDate": "2008-01-01"
       },
@@ -484,12 +460,14 @@
         "commentFrom": {
           "it": "I"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2006/685/20080101/it/pdf-a/fedlex-data-admin-ch-eli-cc-2006-685-20080101-it-pdf-a.pdf",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2008/304",
         "language": [
           "http://publications.europa.eu/resource/authority/language/ITA"
         ],
+        "consolidatedByPdf2": {
+          "it": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2006/685/20080101/it/pdf-a/fedlex-data-admin-ch-eli-cc-2006-685-20080101-it-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2006/685/20080101",
         "decisionDate": "2007-11-27",
@@ -499,32 +477,62 @@
       {
         "impactDate": "2008-01-01",
         "commentFrom": {
-          "fr": "I"
+          "fr": "A du TPF 27.11.2007 (I)"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2006/685/20080101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2006-685-20080101-fr-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "fr": "Art. 10"
+        },
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2008/304",
         "language": [
           "http://publications.europa.eu/resource/authority/language/FRA"
         ],
+        "consolidatedByPdf2": {
+          "fr": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2006/685/20080101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2006-685-20080101-fr-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2006/685/20080101",
-        "decisionDate": "2007-11-27",
         "historicalImpact": false,
         "consolidationDate": "2008-01-01"
       }
     ],
     "title": {
-      "de": "Reglement <bd>vom 20. Juni 2006</bd> für das Bundesstrafgericht",
-      "it": "Regolamento <bd>del 20 giugno 2006</bd> del Tribunale penale federale",
-      "fr": "Règlement <bd>du 20 juin 2006</bd> du Tribunal pénal fédéral"
+      "de": "Reglement vom 20. Juni 2006 für das Bundesstrafgericht",
+      "it": "Regolamento del 20 giugno 2006 del Tribunale penale federale",
+      "fr": "Règlement du 20 juin 2006 du Tribunal pénal fédéral"
     },
     "classifiedByTaxonomyEntryLabel": {
       "de": "SR 173.710",
       "fr": "RS 173.710",
       "it": "RS 173.710"
     },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
+    },
+    "abrogationDecisionDate": "2010-08-31",
+    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/48",
+    "abrogationSource": {
+      "de": "AS 2010 5809",
+      "it": "RU 2010 5809",
+      "fr": "RO 2010 5809"
+    },
+    "sortingDateTime": "2007-12-31T23:00Z",
+    "classifiedByTaxonomyEntryLabel_raw": "173.710",
+    "sortingDate": "2011-01-01",
+    "classifiedByTaxonomyEntryLabel_sort": "173.710",
+    "theme": {
+      "themeId": "1",
+      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/4713"
+    },
     "archivingDate": "2008-01-01"
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/2006/685/graph",
   "timestampms": null
 }

@@ -6,8 +6,18 @@
       "Work"
     ],
     "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "2021-01-13T22:37:10.522Z"
+        ]
+      },
       "dateEndApplicability": {
         "xsd:date": "2021-07-31"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "2021-01-13T22:37:10.522Z"
+        ]
       },
       "isMemberOf": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/cc/2019/763"
@@ -35,7 +45,8 @@
           "https://fedlex.data.admin.ch/eli/cc/2019/763/20200101/en/doc",
           "https://fedlex.data.admin.ch/eli/cc/2019/763/20200101/en/docx",
           "https://fedlex.data.admin.ch/eli/cc/2019/763/20200101/en/html",
-          "https://fedlex.data.admin.ch/eli/cc/2019/763/20200101/en/pdf-a"
+          "https://fedlex.data.admin.ch/eli/cc/2019/763/20200101/en/pdf-a",
+          "https://fedlex.data.admin.ch/eli/cc/2019/763/20200101/en/xml"
         ],
         "language": "http://publications.europa.eu/resource/authority/language/ENG"
       },
@@ -50,6 +61,7 @@
       "type": "Expression",
       "references": {
         "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/cc/2019/763/20200101/fr/xml",
           "https://fedlex.data.admin.ch/eli/cc/2019/763/20200101/fr/pdf-a",
           "https://fedlex.data.admin.ch/eli/cc/2019/763/20200101/fr/doc",
           "https://fedlex.data.admin.ch/eli/cc/2019/763/20200101/fr/html",
@@ -71,7 +83,8 @@
           "https://fedlex.data.admin.ch/eli/cc/2019/763/20200101/it/docx",
           "https://fedlex.data.admin.ch/eli/cc/2019/763/20200101/it/pdf-a",
           "https://fedlex.data.admin.ch/eli/cc/2019/763/20200101/it/doc",
-          "https://fedlex.data.admin.ch/eli/cc/2019/763/20200101/it/html"
+          "https://fedlex.data.admin.ch/eli/cc/2019/763/20200101/it/html",
+          "https://fedlex.data.admin.ch/eli/cc/2019/763/20200101/it/xml"
         ],
         "language": "http://publications.europa.eu/resource/authority/language/ITA"
       },
@@ -100,6 +113,7 @@
         "isEmbodiedBy": [
           "https://fedlex.data.admin.ch/eli/cc/2019/763/20200101/de/pdf-a",
           "https://fedlex.data.admin.ch/eli/cc/2019/763/20200101/de/doc",
+          "https://fedlex.data.admin.ch/eli/cc/2019/763/20200101/de/xml",
           "https://fedlex.data.admin.ch/eli/cc/2019/763/20200101/de/docx",
           "https://fedlex.data.admin.ch/eli/cc/2019/763/20200101/de/html"
         ],
@@ -119,17 +133,14 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/en/doc/fedlex-data-admin-ch-eli-cc-2019-763-20200101-en-doc.doc"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
-        },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/en/doc/fedlex-data-admin-ch-eli-cc-2019-763-20200101-en-doc.doc"
@@ -144,17 +155,14 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/en/docx/fedlex-data-admin-ch-eli-cc-2019-763-20200101-en-docx.docx"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
-        },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/en/docx/fedlex-data-admin-ch-eli-cc-2019-763-20200101-en-docx.docx"
@@ -169,20 +177,29 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/en/html/fedlex-data-admin-ch-eli-cc-2019-763-20200101-en-html-1.html",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/en/html/fedlex-data-admin-ch-eli-cc-2019-763-20200101-en-html.html"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/en/html/fedlex-data-admin-ch-eli-cc-2019-763-20200101-en-html.html",
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/en/html/fedlex-data-admin-ch-eli-cc-2019-763-20200101-en-html-1.html"
+          ]
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/en/html/fedlex-data-admin-ch-eli-cc-2019-763-20200101-en-html.html"
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/en/html/fedlex-data-admin-ch-eli-cc-2019-763-20200101-en-html-2.html"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/en/html/fedlex-data-admin-ch-eli-cc-2019-763-20200101-en-html.html"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/en/html/fedlex-data-admin-ch-eli-cc-2019-763-20200101-en-html-2.html"
         }
       }
     },
@@ -194,6 +211,12 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": true
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/en/pdf-a/fedlex-data-admin-ch-eli-cc-2019-763-20200101-en-pdf-a.pdf"
         },
@@ -205,11 +228,40 @@
             40
           ]
         },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
-        },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/en/pdf-a/fedlex-data-admin-ch-eli-cc-2019-763-20200101-en-pdf-a.pdf"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/2019/763/20200101/en/xml",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
+      },
+      "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/XML"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/en/xml/fedlex-data-admin-ch-eli-cc-2019-763-20200101-en-xml.xml"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/en/xml/fedlex-data-admin-ch-eli-cc-2019-763-20200101-en-xml.xml"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/en/xml/fedlex-data-admin-ch-eli-cc-2019-763-20200101-en-xml-1.xml"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/xml"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/en/xml/fedlex-data-admin-ch-eli-cc-2019-763-20200101-en-xml-1.xml"
         }
       }
     },
@@ -221,6 +273,38 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/2019/763/20200101/fr/xml",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
+      },
+      "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/XML"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/fr/xml/fedlex-data-admin-ch-eli-cc-2019-763-20200101-fr-xml.xml"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/fr/xml/fedlex-data-admin-ch-eli-cc-2019-763-20200101-fr-xml.xml"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/fr/xml/fedlex-data-admin-ch-eli-cc-2019-763-20200101-fr-xml-1.xml"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/xml"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/fr/xml/fedlex-data-admin-ch-eli-cc-2019-763-20200101-fr-xml-1.xml"
+        }
+      }
+    },
+    {
       "uri": "https://fedlex.data.admin.ch/eli/cc/2019/763/20200101/fr/pdf-a",
       "type": "Manifestation",
       "references": {
@@ -228,6 +312,12 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": true
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2019-763-20200101-fr-pdf-a.pdf"
         },
@@ -238,9 +328,6 @@
           "xsd:int": [
             40
           ]
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2019-763-20200101-fr-pdf-a.pdf"
@@ -255,17 +342,14 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/fr/doc/fedlex-data-admin-ch-eli-cc-2019-763-20200101-fr-doc.doc"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
-        },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/fr/doc/fedlex-data-admin-ch-eli-cc-2019-763-20200101-fr-doc.doc"
@@ -280,20 +364,29 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/fr/html/fedlex-data-admin-ch-eli-cc-2019-763-20200101-fr-html.html",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/fr/html/fedlex-data-admin-ch-eli-cc-2019-763-20200101-fr-html-1.html"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/fr/html/fedlex-data-admin-ch-eli-cc-2019-763-20200101-fr-html.html",
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/fr/html/fedlex-data-admin-ch-eli-cc-2019-763-20200101-fr-html-1.html"
+          ]
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/fr/html/fedlex-data-admin-ch-eli-cc-2019-763-20200101-fr-html.html"
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/fr/html/fedlex-data-admin-ch-eli-cc-2019-763-20200101-fr-html-2.html"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/fr/html/fedlex-data-admin-ch-eli-cc-2019-763-20200101-fr-html.html"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/fr/html/fedlex-data-admin-ch-eli-cc-2019-763-20200101-fr-html-2.html"
         }
       }
     },
@@ -305,17 +398,14 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/fr/docx/fedlex-data-admin-ch-eli-cc-2019-763-20200101-fr-docx.docx"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
-        },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/fr/docx/fedlex-data-admin-ch-eli-cc-2019-763-20200101-fr-docx.docx"
@@ -337,17 +427,14 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/it/docx/fedlex-data-admin-ch-eli-cc-2019-763-20200101-it-docx.docx"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
-        },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/it/docx/fedlex-data-admin-ch-eli-cc-2019-763-20200101-it-docx.docx"
@@ -362,6 +449,12 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": true
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/it/pdf-a/fedlex-data-admin-ch-eli-cc-2019-763-20200101-it-pdf-a.pdf"
         },
@@ -372,9 +465,6 @@
           "xsd:int": [
             40
           ]
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/it/pdf-a/fedlex-data-admin-ch-eli-cc-2019-763-20200101-it-pdf-a.pdf"
@@ -389,17 +479,14 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/it/doc/fedlex-data-admin-ch-eli-cc-2019-763-20200101-it-doc.doc"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
-        },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/it/doc/fedlex-data-admin-ch-eli-cc-2019-763-20200101-it-doc.doc"
@@ -414,20 +501,61 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/it/html/fedlex-data-admin-ch-eli-cc-2019-763-20200101-it-html.html",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/it/html/fedlex-data-admin-ch-eli-cc-2019-763-20200101-it-html-1.html"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/it/html/fedlex-data-admin-ch-eli-cc-2019-763-20200101-it-html.html",
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/it/html/fedlex-data-admin-ch-eli-cc-2019-763-20200101-it-html-1.html"
+          ]
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/it/html/fedlex-data-admin-ch-eli-cc-2019-763-20200101-it-html.html"
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/it/html/fedlex-data-admin-ch-eli-cc-2019-763-20200101-it-html-2.html"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/it/html/fedlex-data-admin-ch-eli-cc-2019-763-20200101-it-html-2.html"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/2019/763/20200101/it/xml",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
+      },
+      "attributes": {
         "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/XML"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/it/xml/fedlex-data-admin-ch-eli-cc-2019-763-20200101-it-xml.xml"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/it/xml/fedlex-data-admin-ch-eli-cc-2019-763-20200101-it-xml.xml"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/it/xml/fedlex-data-admin-ch-eli-cc-2019-763-20200101-it-xml-1.xml"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/xml"
         },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/it/html/fedlex-data-admin-ch-eli-cc-2019-763-20200101-it-html.html"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/it/xml/fedlex-data-admin-ch-eli-cc-2019-763-20200101-it-xml-1.xml"
         }
       }
     },
@@ -453,6 +581,12 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": true
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2019-763-20200101-de-pdf-a.pdf"
         },
@@ -463,9 +597,6 @@
           "xsd:int": [
             42
           ]
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2019-763-20200101-de-pdf-a.pdf"
@@ -480,20 +611,49 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/de/doc/fedlex-data-admin-ch-eli-cc-2019-763-20200101-de-doc.doc"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
-        },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/de/doc/fedlex-data-admin-ch-eli-cc-2019-763-20200101-de-doc.doc"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/2019/763/20200101/de/xml",
+      "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
+      },
+      "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/XML"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/de/xml/fedlex-data-admin-ch-eli-cc-2019-763-20200101-de-xml.xml"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/de/xml/fedlex-data-admin-ch-eli-cc-2019-763-20200101-de-xml.xml"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/de/xml/fedlex-data-admin-ch-eli-cc-2019-763-20200101-de-xml-1.xml"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/xml"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/de/xml/fedlex-data-admin-ch-eli-cc-2019-763-20200101-de-xml-1.xml"
         }
       }
     },
@@ -505,17 +665,14 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/de/docx/fedlex-data-admin-ch-eli-cc-2019-763-20200101-de-docx.docx"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
-        },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/de/docx/fedlex-data-admin-ch-eli-cc-2019-763-20200101-de-docx.docx"
@@ -530,20 +687,29 @@
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/2"
       },
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/de/html/fedlex-data-admin-ch-eli-cc-2019-763-20200101-de-html.html",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/de/html/fedlex-data-admin-ch-eli-cc-2019-763-20200101-de-html-1.html"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/de/html/fedlex-data-admin-ch-eli-cc-2019-763-20200101-de-html.html",
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/de/html/fedlex-data-admin-ch-eli-cc-2019-763-20200101-de-html-1.html"
+          ]
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/de/html/fedlex-data-admin-ch-eli-cc-2019-763-20200101-de-html.html"
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/de/html/fedlex-data-admin-ch-eli-cc-2019-763-20200101-de-html-2.html"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/de/html/fedlex-data-admin-ch-eli-cc-2019-763-20200101-de-html.html"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2019/763/20200101/de/html/fedlex-data-admin-ch-eli-cc-2019-763-20200101-de-html-2.html"
         }
       }
     },
@@ -562,7 +728,6 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/2019/763/20200101/graph",
   "facets": {
     "consolidates": [
       {
@@ -622,1612 +787,10 @@
         "uri": "https://fedlex.data.admin.ch/eli/oc/2019/763"
       }
     ],
-    "citations": [
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Mandat réglementé par la loi ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/11/529_488_529",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Mandati disciplinati per legge ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/11/529_488_529",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Gesetzlich geregelte Mandate ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/11/529_488_529",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 24 Aufgaben ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/51/117_121_129",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a24",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 90 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/51/117_121_129",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a90",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 24 Tâches ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/51/117_121_129",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a24",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 90 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/51/117_121_129",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a90",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 90 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/51/117_121_129",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a90",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Mandati disciplinati per legge ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/51/117_121_129",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 24 Compiti ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/51/117_121_129",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a24",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Mandat réglementé par la loi ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/51/117_121_129",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Gesetzlich geregelte Mandate ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/51/117_121_129",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Mandat réglementé par la loi ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2005/734",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 9 Demande d’autorisation et obligation d’obtenir une autorisation ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2005/734",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a9",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Mandati disciplinati per legge ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2005/734",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 9 Richiesta e obbligo di autorizzazione ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2005/734",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a9",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Gesetzlich geregelte Mandate ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2005/734",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 9 Bewilligungsgesuch und Bewilligungspflicht ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2005/734",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a9",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Mandat réglementé par la loi ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2006/822",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 49 Selbstständige Verwaltung von Anlagefonds ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2006/822",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a49",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 53 Unabhängigkeit ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2006/822",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a53",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 64 Wechsel der Fondsleitung ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2006/822",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a64",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 7 Exemption ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2006/822",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a7",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 84 Laufende Aufsicht ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2006/822",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a84",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 88 Prüfung ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2006/822",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a88",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 93 Weitere Übergangsbestimmungen ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2006/822",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a93",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 49 Gestion indépendante de fonds de placement ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2006/822",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a49",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 53 Indépendance ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2006/822",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a53",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 64 Changement de direction de fonds ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2006/822",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a64",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 84 Surveillance courante ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2006/822",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a84",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 88 Audit ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2006/822",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a88",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 84 Vigilanza continua ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2006/822",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a84",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 88 Verifica ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2006/822",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a88",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 93 Altre disposizioni transitorie ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2006/822",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a93",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Mandati disciplinati per legge ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2006/822",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 7 Esenzione ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2006/822",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a7",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 49 Gestione autonoma del fondo di investimento ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2006/822",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a49",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 53 Indipendenza ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2006/822",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a53",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 64 Cambiamento della direzione del fondo ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2006/822",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a64",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Gesetzlich geregelte Mandate ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2006/822",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 7 Befreiung ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2006/822",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a7",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 84 Laufende Aufsicht ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2008/736",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a84",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 86 Beizug von Prüfgesellschaften ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2008/736",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a86",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 84 Surveillance courante ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2008/736",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a84",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 86 Recours à des sociétés d’audit ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2008/736",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a86",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 84 Vigilanza continua ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2008/736",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a84",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 86 Ricorso a società di audit ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2008/736",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a86",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Mandati disciplinati per legge ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2008/736",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Mandat réglementé par la loi ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2008/736",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Gesetzlich geregelte Mandate ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2008/736",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 75 Meldepflicht ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2015/853",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a75",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 75 Obligation de déclarer ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2015/853",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a75",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Mandati disciplinati per legge ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2015/853",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 75 Obbligo di comunicazione ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2015/853",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a75",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Mandat réglementé par la loi ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2015/853",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Gesetzlich geregelte Mandate ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2015/853",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 29 Anrechenbare Eigenmittel ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/27/317_321_377",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a29",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 32 Rechnungslegung ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/27/317_321_377",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a32",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 45 Anrechenbare Eigenmittel ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/27/317_321_377",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a45",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 47 Rechnungslegung und Geschäftsbericht ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/27/317_321_377",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a47",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 50 Hauptverwaltung in der Schweiz ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/27/317_321_377",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a50",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 62 Rechnungslegung und Geschäftsbericht ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/27/317_321_377",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a62",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 29 Fonds propres pris en compte ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/27/317_321_377",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a29",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 32 É'ablissement des comptes ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/27/317_321_377",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a32",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 45 Fonds propres pris en compte ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/27/317_321_377",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a45",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 47 É'ablissement des comptes et rapport de gestion ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/27/317_321_377",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a47",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 50 Administration principale en Suisse ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/27/317_321_377",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a50",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 62 É'ablissement des comptes et rapport de gestion ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/27/317_321_377",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a62",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 29 Fondi propri computabili ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/27/317_321_377",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a29",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 32 Presentazione dei conti ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/27/317_321_377",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a32",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 45 Fondi propri computabili ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/27/317_321_377",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a45",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 47 Presentazione dei conti e rapporto di attività ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/27/317_321_377",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a47",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 50 Amministrazione principale in Svizzera ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/27/317_321_377",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a50",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 62 Presentazione dei conti e rapporto di attività ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/27/317_321_377",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a62",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 4 Liens familiaux ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/24/233_245_233",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a4",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Mandat réglementé par la loi ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/24/233_245_233",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 4 Legami familiari ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/24/233_245_233",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a4",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Mandati disciplinati per legge ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/24/233_245_233",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 4 Familiäre Verbundenheit ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/24/233_245_233",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a4",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 6 Gesetzlich geregelte Mandate ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/24/233_245_233",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a6",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 93 Autres dispositions transitoires ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2013/116",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a93",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 93 Weitere Übergangsbestimmungen ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2013/116",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a93",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 93 Altre disposizioni transitorie ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2013/116",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a93",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 84 Laufende Aufsicht ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1998/892_892_892",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a84",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 88 Prüfung ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1998/892_892_892",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a88",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 92 Übergangsbestimmungen für Vermögensverwalter und Trustees ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1998/892_892_892",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a92",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 84 Surveillance courante ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1998/892_892_892",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a84",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 88 Audit ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1998/892_892_892",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a88",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 92 Dispositions transitoires pour les gestionnaires de fortune et les trustees ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1998/892_892_892",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a92",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 84 Vigilanza continua ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1998/892_892_892",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a84",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 88 Verifica ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1998/892_892_892",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a88",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 92 Disposizioni transitorie per i gestori patrimoniali e i trustee ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/1998/892_892_892",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a92",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 72 Rechnungslegung ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2014/273",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a72",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 72 É'ablissement des comptes ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2014/273",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a72",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 72 Presentazione dei conti ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2014/273",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a72",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 59 Höhe der Eigenmittel ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2012/629",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a59",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 70 Eigenmittel und Risikoverteilung ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2012/629",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a70",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 59 Montant des fonds propres ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2012/629",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a59",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 70 Fonds propres et répartition des risques ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2012/629",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a70",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 59 Entità dei fondi propri ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2012/629",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a59",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 70 Fondi propri e ripartizione dei rischi ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2012/629",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a70",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 64 Wechsel der Fondsleitung ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2006/859",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a64",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 64 Changement de direction de fonds ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2006/859",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a64",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 64 Cambiamento della direzione del fondo ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2006/859",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a64",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 71 Liquidität ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2012/883",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a71",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 71 Liquidités ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2012/883",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a71",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 71 Liquidità ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2012/883",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a71",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 14 Ö'fentliches Angebot von Effekten auf dem Primärmarkt ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2019/758",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a14",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 65 Gewerbsmässigkeit ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2019/758",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a65",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 77 Bewilligungspflicht und Bewilligungsvoraussetzungen ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2019/758",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a77",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 82 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2019/758",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a82",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 84 Laufende Aufsicht ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2019/758",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a84",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 88 Prüfung ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2019/758",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a88",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 93 Weitere Übergangsbestimmungen ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2019/758",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a93",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 14 Offre au public de valeurs mobilières sur le marché primaire ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2019/758",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a14",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 65 Exercice d’une activité à titre professionnel ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2019/758",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a65",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 77 Obligation d’obtenir une autorisation et conditions d’autorisation ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2019/758",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a77",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 82 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2019/758",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a82",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 84 Surveillance courante ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2019/758",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a84",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 88 Audit ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2019/758",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a88",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 93 Autres dispositions transitoires ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2019/758",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a93",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 77 Obbligo e condizioni di autorizzazione ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2019/758",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a77",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 82 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2019/758",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a82",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 84 Vigilanza continua ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2019/758",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a84",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 88 Verifica ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2019/758",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a88",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 93 Altre disposizioni transitorie ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2019/758",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a93",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 14 Offerta pubblica di valori mobiliari sul mercato primario ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2019/758",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a14",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Art. 65 Carattere professionale ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2019/758",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "a65",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Anhang 1 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/763",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "app1",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Annexe 1 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/763",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "app1",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionDescription": "Allegato 1 ",
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/oc/2019/763",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionDescription": "app1",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2018/801",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2018/801",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/DEU"
-      },
-      {
-        "toWorkSubdivision": {
-          "subdivisionOfWork": "https://fedlex.data.admin.ch/eli/cc/2018/801",
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "fromWorkSubdivision": {
-          "subdivisionType": "https://fedlex.data.admin.ch/vocabulary/subdivision-type/text"
-        },
-        "language": "http://publications.europa.eu/resource/authority/language/ITA"
-      }
-    ],
+    "classifiedByTaxonomyEntryLabel_raw": "954.11",
     "consolidationAbstract": {
       "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
+      "basicAct": "https://fedlex.data.admin.ch/eli/oc/2019/763",
       "typeDocument": "https://fedlex.data.admin.ch/vocabulary/resource-type/29",
       "titles": {
         "http://publications.europa.eu/resource/authority/language/DEU": {
@@ -2240,6 +803,8 @@
           "title": "Ordonnance du 6 novembre 2019 sur les établissements financiers (OEFin)"
         },
         "http://publications.europa.eu/resource/authority/language/ENG": {
+          "titleAlternative": "Financial Institutions Ordinance",
+          "titleShort": "FinIO",
           "title": "Ordinance of 6 November 2019 on Financial Institutions (Financial Institutions Ordinance, FinIO)"
         },
         "http://publications.europa.eu/resource/authority/language/ITA": {
@@ -2249,11 +814,23 @@
       }
     },
     "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/11590",
+    "classifiedByTaxonomyEntryLabel_sort": "954.110",
     "theme": {
       "themeId": "9",
       "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/10385"
     },
     "impacts": [
+      {
+        "impactDate": "2020-01-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2019/763",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "decisionDate": "2020-01-01",
+        "historicalImpact": false
+      },
       {
         "impactDate": "2020-01-01",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
@@ -2275,17 +852,6 @@
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
         "decisionDate": "2020-01-01",
         "historicalImpact": false
-      },
-      {
-        "impactDate": "2020-01-01",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2019/763",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "decisionDate": "2020-01-01",
-        "historicalImpact": false
       }
     ],
     "classifiedByTaxonomyEntryLabel": {
@@ -2294,5 +860,6 @@
       "it": "RS 954.11"
     }
   },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/2019/763/20200101/graph",
   "timestampms": null
 }

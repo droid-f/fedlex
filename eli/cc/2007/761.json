@@ -15,30 +15,24 @@
       "basicAct": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/oc/2007/761"
       },
-      "typeDocument": {
-        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/29"
-      },
       "dateEntryInForce": {
         "xsd:date": "2008-01-01"
+      },
+      "typeDocument": {
+        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/29"
       }
     },
     "references": {
-      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/4856",
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/cc/2007/761/de",
         "https://fedlex.data.admin.ch/eli/cc/2007/761/it",
         "https://fedlex.data.admin.ch/eli/cc/2007/761/fr"
-      ]
+      ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/4856"
     }
   },
   "included": [
-    {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/4856",
-      "type": [
-        "Concept",
-        "LegalTaxonomy"
-      ]
-    },
     {
       "uri": "https://fedlex.data.admin.ch/eli/cc/2007/761/de",
       "type": "Expression",
@@ -47,7 +41,7 @@
           "xsd:string": "VEV"
         },
         "title": {
-          "xsd:string": "Verordnung <bd>vom 24. Oktober 2007</bd> über das Einreise- und Visumverfahren (VEV)"
+          "xsd:string": "Verordnung vom 24. Oktober 2007 über das Einreise- und Visumverfahren (VEV)"
         }
       },
       "references": {
@@ -62,7 +56,7 @@
           "xsd:string": "OPEV"
         },
         "title": {
-          "xsd:string": "Ordinanza <bd>del 24 ottobre 2007</bd> concernente la procedura d'entrata e di rilascio del visto (OPEV)"
+          "xsd:string": "Ordinanza del 24 ottobre 2007 concernente la procedura d'entrata e di rilascio del visto (OPEV)"
         }
       },
       "references": {
@@ -77,12 +71,26 @@
           "xsd:string": "OPEV"
         },
         "title": {
-          "xsd:string": "Ordonnance <bd>du 24 octobre 2007</bd> sur la procédure d'entrée et de visas (OPEV)"
+          "xsd:string": "Ordonnance du 24 octobre 2007 sur la procédure d'entrée et de visas (OPEV)"
         }
       },
       "references": {
         "language": "http://publications.europa.eu/resource/authority/language/FRA"
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/4856",
+      "type": [
+        "Concept",
+        "LegalTaxonomy"
+      ]
     },
     {
       "uri": "http://publications.europa.eu/resource/authority/language/DEU",
@@ -106,20 +114,13 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/2007/761/graph",
   "facets": {
-    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
     "consolidates": [
       {
         "dateDocument": "2007-10-24",
         "expression": {
           "http://publications.europa.eu/resource/authority/language/DEU": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2007/761/de/pdf-x/fedlex-data-admin-ch-eli-oc-2007-761-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2007/761/de/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2007/761/de/pdf-a/fedlex-data-admin-ch-eli-oc-2007-761-de-pdf-a.pdf",
@@ -132,7 +133,7 @@
               }
             ],
             "memorialLabel": "AS 2007 5537",
-            "title": "Verordnung <bd> über das Einreise- und Visumverfahren (VEV)"
+            "title": "Verordnung über das Einreise- und Visumverfahren (VEV)"
           },
           "http://publications.europa.eu/resource/authority/language/FRA": {
             "manifestation": [
@@ -142,26 +143,16 @@
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2007/761/fr/pdf-a"
               },
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2007/761/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2007-761-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2007/761/fr/pdf-x"
-              },
-              {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2007/761/fr/doc/fedlex-data-admin-ch-eli-oc-2007-761-fr-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2007/761/fr/doc"
               }
             ],
             "memorialLabel": "RO 2007 5537",
-            "title": "Ordonnance <bd> sur la procédure d'entrée et de visas (OPEV)"
+            "title": "Ordonnance sur la procédure d'entrée et de visas (OPEV)"
           },
           "http://publications.europa.eu/resource/authority/language/ITA": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2007/761/it/pdf-x/fedlex-data-admin-ch-eli-oc-2007-761-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2007/761/it/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2007/761/it/doc/fedlex-data-admin-ch-eli-oc-2007-761-it-doc.doc",
@@ -174,7 +165,7 @@
               }
             ],
             "memorialLabel": "RU 2007 5537",
-            "title": "Ordinanza <bd> concernente la procedura d'entrata e di rilascio del visto (OPEV)"
+            "title": "Ordinanza concernente la procedura d'entrata e di rilascio del visto (OPEV)"
           }
         },
         "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/178",
@@ -195,23 +186,13 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2007/861/de/pdf-a/fedlex-data-admin-ch-eli-oc-2007-861-de-pdf-a.pdf",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2007/861/de/pdf-a"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2007/861/de/pdf-x/fedlex-data-admin-ch-eli-oc-2007-861-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2007/861/de/pdf-x"
               }
             ],
             "memorialLabel": "AS 2007 6657",
-            "title": "Verordnung <bd> zum Bundesgesetz über die von der Schweiz als Gaststaat gewährten Vorrechte, Immunitäten und Erleichterungen sowie finanziellen Beiträge (Gaststaatverordnung, V-GSG)"
+            "title": "Verordnung zum Bundesgesetz über die von der Schweiz als Gaststaat gewährten Vorrechte, Immunitäten und Erleichterungen sowie finanziellen Beiträge (Gaststaatverordnung, V-GSG)"
           },
           "http://publications.europa.eu/resource/authority/language/FRA": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2007/861/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2007-861-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2007/861/fr/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2007/861/fr/doc/fedlex-data-admin-ch-eli-oc-2007-861-fr-doc.doc",
@@ -224,15 +205,10 @@
               }
             ],
             "memorialLabel": "RO 2007 6657",
-            "title": "Ordonnance <bd> relative à la loi fédérale sur les privilèges, les immunités et les facilités, ainsi que sur les aides financières accordés par la Suisse en tant qu'Etat hôte (Ordonnance sur l'Etat hôte, OLEH)"
+            "title": "Ordonnance relative à la loi fédérale sur les privilèges, les immunités et les facilités, ainsi que sur les aides financières accordés par la Suisse en tant qu'Etat hôte (Ordonnance sur l'Etat hôte, OLEH)"
           },
           "http://publications.europa.eu/resource/authority/language/ITA": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2007/861/it/pdf-x/fedlex-data-admin-ch-eli-oc-2007-861-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2007/861/it/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2007/861/it/doc/fedlex-data-admin-ch-eli-oc-2007-861-it-doc.doc",
@@ -245,7 +221,7 @@
               }
             ],
             "memorialLabel": "RU 2007 6657",
-            "title": "Ordinanza <bd> relativa alla legge federale sui privilegi, le immunità e le facilitazioni, nonché sugli aiuti finanziari accordati dalla Svizzera quale Stato ospite (Ordinanza sullo Stato ospite, OSOsp)"
+            "title": "Ordinanza relativa alla legge federale sui privilegi, le immunità e le facilitazioni, nonché sugli aiuti finanziari accordati dalla Svizzera quale Stato ospite (Ordinanza sullo Stato ospite, OSOsp)"
           }
         },
         "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/7",
@@ -263,47 +239,32 @@
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2008/758/de/pdf-a"
               },
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2008/758/de/pdf-x/fedlex-data-admin-ch-eli-oc-2008-758-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2008/758/de/pdf-x"
-              },
-              {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2008/758/de/doc/fedlex-data-admin-ch-eli-oc-2008-758-de-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2008/758/de/doc"
               }
             ],
             "memorialLabel": "AS 2008 5441",
-            "title": "Verordnung <bd> über die Einreise und die Visumerteilung (VEV)"
+            "title": "Verordnung über die Einreise und die Visumerteilung (VEV)"
           },
           "http://publications.europa.eu/resource/authority/language/FRA": {
             "manifestation": [
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2008/758/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2008-758-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2008/758/fr/pdf-x"
+                "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
+                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2008/758/fr/doc/fedlex-data-admin-ch-eli-oc-2008-758-fr-doc.doc",
+                "uri": "https://fedlex.data.admin.ch/eli/oc/2008/758/fr/doc"
               },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2008/758/fr/pdf-a/fedlex-data-admin-ch-eli-oc-2008-758-fr-pdf-a.pdf",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2008/758/fr/pdf-a"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2008/758/fr/doc/fedlex-data-admin-ch-eli-oc-2008-758-fr-doc.doc",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2008/758/fr/doc"
               }
             ],
             "memorialLabel": "RO 2008 5441",
-            "title": "Ordonnance <bd> sur l'entrée et l'octroi de visas (OEV)"
+            "title": "Ordonnance sur l'entrée et l'octroi de visas (OEV)"
           },
           "http://publications.europa.eu/resource/authority/language/ITA": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2008/758/it/pdf-x/fedlex-data-admin-ch-eli-oc-2008-758-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2008/758/it/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2008/758/it/doc/fedlex-data-admin-ch-eli-oc-2008-758-it-doc.doc",
@@ -316,7 +277,7 @@
               }
             ],
             "memorialLabel": "RU 2008 5441",
-            "title": "Ordinanza <bd> concernente l'entrata e il rilascio del visto (OEV)"
+            "title": "Ordinanza concernente l'entrata e il rilascio del visto (OEV)"
           }
         },
         "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/178",
@@ -324,28 +285,28 @@
         "uri": "https://fedlex.data.admin.ch/eli/oc/2008/758"
       }
     ],
-    "sortingDate": "2008-12-12",
-    "theme": {
-      "themeId": "1",
-      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/4713"
+    "calculatedEndDate": "2008-12-11",
+    "abrogationSourceUri": "https://fedlex.data.admin.ch/eli/oc/2008/758",
+    "baseActReference": {
+      "de": "AS 2007 5537",
+      "it": "RU 2007 5537",
+      "fr": "RO 2007 5537"
     },
-    "titleShort": {
-      "de": "VEV",
-      "it": "OPEV",
-      "fr": "OPEV"
-    },
+    "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/178",
     "impacts": [
       {
         "impactDate": "2008-01-01",
         "commentFrom": {
-          "fr": "Annexe ch. 3"
+          "de": "Anhang Ziff. 3"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/761/20080101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2007-761-20080101-fr-pdf-a.pdf",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2007/861",
         "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
+          "http://publications.europa.eu/resource/authority/language/DEU"
         ],
+        "consolidatedByPdf2": {
+          "de": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/761/20080101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2007-761-20080101-de-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2007/761/20080101",
         "decisionDate": "2007-12-07",
@@ -355,14 +316,16 @@
       {
         "impactDate": "2008-01-01",
         "commentFrom": {
-          "it": "all. n. 3"
+          "fr": "Annexe ch. 3"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/761/20080101/it/pdf-a/fedlex-data-admin-ch-eli-cc-2007-761-20080101-it-pdf-a.pdf",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2007/861",
         "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
+          "http://publications.europa.eu/resource/authority/language/FRA"
         ],
+        "consolidatedByPdf2": {
+          "fr": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/761/20080101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2007-761-20080101-fr-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2007/761/20080101",
         "decisionDate": "2007-12-07",
@@ -374,7 +337,6 @@
         "commentFrom": {
           "de": "V 07.12.2007 (Anhang Ziff. 3)"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/761/20080101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2007-761-20080101-de-pdf-a.pdf",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
         "commentTo": {
           "de": "Art. 21"
@@ -383,6 +345,127 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/DEU"
         ],
+        "consolidatedByPdf2": {
+          "de": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/761/20080101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2007-761-20080101-de-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2007/761/20080101",
+        "historicalImpact": false,
+        "consolidationDate": "2008-01-01"
+      },
+      {
+        "impactDate": "2008-01-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2007/761",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "consolidatedByPdf2": {
+          "fr": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/761/20080101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2007-761-20080101-fr-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2007/761/20080101",
+        "decisionDate": "2008-01-01",
+        "historicalImpact": false,
+        "consolidationDate": "2008-01-01"
+      },
+      {
+        "impactDate": "2008-12-12",
+        "commentFrom": {
+          "fr": "Art. 55"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2008/758",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
+        "decisionDate": "2008-10-22",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "2008-01-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2007/761",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "consolidatedByPdf2": {
+          "it": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/761/20080101/it/pdf-a/fedlex-data-admin-ch-eli-cc-2007-761-20080101-it-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2007/761/20080101",
+        "decisionDate": "2008-01-01",
+        "historicalImpact": false,
+        "consolidationDate": "2008-01-01"
+      },
+      {
+        "impactDate": "2008-01-01",
+        "commentFrom": {
+          "it": "O 07.12.2007 (all. n. 3)"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "it": "art. 21"
+        },
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2007/861",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "consolidatedByPdf2": {
+          "it": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/761/20080101/it/pdf-a/fedlex-data-admin-ch-eli-cc-2007-761-20080101-it-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2007/761/20080101",
+        "historicalImpact": false,
+        "consolidationDate": "2008-01-01"
+      },
+      {
+        "impactDate": "2008-12-12",
+        "commentFrom": {
+          "it": "art. 55"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2008/758",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
+        "decisionDate": "2008-10-22",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "2008-01-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2007/761",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "consolidatedByPdf2": {
+          "de": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/761/20080101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2007-761-20080101-de-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2007/761/20080101",
+        "decisionDate": "2008-01-01",
+        "historicalImpact": false,
+        "consolidationDate": "2008-01-01"
+      },
+      {
+        "impactDate": "2008-01-01",
+        "commentFrom": {
+          "fr": "O 07.12.2007 (annexe ch. 3)"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "fr": "Art. 21"
+        },
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2007/861",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "consolidatedByPdf2": {
+          "fr": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/761/20080101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2007-761-20080101-fr-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2007/761/20080101",
         "historicalImpact": false,
@@ -403,142 +486,67 @@
         "historicalImpact": false
       },
       {
-        "impactDate": "2008-12-12",
-        "commentFrom": {
-          "fr": "Art. 55"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2008/758",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
-        "decisionDate": "2008-10-22",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "2008-12-12",
-        "commentFrom": {
-          "it": "art. 55"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2008/758",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
-        "decisionDate": "2008-10-22",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "2008-01-01",
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/761/20080101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2007-761-20080101-de-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2007/761",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2007/761/20080101",
-        "decisionDate": "2008-01-01",
-        "historicalImpact": false,
-        "consolidationDate": "2008-01-01"
-      },
-      {
-        "impactDate": "2008-01-01",
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/761/20080101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2007-761-20080101-fr-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2007/761",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2007/761/20080101",
-        "decisionDate": "2008-01-01",
-        "historicalImpact": false,
-        "consolidationDate": "2008-01-01"
-      },
-      {
-        "impactDate": "2008-01-01",
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/761/20080101/it/pdf-a/fedlex-data-admin-ch-eli-cc-2007-761-20080101-it-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2007/761",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2007/761/20080101",
-        "decisionDate": "2008-01-01",
-        "historicalImpact": false,
-        "consolidationDate": "2008-01-01"
-      },
-      {
         "impactDate": "2008-01-01",
         "commentFrom": {
-          "fr": "O 07.12.2007 (annexe ch. 3)"
+          "it": "all. n. 3"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/761/20080101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2007-761-20080101-fr-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "fr": "Art. 21"
-        },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2007/861",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2007/761/20080101",
-        "historicalImpact": false,
-        "consolidationDate": "2008-01-01"
-      },
-      {
-        "impactDate": "2008-01-01",
-        "commentFrom": {
-          "de": "Anhang Ziff. 3"
-        },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/761/20080101/de/pdf-a/fedlex-data-admin-ch-eli-cc-2007-761-20080101-de-pdf-a.pdf",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2007/861",
         "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
+          "http://publications.europa.eu/resource/authority/language/ITA"
         ],
+        "consolidatedByPdf2": {
+          "it": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/761/20080101/it/pdf-a/fedlex-data-admin-ch-eli-cc-2007-761-20080101-it-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2007/761/20080101",
         "decisionDate": "2007-12-07",
         "historicalImpact": false,
         "consolidationDate": "2008-01-01"
-      },
-      {
-        "impactDate": "2008-01-01",
-        "commentFrom": {
-          "it": "O 07.12.2007 (all. n. 3)"
-        },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/761/20080101/it/pdf-a/fedlex-data-admin-ch-eli-cc-2007-761-20080101-it-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "it": "art. 21"
-        },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2007/861",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2007/761/20080101",
-        "historicalImpact": false,
-        "consolidationDate": "2008-01-01"
       }
     ],
     "title": {
-      "de": "Verordnung <bd>vom 24. Oktober 2007</bd> über das Einreise- und Visumverfahren (VEV)",
-      "it": "Ordinanza <bd>del 24 ottobre 2007</bd> concernente la procedura d'entrata e di rilascio del visto (OPEV)",
-      "fr": "Ordonnance <bd>du 24 octobre 2007</bd> sur la procédure d'entrée et de visas (OPEV)"
+      "de": "Verordnung vom 24. Oktober 2007 über das Einreise- und Visumverfahren (VEV)",
+      "it": "Ordinanza del 24 ottobre 2007 concernente la procedura d'entrata e di rilascio del visto (OPEV)",
+      "fr": "Ordonnance du 24 octobre 2007 sur la procédure d'entrée et de visas (OPEV)"
     },
     "classifiedByTaxonomyEntryLabel": {
       "de": "SR 142.204",
       "fr": "RS 142.204",
       "it": "RS 142.204"
     },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
+    },
+    "abrogationDecisionDate": "2008-10-22",
+    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
+    "abrogationSource": {
+      "de": "AS 2008 5441",
+      "it": "RU 2008 5441",
+      "fr": "RO 2008 5441"
+    },
+    "sortingDateTime": "2007-12-31T23:00Z",
+    "classifiedByTaxonomyEntryLabel_raw": "142.204",
+    "sortingDate": "2008-12-12",
+    "classifiedByTaxonomyEntryLabel_sort": "142.204",
+    "theme": {
+      "themeId": "1",
+      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/4713"
+    },
+    "titleShort": {
+      "de": "VEV",
+      "it": "OPEV",
+      "fr": "OPEV"
+    },
     "archivingDate": "2008-01-01"
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/2007/761/graph",
   "timestampms": null
 }

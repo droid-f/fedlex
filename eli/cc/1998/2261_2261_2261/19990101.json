@@ -6,8 +6,18 @@
       "Work"
     ],
     "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1998-12-31T23:00:00.000Z"
+        ]
+      },
       "dateEndApplicability": {
         "xsd:date": "2000-02-29"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1998-12-31T23:00:00.000Z"
+        ]
       },
       "isMemberOf": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/cc/1998/2261_2261_2261"
@@ -55,7 +65,11 @@
       "uri": "https://fedlex.data.admin.ch/eli/cc/1998/2261_2261_2261/19990101/fr",
       "type": "Expression",
       "references": {
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/cc/1998/2261_2261_2261/19990101/fr/docx",
+          "https://fedlex.data.admin.ch/eli/cc/1998/2261_2261_2261/19990101/fr/pdf-a"
+        ]
       },
       "attributes": {
         "title": {
@@ -109,6 +123,50 @@
       ]
     },
     {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/1998/2261_2261_2261/19990101/fr/docx",
+      "type": "Manifestation",
+      "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/1998/2261_2261_2261/19990101/fr/docx/fedlex-data-admin-ch-eli-cc-1998-2261_2261_2261-19990101-fr-docx.docx"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1998/2261_2261_2261/19990101/fr/docx/fedlex-data-admin-ch-eli-cc-1998-2261_2261_2261-19990101-fr-docx.docx"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/1998/2261_2261_2261/19990101/fr/pdf-a",
+      "type": "Manifestation",
+      "attributes": {
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": true
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/1998/2261_2261_2261/19990101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-1998-2261_2261_2261-19990101-fr-pdf-a.pdf"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "numberOfPages": {
+          "xsd:int": [
+            16
+          ]
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1998/2261_2261_2261/19990101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-1998-2261_2261_2261-19990101-fr-pdf-a.pdf"
+        }
+      }
+    },
+    {
       "uri": "http://publications.europa.eu/resource/authority/language/ENG",
       "type": [
         "Concept",
@@ -123,7 +181,6 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/1998/2261_2261_2261/19990101/graph",
   "facets": {
     "consolidates": [
       {
@@ -186,6 +243,7 @@
     "classifiedByTaxonomyEntryLabel_raw": "814.680",
     "consolidationAbstract": {
       "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
+      "basicAct": "https://fedlex.data.admin.ch/eli/oc/1998/2261_2261_2261",
       "typeDocument": "https://fedlex.data.admin.ch/vocabulary/resource-type/29",
       "titles": {
         "http://publications.europa.eu/resource/authority/language/DEU": {
@@ -199,6 +257,8 @@
           "title": "Ordonnance du 26 août 1998 sur l'assainissement des sites pollués (Ordonnance sur les sites contaminés, OSites)"
         },
         "http://publications.europa.eu/resource/authority/language/ENG": {
+          "titleAlternative": "Contaminated Sites Ordinance",
+          "titleShort": "CSO",
           "title": "Ordinance of 26 August 1998 on the Remediation of Polluted Sites (Contaminated Sites Ordinance, CSO)"
         },
         "http://publications.europa.eu/resource/authority/language/ITA": {
@@ -209,7 +269,7 @@
       }
     },
     "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/9581",
-    "classifiedByTaxonomyEntryLabel_sort": "00814.00680",
+    "classifiedByTaxonomyEntryLabel_sort": "814.680",
     "theme": {
       "themeId": "8",
       "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/9225"
@@ -228,7 +288,23 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/DEU"
         ],
+        "historicalImpactForLanguage": false,
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "1999-01-01",
+        "commentFrom": {
+          "it": "all. 5 n. 5"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1998/2863_2863_2863",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "historicalImpactForLanguage": false,
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "decisionDate": "1998-10-28",
         "historicalImpact": false
       },
       {
@@ -244,49 +320,8 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/FRA"
         ],
+        "historicalImpactForLanguage": false,
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "1999-01-01",
-        "commentFrom": {
-          "it": "all. 5 n. 5"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1998/2863_2863_2863",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "decisionDate": "1998-10-28",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "1999-01-01",
-        "commentFrom": {
-          "fr": "Annexe 5 ch. 5"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1998/2863_2863_2863",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "decisionDate": "1998-10-28",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "1999-01-01",
-        "commentFrom": {
-          "de": "Anhang 5 Ziff. 5"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1998/2863_2863_2863",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "decisionDate": "1998-10-28",
         "historicalImpact": false
       },
       {
@@ -302,15 +337,48 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/ITA"
         ],
+        "historicalImpactForLanguage": false,
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "1999-01-01",
+        "commentFrom": {
+          "fr": "Annexe 5 ch. 5"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1998/2863_2863_2863",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "historicalImpactForLanguage": false,
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "decisionDate": "1998-10-28",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "1999-01-01",
+        "commentFrom": {
+          "de": "Anhang 5 Ziff. 5"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1998/2863_2863_2863",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "historicalImpactForLanguage": false,
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "decisionDate": "1998-10-28",
         "historicalImpact": false
       }
     ],
+    "groupIdentifier": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/9581",
     "classifiedByTaxonomyEntryLabel": {
       "de": "SR 814.680",
       "fr": "RS 814.680",
       "it": "RS 814.680"
     }
   },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/1998/2261_2261_2261/19990101/graph",
   "timestampms": null
 }

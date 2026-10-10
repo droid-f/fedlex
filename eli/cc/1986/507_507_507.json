@@ -15,30 +15,24 @@
       "basicAct": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/oc/1986/507_507_507"
       },
-      "typeDocument": {
-        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/26"
-      },
       "dateEntryInForce": {
         "xsd:date": "1986-04-01"
+      },
+      "typeDocument": {
+        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/26"
       }
     },
     "references": {
-      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/10318",
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/cc/1986/507_507_507/it",
         "https://fedlex.data.admin.ch/eli/cc/1986/507_507_507/fr",
         "https://fedlex.data.admin.ch/eli/cc/1986/507_507_507/de"
-      ]
+      ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/10318"
     }
   },
   "included": [
-    {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/10318",
-      "type": [
-        "Concept",
-        "LegalTaxonomy"
-      ]
-    },
     {
       "uri": "https://fedlex.data.admin.ch/eli/cc/1986/507_507_507/it",
       "type": "Expression",
@@ -76,6 +70,20 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/10318",
+      "type": [
+        "Concept",
+        "LegalTaxonomy"
+      ]
+    },
+    {
       "uri": "http://publications.europa.eu/resource/authority/language/ITA",
       "type": [
         "Concept",
@@ -97,9 +105,7 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/1986/507_507_507/graph",
   "facets": {
-    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
     "consolidates": [
       {
         "dateDocument": "2000-11-15",
@@ -110,11 +116,6 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2000/563/de/pdf-a/fedlex-data-admin-ch-eli-oc-2000-563-de-pdf-a.pdf",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2000/563/de/pdf-a"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2000/563/de/pdf-x/fedlex-data-admin-ch-eli-oc-2000-563-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2000/563/de/pdf-x"
               },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
@@ -136,11 +137,6 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2000/563/fr/doc/fedlex-data-admin-ch-eli-oc-2000-563-fr-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2000/563/fr/doc"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2000/563/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2000-563-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2000/563/fr/pdf-x"
               }
             ],
             "memorialLabel": "RO 2000 3097",
@@ -157,11 +153,6 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2000/563/it/pdf-a/fedlex-data-admin-ch-eli-oc-2000-563-it-pdf-a.pdf",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2000/563/it/pdf-a"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2000/563/it/pdf-x/fedlex-data-admin-ch-eli-oc-2000-563-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2000/563/it/pdf-x"
               }
             ],
             "memorialLabel": "RU 2000 3097",
@@ -192,10 +183,12 @@
         "uri": "https://fedlex.data.admin.ch/eli/oc/1986/507_507_507"
       }
     ],
-    "sortingDate": "2001-01-01",
-    "theme": {
-      "themeId": "8",
-      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/9225"
+    "calculatedEndDate": "2000-12-31",
+    "abrogationSourceUri": "https://fedlex.data.admin.ch/eli/oc/2000/563",
+    "baseActReference": {
+      "de": "AS 1986 507",
+      "it": "RU 1986 507",
+      "fr": "RO 1986 507"
     },
     "impacts": [
       {
@@ -211,33 +204,6 @@
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
         "decisionDate": "2000-11-15",
         "historicalImpact": false
-      },
-      {
-        "impactDate": "2001-01-01",
-        "commentFrom": {
-          "de": "Art. 130"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2000/563",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
-        "decisionDate": "2000-11-15",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "1986-04-01",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1986/507_507_507",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1986/507_507_507/19860401",
-        "decisionDate": "1986-04-01",
-        "historicalImpact": false,
-        "consolidationDate": "1986-04-01"
       },
       {
         "impactDate": "2001-01-01",
@@ -258,7 +224,7 @@
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/1986/507_507_507",
         "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
+          "http://publications.europa.eu/resource/authority/language/DEU"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1986/507_507_507/19860401",
@@ -278,6 +244,33 @@
         "decisionDate": "1986-04-01",
         "historicalImpact": false,
         "consolidationDate": "1986-04-01"
+      },
+      {
+        "impactDate": "2001-01-01",
+        "commentFrom": {
+          "de": "Art. 130"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2000/563",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
+        "decisionDate": "2000-11-15",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "1986-04-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1986/507_507_507",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1986/507_507_507/19860401",
+        "decisionDate": "1986-04-01",
+        "historicalImpact": false,
+        "consolidationDate": "1986-04-01"
       }
     ],
     "title": {
@@ -290,7 +283,33 @@
       "fr": "RS 837.15",
       "it": "RS 837.15"
     },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
+    },
+    "abrogationDecisionDate": "2000-11-15",
+    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
+    "abrogationSource": {
+      "de": "AS 2000 3097",
+      "it": "RU 2000 3097",
+      "fr": "RO 2000 3097"
+    },
+    "sortingDateTime": "1986-03-31T22:00Z",
+    "classifiedByTaxonomyEntryLabel_raw": "837.15",
+    "sortingDate": "2001-01-01",
+    "classifiedByTaxonomyEntryLabel_sort": "837.150",
+    "theme": {
+      "themeId": "8",
+      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/9225"
+    },
     "archivingDate": "1986-04-01"
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/1986/507_507_507/graph",
   "timestampms": null
 }

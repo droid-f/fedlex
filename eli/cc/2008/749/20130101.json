@@ -6,8 +6,18 @@
       "Work"
     ],
     "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "2012-12-31T23:00:00.000Z"
+        ]
+      },
       "dateEndApplicability": {
         "xsd:date": "2013-02-28"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "2012-12-31T23:00:00.000Z"
+        ]
       },
       "isMemberOf": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/cc/2008/749"
@@ -220,7 +230,6 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/2008/749/20130101/graph",
   "facets": {
     "consolidates": [
       {
@@ -229,14 +238,14 @@
           "http://publications.europa.eu/resource/authority/language/DEU": {
             "manifestation": [
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2012/834/de/doc/fedlex-data-admin-ch-eli-oc-2012-834-de-doc.doc",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2012/834/de/doc"
-              },
-              {
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2012/834/de/pdf-a/fedlex-data-admin-ch-eli-oc-2012-834-de-pdf-a.pdf",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2012/834/de/pdf-a"
+              },
+              {
+                "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
+                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2012/834/de/doc/fedlex-data-admin-ch-eli-oc-2012-834-de-doc.doc",
+                "uri": "https://fedlex.data.admin.ch/eli/oc/2012/834/de/doc"
               }
             ],
             "memorialLabel": "AS 2012 6915",
@@ -283,6 +292,7 @@
     "classifiedByTaxonomyEntryLabel_raw": "956.122",
     "consolidationAbstract": {
       "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
+      "basicAct": "https://fedlex.data.admin.ch/eli/oc/2008/749",
       "typeDocument": "https://fedlex.data.admin.ch/vocabulary/resource-type/29",
       "titles": {
         "http://publications.europa.eu/resource/authority/language/DEU": {
@@ -303,12 +313,26 @@
       }
     },
     "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/11618",
-    "classifiedByTaxonomyEntryLabel_sort": "00956.00122",
+    "classifiedByTaxonomyEntryLabel_sort": "956.122",
     "theme": {
       "themeId": "9",
       "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/10385"
     },
     "impacts": [
+      {
+        "impactDate": "2013-01-01",
+        "commentFrom": {
+          "de": "I, II"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2012/834",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "decisionDate": "2012-11-21",
+        "historicalImpact": false
+      },
       {
         "impactDate": "2013-01-01",
         "commentFrom": {
@@ -321,38 +345,6 @@
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2012/834",
         "language": [
           "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "2013-01-01",
-        "commentFrom": {
-          "fr": "O 21.11.2012 (I, II)"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "fr": "Art. 7, 20 à 23, 25; annexe"
-        },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2012/834",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "2013-01-01",
-        "commentFrom": {
-          "de": "V 21.11.2012 (I, II)"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "de": "Art. 7, 20-23, 25; Anhang"
-        },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2012/834",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "historicalImpact": false
@@ -388,15 +380,33 @@
       {
         "impactDate": "2013-01-01",
         "commentFrom": {
-          "de": "I, II"
+          "fr": "O 21.11.2012 (I, II)"
         },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "fr": "Art. 7, 20 à 23, 25; annexe"
+        },
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2012/834",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "2013-01-01",
+        "commentFrom": {
+          "de": "V 21.11.2012 (I, II)"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "de": "Art. 7, 20-23, 25; Anhang"
+        },
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2012/834",
         "language": [
           "http://publications.europa.eu/resource/authority/language/DEU"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "decisionDate": "2012-11-21",
         "historicalImpact": false
       }
     ],
@@ -406,5 +416,6 @@
       "it": "RS 956.122"
     }
   },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/2008/749/20130101/graph",
   "timestampms": null
 }

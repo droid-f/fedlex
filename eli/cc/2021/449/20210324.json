@@ -6,6 +6,16 @@
       "Work"
     ],
     "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "2023-01-22T14:53:21.416Z"
+        ]
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "2023-01-22T14:53:21.416Z"
+        ]
+      },
       "isMemberOf": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/cc/2021/449"
       },
@@ -33,6 +43,7 @@
           "https://fedlex.data.admin.ch/eli/cc/2021/449/20210324/it/doc",
           "https://fedlex.data.admin.ch/eli/cc/2021/449/20210324/it/pdf-a",
           "https://fedlex.data.admin.ch/eli/cc/2021/449/20210324/it/html",
+          "https://fedlex.data.admin.ch/eli/cc/2021/449/20210324/it/xml",
           "https://fedlex.data.admin.ch/eli/cc/2021/449/20210324/it/docx"
         ],
         "language": "http://publications.europa.eu/resource/authority/language/ITA"
@@ -46,7 +57,8 @@
           "https://fedlex.data.admin.ch/eli/cc/2021/449/20210324/fr/docx",
           "https://fedlex.data.admin.ch/eli/cc/2021/449/20210324/fr/doc",
           "https://fedlex.data.admin.ch/eli/cc/2021/449/20210324/fr/html",
-          "https://fedlex.data.admin.ch/eli/cc/2021/449/20210324/fr/pdf-a"
+          "https://fedlex.data.admin.ch/eli/cc/2021/449/20210324/fr/pdf-a",
+          "https://fedlex.data.admin.ch/eli/cc/2021/449/20210324/fr/xml"
         ],
         "language": "http://publications.europa.eu/resource/authority/language/FRA"
       }
@@ -59,7 +71,8 @@
           "https://fedlex.data.admin.ch/eli/cc/2021/449/20210324/de/html",
           "https://fedlex.data.admin.ch/eli/cc/2021/449/20210324/de/pdf-a",
           "https://fedlex.data.admin.ch/eli/cc/2021/449/20210324/de/doc",
-          "https://fedlex.data.admin.ch/eli/cc/2021/449/20210324/de/docx"
+          "https://fedlex.data.admin.ch/eli/cc/2021/449/20210324/de/docx",
+          "https://fedlex.data.admin.ch/eli/cc/2021/449/20210324/de/xml"
         ],
         "language": "http://publications.europa.eu/resource/authority/language/DEU"
       }
@@ -68,17 +81,14 @@
       "uri": "https://fedlex.data.admin.ch/eli/cc/2021/449/20210324/it/doc",
       "type": "Manifestation",
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/it/doc/fedlex-data-admin-ch-eli-cc-2021-449-20210324-it-doc.doc"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
-        },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/it/doc/fedlex-data-admin-ch-eli-cc-2021-449-20210324-it-doc.doc"
@@ -89,17 +99,22 @@
       "uri": "https://fedlex.data.admin.ch/eli/cc/2021/449/20210324/it/pdf-a",
       "type": "Manifestation",
       "attributes": {
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": true
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/it/pdf-a/fedlex-data-admin-ch-eli-cc-2021-449-20210324-it-pdf-a.pdf"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        "numberOfPages": {
+          "xsd:int": [
+            14
+          ]
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/it/pdf-a/fedlex-data-admin-ch-eli-cc-2021-449-20210324-it-pdf-a.pdf"
@@ -110,20 +125,61 @@
       "uri": "https://fedlex.data.admin.ch/eli/cc/2021/449/20210324/it/html",
       "type": "Manifestation",
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/it/html/fedlex-data-admin-ch-eli-cc-2021-449-20210324-it-html.html",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/it/html/fedlex-data-admin-ch-eli-cc-2021-449-20210324-it-html-2.html",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/it/html/fedlex-data-admin-ch-eli-cc-2021-449-20210324-it-html-1.html"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/it/html/fedlex-data-admin-ch-eli-cc-2021-449-20210324-it-html.html",
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/it/html/fedlex-data-admin-ch-eli-cc-2021-449-20210324-it-html-2.html",
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/it/html/fedlex-data-admin-ch-eli-cc-2021-449-20210324-it-html-1.html"
+          ]
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/it/html/fedlex-data-admin-ch-eli-cc-2021-449-20210324-it-html.html"
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/it/html/fedlex-data-admin-ch-eli-cc-2021-449-20210324-it-html-3.html"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/it/html/fedlex-data-admin-ch-eli-cc-2021-449-20210324-it-html-3.html"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/2021/449/20210324/it/xml",
+      "type": "Manifestation",
+      "attributes": {
         "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/XML"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/it/xml/fedlex-data-admin-ch-eli-cc-2021-449-20210324-it-xml-1.xml",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/it/xml/fedlex-data-admin-ch-eli-cc-2021-449-20210324-it-xml.xml"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/it/xml/fedlex-data-admin-ch-eli-cc-2021-449-20210324-it-xml-1.xml",
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/it/xml/fedlex-data-admin-ch-eli-cc-2021-449-20210324-it-xml.xml"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/it/xml/fedlex-data-admin-ch-eli-cc-2021-449-20210324-it-xml-2.xml"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/xml"
         },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/it/html/fedlex-data-admin-ch-eli-cc-2021-449-20210324-it-html.html"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/it/xml/fedlex-data-admin-ch-eli-cc-2021-449-20210324-it-xml-2.xml"
         }
       }
     },
@@ -131,20 +187,27 @@
       "uri": "https://fedlex.data.admin.ch/eli/cc/2021/449/20210324/it/docx",
       "type": "Manifestation",
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/it/docx/fedlex-data-admin-ch-eli-cc-2021-449-20210324-it-docx.docx"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/it/docx/fedlex-data-admin-ch-eli-cc-2021-449-20210324-it-docx.docx"
+          ]
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/it/docx/fedlex-data-admin-ch-eli-cc-2021-449-20210324-it-docx.docx"
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/it/docx/fedlex-data-admin-ch-eli-cc-2021-449-20210324-it-docx-1.docx"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/it/docx/fedlex-data-admin-ch-eli-cc-2021-449-20210324-it-docx.docx"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/it/docx/fedlex-data-admin-ch-eli-cc-2021-449-20210324-it-docx-1.docx"
         }
       }
     },
@@ -159,20 +222,27 @@
       "uri": "https://fedlex.data.admin.ch/eli/cc/2021/449/20210324/fr/docx",
       "type": "Manifestation",
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/fr/docx/fedlex-data-admin-ch-eli-cc-2021-449-20210324-fr-docx.docx"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/fr/docx/fedlex-data-admin-ch-eli-cc-2021-449-20210324-fr-docx.docx"
+          ]
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/fr/docx/fedlex-data-admin-ch-eli-cc-2021-449-20210324-fr-docx.docx"
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/fr/docx/fedlex-data-admin-ch-eli-cc-2021-449-20210324-fr-docx-1.docx"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/fr/docx/fedlex-data-admin-ch-eli-cc-2021-449-20210324-fr-docx.docx"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/fr/docx/fedlex-data-admin-ch-eli-cc-2021-449-20210324-fr-docx-1.docx"
         }
       }
     },
@@ -180,17 +250,14 @@
       "uri": "https://fedlex.data.admin.ch/eli/cc/2021/449/20210324/fr/doc",
       "type": "Manifestation",
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/fr/doc/fedlex-data-admin-ch-eli-cc-2021-449-20210324-fr-doc.doc"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
-        },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/fr/doc/fedlex-data-admin-ch-eli-cc-2021-449-20210324-fr-doc.doc"
@@ -201,20 +268,31 @@
       "uri": "https://fedlex.data.admin.ch/eli/cc/2021/449/20210324/fr/html",
       "type": "Manifestation",
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/fr/html/fedlex-data-admin-ch-eli-cc-2021-449-20210324-fr-html-2.html",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/fr/html/fedlex-data-admin-ch-eli-cc-2021-449-20210324-fr-html.html",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/fr/html/fedlex-data-admin-ch-eli-cc-2021-449-20210324-fr-html-1.html"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/fr/html/fedlex-data-admin-ch-eli-cc-2021-449-20210324-fr-html.html",
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/fr/html/fedlex-data-admin-ch-eli-cc-2021-449-20210324-fr-html-2.html",
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/fr/html/fedlex-data-admin-ch-eli-cc-2021-449-20210324-fr-html-1.html"
+          ]
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/fr/html/fedlex-data-admin-ch-eli-cc-2021-449-20210324-fr-html.html"
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/fr/html/fedlex-data-admin-ch-eli-cc-2021-449-20210324-fr-html-3.html"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/fr/html/fedlex-data-admin-ch-eli-cc-2021-449-20210324-fr-html.html"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/fr/html/fedlex-data-admin-ch-eli-cc-2021-449-20210324-fr-html-3.html"
         }
       }
     },
@@ -222,20 +300,55 @@
       "uri": "https://fedlex.data.admin.ch/eli/cc/2021/449/20210324/fr/pdf-a",
       "type": "Manifestation",
       "attributes": {
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": true
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2021-449-20210324-fr-pdf-a.pdf"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        "numberOfPages": {
+          "xsd:int": [
+            16
+          ]
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2021-449-20210324-fr-pdf-a.pdf"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/2021/449/20210324/fr/xml",
+      "type": "Manifestation",
+      "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/XML"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/fr/xml/fedlex-data-admin-ch-eli-cc-2021-449-20210324-fr-xml.xml",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/fr/xml/fedlex-data-admin-ch-eli-cc-2021-449-20210324-fr-xml-1.xml"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/fr/xml/fedlex-data-admin-ch-eli-cc-2021-449-20210324-fr-xml.xml",
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/fr/xml/fedlex-data-admin-ch-eli-cc-2021-449-20210324-fr-xml-1.xml"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/fr/xml/fedlex-data-admin-ch-eli-cc-2021-449-20210324-fr-xml-2.xml"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/xml"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/fr/xml/fedlex-data-admin-ch-eli-cc-2021-449-20210324-fr-xml-2.xml"
         }
       }
     },
@@ -250,20 +363,31 @@
       "uri": "https://fedlex.data.admin.ch/eli/cc/2021/449/20210324/de/html",
       "type": "Manifestation",
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/de/html/fedlex-data-admin-ch-eli-cc-2021-449-20210324-de-html-1.html",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/de/html/fedlex-data-admin-ch-eli-cc-2021-449-20210324-de-html.html",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/de/html/fedlex-data-admin-ch-eli-cc-2021-449-20210324-de-html-2.html"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/de/html/fedlex-data-admin-ch-eli-cc-2021-449-20210324-de-html.html",
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/de/html/fedlex-data-admin-ch-eli-cc-2021-449-20210324-de-html-2.html",
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/de/html/fedlex-data-admin-ch-eli-cc-2021-449-20210324-de-html-1.html"
+          ]
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/de/html/fedlex-data-admin-ch-eli-cc-2021-449-20210324-de-html.html"
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/de/html/fedlex-data-admin-ch-eli-cc-2021-449-20210324-de-html-3.html"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/html"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
-        },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/de/html/fedlex-data-admin-ch-eli-cc-2021-449-20210324-de-html.html"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/de/html/fedlex-data-admin-ch-eli-cc-2021-449-20210324-de-html-3.html"
         }
       }
     },
@@ -271,17 +395,22 @@
       "uri": "https://fedlex.data.admin.ch/eli/cc/2021/449/20210324/de/pdf-a",
       "type": "Manifestation",
       "attributes": {
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": true
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/de/pdf-a/fedlex-data-admin-ch-eli-cc-2021-449-20210324-de-pdf-a.pdf"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        "numberOfPages": {
+          "xsd:int": [
+            16
+          ]
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/de/pdf-a/fedlex-data-admin-ch-eli-cc-2021-449-20210324-de-pdf-a.pdf"
@@ -292,17 +421,14 @@
       "uri": "https://fedlex.data.admin.ch/eli/cc/2021/449/20210324/de/doc",
       "type": "Manifestation",
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
+        },
         "isExemplifiedByPrivate": {
           "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/de/doc/fedlex-data-admin-ch-eli-cc-2021-449-20210324-de-doc.doc"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/doc"
-        },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
-        "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOC"
         },
         "isExemplifiedBy": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/de/doc/fedlex-data-admin-ch-eli-cc-2021-449-20210324-de-doc.doc"
@@ -313,20 +439,57 @@
       "uri": "https://fedlex.data.admin.ch/eli/cc/2021/449/20210324/de/docx",
       "type": "Manifestation",
       "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/de/docx/fedlex-data-admin-ch-eli-cc-2021-449-20210324-de-docx.docx"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/de/docx/fedlex-data-admin-ch-eli-cc-2021-449-20210324-de-docx.docx"
+          ]
+        },
         "isExemplifiedByPrivate": {
-          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/de/docx/fedlex-data-admin-ch-eli-cc-2021-449-20210324-de-docx.docx"
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/de/docx/fedlex-data-admin-ch-eli-cc-2021-449-20210324-de-docx-1.docx"
         },
         "userFormat": {
           "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
         },
-        "manifestationNotToBePrinted": {
-          "xsd:boolean": false
-        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/de/docx/fedlex-data-admin-ch-eli-cc-2021-449-20210324-de-docx-1.docx"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/2021/449/20210324/de/xml",
+      "type": "Manifestation",
+      "attributes": {
         "format": {
-          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/XML"
+        },
+        "wasExemplifiedBy": {
+          "rdfs:Resource": [
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/de/xml/fedlex-data-admin-ch-eli-cc-2021-449-20210324-de-xml.xml",
+            "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/de/xml/fedlex-data-admin-ch-eli-cc-2021-449-20210324-de-xml-1.xml"
+          ]
+        },
+        "wasExemplifiedByPrivate": {
+          "rdfs:Resource": [
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/de/xml/fedlex-data-admin-ch-eli-cc-2021-449-20210324-de-xml-1.xml",
+            "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/de/xml/fedlex-data-admin-ch-eli-cc-2021-449-20210324-de-xml.xml"
+          ]
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/de/xml/fedlex-data-admin-ch-eli-cc-2021-449-20210324-de-xml-2.xml"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/xml"
         },
         "isExemplifiedBy": {
-          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/de/docx/fedlex-data-admin-ch-eli-cc-2021-449-20210324-de-docx.docx"
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2021/449/20210324/de/xml/fedlex-data-admin-ch-eli-cc-2021-449-20210324-de-xml-2.xml"
         }
       }
     },
@@ -338,7 +501,6 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/2021/449/20210324/graph",
   "facets": {
     "consolidates": [
       {
@@ -398,8 +560,10 @@
         "uri": "https://fedlex.data.admin.ch/eli/oc/2021/449"
       }
     ],
+    "classifiedByTaxonomyEntryLabel_raw": "0.748.127.194.49",
     "consolidationAbstract": {
       "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/49",
+      "basicAct": "https://fedlex.data.admin.ch/eli/oc/2021/449",
       "typeDocument": "https://fedlex.data.admin.ch/vocabulary/resource-type/31",
       "titles": {
         "http://publications.europa.eu/resource/authority/language/DEU": {
@@ -417,6 +581,7 @@
       }
     },
     "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/3197",
+    "classifiedByTaxonomyEntryLabel_sort": "000.748.127.194.490",
     "theme": {
       "themeId": "0.7",
       "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/2697"
@@ -424,14 +589,29 @@
     "impacts": [
       {
         "impactDate": "2021-03-24",
-        "commentFrom": {
-          "de": ""
-        },
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-legiconso",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/2021/449",
         "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU",
-          "http://publications.europa.eu/resource/authority/language/FRA",
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "2021-03-24",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-legiconso",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2021/449",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "2021-03-24",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-legiconso",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2021/449",
+        "language": [
           "http://publications.europa.eu/resource/authority/language/ITA"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
@@ -444,5 +624,6 @@
       "it": "RS 0.748.127.194.49"
     }
   },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/2021/449/20210324/graph",
   "timestampms": null
 }

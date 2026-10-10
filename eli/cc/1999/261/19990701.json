@@ -6,8 +6,18 @@
       "Work"
     ],
     "attributes": {
+      "created": {
+        "xsd:dateTime": [
+          "1999-06-30T22:00:00.000Z"
+        ]
+      },
       "dateEndApplicability": {
         "xsd:date": "2003-12-31"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "1999-06-30T22:00:00.000Z"
+        ]
       },
       "isMemberOf": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/cc/1999/261"
@@ -79,7 +89,11 @@
       "uri": "https://fedlex.data.admin.ch/eli/cc/1999/261/19990701/fr",
       "type": "Expression",
       "references": {
-        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/cc/1999/261/19990701/fr/docx",
+          "https://fedlex.data.admin.ch/eli/cc/1999/261/19990701/fr/pdf-a"
+        ]
       },
       "attributes": {
         "title": {
@@ -121,9 +135,52 @@
         "Concept",
         "Language"
       ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/1999/261/19990701/fr/docx",
+      "type": "Manifestation",
+      "attributes": {
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/1999/261/19990701/fr/docx/fedlex-data-admin-ch-eli-cc-1999-261-19990701-fr-docx.docx"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/docx"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1999/261/19990701/fr/docx/fedlex-data-admin-ch-eli-cc-1999-261-19990701-fr-docx.docx"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/cc/1999/261/19990701/fr/pdf-a",
+      "type": "Manifestation",
+      "attributes": {
+        "manifestationNotToBePrinted": {
+          "xsd:boolean": true
+        },
+        "format": {
+          "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/PDF"
+        },
+        "isExemplifiedByPrivate": {
+          "rdfs:Resource": "https://intranet.fedlex.admin.ch/casematesbo/filestore/fedlex.data.admin.ch/eli/cc/1999/261/19990701/fr/pdf-a/fedlex-data-admin-ch-eli-cc-1999-261-19990701-fr-pdf-a.pdf"
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "numberOfPages": {
+          "xsd:int": [
+            2
+          ]
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1999/261/19990701/fr/pdf-a/fedlex-data-admin-ch-eli-cc-1999-261-19990701-fr-pdf-a.pdf"
+        }
+      }
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/1999/261/19990701/graph",
   "facets": {
     "consolidates": [
       {
@@ -186,8 +243,8 @@
     "classifiedByTaxonomyEntryLabel_raw": "432.51",
     "consolidationAbstract": {
       "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/46",
-      "dateNoLongerInForce": "2004-01-01",
-      "typeDocument": "https://fedlex.data.admin.ch/vocabulary/resource-type/54",
+      "basicAct": "https://fedlex.data.admin.ch/eli/oc/1999/261",
+      "typeDocument": "https://fedlex.data.admin.ch/vocabulary/resource-type/9",
       "titles": {
         "http://publications.europa.eu/resource/authority/language/DEU": {
           "title": "Bundesbeschluss vom 18. Dezember 1998 über die Ausrichtung einer Finanzhilfe an das Verkehrshaus der Schweiz"
@@ -201,7 +258,7 @@
       }
     },
     "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/7095",
-    "classifiedByTaxonomyEntryLabel_sort": "00432.00051",
+    "classifiedByTaxonomyEntryLabel_sort": "432.510",
     "theme": {
       "themeId": "4",
       "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/6332"
@@ -212,19 +269,9 @@
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/1999/261",
         "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "decisionDate": "1999-07-01",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "1999-07-01",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1999/261",
-        "language": [
           "http://publications.europa.eu/resource/authority/language/ITA"
         ],
+        "historicalImpactForLanguage": false,
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
         "decisionDate": "1999-07-01",
         "historicalImpact": false
@@ -236,16 +283,31 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/FRA"
         ],
+        "historicalImpactForLanguage": false,
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "decisionDate": "1999-07-01",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "1999-07-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1999/261",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "historicalImpactForLanguage": false,
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
         "decisionDate": "1999-07-01",
         "historicalImpact": false
       }
     ],
+    "groupIdentifier": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/7095",
     "classifiedByTaxonomyEntryLabel": {
       "de": "SR 432.51",
       "fr": "RS 432.51",
       "it": "RS 432.51"
     }
   },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/1999/261/19990701/graph",
   "timestampms": null
 }

@@ -15,30 +15,24 @@
       "basicAct": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/oc/2000/360"
       },
-      "typeDocument": {
-        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/29"
-      },
       "dateEntryInForce": {
         "xsd:date": "2000-10-01"
+      },
+      "typeDocument": {
+        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/29"
       }
     },
     "references": {
-      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/4857",
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/cc/2000/360/fr",
         "https://fedlex.data.admin.ch/eli/cc/2000/360/de",
         "https://fedlex.data.admin.ch/eli/cc/2000/360/it"
-      ]
+      ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/4857"
     }
   },
   "included": [
-    {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/4857",
-      "type": [
-        "Concept",
-        "LegalTaxonomy"
-      ]
-    },
     {
       "uri": "https://fedlex.data.admin.ch/eli/cc/2000/360/fr",
       "type": "Expression",
@@ -47,7 +41,7 @@
           "xsd:string": "OIE"
         },
         "title": {
-          "xsd:string": "Ordonnance <bd>du 13 septembre 2000</bd> sur l'intégration des étrangers (OIE)"
+          "xsd:string": "Ordonnance du 13 septembre 2000 sur l'intégration des étrangers (OIE)"
         }
       },
       "references": {
@@ -62,7 +56,7 @@
           "xsd:string": "VIntA"
         },
         "title": {
-          "xsd:string": "Verordnung <bd>vom 13. September 2000</bd> über die Integration von Ausländerinnen und Ausländern (VIntA)"
+          "xsd:string": "Verordnung vom 13. September 2000 über die Integration von Ausländerinnen und Ausländern (VIntA)"
         }
       },
       "references": {
@@ -77,12 +71,26 @@
           "xsd:string": "OIntS"
         },
         "title": {
-          "xsd:string": "Ordinanza <bd>del 13 settembre 2000</bd> sull'integrazione degli stranieri (OIntS)"
+          "xsd:string": "Ordinanza del 13 settembre 2000 sull'integrazione degli stranieri (OIntS)"
         }
       },
       "references": {
         "language": "http://publications.europa.eu/resource/authority/language/ITA"
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/4857",
+      "type": [
+        "Concept",
+        "LegalTaxonomy"
+      ]
     },
     {
       "uri": "http://publications.europa.eu/resource/authority/language/FRA",
@@ -106,20 +114,13 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/2000/360/graph",
   "facets": {
-    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
     "consolidates": [
       {
         "dateDocument": "2007-10-24",
         "expression": {
           "http://publications.europa.eu/resource/authority/language/DEU": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2007/762/de/pdf-x/fedlex-data-admin-ch-eli-oc-2007-762-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2007/762/de/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2007/762/de/doc/fedlex-data-admin-ch-eli-oc-2007-762-de-doc.doc",
@@ -132,7 +133,7 @@
               }
             ],
             "memorialLabel": "AS 2007 5551",
-            "title": "Verordnung <bd> über die Integration von Ausländerinnen und Ausländern (VIntA)"
+            "title": "Verordnung über die Integration von Ausländerinnen und Ausländern (VIntA)"
           },
           "http://publications.europa.eu/resource/authority/language/FRA": {
             "manifestation": [
@@ -142,18 +143,13 @@
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2007/762/fr/pdf-a"
               },
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2007/762/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2007-762-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2007/762/fr/pdf-x"
-              },
-              {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2007/762/fr/doc/fedlex-data-admin-ch-eli-oc-2007-762-fr-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2007/762/fr/doc"
               }
             ],
             "memorialLabel": "RO 2007 5551",
-            "title": "Ordonnance <bd> sur l'intégration des étrangers (OIE)"
+            "title": "Ordonnance sur l'intégration des étrangers (OIE)"
           },
           "http://publications.europa.eu/resource/authority/language/ITA": {
             "manifestation": [
@@ -166,15 +162,10 @@
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2007/762/it/doc/fedlex-data-admin-ch-eli-oc-2007-762-it-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2007/762/it/doc"
-              },
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2007/762/it/pdf-x/fedlex-data-admin-ch-eli-oc-2007-762-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2007/762/it/pdf-x"
               }
             ],
             "memorialLabel": "RU 2007 5551",
-            "title": "Ordinanza <bd> sull'integrazione degli stranieri (OIntS)"
+            "title": "Ordinanza sull'integrazione degli stranieri (OIntS)"
           }
         },
         "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/178",
@@ -187,19 +178,14 @@
           "http://publications.europa.eu/resource/authority/language/DEU": {
             "manifestation": [
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2005/634/de/pdf-a/fedlex-data-admin-ch-eli-oc-2005-634-de-pdf-a.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2005/634/de/pdf-a"
-              },
-              {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2005/634/de/doc/fedlex-data-admin-ch-eli-oc-2005-634-de-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2005/634/de/doc"
               },
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2005/634/de/pdf-x/fedlex-data-admin-ch-eli-oc-2005-634-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2005/634/de/pdf-x"
+                "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
+                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2005/634/de/pdf-a/fedlex-data-admin-ch-eli-oc-2005-634-de-pdf-a.pdf",
+                "uri": "https://fedlex.data.admin.ch/eli/oc/2005/634/de/pdf-a"
               }
             ],
             "memorialLabel": "AS 2005 4769",
@@ -207,11 +193,6 @@
           },
           "http://publications.europa.eu/resource/authority/language/FRA": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2005/634/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2005-634-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2005/634/fr/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2005/634/fr/doc/fedlex-data-admin-ch-eli-oc-2005-634-fr-doc.doc",
@@ -228,11 +209,6 @@
           },
           "http://publications.europa.eu/resource/authority/language/ITA": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2005/634/it/pdf-x/fedlex-data-admin-ch-eli-oc-2005-634-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2005/634/it/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2005/634/it/doc/fedlex-data-admin-ch-eli-oc-2005-634-it-doc.doc",
@@ -258,11 +234,6 @@
           "http://publications.europa.eu/resource/authority/language/DEU": {
             "manifestation": [
               {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2000/360/de/pdf-x/fedlex-data-admin-ch-eli-oc-2000-360-de-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2000/360/de/pdf-x"
-              },
-              {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2000/360/de/doc/fedlex-data-admin-ch-eli-oc-2000-360-de-doc.doc",
                 "uri": "https://fedlex.data.admin.ch/eli/oc/2000/360/de/doc"
@@ -274,15 +245,10 @@
               }
             ],
             "memorialLabel": "AS 2000 2281",
-            "title": "Verordnung <bd> über die Integration von Ausländerinnen und Ausländern (VIntA)"
+            "title": "Verordnung über die Integration von Ausländerinnen und Ausländern (VIntA)"
           },
           "http://publications.europa.eu/resource/authority/language/FRA": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2000/360/fr/pdf-x/fedlex-data-admin-ch-eli-oc-2000-360-fr-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2000/360/fr/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/DOC",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2000/360/fr/doc/fedlex-data-admin-ch-eli-oc-2000-360-fr-doc.doc",
@@ -295,15 +261,10 @@
               }
             ],
             "memorialLabel": "RO 2000 2281",
-            "title": "Ordonnance <bd> sur l'intégration des étrangers (OIE)"
+            "title": "Ordonnance sur l'intégration des étrangers (OIE)"
           },
           "http://publications.europa.eu/resource/authority/language/ITA": {
             "manifestation": [
-              {
-                "format": "http://publications.europa.eu/resource/authority/file-type/PDFX",
-                "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2000/360/it/pdf-x/fedlex-data-admin-ch-eli-oc-2000-360-it-pdf-x.pdf",
-                "uri": "https://fedlex.data.admin.ch/eli/oc/2000/360/it/pdf-x"
-              },
               {
                 "format": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "fileUrl": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/oc/2000/360/it/pdf-a/fedlex-data-admin-ch-eli-oc-2000-360-it-pdf-a.pdf",
@@ -316,7 +277,7 @@
               }
             ],
             "memorialLabel": "RU 2000 2281",
-            "title": "Ordinanza <bd> sull'integrazione degli stranieri (OIntS)"
+            "title": "Ordinanza sull'integrazione degli stranieri (OIntS)"
           }
         },
         "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/41",
@@ -324,81 +285,62 @@
         "uri": "https://fedlex.data.admin.ch/eli/oc/2000/360"
       }
     ],
-    "sortingDate": "2008-01-01",
-    "theme": {
-      "themeId": "1",
-      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/4713"
+    "calculatedEndDate": "2007-12-31",
+    "abrogationSourceUri": "https://fedlex.data.admin.ch/eli/oc/2007/762",
+    "baseActReference": {
+      "de": "AS 2000 2281",
+      "it": "RU 2000 2281",
+      "fr": "RO 2000 2281"
     },
-    "titleShort": {
-      "de": "VIntA",
-      "it": "OIntS",
-      "fr": "OIE"
-    },
+    "responsibilityOf": "https://fedlex.data.admin.ch/vocabulary/legal-institution/41",
     "impacts": [
       {
-        "impactDate": "2006-02-01",
-        "commentFrom": {
-          "it": "I"
-        },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2000/360/20060201/it/pdf-a/fedlex-data-admin-ch-eli-cc-2000-360-20060201-it-pdf-a.pdf",
+        "impactDate": "2000-10-01",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2005/634",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2000/360",
         "language": [
           "http://publications.europa.eu/resource/authority/language/ITA"
         ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2000/360/20060201",
-        "decisionDate": "2005-09-07",
+        "consolidatedByPdf2": {
+          "it": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2000/360/20001001/it/pdf-a/fedlex-data-admin-ch-eli-cc-2000-360-20001001-it-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2000/360/20001001",
+        "decisionDate": "2000-10-01",
         "historicalImpact": false,
-        "consolidationDate": "2006-02-01"
+        "consolidationDate": "2000-10-01"
       },
       {
-        "impactDate": "2006-02-01",
-        "commentFrom": {
-          "fr": "I"
-        },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2000/360/20060201/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2000-360-20060201-fr-pdf-a.pdf",
+        "impactDate": "2000-10-01",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2005/634",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2000/360/20060201",
-        "decisionDate": "2005-09-07",
-        "historicalImpact": false,
-        "consolidationDate": "2006-02-01"
-      },
-      {
-        "impactDate": "2006-02-01",
-        "commentFrom": {
-          "de": "I"
-        },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2000/360/20060201/de/pdf-a/fedlex-data-admin-ch-eli-cc-2000-360-20060201-de-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2005/634",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2000/360",
         "language": [
           "http://publications.europa.eu/resource/authority/language/DEU"
         ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2000/360/20060201",
-        "decisionDate": "2005-09-07",
+        "consolidatedByPdf2": {
+          "de": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2000/360/20001001/de/pdf-a/fedlex-data-admin-ch-eli-cc-2000-360-20001001-de-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2000/360/20001001",
+        "decisionDate": "2000-10-01",
         "historicalImpact": false,
-        "consolidationDate": "2006-02-01"
+        "consolidationDate": "2000-10-01"
       },
       {
-        "impactDate": "2008-01-01",
-        "commentFrom": {
-          "it": "art. 28"
-        },
+        "impactDate": "2000-10-01",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2007/762",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2000/360",
         "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
+          "http://publications.europa.eu/resource/authority/language/FRA"
         ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
-        "decisionDate": "2007-10-24",
-        "historicalImpact": false
+        "consolidatedByPdf2": {
+          "fr": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2000/360/20001001/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2000-360-20001001-fr-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2000/360/20001001",
+        "decisionDate": "2000-10-01",
+        "historicalImpact": false,
+        "consolidationDate": "2000-10-01"
       },
       {
         "impactDate": "2008-01-01",
@@ -417,6 +359,58 @@
       {
         "impactDate": "2008-01-01",
         "commentFrom": {
+          "it": "art. 28"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2007/762",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
+        "decisionDate": "2007-10-24",
+        "historicalImpact": false
+      },
+      {
+        "impactDate": "2006-02-01",
+        "commentFrom": {
+          "fr": "I"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2005/634",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "consolidatedByPdf2": {
+          "fr": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2000/360/20060201/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2000-360-20060201-fr-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2000/360/20060201",
+        "decisionDate": "2005-09-07",
+        "historicalImpact": false,
+        "consolidationDate": "2006-02-01"
+      },
+      {
+        "impactDate": "2006-02-01",
+        "commentFrom": {
+          "de": "I"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2005/634",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "consolidatedByPdf2": {
+          "de": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2000/360/20060201/de/pdf-a/fedlex-data-admin-ch-eli-cc-2000-360-20060201-de-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2000/360/20060201",
+        "decisionDate": "2005-09-07",
+        "historicalImpact": false,
+        "consolidationDate": "2006-02-01"
+      },
+      {
+        "impactDate": "2008-01-01",
+        "commentFrom": {
           "de": "Art. 28"
         },
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
@@ -429,58 +423,10 @@
         "historicalImpact": false
       },
       {
-        "impactDate": "2000-10-01",
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2000/360/20001001/it/pdf-a/fedlex-data-admin-ch-eli-cc-2000-360-20001001-it-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2000/360",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2000/360/20001001",
-        "decisionDate": "2000-10-01",
-        "historicalImpact": false,
-        "consolidationDate": "2000-10-01"
-      },
-      {
-        "impactDate": "2006-02-01",
-        "commentFrom": {
-          "it": "O 07.09.2005 (I)"
-        },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2000/360/20060201/it/pdf-a/fedlex-data-admin-ch-eli-cc-2000-360-20060201-it-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
-        "commentTo": {
-          "it": "ingr.; art. 1-3, 3<i>a</i>-3<i>c</i>; tit. avanti l'art. 14<i>a</i>; art. 14<i>a</i>, 16, 18, 19"
-        },
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2005/634",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2000/360/20060201",
-        "historicalImpact": false,
-        "consolidationDate": "2006-02-01"
-      },
-      {
-        "impactDate": "2000-10-01",
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2000/360/20001001/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2000-360-20001001-fr-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2000/360",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2000/360/20001001",
-        "decisionDate": "2000-10-01",
-        "historicalImpact": false,
-        "consolidationDate": "2000-10-01"
-      },
-      {
         "impactDate": "2006-02-01",
         "commentFrom": {
           "fr": "O 07.09.2005 (I)"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2000/360/20060201/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2000-360-20060201-fr-pdf-a.pdf",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
         "commentTo": {
           "fr": "Préamb.; art. 1 à 3, 3<i>a</i> à 3<i>c</i>; tit. avant l'art. 14<i>a</i>; art. 14<i>a</i>, 16, 18, 19"
@@ -489,31 +435,19 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/FRA"
         ],
+        "consolidatedByPdf2": {
+          "fr": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2000/360/20060201/fr/pdf-a/fedlex-data-admin-ch-eli-cc-2000-360-20060201-fr-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2000/360/20060201",
         "historicalImpact": false,
         "consolidationDate": "2006-02-01"
       },
       {
-        "impactDate": "2000-10-01",
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2000/360/20001001/de/pdf-a/fedlex-data-admin-ch-eli-cc-2000-360-20001001-de-pdf-a.pdf",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2000/360",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2000/360/20001001",
-        "decisionDate": "2000-10-01",
-        "historicalImpact": false,
-        "consolidationDate": "2000-10-01"
-      },
-      {
         "impactDate": "2006-02-01",
         "commentFrom": {
           "de": "V 07.09.2005 (I)"
         },
-        "consolidatedByPdf": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2000/360/20060201/de/pdf-a/fedlex-data-admin-ch-eli-cc-2000-360-20060201-de-pdf-a.pdf",
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
         "commentTo": {
           "de": "Ingr.; Art. 1-3, 3<i>a</i>-3<i>c</i>; Tit. vor Art. 14<i>a</i>; Art. 14<i>a</i>, 16, 18, 19"
@@ -522,23 +456,97 @@
         "language": [
           "http://publications.europa.eu/resource/authority/language/DEU"
         ],
+        "consolidatedByPdf2": {
+          "de": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2000/360/20060201/de/pdf-a/fedlex-data-admin-ch-eli-cc-2000-360-20060201-de-pdf-a.pdf"
+        },
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2000/360/20060201",
+        "historicalImpact": false,
+        "consolidationDate": "2006-02-01"
+      },
+      {
+        "impactDate": "2006-02-01",
+        "commentFrom": {
+          "it": "O 07.09.2005 (I)"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-mutation",
+        "commentTo": {
+          "it": "ingr.; art. 1-3, 3<i>a</i>-3<i>c</i>; tit. avanti l'art. 14<i>a</i>; art. 14<i>a</i>, 16, 18, 19"
+        },
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2005/634",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "consolidatedByPdf2": {
+          "it": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2000/360/20060201/it/pdf-a/fedlex-data-admin-ch-eli-cc-2000-360-20060201-it-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2000/360/20060201",
+        "historicalImpact": false,
+        "consolidationDate": "2006-02-01"
+      },
+      {
+        "impactDate": "2006-02-01",
+        "commentFrom": {
+          "it": "I"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/2005/634",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "consolidatedByPdf2": {
+          "it": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2000/360/20060201/it/pdf-a/fedlex-data-admin-ch-eli-cc-2000-360-20060201-it-pdf-a.pdf"
+        },
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/1",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/2000/360/20060201",
+        "decisionDate": "2005-09-07",
         "historicalImpact": false,
         "consolidationDate": "2006-02-01"
       }
     ],
     "title": {
-      "de": "Verordnung <bd>vom 13. September 2000</bd> über die Integration von Ausländerinnen und Ausländern (VIntA)",
-      "it": "Ordinanza <bd>del 13 settembre 2000</bd> sull'integrazione degli stranieri (OIntS)",
-      "fr": "Ordonnance <bd>du 13 septembre 2000</bd> sur l'intégration des étrangers (OIE)"
+      "de": "Verordnung vom 13. September 2000 über die Integration von Ausländerinnen und Ausländern (VIntA)",
+      "it": "Ordinanza del 13 settembre 2000 sull'integrazione degli stranieri (OIntS)",
+      "fr": "Ordonnance du 13 septembre 2000 sur l'intégration des étrangers (OIE)"
     },
     "classifiedByTaxonomyEntryLabel": {
       "de": "SR 142.205",
       "fr": "RS 142.205",
       "it": "RS 142.205"
     },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
+    },
+    "abrogationDecisionDate": "2007-10-24",
+    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
+    "abrogationSource": {
+      "de": "AS 2007 5551",
+      "it": "RU 2007 5551",
+      "fr": "RO 2007 5551"
+    },
+    "sortingDateTime": "2006-01-31T23:00Z",
+    "classifiedByTaxonomyEntryLabel_raw": "142.205",
+    "sortingDate": "2008-01-01",
+    "classifiedByTaxonomyEntryLabel_sort": "142.205",
+    "theme": {
+      "themeId": "1",
+      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/4713"
+    },
+    "titleShort": {
+      "de": "VIntA",
+      "it": "OIntS",
+      "fr": "OIE"
+    },
     "archivingDate": "2006-02-01"
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/2000/360/graph",
   "timestampms": null
 }

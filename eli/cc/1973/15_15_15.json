@@ -15,30 +15,24 @@
       "basicAct": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/eli/oc/1973/15_15_15"
       },
-      "typeDocument": {
-        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/29"
-      },
       "dateEntryInForce": {
         "xsd:date": "1973-01-01"
+      },
+      "typeDocument": {
+        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/29"
       }
     },
     "references": {
-      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/8325",
       "isRealizedBy": [
         "https://fedlex.data.admin.ch/eli/cc/1973/15_15_15/de",
         "https://fedlex.data.admin.ch/eli/cc/1973/15_15_15/fr",
         "https://fedlex.data.admin.ch/eli/cc/1973/15_15_15/it"
-      ]
+      ],
+      "inForceStatus": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "classifiedByTaxonomyEntry": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/8325"
     }
   },
   "included": [
-    {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/8325",
-      "type": [
-        "Concept",
-        "LegalTaxonomy"
-      ]
-    },
     {
       "uri": "https://fedlex.data.admin.ch/eli/cc/1973/15_15_15/de",
       "type": "Expression",
@@ -76,6 +70,20 @@
       }
     },
     {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/enforcement-status/3",
+      "type": [
+        "Concept",
+        "EnforcementStatus"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/8325",
+      "type": [
+        "Concept",
+        "LegalTaxonomy"
+      ]
+    },
+    {
       "uri": "http://publications.europa.eu/resource/authority/language/DEU",
       "type": [
         "Concept",
@@ -97,9 +105,7 @@
       ]
     }
   ],
-  "graph": "https://fedlex.data.admin.ch/eli/cc/1973/15_15_15/graph",
   "facets": {
-    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
     "consolidates": [
       {
         "dateDocument": "1972-12-20",
@@ -151,12 +157,28 @@
         "uri": "https://fedlex.data.admin.ch/eli/oc/1975/75_75_75"
       }
     ],
-    "sortingDate": "1975-01-10",
-    "theme": {
-      "themeId": "6",
-      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/7743"
+    "calculatedEndDate": "1975-01-09",
+    "abrogationSourceUri": "https://fedlex.data.admin.ch/eli/oc/1975/75_75_75",
+    "baseActReference": {
+      "de": "AS 1973 15",
+      "it": "RU 1973 15",
+      "fr": "RO 1973 15"
     },
     "impacts": [
+      {
+        "impactDate": "1975-01-10",
+        "commentFrom": {
+          "fr": "Art. 10"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1975/75_75_75",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
+        "decisionDate": "1975-01-08",
+        "historicalImpact": false
+      },
       {
         "impactDate": "1975-01-10",
         "commentFrom": {
@@ -174,12 +196,12 @@
       {
         "impactDate": "1975-01-10",
         "commentFrom": {
-          "fr": "Art. 10"
+          "it": "art. 10"
         },
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
         "fromAct": "https://fedlex.data.admin.ch/eli/oc/1975/75_75_75",
         "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
+          "http://publications.europa.eu/resource/authority/language/ITA"
         ],
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
         "decisionDate": "1975-01-08",
@@ -187,17 +209,40 @@
       },
       {
         "impactDate": "1973-01-01",
-        "commentFrom": {
-          "it": "solamente in francese"
-        },
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1973/_130_",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1973/15_15_15",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/FRA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1973/15_15_15/19730101",
+        "decisionDate": "1973-01-01",
+        "historicalImpact": false,
+        "consolidationDate": "1973-01-01"
+      },
+      {
+        "impactDate": "1973-01-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1973/15_15_15",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/DEU"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1973/15_15_15/19730101",
+        "decisionDate": "1973-01-01",
+        "historicalImpact": false,
+        "consolidationDate": "1973-01-01"
+      },
+      {
+        "impactDate": "1973-01-01",
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1973/15_15_15",
         "language": [
           "http://publications.europa.eu/resource/authority/language/ITA"
         ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/6",
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1973/15_15_15/19730101",
-        "decisionDate": "1973-01-22",
+        "decisionDate": "1973-01-01",
         "historicalImpact": false,
         "consolidationDate": "1973-01-01"
       },
@@ -220,6 +265,22 @@
       {
         "impactDate": "1973-01-01",
         "commentFrom": {
+          "it": "solamente in francese"
+        },
+        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
+        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1973/_130_",
+        "language": [
+          "http://publications.europa.eu/resource/authority/language/ITA"
+        ],
+        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/6",
+        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1973/15_15_15/19730101",
+        "decisionDate": "1973-01-22",
+        "historicalImpact": false,
+        "consolidationDate": "1973-01-01"
+      },
+      {
+        "impactDate": "1973-01-01",
+        "commentFrom": {
           "fr": "Errata"
         },
         "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
@@ -230,59 +291,6 @@
         "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/6",
         "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1973/15_15_15/19730101",
         "decisionDate": "1973-01-22",
-        "historicalImpact": false,
-        "consolidationDate": "1973-01-01"
-      },
-      {
-        "impactDate": "1973-01-01",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1973/15_15_15",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/FRA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1973/15_15_15/19730101",
-        "decisionDate": "1973-01-01",
-        "historicalImpact": false,
-        "consolidationDate": "1973-01-01"
-      },
-      {
-        "impactDate": "1973-01-01",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1973/15_15_15",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1973/15_15_15/19730101",
-        "decisionDate": "1973-01-01",
-        "historicalImpact": false,
-        "consolidationDate": "1973-01-01"
-      },
-      {
-        "impactDate": "1975-01-10",
-        "commentFrom": {
-          "it": "art. 10"
-        },
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1975/75_75_75",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/ITA"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/27",
-        "decisionDate": "1975-01-08",
-        "historicalImpact": false
-      },
-      {
-        "impactDate": "1973-01-01",
-        "informationSource": "https://fedlex.data.admin.ch/vocabulary/information-source/data-from-geschaeftsstaende",
-        "fromAct": "https://fedlex.data.admin.ch/eli/oc/1973/15_15_15",
-        "language": [
-          "http://publications.europa.eu/resource/authority/language/DEU"
-        ],
-        "impactType": "https://fedlex.data.admin.ch/vocabulary/impact-type/5",
-        "consolidatedBy": "https://fedlex.data.admin.ch/eli/cc/1973/15_15_15/19730101",
-        "decisionDate": "1973-01-01",
         "historicalImpact": false,
         "consolidationDate": "1973-01-01"
       }
@@ -297,7 +305,33 @@
       "fr": "RS 682.211",
       "it": "RS 682.211"
     },
+    "explanatoryReportListPerLanguage": {
+      "de": false,
+      "en": false,
+      "it": false,
+      "rm": false,
+      "fr": false
+    },
+    "abrogationDecisionDate": "1975-01-08",
+    "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/47",
+    "abrogationSource": {
+      "de": "AS 1975 75",
+      "it": "RU 1975 75",
+      "fr": "RO 1975 75"
+    },
+    "sortingDateTime": "1972-12-31T23:00Z",
+    "classifiedByTaxonomyEntryLabel_raw": "682.211",
+    "sortingDate": "1975-01-10",
+    "classifiedByTaxonomyEntryLabel_sort": "682.211",
+    "theme": {
+      "themeId": "6",
+      "themeUri": "https://fedlex.data.admin.ch/vocabulary/legal-taxonomy/7743"
+    },
     "archivingDate": "1973-01-01"
   },
+  "content_join_field": {
+    "name": "legislation"
+  },
+  "graph": "https://fedlex.data.admin.ch/eli/cc/1973/15_15_15/graph",
   "timestampms": null
 }
