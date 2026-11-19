@@ -17,7 +17,7 @@
     "attributes": {
       "modified": {
         "xsd:dateTime": [
-          "2026-11-13T09:30:39.862Z"
+          "2026-11-18T13:46:15.115Z"
         ]
       },
       "eventId": {
@@ -25,7 +25,7 @@
       },
       "created": {
         "xsd:dateTime": [
-          "2026-11-13T09:30:39.840Z"
+          "2026-11-18T13:46:15.091Z"
         ]
       }
     }
@@ -38,6 +38,23 @@
         "Event",
         "LegislativeTask"
       ],
+      "references": {
+        "previousConsultationStatus": [
+          "https://fedlex.data.admin.ch/vocabulary/consultation-status/5"
+        ],
+        "isOpinionOf": [
+          "https://fedlex.data.admin.ch/vocabulary/legal-institution/247",
+          "https://fedlex.data.admin.ch/vocabulary/legal-institution/248",
+          "https://fedlex.data.admin.ch/vocabulary/legal-institution/246"
+        ],
+        "consultationStatus": "https://fedlex.data.admin.ch/vocabulary/consultation-status/5",
+        "hasSubTask": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2026/27/cons_1/cons-open",
+          "https://fedlex.data.admin.ch/eli/dl/proj/2026/27/cons_1/cons-planif",
+          "https://fedlex.data.admin.ch/eli/dl/proj/2026/27/cons_1/cons-result",
+          "https://fedlex.data.admin.ch/eli/dl/proj/2026/27/cons_1/cons-pos"
+        ]
+      },
       "attributes": {
         "eventTitle": {
           "rdf:langString": {
@@ -68,20 +85,14 @@
         "eventId": {
           "xsd:string": "proj/2026/27/cons_1"
         }
-      },
-      "references": {
-        "isOpinionOf": [
-          "https://fedlex.data.admin.ch/vocabulary/legal-institution/247",
-          "https://fedlex.data.admin.ch/vocabulary/legal-institution/248",
-          "https://fedlex.data.admin.ch/vocabulary/legal-institution/246"
-        ],
-        "consultationStatus": "https://fedlex.data.admin.ch/vocabulary/consultation-status/4",
-        "hasSubTask": [
-          "https://fedlex.data.admin.ch/eli/dl/proj/2026/27/cons_1/cons-open",
-          "https://fedlex.data.admin.ch/eli/dl/proj/2026/27/cons_1/cons-planif",
-          "https://fedlex.data.admin.ch/eli/dl/proj/2026/27/cons_1/cons-pos"
-        ]
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/consultation-status/5",
+      "type": [
+        "Concept",
+        "ConsultationStatus"
+      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/247",
@@ -102,13 +113,6 @@
       "type": [
         "Concept",
         "LegalInstitution"
-      ]
-    },
-    {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/consultation-status/4",
-      "type": [
-        "Concept",
-        "ConsultationStatus"
       ]
     },
     {
@@ -177,6 +181,27 @@
         },
         "foreseenEventStartDate": {
           "xsd:date": "2026-06-01"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2026/27/cons_1/cons-result",
+      "type": [
+        "ConsultationTask",
+        "Event",
+        "LegislativeTask",
+        "ResultOfAConsultationPublication"
+      ],
+      "references": {
+        "institutionInChargeOfTheEventLevel2": "https://fedlex.data.admin.ch/vocabulary/legal-institution/136",
+        "institutionInChargeOfTheEvent": "https://fedlex.data.admin.ch/vocabulary/legal-institution/S0",
+        "consultationHasModification": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2026/27/cons_1/cons-result/consultation-modification-history/1"
+        ]
+      },
+      "attributes": {
+        "created": {
+          "xsd:dateTime": "2026-11-18T13:45:19.171Z"
         }
       }
     },
@@ -591,6 +616,18 @@
       "attributes": {
         "consultationStageDate": {
           "xsd:dateTime": "2026-03-19T14:08:26.579Z"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2026/27/cons_1/cons-result/consultation-modification-history/1",
+      "type": [
+        "ConsultationModificationHistory",
+        "Event"
+      ],
+      "attributes": {
+        "consultationStageDate": {
+          "xsd:dateTime": "2026-11-18T13:45:12.448Z"
         }
       }
     },
@@ -2013,10 +2050,10 @@
     }
   ],
   "facets": {
-    "sortingDateTime": "2026-11-13T09:30:39.862Z",
-    "sortingDate": "2026-11-13T10:30:33.154+01:00",
-    "statusChangedOnPublication": true,
-    "modified": "2026-11-13T10:30:39.885170",
+    "sortingDateTime": "2026-11-18T13:46:15.115Z",
+    "sortingDate": "2026-11-18T13:45:12.448Z",
+    "statusChangedOnPublication": false,
+    "modified": "2026-11-18T14:46:15.139183",
     "title": {
       "de": "ENERGIE: Überarbeitung Bewirtschaftungsmassnahmen für eine schwere Gasmangellage",
       "it": "ENERGIA: Revisione misure di gestione in caso di grave penuria di gas",
@@ -2025,7 +2062,8 @@
     "department": {
       "ConsultationPhase": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D8",
       "PositionStatementPublication": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D8",
-      "ConsultationPreparation": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D8"
+      "ConsultationPreparation": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D8",
+      "ResultOfAConsultationPublication": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D8"
     },
     "consultationId": "2026/27",
     "groupIdentifier": "https://fedlex.data.admin.ch/eli/dl/proj/2026/27"

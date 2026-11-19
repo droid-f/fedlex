@@ -17,7 +17,7 @@
     "attributes": {
       "modified": {
         "xsd:dateTime": [
-          "2026-06-19T09:14:24.377Z"
+          "2026-11-18T14:15:08.657Z"
         ]
       },
       "eventId": {
@@ -25,7 +25,7 @@
       },
       "created": {
         "xsd:dateTime": [
-          "2026-06-19T09:14:24.356Z"
+          "2026-11-18T14:15:08.636Z"
         ]
       }
     }
@@ -78,8 +78,9 @@
         "foreseenImpactToLegalResource": [
           "https://fedlex.data.admin.ch/eli/cc/2012/586"
         ],
-        "consultationStatus": "https://fedlex.data.admin.ch/vocabulary/consultation-status/4",
+        "consultationStatus": "https://fedlex.data.admin.ch/vocabulary/consultation-status/5",
         "hasSubTask": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2025/125/cons_1/cons-result",
           "https://fedlex.data.admin.ch/eli/dl/proj/2025/125/cons_1/cons-planif",
           "https://fedlex.data.admin.ch/eli/dl/proj/2025/125/cons_1/cons-pos",
           "https://fedlex.data.admin.ch/eli/dl/proj/2025/125/cons_1/cons-open"
@@ -115,11 +116,35 @@
       ]
     },
     {
-      "uri": "https://fedlex.data.admin.ch/vocabulary/consultation-status/4",
+      "uri": "https://fedlex.data.admin.ch/vocabulary/consultation-status/5",
       "type": [
         "Concept",
         "ConsultationStatus"
       ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2025/125/cons_1/cons-result",
+      "type": [
+        "ConsultationTask",
+        "Event",
+        "LegislativeTask",
+        "ResultOfAConsultationPublication"
+      ],
+      "references": {
+        "institutionInChargeOfTheEventLevel2": "https://fedlex.data.admin.ch/vocabulary/legal-institution/43",
+        "institutionInChargeOfTheEvent": "https://fedlex.data.admin.ch/vocabulary/legal-institution/S0",
+        "opinionHasDraftRelatedDocument": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2025/125/cons_1/doc_7"
+        ],
+        "consultationHasModification": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2025/125/cons_1/cons-result/consultation-modification-history/1"
+        ]
+      },
+      "attributes": {
+        "created": {
+          "xsd:dateTime": "2026-11-18T14:15:07.846Z"
+        }
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2025/125/cons_1/cons-planif",
@@ -226,6 +251,50 @@
         "Concept",
         "LegalInstitution"
       ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2025/125/cons_1/doc_7",
+      "type": [
+        "DraftRelatedDocument",
+        "Work"
+      ],
+      "references": {
+        "draftProcessDocumentType": [
+          "https://fedlex.data.admin.ch/vocabulary/draft-document-type/31"
+        ],
+        "isRealizedBy": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2025/125/cons_1/doc_7/it",
+          "https://fedlex.data.admin.ch/eli/dl/proj/2025/125/cons_1/doc_7/fr",
+          "https://fedlex.data.admin.ch/eli/dl/proj/2025/125/cons_1/doc_7/de"
+        ]
+      },
+      "attributes": {
+        "title": {
+          "rdf:langString": {
+            "de": [
+              "Ergebnisbericht"
+            ],
+            "it": [
+              "Rapporto sui risultati"
+            ],
+            "fr": [
+              "Rapport de résultats"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2025/125/cons_1/cons-result/consultation-modification-history/1",
+      "type": [
+        "ConsultationModificationHistory",
+        "Event"
+      ],
+      "attributes": {
+        "consultationStageDate": {
+          "xsd:dateTime": "2026-11-18T14:15:01.590Z"
+        }
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2025/125/cons_1/cons-planif/consultation-modification-history/1",
@@ -452,6 +521,58 @@
       "attributes": {
         "consultationStageDate": {
           "xsd:dateTime": "2026-02-18T16:04:53.369Z"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/draft-document-type/31",
+      "type": [
+        "Concept",
+        "DraftProcessDocumentType"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2025/125/cons_1/doc_7/it",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/ITA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2025/125/cons_1/doc_7/it/pdf-a"
+        ]
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Rapporto sui risultati"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2025/125/cons_1/doc_7/fr",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2025/125/cons_1/doc_7/fr/pdf-a"
+        ]
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Rapport de résultats"
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2025/125/cons_1/doc_7/de",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU",
+        "isEmbodiedBy": [
+          "https://fedlex.data.admin.ch/eli/dl/proj/2025/125/cons_1/doc_7/de/pdf-a"
+        ]
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": "Ergebnisbericht"
         }
       }
     },
@@ -761,11 +882,88 @@
       }
     },
     {
+      "uri": "http://publications.europa.eu/resource/authority/language/ITA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2025/125/cons_1/doc_7/it/pdf-a",
+      "type": "Manifestation",
+      "attributes": {
+        "manifestationByDefault": {
+          "xsd:boolean": true
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/dl/proj/2025/125/cons_1/doc_7/it/pdf-a/fedlex-data-admin-ch-eli-dl-proj-2025-125-cons_1-doc_7-it-pdf-a.pdf"
+        },
+        "publicationDate": {
+          "xsd:dateTime": "2026-11-18T14:15:01.598Z"
+        }
+      },
+      "references": {
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      }
+    },
+    {
+      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
+      "type": [
+        "Concept",
+        "Language"
+      ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2025/125/cons_1/doc_7/fr/pdf-a",
+      "type": "Manifestation",
+      "attributes": {
+        "manifestationByDefault": {
+          "xsd:boolean": true
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/dl/proj/2025/125/cons_1/doc_7/fr/pdf-a/fedlex-data-admin-ch-eli-dl-proj-2025-125-cons_1-doc_7-fr-pdf-a.pdf"
+        },
+        "publicationDate": {
+          "xsd:dateTime": "2026-11-18T14:15:01.598Z"
+        }
+      },
+      "references": {
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      }
+    },
+    {
       "uri": "http://publications.europa.eu/resource/authority/language/DEU",
       "type": [
         "Concept",
         "Language"
       ]
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2025/125/cons_1/doc_7/de/pdf-a",
+      "type": "Manifestation",
+      "attributes": {
+        "manifestationByDefault": {
+          "xsd:boolean": true
+        },
+        "userFormat": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a"
+        },
+        "isExemplifiedBy": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/dl/proj/2025/125/cons_1/doc_7/de/pdf-a/fedlex-data-admin-ch-eli-dl-proj-2025-125-cons_1-doc_7-de-pdf-a.pdf"
+        },
+        "publicationDate": {
+          "xsd:dateTime": "2026-11-18T14:15:01.598Z"
+        }
+      },
+      "references": {
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      }
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2025/125/cons_1/doc_6/de/pdf-a",
@@ -789,13 +987,6 @@
       }
     },
     {
-      "uri": "http://publications.europa.eu/resource/authority/language/FRA",
-      "type": [
-        "Concept",
-        "Language"
-      ]
-    },
-    {
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2025/125/cons_1/doc_6/fr/pdf-a",
       "type": "Manifestation",
       "attributes": {
@@ -815,13 +1006,6 @@
       "references": {
         "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
       }
-    },
-    {
-      "uri": "http://publications.europa.eu/resource/authority/language/ITA",
-      "type": [
-        "Concept",
-        "Language"
-      ]
     },
     {
       "uri": "https://fedlex.data.admin.ch/eli/dl/proj/2025/125/cons_1/doc_6/it/pdf-a",
@@ -1168,25 +1352,26 @@
     }
   ],
   "facets": {
-    "sortingDateTime": "2026-06-19T09:14:24.377Z",
+    "sortingDateTime": "2026-11-18T14:15:08.657Z",
     "taxonomies": [
       {
         "taxonomyId": "783.01",
         "consolidationAbstract": "https://fedlex.data.admin.ch/eli/cc/2012/586"
       }
     ],
-    "sortingDate": "2026-06-19T11:14:19.058+02:00",
+    "sortingDate": "2026-11-18T15:15:01.590+01:00",
     "statusChangedOnPublication": true,
-    "modified": "2026-06-19T11:14:24.398414",
+    "modified": "2026-11-18T15:15:08.685787",
     "title": {
       "de": "Änderung der Postverordnung: Einbezug der Frühzustellung in die indirekte Presseförderung (Umsetzung Pa. Iv. 22.423, zweiter Teil)",
       "it": "Modifica dell’ordinanza sulle poste: inclusione del recapito mattutino nel sostegno indiretto alla stampa (attuazione dell’Iv. Pa. 22.423, seconda parte)",
       "fr": "Modification de l’ordonnance sur la poste: inclusion de la distribution matinale dans l’aide indirecte à la presse (mise en œuvre de l’iv. pa. 22.423, deuxième partie)"
     },
     "department": {
-      "PositionStatementPublication": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D3",
       "ConsultationPhase": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D3",
-      "ConsultationPreparation": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D3"
+      "PositionStatementPublication": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D3",
+      "ConsultationPreparation": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D3",
+      "ResultOfAConsultationPublication": "https://fedlex.data.admin.ch/vocabulary/legal-institution/D3"
     },
     "consultationId": "2025/125",
     "groupIdentifier": "https://fedlex.data.admin.ch/eli/dl/proj/2025/125"
