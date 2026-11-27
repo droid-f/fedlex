@@ -9,16 +9,8 @@
       "legalResourceGenre": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/legal-resource-genre/900"
       },
-      "dateDocument": {
-        "xsd:date": "2021-03-10"
-      },
-      "created": {
-        "xsd:dateTime": [
-          "2021-03-18T23:00:00.000Z"
-        ]
-      },
-      "sequenceInTheYearOfPublication": {
-        "xsd:int": 569
+      "timeEntryInForce": {
+        "xsd:time": "00:00:00"
       },
       "modified": {
         "xsd:dateTime": [
@@ -33,6 +25,25 @@
       },
       "publicationDate": {
         "xsd:date": "2021-03-19"
+      },
+      "dateDocument": {
+        "xsd:date": "2021-03-10"
+      },
+      "created": {
+        "xsd:dateTime": [
+          "2021-03-18T23:00:00.000Z"
+        ]
+      },
+      "sequenceInTheYearOfPublication": {
+        "xsd:int": 569
+      },
+      "retroactiveEntryInForce": {
+        "xsd:boolean": false
+      },
+      "temporaryParliamentDraftId": {
+        "xsd:string": [
+          "21.016"
+        ]
       }
     },
     "references": {
@@ -150,7 +161,28 @@
       "type": [
         "Memorial",
         "Work"
-      ]
+      ],
+      "attributes": {
+        "memorialNumber": {
+          "xsd:int": 42
+        },
+        "isMemberOf": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/2021"
+        },
+        "memorialYear": {
+          "xsd:int": 2021
+        },
+        "publicationDate": {
+          "xsd:date": "2021-03-19"
+        }
+      },
+      "references": {
+        "isRealizedBy": [
+          "https://fedlex.data.admin.ch/eli/collection/fga/2021/42/de",
+          "https://fedlex.data.admin.ch/eli/collection/fga/2021/42/fr",
+          "https://fedlex.data.admin.ch/eli/collection/fga/2021/42/it"
+        ]
+      }
     },
     {
       "uri": "http://publications.europa.eu/resource/authority/language/DEU",
@@ -162,6 +194,10 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/2021/569/de/docx",
       "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
       "attributes": {
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
@@ -205,6 +241,10 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/2021/569/it/docx",
       "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
       "attributes": {
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
@@ -248,6 +288,10 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/2021/569/fr/docx",
       "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
       "attributes": {
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
@@ -280,6 +324,49 @@
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2021/569/fr/pdf-a/fedlex-data-admin-ch-eli-fga-2021-569-fr-pdf-a.pdf"
         }
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/collection/fga/2021/42/de",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": ""
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/collection/fga/2021/42/fr",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": ""
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/collection/fga/2021/42/it",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/ITA"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": ""
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+      "type": [
+        "Concept",
+        "LegalInstitution"
+      ]
     }
   ],
   "facets": {
@@ -302,12 +389,13 @@
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 2021 569",
       "http://publications.europa.eu/resource/authority/language/ITA": "FF 2021 569"
     },
-    "modified": "2021-03-19T13:59:19.068525",
+    "modified": "2026-11-27T07:27:19.244721",
     "title": {
       "de": "Bundesbeschluss über die Finanzierung der Härtefallmassnahmen nach dem Covid-19-Gesetz",
       "it": "Decreto federale concernente il finanziamento dei provvedimenti per i casi di rigore secondo la legge COVID-19",
       "fr": "Arrêté fédéral concernant le financement des mesures pour les cas de rigueur prévues par la loi COVID-19"
     },
+    "groupIdentifier": "https://fedlex.data.admin.ch/eli/fga/2021/569",
     "explanatoryReportListPerLanguage": {
       "de": false,
       "en": false,
