@@ -9,6 +9,23 @@
       "legalResourceGenre": {
         "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/legal-resource-genre/900"
       },
+      "timeEntryInForce": {
+        "xsd:time": "00:00:00"
+      },
+      "modified": {
+        "xsd:dateTime": [
+          "2021-02-24T23:00:00.000Z"
+        ]
+      },
+      "typeDocument": {
+        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/24"
+      },
+      "processType": {
+        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/type-procedure/ord"
+      },
+      "publicationDate": {
+        "xsd:date": "2021-02-25"
+      },
       "dateDocument": {
         "xsd:date": "2021-01-20"
       },
@@ -20,19 +37,13 @@
       "sequenceInTheYearOfPublication": {
         "xsd:int": 352
       },
-      "modified": {
-        "xsd:dateTime": [
-          "2021-02-24T23:00:00.000Z"
+      "retroactiveEntryInForce": {
+        "xsd:boolean": false
+      },
+      "temporaryParliamentDraftId": {
+        "xsd:string": [
+          "21.008"
         ]
-      },
-      "typeDocument": {
-        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/resource-type/23"
-      },
-      "processType": {
-        "rdfs:Resource": "https://fedlex.data.admin.ch/vocabulary/type-procedure/ord"
-      },
-      "publicationDate": {
-        "xsd:date": "2021-02-25"
       }
     },
     "references": {
@@ -150,7 +161,28 @@
       "type": [
         "Memorial",
         "Work"
-      ]
+      ],
+      "attributes": {
+        "memorialNumber": {
+          "xsd:int": 26
+        },
+        "isMemberOf": {
+          "rdfs:Resource": "https://fedlex.data.admin.ch/eli/collection/fga/2021"
+        },
+        "memorialYear": {
+          "xsd:int": 2021
+        },
+        "publicationDate": {
+          "xsd:date": "2021-02-25"
+        }
+      },
+      "references": {
+        "isRealizedBy": [
+          "https://fedlex.data.admin.ch/eli/collection/fga/2021/26/de",
+          "https://fedlex.data.admin.ch/eli/collection/fga/2021/26/it",
+          "https://fedlex.data.admin.ch/eli/collection/fga/2021/26/fr"
+        ]
+      }
     },
     {
       "uri": "http://publications.europa.eu/resource/authority/language/FRA",
@@ -162,6 +194,10 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/2021/352/fr/docx",
       "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
       "attributes": {
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
@@ -223,6 +259,10 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/2021/352/it/docx",
       "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
       "attributes": {
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
@@ -248,6 +288,10 @@
     {
       "uri": "https://fedlex.data.admin.ch/eli/fga/2021/352/de/docx",
       "type": "Manifestation",
+      "references": {
+        "rightsHolder": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+        "publisher": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262"
+      },
       "attributes": {
         "format": {
           "rdfs:Resource": "http://publications.europa.eu/resource/authority/file-type/DOCX"
@@ -280,12 +324,60 @@
           "rdfs:Resource": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2021/352/de/pdf-a/fedlex-data-admin-ch-eli-fga-2021-352-de-pdf-a.pdf"
         }
       }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/collection/fga/2021/26/de",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/DEU"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": ""
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/collection/fga/2021/26/it",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/ITA"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": ""
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/eli/collection/fga/2021/26/fr",
+      "type": "Expression",
+      "references": {
+        "language": "http://publications.europa.eu/resource/authority/language/FRA"
+      },
+      "attributes": {
+        "title": {
+          "xsd:string": ""
+        }
+      }
+    },
+    {
+      "uri": "https://fedlex.data.admin.ch/vocabulary/legal-institution/262",
+      "type": [
+        "Concept",
+        "LegalInstitution"
+      ]
     }
   ],
   "facets": {
     "typeDocumentBroader": "https://fedlex.data.admin.ch/vocabulary/resource-type/50",
     "sortingDateTime": "2021-02-24T23:00Z",
     "sortingDate": "2021-02-25",
+    "draft": {
+      "parliamentDraftId": [
+        "21.008"
+      ]
+    },
     "memorialLabel_sort": {
       "de": "2021.99.000352",
       "it": "2021.99.000352",
@@ -297,12 +389,13 @@
       "http://publications.europa.eu/resource/authority/language/FRA": "FF 2021 352",
       "http://publications.europa.eu/resource/authority/language/ITA": "FF 2021 352"
     },
-    "modified": "2021-02-25T09:27:04.116721",
+    "modified": "2026-11-27T10:55:14.149260",
     "title": {
       "de": "Bericht über zolltarifarische Massnahmen im Jahr 2020",
       "it": "Rapporto concernente le misure tariffali adottate nel 2020",
       "fr": "Rapport sur les mesures tarifaires prises en 2020"
     },
+    "groupIdentifier": "https://fedlex.data.admin.ch/eli/fga/2021/352",
     "explanatoryReportListPerLanguage": {
       "de": false,
       "en": false,
